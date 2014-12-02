@@ -3,12 +3,18 @@ Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MobileHtmlAgilityPack", "MobileHtmlAgilityPack.csproj", "{D91DC8A9-454E-4CB9-96BE-19652A67D0A4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test.Mac", "Test.Mac\Test.Mac.csproj", "{823D2A27-BCBD-4694-9D40-EF1C838C879B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{823D2A27-BCBD-4694-9D40-EF1C838C879B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{823D2A27-BCBD-4694-9D40-EF1C838C879B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{823D2A27-BCBD-4694-9D40-EF1C838C879B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{823D2A27-BCBD-4694-9D40-EF1C838C879B}.Release|Any CPU.Build.0 = Release|Any CPU
 		{D91DC8A9-454E-4CB9-96BE-19652A67D0A4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{D91DC8A9-454E-4CB9-96BE-19652A67D0A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D91DC8A9-454E-4CB9-96BE-19652A67D0A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
