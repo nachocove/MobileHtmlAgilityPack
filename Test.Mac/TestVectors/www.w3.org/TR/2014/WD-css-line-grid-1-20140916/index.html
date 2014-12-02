@@ -1,0 +1,859 @@
+<!DOCTYPE html><html lang=en><head>
+  <meta content="text/html; charset=utf-8" http-equiv=Content-Type>
+  <title>CSS Line Grid Module Level 1</title>
+  <link href=default.css rel=stylesheet type=text/css>
+
+  <link href=http://www.w3.org/StyleSheets/TR/W3C-WD rel=stylesheet type=text/css>
+<style type=text/css>
+	.sidenote-block {
+		border: 1px solid gray;
+		margin: auto;
+		text-align: left;
+		padding: 4pt;
+		position: relative;
+		max-width: 400pt;
+	}
+	.sidenote-body {
+		margin-left: 120pt;
+		font-size: 12pt;
+		line-height: 18pt;
+	}
+	.sidenote-note {
+		font-size: 10pt;
+		line-height: 18pt;
+		position: absolute; left: 4pt; top: 4pt;
+		width: 110pt;
+	}
+</style>
+
+</head>
+<body class=h-entry>
+<div class=head>
+  <p data-fill-with=logo><a href=http://www.w3.org/>
+    <img alt=W3C height=48 src=http://www.w3.org/Icons/w3c_home width=72>
+</a>
+</p>
+  <h1 class="p-name no-ref" id=title>CSS Line Grid Module Level 1</h1>
+  <h2 class="no-num no-toc no-ref heading settled" id=subtitle><span class=content>W3C Working Draft,
+    <span class=dt-updated><span class=value-title title=20140916>16 September 2014</span></span></span></h2>
+  <div data-fill-with=spec-metadata><dl>
+	<dt>This version:
+	<dd><a class=u-url href=http://www.w3.org/TR/2014/WD-css-line-grid-1-20140916/>http://www.w3.org/TR/2014/WD-css-line-grid-1-20140916/</a>
+	<dt>Latest version:
+	<dd><a href=http://www.w3.org/TR/css-line-grid-1/>http://www.w3.org/TR/css-line-grid-1/</a>
+	<dt>Editor’s Draft:
+	<dd><a href=http://dev.w3.org/csswg/css-line-grid/>http://dev.w3.org/csswg/css-line-grid/</a>
+	<dt>Previous Versions:
+	<dd><a href=http://www.w3.org/TR/2014/WD-css-line-grid-1-20140403/ rel=previous>http://www.w3.org/TR/2014/WD-css-line-grid-1-20140403/</a>
+	<dt>Feedback:
+	<dd><a href="mailto:www-style@w3.org?subject=%5Bcss-line-grid%5D%20feedback">www-style@w3.org</a>
+            with subject line
+            “<kbd>[css-line-grid] <var>… message topic …</var></kbd>”(<a href=http://lists.w3.org/Archives/Public/www-style/ rel=discussion>archives</a>)
+	<dt>Editors:
+	<dd><div class="p-author h-card vcard"><a class="p-name fn u-url url" href=http://fantasai.inkedblade.net/contact>Elika Etemad</a> (<span class="p-org org">Invited Expert</span>)</div>
+	<dd><div class="p-author h-card vcard"><a class="p-name fn u-email email" href=mailto:kojiishi@gluesoft.co.jp>Koji Ishii</a> (<span class="p-org org">Invited Expert</span>)</div>
+	<dd><div class="p-author h-card vcard"><a class="p-name fn u-email email" href=mailto:stearns@adobe.com>Alan Stearns</a> (<span class="p-org org">Adobe Systems, Inc.</span>)</div>
+</dl>
+</div>
+  <div data-fill-with=warning></div>
+  <p class=copyright data-fill-with=copyright><a href=http://www.w3.org/Consortium/Legal/ipr-notice#Copyright>Copyright</a> © 2014 <a href=http://www.w3.org/><abbr title="World Wide Web Consortium">W3C</abbr></a><sup>®</sup> (<a href=http://www.csail.mit.edu/><abbr title="Massachusetts Institute of Technology">MIT</abbr></a>, <a href=http://www.ercim.eu/><abbr title="European Research Consortium for Informatics and Mathematics">ERCIM</abbr></a>, <a href=http://www.keio.ac.jp/>Keio</a>, <a href=http://ev.buaa.edu.cn/>Beihang</a>), All Rights Reserved. W3C <a href=http://www.w3.org/Consortium/Legal/ipr-notice#Legal_Disclaimer>liability</a>, <a href=http://www.w3.org/Consortium/Legal/ipr-notice#W3C_Trademarks>trademark</a> and <a href=http://www.w3.org/Consortium/Legal/copyright-documents>document use</a> rules apply.
+</p>
+  <hr title="Separator for header">
+</div>
+
+<h2 class="no-num no-toc no-ref heading settled" id=abstract><span class=content>Abstract</span></h2>
+<div class=p-summary data-fill-with=abstract><p>This module contains CSS features for aligning content to a baseline grid.</p>
+
+<a href=http://www.w3.org/TR/CSS/>CSS</a> is a language for describing the rendering of structured documents 
+(such as HTML and XML) 
+on screen, on paper, in speech, etc.</div>
+
+<h2 class="no-num no-toc no-ref heading settled" id=status><span class=content>Status of this document</span></h2>
+<div data-fill-with=status><p><em>This section describes the status of this document at the time of
+   its publication. Other documents may supersede this document. A list of
+   current W3C publications and the latest revision of this technical report
+   can be found in the <a href=http://www.w3.org/TR/>W3C technical reports
+   index at http://www.w3.org/TR/.</a></em>
+
+  <p>Publication as a Working Draft does not imply endorsement by the W3C
+   Membership. This is a draft document and may be updated, replaced or
+   obsoleted by other documents at any time. It is inappropriate to cite this
+   document as other than work in progress.
+
+  <p>The (<a href=http://lists.w3.org/Archives/Public/www-style/>archived</a>) public
+   mailing list <a href=mailto:www-style@w3.org>www-style@w3.org</a> (see
+   <a href=http://www.w3.org/Mail/Request>instructions</a>) is preferred
+   for discussion of this specification. When sending e-mail, please put the
+   text “css-line-grid” in the subject, preferably like this:
+   “[css-line-grid] <em>…summary of comment…</em>”
+
+  <p>This document was produced by the <a href=http://www.w3.org/Style/CSS/members>CSS Working Group</a> (part of
+   the <a href=http://www.w3.org/Style/>Style Activity</a>).
+
+  <p>This document was produced by a group operating under the <a href=http://www.w3.org/Consortium/Patent-Policy-20040205/>5 February
+   2004 W3C Patent Policy</a>. W3C maintains a <a href=http://www.w3.org/2004/01/pp-impl/32061/status rel=disclosure>public list of any patent disclosures</a> made in
+   connection with the deliverables of the group; that page also includes
+   instructions for disclosing a patent. An individual who has actual
+   knowledge of a patent which the individual believes contains <a href=http://www.w3.org/Consortium/Patent-Policy-20040205/#def-essential>Essential
+   Claim(s)</a> must disclose the information in accordance with <a href=http://www.w3.org/Consortium/Patent-Policy-20040205/#sec-Disclosure>section
+   6 of the W3C Patent Policy</a>.
+
+<p>This document is governed by the <a id="w3c_process_revision" href="http://www.w3.org/2005/10/Process-20051014/">14 October 2005 W3C Process Document</a>.
+</div>
+<div data-fill-with=at-risk></div>
+
+<h2 class="no-num no-toc no-ref heading settled" id=contents><span class=content>Table of Contents</span></h2>
+<div data-fill-with=table-of-contents><ul class=toc>
+	<li><a href=#intro><span class=secno>1</span>  Introduction</a>
+		<ul class=toc>
+		<li><a href=#context><span class=secno>1.1</span>  Background</a>
+		<li><a href=#placement><span class=secno>1.2</span>  Module Interactions</a>
+		<li><a href=#values><span class=secno>1.3</span>  Values</a></ul>
+	<li><a href=#line-grid><span class=secno>2</span>  Defining a Line Grid: the <span class=property data-link-type=propdesc title=line-grid>line-grid</span> property</a>
+	<li><a href=#grid-snapping><span class=secno>3</span>  Snapping to a Grid</a>
+		<ul class=toc>
+		<li><a href=#line-snap><span class=secno>3.1</span>  Snapping Line Boxes: the <span class=property data-link-type=propdesc title=line-snap>line-snap</span> property</a>
+		<li><a href=#box-snap><span class=secno>3.2</span>  Snapping Block Boxes: the <span class=property data-link-type=propdesc title=box-snap>box-snap</span> property</a></ul>
+	<li><a href=#acknowledgments><span class=secno></span> Acknowledgments</a>
+	<li><a href=#change-log><span class=secno></span>  Change Log</a>
+		<ul class=toc>
+		<li><a href=#20140403><span class=secno></span>  Since <span>April 3rd 2014</span></a></ul>
+	<li><a href=#conformance><span class=secno></span>  Conformance</a>
+		<ul class=toc>
+		<li><a href=#conventions><span class=secno></span>  Document conventions</a>
+		<li><a href=#conformance-classes><span class=secno></span>  Conformance classes</a>
+		<li><a href=#partial><span class=secno></span>  Partial implementations</a>
+		<li><a href=#experimental><span class=secno></span>  Experimental implementations</a>
+		<li><a href=#testing><span class=secno></span>  Non-experimental implementations</a></ul>
+	<li><a href=#references><span class=secno></span>  References</a>
+		<ul class=toc>
+		<li><a href=#normative><span class=secno></span>  Normative References</a>
+		<li><a href=#informative><span class=secno></span>  Informative References</a></ul>
+	<li><a href=#index><span class=secno></span>  Index</a>
+	<li><a href=#property-index><span class=secno></span>  Property index</a>
+	<li><a href=#issues-index><span class=secno></span> Issues Index</a></ul></div>
+
+
+
+
+<h2 class="heading settled" data-level=1 id=intro><span class=secno>1 </span><span class=content>
+Introduction</span><a class=self-link href=#intro></a></h2>
+
+<h3 class="heading settled" data-level=1.1 id=context><span class=secno>1.1 </span><span class=content>
+Background</span><a class=self-link href=#context></a></h3>
+
+<p><em>This section is not normative.</em></p>
+
+<p>This specification provides features
+	to align lines and blocks 
+	to invisible grids in the document.</p>
+
+<p>Aligning lines and blocks to grids
+	provides the following benefits:</p>
+
+	<ul>
+		<li>Vertical rhythm is kept for better readability.</li>
+		<li>Lines are aligned between columns in multi-column documents.</li>
+		<li>The top and the bottom margins of pictures are made equal,
+			while keeping the vertical rhythm of text before and after the pictures.</li>
+		
+		<li>Layout lines are at the same position on every page in paged media.
+			Keeping the position of the bottom line of a page has benefits for
+			design and readability.
+			This also improves the readability of duplex printing,
+			two pages spreads,
+			and displaying on slow display devices like e-ink.</li>
+		<li>East Asian layouts require vertical rhythm
+			more often than other scripts do,
+			even in single column, non-paged media documents,
+			as defined in <a data-biblio-type=informative data-link-type=biblio href=#biblio-jlreq title=JLREQ>[JLREQ]</a>.</li>
+	</ul>
+
+<p>There are several types of objects in a document
+	that can break the vertical rhythm.
+	Examples include lines with different sizes of text, 
+	pictures, and tables.</p>
+
+	<div class=figure>
+		<img alt="Vertical rhythm kept through pictures and different size of text in a multi-column document" src=images/line-grid-multicol.png width=480>
+		<p class=caption>Vertical rhythm kept through pictures and different size of text in a multi-column document.</p>
+	</div>
+
+	<div class=example>
+		<div class=sidefigure>
+			<img alt="Large text wraps within line grids" src=images/line-grid-wrap.png width=276>
+			<p class=caption>Large text wraps within line grids.</p>
+		</div>
+
+<p>When a different size of text,
+		such as a headings wraps, 
+		it is usually aligned to grids as a block 
+		and the lines within the block do not align.</p>
+
+<p><br style=clear:both;></p>
+	</div>
+
+	<div class=figure id=ex-sidenote>
+		<div class=sidenote-block>
+			<div class=sidenote-body>
+
+<p>Sidenotes (and footnotes for that matter) are often set
+				at a smaller size than the basic text.
+				This smaller text should still line up with the basic text.
+				Authors can try to achieve this effect
+				by calculating appropriate font-size, line-height,
+				and margins*, but lack the proper tools to get the baselines to align.</p>
+			</div>
+			<div class=sidenote-note>
+
+<p>Even if the author controls all this,
+				the baselines won’t align. And careful 
+				calculations can be thrown off by user stylesheets.</p>
+			</div>
+		</div>
+		<p class=caption>Sidenotes are set at a smaller size, and baselines don’t align.</p>
+	</div>
+
+	<figure>
+		<img alt="sidenote rendering with aligned baselines" src=images/sidenote-aligned.png>
+		<figcaption>
+			Sidenote with baselines aligned to the body text.
+		</figcaption>
+	</figure>
+
+	<div class=sidefigure id=ex-width>
+		<img alt="East Asian layouts may require width be a multiple of em without fractions" height=142 src=width-multiple-of-em.png width=180>
+		<p class=caption>East Asian layouts may require width
+			be a multiple of <em>em</em> without fractions.</p>
+	</div>
+
+<p>East Asian layouts may require grid-like features
+	in inline progression direction as well.</p>
+
+<p>It is often desirable in East Asian layouts
+	to make the line width
+	a multiple of <em>em</em> without fractions.
+	Because most East Asian characters have 1em advance
+	and most East Asian documents are justified,
+	this minimizes cases where justification needs to expand character spacing.</p>
+
+<p>This module provides the following capabilities:</p>
+
+	<ul>
+		<li>Defining grids in the line progression direction.</li>
+		<li>Controlling how lines and blocks align to the grids.</li>
+	</ul>
+
+<p>It is important to control these capabilities independently,
+	so that, for example, 
+	aligning to grids can be turned off for tables,
+	but can then be turned back on 
+	for aligning the following text to the grids.</p>
+
+
+<h3 class="heading settled" data-level=1.2 id=placement><span class=secno>1.2 </span><span class=content>
+Module Interactions</span><a class=self-link href=#placement></a></h3>
+
+<p>This module extends the line box model
+	defined in <a data-biblio-type=normative data-link-type=biblio href=#biblio-css21 title=CSS21>[CSS21]</a> sections 9.4.2 and 10.8.</p>
+
+<h3 class="heading settled" data-level=1.3 id=values><span class=secno>1.3 </span><span class=content>
+Values</span><a class=self-link href=#values></a></h3>
+
+<p>This specification follows the
+	<a href=http://www.w3.org/TR/CSS21/about.html#property-defs>
+		CSS property definition conventions
+	</a> 
+	from <a data-biblio-type=normative data-link-type=biblio href=#biblio-css21 title=CSS21>[CSS21]</a>. 
+	Value types not defined in this specification 
+	are defined in CSS Level 2 Revision 1 <a data-biblio-type=normative data-link-type=biblio href=#biblio-css21 title=CSS21>[CSS21]</a>. 
+	Other CSS modules may expand 
+	the definitions of these value types: 
+	for example <a data-biblio-type=informative data-link-type=biblio href=#biblio-css3color title=CSS3COLOR>[CSS3COLOR]</a>, 
+	when combined with this module, 
+	expands the definition 
+	of the &lt;color&gt; value type 
+	as used in this specification.</p>
+
+<p>In addition to the property-specific values
+	listed in their definitions, 
+	all properties defined in this specification 
+	also accept the
+	<a href=http://www.w3.org/TR/CSS21/cascade.html#value-def-inherit>inherit</a>
+	keyword as their property value. 
+	For readability it has not been repeated explicitly.</p>
+
+<h2 class="heading settled" data-level=2 id=line-grid><span class=secno>2 </span><span class=content>
+Defining a Line Grid: the <a class=property data-link-type=propdesc href=#propdef-line-grid title=line-grid>line-grid</a> property</span><a class=self-link href=#line-grid></a></h2>
+
+<table class="definition propdef"><tr><th>Name:<td><dfn class=css data-dfn-type=property data-export="" id=propdef-line-grid>line-grid<a class=self-link href=#propdef-line-grid></a></dfn><tr><th>Value:<td class=prod>match-parent <a class=prod-punc data-link-type=grammar href=http://dev.w3.org/csswg/css-values-3/#comb-one title=|>|</a> create<tr><th>Initial:<td>match-parent<tr><th>Applies to:<td>block containers<tr><th>Inherited:<td>no<tr><th>Media:<td>visual<tr><th>Computed value:<td>as specified<tr><th>Percentages:<td>N/A<tr><th>Animatable:<td>no</table>
+
+<p>Specifies whether this box creates
+	a new baseline grid for its descendants 
+	or uses the same baseline grid as its parent. 
+	(Each box always has an associated line grid. 
+	However, whether a box or its contents snap 
+	to a line grid is determined 
+	by <a class=property data-link-type=propdesc href=#propdef-line-snap title=line-snap>line-snap</a> and <a class=property data-link-type=propdesc href=#propdef-box-snap title=box-snap>box-snap</a>.)</p>
+
+<p>The values of this property have the following meanings:</p>
+
+	<dl data-dfn-for=line-grid data-dfn-type=value>
+		<dt><dfn class=css data-dfn-for=line-grid data-dfn-type=value data-export="" id=valdef-line-grid-match-parent>match-parent<a class=self-link href=#valdef-line-grid-match-parent></a></dfn>
+		<dd>Box assumes the line grid of its parent.
+
+		<dt><dfn class=css data-dfn-for=line-grid data-dfn-type=value data-export="" id=valdef-line-grid-create>create<a class=self-link href=#valdef-line-grid-create></a></dfn>
+		<dd>Box creates a new line grid 
+			using its own font and line layout settings. 
+			The line grid consists of a series 
+			of horizontal lines corresponding 
+			to all the baselines 
+			(alphabetic, text-top, text-bottom, 
+			mathematic, central, hanging, etc.) 
+			and to the line-over and line-under edges, 
+			positioned where they would fall 
+			if the contents of this element consisted entirely 
+			of line boxes filled with text (no sub-elements) 
+			using the first available font. 
+			If the box is paginated, 
+			the line grid is restarted on each page; 
+			since line boxes cannot be fragmented, 
+			no page begins with the bottom part of a line’s grid.
+	</dl>
+
+<p class=issue id=issue-e33d3ed2><a class=self-link href=#issue-e33d3ed2></a>The names of these values is currently up for debate.
+	Current suggestions for <a class=css data-link-type=maybe href=#valdef-line-grid-match-parent title=match-parent>match-parent</a>
+	include <a class=css data-link-type=maybe href=#valdef-line-grid-match-parent title=match-parent>match-parent</a> and <span class=css>normal</span>; 
+	those for <a class=css data-link-type=maybe href=#valdef-line-grid-create title=create>create</a> include <a class=css data-link-type=maybe href=#valdef-line-grid-create title=create>create</a> and <span class=css>new</span>.</p>
+
+	<p class=note>The original proposal for line grids 
+	allowed an element to create a named grid. 
+	This property could still be extended to do this in the future.
+
+<p class=issue id=issue-b69182a1><a class=self-link href=#issue-b69182a1></a><a href=http://www.w3.org/mid/21262.26596.32230.32937@gargle.gargle.HOWL>Håkon points out</a> that
+	there might be a need to have line grids aligned
+	to the page box rather than the page content box.
+	The current proposal has no way to switch between the two.</p>
+
+	<p class=note>There might need to be an offset 
+	for more complicated designs. 
+	How to set this offset is problematic: 
+	usually it’s not a fixed length, 
+	but the distance to clear some header content. 
+	This could be added to a later level of line-grid.
+
+<h2 class="heading settled" data-level=3 id=grid-snapping><span class=secno>3 </span><span class=content>
+Snapping to a Grid</span><a class=self-link href=#grid-snapping></a></h2>
+
+<h3 class="heading settled" data-level=3.1 id=line-snap><span class=secno>3.1 </span><span class=content>
+Snapping Line Boxes: the <a class=property data-link-type=propdesc href=#propdef-line-snap title=line-snap>line-snap</a> property</span><a class=self-link href=#line-snap></a></h3>
+
+<table class="definition propdef"><tr><th>Name:<td><dfn class=css data-dfn-type=property data-export="" id=propdef-line-snap>line-snap<a class=self-link href=#propdef-line-snap></a></dfn><tr><th>Value:<td class=prod>none <a class=prod-punc data-link-type=grammar href=http://dev.w3.org/csswg/css-values-3/#comb-one title=|>|</a> baseline <a class=prod-punc data-link-type=grammar href=http://dev.w3.org/csswg/css-values-3/#comb-one title=|>|</a> contain<tr><th>Initial:<td>none<tr><th>Applies to:<td>all elements<tr><th>Inherited:<td>yes<tr><th>Media:<td>visual<tr><th>Computed value:<td>as specified<tr><th>Percentages:<td>N/A<tr><th>Animatable:<td>no</table>
+
+<p>This property applies to all the line boxes
+	directly contained by the element, 
+	and, when not none, 
+	causes each line box to shift 
+	(usually downward, possibly by zero) 
+	until it snaps to the line grid 
+	specified by <a class=property data-link-type=propdesc href=#propdef-line-grid title=line-grid>line-grid</a>. 
+	(The unshifted position is the position that 
+	would be determined by normal line stacking rules, 
+	with consideration of any new controls 
+	defined by other modules such as <a data-biblio-type=informative data-link-type=biblio href=#biblio-css3line title=CSS3LINE>[CSS3LINE]</a>.) 
+	Shifting line boxes in this way affects layout – 
+	it is not merely a display translation. 
+	If a line box is shifted downward, 
+	then subsequent line boxes will be laid out 
+	using the new shifted position as input 
+	to their line stacking rules.</p>
+
+<p>Values have the following meanings:</p>
+
+	<dl data-dfn-for=line-snap data-dfn-type=value>
+	<dt><dfn class=css data-dfn-for=line-snap data-dfn-type=value data-export="" id=valdef-line-snap-none>none<a class=self-link href=#valdef-line-snap-none></a></dfn>
+		<dd>Line boxes do not snap to the grid; they stack normally.
+	<dt><dfn class=css data-dfn-for=line-snap data-dfn-type=value data-export="" id=valdef-line-snap-baseline>baseline<a class=self-link href=#valdef-line-snap-baseline></a></dfn>
+		<dd>The dominant baseline snaps with the matching baseline on the
+		line grid applying to the element.
+	<dt><dfn class=css data-dfn-for=line-snap data-dfn-type=value data-export="" id=valdef-line-snap-contain>contain<a class=self-link href=#valdef-line-snap-contain></a></dfn>
+		<dd>
+			Two baselines are used to align the line box: 
+			the line box is snapped 
+			so that its <a href=http://dev.w3.org/csswg/css-inline/#central>central</a> baseline 
+			is centered between one 
+			of the line grid’s <a href=http://dev.w3.org/csswg/css-inline/#text-over-edge>text-over-edge</a> baselines 
+			and a subsequent (but not necessarily consecutive) 
+			<a href=http://dev.w3.org/csswg/css-inline/#text-under-edge>text-under-edge</a> baseline.
+	</dl>
+
+<p>In some cases lines of equal line height
+	will not align perfectly to a baseline grid: 
+	this happens, for example, 
+	when fonts (of the same size) 
+	with different baseline tables are mixed on a line. 
+	For this reason, 
+	if shifting the line 
+	by the largest difference 
+	between the smallest ascent and largest ascent 
+	of a single size used on the line 
+	would result in a smaller shift, 
+	then the contents of the line box 
+	are shifted up within the line box 
+	so as to allow the line to snap 
+	without jumping downward 
+	to the next grid line.</p>
+
+	<div class=example>
+
+<p>Line boxes almost always shift downward
+	(towards the block-end direction) 
+	when snapping to a line grid. 
+	Here there are three lines 
+	with 20px line-height 
+	and line-snap:baseline 
+	that should snap to a 30px line grid. 
+	Each line box shifts down 
+	so that the baselines align 
+	with the grid lines.</p>
+
+		<figure style=float:left;>
+			<img alt="line positions before snapping" src=images/simple-no-snap.png>
+			<figcaption>
+				Before line snapping
+			</figcaption>
+		</figure>
+		<figure style=float:left;>
+			<img alt="line positions after snapping" src=images/simple-snapped.png>
+			<figcaption>
+				After line snapping
+			</figcaption>
+		</figure>
+		<p style=clear:left;>
+			In the figures below, 
+			there are two additional lines 
+			from h3 elements with line-snap:none. 
+			These lines do not shift 
+			to align to the grid, 
+			but their positions can change 
+			based on the shifting of lines around them. 
+			In this example, 
+			lines 1 2 and 3 shift down 
+			to snap their baselines to the grid lines, 
+			and line B has normal line box placement 
+			just below the line above.
+		</p>
+		<figure style=float:left;>
+			<img alt="line positions before snapping" src=images/top-no-snap.png>
+			<figcaption>
+				Before line snapping
+			</figcaption>
+		</figure>
+		<figure style=float:left;>
+			<img alt="line positions after snapping" src=images/top-snapped.png>
+			<figcaption>
+				After line snapping
+			</figcaption>
+		</figure>
+	</div>
+
+	<div class=example>
+
+<p>The block containing all of these lines
+		might not be top-aligned within its container. 
+		In the figures below, 
+		the block containing the elements is centered. 
+		In a centered situation, 
+		you have to align baselines 
+		while maintaining centering. 
+		This can be done in two shift-and-center steps.</p>
+
+<p>First, shift the snapping lines
+		as if the block was top-aligned  
+		(as in figure 9 above), 
+		then remove the shift 
+		for the very first snapping line. 
+		After removing the first shift, 
+		try centering the block. 
+		This is almost certain 
+		to throw the baseline alignment off. 
+		You can see one such result 
+		in the partial shifting figure below.</p>
+
+<p>Second, measure the distance
+		from the first snapped line’s baseline 
+		to the grid lines above and below, 
+		looking for the closest grid line 
+		to that baseline.</p>
+
+<p>If the closest grid line
+		is in the block-start direction, 
+		then add space below the last line in the block 
+		equal to twice that distance. 
+		Then the block is centered again, 
+		which will align all of the snapped lines to the grid.</p>
+
+		<figure style=float:left;>
+			<img alt="line positions at step 1" src=images/first-center-part-snapped.png>
+			<figcaption>
+				Partial shifting
+			</figcaption>
+		</figure>
+		<figure style=float:left;>
+			<img alt="line positions after full snapping" src=images/first-center-snapped.png>
+			<figcaption>
+				Full line snapping
+			</figcaption>
+		</figure>
+
+		<p style=clear:left;>
+			If the closest grid line 
+			is in the block-end direction, 
+			then the first snapped line is shifted downward 
+			by twice that distance. 
+			Then the block is centered again, 
+			which will again align all of the snapped lines to the grid.
+		</p>
+		<figure style=float:left;>
+			<img alt="line positions at step 1" src=images/second-center-part-snapped.png>
+			<figcaption>
+				Partial shifting
+			</figcaption>
+		</figure>
+		<figure style=float:left;>
+			<img alt="line positions after full snapping" src=images/second-center-snapped.png>
+			<figcaption>
+				Full line snapping
+			</figcaption>
+		</figure>
+	</div>
+
+	<div class=example>
+
+<p>An end-aligned block also uses two steps,
+		but is simpler than the centered case.</p>
+
+<p>First, shift the snapping lines
+		as if there were no end-alignment  
+		(as in figure 9 above), 
+		then end-align the block.</p>
+
+<p>Second, shift the entire block contents upwards
+		until the last snapped line aligns to a grid line. 
+		In this example, the shift is very minor.</p>
+
+		<figure style=float:left;>
+			<img alt="line positions before snapping" src=images/bottom-no-snap.png>
+			<figcaption>
+				Before snapping
+			</figcaption>
+		</figure>
+		<figure style=float:left;>
+			<img alt="line positions after snapping" src=images/bottom-snapped.png>
+			<figcaption>
+				After line snapping
+			</figcaption>
+		</figure>
+	</div>
+
+<h3 class="heading settled" data-level=3.2 id=box-snap><span class=secno>3.2 </span><span class=content>
+Snapping Block Boxes: the <a class=property data-link-type=propdesc href=#propdef-box-snap title=box-snap>box-snap</a> property</span><a class=self-link href=#box-snap></a></h3>
+
+<p class=issue id=issue-dcdebabc><a class=self-link href=#issue-dcdebabc></a>This is a rough draft of trying to solve
+	the box-snapping problem.</p>
+
+<p class=issue id=issue-85b3937b><a class=self-link href=#issue-85b3937b></a>Some optional box values
+	(margin-box, border-box) 
+	could be added to the before and after values 
+	to allow snapping various box model edges 
+	to the line grid.</p>
+
+<p class=issue id=issue-13c3b0a7><a class=self-link href=#issue-13c3b0a7></a>An auto value could be useful -
+	one that defaults to center, 
+	but snaps to before if it’s the first block in a fragment container, 
+	and snaps to after if it’s the last block in a fragment container.</p>
+
+<table class="definition propdef"><tr><th>Name:<td><dfn class=css data-dfn-type=property data-export="" id=propdef-box-snap>box-snap<a class=self-link href=#propdef-box-snap></a></dfn><tr><th>Value:<td class=prod>none <a class=prod-punc data-link-type=grammar href=http://dev.w3.org/csswg/css-values-3/#comb-one title=|>|</a> block-start <a class=prod-punc data-link-type=grammar href=http://dev.w3.org/csswg/css-values-3/#comb-one title=|>|</a> block-end <a class=prod-punc data-link-type=grammar href=http://dev.w3.org/csswg/css-values-3/#comb-one title=|>|</a> center <a class=prod-punc data-link-type=grammar href=http://dev.w3.org/csswg/css-values-3/#comb-one title=|>|</a> first-baseline <a class=prod-punc data-link-type=grammar href=http://dev.w3.org/csswg/css-values-3/#comb-one title=|>|</a> last-baseline<tr><th>Initial:<td>none<tr><th>Applies to:<td>block-level boxes and internal table elements except table cells<tr><th>Inherited:<td>yes<tr><th>Media:<td>visual<tr><th>Computed value:<td>as specified<tr><th>Percentages:<td>N/A<tr><th>Animatable:<td>no</table>
+
+<p>Specifies how the block is snapped to the baseline grid.</p>
+
+<p>Values have the following meanings:</p>
+
+	<dl data-dfn-for=box-snap data-dfn-type=value>
+	<dt><dfn class=css data-dfn-for=box-snap data-dfn-type=value data-export="" id=valdef-box-snap-none>none<a class=self-link href=#valdef-box-snap-none></a></dfn>
+		<dd>The block is not snapped to any grid.</dd>
+	<dt><dfn class=css data-dfn-for=box-snap data-dfn-type=value data-export="" id=valdef-box-snap-block-start>block-start<a class=self-link href=#valdef-box-snap-block-start></a></dfn>
+		<dd>The block-start edge is snapped to the nearest grid line.
+	<dt><dfn class=css data-dfn-for=box-snap data-dfn-type=value data-export="" id=valdef-box-snap-block-end>block-end<a class=self-link href=#valdef-box-snap-block-end></a></dfn>
+		<dd>The block-end edge is snapped to the nearest grid line.
+	<dt><dfn class=css data-dfn-for=box-snap data-dfn-type=value data-export="" id=valdef-box-snap-center>center<a class=self-link href=#valdef-box-snap-center></a></dfn>
+		<dd>The block is centered centered between
+		one of the baseline grid’s text-over baselines and a subsequent
+		(but not necessarily consecutive) text-under baseline.
+	<dt><dfn class=css data-dfn-for=box-snap data-dfn-type=value data-export="" id=valdef-box-snap-first-baseline>first-baseline<a class=self-link href=#valdef-box-snap-first-baseline></a></dfn>
+		<dd>The first line box’s dominant baseline is snapped to the nearest grid line.
+	<dt><dfn class=css data-dfn-for=box-snap data-dfn-type=value data-export="" id=valdef-box-snap-last-baseline>last-baseline<a class=self-link href=#valdef-box-snap-last-baseline></a></dfn>
+		<dd>The last line box’s dominant baseline is snapped to the nearest grid line.
+	</dl>
+
+<p>When snapping to baselines on a line grid,
+	either the text-over-edge 
+	or text-under-edge baseline is chosen: 
+	whichever one is on the matching side 
+	of the central baseline. 
+	For example, 
+	when snapping the block-start edge 
+	in horizontal writing mode, 
+	the text-over-edge is chosen. 
+	In some cases the text-under-edge  
+	might be used instead for the block-start edge: 
+	for example, 
+	when the writing mode of the line grid 
+	doesn’t match that of the affected element, 
+	or when due to the <a class=property data-link-type=propdesc href=http://www.w3.org/TR/css-writing-modes-3/#propdef-text-orientation title=text-orientation>text-orientation</a> settings 
+	the text-under-edge corresponds to the block-start edge.</p>
+
+<p>To snap a block-level element to a grid line,
+	the effective margin is increased at that edge.
+	If, however, the box is an empty block that could be 
+	<a href=http://www.w3.org/TR/CSS21/box.html>collapsed through</a>, 
+	then this property has no effect. <a data-biblio-type=normative data-link-type=biblio href=#biblio-css21 title=CSS21>[CSS21]</a></p>
+   
+
+<p>When applied to table row group and table row boxes,
+	<a class=property data-link-type=propdesc href=#propdef-box-snap title=box-snap>box-snap</a> only affects the before and after edges, 
+	and only if those edges are not 
+	at the beginning or end of the table, respectively. 
+	To snap a before edge on a table row or row group, 
+	the preceding row’s height is increased. 
+	To snap an after edge on a table row or row group, 
+	the affected row’s height is increased.</p>
+
+<p>When applied to table column group and table column boxes,
+	'box-snap’only affects the start and end edges, 
+	and only if those edges are not 
+	at the start or end of the table, respectively. 
+	How the space is redistributed among columns 
+	to satisfy snapping constraints is not defined, however:
+	<ul>
+		<li>In an auto-sized table no column may be smaller than its minimum content width.
+		<li>The resulting table must not exceed its original measure if it had a non-auto measure.
+		<li>The adjusted widths must not cause the table to overflow its containing block any more than it would with <a class=css data-link-type=propdesc href=#propdef-box-snap title=box-snap>box-snap: none</a>.
+	</ul><p></p>
+
+<p>To satisfy these constraints, some column edges may remain unsnapped.</p>
+
+
+
+
+
+<h2 class="no-num heading settled" id=acknowledgments><span class=content>Acknowledgments</span><a class=self-link href=#acknowledgments></a></h2>
+
+<p>This module was made possible by the advice and contributions of
+	Dave Cramer, 
+	Dave Hyatt, 
+	Bem Jones-Bey, 
+	and the CSS Working Group members.</p>
+
+<h2 class="no-num heading settled" id=change-log><span class=content>
+Change Log</span><a class=self-link href=#change-log></a></h2>
+
+<h3 class="no-num heading settled" id=20140403><span class=content>
+Since <a href=http://www.w3.org/TR/2014/WD-css-line-grid-1-20140403/>April 3rd 2014</a></span><a class=self-link href=#20140403></a></h3>
+	<ul>
+		<li>Added line-snapping examples</li>
+		<li>Modified box-snap values</li>
+		<li>Removed line-slack</li>
+		<li>Removed grid offset</li>
+		<li>Removed grid units</li>
+		<li>Removed 2d box snapping</li>
+		<li>Removed rounding functions</li>
+	</ul>
+<h2 class="no-ref no-num heading settled" id=conformance><span class=content>
+Conformance</span><a class=self-link href=#conformance></a></h2>
+
+<h3 class="no-ref heading settled" id=conventions><span class=content>
+Document conventions</span><a class=self-link href=#conventions></a></h3>
+
+    <p>Conformance requirements are expressed with a combination of
+    descriptive assertions and RFC 2119 terminology. The key words "MUST",
+    "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "SHOULD NOT",
+    "RECOMMENDED", "MAY", and "OPTIONAL" in the normative parts of this
+    document are to be interpreted as described in RFC 2119.
+    However, for readability, these words do not appear in all uppercase
+    letters in this specification.
+
+    <p>All of the text of this specification is normative except sections
+    explicitly marked as non-normative, examples, and notes. <a data-biblio-type=normative data-link-type=biblio href=#biblio-rfc2119 title=RFC2119>[RFC2119]</a></p>
+
+    <p>Examples in this specification are introduced with the words "for example"
+    or are set apart from the normative text with <code>class="example"</code>,
+    like this:
+
+    <div class=example>
+        <p>This is an example of an informative example.</p>
+    </div>
+
+    <p>Informative notes begin with the word "Note" and are set apart from the
+    normative text with <code>class="note"</code>, like this:
+
+    <p class=note>Note, this is an informative note.</p>
+
+    <p>Advisements are normative sections styled to evoke special attention and are
+    set apart from other normative text with <code>&lt;strong class="advisement"&gt;</code>, like
+    this:
+
+    <strong class=advisement>
+        UAs MUST provide an accessible alternative.
+    </strong>
+
+<h3 class="no-ref heading settled" id=conformance-classes><span class=content>
+Conformance classes</span><a class=self-link href=#conformance-classes></a></h3>
+
+    <p>Conformance to this specification
+    is defined for three conformance classes:
+    <dl>
+        <dt>style sheet
+            <dd>A <a href=http://www.w3.org/TR/CSS21/conform.html#style-sheet>CSS
+            style sheet</a>.
+        <dt>renderer
+            <dd>A <a href=http://www.w3.org/TR/CSS21/conform.html#user-agent>UA</a>
+            that interprets the semantics of a style sheet and renders
+            documents that use them.
+        <dt>authoring tool
+            <dd>A <a href=http://www.w3.org/TR/CSS21/conform.html#user-agent>UA</a>
+            that writes a style sheet.
+    </dl>
+
+    <p>A style sheet is conformant to this specification
+    if all of its statements that use syntax defined in this module are valid
+    according to the generic CSS grammar and the individual grammars of each
+    feature defined in this module.
+
+    <p>A renderer is conformant to this specification
+    if, in addition to interpreting the style sheet as defined by the
+    appropriate specifications, it supports all the features defined
+    by this specification by parsing them correctly
+    and rendering the document accordingly. However, the inability of a
+    UA to correctly render a document due to limitations of the device
+    does not make the UA non-conformant. (For example, a UA is not
+    required to render color on a monochrome monitor.)
+
+    <p>An authoring tool is conformant to this specification
+    if it writes style sheets that are syntactically correct according to the
+    generic CSS grammar and the individual grammars of each feature in
+    this module, and meet all other conformance requirements of style sheets
+    as described in this module.
+
+<h3 class="no-ref heading settled" id=partial><span class=content>
+Partial implementations</span><a class=self-link href=#partial></a></h3>
+
+    <p>So that authors can exploit the forward-compatible parsing rules to
+    assign fallback values, CSS renderers <strong>must</strong>
+    treat as invalid (and <a href=http://www.w3.org/TR/CSS21/conform.html#ignore>ignore
+    as appropriate</a>) any at-rules, properties, property values, keywords,
+    and other syntactic constructs for which they have no usable level of
+    support. In particular, user agents <strong>must not</strong> selectively
+    ignore unsupported component values and honor supported values in a single
+    multi-value property declaration: if any value is considered invalid
+    (as unsupported values must be), CSS requires that the entire declaration
+    be ignored.</p>
+
+<h3 class="no-ref heading settled" id=experimental><span class=content>
+Experimental implementations</span><a class=self-link href=#experimental></a></h3>
+
+    <p>To avoid clashes with future CSS features, the CSS2.1 specification
+    reserves a <a href=http://www.w3.org/TR/CSS21/syndata.html#vendor-keywords>prefixed
+    syntax</a> for proprietary and experimental extensions to CSS.
+
+    <p>Prior to a specification reaching the Candidate Recommendation stage
+    in the W3C process, all implementations of a CSS feature are considered
+    experimental. The CSS Working Group recommends that implementations
+    use a vendor-prefixed syntax for such features, including those in
+    W3C Working Drafts. This avoids incompatibilities with future changes
+    in the draft.
+    </p>
+
+<h3 class="no-ref heading settled" id=testing><span class=content>
+Non-experimental implementations</span><a class=self-link href=#testing></a></h3>
+
+    <p>Once a specification reaches the Candidate Recommendation stage,
+    non-experimental implementations are possible, and implementors should
+    release an unprefixed implementation of any CR-level feature they
+    can demonstrate to be correctly implemented according to spec.
+
+    <p>To establish and maintain the interoperability of CSS across
+    implementations, the CSS Working Group requests that non-experimental
+    CSS renderers submit an implementation report (and, if necessary, the
+    testcases used for that implementation report) to the W3C before
+    releasing an unprefixed implementation of any CSS features. Testcases
+    submitted to W3C are subject to review and correction by the CSS
+    Working Group.
+
+    <p>Further information on submitting testcases and implementation reports
+    can be found from on the CSS Working Group’s website at
+    <a href=http://www.w3.org/Style/CSS/Test/>http://www.w3.org/Style/CSS/Test/</a>.
+    Questions should be directed to the
+    <a href=http://lists.w3.org/Archives/Public/public-css-testsuite>public-css-testsuite@w3.org</a>
+    mailing list.
+
+<h2 class="no-num no-ref heading settled" id=references><span class=content>
+References</span><a class=self-link href=#references></a></h2>
+
+<h3 class="no-num no-ref heading settled" id=normative><span class=content>
+Normative References</span><a class=self-link href=#normative></a></h3>
+<div data-fill-with=normative-references><dl>
+<dt id=biblio-css21 title=CSS21><a class=self-link href=#biblio-css21></a>[CSS21]<dd>Bert Bos; et al. <a href=http://www.w3.org/TR/2011/REC-CSS2-20110607>Cascading Style Sheets Level 2 Revision 1 (CSS 2.1) Specification</a>. 7 June 2011. W3C Recommendation. URL: <a href=http://www.w3.org/TR/2011/REC-CSS2-20110607>http://www.w3.org/TR/2011/REC-CSS2-20110607</a></dd>
+<dt id=biblio-rfc2119 title=RFC2119><a class=self-link href=#biblio-rfc2119></a>[RFC2119]<dd>S. Bradner. <a href=http://www.ietf.org/rfc/rfc2119.txt>Key words for use in RFCs to Indicate Requirement Levels</a>. URL: <a href=http://www.ietf.org/rfc/rfc2119.txt>http://www.ietf.org/rfc/rfc2119.txt</a></dd>
+</dl></div>
+
+<h3 class="no-num no-ref heading settled" id=informative><span class=content>
+Informative References</span><a class=self-link href=#informative></a></h3>
+<div data-fill-with=informative-references><dl>
+<dt id=biblio-css3color title=CSS3COLOR><a class=self-link href=#biblio-css3color></a>[CSS3COLOR]<dd>Tantek Çelik; Chris Lilley; L. David Baron. <a href=http://www.w3.org/TR/2011/REC-css3-color-20110607>CSS Color Module Level 3</a>. 7 June 2011. W3C Recommendation. URL: <a href=http://www.w3.org/TR/2011/REC-css3-color-20110607>http://www.w3.org/TR/2011/REC-css3-color-20110607</a></dd>
+<dt id=biblio-css3line title=CSS3LINE><a class=self-link href=#biblio-css3line></a>[CSS3LINE]<dd>Michel Suignard; Eric A. Meyer. <a href=http://www.w3.org/TR/2002/WD-css3-linebox-20020515>CSS3 module: line</a>. 15 May 2002. W3C Working Draft. (Work in progress.) URL: <a href=http://www.w3.org/TR/2002/WD-css3-linebox-20020515>http://www.w3.org/TR/2002/WD-css3-linebox-20020515</a></dd>
+<dt id=biblio-jlreq title=JLREQ><a class=self-link href=#biblio-jlreq></a>[JLREQ]<dd>Yasuhiro Anan; et al. <a href=http://www.w3.org/TR/2012/NOTE-jlreq-20120403/>Requirements for Japanese Text Layout</a>. 3 April 2012. W3C Working Group Note. URL: <a href=http://www.w3.org/TR/2012/NOTE-jlreq-20120403/>http://www.w3.org/TR/2012/NOTE-jlreq-20120403/</a></dd>
+</dl></div>
+
+<h2 class="no-num no-ref heading settled" id=index><span class=content>
+Index</span><a class=self-link href=#index></a></h2>
+<div data-fill-with=index><ul class=indexlist>
+<li>baseline, <a href=#valdef-line-snap-baseline title="section 3.1">3.1</a>
+<li>block-end, <a href=#valdef-box-snap-block-end title="section 3.2">3.2</a>
+<li>block-start, <a href=#valdef-box-snap-block-start title="section 3.2">3.2</a>
+<li>box-snap, <a href=#propdef-box-snap title="section 3.2">3.2</a>
+<li>center, <a href=#valdef-box-snap-center title="section 3.2">3.2</a>
+<li>contain, <a href=#valdef-line-snap-contain title="section 3.1">3.1</a>
+<li>create, <a href=#valdef-line-grid-create title="section 2">2</a>
+<li>first-baseline, <a href=#valdef-box-snap-first-baseline title="section 3.2">3.2</a>
+<li>last-baseline, <a href=#valdef-box-snap-last-baseline title="section 3.2">3.2</a>
+<li>line-grid, <a href=#propdef-line-grid title="section 2">2</a>
+<li>line-snap, <a href=#propdef-line-snap title="section 3.1">3.1</a>
+<li>match-parent, <a href=#valdef-line-grid-match-parent title="section 2">2</a>
+<li>none<ul><li>value for line-snap, <a href=#valdef-line-snap-none title="section 3.1">3.1</a>
+<li>value for box-snap, <a href=#valdef-box-snap-none title="section 3.2">3.2</a>
+</ul></ul></div>
+
+<h2 class="no-num no-ref heading settled" id=property-index><span class=content>
+Property index</span><a class=self-link href=#property-index></a></h2>
+<div data-fill-with=property-index><table class="proptable data"><thead><tr><th scope=col>Name<th scope=col>Value<th scope=col>Initial<th scope=col>Applies to<th scope=col>Inh.<th scope=col>%ages<th scope=col>Media<th scope=col>Animatable<th scope=col>Computed value<tbody>
+<tr><th scope=row><a class=css data-link-type=property href=#propdef-line-grid title=line-grid>line-grid</a><td>match-parent | create<td>match-parent<td>block containers<td>no<td>N/A<td>visual<td>no<td>as specified
+<tr><th scope=row><a class=css data-link-type=property href=#propdef-line-snap title=line-snap>line-snap</a><td>none | baseline | contain<td>none<td>all elements<td>yes<td>N/A<td>visual<td>no<td>as specified
+<tr><th scope=row><a class=css data-link-type=property href=#propdef-box-snap title=box-snap>box-snap</a><td>none | block-start | block-end | center | first-baseline | last-baseline<td>none<td>block-level boxes and internal table elements except table cells<td>yes<td>N/A<td>visual<td>no<td>as specified</table></div>
+
+
+<h2 class="no-num heading settled" id=issues-index><span class=content>Issues Index</span><a class=self-link href=#issues-index></a></h2><div style="counter-reset: issue"><div class=issue>The names of these values is currently up for debate.
+	Current suggestions for <a class=css data-link-type=maybe href=#valdef-line-grid-match-parent title=match-parent>match-parent</a>
+	include <a class=css data-link-type=maybe href=#valdef-line-grid-match-parent title=match-parent>match-parent</a> and <span class=css>normal</span>; 
+	those for <a class=css data-link-type=maybe href=#valdef-line-grid-create title=create>create</a> include <a class=css data-link-type=maybe href=#valdef-line-grid-create title=create>create</a> and <span class=css>new</span>.<a href=#issue-e33d3ed2> ↵ </a></div><div class=issue><a href=http://www.w3.org/mid/21262.26596.32230.32937@gargle.gargle.HOWL>Håkon points out</a> that
+	there might be a need to have line grids aligned
+	to the page box rather than the page content box.
+	The current proposal has no way to switch between the two.<a href=#issue-b69182a1> ↵ </a></div><div class=issue>This is a rough draft of trying to solve
+	the box-snapping problem.<a href=#issue-dcdebabc> ↵ </a></div><div class=issue>Some optional box values
+	(margin-box, border-box) 
+	could be added to the before and after values 
+	to allow snapping various box model edges 
+	to the line grid.<a href=#issue-85b3937b> ↵ </a></div><div class=issue>An auto value could be useful -
+	one that defaults to center, 
+	but snaps to before if it’s the first block in a fragment container, 
+	and snaps to after if it’s the last block in a fragment container.<a href=#issue-13c3b0a7> ↵ </a></div></div>

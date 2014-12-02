@@ -1,0 +1,279 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>Mailing List FAQ - W3C</title><link rel="stylesheet" href="/2008/site/css/minimum" type="text/css" media="handheld, all" /><style type="text/css" media="print, screen and (min-width: 481px)" xml:space="preserve">
+     @import url("/2008/site/css/advanced");
+</style><link href="/2008/site/css/minimum" rel="stylesheet" type="text/css" media="handheld, only screen and (max-device-width: 480px)" /><meta name="viewport" content="width=device-width" /><link rel="stylesheet" href="/2008/site/css/print" type="text/css" media="print" /><link rel="shortcut icon" href="/2008/site/images/favicon.ico" type="image/x-icon" /></head><body id="www-w3-org" class="w3c_public"><div id="w3c_container">
+    
+
+         <div id="w3c_mast">
+            <h1 class="logo">
+               <a tabindex="2" accesskey="1" href="/"><img src="/2008/site/images/logo-w3c-mobile-lg" width="90" height="53" alt="W3C" /></a>
+               <span class="alt-logo">W3C</span>
+            </h1>
+            <div id="w3c_nav">
+               
+		
+		             
+               <form action="/Help/search" method="get" enctype="application/x-www-form-urlencoded"><div class="w3c_sec_nav"><!-- --></div><ul class="main_nav"><li class="first-item">
+                        <a href="/standards/">Standards</a>
+                     </li><li>
+                        <a href="/participate/">Participate</a>
+                     </li><li>
+                        <a href="/Consortium/membership">Membership</a>
+                     </li><li class="last-item">
+                        <a href="/Consortium/">About W3C</a>
+                     </li><li class="search-item">
+                        <div id="search-form">
+                           <input tabindex="3" class="text" name="q" value="" title="Search" type="text" />
+                           <button id="search-submit" name="search-submit" type="submit"><img class="submit" src="/2008/site/images/search-button" alt="Search" width="21" height="17" /></button>
+                        </div>
+                     </li></ul></form>
+               
+            </div> 
+            
+         </div> 
+ 
+         
+
+         <div id="w3c_main">
+            <div id="w3c_logo_shadow" class="w3c_leftCol">
+               <img height="32" alt="" src="/2008/site/images/logo-shadow" />
+            </div>
+            
+            <div class="w3c_leftCol"><h2 class="offscreen">Site Navigation</h2>
+    <h3 class="category"><span class="ribbon"><a href="/Mail/" title="Up to Mailing Lists">Mailing Lists <img src="/2008/site/images/header-link" alt="Header link" width="13" height="13" class="header-link" /></a></span></h3>
+       <ul class="theme">
+        <li><a class="current">FAQ</a></li>
+        <li><a href="/Mail/subject-tagging.html">On Subject Tagging</a></li>
+        <li><a href="/Mail/ArchiveEditingPolicy.html">Archive Editing Policy</a></li>
+        <li><a href="/Mail/Request.html">Managing Mailing List Subscriptions</a></li>
+        <li><a href="/2002/03/email_attachment_formats.html">Guidelines for Attachments</a></li>
+        <li><a href="/Mail/spf/">Email Forgery Prevention Using SPF</a></li>
+       </ul>
+       <br /></div>
+            <div class="w3c_mainCol">
+               <div id="w3c_crumbs">
+       <div id="w3c_crumbs_frame">
+        <ul class="bct"> <!-- .bct / Breadcrumbs -->
+          <li class="skip"><a tabindex="1" accesskey="2" title="Skip to content (e.g., when browsing via audio)" href="#w3c_content_body">Skip</a></li>
+          <li><a href="/">W3C</a> <span class="cr">»</span> </li>
+          <li><a href="/participate/">Participate</a> <span class="cr">»</span> </li>
+          <li><a href="/participate/discussion.html">Mail, News, Blogs, Podcasts, and…</a> <span class="cr">»</span> </li>
+          <li><a href="/Mail/">Mailing Lists</a> <span class="cr">»</span> </li>
+          <li class="current">FAQ</li>
+        </ul>            
+     </div>
+    </div>
+               <h1 class="title">FAQ</h1>
+               <div id="w3c_content_body">
+                  <div class="line">
+
+	                    <p>
+                        <a href="#general">General</a>
+                     </p>
+
+	                    <ol class="show_items"><li>
+	                          <a href="#remove">Can I have my email removed from a public list archive? </a>
+	                       </li><li>
+	                          <a href="#w3cspam">Is W3C sending me spam? </a>
+	                       </li><li>
+	                          <a href="#prefix">Can you modify a subject line automatically to add a list-specific prefix?</a>
+                        </li></ol>
+
+	                    <p>
+                        <a href="#aa">Archive Approval System</a>
+                     </p>
+
+	                    <ol class="show_items"><li>
+                           <a href="#whatthe">What is this approval system for?</a>
+                        </li><li>
+                           <a href="#confused">Why are you sending me mail? I did not send you anything.</a>
+                        </li><li>
+                           <a href="#accept">How does this system interact with smartlist's accept lists?</a>
+                        </li><li>
+                           <a href="#x-no-archive">Do you honor the X-No-Archive message header? Why not?</a>
+                        </li><li>
+                           <a href="#feeback">Where can I send feedback on this system?</a>
+                        </li></ol>
+
+	                    <h2 id="general">General</h2>
+
+
+	                    <div class="w3c_faqs">
+	                       <div class="w3c_faq_entry">
+	                          <h2 id="remove">Can I have my email removed from a public list archive? </h2>
+
+	                          <p>In general, no. See the <a href="ArchiveEditingPolicy">archive editing policy</a> for details.</p>
+	                       </div>
+
+	                       <div class="w3c_faq_entry">
+	                          <h2 id="w3cspam">Is W3C sending me spam?</h2>
+
+	                          <p>No. W3C is not a spammer. See our
+				  <a href="/Help/Webmaster.html#spam">Webmaster FAQ</a> for more information.</p>
+	                       </div>
+
+	                       <div class="w3c_faq_entry">
+	                          <h2 id="prefix">Can you modify a subject line automatically to add a list-specific prefix?</h2>
+
+	                          <p>No; see more about why W3C does not do
+	      <a href="subject-tagging">subject tagging</a> in its lists.</p>
+	      
+	                       </div>
+	                    </div>
+
+	                    <h2 id="aa">Archive Approval System</h2>
+
+	                    <div class="w3c_faqs">
+
+	                       <div class="w3c_faq_entry">
+	                          <h2 id="whatthe">What is this approval system for?</h2>
+
+	                          <p>In the past we have had problems with people sending mail to one of
+  our <a href="http://lists.w3.org/">archived mailing lists</a> and then
+  being surprised to learn that their message ended up in a public archive.</p>
+
+                           <p>
+  We have hundreds of archived lists and although we try to be clear about
+  the purpose of a list whenever we refer to it, we can not control how others refer
+  to our lists.  Therefore there is always the possibility that someone will send a
+  message to our lists without knowing it will be archived on our Web site.
+</p>
+
+                           <p>
+  This system takes care of that problem by requiring explicit approval
+  from each poster before allowing their message to be distributed to the
+  list. For the vast majority of posters who do not mind having their
+  messages available in our Web archives, there is an option to approve any
+  future messages they may send to W3C mailing lists as well.
+</p>
+
+                           <p>
+  A nice side effect of this system is that it helps to reduce spam on our
+  lists, since spammers generally do not read the replies they receive
+  (and many or most of the return addresses they use are bogus anyway.)
+</p>
+
+	                       </div>
+
+	                       <div class="w3c_faq_entry">
+	                          <h2 id="confused">Why are you sending me mail? I did not send you anything.</h2>
+
+                           <p>
+  If you received a notification message from us but did not send us a
+  message, someone else may have forged a message with your email address
+  as the sender. You can find out where the message originated by looking
+  at the Received: headers of the message. (note that the only such header
+  that can be trusted to be accurate is the one that shows when/where it
+  entered our email systems.)
+</p>
+
+                           <p>
+  If you are interested in preventing email forgeries claiming to be from
+  your site, you may want to consider <a href="../../../Mail/spf/">publishing SPF records for your domain(s)</a>.
+  W3C's mail servers automatically reject forgeries for domains that have
+  published SPF records.
+</p>
+	                       </div>
+
+	                       <div class="w3c_faq_entry">
+	                          <h2 id="accept">How does this system interact with smartlist's accept lists?</h2>
+                           <p>
+  If you are familiar with our mailing list system, you may wonder how this
+  archive approval system interacts with the existing "accept lists", which
+  are the lists of email addresses that are allowed to post to each list.
+</p>
+
+                           <p>
+  There is no interaction between these two mechanisms. The people who were
+  on the accept lists before this system was deployed have never explicitly
+  given us permission to archive their messages on our site, so they will
+  need to go through this archive approval step at least once along with
+  everyone else.
+</p>
+	                       </div>
+
+	                       <div class="w3c_faq_entry">
+	                          <h2 id="x-no-archive">Do you honor the X-No-Archive message header? Why not?</h2>
+
+                           <p>
+  We do not honor the <code>X-No-Archive</code> message header, nor do we
+  plan to. All messages distributed to W3C's mailing lists are archived on
+  our site; this is a requirement of participation on our lists.
+</p>
+
+                           <p>
+  The intent of this system is to notify people that if they participate in
+  our lists their messages are archived, not to allow them to participate
+  without archiving.
+</p>
+
+	                       </div>
+
+
+	                       <div class="w3c_faq_entry">
+	                          <h2 id="feedback">Where can  I send feedback on this system?</h2>
+
+                           <p>
+  Please send any feedback on this system to <a href="mailto:archive-approval-comments@w3.org?Subject=archive%20approval%20system%3a%20">archive-approval-comments</a>.
+</p>
+
+	                       </div>
+
+	                    </div>
+	                 </div>
+               </div>
+            </div>
+         </div>
+         
+         
+         
+      </div><div id="w3c_footer">
+         <div id="w3c_footer-inner">
+            <h2 class="offscreen">Footer Navigation</h2>
+            <div class="w3c_footer-nav">
+               <h3>Navigation</h3>
+               <ul class="footer_top_nav"><li>
+                     <a href="/">Home</a>
+                  </li><li>
+                     <a href="/standards/">Standards</a>
+                  </li><li>
+                     <a href="/participate/">Participate</a>
+                  </li><li>
+                     <a href="/Consortium/membership">Membership</a>
+                  </li><li class="last-item">
+                     <a href="/Consortium/">About W3C</a>
+                  </li></ul>
+            </div>
+            <div class="w3c_footer-nav">
+               <h3>Contact W3C</h3>
+               <ul class="footer_bottom_nav"><li>
+                     <a href="/Consortium/contact">Contact</a>
+                  </li><li>
+                     <a accesskey="0" href="/Help/">Help and FAQ</a>
+                  </li><li>
+                     <a href="/Consortium/sponsor/">Sponsor / Donate</a>
+                  </li><li>
+                     <a href="/Consortium/siteindex">Site Map</a>
+                  </li><li>
+                     <address id="w3c_signature">
+                        <a href="http://lists.w3.org/Archives/Public/site-comments/">Feedback</a></address>
+                  </li></ul>
+            </div>
+            <div class="w3c_footer-nav">
+               <h3>W3C Updates</h3>
+               <ul class="footer_follow_nav"><li>
+                     <a href="http://twitter.com/W3C" title="Follow W3C on Twitter">
+                        <img src="/2008/site/images/twitter-bird" alt="Twitter" width="78" height="83" class="social-icon" />
+                     </a>
+                     
+                  </li></ul>
+            </div>
+            <p class="copyright">Copyright © 2012 W3C <sup>®</sup> (<a href="http://www.csail.mit.edu/">
+                  <acronym title="Massachusetts Institute of Technology">MIT</acronym>
+               </a>, <a href="http://www.ercim.org/">
+                  <acronym title="European Research Consortium for Informatics and Mathematics"> ERCIM</acronym>
+               </a>, <a href="http://www.keio.ac.jp/">Keio</a>, <a href="http://ev.buaa.edu.cn/">Beihang</a>) <a href="/Consortium/Legal/ipr-notice">Usage policies apply</a>.</p>
+         </div>
+      </div><!-- Generated from data/scripts.php, ../../smarty/{scripts.tpl} --><!-- At the bottom for performance reasons --><div id="w3c_scripts">
+         <script type="text/javascript" src="/2008/site/js/main" xml:space="preserve"><!-- --></script>
+      </div></body></html>

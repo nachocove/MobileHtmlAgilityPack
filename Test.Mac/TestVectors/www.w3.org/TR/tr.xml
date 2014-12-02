@@ -1,0 +1,468 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>W3C News &#187; Publication</title>
+	<atom:link href="http://www.w3.org/blog/news/archives/category/publication/feed" rel="self" type="application/rss+xml" />
+	<link>http://www.w3.org/blog/news</link>
+	<description>Leading the Web to its Full Potential</description>
+	<lastBuildDate>Tue, 25 Nov 2014 15:39:08 +0000</lastBuildDate>
+	<language>en-US</language>
+		<sy:updatePeriod>hourly</sy:updatePeriod>
+		<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>http://wordpress.org/?v=4.0.1</generator>
+	<item>
+		<title>W3C Invites Implementations of Geometry Interfaces Module Level 1</title>
+		<link>http://www.w3.org/blog/news/archives/4202</link>
+		<comments>http://www.w3.org/blog/news/archives/4202#comments</comments>
+		<pubDate>Tue, 25 Nov 2014 15:39:08 +0000</pubDate>
+		<dc:creator><![CDATA[Coralie Mercier]]></dc:creator>
+				<category><![CDATA[Home Page Stories]]></category>
+		<category><![CDATA[Publication]]></category>
+		<category><![CDATA[Web Design and Applications]]></category>
+
+		<guid isPermaLink="false">http://www.w3.org/blog/news/?p=4202</guid>
+		<description><![CDATA[The CSS Working Group and the SVG Working Group invite implementations of the Candidate Recommendation of Geometry Interfaces Module Level 1. This specification provides basic geometric interfaces to represent points, rectangles, quadrilaterals and transformation matrices that can be used by other modules or specifications. Learn more about the Style Activity and the Graphics Activity.]]></description>
+				<content:encoded><![CDATA[<p>The <a href="http://www.w3.org/Style/CSS/members">CSS Working Group</a> and the <a href="http://www.w3.org/Graphics/SVG/WG/">SVG Working Group</a> invite implementations of the Candidate Recommendation of <a href="http://www.w3.org/TR/2014/CR-geometry-1-20141125/">Geometry Interfaces Module Level 1</a>. This specification provides basic geometric interfaces to represent points, rectangles, quadrilaterals and transformation matrices that can be used by other modules or specifications. Learn more about the <a href="http://www.w3.org/Style/">Style Activity</a> and the <a href="http://www.w3.org/Graphics/">Graphics Activity</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>http://www.w3.org/blog/news/archives/4202/feed</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>Filter Effects Module Level 1 Draft Published</title>
+		<link>http://www.w3.org/blog/news/archives/4204</link>
+		<comments>http://www.w3.org/blog/news/archives/4204#comments</comments>
+		<pubDate>Tue, 25 Nov 2014 15:20:23 +0000</pubDate>
+		<dc:creator><![CDATA[Coralie Mercier]]></dc:creator>
+				<category><![CDATA[Home Page Stories]]></category>
+		<category><![CDATA[Publication]]></category>
+		<category><![CDATA[Web Design and Applications]]></category>
+
+		<guid isPermaLink="false">http://www.w3.org/blog/news/?p=4204</guid>
+		<description><![CDATA[The CSS Working Group and the SVG Working Group have published a Working Draft of Filter Effects Module Level 1. Filter effects are a way of processing an element’s rendering before it is displayed in the document. Typically, rendering an element via CSS or SVG can conceptually be described as if the element, including its [&#8230;]]]></description>
+				<content:encoded><![CDATA[<p>The <a href="http://www.w3.org/Style/CSS/members">CSS Working Group</a> and the <a href="http://www.w3.org/Graphics/SVG/WG/">SVG Working Group</a> have published a Working Draft of <a href="http://www.w3.org/TR/2014/WD-filter-effects-1-20141125/">Filter Effects Module Level 1</a>. Filter effects are a way of processing an element’s rendering before it is displayed in the document. Typically, rendering an element via CSS or SVG can conceptually be described as if the element, including its children, are drawn into a buffer (such as a raster image) and then that buffer is composited into the elements parent. Filters apply an effect before the compositing stage. Examples of such effects are blurring, changing color intensity and warping the image. Although originally designed for use in SVG, filter effects are a set of operations to apply on an image buffer and therefore can be applied to nearly any presentational environment, including CSS. They are triggered by a style instruction (the filter property). This specification describes filters in a manner that allows them to be used in content styled by CSS, such as HTML and SVG. It also defines a CSS property value function that produces a CSS  value. Learn more about the <a href="http://www.w3.org/Style/">Style Activity</a> and the <a href="http://www.w3.org/Graphics/">Graphics Activity</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>http://www.w3.org/blog/news/archives/4204/feed</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>Tracking Compliance and Scope Draft Published</title>
+		<link>http://www.w3.org/blog/news/archives/4200</link>
+		<comments>http://www.w3.org/blog/news/archives/4200#comments</comments>
+		<pubDate>Tue, 25 Nov 2014 15:00:34 +0000</pubDate>
+		<dc:creator><![CDATA[Coralie Mercier]]></dc:creator>
+				<category><![CDATA[Home Page Stories]]></category>
+		<category><![CDATA[Publication]]></category>
+		<category><![CDATA[Web Design and Applications]]></category>
+		<category><![CDATA[Web of Services]]></category>
+
+		<guid isPermaLink="false">http://www.w3.org/blog/news/?p=4200</guid>
+		<description><![CDATA[The Tracking Protection Working Group has published a Working Draft of Tracking Compliance and Scope. This specification defines the meaning of a Do Not Track (DNT) preference and sets out practices for websites to comply with this preference. Learn more about the Privacy Activity.]]></description>
+				<content:encoded><![CDATA[<p>The <a href="http://www.w3.org/2011/tracking-protection/">Tracking Protection Working Group</a> has published a Working Draft of <a href="http://www.w3.org/TR/2014/WD-tracking-compliance-20141125/">Tracking Compliance and Scope</a>. This specification defines the meaning of a Do Not Track (DNT) preference and sets out practices for websites to comply with this preference. Learn more about the <a href="http://www.w3.org/Privacy/">Privacy Activity</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>http://www.w3.org/blog/news/archives/4200/feed</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>Call for Review: Indexed Database API Proposed Recommendation Published</title>
+		<link>http://www.w3.org/blog/news/archives/4194</link>
+		<comments>http://www.w3.org/blog/news/archives/4194#comments</comments>
+		<pubDate>Thu, 20 Nov 2014 11:08:47 +0000</pubDate>
+		<dc:creator><![CDATA[Coralie Mercier]]></dc:creator>
+				<category><![CDATA[Home Page Stories]]></category>
+		<category><![CDATA[Publication]]></category>
+		<category><![CDATA[Web Design and Applications]]></category>
+
+		<guid isPermaLink="false">http://www.w3.org/blog/news/?p=4194</guid>
+		<description><![CDATA[The Web Applications Working Group has published a Proposed Recommendation of Indexed Database API. This document defines APIs for a database of records holding simple values and hierarchical objects. Each record consists of a key and some value. Moreover, the database maintains indexes over records it stores. An application developer directly uses an API to [&#8230;]]]></description>
+				<content:encoded><![CDATA[<p>The <a href="http://www.w3.org/2008/webapps/">Web Applications Working Group</a> has published a Proposed Recommendation of <a href="http://www.w3.org/TR/2014/PR-IndexedDB-20141120/">Indexed Database API</a>. This document defines APIs for a database of records holding simple values and hierarchical objects. Each record consists of a key and some value. Moreover, the database maintains indexes over records it stores. An application developer directly uses an API to locate records either by their key or by using an index. A query language can be layered on this API. An indexed database can be implemented using a persistent B-tree data structure. Comments are welcome through <strong>18 December</strong>. Learn more about the <a href="http://www.w3.org/2006/rwc/">Rich Web Client Activity</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>http://www.w3.org/blog/news/archives/4194/feed</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>Service Workers Draft Published</title>
+		<link>http://www.w3.org/blog/news/archives/4190</link>
+		<comments>http://www.w3.org/blog/news/archives/4190#comments</comments>
+		<pubDate>Tue, 18 Nov 2014 17:59:32 +0000</pubDate>
+		<dc:creator><![CDATA[Coralie Mercier]]></dc:creator>
+				<category><![CDATA[Home Page Stories]]></category>
+		<category><![CDATA[Publication]]></category>
+		<category><![CDATA[Web Design and Applications]]></category>
+
+		<guid isPermaLink="false">http://www.w3.org/blog/news/?p=4190</guid>
+		<description><![CDATA[The Web Applications Working Group has published a Working Draft of Service Workers. This specification describes a method that enables applications to take advantage of persistent background processing, including hooks to enable bootstrapping of web applications while offline. The core of this system is an event-driven Web Worker, which responds to events dispatched from documents [&#8230;]]]></description>
+				<content:encoded><![CDATA[<p>The <a href="http://www.w3.org/2008/webapps/">Web Applications Working Group</a> has published a Working Draft of <a href="http://www.w3.org/TR/2014/WD-service-workers-20141118/">Service Workers</a>. This specification describes a method that enables applications to take advantage of persistent background processing, including hooks to enable bootstrapping of web applications while offline. The core of this system is an event-driven Web Worker, which responds to events dispatched from documents and other sources. A system for managing installation, versions, and upgrades is provided. The service worker is a generic entry point for event-driven background processing in the Web Platform that is extensible by other specifications. Learn more about the <a href="http://www.w3.org/2006/rwc/">Rich Web Client Activity</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>http://www.w3.org/blog/news/archives/4190/feed</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>Last Call: Pointer Events</title>
+		<link>http://www.w3.org/blog/news/archives/4185</link>
+		<comments>http://www.w3.org/blog/news/archives/4185#comments</comments>
+		<pubDate>Thu, 13 Nov 2014 17:40:09 +0000</pubDate>
+		<dc:creator><![CDATA[Coralie Mercier]]></dc:creator>
+				<category><![CDATA[Publication]]></category>
+		<category><![CDATA[Web Design and Applications]]></category>
+		<category><![CDATA[Web of Devices]]></category>
+
+		<guid isPermaLink="false">http://www.w3.org/blog/news/?p=4185</guid>
+		<description><![CDATA[The Pointer Events Working Group has published a Last Call Working Draft of Pointer Events. This document defines events and related interfaces for handling hardware agnostic pointer input from devices like a mouse, pen, or touchscreen. For compatibility with existing mouse based content, this specification also describes a mapping to fire Mouse Events for pointer [&#8230;]]]></description>
+				<content:encoded><![CDATA[<p>The <a href="http://www.w3.org/2012/pointerevents/">Pointer Events Working Group</a> has published a Last Call Working Draft of <a href="http://www.w3.org/TR/2014/WD-pointerevents-20141113/">Pointer Events</a>. This document defines events and related interfaces for handling hardware agnostic pointer input from devices like a mouse, pen, or touchscreen. For compatibility with existing mouse based content, this specification also describes a mapping to fire Mouse Events for pointer device types other than mouse. Comments are welcome through <strong>4 December</strong>. Learn more about the <a href="http://www.w3.org/2006/rwc/">Rich Web Client Activity</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>http://www.w3.org/blog/news/archives/4185/feed</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>Last Call: Mixed Content</title>
+		<link>http://www.w3.org/blog/news/archives/4183</link>
+		<comments>http://www.w3.org/blog/news/archives/4183#comments</comments>
+		<pubDate>Thu, 13 Nov 2014 17:21:28 +0000</pubDate>
+		<dc:creator><![CDATA[Coralie Mercier]]></dc:creator>
+				<category><![CDATA[Publication]]></category>
+		<category><![CDATA[Web Design and Applications]]></category>
+		<category><![CDATA[Web of Services]]></category>
+
+		<guid isPermaLink="false">http://www.w3.org/blog/news/?p=4183</guid>
+		<description><![CDATA[The Web Application Security Working Group has published a Last Call Working Draft of Mixed Content. This specification describes how user agents should handle rendering and execution of content loaded over unencrypted or unauthenticated connections in the context of an encrypted and authenticated document. Comments are welcome through 11 December. Learn more about the Security [&#8230;]]]></description>
+				<content:encoded><![CDATA[<p>The <a href="http://www.w3.org/2011/webappsec/">Web Application Security Working Group</a> has published a Last Call Working Draft of <a href="http://www.w3.org/TR/2014/WD-mixed-content-20141113/">Mixed Content</a>. This specification describes how user agents should handle rendering and execution of content loaded over unencrypted or unauthenticated connections in the context of an encrypted and authenticated document. Comments are welcome through <strong>11 December</strong>. Learn more about the <a href="http://www.w3.org/Security/">Security Activity</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>http://www.w3.org/blog/news/archives/4183/feed</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>WebVTT: The Web Video Text Tracks Format First Public Draft Published</title>
+		<link>http://www.w3.org/blog/news/archives/4181</link>
+		<comments>http://www.w3.org/blog/news/archives/4181#comments</comments>
+		<pubDate>Thu, 13 Nov 2014 17:11:35 +0000</pubDate>
+		<dc:creator><![CDATA[Coralie Mercier]]></dc:creator>
+				<category><![CDATA[Publication]]></category>
+		<category><![CDATA[Web Design and Applications]]></category>
+
+		<guid isPermaLink="false">http://www.w3.org/blog/news/?p=4181</guid>
+		<description><![CDATA[The Timed Text Working Group has published a First Public Working Draft of WebVTT: The Web Video Text Tracks Format. This specification defines WebVTT, the Web Video Text Tracks format. Its main use is for marking up external text track resources in connection with the HTML element. WebVTT files provide captions or subtitles for video [&#8230;]]]></description>
+				<content:encoded><![CDATA[<p>The <a href="http://www.w3.org/AudioVideo/TT/">Timed Text Working Group</a> has published a First Public Working Draft of <a href="http://www.w3.org/TR/2014/WD-webvtt1-20141113/">WebVTT: The Web Video Text Tracks Format</a>. This specification defines WebVTT, the Web Video Text Tracks format. Its main use is for marking up external text track resources in connection with the HTML  element. WebVTT files provide captions or subtitles for video content, and also text video descriptions, chapters for content navigation, and more generally any form of metadata that is time-aligned with audio or video content. Learn more about the <a href="http://www.w3.org/2008/WebVideo/">Video in the Web Activity</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>http://www.w3.org/blog/news/archives/4181/feed</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>HTML5 is a W3C Recommendation</title>
+		<link>http://www.w3.org/blog/news/archives/4167</link>
+		<comments>http://www.w3.org/blog/news/archives/4167#comments</comments>
+		<pubDate>Tue, 28 Oct 2014 17:00:48 +0000</pubDate>
+		<dc:creator><![CDATA[Ian Jacobs]]></dc:creator>
+				<category><![CDATA[Publication]]></category>
+		<category><![CDATA[Web Design and Applications]]></category>
+
+		<guid isPermaLink="false">http://www.w3.org/blog/news/?p=4167</guid>
+		<description><![CDATA[The HTML Working Group today published HTML5 as W3C Recommendation. This specification defines the fifth major revision of the Hypertext Markup Language (HTML), the format used to build Web pages and applications, and the cornerstone of the Open Web Platform. &#8220;Today we think nothing of watching video and audio natively in the browser, and nothing [&#8230;]]]></description>
+				<content:encoded><![CDATA[<p><a href="/TR/html5/" class="imageLink"><img src="http://www.w3.org/html/logo/downloads/HTML5_Logo_128.png" width="128" height="128" alt="HTML5" /></a> The <a href="http://www.w3.org/html/wg/">HTML Working Group</a> today published <a href="http://www.w3.org/TR/2014/REC-html5-20141028/">HTML5</a> as W3C Recommendation. This specification defines the fifth major revision of the Hypertext Markup Language (HTML), the format used to build Web pages and applications, and the cornerstone of the Open Web Platform.</p>
+<p>&#8220;<em>Today we think nothing of watching video and audio natively in the browser, and nothing of running a browser on a phone,</em>&#8221; said <strong>Tim Berners-Lee, W3C Director</strong>. &#8220;<em>We expect to be able to share photos, shop, read the news, and look up information anywhere, on any device. Though they remain invisible to most users, HTML5 and the Open Web Platform are driving these growing user expectations.</em>&#8221;</p>
+<p>HTML5 brings to the Web video and audio tracks without needing plugins; programmatic access to a resolution-dependent bitmap canvas, which is useful for rendering graphs, game graphics, or other visual images on the fly; native support for scalable vector graphics (SVG) and math (MathML); annotations important for East Asian typography (Ruby); features to enable accessibility of rich applications; and much more.</p>
+<p>The <a href="http://www.w3.org/html/wg/wiki/Testing">HTML5 test suite</a>, which  
+includes over 100,000 tests and continues to grow, is strengthening browser interoperability. Learn more about the <a href="http://testthewebforward.org/">Test the Web Forward</a> community effort.</p>
+<p>With today&#8217;s publication of the Recommendation, software implementers benefit from <a href="http://www.w3.org/2004/01/pp-impl/40318/showCommitments">Royalty-Free licensing commitments</a> from over sixty companies under W3C&#8217;s Patent Policy. Enabling implementers to use Web technology without payment of royalties is critical to making the Web a platform for innovation.</p>
+<p>Read the <a href="https://www.w3.org/2014/10/html5-rec.html.en">Press Release</a>, <a href="https://www.w3.org/2014/10/html5-rec.html.en#testimonials">testimonials from W3C Members</a>, and
+<a href="http://www.w3.org/2014/10/html5-rec.html.en#acks">acknowledgments</a>. For news on what&#8217;s next after HTML5, see <strong>W3C CEO Jeff Jaffe&#8217;s blog post</strong>: <a href="http://www.w3.org/blog/2014/10/application-foundations-for-the-open-web-platform/">Application Foundations for the Open Web Platform</a>. We also invite you to check out our video <a href="http://vimeo.com/w3c/buildstandards">Web standards for the future</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>http://www.w3.org/blog/news/archives/4167/feed</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>First Public Working Drafts: Activity Streams 2.0, and Activity Vocabulary</title>
+		<link>http://www.w3.org/blog/news/archives/4159</link>
+		<comments>http://www.w3.org/blog/news/archives/4159#comments</comments>
+		<pubDate>Thu, 23 Oct 2014 17:25:15 +0000</pubDate>
+		<dc:creator><![CDATA[Coralie Mercier]]></dc:creator>
+				<category><![CDATA[Publication]]></category>
+		<category><![CDATA[Web Design and Applications]]></category>
+		<category><![CDATA[Web of Services]]></category>
+
+		<guid isPermaLink="false">http://www.w3.org/blog/news/?p=4159</guid>
+		<description><![CDATA[The Social Web Working Group has published two First Public Working Drafts today: Activity Streams 2.0. This specification details a model for representing potential and completed activities using the JSON format. Activity Vocabulary. This specification describes the Activity vocabulary. Learn more about the Social Activity.]]></description>
+				<content:encoded><![CDATA[<p>The <a href="http://www.w3.org/Social/WG">Social Web Working Group</a> has published two First Public Working Drafts today:</p>
+<ul class="show_items">
+<li><a href="http://www.w3.org/TR/2014/WD-activitystreams-core-20141023/">Activity Streams 2.0</a>. This specification details a model for representing potential and completed activities using the JSON format.</li>
+<li><a href="http://www.w3.org/TR/2014/WD-activitystreams-vocabulary-20141023/">Activity Vocabulary</a>. This specification describes the Activity vocabulary.</li>
+</ul>
+<p>Learn more about the <a href="http://www.w3.org/Social/">Social Activity</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>http://www.w3.org/blog/news/archives/4159/feed</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>Canonical EXI Draft Published</title>
+		<link>http://www.w3.org/blog/news/archives/4157</link>
+		<comments>http://www.w3.org/blog/news/archives/4157#comments</comments>
+		<pubDate>Thu, 23 Oct 2014 17:17:04 +0000</pubDate>
+		<dc:creator><![CDATA[Coralie Mercier]]></dc:creator>
+				<category><![CDATA[Publication]]></category>
+		<category><![CDATA[XML Core Technologies]]></category>
+
+		<guid isPermaLink="false">http://www.w3.org/blog/news/?p=4157</guid>
+		<description><![CDATA[The Efficient XML Interchange Working Group has published a Working Draft of Canonical EXI. Any EXI document is part of a set of EXI documents that are logically equivalent within an application context, but which vary in physical representation based on differences permitted by the Efficient XML Interchange (EXI) Format 1.0 (Second Edition). This specification [&#8230;]]]></description>
+				<content:encoded><![CDATA[<p>The <a href="http://www.w3.org/XML/EXI/">Efficient XML Interchange Working Group</a> has published a Working Draft of <a href="http://www.w3.org/TR/2014/WD-exi-c14n-20141023/">Canonical EXI</a>. Any EXI document is part of a set of EXI documents that are logically equivalent within an application context, but which vary in physical representation based on differences permitted by the Efficient XML Interchange (EXI) Format 1.0 (Second Edition). This specification describes a relatively simple method for generating a physical representation, the canonical form, of an EXI document that accounts for the permissible changes. An example of the applications targeted by this specification is one that needs to guarantee non-repudiation using XML Signature yet allows certain flexibility for intermediaries to reconstitute the documents before they reach final destination without breaking the signatures. Note that two documents may have differing canonical forms yet still be equivalent in a given context based on more elaborate application-specific equivalence rules which is out of scope of this specification. Learn more about the <a href="http://www.w3.org/XML/">Extensible Markup Language (XML) Activity</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>http://www.w3.org/blog/news/archives/4157/feed</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>Resource Priorities Note Published</title>
+		<link>http://www.w3.org/blog/news/archives/4155</link>
+		<comments>http://www.w3.org/blog/news/archives/4155#comments</comments>
+		<pubDate>Thu, 23 Oct 2014 17:06:21 +0000</pubDate>
+		<dc:creator><![CDATA[Coralie Mercier]]></dc:creator>
+				<category><![CDATA[Browsers and Authoring Tools]]></category>
+		<category><![CDATA[Publication]]></category>
+		<category><![CDATA[Web of Services]]></category>
+
+		<guid isPermaLink="false">http://www.w3.org/blog/news/?p=4155</guid>
+		<description><![CDATA[The Web Performance Working Group has published a Group Note of Resource Priorities. This specification defines a means for site developers to programmatically give the User Agent hints on the download priority of a resource, to allow User Agents to more efficiently manage the order in which resources are downloaded. This specification is no longer [&#8230;]]]></description>
+				<content:encoded><![CDATA[<p>The <a href="http://www.w3.org/2010/webperf/">Web Performance Working Group</a> has published a Group Note of <a href="http://www.w3.org/TR/2014/NOTE-resource-priorities-20141023/">Resource Priorities</a>. This specification defines a means for site developers to programmatically give the User Agent hints on the download priority of a resource, to allow User Agents to more efficiently manage the order in which resources are downloaded. This specification is no longer maintained and has been abandoned; refer to <a href="http://www.w3.org/TR/resource-hints/">resource hints</a> instead. Learn more about the <a href="http://www.w3.org/2006/rwc/">Rich Web Client Activity</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>http://www.w3.org/blog/news/archives/4155/feed</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>Streams API, and The Screen Orientation API Drafts Published</title>
+		<link>http://www.w3.org/blog/news/archives/4153</link>
+		<comments>http://www.w3.org/blog/news/archives/4153#comments</comments>
+		<pubDate>Thu, 23 Oct 2014 16:56:52 +0000</pubDate>
+		<dc:creator><![CDATA[Coralie Mercier]]></dc:creator>
+				<category><![CDATA[Publication]]></category>
+		<category><![CDATA[Web Design and Applications]]></category>
+
+		<guid isPermaLink="false">http://www.w3.org/blog/news/?p=4153</guid>
+		<description><![CDATA[The Web Applications Working Group has published two Working Drafts today: Streams API. WHATWG Streams API spec provides an API for representing and handling a stream of data in JavaScript. This W3C spec is intended to extend the WHATWG spec to meet requirements specific to the browser environment. The Screen Orientation API. The Screen Orientation [&#8230;]]]></description>
+				<content:encoded><![CDATA[<p>The <a href="http://www.w3.org/2008/webapps/">Web Applications Working Group</a> has published two Working Drafts today:</p>
+<ul class="show_items">
+<li><a href="http://www.w3.org/TR/2014/WD-streams-api-20141023/">Streams API</a>. WHATWG Streams API spec provides an API for representing and handling a stream of data in JavaScript. This W3C spec is intended to extend the WHATWG spec to meet requirements specific to the browser environment.</li>
+<li><a href="http://www.w3.org/TR/2014/WD-screen-orientation-20141023/">The Screen Orientation API</a>. The Screen Orientation API provides the ability to read the screen orientation type and angle, to be informed when the screen orientation type and angle, to be informed when the screen orientation state changes, and be able to lock the screen orientation to a specific state.</li>
+</ul>
+<p>Learn more about the <a href="http://www.w3.org/2006/rwc/">Rich Web Client Activity</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>http://www.w3.org/blog/news/archives/4153/feed</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>Updated Working Draft of HTML5: Techniques for providing useful text alternatives</title>
+		<link>http://www.w3.org/blog/news/archives/4150</link>
+		<comments>http://www.w3.org/blog/news/archives/4150#comments</comments>
+		<pubDate>Thu, 23 Oct 2014 16:47:52 +0000</pubDate>
+		<dc:creator><![CDATA[Coralie Mercier]]></dc:creator>
+				<category><![CDATA[Publication]]></category>
+		<category><![CDATA[Web Design and Applications]]></category>
+		<category><![CDATA[Web of Services]]></category>
+
+		<guid isPermaLink="false">http://www.w3.org/blog/news/?p=4150</guid>
+		<description><![CDATA[An updated Working Draft of HTML5: Techniques for providing useful text alternatives was published today by the HTML Working Group. This publication incorporates changes and corrections reflecting work since October 2012, but does not include pending bugs listed in the status section. An updated publication including more specifics on description of complex images and clarification [&#8230;]]]></description>
+				<content:encoded><![CDATA[<p>An updated Working Draft of <a href="http://www.w3.org/TR/2014/WD-html-alt-techniques-20141023/">HTML5: Techniques for providing useful text alternatives</a> was published today by the <a href="http://www.w3.org/html/wg/">HTML Working Group</a>. This publication incorporates changes and corrections reflecting work since October 2012, but does not include pending bugs listed in the status section. An updated publication including more specifics on description of complex images and clarification of other guidance is expected in the near future. Comments are welcome. Learn more about the <a href="http://www.w3.org/MarkUp/Activity">HTML Activity</a> and the <a href="http://www.w3.org/WAI/">Web Accessibility Initiative (WAI)</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>http://www.w3.org/blog/news/archives/4150/feed</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>First Public Working Draft: Identifiers for WebRTC Statistics API</title>
+		<link>http://www.w3.org/blog/news/archives/4144</link>
+		<comments>http://www.w3.org/blog/news/archives/4144#comments</comments>
+		<pubDate>Tue, 21 Oct 2014 15:32:15 +0000</pubDate>
+		<dc:creator><![CDATA[Coralie Mercier]]></dc:creator>
+				<category><![CDATA[Publication]]></category>
+		<category><![CDATA[Web Design and Applications]]></category>
+		<category><![CDATA[Web of Devices]]></category>
+
+		<guid isPermaLink="false">http://www.w3.org/blog/news/?p=4144</guid>
+		<description><![CDATA[The Web Real-Time Communications Working Group has published a Working Draft of Identifiers for WebRTC&#8217;s Statistics API. Audio, video, or data packets transmitted over a peer-connection can be lost, and experience varying amounts of network delay. A web application implementing WebRTC expects to monitor the performance of the underlying network and media pipeline. This document [&#8230;]]]></description>
+				<content:encoded><![CDATA[<p>The <a href="http://www.w3.org/2011/04/webrtc/">Web Real-Time Communications Working Group</a> has published a Working Draft of <a href="http://www.w3.org/TR/2014/WD-webrtc-stats-20141021/">Identifiers for WebRTC&#8217;s Statistics API</a>. Audio, video, or data packets transmitted over a peer-connection can be lost, and experience varying amounts of network delay. A web application implementing WebRTC expects to monitor the performance of the underlying network and media pipeline. This document defines the APIs and statistic identifiers used by the web application to extract metrics from the user agent. Learn more about the <a href="http://www.w3.org/2007/uwa/">Ubiquitous Web Applications Activity</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>http://www.w3.org/blog/news/archives/4144/feed</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>First Public Working Draft: Resource Hints</title>
+		<link>http://www.w3.org/blog/news/archives/4142</link>
+		<comments>http://www.w3.org/blog/news/archives/4142#comments</comments>
+		<pubDate>Tue, 21 Oct 2014 15:25:50 +0000</pubDate>
+		<dc:creator><![CDATA[Coralie Mercier]]></dc:creator>
+				<category><![CDATA[Publication]]></category>
+		<category><![CDATA[Web Design and Applications]]></category>
+
+		<guid isPermaLink="false">http://www.w3.org/blog/news/?p=4142</guid>
+		<description><![CDATA[The Web Performance Working Group has published a First Public Working Draft of Resource Hints. This specification defines &#8216;preconnect&#8217; and &#8216;preload&#8217; hints that the developer, or the server generating or delivering the resources, can use in an interoperable way to assist the user agent in the decision process of which origins it should connect to, [&#8230;]]]></description>
+				<content:encoded><![CDATA[<p>The <a href="http://www.w3.org/2010/webperf/">Web Performance Working Group</a> has published a First Public Working Draft of <a href="http://www.w3.org/TR/2014/WD-resource-hints-20141021/">Resource Hints</a>. This specification defines &#8216;preconnect&#8217; and &#8216;preload&#8217; hints that the developer, or the server generating or delivering the resources, can use in an interoperable way to assist the user agent in the decision process of which origins it should connect to, and which resources it should fetch to improve page performance. Learn more about the <a href="http://www.w3.org/2006/rwc/">Rich Web Client Activity</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>http://www.w3.org/blog/news/archives/4142/feed</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>Seven Group Notes Published by the CSS Working Group</title>
+		<link>http://www.w3.org/blog/news/archives/4135</link>
+		<comments>http://www.w3.org/blog/news/archives/4135#comments</comments>
+		<pubDate>Tue, 14 Oct 2014 17:31:13 +0000</pubDate>
+		<dc:creator><![CDATA[Coralie Mercier]]></dc:creator>
+				<category><![CDATA[Publication]]></category>
+		<category><![CDATA[Web Design and Applications]]></category>
+
+		<guid isPermaLink="false">http://www.w3.org/blog/news/?p=4135</guid>
+		<description><![CDATA[The Cascading Style Sheets (CSS) Working Group has published seven Group Notes today, on specifications that at this time, the group does not envisage further work on. CSS TV Profile 1.0. This specification defines a subset of Cascading Style Sheets Level 2 and CSS3 module: Color specifications tailored to the needs and constraints of TV [&#8230;]]]></description>
+				<content:encoded><![CDATA[<p>The <a href="http://www.w3.org/Style/CSS/members">Cascading Style Sheets (CSS) Working Group</a> has published seven Group Notes today, on specifications that at this time, the group does not envisage further work on.</p>
+<ul class="show_items">
+<li><a href="http://www.w3.org/TR/2014/NOTE-css-tv-20141014/">CSS TV Profile 1.0</a>. This specification defines a subset of Cascading Style Sheets Level 2 and CSS3 module: Color specifications tailored to the needs and constraints of TV devices.</li>
+<li><a href="http://www.w3.org/TR/2014/NOTE-css3-preslev-20141014/">CSS Presentation Levels Module</a>. Presentation levels are integer values attached to elements in a document. Elements that are below, at, or above a certain threshold can be styled differently. This feature has two compelling use cases. First, slide presentations with transition effects can be described. For example, list items can be progressively revealed by sliding in from the side. Second, outline views of documents, where only the headings to a certain level are visible, can be generated.</li>
+<li><a href="http://www.w3.org/TR/2014/NOTE-css-mobile-20141014/">CSS Mobile Profile 2.0</a>. This specification defines in general a subset of CSS 2.1 that is to be considered a baseline for interoperability between implementations of CSS on constrained devices (e.g. mobile phones). Its intent is not to produce a profile of CSS incompatible with the complete specification, but rather to ensure that implementations that due to platform limitations cannot support the entire specification implement a common subset that is interoperable not only amongst constrained implementations but also with complete ones. Additionally, this specification aligns itself as much as possible with the OMA Wireless CSS 1.1 specification. At the same time, OMA is doing alignment work in OMA Wireless CSS 1.2. It is aimed at aligning the mandatory compliance items between CSS Mobile Profile 2.0 and OMA Wireless CSS 1.2.</li>
+<li><a href="http://www.w3.org/TR/2014/NOTE-css3-marquee-20141014/">CSS Marquee Module Level 3</a>. This Note replaces a draft specification for CSS features relating to a “marquee” effect.</li>
+<li><a href="http://www.w3.org/TR/2014/NOTE-becss-20141014/">Behavioral Extensions to CSS</a>. This Note replaces a proposal for features in CSS that allow to bind “behaviors” to the elements of a document. A “behavior” is defined by a URL and typically points to an object (in a language such as XBL) that defines its own appearance and user interaction. Such a binding allows, e.g. to replace an element by a complex user interface control.</li>
+<li><a href="http://www.w3.org/TR/2014/NOTE-css3-hyperlinks-20141014/">CSS3 Hyperlink Presentation Module</a>. This note replaces a draft specification for CSS features related to different ways of presenting hypertext. </li>
+<li><a href="http://www.w3.org/TR/2014/NOTE-css3-reader-20141014/">The CSS &#8216;Reader&#8217; Media Type</a>. This note replaces a draft specification for a media type called &#8216;reader&#8217;, for targeting style sheets at devices that are able to synchronously speak and display text.</li>
+</ul>
+<p>Learn more about the <a href="http://www.w3.org/Style/">Style Activity</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>http://www.w3.org/blog/news/archives/4135/feed</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>Data on the Web Best Practices Use Cases and Requirements Draft Published</title>
+		<link>http://www.w3.org/blog/news/archives/4133</link>
+		<comments>http://www.w3.org/blog/news/archives/4133#comments</comments>
+		<pubDate>Tue, 14 Oct 2014 17:26:12 +0000</pubDate>
+		<dc:creator><![CDATA[Coralie Mercier]]></dc:creator>
+				<category><![CDATA[Publication]]></category>
+		<category><![CDATA[Semantic Web]]></category>
+
+		<guid isPermaLink="false">http://www.w3.org/blog/news/?p=4133</guid>
+		<description><![CDATA[The Data on the Web Best Practices Working Group has published a Working Draft of Data on the Web Best Practices Use Cases &#38; Requirements. This document lists use cases, compiled by the Data on the Web Best Practices Working Group, that represent scenarios of how data is commonly published on the Web and how [&#8230;]]]></description>
+				<content:encoded><![CDATA[<p>The <a href="http://www.w3.org/2013/dwbp/">Data on the Web Best Practices Working Group</a> has published a Working Draft of <a href="http://www.w3.org/TR/2014/WD-dwbp-ucr-20141014/">Data on the Web Best Practices Use Cases &amp; Requirements</a>. This document lists use cases, compiled by the Data on the Web Best Practices Working Group, that represent scenarios of how data is commonly published on the Web and how it is used. This document also provides a set of requirements derived from these use cases that will be used to guide the development of the set of Data on the Web Best Practices and the development of two new vocabularies: Quality and Granularity Description Vocabulary and Data Usage Description Vocabulary. Learn more about the <a href="http://www.w3.org/2013/data/">Data Activity</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>http://www.w3.org/blog/news/archives/4133/feed</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>CSS Regions Module Level 1 Draft Published</title>
+		<link>http://www.w3.org/blog/news/archives/4131</link>
+		<comments>http://www.w3.org/blog/news/archives/4131#comments</comments>
+		<pubDate>Thu, 09 Oct 2014 14:49:47 +0000</pubDate>
+		<dc:creator><![CDATA[Coralie Mercier]]></dc:creator>
+				<category><![CDATA[Publication]]></category>
+		<category><![CDATA[Web Design and Applications]]></category>
+
+		<guid isPermaLink="false">http://www.w3.org/blog/news/?p=4131</guid>
+		<description><![CDATA[The Cascading Style Sheets (CSS) Working Group has published a Working Draft of CSS Regions Module Level 1. The CSS Regions module allows content from one or more elements to flow through one or more boxes called CSS Regions, fragmented as defined in CSS3-BREAK. This module also defines CSSOM to expose both the inputs and [&#8230;]]]></description>
+				<content:encoded><![CDATA[<p>The <a href="http://www.w3.org/Style/CSS/members">Cascading Style Sheets (CSS) Working Group</a> has published a Working Draft of <a href="http://www.w3.org/TR/2014/WD-css-regions-1-20141009/">CSS Regions Module Level 1</a>. The CSS Regions module allows content from one or more elements to flow through one or more boxes called CSS Regions, fragmented as defined in CSS3-BREAK. This module also defines CSSOM to expose both the inputs and outputs of this fragmentation. CSS is a language for describing the rendering of structured documents (such as HTML and XML) on screen, on paper, in speech, etc. Learn more about the <a href="http://www.w3.org/Style/">Style Activity</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>http://www.w3.org/blog/news/archives/4131/feed</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>Last Call: XQuery 3.1 and XQueryX 3.1; and additional supporting documents</title>
+		<link>http://www.w3.org/blog/news/archives/4128</link>
+		<comments>http://www.w3.org/blog/news/archives/4128#comments</comments>
+		<pubDate>Thu, 09 Oct 2014 14:36:59 +0000</pubDate>
+		<dc:creator><![CDATA[Coralie Mercier]]></dc:creator>
+				<category><![CDATA[Publication]]></category>
+		<category><![CDATA[XML Core Technologies]]></category>
+
+		<guid isPermaLink="false">http://www.w3.org/blog/news/?p=4128</guid>
+		<description><![CDATA[Today the XQuery Working Group published a Last Call Working Draft of XQuery 3.1 and XQueryX 3.1. Additional supporting documents were published jointly with the XSLT Working Group: a Last Call Working Draft of XPath 3.1, together with XPath Functions and Operators, XQuery and XPath Data Model, and XSLT and XQuery Serialization. XQuery 3.1 and [&#8230;]]]></description>
+				<content:encoded><![CDATA[<p>Today the <a href="http://www.w3.org/XML/Query/">XQuery Working Group</a> published a Last Call Working Draft of <a href="http://www.w3.org/TR/2014/WD-xquery-31-20141007/">XQuery 3.1</a> and <a href="http://www.w3.org/TR/2014/WD-xqueryx-31-20141007/">XQueryX 3.1</a>. Additional supporting documents were published jointly with the <a href="http://www.w3.org/Style/XSL/">XSLT Working Group</a>: a <a href="http://www.w3.org/TR/2014/WD-xpath-31-20141007/">Last Call Working Draft of XPath 3.1</a>, together with <a href="http://www.w3.org/TR/2014/WD-xpath-functions-31-20141007/">XPath Functions and Operators</a>, <a href="http://www.w3.org/TR/2014/WD-xpath-datamodel-31-20141007/">XQuery and XPath Data Model</a>, and <a href="http://www.w3.org/TR/2014/WD-xslt-xquery-serialization-31-20141007/">XSLT and XQuery Serialization</a>. XQuery 3.1 and XPath 3.1 introduce improved support for working with JSON data with map and array data structures as well as loading and serializing JSON; additional support for HTML class attributes, HTTP dates, scientific notation, cross-scaling between XSLT and XQuery and more. Comments are welcome through <strong>7 November 2014</strong>. Learn more about the <a href="http://www.w3.org/XML/Activity">XML Activity</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>http://www.w3.org/blog/news/archives/4128/feed</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>Selection API First Public Draft Published; Push API Draft Published</title>
+		<link>http://www.w3.org/blog/news/archives/4122</link>
+		<comments>http://www.w3.org/blog/news/archives/4122#comments</comments>
+		<pubDate>Tue, 07 Oct 2014 20:05:19 +0000</pubDate>
+		<dc:creator><![CDATA[Coralie Mercier]]></dc:creator>
+				<category><![CDATA[Publication]]></category>
+		<category><![CDATA[Web Design and Applications]]></category>
+
+		<guid isPermaLink="false">http://www.w3.org/blog/news/?p=4122</guid>
+		<description><![CDATA[The Web Applications Working Group has published two documents today: A First Public Working Draft of Selection API. This document is a preliminary draft of a specification for the Selection API and selection related functionality. It replaces a couple of old sections of the HTML specification, the selection part of the old DOM Range specification. [&#8230;]]]></description>
+				<content:encoded><![CDATA[<p>The <a href="http://www.w3.org/2008/webapps/">Web Applications Working Group</a> has published two documents today:</p>
+<ul class="show_items">
+<li>A First Public Working Draft of <a href="http://www.w3.org/TR/2014/WD-selection-api-20141007/">Selection API</a>. This document is a preliminary draft of a specification for the Selection API and selection related functionality. It replaces a couple of old sections of the HTML specification, the selection part of the old DOM Range specification.</li>
+<li>A Working Draft of <a href="http://www.w3.org/TR/2014/WD-push-api-20141007/">Push API</a>. The Push API provides webapps with scripted access to server-sent messages, for simplicity referred to here as push messages, as delivered by push services. A push service allows a webapp server to send messages to a webapp, regardless of whether the webapp is currently active on the user agent. The push message will be delivered to a Service Worker, which could then store the message&#8217;s data or display a notification to the user. This specification is designed to promote compatibility with any delivery method for push messages from push services to user agents.</li>
+</ul>
+<p>Learn more about the <a href="http://www.w3.org/2006/rwc/">Rich Web Client Activity</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>http://www.w3.org/blog/news/archives/4122/feed</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>Media Capture Depth Stream Extensions First Public Working Draft Published</title>
+		<link>http://www.w3.org/blog/news/archives/4124</link>
+		<comments>http://www.w3.org/blog/news/archives/4124#comments</comments>
+		<pubDate>Tue, 07 Oct 2014 19:38:07 +0000</pubDate>
+		<dc:creator><![CDATA[Coralie Mercier]]></dc:creator>
+				<category><![CDATA[Publication]]></category>
+		<category><![CDATA[Web Design and Applications]]></category>
+		<category><![CDATA[Web of Devices]]></category>
+
+		<guid isPermaLink="false">http://www.w3.org/blog/news/?p=4124</guid>
+		<description><![CDATA[The Device APIs Working Group and Web Real-Time Communications Working Group have published a First Public Working Draft of Media Capture Depth Stream Extensions. This specification extends the Media Capture and Streams specification to allow a depth stream to be requested from the web platform using APIs familiar to web authors. Learn more about the [&#8230;]]]></description>
+				<content:encoded><![CDATA[<p>The <a href="http://www.w3.org/2009/dap/">Device APIs Working Group</a> and <a href="http://www.w3.org/2011/04/webrtc/">Web Real-Time Communications Working Group</a> have published a First Public Working Draft of <a href="http://www.w3.org/TR/2014/WD-mediacapture-depth-20141007/">Media Capture Depth Stream Extensions</a>.  This specification extends the Media Capture and Streams specification to allow a depth stream to be requested from the web platform using APIs familiar to web authors. Learn more about the <a href="http://www.w3.org/2007/uwa/">Ubiquitous Web Applications </a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>http://www.w3.org/blog/news/archives/4124/feed</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>Last Call: XSL Transformations (XSLT) Version 3.0</title>
+		<link>http://www.w3.org/blog/news/archives/4120</link>
+		<comments>http://www.w3.org/blog/news/archives/4120#comments</comments>
+		<pubDate>Thu, 02 Oct 2014 13:08:57 +0000</pubDate>
+		<dc:creator><![CDATA[Coralie Mercier]]></dc:creator>
+				<category><![CDATA[Publication]]></category>
+		<category><![CDATA[XML Core Technologies]]></category>
+
+		<guid isPermaLink="false">http://www.w3.org/blog/news/?p=4120</guid>
+		<description><![CDATA[The XSLT Working Group has published a Last Call Working Draft of XSL Transformations (XSLT) Version 3.0. This specification defines the syntax and semantics of XSLT 3.0, a language for transforming XML documents into other XML documents. A transformation in the XSLT language is expressed in the form of a stylesheet. A stylesheet is made [&#8230;]]]></description>
+				<content:encoded><![CDATA[<p>The <a href="http://www.w3.org/Style/XSL/">XSLT Working Group</a> has published a Last Call Working Draft of <a href="http://www.w3.org/TR/2014/WD-xslt-30-20141002/">XSL Transformations (XSLT) Version 3.0</a>. This specification defines the syntax and semantics of XSLT 3.0, a language for transforming XML documents into other XML documents. A transformation in the XSLT language is expressed in the form of a stylesheet. A stylesheet is made up of one or more well-formed XML documents conforming to the Namespaces in XML Recommendation. Comments are welcome through <strong>26 November</strong>. Learn more about the <a href="http://www.w3.org/XML/">Extensible Markup Language (XML) Activity</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>http://www.w3.org/blog/news/archives/4120/feed</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>Requirements for Latin Text Layout and Pagination Draft Published</title>
+		<link>http://www.w3.org/blog/news/archives/4106</link>
+		<comments>http://www.w3.org/blog/news/archives/4106#comments</comments>
+		<pubDate>Tue, 30 Sep 2014 15:45:12 +0000</pubDate>
+		<dc:creator><![CDATA[Coralie Mercier]]></dc:creator>
+				<category><![CDATA[Publication]]></category>
+		<category><![CDATA[Semantic Web]]></category>
+		<category><![CDATA[Web Design and Applications]]></category>
+
+		<guid isPermaLink="false">http://www.w3.org/blog/news/?p=4106</guid>
+		<description><![CDATA[The Digital Publishing Interest Group has published a Working Draft of Requirements for Latin Text Layout and Pagination. This document describes requirements for pagination and layout of books in latin languages, based on the tradition of print book design and composition. It is hoped that these principles can inform the pagination of digital content as [&#8230;]]]></description>
+				<content:encoded><![CDATA[<p>The <a href="http://www.w3.org/dpub/IG/">Digital Publishing Interest Group</a> has published a Working Draft of <a href="http://www.w3.org/TR/2014/WD-dpub-latinreq-20140930/">Requirements for Latin Text Layout and Pagination</a>. This document describes requirements for pagination and layout of books in latin languages, based on the tradition of print book design and composition. It is hoped that these principles can inform the pagination of digital content as well, and serve as a reference for the CSS Working Group and other interested parties. This work was inspired by the Requirements for Japanese Text Layout. Learn more about the <a href="http://www.w3.org/dpub/">Digital Publishing Activity</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>http://www.w3.org/blog/news/archives/4106/feed</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>Seeking Wide Review: TTML Text and Image Profiles for Internet Media Subtitles and Captions 1.0</title>
+		<link>http://www.w3.org/blog/news/archives/4104</link>
+		<comments>http://www.w3.org/blog/news/archives/4104#comments</comments>
+		<pubDate>Tue, 30 Sep 2014 15:36:23 +0000</pubDate>
+		<dc:creator><![CDATA[Coralie Mercier]]></dc:creator>
+				<category><![CDATA[Publication]]></category>
+		<category><![CDATA[Web Design and Applications]]></category>
+		<category><![CDATA[Web of Devices]]></category>
+
+		<guid isPermaLink="false">http://www.w3.org/blog/news/?p=4104</guid>
+		<description><![CDATA[The Timed Text Working Group has published a Working Draft of TTML Text and Image Profiles for Internet Media Subtitles and Captions 1.0. This document specifies two profiles of Timed Text Markup Language 1: a text-only profile and an image-only profile. These profiles are intended to be used across subtitle and caption delivery applications worldwide, [&#8230;]]]></description>
+				<content:encoded><![CDATA[<p>The <a href="http://www.w3.org/AudioVideo/TT/">Timed Text Working Group</a> has published a Working Draft of <a href="http://www.w3.org/TR/2014/WD-ttml-imsc1-20140930/">TTML Text and Image Profiles for Internet Media Subtitles and Captions 1.0</a>. This document specifies two profiles of Timed Text Markup Language 1: a text-only profile and an image-only profile. These profiles are intended to be used across subtitle and caption delivery applications worldwide, thereby simplifying interoperability, consistent rendering and conversion to other subtitling and captioning formats. The text profile is a superset of TTML Simple Delivery Profile for Closed Captions (US). The review period ends on <strong>27 October 2014</strong>. Learn more about the <a href="http://www.w3.org/2008/WebVideo/">Video in the Web Activity</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>http://www.w3.org/blog/news/archives/4104/feed</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+	</channel>
+</rss>

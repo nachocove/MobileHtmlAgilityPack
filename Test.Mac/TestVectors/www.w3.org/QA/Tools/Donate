@@ -1,0 +1,618 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+  <meta name="robots" content="nofollow" />
+  <title>W3C Validator Donation Program</title>
+  <link rev="made" href="mailto:www-validator@w3.org" />
+  <link rev="start" href="./" title="Home Page" />
+  <style type="text/css" media="all">
+  @import "http://validator.w3.org/style/base.css";
+  label#amount_label, label#type_label {
+    padding-right:1em;
+    margin-left: 1em;
+  }
+  #footer {
+    clear: both;
+  }
+  input#Iheart {
+    vertical-align: middle;
+    padding-bottom: .2em;
+  }
+  input#os1 {
+    font-family: Monaco, "Courier New", Monospace;
+    font-size: 0.9em;
+    border: 1px solid #bbb;
+    border-top: 1px solid #777;
+    border-bottom: 1px solid #ddd;
+    background: #fefefe url(http://validator.w3.org/images/textbg.png) no-repeat top left;
+    padding: 0.2em 0.2em;
+    max-width: 1000px;
+    font-variant: normal;
+  }
+  #fields li a {
+    background: #EAEBEE;
+  }
+  input#amountGiven {
+    font-family: Monaco, "Courier New", Monospace;
+    font-size: 0.8em;
+    border: 1px solid #bbb;
+    border-top: 1px solid #777;
+    border-bottom: 1px solid #ddd;
+    background: #fefefe url(http://validator.w3.org/images/textbg.png) no-repeat top left;
+    padding: 0.1em 0.1em;
+    font-variant: normal;
+  }
+
+  select#input_lc {width: 75%; margin: 1em 0 .5em 5.3em;}
+  input#os1 {
+    width: 75%;
+    margin: 0.3em 0 0 1em;
+  }
+
+  div.top_spotlight {
+    background: white;
+    margin-top: 1em;
+    padding: 1em;
+    border: 2px solid #ddd;
+    
+    
+  }
+  form#subscribe {
+    display: inline;
+    padding:0;
+  }
+  .donation_info {
+    line-height: 150%;
+    padding: .5em;
+  }
+  .donation_info a {
+    background-color:#EAEBEE;
+  }
+  p.noborder {
+    border-top: 0; 
+    background: #EAEBEE;
+    margin-left: .2em;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-top: 0;
+  }
+  p#donation_typeamount {
+    line-height: 200%;
+  }
+  ol#sponsorlist li {
+    clear: both;
+    list-style: none inside; 
+  }
+  ol#sponsorlist li a img {
+    display: block;
+    float: left;
+    padding-bottom: 1.5em;
+  }
+  img.sponsor_thumb {
+    /* width: 120px; */
+  }
+  ol#sponsorlist li p {
+    margin-left: 130px;
+    /*         margin-top: 20em;
+  */     }
+  fieldset h2, fieldset form h2 {
+  	font-family: Helvetica, Arial, Sans-Serif;
+    font-size: 1.1em;
+    margin-bottom: 0;
+    background: none;
+    color: #1f2126;
+    padding-top: 1em;
+    padding-right: 0pt;
+    padding-bottom: 0.23em;
+    padding-left: 0pt;
+    letter-spacing: 0.06em;
+  }
+
+  fieldset h3, fieldset form h3 {
+  	font-family: Helvetica, Arial, Sans-Serif;
+    font-size: 1.0em;
+    margin-bottom: 0;
+    background: none;
+    color: #1f2126;
+    padding-top: 1em;
+    padding-right: 0pt;
+    padding-bottom: 0.23em;
+    padding-left: 0pt;
+    letter-spacing: 0.06em;
+  }
+
+  fieldset strong {
+    background: none;
+  }
+  p#version_info {
+    padding-top: 1.2em;
+    border-top: 1px solid #ddd;
+    margin-top: 3em;
+    
+  }
+  fieldset div.community_button, fieldset div h3 {
+    background-color: transparent;
+  }
+  fieldset div span.button_sample {
+    float: left; width: 100px;
+    text-align: center;
+    padding-top:;
+  }
+  fieldset div span#smallsample {
+    padding-top: 1.6em;
+  }
+  fieldset div span#lgsample {
+    padding-top: .8em;
+  }
+  
+  fieldset div pre.button_code {
+    margin-left: 120px;
+    padding: .5em;
+    background-color: white;
+    border: 2px solid #ddd;
+  }
+  input.radiobtn {
+    background:#fff; vertical-align: middle; margin-left: 1em;
+  }
+  </style>
+  <script type="text/javascript" src="http://validator.w3.org/scripts/mootools.js"></script>
+  <script type="text/javascript" src="http://www.w3.org/QA/Tools/donation_UI.js"></script>
+</head>
+
+<body>
+  <div id="banner">
+    <h1 id="title">
+      <a href="http://www.w3.org/"><img alt="W3C" width="110" height="61" id="logo" src="http://validator.w3.org/images/w3c.png" /></a>
+      <a href="http://www.w3.org/QA/Tools/Donate"><span>Validator Donation Program</span></a>
+    </h1>
+    <p id="tagline">Support the development of W3C Validators.</p>
+  </div>
+
+
+  <div id="frontforms">
+
+    <ul id="tabset_tabs">
+      <li><a href="#donate-individual"><span>Donors</span></a></li>
+      <li><a href="#donate-sponsors"><span>Sponsors</span></a></li>
+      <li><a href="#donate-community"><span>Fundraisers</span></a></li>
+      <li><a href="#donate-info">About <span>this Program</span></a></li>
+    </ul>
+
+    <div id="fields">
+
+      <fieldset id="donate-individual" class="tabset_content front">
+        <legend class="tabset_label">Donate with PayPal</legend>
+        <form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+          <p class="instructions">A dollar for every time validation saved your day?
+            Even small donations can make a difference.
+          </p>
+          <p id="donation_typeamount">
+            <input type="hidden"  name="cmd" value="_donations" id="cmd_donation"  />
+            <label id="amount_label">Amount:</label>
+            <input type="hidden" name="business" value="&#x76;&#x61;&#x6C;&#x69;&#x64;&#x61;&#x74;&#x6F;&#x72;&#x2D;&#x64;&#x6f;&#x6e;&#x61;&#x74;&#x65;&#x40;w3.org" />
+            <input type="hidden" name="item_name" value="W3C Validators Supporter's donation" />
+            <input type="hidden" name="bn" value="PP-DonationsBF:btn_donate_LG.gif:NonHosted" />
+	    <input type="radio" name="amountOption" id="input_amount_1" onclick="this.form.amount.value=25;" value="25" /><label id="amount_1">25 &#8364;</label>
+	    <input type="radio" name="amountOption" id="input_amount_2" onclick="this.form.amount.value=50;" value="50" checked="checked" /><label id="amount_2">50 &#8364;</label>
+	    <input type="radio" name="amountOption" id="input_amount_3" onclick="this.form.amount.value=75;" value="75" /><label id="amount_3">75 &#8364;</label>
+	    <input type="radio" name="amountOption" id="input_amount_other" value="Other" /><label id="amount_other"><input type="text" name="amountEntered" id="amountGiven" size="8" onfocus="this.form.input_amount_other.checked=true;" onchange="this.form.amount.value=this.form.amountEntered.value;"/></label>
+<!-- default is 50 -->
+           <input type="hidden" name="amount" value="50" />
+            <select name="currency_code" id="input_currency_code" size="1">
+              <option value="EUR">EUR - €</option>
+              <option value="">- - - </option>
+              <option value="USD">USD - $</option>
+              <option value="GBP">GBP - £</option>
+              <option value="EUR">EUR - €</option>
+              <option value="AUD">AUD - $</option>
+              <option value="CAD">CAD - $</option>
+              <option value="CHF">CHF</option>
+              <option value="CZK">CZK - Kč</option>
+              <option value="DKK">DKK - kr</option>
+              <option value="EUR">EUR - €</option>
+              <option value="HKD">HKD - HK$</option>
+              <option value="HUF">HUF - Ft</option>
+              <option value="GBP">GBP - £</option>
+              <option value="JPY">JPY - ¥</option>
+              <option value="NZD">NZD - NZ$</option>
+              <option value="NOK">NOK - kr</option>
+              <option value="PLN">PLN - zł</option>
+              <option value="SGD">SGD - S$</option>
+              <option value="SEK">SEK - kr</option>
+              <option value="ILS">ILS - ₪</option>
+            </select>
+            <input type="hidden" name="no_shipping" value="1" />
+            <input type="hidden" name="no_note" value="0" />
+            <input type="hidden" name="tax" value="0" />
+         </p>
+	  <p>You are welcome to contribute any amount in whatever currency suits you.</p>
+          <fieldset id="extra_opt_individual" class="moreoptions">
+            <legend class="toggletext">More Options</legend>
+            <div class="options"> 
+              <p>
+                <label for="os1">Send us a Message:</label>
+                <input type="hidden" name="on1" value="Message" />
+                <input type="text" name="os1" id="os1" size="45" />
+                <input type="hidden" name="on2" value="Referer Community/Page" />
+                <input type="hidden" name="os2" value="" />
+              </p>
+              <p class="instructions noborder">
+                (200 chars max)
+              </p>
+              <p>
+                <label for="input_lc">Your Country:</label> 
+                <select name="lc" id="input_lc" size="1">
+                  <option value="US" selected="selected">-------    Select one below      -------</option>
+                  <option value="AF">AFGHANISTAN</option>
+                  <option value="AX">ÅLAND ISLANDS</option>
+                  <option value="AL">ALBANIA</option>
+                  <option value="DZ">ALGERIA</option>
+                  <option value="AS">AMERICAN SAMOA</option>
+                  <option value="AD">ANDORRA</option>
+                  <option value="AO">ANGOLA</option>
+                  <option value="AI">ANGUILLA</option>
+                  <option value="AQ">ANTARCTICA</option>
+                  <option value="AG">ANTIGUA AND BARBUDA</option>
+                  <option value="AR">ARGENTINA</option>
+                  <option value="AM">ARMENIA</option>
+                  <option value="AW">ARUBA</option>
+                  <option value="AU">AUSTRALIA</option>
+                  <option value="AT">AUSTRIA</option>
+                  <option value="AZ">AZERBAIJAN</option>
+                  <option value="BS">BAHAMAS</option>
+                  <option value="BH">BAHRAIN</option>
+                  <option value="BD">BANGLADESH</option>
+                  <option value="BB">BARBADOS</option>
+                  <option value="BY">BELARUS</option>
+                  <option value="BE">BELGIUM</option>
+                  <option value="BZ">BELIZE</option>
+                  <option value="BJ">BENIN</option>
+                  <option value="BM">BERMUDA</option>
+                  <option value="BT">BHUTAN</option>
+                  <option value="BO">BOLIVIA</option>
+                  <option value="BA">BOSNIA AND HERZEGOVINA</option>
+                  <option value="BW">BOTSWANA</option>
+                  <option value="BV">BOUVET ISLAND</option>
+                  <option value="BR">BRAZIL</option>
+                  <option value="IO">BRITISH INDIAN OCEAN TERRITORY</option>
+                  <option value="BN">BRUNEI DARUSSALAM</option>
+                  <option value="BG">BULGARIA</option>
+                  <option value="BF">BURKINA FASO</option>
+                  <option value="BI">BURUNDI</option>
+                  <option value="KH">CAMBODIA</option>
+                  <option value="CM">CAMEROON</option>
+                  <option value="CA">CANADA</option>
+                  <option value="CV">CAPE VERDE</option>
+                  <option value="KY">CAYMAN ISLANDS</option>
+                  <option value="CF">CENTRAL AFRICAN REPUBLIC</option>
+                  <option value="TD">CHAD</option>
+                  <option value="CL">CHILE</option>
+                  <option value="CN">CHINA</option>
+                  <option value="CX">CHRISTMAS ISLAND</option>
+                  <option value="CC">COCOS (KEELING) ISLANDS</option>
+                  <option value="CO">COLOMBIA</option>
+                  <option value="KM">COMOROS</option>
+                  <option value="CG">CONGO</option>
+                  <option value="CD">CONGO, THE DEMOCRATIC REPUBLIC OF THE</option>
+                  <option value="CK">COOK ISLANDS</option>
+                  <option value="CR">COSTA RICA</option>
+                  <option value="CI">CÔTE D'IVOIRE</option>
+                  <option value="HR">CROATIA</option>
+                  <option value="CU">CUBA</option>
+                  <option value="CY">CYPRUS</option>
+                  <option value="CZ">CZECH REPUBLIC</option>
+                  <option value="DK">DENMARK</option>
+                  <option value="DJ">DJIBOUTI</option>
+                  <option value="DM">DOMINICA</option>
+                  <option value="DO">DOMINICAN REPUBLIC</option>
+                  <option value="EC">ECUADOR</option>
+                  <option value="EG">EGYPT</option>
+                  <option value="SV">EL SALVADOR</option>
+                  <option value="GQ">EQUATORIAL GUINEA</option>
+                  <option value="ER">ERITREA</option>
+                  <option value="EE">ESTONIA</option>
+                  <option value="ET">ETHIOPIA</option>
+                  <option value="FK">FALKLAND ISLANDS (MALVINAS)</option>
+                  <option value="FO">FAROE ISLANDS</option>
+                  <option value="FJ">FIJI</option>
+                  <option value="FI">FINLAND</option>
+                  <option value="FR">FRANCE</option>
+                  <option value="GF">FRENCH GUIANA</option>
+                  <option value="PF">FRENCH POLYNESIA</option>
+                  <option value="TF">FRENCH SOUTHERN TERRITORIES</option>
+                  <option value="GA">GABON</option>
+                  <option value="GM">GAMBIA</option>
+                  <option value="GE">GEORGIA</option>
+                  <option value="DE">GERMANY</option>
+                  <option value="GH">GHANA</option>
+                  <option value="GI">GIBRALTAR</option>
+                  <option value="GR">GREECE</option>
+                  <option value="GL">GREENLAND</option>
+                  <option value="GD">GRENADA</option>
+                  <option value="GP">GUADELOUPE</option>
+                  <option value="GU">GUAM</option>
+                  <option value="GT">GUATEMALA</option>
+                  <option value="GG">GUERNSEY</option>
+                  <option value="GN">GUINEA</option>
+                  <option value="GW">GUINEA-BISSAU</option>
+                  <option value="GY">GUYANA</option>
+                  <option value="HT">HAITI</option>
+                  <option value="HM">HEARD ISLAND AND MCDONALD ISLANDS</option>
+                  <option value="VA">HOLY SEE (VATICAN CITY STATE)</option>
+                  <option value="HN">HONDURAS</option>
+                  <option value="HK">HONG KONG</option>
+                  <option value="HU">HUNGARY</option>
+                  <option value="IS">ICELAND</option>
+                  <option value="IN">INDIA</option>
+                  <option value="ID">INDONESIA</option>
+                  <option value="IR">IRAN, ISLAMIC REPUBLIC OF</option>
+                  <option value="IQ">IRAQ</option>
+                  <option value="IE">IRELAND</option>
+                  <option value="IM">ISLE OF MAN</option>
+                  <option value="IL">ISRAEL</option>
+                  <option value="IT">ITALY</option>
+                  <option value="JM">JAMAICA</option>
+                  <option value="JP">JAPAN</option>
+                  <option value="JE">JERSEY</option>
+                  <option value="JO">JORDAN</option>
+                  <option value="KZ">KAZAKHSTAN</option>
+                  <option value="KE">KENYA</option>
+                  <option value="KI">KIRIBATI</option>
+                  <option value="KP">KOREA, DEMOCRATIC PEOPLE'S REPUBLIC OF</option>
+                  <option value="KR">KOREA, REPUBLIC OF</option>
+                  <option value="KW">KUWAIT</option>
+                  <option value="KG">KYRGYZSTAN</option>
+                  <option value="LA">LAO PEOPLE'S DEMOCRATIC REPUBLIC</option>
+                  <option value="LV">LATVIA</option>
+                  <option value="LB">LEBANON</option>
+                  <option value="LS">LESOTHO</option>
+                  <option value="LR">LIBERIA</option>
+                  <option value="LY">LIBYAN ARAB JAMAHIRIYA</option>
+                  <option value="LI">LIECHTENSTEIN</option>
+                  <option value="LT">LITHUANIA</option>
+                  <option value="LU">LUXEMBOURG</option>
+                  <option value="MO">MACAO</option>
+                  <option value="MK">MACEDONIA, THE FORMER YUGOSLAV REPUBLIC OF</option>
+                  <option value="MG">MADAGASCAR</option>
+                  <option value="MW">MALAWI</option>
+                  <option value="MY">MALAYSIA</option>
+                  <option value="MV">MALDIVES</option>
+                  <option value="ML">MALI</option>
+                  <option value="MT">MALTA</option>
+                  <option value="MH">MARSHALL ISLANDS</option>
+                  <option value="MQ">MARTINIQUE</option>
+                  <option value="MR">MAURITANIA</option>
+                  <option value="MU">MAURITIUS</option>
+                  <option value="YT">MAYOTTE</option>
+                  <option value="MX">MEXICO</option>
+                  <option value="FM">MICRONESIA, FEDERATED STATES OF</option>
+                  <option value="MD">MOLDOVA</option>
+                  <option value="MC">MONACO</option>
+                  <option value="MN">MONGOLIA</option>
+                  <option value="ME">MONTENEGRO</option>
+                  <option value="MS">MONTSERRAT</option>
+                  <option value="MA">MOROCCO</option>
+                  <option value="MZ">MOZAMBIQUE</option>
+                  <option value="MM">MYANMAR</option>
+                  <option value="NA">NAMIBIA</option>
+                  <option value="NR">NAURU</option>
+                  <option value="NP">NEPAL</option>
+                  <option value="NL">NETHERLANDS</option>
+                  <option value="AN">NETHERLANDS ANTILLES</option>
+                  <option value="NC">NEW CALEDONIA</option>
+                  <option value="NZ">NEW ZEALAND</option>
+                  <option value="NI">NICARAGUA</option>
+                  <option value="NE">NIGER</option>
+                  <option value="NG">NIGERIA</option>
+                  <option value="NU">NIUE</option>
+                  <option value="NF">NORFOLK ISLAND</option>
+                  <option value="MP">NORTHERN MARIANA ISLANDS</option>
+                  <option value="NO">NORWAY</option>
+                  <option value="OM">OMAN</option>
+                  <option value="PK">PAKISTAN</option>
+                  <option value="PW">PALAU</option>
+                  <option value="PS">PALESTINIAN TERRITORY, OCCUPIED</option>
+                  <option value="PA">PANAMA</option>
+                  <option value="PG">PAPUA NEW GUINEA</option>
+                  <option value="PY">PARAGUAY</option>
+                  <option value="PE">PERU</option>
+                  <option value="PH">PHILIPPINES</option>
+                  <option value="PN">PITCAIRN</option>
+                  <option value="PL">POLAND</option>
+                  <option value="PT">PORTUGAL</option>
+                  <option value="PR">PUERTO RICO</option>
+                  <option value="QA">QATAR</option>
+                  <option value="RE">RÉUNION</option>
+                  <option value="RO">ROMANIA</option>
+                  <option value="RU">RUSSIAN FEDERATION</option>
+                  <option value="RW">RWANDA</option>
+                  <option value="BL">SAINT BARTHÉLEMY</option>
+                  <option value="SH">SAINT HELENA</option>
+                  <option value="KN">SAINT KITTS AND NEVIS</option>
+                  <option value="LC">SAINT LUCIA</option>
+                  <option value="MF">SAINT MARTIN</option>
+                  <option value="PM">SAINT PIERRE AND MIQUELON</option>
+                  <option value="VC">SAINT VINCENT AND THE GRENADINES</option>
+                  <option value="WS">SAMOA</option>
+                  <option value="SM">SAN MARINO</option>
+                  <option value="ST">SAO TOME AND PRINCIPE</option>
+                  <option value="SA">SAUDI ARABIA</option>
+                  <option value="SN">SENEGAL</option>
+                  <option value="RS">SERBIA</option>
+                  <option value="SC">SEYCHELLES</option>
+                  <option value="SL">SIERRA LEONE</option>
+                  <option value="SG">SINGAPORE</option>
+                  <option value="SK">SLOVAKIA</option>
+                  <option value="SI">SLOVENIA</option>
+                  <option value="SB">SOLOMON ISLANDS</option>
+                  <option value="SO">SOMALIA</option>
+                  <option value="ZA">SOUTH AFRICA</option>
+                  <option value="GS">SOUTH GEORGIA AND THE SOUTH SANDWICH ISLANDS</option>
+                  <option value="ES">SPAIN</option>
+                  <option value="LK">SRI LANKA</option>
+                  <option value="SD">SUDAN</option>
+                  <option value="SR">SURINAME</option>
+                  <option value="SJ">SVALBARD AND JAN MAYEN</option>
+                  <option value="SZ">SWAZILAND</option>
+                  <option value="SE">SWEDEN</option>
+                  <option value="CH">SWITZERLAND</option>
+                  <option value="SY">SYRIAN ARAB REPUBLIC</option>
+                  <option value="TW">TAIWAN, PROVINCE OF CHINA</option>
+                  <option value="TJ">TAJIKISTAN</option>
+                  <option value="TZ">TANZANIA, UNITED REPUBLIC OF</option>
+                  <option value="TH">THAILAND</option>
+                  <option value="TL">TIMOR-LESTE</option>
+                  <option value="TG">TOGO</option>
+                  <option value="TK">TOKELAU</option>
+                  <option value="TO">TONGA</option>
+                  <option value="TT">TRINIDAD AND TOBAGO</option>
+                  <option value="TN">TUNISIA</option>
+                  <option value="TR">TURKEY</option>
+                  <option value="TM">TURKMENISTAN</option>
+                  <option value="TC">TURKS AND CAICOS ISLANDS</option>
+                  <option value="TV">TUVALU</option>
+                  <option value="UG">UGANDA</option>
+                  <option value="UA">UKRAINE</option>
+                  <option value="AE">UNITED ARAB EMIRATES</option>
+                  <option value="GB">UNITED KINGDOM</option>
+                  <option value="US">UNITED STATES</option>
+                  <option value="UM">UNITED STATES MINOR OUTLYING ISLANDS</option>
+                  <option value="UY">URUGUAY</option>
+                  <option value="UZ">UZBEKISTAN</option>
+                  <option value="VU">VANUATU</option>
+                  <option value="VE">VENEZUELA</option>
+                  <option value="VN">VIET NAM</option>
+                  <option value="VG">VIRGIN ISLANDS, BRITISH</option>
+                  <option value="VI">VIRGIN ISLANDS, U.S.</option>
+                  <option value="WF">WALLIS AND FUTUNA</option>
+                  <option value="EH">WESTERN SAHARA</option>
+                  <option value="YE">YEMEN</option>
+                  <option value="ZM">ZAMBIA</option>
+                  <option value="ZW">ZIMBABWE</option>
+                </select></p>
+                <p class="instructions noborder">
+                  Selecting a country will help PayPal talk to you in your language, and pre-fill country information for your payment details.
+                </p>
+              </div>
+            </fieldset>
+            <p class="submit_button"><input title="Send your donation now" type="submit" value="Donate Now!" /></p>
+            <p class="instructions" style="border: 0; text-align:center; font-size: x-small; padding: 1em">PayPal recipient will be GEIE ERCIM, which is the W3C host organisation handling the donations.</p>
+          </form>          
+        </fieldset>
+        <fieldset id="donate-sponsors"  class="tabset_content front">
+          <h2>Our Top Sponsors</h2>
+          <div class="top_spotlight"><a href="#topsponsor_hp"><img class="sponsor_thumb" src="http://www.w3.org/QA/Tools/logos_sup/hp_logo.jpg" alt="HP" /></a>
+          <a href="#topsponsor_moz"><img class="sponsor_thumb" src="http://www.w3.org/QA/Tools/logos_sup/moz_logo.jpg" alt="Mozilla" /></a>
+          </div>
+            <h2>Become a Validator Sponsor</h2>
+            <p class="donation_info">
+              We invite organizations and individuals that support Web standards to become validator Sponsors and earn recognition as a driving force behind valued community tools.</p>
+            <p class="donation_info">Sponsors receive acknowledgement for their support on the Validators' sites as well as this page, for a year. The terms of this sponsorship match those described in the <a href="http://www.w3.org/Consortium/supporter-policy#policy_misc">Miscellaneous section of the W3C Supporters Program policy</a>.</p>
+            <p class="donation_info">
+               Please <a href="mailto:&#x76;&#x61;&#x6C;&#x69;&#x64;&#x61;&#x74;&#x6F;&#x72;&#x2D;&#x64;&#x6f;&#x6e;&#x61;&#x74;&#x65;&#x40;w3.org">Contact Us</a> about this opportunity.
+            </p>
+        </fieldset>
+
+        <fieldset id="donate-community"  class="tabset_content front">
+          <h2>Community Fundraising</h2>
+          <p class="donation_info">
+            Beyond donations, showing support for the validator as a fundraiser is a great way to encourage the use of Web Standards in your community.
+          </p>
+          <form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+          <p class="donation_info">
+          To become a validator fundraiser, include a "donate" button 
+          in your page and let people know how they can support the service. We will be featuring fundraising communities on this page. 
+            </p>
+            <div class="community_button">
+              <h3>Code Samples</h3>
+
+              <span class="button_sample" id="smallsample">
+              <input type="hidden" name="cmd" value="_donations" />
+              <input type="hidden" name="business" value="&#x76;&#x61;&#x6C;&#x69;&#x64;&#x61;&#x74;&#x6F;&#x72;&#x2D;&#x64;&#x6f;&#x6e;&#x61;&#x74;&#x65;&#x40;w3.org" />
+              <input type="hidden" name="on1" value="Community" />
+              <input type="hidden" name="os1" value="Validator Donation Page" />
+              <input type="hidden" name="item_name" value="W3C Validator Donation Program" />                 
+              <input type="hidden" name="bn" value="PP-DonationsBF:btn_donate_LG.gif:NonHosted" />
+              <input type="image" src="http://www.w3.org/QA/Tools/I_heart_validator" name="submit" alt="" />
+              </span>
+              <pre class="button_code">&lt;a href=&quot;http://www.w3.org/QA/Tools/Donate&quot;&gt;&lt;img src=&quot;http://www.w3.org/QA/Tools/I_heart_validator&quot; 
+  width=&quot;80&quot; height=&quot;15&quot;
+  alt=&quot;I ♥ Validator&quot; title=&quot;W3C Validator Donation Program&quot; /&gt;&lt;/a&gt;</pre>
+  <br />
+              <span class="button_sample" id="lgsample">
+              <input type="hidden" name="cmd" value="_donations" />
+              <input type="hidden" name="business" value="&#x76;&#x61;&#x6C;&#x69;&#x64;&#x61;&#x74;&#x6F;&#x72;&#x2D;&#x64;&#x6f;&#x6e;&#x61;&#x74;&#x65;&#x40;w3.org" />
+              <input type="hidden" name="on1" value="Community" />
+              <input type="hidden" name="os1" value="Validator Donation Page" />
+              <input type="hidden" name="item_name" value="W3C Validator Donation Program" />                 
+              <input type="hidden" name="bn" value="PP-DonationsBF:btn_donate_LG.gif:NonHosted" />
+              <input type="image" src="http://www.w3.org/QA/Tools/I_heart_validator_lg" name="submit" alt="" />
+              </span>
+              <pre class="button_code">&lt;a href=&quot;http://www.w3.org/QA/Tools/Donate&quot;&gt;&lt;img src=&quot;http://www.w3.org/QA/Tools/I_heart_validator_lg&quot; 
+width=&quot;101&quot; height=&quot;46&quot;
+  alt=&quot;I heart Validator&quot; title=&quot;W3C Validator Donation Program&quot; /&gt;&lt;/a&gt;</pre>
+            </div>
+          </form>
+          
+        </fieldset>
+        <fieldset id="donate-info"  class="tabset_content front">
+          <h2>How Your Donations Help</h2>
+          <p class="donation_info">
+            For almost 14 years, the W3C has been developing and hosting  
+            <a href="http://www.w3.org/QA/Tools/">Web Quality Tools</a> used every day by millions of Web developers 
+            and Web designers. All these tools are <strong>free</strong>, <strong>Open-Source</strong> and provides the web
+            with a fair, reliable help in building web content that works now and will work in the future.
+          </p>
+          <p class="donation_info">
+            Good tools cost a lot to develop, support, host and maintain: with your help, we can make the validators 
+            better, faster, friendlier, and maintain a great, free service for all of the Web.
+          </p>
+          <p class="donation_info">
+            Donations to this program will be used exclusively for the maintenance, hosting and development of our free
+            validation tools and other similar open source projects.
+          </p>
+          <h2>Policies for this program</h2>
+          <p class="donation_info">
+          The Validator donation and sponsorship program are governed by terms matching those described in the <a href="http://www.w3.org/Consortium/supporter-policy#policy_misc">Miscellaneous section of the W3C Supporters Program policy</a>.</p>
+          <h2>No money? No problem!</h2>
+          <p class="donation_info">
+            There are many other ways you can <a href="http://www.w3.org/Status#contribute">contribute</a> to the W3C Validator projects.
+          </p>
+        </fieldset>
+
+      </div><!-- fields -->
+    </div> <!-- frontforms -->
+
+
+    <div class="doc">
+
+      <h2>Top Sponsors</h2>
+      <ol id="sponsorlist">
+        <li id="topsponsor_hp"><a href="http://www.hp.com/"><img src="http://www.w3.org/QA/Tools/logos_sup/hp_logo.jpg" class="sponsor_thumb" alt="HP" /></a><p>HP donates some of their server technology to sustain W3C validation services. The Validators now run on <a href="http://hp.com/go/proliant">HP ProLiant DL360 series</a> machines.</p></li>
+        <li id="topsponsor_moz"><a href="http://www.mozilla.org/"><img src="http://www.w3.org/QA/Tools/logos_sup/moz_logo.jpg" class="sponsor_thumb" alt="Mozilla" /></a><p>Mozilla has contributed financially toward the development of the CSS validator.</p></li>
+      </ol>
+    </div>
+
+
+    <div id="footer">
+      <p id="activity_logos">
+        <a href="http://www.w3.org/Status" title="W3C's Open Source, bringing you free Web quality tools and more"><img src="http://www.w3.org/Icons/WWW/w3c_home_nb" alt="W3C" /><img src="http://www.opensource.org/trademarks/opensource/web/opensource-55x48.jpg" alt="Open-Source" title="We are building certified Open Source/Free Software. - see www.opensource.org" /></a>
+      </p>
+      <p id="support_logo">
+  			<a href="http://www.w3.org/QA/Tools/Donate">
+  			<img src="http://www.w3.org/QA/Tools/I_heart_validator" alt="I ♥ Validator" title=" Validator Donation Program"/>
+  			</a>
+  		</p>
+  		
+      <p id="version_info">
+          Questions? Comments about this donation program? <a href="mailto:validator-donate@w3.org">Contact Us</a>
+      </p> 
+      <p class="copyright">
+            <a rel="Copyright" href="http://www.w3.org/Consortium/Legal/ipr-notice#Copyright">Copyright</a> &copy; 2008-2014
+            <a href="http://www.w3.org/"><acronym title="World Wide Web Consortium">W3C</acronym></a>&reg;
+      </p>
+  </div>
+</body>
+</html>

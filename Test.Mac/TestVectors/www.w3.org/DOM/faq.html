@@ -1,0 +1,1005 @@
+<?xml version="1.0"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<?xml-stylesheet href="faq.css" type="text/css"?>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Document Object Model FAQ</title>
+    <link href="/StyleSheets/activity-home.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body><p align="right" class="navbar"><a href="/"><img align="left" src="/Icons/w3c_home" border="0" alt="W3C" /></a><a href="/Architecture/" rel="in-domain"><img src="/Icons/arch" align="left" alt="Architecture Domain" border="0" /></a><small><a href="Overview">About DOM</a> .
+        <a href="Activity">DOM Activity statement</a><br /><a href="DOMTR">Technical Reports</a> .
+        <a href="DOMTM">Technical Materials</a><br /><a href="Test">Test Suites</a> . FAQ
+        . <a href="MailingList">Mailing List</a><br />
+        Member-restricted resource: <a href="Group/">DOM Working Group</a></small></p>
+  
+    <h1 align="center" class="title" id="top">Document Object Model FAQ</h1>
+    <small>October 22, 2003. Subject to change.</small>
+    <address>Maintained by:
+        <a href="mailto:www-dom@w3.org?subject=DOM FAQ">the W3C DOM WG</a></address>
+    
+      <p>
+	This document contains the most frequently asked questions about
+	the Document Object Model. It is not intended to replace any
+	specifications or other documents. Please send suggestions or
+	comments about this FAQ to the address above.</p>
+    <p><small>(Note: We maintain this document's source as
+	<a href="faq.xml">faq.xml</a>, using the markup
+	language defined by <a href="faq.dtd">faq.dtd</a>.
+	This XHTML version is generated from that source using
+	<a href="faqxsl.xsl">faq.xsl</a>.)
+     </small></p>
+  <div class="toc"><h2><a id="toc" name="toc">table of contents</a></h2><h3><a href="#General">General</a></h3><ul><li><a href="#what">What does DOM stand for?</a></li><li><a href="#whybother">Why should I support or use the DOM?</a></li><li><a href="#current">What is the current state of the DOM specification?</a></li><li><a href="#implementation">What is a DOM implementation?</a></li><li><a href="#application">What is a DOM application?</a></li><li><a href="#languages">What programming languages can I use with the DOM?</a></li><li><a href="#IDL">If the DOM is language-neutral, what language do you specify the
+	  interface in?</a></li><li><a href="#questions">Where do I post questions about the DOM?</a></li><li><a href="#comments">How do I influence the specification?</a></li><li><a href="#sixmonths">What types of functionality will be provided in the near
+	  future?</a></li><li><a href="#accessibility">Will accessibility considerations be an active part of the DOM
+	  development?</a></li><li><a href="#otherstandards">What implications does the DOM have for other standards?</a></li><li><a href="#COMCORBA">What is the relationship between COM or CORBA and the DOM?</a></li><li><a href="#webpages">How do I use the DOM in an HTML page?</a></li><li><a href="#DHTML-DOM">What is the difference between DHTML and the DOM?</a></li><li><a href="#brokenpages">Will broken HTML pages work in the DOM?</a></li><li><a href="#compliance">What does it mean to be compliant with the DOM
+	  specification?</a></li></ul><h3><a href="#XML">The DOM and Other Standards</a></h3><ul><li><a href="#stylesheets">What is the relationship between stylesheets and the DOM?</a></li><li><a href="#grove">What is the difference between the DOM and groves?</a></li><li><a href="#sdql">What about query languages?</a></li><li><a href="#otherlang">What about DOMs for other markup languages?</a></li><li><a href="#SAXandDOM">What is the relationship between the DOM and SAX?</a></li></ul><h3><a href="#Copyright">Copyright and Reference</a></h3><ul><li><a href="#copyright">I am developing a product using the DOM specification. What must
+	  I do when the product is released?</a></li><li><a href="#packageref">How do I reference the DOM Java packages?</a></li></ul><h3><a href="#Technical">Technical Notes</a></h3><ul><li><a href="#usingjava">How do I use the Java bindings?</a></li><li><a href="#memorymanage">Why doesn't the DOM specify anything regarding memory
+	  management?</a></li><li><a href="#nodelist">
+	  NodeList issues</a></li><li><a href="#ownerdoc">ownerDocument issues</a></li><li><a href="#ordering">Is the ordering of elements guaranteed to be preserved in the
+	  DOM?</a></li><li><a href="#parsing">I've got an XML document. How do I parse this into DOM?</a></li><li><a href="#newdoc">How do I create a new Document without having to import vendor
+	  specific classes?</a></li><li><a href="#attr">Why is 
+	  Attr a Node? Can it have children? Can it be a
+	  child?</a></li><li><a href="#removeAttributeNodeNS">Why is there no removeAttributeNodeNS method?</a></li><li><a href="#emptytext">Why are some Text nodes empty?</a></li><li><a href="#normalize">Why do I get adjacent Text nodes?</a></li><li><a href="#CDTA-text">Changing CDATA sections into Text nodes</a></li><li><a href="#interfaces">Why are the DOM APIs "interfaces" rather than "classes"?</a></li><li><a href="#interfaceinherit">Why don't the interfaces in Level 2 inherit from the interfaces
+	  in Level 1?</a></li><li><a href="#instance-of">Can I use instance-of features to distinguish one subclass of
+	  Node from another?</a></li><li><a href="#visitor">Why doesn't Traversal use the Visitor pattern?</a></li><li><a href="#moveNode">How do I move a Node from one document to another?</a></li><li><a href="#namespacefixup">Do DOM implementations fix up namespaces?</a></li><li><a href="#WFXML">Does the DOM require Well-Formed XML?</a></li><li><a href="#XMLdecl">How is the XML declaration modelled?</a></li><li><a href="#rename_node">Can I rename a node?</a></li><li><a href="#insertBeforeSelf">What is the effect of 
+	  parent.insertBefore(child,child) -- in other words, of
+	  trying to insert a node before itself?</a></li><li><a href="#create">Is createAttribute("href") the same as createAttributeNS(null,
+	  "href")?</a></li><li><a href="#unsigned">What is the effect of NodeList.item(-1) or Node.appendChild(null)?</a></li></ul></div>
+  
+    <hr /><h2><a name="General" id="General">General</a></h2><dl>
+	<dt><b><a name="what" id="what">What does DOM stand for?</a></b></dt>
+	<dd>
+	  <p>
+	    The Document Object Model. This means that we are developing a
+	    model in which the document or Web page contains objects (elements,
+	    links, etc.) that can be manipulated. So you will be able to
+	    delete, add, or change an element (as long as the document is still
+	    valid, of course!), change its content or add, delete or change an
+	    attribute. You will be able to get a list of all the H1 elements in
+	    the document, or all the elements with an attribute
+	    CLASS="foo".</p>
+	<p align="left"><a href="#top">Return to Top</a></p></dd>
+      
+	<dt><b><a name="whybother" id="whybother">Why should I support or use the DOM?</a></b></dt>
+	<dd>
+	  <p>
+	    The DOM API provides a standardized, versatile view of a
+	    document's contents. By supporting the DOM API, a program not only
+	    allows its data to be manipulated by other routines, but does so in
+	    a way that allows those manipulations to be reused with other DOMs,
+	    or to take advantage of solutions already written for those DOMs.
+	    This interoperability also allows programmers who invest in
+	    learning to use the DOM calls to apply those skills to other
+	    DOMs.</p>
+	  <p>
+	    The intent is that -- if you stick with the standardized APIs --
+	    any DOM implementation can be plugged together with any DOM-based
+	    application. The original example of this was dynamic-HTML scripts;
+	    by agreeing on the DOM as their standard representation of the
+	    document, scripts can be be written that will work properly on all
+	    browsers. But this applies to larger-scale programming as well; for
+	    example, a server-side solution might be built out of the following
+	    reusable components, which may or may not all share a single DOM
+	    implementation:</p>
+	  <ul>
+	    <li>A database which presents its contents as a DOM tree. (Note
+	      that the underlying data presented via a DOM need not itself be
+	      DOM-like. The DOM is a tool for manipulating data, not a data
+	      structure itself.)</li>
+	    <li>An XML parser which generates a DOM tree, used to read a
+	      stylesheet.</li>
+	    <li>An XSLT processor which combines these, producing a new DOM
+	      tree. ("Extension routines" in the XSLT stylesheet may also access
+	      the source document via the DOM.)</li>
+	    <li>A routine which writes a DOM's contents out to the network in
+	      the desired syntax (XML, HTML, or other).</li>
+	  </ul>
+	  <p>
+	    If a better implementation of one of these modules becomes
+	    available (a faster XML parser, for example) or if an
+	    additional/different processing stage is required, you should be
+	    able to unplug the existing connections and plug in the new
+	    component with minimal recoding.</p>
+	  <p>(The goal is "no recoding", and that is already the case for
+	    many applications, but at this writing the DOM Level 2 APIs are not
+	    yet complete enough to promise this for all applications. In
+	    particular, some of the tools needed to construct a DOM "from
+	    scratch" are not yet exposed in the published APIs, and the DOM has
+	    not yet defined a representation for the DTD/Schema
+	    information.)</p>
+	  <p>
+	    Similarly, while all DOM implementations should be
+	    interoperable, they may vary considerably in code size, memory
+	    demand, and performance of individual operations. So the ability to
+	    unplug and replace the DOM itself may also be very useful. For
+	    example, since some parsers can write into a user-provided DOM, you
+	    may be able to parse a document directly into the above-mentioned
+	    database.</p>
+	  <p>
+	    There is one potential downside to using the DOM: As with any
+	    generalized set of interfaces, the DOM calls can be used to solve a
+	    very wide range of problems, but may not be the optimal solution
+	    for any specific problem. The advantages of interoperability and
+	    familiarity to users will more than compensate for this in many
+	    applications, but you will find that some tasks may call for other
+	    interfaces in addition to, or instead of, the DOM. For example,
+	    your application may wish to use custom interfaces internally for
+	    performance reasons, yet be able to import/export/expose its data
+	    via the DOM for convenient access from outside.</p>
+	<p align="left"><a href="#top">Return to Top</a></p></dd>
+      
+	<dt><b><a name="current" id="current">What is the current state of the DOM specification?</a></b></dt>
+	<dd>
+	  <p>
+	    The DOM Level 1 and Level 2 specifications are W3C
+	    Recommendations. This means that the specification is final and can
+	    be implemented without fear of things changing. Level 1 allows
+	    navigation around an HTML or XML document, and manipulation of the
+	    content in that document. Level 2 extends Level 1 with a number of
+	    features: XML Namespace support, filtered views, ranges, events,
+	    etc. Level 3 is currently a Working Draft, which means that it is
+	    under active development and subject to change as we continue to
+	    refine it.</p>
+	<p align="left"><a href="#top">Return to Top</a></p></dd>
+      
+	<dt><b><a name="implementation" id="implementation">What is a DOM implementation?</a></b></dt>
+	<dd>
+	  <p>
+	    A DOM implementation (also called a host implementation) is that
+	    piece of software which takes the parsed XML or HTML document and
+	    makes it available for processing via the DOM interfaces. A browser
+	    contains a hosting implementation, for example.</p>
+	<p align="left"><a href="#top">Return to Top</a></p></dd>
+      
+	<dt><b><a name="application" id="application">What is a DOM application?</a></b></dt>
+	<dd>
+	  <p>
+	    A DOM application (also called a client application) is that
+	    piece of software which takes the document made available by the
+	    implementation, and does something to it. A script which runs in a
+	    browser is an example of an application.</p>
+	<p align="left"><a href="#top">Return to Top</a></p></dd>
+      
+	<dt><b><a name="languages" id="languages">What programming languages can I use with the DOM?</a></b></dt>
+	<dd>
+	  <p>
+	    This will depend on what hosting implementation you want to use
+	    it with. Your favorite browser might implement a JavaScript or
+	    VBScript interface, so you can use those scripting languages within
+	    the page itself to manipulate the page or change the CSS style
+	    sheet. Your favorite editor might implement a Scheme or Java
+	    interface so you can write an executable in those languages that
+	    talks to your editor to manipulate the page. You might be able to
+	    write an application in C++ that uses the DOM interface to transfer
+	    information from the page in your browser to a database via an ODBC
+	    driver. We are writing a set of interfaces; different companies
+	    will be able to implement these interfaces in different ways. It is
+	    unlikely that any one company will give you a choice of C++ and
+	    Java and Scheme and Perl and Python and ..., but interfaces in all
+	    these languages will be possible, since the DOM itself is
+	    language-neutral.</p>
+	<p align="left"><a href="#top">Return to Top</a></p></dd>
+      
+	<dt><b><a name="IDL" id="IDL">If the DOM is language-neutral, what language do you specify the
+	  interface in?</a></b></dt>
+	<dd>
+	  <p>
+	    The Object Management Group Interface Definition Language (OMG
+	    IDL) was chosen as it was designed for specifying language and
+	    implementation-neutral interfaces. Various other IDLs could be
+	    used; the use of OMG IDL does not imply a requirement to use a
+	    specific object binding runtime.</p>
+	  <p>
+	    We expect that the DOM can be implemented using CORBA, COM, or
+	    Java Virtual Machine runtime bindings. We expect that many
+	    implementations of the DOM will use bindings to various programming
+	    languages. The DOM specifies bindings for Java and ECMAScript (the
+	    standardization of JavaScript/JScript by the European Computer
+	    Manufacturer's Association (ECMA) defined by ECMA-262) as
+	    appendices to the specification; other language bindings (for
+	    example, ANSI C++, Perl, or VBScript) may be supplied by other
+	    interested parties. Obviously it would be good if different
+	    implementations in other languages are consistent with each
+	    other.</p>
+	<p align="left"><a href="#top">Return to Top</a></p></dd>
+      
+	<dt><b><a name="questions" id="questions">Where do I post questions about the DOM?</a></b></dt>
+	<dd>
+	  <p>
+	    Although questions about the DOM may be posted in other forums,
+	    it would be best to post them to the public mailing list at 
+	    <a href="mailto:www-dom@w3.org">www-dom@w3.org</a>. To
+	    subscribe, send mail to 
+	    <a href="mailto:www-dom-request@w3.org?subject=subscribe">
+	      www-dom-request@w3.org</a> with the subject "subscribe". Please
+	    read this FAQ before posting any questions.</p>
+	<p align="left"><a href="#top">Return to Top</a></p></dd>
+      
+	<dt><b><a name="comments" id="comments">How do I influence the specification?</a></b></dt>
+	<dd>
+	  <p>
+	    Read the specifications up on the Web site, and send email to 
+	    <a href="mailto:www-dom@w3.org">www-dom@w3.org</a>. We will
+	    update the specifications as often as we can.</p>
+	<p align="left"><a href="#top">Return to Top</a></p></dd>
+      
+	<dt><b><a name="sixmonths" id="sixmonths">What types of functionality will be provided in the near
+	  future?</a></b></dt>
+	<dd>
+	  <p>
+	    See the 
+	    <a href="Activity.html">Activity statement</a> for a
+	    description of what the DOM WG is currently working on.</p>
+	<p align="left"><a href="#top">Return to Top</a></p></dd>
+      
+	<dt><b><a name="accessibility" id="accessibility">Will accessibility considerations be an active part of the DOM
+	  development?</a></b></dt>
+	<dd>
+	  <p>
+	    Yes. W3C and the member organizations that make up W3C are
+	    concerned with accessibility. The DOM will make it much easier for
+	    accessibility tools to access documents, since they will be able to
+	    take a document and feed it into an accessibility-enabled
+	    application, such as a screen reader.</p>
+	<p align="left"><a href="#top">Return to Top</a></p></dd>
+      
+	<dt><b><a name="otherstandards" id="otherstandards">What implications does the DOM have for other standards?</a></b></dt>
+	<dd>
+	  <p>
+	    The DOM will not change other standards, or redefine standards.
+	    The DOM will have clean interfaces to other relevant
+	    specifications. The DOM WG works together with other groups, as far
+	    as possible, to make sure various specifications are
+	    consistent.</p>
+	<p align="left"><a href="#top">Return to Top</a></p></dd>
+      
+	<dt><b><a name="COMCORBA" id="COMCORBA">What is the relationship between COM or CORBA and the DOM?</a></b></dt>
+	<dd>
+	  <p>
+	    The Document Object Model, despite its name, is not an object
+	    model in the same way as the Component Object Model (COM). The COM,
+	    like CORBA, is a language-independent way to specify interfaces and
+	    objects; the Document Object Model is a set of interfaces and
+	    objects designed for managing HTML and XML documents. The DOM may
+	    be implemented using language-independent systems like COM or
+	    CORBA; it may also be implemented using language-specific bindings
+	    like the Java or ECMAScript bindings that we define.</p>
+	<p align="left"><a href="#top">Return to Top</a></p></dd>
+      
+	<dt><b><a name="webpages" id="webpages">How do I use the DOM in an HTML page?</a></b></dt>
+	<dd>
+	  <p>
+	    There will be two ways of using the HTML module of the DOM. You
+	    might write JavaScript or VBScript in your page. Or, you might use
+	    an external application such as a plug-in, ActiveX control, or Java
+	    applet, that accesses the document through your browser (support
+	    depends on the browser).</p>
+	<p align="left"><a href="#top">Return to Top</a></p></dd>
+      
+	<dt><b><a name="DHTML-DOM" id="DHTML-DOM">What is the difference between DHTML and the DOM?</a></b></dt>
+	<dd>
+	  <p>
+	    Dynamic HTML (DHTML) is a term used by some vendors to describe
+	    the combination of HTML, style sheets and scripts that allows
+	    documents to be animated. The scripting interfaces provided in
+	    DHTML have a significant overlap with the DOM, particularly with
+	    the HTML module. Compatibility with DHTML was a motivating factor
+	    in the development of the DOM. The DOM, however, is more than
+	    DHTML. It is a platform- and language-neutral interface that will
+	    allow programs and scripts to dynamically access and update the
+	    content, structure and style of documents, both HTML and XML.</p>
+	<p align="left"><a href="#top">Return to Top</a></p></dd>
+      
+	<dt><b><a name="brokenpages" id="brokenpages">Will broken HTML pages work in the DOM?</a></b></dt>
+	<dd>
+	  <p>
+	    In general your pages should not be broken, if you want to be
+	    able to use the DOM to get consistent results. It's the same right
+	    now - if you mix JavaScript or VBScript with a broken HTML page,
+	    you can get some odd results.</p>
+	<p align="left"><a href="#top">Return to Top</a></p></dd>
+      
+	<dt><b><a name="compliance" id="compliance">What does it mean to be compliant with the DOM
+	  specification?</a></b></dt>
+	<dd>
+	  <p>
+	    A DOM-compliant document model is one that responds to all the
+	    DOM API calls with the results documented in a specific Level of
+	    the DOM Recommendation. You are not required to implement the
+	    optional modules (XML, HTML, Stylesheet, CSS, Traversal, Ranges,
+	    Events or the specific event sets) in order to claim compliance,
+	    but if your DOM does not completely implement these it should
+	    respond "false" to the relevant
+	    <code>hasFeature</code> queries. For example, a DOM which implements
+	    just the Level 1 APIs plus the 
+	    <code>importNode</code> method would be compliant only with Level 1,
+	    since it does not have complete support for Level 2.</p>
+	  <p>
+	    In many situations, it is possible and desirable to add features
+	    to a DOM without breaking compliance. The simplest and safest way
+	    to do so is to define a new set of APIs which the objects in your
+	    customized DOM could support, so the behavior of the standard DOM
+	    API can be left unchanged. The HTML DOM is a good example of this
+	    approach; it defined a set of custom subclasses of standard DOM
+	    objects, each of which continues to respect the core DOM behaviors
+	    but also supports additional behaviors.</p>
+	  <p>
+	    Some developers are starting to reuse portions of the DOM API
+	    without promising 100% DOM compliance. For example, some people
+	    have written DOM subsets (read-only DOMs, for example), or have
+	    used portions of the DOM API to build other kinds of node trees, or
+	    even mixed their own custom nodetypes with those defined by the
+	    DOM. If designed and written well, these solutions may allow
+	    _limited_ interchange of code with standard DOMs -- for example,
+	    all reasonable programs that work on a read-only DOM should run
+	    just as well on a "real" DOM, though the reverse is obviously not
+	    true. However, since the DOM's greatest value is that it promotes
+	    interoperability, such changes to the DOM's behavior should be
+	    avoided if at all possible, and will not be recognized as fully
+	    compliant implementations of the DOM.</p>
+	<p align="left"><a href="#top">Return to Top</a></p></dd>
+      </dl>
+    <hr /><h2><a name="XML" id="XML">The DOM and Other Standards</a></h2><dl>
+	<dt><b><a name="stylesheets" id="stylesheets">What is the relationship between stylesheets and the DOM?</a></b></dt>
+	<dd>
+	  <p>
+	    The DOM Level 2 specifies a way to manipulate and change CSS
+	    stylesheets. There is also core functionality for linking style
+	    sheets in any stylesheet language to an XML or HTML file. A similar
+	    interface to XSL stylesheets may be specified later on, perhaps not
+	    by the DOM WG.</p>
+	<p align="left"><a href="#top">Return to Top</a></p></dd>
+      
+	<dt><b><a name="grove" id="grove">What is the difference between the DOM and groves?</a></b></dt>
+	<dd>
+	  <p>
+	    The object model in the DOM is a programming object model that
+	    comes from object-oriented design. It refers to the fact that the
+	    interfaces are defined in terms of objects. In the DOM work, we
+	    call the object model that groves specify an abstract data model.
+	    There is an implicit data model in the DOM, but implementors do not
+	    have to use this to implement the interfaces. The data model in the
+	    DOM is specified in the Information Set specification.</p>
+	<p align="left"><a href="#top">Return to Top</a></p></dd>
+      
+	<dt><b><a name="sdql" id="sdql">What about query languages?</a></b></dt>
+	<dd>
+	  <p>
+	    A future Level of the DOM is expected to include a query
+	    interface, so that you will be able to interface to whatever query
+	    language your DOM implementation supports. W3C is working on a
+	    query language, so the DOM WG does not need to specify this.</p>
+	<p align="left"><a href="#top">Return to Top</a></p></dd>
+      
+	<dt><b><a name="otherlang" id="otherlang">What about DOMs for other markup languages?</a></b></dt>
+	<dd>
+	  <p>
+	    Other groups are designing DOM modules that work with the DOM
+	    specification and give extra functionality for particular markup
+	    languages. Examples are the MathML DOM for use with 
+	    <a href="http://www.w3.org/Math/">MathML</a>, the SVG DOM for
+	    use with 
+	    <a href="http://www.w3.org/Graphics/SVG/Overview.htm8">
+	      SVG</a>, and the 
+	    <a href="http://www.w3.org/TR/REC-smil/">SMIL</a> DOM. These
+	    DOM modules are being designed by the groups responsible for
+	    designing those languages.</p>
+	<p align="left"><a href="#top">Return to Top</a></p></dd>
+      
+	<dt><b><a name="SAXandDOM" id="SAXandDOM">What is the relationship between the DOM and SAX?</a></b></dt>
+	<dd>
+	  <p>
+	    DOM and SAX are currently the two most popular APIs for
+	    manipulating XML documents. They differ significantly in
+	    provenance, in scope, and in programming style. They are not in
+	    direct competition with each other; each has strengths and
+	    weaknesses.</p>
+	  <p>
+	    <i>Provenance:</i>Unlike the DOM, SAX ("Simple API for XML") is not
+	    being developed by the World Wide Web Consortium. Instead, it was
+	    developed by an informal group of participants of the XML-DEV
+	    mailing list. SAX 1 has been fairly widely supported by providers
+	    of XML processing software. SAX 2, now being developed, is not yet
+	    widely supported, and at this writing diverges significantly from
+	    SAX 1, though it includes the SAX 1 APIs for backward-compatibility
+	    purposes.</p>
+	  <p>
+	    <i>Scope:</i>SAX was originally designed specifically as an API for
+	    XML parsers. As such, it includes functions which won't be
+	    supported in the DOM until DOM Level 3's Load/Save module is
+	    released. On the other hand, SAX 1 discarded some information (such
+	    as comments) that the DOM retains. As with the DOM, later versions
+	    of SAX are working to improve their coverage of the XML Information
+	    Set.</p>
+	  <p>
+	    <i>Style:</i>The most important difference between SAX and DOM is
+	    that SAX presents the document as a serialized "event stream" (a
+	    sequence of calls to a handler function as each chunk of XML syntax
+	    is recognized) rather than the DOM's tree. A major disadvantage of
+	    this approach is that SAX does not support random-access
+	    manipulation of the document -- you see the tokens once, in
+	    document order, and that's it. If you might want to refer back to
+	    anything you saw earlier, it's your code's responsibility to store
+	    that information so you can retrieve it. But this requirement that
+	    you invent your own document model means you can decide to discard
+	    information that will not be needed, which can result in reduced
+	    memory overhead versus retaining a complete model such as the
+	    DOM.</p>
+	  <p>
+	    However, depending on the task you're trying to perform, SAX may
+	    not always have a storage-size advantage. And one should remember
+	    that DOM implementations vary in their memory requirements, just as
+	    they do in code size and performance. Some are more compact than
+	    others, and some do not keep the whole document in main memory at
+	    once.</p>
+	  <p>
+	    So how should you decide between SAX events and DOM trees? If
+	    you intend to allow other code, such as utility routines,
+	    middleware, applications, and scripts within the document, to
+	    explore and possibly alter the document's contents, the DOM is
+	    almost certainly the way to go; it provides a W3C-standardized,
+	    complete, and editable view of the document's contents. Conversely,
+	    if your task processes the document on a straight-line flow-through
+	    basis, without permitting users to write "scripts" against it and
+	    without needing much contextual information at each stage -- for
+	    example, if you're parsing the XML document directly into a
+	    database for storage -- SAX may provide a more direct interface to
+	    the parser. Between these extremes, it's a judgement call; you have
+	    to think about how much trouble it will be to implement your own
+	    document model versus using the DOM, and about how you expect your
+	    application to grow in the future.</p>
+	  <p>
+	    In fact, it is possible to combine SAX and DOM within a single
+	    system. Many parsers can produce both SAX and DOM output, and some
+	    have borrowed SAX's parser-control calls as a stopgap while they
+	    wait for the DOM 3 Load/Save API to be defined. Despite the slight
+	    "impedance mismatch" between them, it is not uncommon to use a SAX
+	    stream as input to a DOM builder, or to use a DOM's contents to
+	    generate SAX events; code for both these operations is widely
+	    available. There are also some new APIs being developed which
+	    combine SAX and DOM in interesting ways, for example returning DOM
+	    nodes from SAX operations.</p>
+	<p align="left"><a href="#top">Return to Top</a></p></dd>
+      </dl>
+    <hr /><h2><a name="Copyright" id="Copyright">Copyright and Reference</a></h2><dl>
+	<dt><b><a name="copyright" id="copyright">I am developing a product using the DOM specification. What must
+	  I do when the product is released?</a></b></dt>
+	<dd>
+	  <p>
+	    Full details are in the DOM specification. A brief summary
+	    follows:</p>
+	  <ol>
+	    <li>if you are copying the DOM specification into the documentation
+	      of your product, then you must cite the source (including the URL)
+	      and include the W3C copyright notice and the status of the
+	      specification</li>
+	    <li>if you are intending to build technologies based on the DOM
+	      specification, then you are free to use these. W3C specifications
+	      and sample code are freely available for any use by anyone. If you
+	      are going to change the DOM bindings in any way, you must document
+	      that the bindings have been changed and change, for example, the
+	      Java package names.</li>
+	  </ol>
+	<p align="left"><a href="#top">Return to Top</a></p></dd>
+      
+	<dt><b><a name="packageref" id="packageref">How do I reference the DOM Java packages?</a></b></dt>
+	<dd>
+	  <p>
+	    If you are implementing the interfaces defined by DOM, then you
+	    must use the official package name of those interfaces, which, by
+	    definition, is "org.w3c.dom". If you add any additional interfaces
+	    or change the interfaces in any way, they may not start with
+	    "org.w3c.dom" - they have to be in a different package.</p>
+	<p align="left"><a href="#top">Return to Top</a></p></dd>
+      </dl>
+    <hr /><h2><a name="Technical" id="Technical">Technical Notes</a></h2><dl>
+	<dt><b><a name="usingjava" id="usingjava">How do I use the Java bindings?</a></b></dt>
+	<dd>
+	  <p>
+	    You will need a DOM implementation which supports the Java
+	    bindings. Check the documentation for the implementation you're
+	    interested in to make sure this is the case. The documentation
+	    should also include information as to how to use the Java
+	    bindings.</p>
+	<p align="left"><a href="#top">Return to Top</a></p></dd>
+      
+	<dt><b><a name="memorymanage" id="memorymanage">Why doesn't the DOM specify anything regarding memory
+	  management?</a></b></dt>
+	<dd>
+	  <p>
+	    The DOM specification does not define any methods related to
+	    memory management (such as to release an object). This is because
+	    while the DOM is a programming language independent API, the way
+	    one deals with memory is very language specific. Therefore any
+	    method related to memory management that is required by a
+	    particular language, needs to be specified in that language
+	    binding. Due to the way memory is managed in Java and ECMAScript,
+	    none of the bindings included in the DOM specification have such
+	    methods.</p>
+	<p align="left"><a href="#top">Return to Top</a></p></dd>
+      
+	<dt><b><a name="nodelist" id="nodelist">
+	  NodeList issues</a></b></dt>
+	<dd>
+	  <p>
+	    <code>NodeList</code>, although it resembles an array or vector (it
+	    has a length attribute, and you can access the members of the list
+	    via an integer index), is _not_ an array. Think of it instead as
+	    another way of looking at the DOM's document tree. If that tree
+	    changes -- if something inserts or appends or removes 
+	    <code>Node</code>s -- the 
+	    <code>NodeList</code> will be automatically adjusted at the same
+	    time. The result is that a 
+	    <code>NodeList</code> is always an accurate representation of the 
+	    <code>getChildNodes</code> or 
+	    <code>getElementsByTagName</code> results as if you had just issued
+	    that call, so there is no need to refresh the 
+	    <code>NodeList</code> to pick up changes to the underlying
+	    document.</p>
+	  <p>
+	    In MVC terminology, the underlying document tree is the "Model",
+	    the DOM API that allows the tree to be modified is the
+	    "Controller", and each 
+	    <code>NodeList</code> is a "View" of Model. In other words, the 
+	    <code>NodeList</code> is not something separate from the document
+	    tree that needs to be kept in synch with the tree, but a view of
+	    the actual tree with array-like semantics that may be more
+	    convenient for some tasks than the tree-like semantics of the DOM 
+	    <code>Node</code> hierarchy.</p>
+	  <p>
+	    This means there is no need to refresh the nodes of a 
+	    <code>NodeList</code> as a document changes. The fact that the
+	    indexed nodes of a 
+	    <code>NodeList</code> returned by 
+	    <code>getChildNodes</code> or 
+	    <code>getElementsByTagName</code> are automatically updated so that
+	    they are always correct as descendants are inserted or removed can
+	    be convenient, but it can also cause the index and count of nodes
+	    in the list to shift unexpectedly. Some DOM implementations may
+	    perform the automatic updating poorly.</p>
+	  <p>
+	    For example, a loop that removes a node from the hierarchy
+	    causes the next node to slide to the current index and the length
+	    to shrink. This could cause the next node to be skipped and the end
+	    of the list to be overshot. This can be avoided by decrementing the
+	    index from length - 1 to 0 instead of incrementing from 0.
+	    Decrementing processes each node before it can shift. To properly
+	    use a loop that starts at 0, whenever a removal occurs, the index
+	    must not be incremented, but the maximum index must be decremented
+	    instead.</p>
+	  <p>
+	    Different DOM implementations will process 
+	    <code>NodeList</code>s differently, so getting nodes in
+	    non-sequential order, getting the list length, or intermixing
+	    document modification could affect the performance of the
+	    application. Some DOM implementations might force the list to be
+	    completely recomputed every time a change occurs to the document.
+	    These problems can be avoided. For example, random access is seldom
+	    required and the length is not really needed if a loop terminates
+	    when the returned item is null. Constructing a loop to avoid
+	    accessing shifted nodes makes the implementation less likely to
+	    have to do a fix up. In some cases, copying nodes of a 
+	    <code>NodeList</code> to a static list before modifying the document
+	    may be the best way to avoid index shifts and recomputations.</p>
+	<p align="left"><a href="#top">Return to Top</a></p></dd>
+      
+	<dt><b><a name="ownerdoc" id="ownerdoc">ownerDocument issues</a></b></dt>
+	<dd>
+	  <dl>
+	    <dt>Must a Node always be owned by a specific Document?</dt>
+	    <dd>Yes. DOM Level 1 decided that ownerDocument is set at the time
+	      the node is created, and never reset thereafter.</dd>
+	    <dt>Why?</dt>
+	    <dd>Different DOMs may implement Nodes in completely different
+	      ways, and the implementation details may not be compatable even
+	      though both support the same public APIs. This can be true even
+	      within a single DOM implementation, since it may decide to use
+	      different kinds of Node in order to provide special behaviors for
+	      particular kinds of documents (perhaps guided by DTD/Schema or
+	      Namespace information). Thus, attempting to move a Node from one
+	      Document to another would be non-portable at best, and the DOM
+	      throws a 
+	      <code>DOMException (WRONG_DOCUMENT_ERR)</code> when you attempt to
+	      do so. Exposing ownerDocument introduced no additional
+	      constraints... and added significant value, e.g. by allowing you to
+	      write 
+	      <code>myNode.appendChild(myNode.getOwnerDocument().createTextNode("new
+		child"));</code> even when myNode is not currently part of the
+	      Document's main tree.</dd>
+	    <dt>What is the ownerDocument of a newly cloned node?</dt>
+	    <dd>The clone will be owned by the same Document as the node it was
+	      cloned from.</dd>
+	    <dt>What should 
+	      <code>parent.appendChild(newchild.clonenode(true))</code> do if
+	      parent and newchild have different 
+	      <code>ownerDocument</code> values?</dt>
+	    <dd>The DOM Recommendation specifies that appendChild 
+	      <i>Must</i>throw 
+	      <code>DOMException (WRONG_DOCUMENT_ERR)</code> if an attempt is made
+	      to insert a node from one ownerDocument into a tree with a
+	      different ownerDocument. Some DOM implementations may allow this
+	      code fragment to work in specific circumstances, when they know
+	      that the underlying representation of the nodes is compatable, but
+	      that is considered non-compliant behavior.</dd>
+	    <dt>How can I copy a node or subtree from one document to
+	      another?</dt>
+	    <dd>DOM Level 2 defines an importNode() method that performs this
+	      operation. It is up to the implementation to do this in a standard
+	      way that works across implementations or in a more efficient way
+	      that uses knowledge of that implementation's data structures. If
+	      you're working with a Level 1 DOM, you have to copy the content
+	      manually.</dd>
+	    <dt>How can I move a node from one document to another?</dt>
+	    <dd>DOM Level 3 defines an adoptNode() method that performs this
+	      operation.</dd>
+	  </dl>
+	<p align="left"><a href="#top">Return to Top</a></p></dd>
+      
+	<dt><b><a name="ordering" id="ordering">Is the ordering of elements guaranteed to be preserved in the
+	  DOM?</a></b></dt>
+	<dd>
+	  <p>
+	    Yes. The elements will always be in document order.</p>
+	<p align="left"><a href="#top">Return to Top</a></p></dd>
+      
+	<dt><b><a name="parsing" id="parsing">I've got an XML document. How do I parse this into DOM?</a></b></dt>
+	<dd>
+	  <p>
+	    The DOM Level 3 API specifies an interoperable way to parse and
+	    save documents.</p>
+	<p align="left"><a href="#top">Return to Top</a></p></dd>
+      
+	<dt><b><a name="newdoc" id="newdoc">How do I create a new Document without having to import vendor
+	  specific classes?</a></b></dt>
+	<dd>
+	  <p>
+	    In Level 1, you must use vendor-specific solutions, since the
+	    Level 1 DOM did not define how to create a Document. Level 2 does
+	    define how to create a new Document.</p>
+	<p align="left"><a href="#top">Return to Top</a></p></dd>
+      
+	<dt><b><a name="attr" id="attr">Why is 
+	  Attr a Node? Can it have children? Can it be a
+	  child?</a></b></dt>
+	<dd>
+	  <p>
+	    <code>Attr</code> is a Node because its value is actually carried by
+	    its children, which may be a mixture of 
+	    <code>Text</code> and 
+	    <code>EntityReference</code> nodes, and because making it a 
+	    <code>Node</code> allows us to store it in a 
+	    <code>NamedNodeMap</code> for easy retrieval.</p>
+	  <p>
+	    The 
+	    <code>getAttribute</code> method hides this detail by returning a
+	    string representing the concatenation of all these children, and
+	    similarly 
+	    <code>setAttribute</code> replaces the 
+	    <code>Attr</code>'s contents with a single 
+	    <code>Text</code> node holding the new string. To create or
+	    manipulate other children of an 
+	    <code>Attr</code>, you have to access the 
+	    <code>Attr</code>node directly via the 
+	    <code>getAttributeNode</code> and 
+	    <code>setAttributeNode</code> methods, or by retrieving it from the
+	    element's "attributes" 
+	    <code>NamedNodeMap</code>.</p>
+	  <p>
+	    Section 1.1.1 of the Level 1 DOM Recommendation gives a list of
+	    which nodes can be parents and children of which other nodes. 
+	    <code>Attr</code> is not a legal child of any node, so attempts to
+	    insert it as one will throw a 
+	    <code>DOMException</code> (<code>HIERARCHY_REQUEST_ERR</code>).</p>
+	<p align="left"><a href="#top">Return to Top</a></p></dd>
+      
+	<dt><b><a name="removeAttributeNodeNS" id="removeAttributeNodeNS">Why is there no removeAttributeNodeNS method?</a></b></dt>
+	<dd>
+	  <p>
+	    There is, but it's called 
+	    <code>removeAttributeNode</code>.</p>
+	  <p>
+	    We needed both 
+	    <code>setAttributeNode</code> and 
+	    <code>setAttributeNodeNS</code>, because those functions use
+	    different rules to select which (if any) existing 
+	    <code>Attr</code> the new one will replace. 
+	    <code>setAttributeNode</code> bases this decision on the 
+	    <code>nodeName</code>, while 
+	    <code>setAttributeNodeNS</code> looks at the combination of
+	    namespaceURI and localname. However, when you remove a specific 
+	    <code>Attr</code>Node, its 
+	    <code>nodeName</code>, 
+	    <code>localname</code>, and 
+	    <code>namespaceURI</code> are ignored, and there's no need for a
+	    second method to support this.</p>
+	<p align="left"><a href="#top">Return to Top</a></p></dd>
+      
+	<dt><b><a name="emptytext" id="emptytext">Why are some Text nodes empty?</a></b></dt>
+	<dd>
+	  <p>
+	    In XML, all whitespace has to be passed through to the
+	    application. This means that if you have whitespace, such as
+	    carriage returns, between tags in your source file, these have to
+	    be passed through, even if they're just there for pretty-printing.
+	    The DOM implementation has to put this whitespace somewhere, and
+	    the only possibility is a text node. Thus you will get text nodes
+	    which look empty, but in fact have a carriage return or other
+	    whitespace in them.</p>
+	  <p>
+	    Note that some DOM implementations, which do not consider
+	    whitespace in element content to be meaningful for the XML
+	    languages they support, discard these whitespace nodes before
+	    exposing the DOM to their users.</p>
+	  <p>
+	    See also the parameter "element-content-whitespace" in the 
+	    <code>DOMConfiguration</code> interface provided by DOM Level 3.</p>
+	<p align="left"><a href="#top">Return to Top</a></p></dd>
+      
+	<dt><b><a name="normalize" id="normalize">Why do I get adjacent Text nodes?</a></b></dt>
+	<dd>
+	  <p>
+	    The DOM structure model that is created by whatever it is that
+	    creates it has one Text node per block of text when it starts. The
+	    only way you can have adjacent Text nodes is as a result of user
+	    operations; it is not an option for the DOM implementation when it
+	    first presents its structure model to the user. The 
+	    <code>normalize</code> method (on the 
+	    <code>Element</code> interface in level 1, but moved to 
+	    <code>Node</code> for Level 2) will merge all the adjacent Text
+	    nodes into one again, so they will have the same form as if you
+	    wrote out the XML or HTML and then read it in again. Note that this
+	    will have no effect on CDATA Sections.</p>
+	  <p>
+	    A filtered view of a document, such as that obtained through use
+	    of TreeWalker, may have adjacent Text nodes because the intervening
+	    Nodes are not seen in that view.</p>
+	<p align="left"><a href="#top">Return to Top</a></p></dd>
+      
+	<dt><b><a name="CDTA-text" id="CDTA-text">Changing CDATA sections into Text nodes</a></b></dt>
+	<dd>
+	  <p>
+	    To change a CDATA section into a Text node, you have to copy the
+	    content of the CDATA section node into a string (using the 
+	    <code>data</code> attribute that is inherited from the 
+	    <code>CharacterData</code> interface). Create a Text node with that
+	    content (using the 
+	    <code>createTextNode</code> method on the 
+	    <code>Document</code>interface). Find the parent of the
+	    CDATASection node. Then replace the CDATA Section node with the
+	    Text node (either by inserting the Text node and deleting the CDATA
+	    Section node, or using the 
+	    <code>replaceChild</code> method on the 
+	    <code>Node</code> interface). You may then wish to call the 
+	    <code>normalize</code> method (on 
+	    <code>Element</code> in Level 1, but on 
+	    <code>Node</code> in Level 2), to merge any adjacent Text nodes.</p>
+	  <p>
+	    See also the parameter "cdata-sections" in the 
+	    <code>DOMConfiguration</code> interface provided by DOM Level 3.</p>
+	<p align="left"><a href="#top">Return to Top</a></p></dd>
+      
+	<dt><b><a name="interfaces" id="interfaces">Why are the DOM APIs "interfaces" rather than "classes"?</a></b></dt>
+	<dd>
+	  <p>
+	    Interfaces are widely used in many object-oriented languages,
+	    for example Java, and have several advantages when designing an
+	    API. They are similar to abstract classes, but all the methods are
+	    abstract. Variables in an interface must be constants. The key
+	    point with interfaces is that they do not constrain
+	    implementations. The methods defined in an interface must give the
+	    correct results, but the implementation is free to do anything it
+	    needs to. Thus, for example, even if one interface inherits from
+	    another, this does not mean that the implementation must share any
+	    code.</p>
+	  <p>
+	    Interfaces are implemented by classes. Any given class is free
+	    to implement more than one interface (e.g., an interface specified
+	    by the DOM and some extensions). When a class implements more than
+	    one interface, it must provide an implementation for all the
+	    abstract methods in each interface, but again, need not share code
+	    or any other implementation details.</p>
+	<p align="left"><a href="#top">Return to Top</a></p></dd>
+      
+	<dt><b><a name="interfaceinherit" id="interfaceinherit">Why don't the interfaces in Level 2 inherit from the interfaces
+	  in Level 1?</a></b></dt>
+	<dd>
+	  <p>
+	    In Level 2 we needed to add some more functionality to, for
+	    example, the Node interface. There are several choices for how to
+	    add new functionality to an existing interface. One is to define a
+	    new interface, say Node2, and have it inherit from Node, adding the
+	    new methods. Another possibility is to have the Node2 interface
+	    copy all the existing methods from Node, rather than inheriting
+	    them. Another method is to extend the interfaces.</p>
+	  <p>
+	    All three of these methods have advantages and disadvantages,
+	    which vary according to the language binding you are using. One big
+	    disadvantage of the inheritance method is the diamond inheritance
+	    you get when, for example, Document2 is created, which inherits
+	    both from Document (which inherits from Node) and from Node2. But
+	    Node2 also inherits from Node. The problem will only get worse as
+	    we design Level 3, Level 4, etc of the DOM. This inheritance also
+	    necessitates a lot of casting, and the user has to know which
+	    precise interface a method was defined on, to know what to cast the
+	    result to.</p>
+	  <p>
+	    Copying all the methods leads to bloated interfaces, since many
+	    methods will be present many times (again, this problem gets worse
+	    as we design more Levels of the DOM).</p>
+	  <p>
+	    Adding new methods to existing interfaces where appropriate does
+	    not work in all languages, but those languages which need a
+	    different way of doing things are expressly allowed to do so by the
+	    DOM specification. It avoids the problems of diamond inheritance
+	    and excessive casting, and cuts down on interface bloat.</p>
+	<p align="left"><a href="#top">Return to Top</a></p></dd>
+      
+	<dt><b><a name="instance-of" id="instance-of">Can I use instance-of features to distinguish one subclass of
+	  Node from another?</a></b></dt>
+	<dd>
+	  <p>
+	    That may work in some implementations of the DOM, but it isn't
+	    portable and should be avoided. Not all languages support this kind
+	    of runtime type identification. Even in languages which do, the
+	    results will depend on exactly how the DOM was implemented.</p>
+	  <p>
+	    The specification does not guarantee that there is a one-to-one
+	    mapping from DOM interface to actual object type. It is entirely
+	    possible that a single class might have been written to implement
+	    more than one of the DOM interfaces. In such an implementation, the
+	    language features can't tell which of those interfaces is actually
+	    in use by a given instance of the class. For example, if the DOM
+	    developer decided to implement Text and Comment nodes using a
+	    single class, an instance of this class would be recognized as
+	    being a legitimate instance of both interfaces.</p>
+	  <p>
+	    To reliably tell which kind of Node you're looking at, you
+	    should look at its nodeType value. To distinguish HTMLElements,
+	    look at their nodeName.</p>
+	<p align="left"><a href="#top">Return to Top</a></p></dd>
+      
+	<dt><b><a name="visitor" id="visitor">Why doesn't Traversal use the Visitor pattern?</a></b></dt>
+	<dd>
+	  <p>
+	    Visitor was considered for inclusion in the Traversal module of
+	    the Level 2 DOM. There are negative as well as positive
+	    consequences to implementing the Visitor pattern. One of Visitor's
+	    advantages over Iterator is that Visitor can handle structures
+	    where the objects don't share a common ancestor class, which is not
+	    an issue when everything you're looking at is derived from Node.
+	    Since most of the things a Visitor could do can be emulated with a
+	    switch statement driven by an iterator, we decided to defer this
+	    issue.</p>
+	<p align="left"><a href="#top">Return to Top</a></p></dd>
+      
+	<dt><b><a name="moveNode" id="moveNode">How do I move a Node from one document to another?</a></b></dt>
+	<dd>
+	  <p>
+	    Neither Level 1 nor Level 2 allow you to move a Node from one
+	    document to another, although Level 2 has an 
+	    <code>importNode</code> method which allows you to copy a Node from
+	    one document to another. So, using Level 2, you copy the Node from
+	    the source to the target document and then delete the Node from the
+	    source document. If you want to do this in Level 1, you will need
+	    to write your own function that creates a new Node in the target
+	    document and then copies the data.</p>
+	  <p>
+	    DOM Level 3 has 
+	    <code>adoptNode()</code> that will let you move a 
+	    <code>Node</code> from one 
+	    <code>Document</code> to another.</p>
+	<p align="left"><a href="#top">Return to Top</a></p></dd>
+      
+	<dt><b><a name="namespacefixup" id="namespacefixup">Do DOM implementations fix up namespaces?</a></b></dt>
+	<dd>
+	  <p>
+	    When elements or attributes which have namespace prefixes are
+	    moved, it's possible that the prefix no longer matches the same
+	    namespace URI. The DOM is always internally consistent, since each
+	    node carries its own namespace URI. It may or may not contain all
+	    the namespace declaration attributes in the right places, or have
+	    the prefixes matched up properly if those declarations do exist.
+	    The DOM is departing from canonical form, just a bit, in part
+	    because the DOM WG was concerned that continuously enforcing those
+	    restrictions could impose a significant amount of overhead. But it
+	    should contain all the data needed to allow reconciliation of those
+	    departures.</p>
+	  <p>
+	    If you think about this as a 
+	    <code>namespace_normalize()</code> operation, it may make more
+	    sense. In Level 2, that normalization task is left as an exercise
+	    for the reader, but Level 3 is expected to provide a standardized
+	    version.</p>
+	<p align="left"><a href="#top">Return to Top</a></p></dd>
+      
+	<dt><b><a name="WFXML" id="WFXML">Does the DOM require Well-Formed XML?</a></b></dt>
+	<dd>
+	  <p>
+	    The DOM assumes that an XML document which is read in is
+	    well-formed, since otherwise the XML processor which builds the DOM
+	    structure model has to stop with a fatal error, as per the XML
+	    specification. However, it is possible to carry out some editing
+	    operations using the DOM which would result in a non-WF XML
+	    document if the document were to be naively serialized. Examples
+	    are allowing "--" in comments, or not fixing up namespace URI /
+	    prefix bindings, or allowing the insertion of a character which
+	    isn't legal XML. If the document is serialized, the serializer is
+	    expected to fix the problem, e.g. by modifying the comment
+	    appropriately, or choosing an appropriate character encoding to
+	    make the character legal XML. This issue is expected to be resolved
+	    in Level 3.</p>
+	<p align="left"><a href="#top">Return to Top</a></p></dd>
+      
+	<dt><b><a name="XMLdecl" id="XMLdecl">How is the XML declaration modelled?</a></b></dt>
+	<dd>
+	  <p>
+	    DOM Level 3 provides the attributes 
+	    <code>Document.xmlVersion</code>, 
+	    <code>Document.xmlStandalone</code> and 
+	    <code>Document.xmlEncoding</code> for that effect.</p>
+	<p align="left"><a href="#top">Return to Top</a></p></dd>
+      
+	<dt><b><a name="rename_node" id="rename_node">Can I rename a node?</a></b></dt>
+	<dd>
+	  <p>
+	    DOM Level 3 provides the method 
+	    <code>renameNode()</code>. Some DOM implementations may have given
+	    it special handling based on that information (like the subclasses
+	    of HTMLElement), so the 
+	    <code>Node</code> being renamed might get destroyed and a new 
+	    <code>Node</code> is be returned.</p>
+	<p align="left"><a href="#top">Return to Top</a></p></dd>
+      
+	<dt><b><a name="insertBeforeSelf" id="insertBeforeSelf">What is the effect of 
+	  parent.insertBefore(child,child) -- in other words, of
+	  trying to insert a node before itself?</a></b></dt>
+	<dd>
+	  <p>
+	    The child node should be removed from its parent, then
+	    reinserted in the same place, as if the call had actually been 
+	    <code>parent.insertBefore(child,child.getNextSibling())</code>.
+	    Note that this is not considered a usage error; no 
+	    <code>DOMexception</code> is thrown. Nor is it necessarily a "no-op"
+	    even though the document is left unchanged, since the removal and
+	    reinsertion may have side effects -- for example, 
+	    <code>MutationEvent</code>s may be fired, and 
+	    <code>NodeIterator</code> and 
+	    <code>Range</code> fixups may occur.</p>
+	<p align="left"><a href="#top">Return to Top</a></p></dd>
+      
+	<dt><b><a name="create" id="create">Is createAttribute("href") the same as createAttributeNS(null,
+	  "href")?</a></b></dt>
+	<dd>
+	  <p>
+	    No! As explained in 
+	    <a href="http://www.w3.org/TR/2000/REC-DOM-Level-2-Core-20001113/core.html#Namespaces-Considerations">section
+	      1.1.8 XML Namespaces</a>, they're different and not
+	    really interoperable. DOM Level 1 methods solely identify attribute
+	    nodes by their 
+	    <code>nodeName</code> while DOM Level 2 methods related to
+	    namespaces, identify attribute nodes by their 
+	    <code>namespaceURI</code> and 
+	    <code>localName</code>. Unless you are writing a pure DOM 1.0
+	    application, don't use the non-namespace-aware version of these
+	    calls.</p>
+	<p align="left"><a href="#top">Return to Top</a></p></dd>
+      
+	<dt><b><a name="unsigned" id="unsigned">What is the effect of NodeList.item(-1) or Node.appendChild(null)?</a></b></dt>
+	<dd>
+	  <p>
+	    As mentioned in DOM Level 3, "<i>DOM operations only raise
+	    exceptions in "exceptional" circumstances, [...]
+	    Implementations should raise other exceptions under other
+	    circumstances. For example, implementations should raise an
+	    implementation-dependent exception if a null argument is
+	    passed when null was not expected.</i>", therefore if an
+	    attribute is declared <code>unsigned</code>, using a
+	    negative should generate an error. Note that the error
+	    itself is not defined and is therefore implementation and
+	    binding dependent.</p>
+	<p align="left"><a href="#top">Return to Top</a></p></dd>
+      </dl>
+  
+</body>
+</html>

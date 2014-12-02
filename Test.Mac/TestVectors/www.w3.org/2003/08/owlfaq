@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+      "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=iso-8859-1" />
+  <title>Frequently Asked Questions on W3C's Web Ontology Language (OWL)</title>
+  <meta name="generator" content="amaya 7.2, see http://www.w3.org/Amaya/" />
+  <link href="/StyleSheets/press.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+<img alt="W3C" src="/Icons/WWW/w3c_home" /> 
+
+<h1>Frequently Asked Questions on W3C's Web Ontology Language (OWL)</h1>
+
+<p><em>Status: this FAQ is no longer maintained. For a new, up-to-date FAQ, see
+the <a href="http://www.w3.org/2001/sw/SW-FAQ">Semantic Web FAQ</a>.</em></p>
+
+<h2>Q. What is an ontology?</h2>
+
+<p>A. Although the concept of ontology has been around for a very long time in
+philosophy, in recent years it has become identified with computers as a
+machine readable vocabulary that is specified with enough precision to allow
+differing terms to be precisely related.</p>
+
+<p>More precisely, from the <a
+href="http://www.w3.org/TR/2004/REC-webont-req-20040210/">OWL Requirements
+Document</a>:</p>
+
+<blockquote>
+  An ontology defines the terms used to describe and represent an area of
+  knowledge. Ontologies are used by people, databases, and applications that
+  need to share domain information (a domain is just a specific subject area or
+  area of knowledge, like medicine, tool manufacturing, real estate, automobile
+  repair, financial management, etc.). Ontologies include computer-usable
+  definitions of basic concepts in the domain and the relationships among them
+  [...]. They encode knowledge in a domain and also knowledge that spans
+  domains. In this way, they make that knowledge reusable.</blockquote>
+
+<p></p>
+
+<h2>Q. How is OWL different from earlier ontology languages?</h2>
+
+<p>A. OWL is a <em>Web</em> Ontology language. Where earlier languages have
+been used to develop tools and ontologies for specific user communities
+(particularly in the sciences and in company-specific e-commerce applications),
+they were not defined to be compatible with the architecture of the World Wide
+Web in general, and the Semantic Web in particular.</p>
+
+<p>OWL rectifies this by providing a language which uses the linking provided
+by <a href="http://www.w3.org/TR/2004/REC-rdf-primer-20040210/">RDF</a> to add
+the following capabilities to ontologies:</p>
+<ul>
+  <li>Ability to be distributed across many systems</li>
+  <li>Scalable to Web needs</li>
+  <li>Compatible with Web standards for accessibility and
+  internationalization.</li>
+  <li>Open and extensible</li>
+</ul>
+
+<p></p>
+
+<h2>Q. What can Web Ontologies be used for?</h2>
+
+<p>A. The Web Ontology Working Group identified major use cases of ontologies
+on the Web and described these in <a
+href="http://www.w3.org/TR/2004/REC-webont-req-20040210/">the Use Cases and
+Requirements document</a>. A survey of implemented applications (using earlier
+web ontology languages) was made with about 25 actually deployed systems
+identified.</p>
+
+<p>The WG categorized these into six main areas, as follows:</p>
+
+<p></p>
+<ul>
+  <li>Web Portals 
+    <ul>
+      <li>Categorization rules used to enhance search</li>
+    </ul>
+  </li>
+  <li>Multimedia Collections 
+    <ul>
+      <li>Content-based searches for non-text media</li>
+    </ul>
+  </li>
+  <li>Corporate Web Site Management 
+    <ul>
+      <li>Automated Taxonomical Organization of data and documents</li>
+      <li>Mapping Between Corporate Sectors (mergers!)</li>
+    </ul>
+  </li>
+  <li>Design Documentation 
+    <ul>
+      <li>Explication of "derived" assemblies (e.g. the wing span of an
+        aircraft)</li>
+      <li>Explicit Management of Constraints</li>
+    </ul>
+  </li>
+  <li>Intelligent Agents 
+    <ul>
+      <li>Expressing User Preferences and/or Interests</li>
+      <li>Content Mapping between Web sites</li>
+    </ul>
+  </li>
+  <li>Web Services and Ubiquitous Computing 
+    <ul>
+      <li>Web Service Discovery and Composition</li>
+      <li>Rights Management and Access Control</li>
+    </ul>
+  </li>
+</ul>
+
+<p></p>
+
+<h2>Q. Who is implementing OWL tools and applications?</h2>
+
+<p>A. A large number of organizations have been exploring the use of OWL, with
+many tools currently available. The Working Group is maintaining a <a
+href="http://www.w3.org/2001/sw/WebOnt/impls">list of implementations and
+demonstrations</a>. In addition, both the US government (via DARPA and NSF) and
+the European Union (via the 5th and 6th generation frameworks of the IST
+program) have invested in web ontology language development. Most of the
+systems currently using DAML, OIL and <a href="http://www.daml.org">DAML+OIL
+</a> (the predecessor languages that OWL was based on) are now migrating to
+OWL. In addition, a number of ontology language tools, such as the widely used
+<a href="http://protege.stanford.edu/plugins/owl/">Protege system</a>, now
+provide OWL support.</p>
+
+<p></p>
+
+<h2>Q. Are there OWL ontologies available already?</h2>
+
+<p>A. There are a large number of ontologies available on the Web in OWL. There
+is an ontology library at <a href="http://www.daml.org/ontologies/">DAML
+ontology library</a>, which contains about 250 examples written in OWL or
+DAML+OIL (a <a href="http://www.mindswap.org/2002/owl.html">converter from
+DAML+OIL to OWL</a> is available on the web). In addition, several large
+ontologies have been released in OWL. These include <a
+href="http://www.mindswap.org/2003/CancerOntology/">a cancer ontology in
+OWL</a> developed by the US National Cancer Institute's <a
+href="http://ncicb.nci.nih.gov/">Center for Bioinformatics,</a> which contains
+about 17,000 cancer related terms and their definitions, and an OWL version of
+the well-known <a href="http://www.opengalen.org/index.html">GALEN medical
+ontology</a>, developed at the University of Manchester.</p>
+
+<p></p>
+
+<h2>Q. What does OWL add that RDF-schema doesn't?</h2>
+
+<p>A. Owl extends RDFS to allow for the expression of complex relationships
+between different RDFS classes and of more precise constraints on specific
+classes and properties. Example of these include: - the means to limit the
+properties of classes with respect to number and type, - the means to infer
+that items with various properties are members of a particular class - the
+means to determine if all members of a class will have a particular property,
+or if only some of them might - the means to distinguish one-to-one from
+many-to-one or one-to-many relationships, allowing the "foreign keys" of a
+database to be represented in an ontology - the means to express relationships
+between classes defined in different documents across the web, - the means to
+construct new classes out of the unions, intersections and complements of other
+classes, and - the means to constrain range and domain to specific
+class/property combinations. The <a
+href="http://www.w3.org/TR/2004/REC-owl-guide-20040210/">OWL Guide</a> provides
+examples of all of these in the area of describing food and wine.</p>
+
+<p></p>
+
+<h2>Q. What documents are in the OWL document set?</h2>
+
+<p>A. The Working Group has produced six documents each aimed at different
+segments of those wishing to learn, use, implement or understand the OWL
+language. Our documents include - a presentation of the <a
+href="http://www.w3.org/TR/2004/REC-webont-req-20040210/">use cases and
+requirements </a> that motivated OWL - an <a
+href="http://www.w3.org/TR/2004/REC-owl-features-20040210/">overview</a>
+document which briefly explains the features of OWL and how they can be used -
+a comprehensive <a
+href="http://www.w3.org/TR/2004/REC-owl-guide-20040210/">Guide</a> that
+provides a walk-through of the features of OWL with many examples of the use of
+OWL features - a <a
+href="http://www.w3.org/TR/2004/REC-owl-ref-20040210/">reference document</a>
+that provides the details of every OWL feature - a <a
+href="http://www.w3.org/TR/2004/REC-owl-test-20040210/">test case document</a>,
+and <a href="http://www.w3.org/2002/03owlt/">test suite</a>, providing over a
+hundred tests that can be used for making sure that OWL implementations are
+consistent with the language design - a document presenting <a
+href="http://www.w3.org/TR/2004/REC-owl-semantics-20040210/">the semantics of
+OWL and details of the mapping from OWL to RDF</a> (This document presents the
+model theoretical details of every feature of OWL so that those implementing
+complete OWL reasoners can guarantee algorithmic compliance with all aspects of
+the language design).</p>
+
+<h2>Q. What is new about ontologies on the Semantic Web? How do they differ
+from expert systems and the other artificial intelligence (AI) technologies
+promoted in the 1980s?</h2>
+
+<p>A. The relation between the Semantic Web, and OWL in particular, to work in
+AI is somewhat parallel to the relation between the Web and the hypertext
+community -- based on some of the same motivations, but with a very different
+architecture that drastically changes the ways in which the technology can be
+deployed. In a <a
+href="http://www.sciam.com/article.cfm?articleID=00048144-10D2-1C70-84A9809EC588EF21">widely
+cited article</a> from <em>Scientific American</em>, Berners-Lee, Hendler and
+Lassila wrote:</p>
+
+<blockquote>
+  For the semantic web to function, computers must have access to structured
+  collections of information and sets of inference rules that they can use to
+  conduct automated reasoning. Artificial-intelligence researchers have studied
+  such systems since long before the Web was developed. Knowledge
+  representation, as this technology is often called, is currently in a state
+  comparable to that of hypertext before the advent of the Web: it is clearly a
+  good idea, and some very nice demonstrations exist, but it has not yet
+  changed the world. It contains the seeds of important applications, but to
+  realize its full potential it must be linked into a single global system.
+</blockquote>
+
+<p>The OWL language is a major step towards developing that potential.</p>
+
+<h2>Q. What does the acronym "OWL" stand for?</h2>
+
+<p>A. Actually, OWL is not a real acronym. The language started out as the "Web
+Ontology Language" but the Working Group disliked the acronym "WOL." We decided
+to call it OWL. The Working Group became more comfortable with this decision
+when one of the members pointed out the following justification for this
+decision from the noted ontologist A.A. Milne who, in his influential book
+"Winnie the Pooh" stated of the wise character OWL:</p>
+
+<p>"He could spell his own name WOL, and he could spell Tuesday so that you
+knew it wasn't Wednesday..."</p>
+<address>
+  Jim Hendler, co-chair of the <a href="http://www.w3.org/2001/sw/WebOnt/">W3C
+  Web Ontology Working Group</a>, and the <a href="mailto:w3t-pr@w3.org">W3C
+  Communications Team</a><br />
+  $Date: 2008/05/21 20:54:18 $ 
+</address>
+
+<p></p>
+
+<p></p>
+</body>
+</html>

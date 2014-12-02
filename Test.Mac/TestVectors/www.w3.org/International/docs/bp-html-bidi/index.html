@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Authoring HTML: Handling Right-to-left Scripts</title>
+    <meta http-equiv='Content-Type' content='text/html;charset=utf-8'/>
+	<link rel="stylesheet" href="local.css" type="text/css" />
+    <!-- 
+      === NOTA BENE ===
+      For the three scripts below, if your spec resides on dev.w3 you can check them
+      out in the same tree and use relative links so that they'll work offline,
+     -->
+    <script src='http://www.w3.org/Tools/respec/respec-w3c-common' class='remove'></script>
+    <script class='remove'>
+      var respecConfig = {
+          // specification status (e.g. WD, LCWD, NOTE, etc.). If in doubt use ED.
+          specStatus:           "ED",
+          
+          // the specification's short name, as in http://www.w3.org/TR/short-name/
+          shortName:            "i18n-html-tech-bidi",
+
+          // if your specification has a subtitle that goes below the main
+          // formal title, define it here
+          // subtitle   :  "an excellent document",
+
+          // if you wish the publication date to be other than today, set this
+          // publishDate:  "2009-08-06",
+
+          // if the specification's copyright date is a range of years, specify
+          // the start date here:
+          // copyrightStart: "2005"
+
+          // if there is a previously published draft, uncomment this and set its YYYY-MM-DD date
+          // and its maturity status
+          // previousPublishDate:  "1977-03-15",
+          // previousMaturity:  "WD",
+
+          // if there a publicly available Editor's Draft, this is the link
+          edDraftURI:           "http://www.w3.org/International/docs/bp-html-bidi/",
+
+          // if this is a LCWD, uncomment and set the end of its review period
+          // lcEnd: "2009-08-05",
+
+          // if you want to have extra CSS, append them to this list
+          // it is recommended that the respec.css stylesheet be kept
+          extraCSS:             [
+		  "http://dev.w3.org/2009/dap/ReSpec.js/css/respec.css",
+		  "http://www.w3.org/International/docs/bp-html-bidi/local.css"],
+
+          // editors, add as many as you like
+          // only "name" is required
+          editors:  [
+              { name: "Richard Ishida", url: "",
+                company: "W3C", companyURL: "" },
+          ],
+
+          // authors, add as many as you like. 
+          // This is optional, uncomment if you have authors as well as editors.
+          // only "name" is required. Same format as editors.
+
+          authors:  [  ],
+          
+          // name of the WG
+          wg:           "Internationalization Working Group",
+          
+          // URI of the public WG page
+          wgURI:        "http://www.w3.org/International/",
+          
+          // name (without the @w3c.org) of the public mailing to which comments are due
+          wgPublicList: "www-international",
+          
+          // URI of the patent status for this WG, for Rec-track documents
+          // !!!! IMPORTANT !!!!
+          // This is important for Rec-track documents, do not copy a patent URI from a random
+          // document unless you know what you're doing. If in doubt ask your friendly neighbourhood
+          // Team Contact.
+          wgPatentURI:  "",
+      };
+    </script>
+  </head>
+  <body>
+  <p id="sotd">This document provides advice on practical techniques related to the creation of content in languages that use right-to-left scripts, such as Arabic and Hebrew, or content in other languages that includes fragments of text in these scripts. This is a W3C Draft produced by the <a href="http://www.w3.org/International/core/">Internationalization  Working Group</a>, part of the <a href="http://www.w3.org/International/Activity">W3C Internationalization Activity</a>. The Working Group expects to advance this Working Draft to Working Group Note. Please send comments on this document to <a href="mailto:www-international@w3.org">www-international@w3.org</a> (<a href="http://lists.w3.org/Archives/Public/www-international/">publicly archived</a>). </p>
+
+    <section id='abstract'>
+This document provides advice for the use of HTML markup and CSS style sheets to create pages for languages that use right-to-left scripts, such as Arabic, Hebrew, Persian, Thaana, Urdu, etc. It explains how to create content in right-to-left scripts that builds on but goes beyond the Unicode bidirectional algorithm, as well as how to prepare content for localization into right-to-left scripts.
+  </section>
+  
+  <section id="ri20030912.142608197">
+    <h2>Introduction</h2>
+    
+<section id="audience">
+  <h3>Who should use this document?</h3>
+<p>All   authors and producers of HTML  and CSS who are working with text in a language that uses a right-to-left script, or whose content will be localized to a language that uses a right-to-left script. </p>
+<p>This document provides guidance for developers of HTML that enables support for international deployment. Enabling international deployment is the responsibility of all content authors, not just localization groups or vendors, and is relevant from the very start of development. <!--Ignoring the advice in this document, or relegating it to a later phase in the development process, will only add unnecessary costs and resource issues at a later date.--></p><p>It is assumed that readers of this document are proficient in developing HTML and XHTML pages - this document limits itself to providing advice specifically related to internationalization.</p></section>
+
+<section id="howtouse">
+  <h3>How to use this document</h3>
+<div class="note">If you don't know much about bidirectional text, you may find it useful to familiarise yourself with the concepts introduced in the tutorial <a href="/International/tutorials/bidi-xhtml/">Creating HTML Pages in Arabic, Hebrew and Other Right-to-left Scripts</a>. That tutorial provides an overview of how to create pages in right-to-left scripts.</div>
+<p>This document lists a number of <span class="new-term">do's and don'ts</span>, which we will refer to as <strong>techniques</strong>, related to authoring pages in right-to-left scripts. Each technique is followed by a 'detail' link which provides further information. Where needed, you can get additional information and explanations by following the links to the appropriate section of the techniques index, listed alongside each section.</p>
+<p>If a technique says 'consider', there are usually pros and cons involved in following the advice given, and you should follow the link to more detailed information to be sure you understand these. In some cases it may be that not all browsers support the features described. In other cases, it may be purely up to you to decide whether or not this is a good idea.</p></section>
+  </section>
+
+
+<section id="d2e254">
+<h2>Important concepts</h2>
+
+<section id="ri20040808.101452727">
+  <h3>Bidirectional (bidi) text</h3>
+<p>'<span class="qterm">Bidirectional</span>', or '<span class="qterm">bidi</span>', text typically refers to text written using a mixture
+		  of right-to-left and left-to-right scripts. For example, in Arabic and Hebrew text the content flows predominantly from right to left, but
+		  embedded numbers or text in other scripts (such as Latin script) still runs left to right. Text in other languages,
+		  such as English, can also be bidirectional if it includes excerpts from languages such as Arabic and Hebrew.</p><p>Scripts such as Arabic and Hebrew, which are predominantly right-to-left in orientation, may be referred
+		  to as '<span class="qterm">RTL</span>' (right-to-left) scripts.</p>
+		  <p> Several languages use the Arabic script, such as Urdu and Persian. Several other scripts run predominantly right-to-left: these include Thaana, N'ko, and Syriac, as well as other scripts no longer in common use, such as Cypriot, Phoenician and Kharoshthi.</p></section>
+<section id="ri20050208.093646470.">
+  <h3>Relationship between language and direction</h3>
+<p>Direction is a property of scripts, not language.</p>
+<p>Be careful about assuming that information about directionality can be inferred from information about the language of the text, as this is
+	not always true. There must be a one-to-one mapping between directionality and language for this to work, and there often isn't. For example, Azerbaijani can be written using both right-to-left and left-to-right scripts, and the language code <code class="kw">az</code> is relevant for either. </p>
+<p>In addition, when using directional markup inline, the markup and the values of that markup do not necessarily coincide with language declarations. </p><p>Also, markup used to indicate directionality has values that indicate that the normal directionality should be overridden; it is not possible to indicate that using language related values.</p><p>In the same way, attributes indicating text direction in HTML  do not, and should not,  provide information about the language of
+			 text.</p>
+<p>Although it is theoretically possible to infer direction correctly much of the time from language information (no browser does so at the time of writing), it is much better to use directional markup.</p></section>
+</section>
+
+
+<section id="bidisource">
+  <h2>Problems with bidirectional source text in markup</h2>
+
+<p>There is currently a lack of good editing environments for creating HTML pages using right-to-left scripts. Because of the fact that HTML markup and escapes contain punctuation and strongly typed letters, you are always working with bidirectional source text.  However, if the editing application is not aware (as is usually the case) that the markup is not ordinary text, then it can produce some odd effects and make coding difficult. </p><p>This section simply mentions some of those problems, so that you are forewarned. It doesn't propose a full solution, but it does offer some advice which may help with problematic editing environments.</p>
+
+<section id="ri20060623.095434796">
+  <h3>Working with markup</h3>
+<p>Unless your editor recognizes markup in source text as not being normal text, the strongly typed letters and punctuation in the markup will appear in places you wouldn't expect, and sometimes interfere with the order of the content itself.</p><p>If you are creating a large amount of right-to-left text, it makes sense to set the base direction of the editing window in your editor to right-to-left.  This helps ensure that the content is correctly ordered. Unfortunately, this tends to increase the likelihood that your markup looks strange in the source text.</p>
+<p><a class="fig-ref" href="#ri20060625.100504543"></a> shows some simple markup in a left-to-right context.</p>
+<p>The source contains a <code class="kw">p</code> tag followed by a <code class="kw">class</code> attribute, followed by a <code class="kw">title</code> attribute with some Arabic text (العربي) as its value. The content of the paragraph itself (مشس هخصث خهس تخت تخهثز) starts with Arabic text. The resulting order in a left-to-right environment (where Arabic text is indicated by text in square brackets) is shown below.</p>
+<figure id="ri20060625.100504543" class="example">
+  <figcaption>Markup being rearranged in LTR source code</figcaption>
+<p>&lt;p class="myclass" title="العربي"&gt;مشس هخصث خهس تخت تخهثز.&lt;/p&gt;</p>
+<p><code>&lt;p class="myclass" title="[paragraph_content]&lt;"[title_value].&lt;/p&gt;</code>.</p>
+</figure>
+<p>As <a href="#ri20060625.102000852"></a> shows, things are hardly better if the overall context for the source code is right-to-left. In this case, the resulting order for the same source text can be seen here.</p>
+<figure id="ri20060625.102000852" class="example">
+  <figcaption>Markup being rearranged in RTL source code</figcaption>
+<p dir="rtl">&lt;p class="myclass" title="العربي"&gt;مشس هخصث خهس تخت تخهثز.&lt;/p&gt;</p>
+<p style="text-align:right;"><code>&lt;p/&gt;[paragraph_content]&lt;"[title_value]"=p class="myclass" title&gt;</code>.</p>
+</figure>
+<p>Note, however, that this source will display correctly in a user agent.  This is just a problem for reading and maintaining the source text.</p>
+<p>The <code class="kw">title</code> attribute with Arabic text makes the situation much worse than normal in the above examples.  The problem arises because there is only 'punctuation' (ie. the quote and angle bracket) between two runs of strongly-typed right-to-left text, so the Unicode bidirectional algorithm considers this to be a single run of text. </p>
+<p>It helps a little, if you can do it, to ensure that an attribute with a  value that uses left-to-right script text (in the example below, the <code class="kw">class</code> attribute) appears last.  This would make the text in a left-to-right context look as expected, and in a right-to-left context it would prevent the interaction of markup with content (see <a href="#ri20060625.103644305"></a>). There are still some issues, however – things are still a little jumbled, and the quotation marks are not where you would expect.</p>
+<figure id="ri20060625.103644305" class="example">
+<figcaption>Separating RTL text in the source</figcaption>
+<p dir="rtl">&lt;p title="العربي" class="myclass"&gt;مشس هخصث خهس تخت تخهثز.&lt;/p&gt;</p>
+<p style="text-align:right;"><code>&lt;p/&gt;[paragraph_content]&lt;"class="myclass "[title_value]"=p  title&gt;</code>.</p>
+</figure>
+<p>It can also help to start the content on a new line (see <a href="#ri20060625.105702196"></a>), however this doesn't always help with inline markup.  Also, you should try to avoid including white space before the closing markup, as this can <a href="/International/questions/qa-bidi-space">lead to other problems</a>.</p>
+<figure id="ri20060625.105702196" class="example">
+<figcaption>Starting content after a new line</figcaption>
+<p dir="rtl">&lt;p class="myclass" title="العربي"&gt;</p><p dir="rtl">مشس هخصث خهس تخت تخهثز.&lt;/p&gt;</p>
+</figure>
+<p>If you are dealing with content that is predominantly in a right-to-left script, the ideal solution would be a source editor that recognizes markup as a special construct, and protects it to produce a sensible order for the characters in the source text. Not only that, but if your markup includes a <code class="kw">dir</code> attribute to change the directional context of the content, your editor should recognize this and produce a corresponding change in the order of the source code.</p>
+<p>For small edits, if they are unable to find a bidi-aware editor, some authors actually prefer to use an editor that knows nothing about bidi. This means that they have to read the right-to-left content backwards, but at least makes it easier to locate and change the items they are interested in.</p>
+</section>
+
+<section id="ri20060623.095429759">
+<h3>Adding escapes to the content</h3>
+<p>If you use a Unicode  control character such as the <span class="uname">RIGHT TO LEFT MARK</span> (RLM) or <span class="uname">ZERO-WIDTH NON JOINER</span>, you will not usually be able to see it in the source text, since it is invisible.  For this reason you may think that a useful way to represent these characters is with the pre-defined HTML character entities,
+			 <code class="kw">&amp;rlm;</code> and <code class="kw">&amp;zwnj;</code>, or their numeric equivalents,  <code>&amp;#x200F;</code> and <code>&amp;#x200C;</code>.  </p>
+<p>Unfortunately, such an approach typically has its problems, too. As described in the previous section related to markup in source text, the strongly-typed left-to-right characters and non-alphabetic characters in the escapes will normally cause the Unicode bidirectional algorithm to display very odd looking source text.</p>
+		    <p>Very few editors currently recognize, for example, the sequence of characters in <code>&amp;#x200F;</code> as a single unit representing a character with a strong right-to-left direction. They treat this as simply text containing punctuation, numbers and two strongly-typed left-to-right characters (x and F), and apply the Unicode bidirectional algorithm to that as they would to any normal text.</p>
+		    <p><a href="#ri20060623.091251616"></a> shows a typical view of source text after  adding an escape to bidirectional text in right-to-left ordered source text. Focus on the constituent parts of the character escape itself, rather than the order of the Arabic text. The sequence <code>&amp;#x200F;</code> is displayed <code>;x200F#&amp;</code> when embedded in right-to-left text. At the beginning or end of embedded English text the escape is broken into fragments, and  appears as <code>x200F;text in english#&amp;</code> or <code>;text in english&amp;#x200F</code>, respectively.</p><p>Note that the source will still display correctly in a user agent.  This is just a problem for reading and maintaining the source text.</p>
+<figure id="ri20060623.091251616" class="example">
+<figcaption>Escape sequences  rearranged in RTL source code.</figcaption>
+<p dir="rtl">مشس&amp;#x200F; هخصث خهس text in english تخت تخهثز.</p>
+<p dir="rtl">مشس هخصث خهس &amp;#x200F;text in english تخت تخهثز.</p>
+<p dir="rtl">مشس هخصث خهس text in english&amp;#x200F; تخت تخهثز.</p>
+</figure>
+            
+<p>Various approaches are possible, if you want to avoid using  characters that are invisible in your source code:</p><ul><li><p>use an editor that recognizes an escape as a single unit representing a RLM/LRM character and produces the expected effect on the surrounding source text</p></li><li><p>use an editor that provides a symbolic visual representation of the RLM/LRM character, so that you don't lose sight of it</p></li><li><p>break the source code line around the escape - works in some cases</p></li></ul>
+<p>Otherwise, you just have to learn to live with the undesirable reordering effects for escapes.</p>
+</section>
+
+<section id="ri20060625.110946746">
+<h3>Example source text in Internationalization Activity articles</h3>
+<p>Given the discussion above, representing examples of source text in examples can be quite difficult. Should we show source text in right-to-left order, or left-to-right?  Should we assume that the editor recognizes and handles markup and escapes as separate entities from the content, and create source fragments that look like that – or should we show source as it really looks for many people who don't have such clever editors? And particularly, should we assume that the bidirectional algorithm is properly applied in the source editor, picking up cues from the markup, or not?</p>
+<p>In most of our articles right-to-left text in code samples is represented by UPPERCASE TRANSLATIONS, and left-to-right text by lowercase. In this case, text in code samples reflects the direction of characters as stored in memory, rather than the displayed result. The original version of text in uppercase translations would be read from right-to-left.</p>
+<figure id="ri20060623." class="example">
+  <figcaption>An example of how source text examples are written.</figcaption>
+  <p>In the following fragment of source code the upper case characters represent the  text written with a right-to-left script. What you see is a translation of the text, written from left to right. All the other text in the example is in Latin script, and so is written in lower case. The punctuation is also arranged from left to right, reflecting the order of text in memory rather than the order when displayed.</p>
+  <p><code>&lt;p&gt;the phrase '&lt;span dir=&quot;rtl&quot; lang=&quot;he&quot;&gt;INTERNATIONALIZATION ACTIVITY!&lt;/span&gt;' was found in this page.&lt;/p&gt;</code></p>
+  <p>In real life, the actual text in this example would look as follows, where the Hebrew text between the quotes is read right-to-left:</p>
+  <p>The phrase '<span dir="rtl" lang="he">פעילות הבינאום!</span>' was found on this page.</p>
+</figure>
+</section>
+</section>
+<section id="ri20030218.135303232">
+  <h2>Setting up a right-to-left page</h2>
+
+<p> Only use bidi markup to set the base direction for the document as a whole, or where you need to <em>change</em> the base direction. <a href="/International/questions/qa-html-dir#markkupcrazy" class="detail"  title="Click for explanations and further details.">detail</a></p>
+<p>Add <code>dir=&quot;rtl&quot;</code> to the <code class="kw">html</code> tag any time the overall document direction is right-to-left. <a href="/International/questions/qa-html-dir#documentlevel" class="detail"  title="Click for explanations and further details.">detail</a></p>
+<p>Don't add <code>dir=&quot;rtl&quot;</code> to the <code class="kw">body</code> tag. <a href="/International/questions/qa-html-dir#documentlevel" class="detail"  title="Click for explanations and further details.">detail</a>  If you need to avoid the scroll bar moving on some browsers, put <code class="kw">dir</code> on the <code class="kw">head</code> element and a <code class="kw">div</code> just inside the <code class="kw">body</code> element. <a href="/International/questions/qa-html-dir#ie" class="detail"  title="Click for explanations and further details.">detail</a></p>
+<p>Use logical order, not visual ordering for Hebrew, and choose an appropriate encoding. <a href="/International/questions/qa-visual-vs-logical" class="detail"  title="Click for explanations and further details.">detail</a>     Except for very rare circumstances you should always use the Unicode encoding UTF-8. <a href="/International/questions/qa-choosing-encodings#useunicode" class="detail"  title="Click for explanations and further details.">detail</a> If you have to use an ISO encoding for a Hebrew page, declare the encoding as <code class="kw">ISO-8859-8-i</code> rather than <code class="kw">ISO-8859-8</code>. <a href="/International/questions/qa-visual-vs-logical#characterencodings" class="detail"  title="Click for explanations and further details.">detail</a></p>
+<p>Do not use CSS styling to control directionality in HTML. Use markup. <a href="/International/questions/qa-bidi-css-markup" class="detail"  title="Click for explanations and further details.">detail</a></p>
+<div class="technique-links">
+<p><b>Learn more about:</b></p>
+<ul>
+<li><a href="/International/techniques/authoring-html#direction">Text direction</a></li>
+<li><a href="/International/techniques/authoring-html#using">Setting up a right-to-left page</a></li>
+</ul>
+</div>
+</section>
+
+
+
+<section id="ri20030728.09474480">
+  <h2>Setting direction on block elements</h2>
+
+<p>Add the <code class="kw">dir</code> attribute to a block element to change base direction. <a href="/International/questions/qa-html-dir#blockelements" class="detail"  title="Click for explanations and further details.">detail</a> Don't use CSS or Unicode control characters to control directionality in HTML. Use markup. <a href="/International/questions/qa-bidi-css-markup" class="detail"  title="Click for explanations and further details.">detail</a></p>
+          <p>Only use bidi markup to set the base direction for the document as a whole, or where you need to <em>change</em> the base direction. <a href="/International/questions/qa-html-dir#markkupcrazy" class="detail"  title="Click for explanations and further details.">detail</a></p>
+          <div class="technique-links">
+<p><b>Learn more about:</b></p>
+          <ul>
+            <li><a href="/International/techniques/authoring-html#direction">Text direction</a></li>
+            <li><a href="/International/techniques/authoring-html#blocks">Setting  direction on block elements</a></li>
+          </ul>
+          </div>
+</section>
+
+
+<section id="form-dir">
+  <h2>Managing text direction in form controls</h2>
+
+<p><span class="link">Add <code class="kw">dir="auto"</code> to <code class="kw">input</code> tags to automatically align text to the correct side of an input field</span>. <a href="/International/questions/qa-html-dir#autoinput" class="detail"  title="Click for explanations and further details.">detail</a></p>
+        <p><span class="link">Add <code class="kw">dir="auto"</code> to <code class="kw">textarea</code> and <code class="kw">pre</code> tags to make paragraphs align to the left or right according to the initial strong character</span>. <a href="/International/questions/qa-html-dir#autotextarea" class="detail"  title="Click for explanations and further details.">detail</a></p>
+        <p><span class="link">Consider using the <code class="kw">dirname</code> attribute to pass information to the server about the direction of  text in a text or search form control</span>. <a href="/International/questions/qa-html-dir#reportingdirection" class="detail"  title="Click for explanations and further details.">detail</a></p>
+        <div class="technique-links">
+<p><b>Learn more about:</b></p>
+
+          <ul>
+            <li><a href="/International/techniques/authoring-html#direction">Text direction</a></li>
+            <li><a href="/International/techniques/authoring-html#formdir">Managing text direction in form controls</a></li>
+          </ul>
+  </div>
+</section>
+
+
+
+<section id="ri20030218.135304584">
+  <h2>Mixing text direction inline</h2>
+  <p>If you know the phrase's direction, or can work it out for injected text,  tightly wrap every opposite-direction phrase in markup. Add the CSS shim to your style sheet, and use the <code class="kw" translate="no">dir</code> attribute on that markup. Be sure to nest markup to show the structure. <a href="/International/articles/inline-bidi-markup/#whattodo" class="detail"  title="Click for explanations and further details.">detail </a></p>
+<p><span class="link">If you want to bullet-proof your code for browsers that don't support the CSS shim where tightly-wrapped text is followed inline by a number or a logically separate opposite-direction phrase, add <code>&amp;rlm;</code> or <code>&amp;lrm;</code> immediately after the phrase.</span> <a href="/International/articles/inline-bidi-markup/#whattodo" class="detail"  title="Click for explanations and further details.">detail</a></p>
+        <p><span class="link"> If you don't know the phrase's direction, ie. unknown text that will be injected at run time, then either wrap the phrase in <code class="kw">bdi</code> (no <code class="kw">dir</code> attribute needed), or if the phrase is tightly wrapped by an element already, just add <code>dir=&quot;auto&quot;</code> to that element.</span> <a href="/International/articles/inline-bidi-markup/#whattodo" class="detail"  title="Click for explanations and further details.">detail</a></p>
+        <p>Use Unicode control characters for bidirectional control only for attribute text or element text that allows no internal markup. <a href="/International/questions/qa-bidi-controls" class="detail"  title="Click for explanations and further details.">detail</a></p>
+        <p>Consider using Unicode control characters to set the base direction around bidirectional text that will be displayed as tool tips, page titles, or on JavaScript dialog boxes. <a href="/International/questions/qa-bidi-controls" class="detail"  title="Click for explanations and further details.">detail</a></p>
+        <p>Do not leave white space at the end of inline elements that mark a directional boundary. <a href="/International/questions/qa-bidi-space" class="detail"  title="Click for explanations and further details.">detail</a></p>
+<div class="technique-links">
+<p><b>Learn more about:</b></p>
+          <ul>
+            <li><a href="/International/techniques/authoring-html#direction">Text direction</a></li>
+            <li><a href="/International/techniques/authoring-html#inline">Mixing text direction inline</a></li>
+          </ul>
+  </div>
+</section>
+
+
+<section id="ri20030510.102858118">
+  <h2>Handling parentheses &amp; other mirrored characters</h2>
+<p>Treat mirrored characters as if any word <code class="kw">left</code> in the name meant 'opening', and <code class="kw">right</code> meant 'closing'. <a href="/International/articles/inline-bidi-markup/#mirrored" class="detail"  title="Click for explanations and further details.">detail</a></p>
+<div class="technique-links">
+<p><b>Learn more about:</b></p>
+          <ul>
+            <li><a href="/International/techniques/authoring-html#direction">Text direction</a></li>
+            <li><a href="/International/techniques/authoring-html#mirrored">Handling parentheses &amp; other mirrored characters</a></li>
+          </ul>
+  </div>
+</section>
+
+
+<section id="ri20030218.135307338">
+  <h2>Overriding the Unicode bidirectional algorithm</h2>
+<p>Use the <code class="kw">bdo</code> element to force the directionality of a sequence of inline characters. <a href="/International/articles/inline-bidi-markup/#override" class="detail"  title="Click for explanations and further details.">detail</a></p>
+<div class="technique-links">
+<p><b>Learn more about:</b></p>
+          <ul>
+            <li><a href="/International/techniques/authoring-html#direction">Text direction</a></li>
+            <li><a href="/International/techniques/authoring-html#bdo">Overriding the Unicode bidirectional algorithm</a></li>
+          </ul>
+</div>
+</section>
+
+
+<!--section id="ri20030218.135307338">
+  <h2>Overriding the Unicode bidirectional algorithm</h2>
+  <p class="links">Learn more about:<br>
+  <a href="/International/techniques/authoring-html#direction">Text direction</a><br>
+  <a href="/International/techniques/authoring-html#bdo">Overriding the Unicode bidirectional algorithm</a></p>
+  <p> Use the <code class="kw">bdo</code> element to force the directionality of a sequence of inline characters. <span class="link"> <a class="why" href="/International/questions/qa-html-dir#userexplicit"><img src="/International/icons/link.png" alt="Learn more..." title="Click to get details." /></a></span></p>
+</section-->
+
+
+<section class="appendix" id="app-c">
+  <h2> Revision Log</h2>
+  <p>This  Editor's Draft has been changed as follows:</p>
+  <ul>
+  <li>All detailed content from sections 4 to 9 has been removed, to leave only the summary do's and don'ts text.</li>
+  <li>The section &quot;Authoring with localization in mind&quot; has been removed altogether.</li>
+  <li>All do's and don'ts have been revised to incorporate recent changes, esp. related to HTML5.</li>
+  <li>Some editorial changes were made to sections 1 to 3. The section &quot;How to use this document&quot; has been changed to reflect the new composition of the document.</li>
+  <li>The document was recreated as an HTML5 page, and is now authored using respec, and the styles have been changed.</li>
+  </ul>
+</section>
+
+
+<section class='appendix'>
+<h2>Acknowledgements</h2>
+<p>Members of the Internationalization Working Group and former GEO Working Group have contributed their time and valuable comments to shaping these guidelines.</p>
+</section>
+  </body>
+</html>

@@ -1,0 +1,230 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!-- Generated from data/head.php, ../../smarty/{head.tpl} -->
+<head>
+	<title>Organization Sponsor - W3C</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<link rel="Help" href="/Help/" />
+	<link rel="stylesheet" href="/2008/site/css/minimum" type="text/css" media="handheld, all" />
+	<style type="text/css" media="print, screen and (min-width: 481px)">
+		/*<![CDATA[*/
+		@import url("/2008/site/css/advanced");
+		/*]]>*/
+	</style>
+	<link href="/2008/site/css/minimum" rel="stylesheet" type="text/css" media="handheld, only screen and (max-device-width: 480px)" />
+
+	<meta name="viewport" content="width=device-width" />
+	<link rel="stylesheet" href="/2008/site/css/print" type="text/css" media="print" />
+	<link rel="shortcut icon" href="/2008/site/images/favicon.ico" type="image/x-icon" />
+	<style type="text/css">
+        .amount { margin-top: 1em; font-weight: bold; font-size: .83em; margin-left: 2em;}
+        </style>
+</head>
+
+<body id="www-w3-org" class="w3c_public">
+
+	<div id="w3c_container">
+	<!-- Generated from data/mast.php, ../../smarty/{mast.tpl} -->
+		<div id="w3c_mast"><!-- #w3c_mast / Page top header -->
+			<h1 class="logo"><a tabindex="2" accesskey="1" href="/"><img src="/2008/site/images/logo-w3c-mobile-lg" width="90" height="53" alt="W3C" /></a> <span class="alt-logo">W3C</span></h1>
+
+			<div id="w3c_nav">
+				<form action="http://www.w3.org/Help/search" method="get" enctype="application/x-www-form-urlencoded">
+				<!-- w3c_sec_nav is populated through js -->
+					<div class="w3c_sec_nav"><!-- --></div>
+					<ul class="main_nav"><!-- Main navigation menu -->
+						<li class="first-item"><a href="/standards/">Standards</a></li>
+						<li><a href="/participate/">Participate</a></li>
+						<li><a href="/Consortium/membership">Membership</a></li>
+
+						<li class="last-item"><a href="/Consortium/">About W3C</a></li>
+						<li class="search-item">
+							<div id="search-form"><input tabindex="3" class="text" name="q" value="" title="Search" /> <button id="search-submit" name="search-submit" type="submit"><img class="submit" src="/2008/site/images/search-button" alt="Search" width="21" height="17" /></button></div>
+						</li>
+					</ul>
+				</form>
+			</div>
+		</div><!-- /end #w3c_mast -->
+
+		
+		<div id="w3c_main">
+			<div id="w3c_logo_shadow" class="w3c_leftCol"><img width="100%" height="32" alt="" src="/2008/site/images/logo-shadow" /></div>
+			<div class="w3c_leftCol">
+				<h2 class="offscreen">Site Navigation</h2>
+				<h3 class="category"><span class="ribbon"><a href="Overview.html" title="Up to Sponsorships and Donations">Sponsorships and Donations <img src="/2008/site/images/header-link" alt="Header link" width="13" height="13" class="header-link" /></a></span></h3>
+				<ul class="theme">
+				  <li><a class="current">Organization</a></li>
+
+				  <li><a href="events">Event</a></li>
+				  <li><a href="webforall">Web for All</a></li>
+				  <li><a href="developer">Developer</a></li>
+				</ul>
+				<br />
+			</div>		
+			<div class="w3c_mainCol">
+
+			<!-- Generated from data/crumbs.php, ../../smarty/{crumbs.tpl} -->
+				<div id="w3c_crumbs">
+					<div id="w3c_crumbs_frame">
+						<ul class="bct"><!-- .bct / Breadcrumbs -->
+							<li class="skip"><a tabindex="1" accesskey="2" title="Skip to content (e.g., when browsing via audio)" href="#w3c_content_body">Skip</a></li>
+							<li><a href="/">W3C</a> <span class="cr">»</span> </li>
+
+							<li><a href="/Consortium/">About W3C</a> <span class="cr">»</span> </li>
+							<li><a href="Overview">Sponsorship and Donations</a>  <span class="cr">»</span> </li>
+							<li class="current">Organization</li>
+						</ul>
+
+					</div>
+				</div>
+				
+				<h1 class="title">Organization Sponsor</h1>
+				<ul class="w3c_toc">
+				  	<li class="toc_prefix">On this page &#x2192; </li>
+					<li><a href="#platinum">platinum package</a><span class="bullet">&#xA0;&#x2022; </span></li>
+
+					<li><a href="#gold">gold package</a><span class="bullet">&#xA0;&#x2022; </span></li>
+					<li><a href="#silver">silver package</a><span class="bullet">&#xA0;&#x2022; </span></li>
+					<li><a href="#table">w3c20 table sponsor</a><span class="bullet">&#xA0;&#x2022; </span></li>
+					<li><a href="#supporter">supporter program</a></li>
+				</ul>
+	
+				<div class="w3c_toc"><!-- --></div>
+				<!-- Generated from data/body_with_context.php, ../../smarty/{body_with_context.tpl} -->
+				<div id="w3c_content_body">
+						<div class="line w3c_plans">							
+								<div class="intro corporate">
+									<h2>Help improve the Web, faster</h2>
+									<p>Your generosity allows W3C to accelerate bringing standards to market by dedicating more resources to its <a href="/Consortium/activities">activities</a>. The organization sponsor program allows you to associate your brand and offerings with W3C's mission. Contact Alan Bird &lt;abird@w3.org&gt;. All proposals for sponsorship are subject to W3C approval.</p>
+								</div>
+
+								<h2 id="platinum">Platinum Package - Anniversary Edition</h2>
+
+<p>In 2014 we celebrate the <strong>25th anniversary of the Web and 20th anniversary of W3C</strong>. We have modified all organization sponsor packages for this anniversary year.</p>
+
+								<ul class="show_items">
+<li>Visibility and participation at W3C's <strong>Web @ 25 Symposium</strong> in October 2014 (details available soon). This includes a 10-minute presentation opportunity, seat on the program committee, and a limited number of tickets for employees to attend the event.</li>						
+<li>Recognition on a Web site dedicated to Web @ 25, including logo on home page, dedicated sponsor page with logo, link, text description. W3C will be working with various partners throughout the year on activities intended to generate interest in the celebration and drive traffic to the site. The site will also be the locus of activities related to a March 2014 announcement about the Web's anniversary.</li>		  
+<li>Recognition on material related to any W3C Office event organized to celebrate Web @ 25.</li>
+<li> Designated W3C sponsor at annual TPAC and AC meetings: no attendance fees for TPAC or AC meetings; Sponsor mention in press releases or media advisories; Table top display at social event; Logo on event material Web pages, signage, printed and electronic communications materials and on-screen during breaks</li>
+<!--
+<li>Featured on Sponsor recognition page (logo, up to 1000 words of text, and 4 images)</li>
+<li> Video testimonial or demo relevant to W3C on relevant portion of the W3C site</li>
+-->
+<li> Consultation Session with W3C Senior Staff (once <!--annually-->, subject to mutually agreed schedule)</li>
+<li>   W3C Membership "Value Planning Session" with W3C Senior Staff. The purpose of this in-depth discussion is to enable both organizations to learn more about their respective priorities and devise strategies for mutual benefit</li>
+<li> Full day technology seminar</li>
+<li> Participation in W3C sponsored CIO round table and other special events</li>
+<!--
+<li>    Identified as a sponsor for any <a href="events#workshop">Workshop</a> that W3C organizes, up to 8 per year</li>
+-->
+</ul>
+
+
+<p class="amount">Amount: 150K USD <!--annually--></p>
+								
+								<h2 id="gold">Gold Package - Anniversary Edition</h2>								
+								<ul class="show_items">
+<li>Visibility and participation at W3C's <strong>Web @ 25 Symposium</strong> in October 2014 (details available soon). This includes a seat on the program committee and a limited number of tickets for employees to attend the event.</li>						
+<li>Recognition on a Web site dedicated to Web @ 25, including logo on home page, dedicated sponsor page with logo, link, text description, and short contributed video. W3C will be working with various partners throughout the year on activities intended to generate interest in the celebration and drive traffic to the site. The site will also be the locus of activities related to a March 2014 announcement about the Web's anniversary.</li>		  
+<li>Recognition on material related to any W3C Office event organized to celebrate Web @ 25.</li>
+<li>    W3C Membership "Value Planning Session" with W3C Senior Staff. The purpose of this in-depth discussion is to enable both organizations to learn more about their respective priorities and devise strategies for mutual benefit</li>
+<li>Designated W3C sponsor at annual TPAC and AC meetings: no attendance fees for TPAC or AC meetings; Sponsor mention in press releases or media advisories; Table top display at social event; Logo on event material Web pages, signage, printed and electronic communications materials and on-screen during breaks</li>
+								</ul>
+
+<p class="amount">Amount: 100K USD <!--annually--></p>
+								
+								<h2 id="silver">Silver Package - Anniversary Edition </h2>								
+								<ul class="show_items">								
+<li>Visibility and participation at W3C's <strong>Web @ 25 Symposium</strong> in October 2014 (details available soon). This includes a limited number of tickets for employees to attend the event.</li>					<li>Recognition on a Web site dedicated to Web @ 25, including dedicated sponsor page with logo, link, text description. W3C will be working with various partners throughout the year on activities intended to generate interest in the celebration and drive traffic to the site. The site will also be the locus of activities related to a March 2014 announcement about the Web's anniversary.</li>	<li>Recognition on material related to any W3C Office event organized to celebrate Web @ 25.</li>
+<li> Designated W3C sponsor at annual TPAC and AC meetings: no attendance fees for TPAC; Logo on event material Web pages, signage, printed and electronic communications materials and on-screen during breaks</li>
+</ul>
+
+
+<p class="amount">Amount: 50K USD <!--annually--></p>
+
+								<h2 id="table">W3C20 Table Sponsor</h2>								
+								<ul class="show_items">								
+<li>One table for 10 people reserved for the <a href="/20/">W3C20 Symposium and Gala Dinner</a> on 29 October 2014.</li>
+<li>10 Tickets for those seats; Sponsor may use those tickets however Sponsor wishes.</li>
+<li>One Sponsor acknowledgment from the stage during the Symposium program.</li>
+<li>Logo on on table signage and printed program (if we create one).</li>
+</ul>
+
+<p class="tMargin">Limits:</p>
+
+<ul class="show_items tMargin0">
+<li>Maximum 2 tables per organization.</li>
+<li>Offer ends once 10 tables are sponsored.</li>
+<li>Table Sponsorship is unrelated to <a href="http://www.w3.org/2014/11/TPAC/">TPAC 2014</a> and confers no benefits related to other aspects TPAC week.</li>
+</ul>
+
+<p class="amount">Amount: 10K USD <!--annually--></p>
+
+
+								<h2 id="supporter">W3C Supporter</h2>								
+
+								<ul class="show_items">
+								  <li><a href="/Consortium/sup">Acknowledgement on the W3C site</a>. Learn more about the <a href="/Consortium/supporter-policy">W3C Supporters program</a>.</li>
+								</ul>
+
+<p class="amount">Amount: 100 USD and up, annually.</p>
+
+						</div>
+			</div>
+			</div>
+		</div><!-- /end #w3c_main -->
+
+	</div><!-- /end #w3c_container -->
+
+	<!-- Generated from data/footer.php, ../../smarty/{footer-block.tpl} -->
+	<div id="w3c_footer">
+		<div id="w3c_footer-inner">
+			<h2 class="offscreen">Footer Navigation</h2>
+			<div class="w3c_footer-nav">
+				<h3>Navigation</h3>
+
+					<ul class="footer_top_nav">
+						<li><a href="/">Home</a></li>
+						<li><a href="/standards/">Standards</a></li>
+						<li><a href="/participate/">Participate</a></li>
+						<li><a href="/Consortium/membership">Membership</a></li>
+						<li class="last-item"><a href="/Consortium/">About W3C</a></li>
+					</ul>
+			</div>
+			<div class="w3c_footer-nav">
+				<h3>Contact W3C</h3>
+				<ul class="footer_bottom_nav">
+					<li><a href="/Consortium/contact">Contact</a></li>
+					<li><a accesskey="0" href="/Help/">Help and FAQ</a></li>
+					<li><a href="/Consortium/sponsor/">Sponsor / Donate</a></li>
+					<li><a href="/Consortium/siteindex">Site Map</a></li>
+					<li><address id="w3c_signature"><a href="http://lists.w3.org/Archives/Public/site-comments/">Feedback</a></address></li>
+				</ul>
+			</div>		
+			<div class="w3c_footer-nav">
+
+				<h3>W3C Updates</h3>
+				<ul class="footer_follow_nav">
+					<li><a href="http://twitter.com/W3C" title="Follow W3C on Twitter"><img src="/2008/site/images/twitter-bird" alt="Twitter" class="social-icon" width="78" height="83" /></a></li>
+				</ul>
+			</div>
+	
+			<!-- #footer address / page signature -->
+			<p class="copyright">Copyright © 2014 W3C <sup>®</sup> (<a href="http://www.csail.mit.edu/"><acronym title="Massachusetts Institute of Technology">MIT</acronym></a>, <a href="http://www.ercim.eu/"><acronym title="European Research Consortium for Informatics and Mathematics">ERCIM</acronym></a>,<a href="http://www.keio.ac.jp/">Keio</a>, <a href="http://ev.buaa.edu.cn/">Beihang</a>) <a href="/Consortium/Legal/ipr-notice">Usage policies apply</a>.</p>
+
+		</div>
+	</div><!-- /end #footer -->
+
+	<!-- Generated from data/scripts.php, ../../smarty/{scripts.tpl} -->
+	<div id="w3c_scripts">
+		<script type="text/javascript" src="/2008/site/js/main">
+			//<![CDATA[
+			<!-- -->
+			//]]>
+		</script>
+	</div>
+	
+</body>
+</html>
+

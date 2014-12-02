@@ -1,0 +1,2321 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN"
+    "http://www.w3.org/TR/REC-html40/strict.dtd">
+<HTML lang="en">
+<HEAD>
+  <TITLE>HTML 4.0 Guidelines for Mobile Access</TITLE>
+  <LINK rel="stylesheet" type="text/css" media="print"
+    title="style sheets for printing" href="style/print.css">
+  <LINK rel="stylesheet" type="text/css" media="screen"
+    title="style sheets for W3C Notes"
+    href="http://www.w3.org/StyleSheets/TR/W3C-NOTE">
+  <LINK rel="stylesheet" type="text/css" media="screen"
+    title="style sheets for screen rendering" href="style/screen.css">
+  <LINK rel="alternate" type="text/plain" title="plain text version"
+    href="NOTE-html40-mobile.txt">
+  <LINK rel="alternate" type="application/octet-stream"
+    title="gzip'd tar file version" href="NOTE-html40-mobile.tgz">
+  <LINK rel="alternate" type="application/zip" title="zip file version"
+    href="NOTE-html40-mobile.zip">
+</HEAD>
+<BODY>
+<DIV class="head">
+<P class="logo"><A accesskey="W" href="http://www.w3.org/"><IMG alt="W3C"
+src="http://www.w3.org/Icons/WWW/w3c_home"></A></P>
+</DIV>
+
+<H1 class="title">
+<ACRONYM title="HyperText Markup Language">HTML</ACRONYM>
+4.0 Guidelines for Mobile Access
+</H1>
+
+<H2 class="date">
+<ACRONYM title="World Wide Web Consortium">W3C</ACRONYM> Note - 15 March 1999
+</H2>
+
+<DL>
+  <DT>This version:</DT>
+  <DD><SPAN class="URI">&lt;<A href="http://www.w3.org/TR/1999/NOTE-html40-mobile-19990315">http://www.w3.org/TR/1999/NOTE-html40-mobile-19990315</A>&gt;</SPAN></DD>
+  <DT>Latest version:</DT>
+  <DD><SPAN class="URI">&lt;<A href="http://www.w3.org/TR/NOTE-html40-mobile">http://www.w3.org/TR/NOTE-html40-mobile</A>&gt;</SPAN></DD>
+  <DT>Editors:</DT>
+  <DD>Tomihisa Kamada, ACCESS Co.,<ABBR title="Limited">Ltd.</ABBR> <SPAN class="URI">&lt;<A href="mailto:tomy@access.co.jp">tomy@access.co.jp</A>&gt;</SPAN></DD>
+  <DD>Takuya Asada, <ACRONYM title="World Wide Web Consortium">W3C</ACRONYM> <SPAN class="URI">&lt;<A href="mailto:asada@w3.org">asada@w3.org</A>&gt;</SPAN></DD>
+  <DD>Masayasu Ishikawa, <ACRONYM title="World Wide Web Consortium">W3C</ACRONYM> <SPAN class="URI">&lt;<A href="mailto:mimasa@w3.org">mimasa@w3.org</A>&gt;</SPAN></DD>
+  <DD>Shin'ichi Matsui, <ACRONYM title="World Wide Web Consortium">W3C</ACRONYM>/Panasonic <SPAN class="URI">&lt;<A href="mailto:matsui@w3.org">matsui@w3.org</A>&gt;</SPAN></DD>
+</DL>
+
+<P class="copyright">
+<A href="http://www.w3.org/Consortium/Legal/ipr-notice.html#Copyright">Copyright</A>&nbsp;&copy;&nbsp;1998-1999&nbsp;<A href="http://www.w3.org/"><ACRONYM title="World Wide Web Consortium">W3C</ACRONYM></A>
+(<A href="http://www.lcs.mit.edu/"><ACRONYM
+title="Massachusetts Institute of Technology">MIT</ACRONYM></A>,
+<A href="http://www.inria.fr/"><ACRONYM lang="fr"
+title="Institut National de Recherche en Informatique et en Automatique">INRIA</ACRONYM></A>,
+<A href="http://www.keio.ac.jp/">Keio</A>), All Rights Reserved.
+<ACRONYM title="World Wide Web Consortium">W3C</ACRONYM>
+<A href="http://www.w3.org/Consortium/Legal/ipr-notice.html#Legal_Disclaimer">liability</A>,
+<A href="http://www.w3.org/Consortium/Legal/ipr-notice.html#W3C_Trademarks">trademark</A>,
+<A href="http://www.w3.org/Consortium/Legal/copyright-documents.html">document use</A> and
+<A href="http://www.w3.org/Consortium/Legal/copyright-software.html">software licensing</A>
+rules apply.
+</P>
+
+<H2><A name="Status">Status of This Document</A></H2>
+
+<P>
+This document is a Note made available by the World Wide Web Consortium
+(<ACRONYM title="World Wide Web Consortium">W3C</ACRONYM>) for discussion.
+This document may be updated, replaced or rendered obsolete by other
+documents at any time. It is inappropriate to use this document
+as reference material or to cite them as other than "work in progress".
+This is work in progress, and does not imply endorsement by,
+or the consensus of, either <A href="http://www.w3.org/Consortium/Member/List"><ACRONYM title="World Wide Web Consortium">W3C</ACRONYM> membership</A>
+or members of the <A href="http://www.w3.org/Mobile/Group/IG/">Mobile Access
+Interest Group</A>
+(<A href="http://cgi.w3.org/MemberAccess/">members only</A>).
+</P>
+
+<P>
+This document has been produced as part of the <A href="http://www.w3.org/Mobile/Activity"><ACRONYM title="World Wide Web Consortium">W3C</ACRONYM> Mobile Access Activity</A>.
+Please send comments about this document to the public mailing list
+<A href="mailto:www-mobile@w3.org">www-mobile@w3.org</A>
+(<A href="http://lists.w3.org/Archives/Public/www-mobile/">archive</A>).
+</P>
+
+<H2><A name="Abstract">Abstract</A></H2>
+
+<P>
+This document describes guidelines for content authors how to create
+<ACRONYM title="HyperText Markup Language">HTML</ACRONYM> 4.0 contents
+to be acceptable to mobile devices as much as possible.
+</P>
+
+<H2><A name="Formats">Available Formats</A></H2>
+
+<P>
+This document is available in the following formats:
+</P>
+
+<DL>
+<DT><ACRONYM title="HyperText Markup Language">HTML</ACRONYM>:</DT>
+<DD><SPAN class="URI">&lt;<A type="text/html" charset="US-ASCII" href="NOTE-html40-mobile.html">http://www.w3.org/TR/1999/NOTE-html40-mobile-19990315/NOTE-html40-mobile.html</A>&gt;</SPAN></DD>
+<DT>A plain text file:</DT>
+<DD><SPAN class="URI">&lt;<A type="text/plain" charset="US-ASCII" href="NOTE-html40-mobile.txt">http://www.w3.org/TR/1999/NOTE-html40-mobile-19990315/NOTE-html40-mobile.txt</A>&gt;</SPAN></DD>
+<DT><ACRONYM title="HyperText Markup Language">HTML</ACRONYM> as a gzip'ed tar file, including accompanying resources:</DT>
+<DD><SPAN class="URI">&lt;<A type="application/octet-stream" href="NOTE-html40-mobile.tgz">http://www.w3.org/TR/1999/NOTE-html40-mobile-19990315/NOTE-html40-mobile.tgz</A>&gt;</SPAN></DD>
+<DT><ACRONYM title="HyperText Markup Language">HTML</ACRONYM> as a zip file, including accompanying resources:</DT>
+<DD><SPAN class="URI">&lt;<A type="application/zip" href="NOTE-html40-mobile.zip">http://www.w3.org/TR/1999/NOTE-html40-mobile-19990315/NOTE-html40-mobile.zip</A>&gt;</SPAN></DD>
+</DL>
+
+<P>
+In case of a discrepancy between the various formats of the document,
+<SPAN class="URI">&lt;<A href="http://www.w3.org/TR/NOTE-html40-mobile">http://www.w3.org/TR/1999/NOTE-html40-mobile-19990315</A>&gt;</SPAN>
+is considered the definitive version.
+</P>
+
+<H2><A name="ToC">Table of Contents</A></H2>
+
+<DIV class="ToC">
+<OL>
+  <LI><A accesskey="1" href="#Intro">Introduction</A></LI>
+  <LI><A accesskey="2" href="#Requirements">Requirements from Mobile Access</A>
+    <OL>
+      <LI><A href="#Hardware">Hardware Restrictions</A></LI>
+      <LI><A href="#Bandwidth">Narrow Bandwidth Networking</A></LI>
+      <LI><A href="#Accessibility">Accessibility Requirements</A></LI>
+    </OL>
+  </LI>
+  <LI><A accesskey="3" href="#Guidelines">Guidelines for Mobile Access</A>
+    <OL>
+      <LI><A href="#Styles">Styles</A></LI>
+      <LI><A href="#Scripts">Scripts, Event Handlers</A></LI>
+      <LI><A href="#Forms">Forms</A></LI>
+      <LI><A href="#Frames">Frames</A></LI>
+      <LI><A href="#Imagemaps">Image Maps</A></LI>
+      <LI><A href="#Tables">Tables</A></LI>
+      <LI><A href="#Objects">Objects and Images</A></LI>
+      <LI><A href="#Accesskeys">Access keys</A></LI>
+    </OL>
+  </LI>
+  <LI><A accesskey="4" href="#Validation">A Sample <ACRONYM title="HyperText Markup Language">HTML</ACRONYM> 4.0 <ACRONYM title="Document Type Definition">DTD</ACRONYM> for Mobile Access</A></LI>
+  <LI><A accesskey="5" href="#Remarks">Concluding Remarks and Future Directions</A></LI>
+</OL>
+<UL>
+  <LI><A accesskey="R" href="#References">References</A></LI>
+  <LI><A accesskey="A" href="#Appendix">Appendix <ACRONYM title="HyperText Markup Language">HTML</ACRONYM> 4.0 Mobile <ACRONYM title="Document Type Definition">DTD</ACRONYM></A>
+    <UL>
+      <LI><A accesskey="C" href="#Catalog">Sample <ACRONYM title="Standard Generalized Markup Language">SGML</ACRONYM> catalog</A></LI>
+      <LI><A accesskey="D" href="#DTD">Document Type Definition</A></LI>
+    </UL>
+  </LI>
+</UL>
+</DIV>
+
+<H2><A name="Intro">1. Introduction</A></H2>
+
+<P>
+Ever since the Internet industry exploded a few years ago, numerous related
+industries have spawned and flourished from the standard
+<ACRONYM title="World Wide Web">WWW</ACRONYM> (World Wide Web) infrastructure.
+This growth is most attributable to the exponential growth of Internet users
+all over the world.
+Today, Internet access is no longer limited to personal computers and
+powerful workstations in your office, but is reaching into the your home, as
+well as on the road.
+</P>
+
+<P>
+A new class of electronics devices with Internet access capability called
+"Information Appliances" was recently born. This Internet access capability is
+embedded in devices such as televisions, set top boxes, home game machines,
+telephone-based terminals, <ACRONYM title="Personal Digital Assistant">PDA</ACRONYM>s,
+car navigation systems and cellular phones. These Internet
+appliances will drive the merger of wireless and wired Internet world that
+will eventually create a much larger industry than today's predominantly wired
+Internet industry.
+</P>
+
+<P>
+The need to support this new class of information appliances while still
+meeting the <ACRONYM title="World Wide Web Consortium">W3C</ACRONYM> standards
+and the rigid design requirements are the challenges this evolving industry
+faces today.
+</P>
+
+<P>
+This document describes guidelines for content authors how to use
+<ACRONYM title="HyperText Markup Language">HTML</ACRONYM> 4.0 Specification
+<A href="#HTML40">[HTML40]</A> effectively for "Mobile Access",
+and some design notes for user agent manufacturers.
+</P>
+
+
+<H2><A name="Requirements">2. Requirements from Mobile Access</A></H2>
+
+<P>
+There are a wide range of mobile devices in the market.
+The typical product examples are as follows:
+</P>
+
+<UL>
+  <LI><ACRONYM title="Personal Digital Assistant">PDA</ACRONYM></LI>
+  <LI>mobile phone</LI>
+  <LI>pager</LI>
+  <LI>embedded system</LI>
+  <LI>automobile information appliance (car navigation system)</LI>
+  <LI>mobile game machine</LI>
+  <LI>digital book reader</LI>
+  <LI>smart watch</LI>
+</UL>
+
+<P>
+This section summarizes the requirements from "Mobile Access".
+</P>
+
+<H3><A name="Hardware">2.1. Hardware Restrictions</A></H3>
+
+<P>
+As described in <A href="#CompactHTML">[CompactHTML]</A>,
+there are several hardware restrictions in mobile devices.
+The major characteristics are as follows:
+</P>
+
+<UL>
+  <LI>small memory capacity</LI>
+  <LI>small display space</LI>
+  <LI>less powerful <ACRONYM title="Central Processing Unit">CPU</ACRONYM></LI>
+  <LI>limited input method</LI>
+  <LI>no or small data storage</LI>
+  <LI>limited power consumption</LI>
+</UL>
+
+<P>
+These characteristics have to be taken into account in designing
+the user agent functionality for mobile devices,
+as well as creating mobile-friendly contents.
+</P>
+
+<H3><A name="Bandwidth">2.2. Narrow Bandwidth Networking</A></H3>
+
+<P>
+The size of contents should be small in the case of narrow bandwidth
+and low speed wireless networking. The major characteristics of
+today's wireless connection are as follows:
+</P>
+
+<UL>
+  <LI>slow speed</LI>
+  <LI>unstable</LI>
+  <LI>expensive</LI>
+  <LI>non-<ACRONYM title="Internet Protocol">IP</ACRONYM> connection</LI>
+</UL>
+
+<P>
+These restrictions depend on underlying communication bearers. The
+infrastructure will be improved in the third generation wireless phone
+networking.
+</P>
+
+<H3><A name="Accessibility">2.3. Accessibility Requirements</A></H3>
+
+<P>
+Simple and easy operations of information appliances are very
+important. Unlike <ACRONYM title="Personal Computer">PC</ACRONYM>
+user interface, keyboard and mouse are not suitable for mobile
+devices. Rather, intuitive operation like a four-button interface
+(cursor forward, cursor back, select, and back buttons) is required.
+In this sense, some kind of accessibility considerations,
+as described in <A href="http://www.w3.org/WAI/#Resources"><ACRONYM title="Web Accessibility Initiative">WAI</ACRONYM>
+Accessibility Guidelines</A>, should be taken into account.
+In general, <ACRONYM title="Web Accessibility Initiative">WAI</ACRONYM>
+Accessiblity Guidelines are also useful for mobile access.
+</P>
+
+<P>
+For example, the "<CODE>accesskey</CODE>" attribute of
+<ACRONYM title="HyperText Markup Language">HTML</ACRONYM> 4.0 can be
+used to assign buttons to links or form selections.
+Also, alternative text for images should be provided via
+"<CODE>alt</CODE>" attribute so that mobile devices can make use of text
+descriptions instead of large images. For more information,
+see section <A href="#Accesskeys">3.8</A> and <A href="#Objects">3.7</a> respectively.
+</P>
+
+<H2><A name="Guidelines">3. Guidelines for Mobile Access</A></H2>
+
+<P>
+This section describes the detail of the <ACRONYM title="HyperText Markup Language">HTML</ACRONYM> 4.0 guidelines for
+mobile access.
+</P>
+
+<P>
+In order to meet the requirements as described in
+<A href="#Requirements">section 2</A>, we use
+<ACRONYM title="HyperText Markup Language">HTML</ACRONYM> 4.0 Strict,
+which excludes the presentation attributes and elements, as a suitable
+baseline for mobile access. Thus, the following guidelines assume to use
+<ACRONYM title="HyperText Markup Language">HTML</ACRONYM> 4.0 Strict.
+</P>
+
+<H3><A name="Styles">3.1. Styles</A></H3>
+
+<P>
+Usual mobile devices have small size of screens, and limited display
+capabilities, thus in many cases style sheets are not supported,
+or its support is limited.
+</P>
+
+<P>
+When style sheets are used, external style sheets are recommended from the
+viewpoint of content size and separation of structure and style.
+In this way, user agents which don't support style sheets don't have
+to load unnecessary style sheets.
+</P>
+
+<P>
+The "<CODE>media</CODE>" attribute can be used so that user agents can select
+appropriate style sheets. See section
+ <A href="http://www.w3.org/TR/REC-html40/present/styles.html#h-14.2.4">14.2.4</A>
+of <A href="#HTML40">[HTML40]</A> for more detail.
+</P>
+
+<P>
+The <CODE>STYLE</CODE> element can be also used, but inline style sheets
+via "<CODE>style</CODE>" attribute is not preferred,
+because it's not flexible and almost like the presentation attributes
+which are deprecated and excluded from the
+<ACRONYM title="HyperText Markup Language">HTML</ACRONYM> 4.0 Strict.
+</P>
+
+<P>
+Contents should be readable without style sheets so that devices
+which don't support style sheets can still render contents reasonably.
+</P>
+
+<P>
+See also section
+<A href="http://www.w3.org/TR/WD-WAI-PAGEAUTH/wai-pageauth-tech#style">2.10</A>
+of Techniques for <A href="#WAI-WEBCONTENT">[WAI-WEBCONTENT]</A>.
+</P>
+
+<H4 class="note">Note for User Agents:</H4>
+
+<P class="note">
+It is desirable that even if user agents don't support style sheets,
+it should parse <CODE>STYLE</CODE> elements not to show
+styles nor to cause any other side-effects.
+</P>
+
+<H3><A name="Scripts">3.2. Scripts, Event Handlers</A></H3>
+
+<P>
+Usual mobile devices have limitation of memory storage,
+<ACRONYM title="Central Processing Unit">CPU</ACRONYM> power and so on,
+thus in many cases scripting are not supported.
+It should not be assumed that scripts will always be executed.
+Contents should be readable even if scripts are not executed.
+</P>
+
+<P>
+See also section
+<A href="http://www.w3.org/TR/WD-WAI-PAGEAUTH/wai-pageauth-tech#scripts">2.13</A>
+of Techniques for <A href="#WAI-WEBCONTENT">[WAI-WEBCONTENT]</A>.
+</P>
+
+<H4 class="note">Note for User Agents:</H4>
+
+<P class="note">
+It is desirable that even if user agents don't support scripts,
+it should parse <CODE>SCRIPT</CODE> elements not to show
+scripts nor to cause any other side-effects.
+</P>
+
+<H3><A name="Forms">3.3. Forms</A></H3>
+
+<P>
+Usual mobile devices support basic forms, but they don't have
+keyboards like desktop <ACRONYM title="Personal Computer">PC</ACRONYM>s.
+Content authors should keep in mind that it will be hard for users of
+mobile devices to input many characters.
+</P>
+
+<P>
+Since sometimes mobile devices don't have local file systems, some features,
+which depend on local file system, such as file upload, should not be used.
+</P>
+
+<P>
+Many mobile devices do not support images, thus value "<CODE>image</CODE>"
+for "<CODE>type</CODE>" attribute of <CODE>INPUT</CODE> element should not
+be used.
+</P>
+
+<P>
+As described in <A href="#Scripts">3.2</A>, authors should not rely on
+scripting, and should avoid using attributes for event handling, such as
+<CODE>onsubmit</CODE>.
+</P>
+
+<P>
+See also section
+<A href="http://www.w3.org/TR/WD-WAI-PAGEAUTH/wai-pageauth-tech#forms">2.12</A>
+of Techniques for <A href="#WAI-WEBCONTENT">[WAI-WEBCONTENT]</A>.
+</P>
+
+<H3><A name="Frames">3.4. Frames</A></H3>
+
+<P>
+Usual mobile devices have small size of screens, and some of them
+support only textual information. Frames strongly depend on
+screen interface, and are not part of the <ACRONYM title="HyperText Markup Language">HTML</ACRONYM> 4.0 Strict.
+Therefore, frames should not be used.
+</P>
+
+<P>
+If there is compelling reason to use frames, make sure that those contents
+have the descriptions below:
+</P>
+
+<UL>
+  <LI>Provide a fallback content for contents that contain frames using
+     <CODE>NOFRAMES</CODE> at the end of each <CODE>FRAMESET</CODE>.</LI>
+  <LI>Name each frame via the "<CODE>title</CODE>" attribute on <CODE>FRAME</CODE>
+     elements so that users can keep track of frames by name.</LI>
+</UL>
+
+<P>
+See also section
+<A href="http://www.w3.org/TR/WD-WAI-PAGEAUTH/wai-pageauth-tech#frames">2.11</A>
+of Techniques for <A href="#WAI-WEBCONTENT">[WAI-WEBCONTENT]</A>.
+</P>
+
+<H4 class="note">Note for User Agents:</H4>
+
+<P class="note">
+If user agents don't support frames, it should render contents of
+the <CODE>NOFRAMES</CODE> element.
+Also, even if user agents can't render frames,
+it is desirable to provide links to each frame,
+so that users can access to contents of each frame.
+</P>
+
+<H3><A name="Imagemaps">3.5. Image Maps</A></H3>
+
+<P>
+On mobile devices, it cannot be generally assumed that images are
+always rendered, nor can be pointed by pointing devices like mouse.
+Therefore, server-side image maps should not be used.
+</P>
+
+<P>
+On the other hand, client-side image maps can be used even if
+images are not rendered nor can be pointed,
+so authors may include client-side image maps into their contents.
+But this is acceptable only when alternative descriptions are
+provided via "<CODE>alt</CODE>" attribute of <CODE>AREA</CODE> element,
+which is a required attribute in <ACRONYM title="HyperText Markup Language">HTML</ACRONYM> 4.0,
+as in many cases images are not rendered on mobile devices,
+or pointing on images is impossible even if
+images can be rendered, as described above.
+</P>
+
+<P>
+See also section
+<A href="http://www.w3.org/TR/WD-WAI-PAGEAUTH/wai-pageauth-tech#images">2.7</A>
+of Techniques for <A href="#WAI-WEBCONTENT">[WAI-WEBCONTENT]</A>.
+</P>
+
+
+<H4 class="note">Note for User Agents:</H4>
+
+<P class="note">
+It will be desirable that user agents render images and provide selections
+with pointing (using area information) if possible. Even if rendering
+images or selection with pointing are impossible, they should provide access
+to linked resource of each area via "<CODE>alt</CODE>" attribute of
+<CODE>AREA</CODE> element.
+</P>
+
+<H3><A name="Tables">3.6. Tables</A></H3>
+
+<P>
+Many mobile devices have small size of screens. If contents
+have table descriptions, it will be very difficult to browse them
+in mobile devices.
+In addition, though it would be possible to restructure tables
+in accessible way by following guidelines as described in
+ <A href="http://www.w3.org/TR/WD-WAI-PAGEAUTH/#gl-table-markup">Guideline 7</A>
+of <A href="#WAI-WEBCONTENT">[WAI-WEBCONTENT]</A>,
+it will be difficult for mobile devices to process
+complex tables due to the hardware restrictions as described
+in <A href="#Hardware">2.1</A>.
+It would be, therefore, safe to avoid using tables whenever possible.
+Consider alternative structures, e.g. lists, whenever appropriate.
+Content authors should not expect tables will always be processed
+in mobile devices.
+</P>
+
+<H4 class="note">Note for User Agents:</H4>
+
+<DIV class="note">
+<P>
+Even if it would be difficult, user agents may parse and render tables
+if possible. For example, the <CODE>CAPTION</CODE> element and
+"<CODE>summary</CODE>" attribute are usable to summarize tables.
+See also <A href="#WAI-USERAGENT">[WAI-USERAGENT]</A>.
+</P>
+</DIV>
+
+<H3><A name="Objects">3.7. Objects and Images</A></H3>
+
+<P>
+The <CODE>OBJECT</CODE> elements, which are designed to embed various
+objects including images into
+<ACRONYM title="HyperText Markup Language">HTML</ACRONYM> documents,
+are also useful in mobile devices. For example, contents which have voice
+(speech) contents for cell phones and contents which have graphical maps
+for car navigation systems may become typical contents for those devices,
+as these contents match essential needs and functions of them.
+</P>
+
+<P>
+When embedding objects via <CODE>OBJECT</CODE> element, alternative contents
+should be provided by the fallback mechanism of <CODE>OBJECT</CODE> element.
+These alternative contents should end up with texts.
+</P>
+
+<P>
+An example below is quoted from <A href="#HTML40">[HTML40]</A>:
+</P>
+
+<DIV class="sample">
+<PRE>
+  &lt;P&gt;
+  &lt;OBJECT data="navbar.png" type="image/png"&gt;
+    &lt;OBJECT data="navbar.gif" type="image/gif"&gt;
+      text describing the image...
+    &lt;/OBJECT&gt;
+  &lt;/OBJECT&gt;
+  &lt;/P&gt;
+</PRE>
+</DIV>
+
+<P>
+In general, images should be embedded via <CODE>OBJECT</CODE> element,
+as it has better fallback mechanism, but <CODE>IMG</CODE> element may
+also be used. In this case, alternative description via "<CODE>alt</CODE>"
+attribute, which is required in <A href="#HTML40">[HTML40]</A>,
+should be provided for user agents which cannot or do not render images.
+This guideline doesn't specify nor recommend specific formats for images.
+</P>
+
+<P>
+If the image represents an important information,
+a long description should be provided via <CODE>longdesc</CODE> attribute
+of <CODE>IMG</CODE> element, in addition to alternative text via
+<CODE>alt</CODE> attribute.
+</P>
+
+<P>
+The <CODE>APPLET</CODE> element, which is not part of the
+<ACRONYM title="HyperText Markup Language">HTML</ACRONYM> 4.0 Strict,
+should not be used in favor of the <CODE>OBJECT</CODE> element.
+</P>
+
+<H4 class="note">Note for User Agents:</H4>
+
+<DIV class="note">
+<P>
+User agents should try to render nested objects according to
+the precedence rules described in
+<A href="http://www.w3.org/TR/REC-html40/struct/objects.html#h-13.3.1">section 13.3.1</A> of <A href="#HTML40">[HTML40]</A>.
+Even if user agents don't support <CODE>OBJECT</CODE> elements,
+they should render alternative content of <CODE>OBJECT</CODE> element as a fallback.
+</P>
+
+<P>
+If a long description is provided via <CODE>longdesc</CODE> attribute
+of <CODE>IMG</CODE> element, user agents should provide access to that
+long description.
+</P>
+</DIV>
+
+<H3><A name="Accesskeys">3.8. Access keys</A></H3>
+
+<P>
+In general, it cannot be assumed that input methods which
+consists of a (full) keyboard and a pointing device such as mouse
+are available in mobile devices. It is desirable that description
+for efficient use of input methods on mobile devices are provided in
+contents.
+</P>
+
+<P>
+From this viewpoint, assigning access keys via "<CODE>accesskey</CODE>"
+attribute (for <CODE>A</CODE>, <CODE>AREA</CODE>, <CODE>BUTTON</CODE>,
+<CODE>INPUT</CODE>, <CODE>LABEL</CODE>, <CODE>LEGEND</CODE> and
+<CODE>TEXTAREA</CODE> elements) will be effective when it is available.
+This may improve accessibility of links or form related operations.
+</P>
+
+<P>
+But the use of "<CODE>accesskey</CODE>" attribute needs careful consideration.
+</P>
+
+<OL class="alpha">
+  <LI>In many mobile devices, available keys are limited. It cannot be assumed
+    that all keys in "full" keyboards are available.</LI>
+
+  <LI>Available keys differ among mobile devices. For example,
+    cell phones will usually have "<CODE>0</CODE>"-"<CODE>9</CODE>",
+    "<CODE>*</CODE>" and "<CODE>#</CODE>" keys, but the same assumption
+    cannot be applied for most pagers or mobile game machines.</LI>
+
+  <LI>There may be some mobile devices that cannot use "<CODE>accesskey</CODE>"
+    attribute at all. For example, devices only for voice browsing will not
+    use access "keys". Content authors should not rely on access keys for
+    navigation.</LI>
+</OL>
+
+<H4 class="note">Note for User Agents:</H4>
+
+<P class="note">
+User agents should parse and activate access keys specified via
+"<CODE>accesskey</CODE>" attribute whenever possible, but they should
+ignore access keys when those keys are not available.
+</P>
+
+
+<H2><A name="Validation">4. A Sample <ACRONYM title="HyperText Markup Language">HTML</ACRONYM> 4.0 <ACRONYM title="Document Type Definition">DTD</ACRONYM> for Mobile Access</A></H2>
+
+<P>
+As mentioned in <A href="#Guidelines">section 3</A>,
+<ACRONYM title="HyperText Markup Language">HTML</ACRONYM> 4.0 Strict
+will be suitable as a baseline for mobile access.
+This section explains a sample description of
+<ACRONYM title="Document Type Definition">DTD</ACRONYM>, called
+<EM><ACRONYM title="HyperText Markup Language">HTML</ACRONYM> 4.0 Mobile</EM>,
+as a subset of the <ACRONYM title="HyperText Markup Language">HTML</ACRONYM> 4.0
+Strict <ACRONYM title="Document Type Definition">DTD</ACRONYM>
+in order to reflect the guidelines described in
+<A href="#Guidelines">section 3</A>.
+</P>
+
+<P>
+This <ACRONYM title="Document Type Definition">DTD</ACRONYM> is also
+designed to be a subset of
+<ACRONYM title="International Organization for Standardization">ISO</ACRONYM>/<ACRONYM title="International Electrotechnical Commission">IEC</ACRONYM> 15445,
+<ACRONYM title="also known as">a.k.a.</ACRONYM> <ACRONYM title="International Organization for Standardization">ISO</ACRONYM>-<ACRONYM title="HyperText Markup Language">HTML</ACRONYM> <A href="#ISO-HTML">[ISO-HTML]</A>.
+<ACRONYM title="International Organization for Standardization">ISO</ACRONYM>-<ACRONYM title="HyperText Markup Language">HTML</ACRONYM>
+is a well-defined subset of
+<ACRONYM title="HyperText Markup Language">HTML</ACRONYM> 4.0 Strict,
+so conforming to this <ACRONYM title="Document Type Definition">DTD</ACRONYM>
+will ensure interoperability across wide variety of platforms,
+including mobile devices.
+The complete definition of <ACRONYM title="Document Type Definition">DTD</ACRONYM> for <ACRONYM title="HyperText Markup Language">HTML</ACRONYM> 4.0 Mobile is described in the
+<A href="#Appendix">Appendix</A>.
+</P>
+
+<P class="warning">
+<EM>Note:</EM>
+At the time of writing this document,
+<A href="#ISO-HTML">[ISO-HTML]</A> is still under work in progress.
+It has not yet established as an International Standard.
+</P>
+
+<P>
+The <ACRONYM title="HyperText Markup Language">HTML</ACRONYM> 4.0 Mobile <ACRONYM title="Document Type Definition">DTD</ACRONYM> is provided to help authors creating
+documents following the guidelines described in this document
+(e.g. by validating with an <ACRONYM title="Standard Generalized Markup Language">SGML</ACRONYM> parser like <EM>nsgmls</EM> <A href="#SP">[SP]</A>).
+Not all guidelines can be expressed in the <ACRONYM title="Document Type Definition">DTD</ACRONYM>, but hopefully,
+this <ACRONYM title="Document Type Definition">DTD</ACRONYM> will make it easier to follow these guidelines.
+</P>
+
+<P>
+Typically, this <ACRONYM title="Document Type Definition">DTD</ACRONYM> can be
+invoked as follows:
+</P>
+
+<PRE>
+&lt;!DOCTYPE HTML SYSTEM "<A href="DTD/html40-mobile.dtd">html40-mobile.dtd</A>"&gt;
+&lt;html&gt;
+&lt;head&gt;
+...
+</PRE>
+
+<P>
+For example, this <ACRONYM title="Document Type Definition">DTD</ACRONYM>
+excludes <CODE>style</CODE> attribute and event handlers like
+<CODE>onclick</CODE>, so when content authors validate their documents
+against this <ACRONYM title="Document Type Definition">DTD</ACRONYM>,
+those attributes will be flagged as unknown attributes and then authors
+can be aware that those attributes are not recommended.
+If documents are validated against this
+<ACRONYM title="Document Type Definition">DTD</ACRONYM>,
+those documents can be labeled as valid
+<ACRONYM title="HyperText Markup Language">HTML</ACRONYM> 4.0 Strict.
+</P>
+
+<DIV class="note">
+<P>
+Note. If you use the following DOCTYPE internal subset:
+</P>
+
+<PRE>
+&lt;!DOCTYPE HTML SYSTEM "<A href="DTD/html40-mobile.dtd">html40-mobile.dtd</A>" [
+&lt;!ENTITY % Preparation "INCLUDE"&gt;
+]&gt;
+&lt;html&gt;
+&lt;head&gt;
+...
+</PRE>
+
+<P>
+then you can enforce the strict heading order as required in
+<A href="#ISO-HTML">[ISO-HTML]</A>.
+</P>
+</DIV>
+
+<P>
+In any case, ensuring the validity of documents is quite important,
+particularly for mobile access,
+because most mobile devices cannot afford to perform costly error recovery.
+</P>
+
+<H2><A name="Remarks">5. Concluding Remarks and Future Directions</A></H2>
+
+<P>
+We believe that wireless network services should not be isolated from
+the growing Internet services. This guidelines can be used for this
+purpose.
+It can be referred as recommended guidelines for
+<ACRONYM title="HyperText Markup Language">HTML</ACRONYM> mobile
+Internet services and
+<ACRONYM title="HyperText Markup Language">HTML</ACRONYM> browsing
+software for a variety of mobile devices.
+</P>
+
+<P>
+Currently the work for the next generation of
+<ACRONYM title="HyperText Markup Language">HTML</ACRONYM>
+<A href="#XHTML">[XHTML]</A> is going on,
+which will be a family of modularized document types that will make it easier
+to extend and subset <ACRONYM title="HyperText Markup Language">HTML</ACRONYM>.
+Since mobile device category is one of major targets for <A href="#XHTML">
+[XHTML]</A>, mobile profile(s) and mobile module(s)
+will be defined as part of <A href="#XHTML">[XHTML]</A>.
+</P>
+
+<P>
+Note that the effort for converging <A href="#XHTML">[XHTML]</A>
+and the Wireless Markup Language <A href="#WML">[WML]</A>,
+for the Wireless Application Protocol
+(<ACRONYM title="Wireless Application Protocol">WAP</ACRONYM>),
+is currently ongoing between
+the <ACRONYM title="World Wide Web Consortium">W3C</ACRONYM> and
+the <A href="http://www.wapforum.org/"><ACRONYM title="Wireless Application Protocol">WAP</ACRONYM> Forum</A>
+[<A href="#WAP-W3C">WAP-W3C</A>, <A href="#WML1.1">WML1.1</A>].
+Hopefully, <A href="#WML">[WML]</A> will be among the family of
+<A href="#XHTML">[XHTML]</A> document types in the future.
+</P>
+
+<P>
+The worldwide standard for wireless digital phone networking protocols
+(<ACRONYM title="International Mobile Telecommunication">IMT</ACRONYM>-2000)
+will be established very soon. New services based on
+<ACRONYM title="International Mobile Telecommunication">IMT</ACRONYM>-2000
+standard will start in the early 21st century. The bandwidth of the network is
+expected to be wide enough for <ACRONYM title="Internet Protocol">IP</ACRONYM> connections and Internet-oriented contents.
+</P>
+
+<P>
+This implies that <ACRONYM title="HyperText Markup Language">HTML</ACRONYM>
+and related recommendations for mobile Internet will become more and more
+important. This <ACRONYM title="HyperText Markup Language">HTML</ACRONYM>
+4.0 guidelines for mobile access will be a good step towards future
+<ACRONYM title="HyperText Markup Language">HTML</ACRONYM> modularity for
+mobile phones.
+</P>
+
+<H2><A name="References">References</A></H2>
+
+<DL>
+<DT><A name="CompactHTML">[CompactHTML]</A></DT>
+<DD>
+"<CITE>Compact <ACRONYM title="HyperText Markup Language">HTML</ACRONYM> for Small Information Appliances</CITE>",
+<EM><ACRONYM title="World Wide Web Consortium">W3C</ACRONYM> Note</EM>,
+T. Kamada,
+9 February 1998.<BR>
+Available at <SPAN class="URI">&lt;<A href="http://www.w3.org/TR/1998/NOTE-compactHTML-19980209">http://www.w3.org/TR/1998/NOTE-compactHTML-19980209</A>&gt;</SPAN>
+</DD>
+
+<DT><A name="HTML40">[HTML40]</A></DT>
+<DD>
+"<CITE><ACRONYM title="HyperText Markup Language">HTML</ACRONYM> 4.0 Specification</CITE>",
+<EM><ACRONYM title="World Wide Web Consortium">W3C</ACRONYM> Recommendation</EM>,
+D. Raggett, A. Le&nbsp;Hors, I. Jacobs,
+18 December 1997, revised 24 April 1998.<BR>
+Available at <SPAN class="URI">&lt;<A href="http://www.w3.org/TR/1998/REC-html40-19980424">http://www.w3.org/TR/1998/REC-html40-19980424</A>&gt;</SPAN><BR>
+"<CITE><ACRONYM title="HyperText Markup Language">HTML</ACRONYM> 4.0
+Specification Errata</CITE>" is available at
+<SPAN class="URI">&lt;<A href="http://www.w3.org/MarkUp/html40-updates/REC-html40-19980424-errata.html">http://www.w3.org/MarkUp/html40-updates/REC-html40-19980424-errata.html</A>&gt;</SPAN>
+</DD>
+
+<DT><A name="ISO-HTML">[ISO-HTML]</A></DT>
+<DD>
+"<CITE><ACRONYM title="International Organization for Standardization">ISO</ACRONYM>/<ACRONYM title="International Electrotechnical Commission">IEC</ACRONYM> 15445:1999 Information Technology -- Document Description and Processing Languages -- HyperText Markup Language (<ACRONYM title="HyperText Markup Language">HTML</ACRONYM>)</CITE>",
+R. Price, D. Abrahamson, <EM>work in progress</EM>.<BR>
+Available at <SPAN class="URI">&lt;<A href="http://purl.org/NET/ISO+IEC.15445/15445.html">http://purl.org/NET/ISO+IEC.15445/15445.html</A>&gt;</SPAN><BR>
+See also: "<CITE>User's Guide to <ACRONYM title="International Organization for Standardization">ISO</ACRONYM>/<ACRONYM title="International Electrotechnical Commission">IEC</ACRONYM> 15445:1999 HyperText Markup Language (<ACRONYM title="HyperText Markup Language">HTML</ACRONYM>)</CITE>",
+available at
+<SPAN class="URI">&lt;<A href="http://purl.org/NET/ISO+IEC.15445/Users-Guide.html">http://purl.org/NET/ISO+IEC.15445/Users-Guide.html</A>&gt;</SPAN>
+</DD>
+
+<DT><A name="SP">[SP]</A></DT>
+<DD>
+SP is a free, object-oriented toolkit for <ACRONYM title="Standard Generalized Markup Language">SGML</ACRONYM> parsing and entity management written by <A href="mailto:jjc@jclark.com">James Clark</A>.
+Further information is available at
+<SPAN class="URI">&lt;<A href="http://www.jclark.com/sp/index.htm">http://www.jclark.com/sp/index.htm</A>&gt;</SPAN>.
+</DD>
+
+<DT><A name="WAI-WEBCONTENT">[WAI-WEBCONTENT]</A></DT>
+<DD>
+"<CITE>Web Content Accessibility Guidelines</CITE>",
+<EM><ACRONYM title="World Wide Web Consortium">W3C</ACRONYM> Working Draft</EM>,
+W. Chisholm, G. Vanderheiden, I. Jacobs,
+<EM>work in progress</EM>.<BR>
+See also: "<CITE>Techniques for Web Content Accessibility Guidelines</CITE>"<BR>
+The latest version of these documents can be available from
+<SPAN class="URI">&lt;<A href="http://www.w3.org/WAI/#Resources">http://www.w3.org/WAI/#Resources</A>&gt;</SPAN>
+</DD>
+
+<DT><A name="WAI-USERAGENT">[WAI-USERAGENT]</A></DT>
+<DD>
+"<CITE>User Agent Accessibility Guidelines</CITE>",
+<EM><ACRONYM title="World Wide Web Consortium">W3C</ACRONYM> Working Draft</EM>,
+J. Gunderson, I. Jacobs,
+<EM>work in progress</EM>.<BR>
+The latest version of this document can be available from
+<SPAN class="URI">&lt;<A href="http://www.w3.org/WAI/#Resources">http://www.w3.org/WAI/#Resources</A>&gt;</SPAN>
+</DD>
+
+<DT><A name="WAP-W3C">[WAP-W3C]</A></DT>
+<DD>
+"<CITE><ACRONYM title="Wireless Application Protocol">WAP</ACRONYM> Forum - <ACRONYM title="World Wide Web Consortium">W3C</ACRONYM> Cooperation White Paper</CITE>",
+<EM><ACRONYM title="World Wide Web Consortium">W3C</ACRONYM> Note</EM>,
+J. Hjelm, B. Martin, P. King,
+30 October 1998.<BR>
+Available at <SPAN class="URI">&lt;<A href="http://www.w3.org/TR/NOTE-WAP">http://www.w3.org/TR/NOTE-WAP</A>&gt;</SPAN>
+</DD>
+
+<DT><A name="WML">[WML]</A></DT>
+<DD>
+"<CITE>Wireless Markup Language Specification</CITE>",
+<ACRONYM title="Wireless Application Protocol">WAP</ACRONYM> Forum,
+30 April 1998.<BR>
+Available at <SPAN class="URI">&lt;<A type="application/pdf" href="http://www.wapforum.org/docs/technical/wml-30-apr-98.pdf">http://www.wapforum.org/docs/technical/wml-30-apr-98.pdf</A>&gt;</SPAN>
+</DD>
+
+<DT><A name="WML1.1">[WML1.1]</A></DT>
+<DD>
+"<CITE>Wireless Markup Language Specification Version 1.1</CITE>",
+<EM>proposed</EM>,
+<ACRONYM title="Wireless Application Protocol">WAP</ACRONYM> Forum,
+3 February 1999.<BR>
+Available at
+<SPAN class="URI">&lt;<A type="application/pdf" href="http://www.wapforum.org/docs/technical1.1/WML-3-Feb-1999.pdf">http://www.wapforum.org/docs/technical1.1/WML-3-Feb-1999.pdf</A>&gt;</SPAN>
+</DD>
+
+<DT><A name="XHTML">[XHTML]</A></DT>
+<DD>
+"<CITE><ACRONYM title="Extensible HyperText Markup Language">XHTML</ACRONYM> 1.0: The Extensible HyperText Markup Language - A Reformulation of <ACRONYM title="HyperText Markup Language">HTML</ACRONYM> 4.0 in <ACRONYM title="Extensible Markup Language">XML</ACRONYM> 1.0</CITE>",
+<EM><ACRONYM title="World Wide Web Consortium">W3C</ACRONYM> Working Draft</EM>,
+Steven Pemberton <EM>et al.</EM>,
+<EM>work in progress</EM>.<BR>
+Available at <SPAN class="URI">&lt;<A href="http://www.w3.org/TR/WD-html-in-xml">http://www.w3.org/TR/WD-html-in-xml</A>&gt;</SPAN>
+</DD>
+</DL>
+
+
+<H2><A name="Appendix">Appendix <ACRONYM title="HyperText Markup Language">HTML</ACRONYM> 4.0 Mobile <ACRONYM title="Document Type Definition">DTD</ACRONYM></A></H2>
+
+<H3><A name="Catalog">Sample <ACRONYM title="Standard Generalized Markup Language">SGML</ACRONYM> catalog</A></H3>
+
+<DIV class="note">
+<P>
+<EM>Note.</EM>
+The <ACRONYM title="HyperText Markup Language">HTML</ACRONYM> 4.0 Mobile <ACRONYM title="Document Type Definition">DTD</ACRONYM> is a complete subset of the <ACRONYM title="HyperText Markup Language">HTML</ACRONYM> 4.0 Strict <ACRONYM title="Document Type Definition">DTD</ACRONYM>,
+and if you use the following <ACRONYM title="Document Type Definition">DTD</ACRONYM>:
+</P>
+
+<PRE>
+&lt;!ENTITY % HTML.Strict "INCLUDE"&gt;
+&lt;!ENTITY % Mobile.dtd SYSTEM "<A href="DTD/html40-mobile.dtd">html40-mobile.dtd</A>"&gt;
+%Mobile.dtd;
+</PRE>
+
+<P>
+then you can get the same definition as the
+<ACRONYM title="HyperText Markup Language">HTML</ACRONYM> 4.0
+Strict <ACRONYM title="Document Type Definition">DTD</ACRONYM>,
+as amended by the <A href="http://www.w3.org/MarkUp/html40-updates/REC-html40-19980424-errata.html"><ACRONYM title="HyperText Markup Language">HTML</ACRONYM> 4.0 Specification Errata</A>.
+</P>
+
+<P>
+The following <A href="DTD/mobile.soc">sample
+<ACRONYM title="Standard Generalized Markup Language">SGML</ACRONYM> catalog</A>
+uses the above <ACRONYM title="Document Type Definition">DTD</ACRONYM> to invoke
+the <ACRONYM title="HyperText Markup Language">HTML</ACRONYM> 4.0
+Strict <ACRONYM title="Document Type Definition">DTD</ACRONYM>.
+Typically, the Mobile <ACRONYM title="Document Type Definition">DTD</ACRONYM>
+itself will be invoked by a system identifier, so it is not included in this catalog.
+</P>
+</DIV>
+
+<DIV class="dtd">
+<PRE>
+  -- HTML 4.0 Strict DTD, as amended by the HTML 4.0 Specification Errata --
+PUBLIC "-//W3C//DTD HTML 4.0//EN"                       <A href="DTD/html40-strict.dtd">html40-strict.dtd</A>
+
+  -- entity sets for HTML 4.0 --
+PUBLIC "-//W3C//ENTITIES Latin1//EN//HTML"              <A href="DTD/HTMLlat1.ent">HTMLlat1.ent</A>
+PUBLIC "-//W3C//ENTITIES Special//EN//HTML"             <A href="DTD/HTMLspecial.ent">HTMLspecial.ent</A>
+PUBLIC "-//W3C//ENTITIES Symbols//EN//HTML"             <A href="DTD/HTMLsymbol.ent">HTMLsymbol.ent</A>
+
+SGMLDECL <A href="DTD/html40.decl">html40.decl</A>
+DOCTYPE html <A href="DTD/html40-strict.dtd">html40-strict.dtd</A>
+</PRE>
+</DIV>
+
+<H3><A name="DTD">Document Type Definition</A></H3>
+
+<DIV class="dtd">
+<PRE>
+&lt;!--
+    This is HTML 4.0 Mobile DTD, which excludes elements and attributes
+    that are difficult to use in mobile devices.
+
+    HTML 4.0 Mobile DTD is designed to be a complete subset of the HTML 4.0
+    Strict DTD, and ISO/IEC 15445, a.k.a. ISO-HTML.  ISO-HTML is also
+    a subset of the HTML 4.0 Strict DTD.  This DTD takes into account
+    the errata for the HTML 4.0 Specification.
+
+      NOTE:  ISO/IEC 15445 is still work in progress.  It is not yet
+        an International Standard and it is not appropriate to cite it
+        other than as work in progress.
+
+    HTML 4.0 includes mechanisms for style sheets, scripting,
+    embedding objects, improved support for right to left and mixed
+    direction text, and enhancements to forms for improved
+    accessibility for people with disabilities.
+
+          Draft: $ Date: 1999/03/15 03:20:05 $
+
+          Author:
+              Masayasu Ishikawa &lt;mimasa@w3.org&gt;
+
+          Authors of the original HTML 4.0 Strict DTD:
+              Dave Raggett &lt;dsr@w3.org&gt;
+              Arnaud Le Hors &lt;lehors@w3.org&gt;
+              Ian Jacobs &lt;ij@w3.org&gt;
+
+    Further information about HTML 4.0 is available at:
+
+        http://www.w3.org/TR/REC-html40
+--&gt;
+&lt;!--
+    Typical usage:
+
+    &lt;!DOCTYPE HTML SYSTEM "html40-mobile.dtd"&gt;
+    &lt;html&gt;
+    &lt;head&gt;
+    ...
+    &lt;/head&gt;
+    &lt;body&gt;
+    ...
+    &lt;/body&gt;
+    &lt;/html&gt;
+
+    As this DTD is intended to be used only for preparing documents,
+    FPI for this DTD is not defined.  Use system identifier when you
+    invoke this DTD, and the FPI for the Strict DTD should be used
+    when you publish the documents conforming to this DTD.
+
+    The FPI for the HTML 4.0 Strict DTD is:
+
+        "-//W3C//DTD HTML 4.0//EN"
+
+    and its URI is:
+
+        http://www.w3.org/TR/REC-html40/strict.dtd
+
+    The following URIs are supported in relation to HTML 4.0.
+    These URIs point to the latest version of each file.
+
+    "http://www.w3.org/TR/REC-html40/strict.dtd" (Strict DTD)
+    "http://www.w3.org/TR/REC-html40/loose.dtd" (Transitional DTD)
+    "http://www.w3.org/TR/REC-html40/frameset.dtd" (Frameset DTD)
+    "http://www.w3.org/TR/REC-html40/HTMLlat1.ent" (Latin-1 entities)
+    "http://www.w3.org/TR/REC-html40/HTMLsymbol.ent" (Symbol entities)
+    "http://www.w3.org/TR/REC-html40/HTMLspecial.ent" (Special entities)
+
+--&gt;
+
+&lt;!-- Feature Switch for Mobile documents --&gt;
+
+&lt;!ENTITY % HTML.Strict "IGNORE"&gt;
+&lt;![ %HTML.Strict; [
+    &lt;!ENTITY % HTML.Mobile "IGNORE"&gt;
+]]&gt;
+&lt;!ENTITY % HTML.Mobile "INCLUDE"&gt;
+
+&lt;![ %HTML.Mobile; [
+&lt;!-- If the Preparation parameter entity is set to INCLUDE, it allows
+     you to enforce the strict heading order, just like the document
+     preparation process of ISO-HTML. --&gt;
+&lt;!ENTITY % Preparation "IGNORE"&gt;
+
+&lt;!-- This definition generates the inverse entity
+     NoPreparation which is internal to the DTD. --&gt;
+&lt;![ %Preparation; [
+&lt;!ENTITY % NoPreparation "IGNORE"    -- Inverse of Preparation = INCLUDE --&gt;
+]]&gt;
+&lt;!ENTITY % NoPreparation "INCLUDE"   -- Inverse of Preparation = IGNORE --&gt;
+]]&gt;
+
+&lt;!-- In ISO-HTML, horizontal tab character is deprecated. --&gt;
+&lt;![ %HTML.Mobile; [
+&lt;!-- SHORTREF mapping for the tab character --&gt;
+&lt;!-- Use of the tab character is deprecated.  However, to facilitate
+     the preparation of conforming documents by authors who use it,
+     the tab character is tolerated and is mapped into a single space. --&gt;
+&lt;!ENTITY   nontab  " " &gt;
+&lt;!SHORTREF tabmap  "	" nontab &gt;
+&lt;!USEMAP   tabmap  HTML &gt;
+]]&gt;
+
+&lt;!--================== Imported Names ====================================--&gt;
+
+&lt;!ENTITY % ContentType "CDATA"
+    -- media type, as per [RFC2045]
+    --&gt;
+
+&lt;!ENTITY % ContentTypes "CDATA"
+    -- comma-separated list of media types, as per [RFC2045]
+    --&gt;
+
+&lt;!ENTITY % Charset "CDATA"
+    -- a character encoding, as per [RFC2045]
+    --&gt;
+
+&lt;!ENTITY % Charsets "CDATA"
+    -- a space separated list of character encodings, as per [RFC2045]
+    --&gt;
+
+&lt;!ENTITY % LanguageCode "NAME"
+    -- a language code, as per [RFC1766]
+    --&gt;
+
+&lt;!ENTITY % Character "CDATA"
+    -- a single character from [ISO10646]
+    --&gt;
+
+&lt;!ENTITY % LinkTypes "CDATA"
+    -- space-separated list of link types
+    --&gt;
+
+&lt;!ENTITY % MediaDesc "CDATA"
+    -- single or comma-separated list of media descriptors
+    --&gt;
+
+&lt;!ENTITY % URI "CDATA"
+    -- a Uniform Resource Identifier, see [RFC2396]
+    --&gt;
+
+&lt;!-- Added to incorporate an erratum for HTML 4.0; taken from [XHTML] --&gt;
+&lt;!ENTITY % UriList "CDATA"
+    -- a space separated list of Uniform Resource Identifiers
+    --&gt;
+
+&lt;![ %HTML.Strict; [
+&lt;!ENTITY % Datetime "CDATA" -- date and time information. ISO date format --&gt;
+
+&lt;!ENTITY % Script "CDATA" -- script expression --&gt;
+]]&gt;
+
+&lt;!ENTITY % StyleSheet "CDATA" -- style sheet data --&gt;
+
+&lt;!ENTITY % Text "CDATA"&gt;
+
+&lt;!-- Parameter Entities --&gt;
+
+&lt;![ %HTML.Strict; [
+&lt;!ENTITY % head.misc "SCRIPT|STYLE|META|LINK|OBJECT"
+    -- repeatable head elements --&gt;
+]]&gt;
+
+&lt;!-- In ISO-HTML, OBJECT is not allowed in HEAD. --&gt;
+&lt;!ENTITY % head.misc "STYLE|META|LINK" -- repeatable head elements --&gt;
+
+&lt;!ENTITY % heading "H1|H2|H3|H4|H5|H6"&gt;
+
+&lt;!ENTITY % list "UL | OL"&gt;
+
+&lt;!ENTITY % preformatted "PRE"&gt;
+
+
+&lt;!--================ Character mnemonic entities =========================--&gt;
+
+&lt;!ENTITY % HTMLlat1 PUBLIC
+   "-//W3C//ENTITIES Latin1//EN//HTML"
+   "http://www.w3.org/TR/REC-html40/HTMLlat1.ent"&gt;
+%HTMLlat1;
+
+&lt;!ENTITY % HTMLsymbol PUBLIC
+   "-//W3C//ENTITIES Symbols//EN//HTML"
+   "http://www.w3.org/TR/REC-html40/HTMLsymbol.ent"&gt;
+%HTMLsymbol;
+
+&lt;!ENTITY % HTMLspecial PUBLIC
+   "-//W3C//ENTITIES Special//EN//HTML"
+   "http://www.w3.org/TR/REC-html40/HTMLspecial.ent"&gt;
+%HTMLspecial;
+
+&lt;!--=================== Generic Attributes ===============================--&gt;
+
+&lt;![ %HTML.Strict; [
+&lt;!ENTITY % coreattrs
+ "id          ID             #IMPLIED  -- document-wide unique id --
+  class       CDATA          #IMPLIED  -- space separated list of classes --
+  style       %StyleSheet;   #IMPLIED  -- associated style info --
+  title       %Text;         #IMPLIED  -- advisory title/amplification --"
+  &gt;
+]]&gt;
+
+&lt;!-- Style attribute is excluded from ISO-HTML --&gt;
+&lt;!ENTITY % coreattrs
+ "id          ID             #IMPLIED  -- document-wide unique id --
+  class       CDATA          #IMPLIED  -- space separated list of classes --
+  title       %Text;         #IMPLIED  -- advisory title/amplification --"
+  &gt;
+
+&lt;!ENTITY % i18n
+ "lang        %LanguageCode; #IMPLIED  -- language code --
+  dir         (ltr|rtl)      #IMPLIED  -- direction for weak/neutral text --"
+  &gt;
+
+&lt;![ %HTML.Strict; [
+&lt;!ENTITY % events
+ "onclick     %Script;       #IMPLIED  -- a pointer button was clicked --
+  ondblclick  %Script;       #IMPLIED  -- a pointer button was double clicked--
+  onmousedown %Script;       #IMPLIED  -- a pointer button was pressed down --
+  onmouseup   %Script;       #IMPLIED  -- a pointer button was released --
+  onmouseover %Script;       #IMPLIED  -- a pointer was moved onto --
+  onmousemove %Script;       #IMPLIED  -- a pointer was moved within --
+  onmouseout  %Script;       #IMPLIED  -- a pointer was moved away --
+  onkeypress  %Script;       #IMPLIED  -- a key was pressed and released --
+  onkeydown   %Script;       #IMPLIED  -- a key was pressed down --
+  onkeyup     %Script;       #IMPLIED  -- a key was released --"
+  &gt;
+]]&gt;
+
+
+&lt;!-- Reserved Feature Switch --&gt;
+&lt;!ENTITY % HTML.Reserved "IGNORE"&gt;
+
+&lt;!-- The following attributes are reserved for possible future use --&gt;
+&lt;![ %HTML.Reserved; [
+&lt;!ENTITY % reserved
+ "datasrc     %URI;          #IMPLIED  -- a single or tabular Data Source --
+  datafld     CDATA          #IMPLIED  -- the property or column name --
+  dataformatas (plaintext|html) plaintext -- text or html --"
+  &gt;
+]]&gt;
+
+&lt;![ %HTML.Strict; [
+&lt;!ENTITY % reserved ""&gt;
+
+&lt;!ENTITY % attrs "%coreattrs; %i18n; %events;"&gt;
+]]&gt;
+
+&lt;!ENTITY % attrs "%coreattrs; %i18n;"&gt;
+
+&lt;!--=================== Text Markup ======================================--&gt;
+
+&lt;![ %HTML.Strict; [
+&lt;!ENTITY % fontstyle
+ "TT | I | B | BIG | SMALL"&gt;
+]]&gt;
+
+&lt;!ENTITY % phrase "EM | STRONG | DFN | CODE |
+                   SAMP | KBD | VAR | CITE | ABBR | ACRONYM" &gt;
+
+&lt;![ %HTML.Strict; [
+&lt;!ENTITY % special
+   "A | IMG | OBJECT | BR | SCRIPT | MAP | Q | SUB | SUP | SPAN | BDO"&gt;
+]]&gt;
+
+&lt;!ENTITY % special
+   "A | IMG | OBJECT | BR | MAP | Q | SPAN | BDO"&gt;
+
+&lt;!ENTITY % formctrl "INPUT | SELECT | TEXTAREA | LABEL | BUTTON"&gt;
+
+&lt;!-- %inline; covers inline or "text-level" elements --&gt;
+&lt;![ %HTML.Strict; [
+&lt;!ENTITY % inline "#PCDATA | %fontstyle; | %phrase; | %special; | %formctrl;"&gt;
+]]&gt;
+&lt;!-- In ISO-HTML, form controls can only be appeared in FORM element --&gt;
+&lt;!ENTITY % inline "#PCDATA | %phrase; | %special;"&gt;
+
+&lt;![ %HTML.Strict; [
+&lt;!ELEMENT (%fontstyle;|%phrase;) - - (%inline;)*&gt;
+&lt;!ATTLIST (%fontstyle;|%phrase;)
+  %attrs;                              -- %coreattrs, %i18n, %events --
+  &gt;
+]]&gt;
+
+&lt;![ %HTML.Mobile; [
+&lt;!ELEMENT (%phrase;) - - (%inline;)+&gt;
+&lt;!ATTLIST (%phrase;)
+  %attrs;                              -- %coreattrs, %i18n --
+  &gt;
+]]&gt;
+
+&lt;![ %HTML.Strict; [
+&lt;!ELEMENT (SUB|SUP) - - (%inline;)*    -- subscript, superscript --&gt;
+&lt;!ATTLIST (SUB|SUP)
+  %attrs;                              -- %coreattrs, %i18n, %events --
+  &gt;
+]]&gt;
+
+&lt;![ %HTML.Strict; [
+&lt;!ELEMENT SPAN - - (%inline;)*         -- generic language/style container --&gt;
+&lt;!ATTLIST SPAN
+  %attrs;                              -- %coreattrs, %i18n, %events --
+  %reserved;			       -- reserved for possible future use --
+  &gt;
+]]&gt;
+
+&lt;![ %HTML.Mobile; [
+&lt;!ELEMENT SPAN - - (%inline;)+         -- generic language/style container --&gt;
+&lt;!ATTLIST SPAN
+  %attrs;                              -- %coreattrs, %i18n --
+  &gt;
+]]&gt;
+
+&lt;![ %HTML.Strict; [
+&lt;!ELEMENT BDO - - (%inline;)*          -- I18N BiDi over-ride --&gt;
+]]&gt;
+&lt;![ %HTML.Mobile; [
+&lt;!ELEMENT BDO - - (%inline;)+          -- I18N BiDi over-ride --&gt;
+]]&gt;
+&lt;!ATTLIST BDO
+  -- %coreattrs;                          id, class, style, title --
+  %coreattrs;                          -- id, class, title --
+  lang        %LanguageCode; #IMPLIED  -- language code --
+  dir         (ltr|rtl)      #REQUIRED -- directionality --
+  &gt;
+
+
+&lt;!ELEMENT BR - O EMPTY                 -- forced line break --&gt;
+&lt;!ATTLIST BR
+  -- %coreattrs;                          id, class, style, title --
+  %coreattrs;                          -- id, class, title --
+  &gt;
+
+&lt;!--================== HTML content models ===============================--&gt;
+
+&lt;!--
+    HTML has two basic content models:
+
+        %inline;     character level elements and text strings
+        %block;      block-like elements e.g. paragraphs and lists
+--&gt;
+
+&lt;![ %HTML.Strict; [
+&lt;!ENTITY % block
+     "P | %heading; | %list; | %preformatted; | DL | DIV | NOSCRIPT |
+      BLOCKQUOTE | FORM | HR | TABLE | FIELDSET | ADDRESS"&gt;
+]]&gt;
+
+&lt;!-- The content of %block; is changed in accordance with ISO-HTML --&gt;
+&lt;!-- FIELDSET is not part of %block; in HTML 4.0 Mobile --&gt;
+&lt;!ENTITY % block
+     "P | %list; | %preformatted; | DL | DIV |
+      BLOCKQUOTE | FORM | HR"&gt;
+
+&lt;!ENTITY % flow "%block; | %inline;"&gt;
+
+&lt;!-- The following definitions are taken from ISO-HTML --&gt;
+&lt;![ %HTML.Mobile; [
+&lt;!-- Elements that may appear in a form, section or table --&gt;
+&lt;!-- In HTML 4.0 Mobile, FIELDSET is only allowed in a form --&gt;
+&lt;!ENTITY % form.content    "(%block; | %inline; | %formctrl; |
+                            FIELDSET | ADDRESS)+" &gt;
+&lt;!ENTITY % section.content "(%block; | %inline; | ADDRESS)+" &gt;
+]]&gt;
+
+&lt;!--=================== Document Body ====================================--&gt;
+
+&lt;![ %HTML.Strict; [
+&lt;!ELEMENT BODY O O (%block;|SCRIPT)+ +(INS|DEL) -- document body --&gt;
+&lt;!ATTLIST BODY
+  %attrs;                              -- %coreattrs, %i18n, %events --
+  onload          %Script;   #IMPLIED  -- the document has been loaded --
+  onunload        %Script;   #IMPLIED  -- the document has been removed --
+  &gt;
+]]&gt;
+
+&lt;!-- In ISO-HTML, start tag of BODY element cannot be omitted --&gt;
+&lt;![ %HTML.Mobile; [
+&lt;!-- The following marked section is for preparation only. --&gt;
+&lt;![ %Preparation; [
+&lt;!ELEMENT BODY - O ((%block;)*,(H1,DIV1)*) &gt;
+]]&gt;
+&lt;![ %NoPreparation; [
+&lt;!ELEMENT BODY - O (%block;|%heading;)+  -- document body --&gt;
+]]&gt;
+&lt;!ATTLIST BODY
+  %attrs;                              -- %coreattrs, %i18n --
+  &gt;
+]]&gt;
+
+&lt;![ %HTML.Strict; [
+&lt;!ELEMENT ADDRESS - - (%inline;)* -- information on author --&gt;
+&lt;!ATTLIST ADDRESS
+  %attrs;                              -- %coreattrs, %i18n, %events --
+  &gt;
+]]&gt;
+
+&lt;!-- Content model of ADDRESS element is changed in ISO-HTML --&gt;
+&lt;![ %HTML.Mobile; [
+&lt;!ELEMENT ADDRESS - - (%inline;)+ -(IMG|MAP) -- information on author --&gt;
+&lt;!ATTLIST ADDRESS
+  %attrs;                              -- %coreattrs, %i18n --
+  &gt;
+]]&gt;
+
+&lt;![ %HTML.Strict; [
+&lt;!ELEMENT DIV - - (%flow;)*            -- generic language/style container --&gt;
+&lt;!ATTLIST DIV
+  %attrs;                              -- %coreattrs, %i18n, %events --
+  %reserved;                           -- reserved for possible future use --
+  &gt;
+]]&gt;
+
+&lt;!-- Content model of DIV element is changed in ISO-HTML --&gt;
+&lt;![ %HTML.Mobile; [
+&lt;!ELEMENT DIV - - %section.content;    -- generic language/style container --&gt;
+&lt;!ATTLIST DIV
+  %attrs;                              -- %coreattrs, %i18n --
+  &gt;
+]]&gt;
+
+&lt;!--================== The Anchor Element ================================--&gt;
+
+&lt;!ENTITY % Shape "(rect|circle|poly|default)"&gt;
+&lt;!ENTITY % Coords "CDATA" -- comma separated list of lengths --&gt;
+
+&lt;![ %HTML.Strict; [
+&lt;!ELEMENT A - - (%inline;)* -(A)       -- anchor --&gt;
+&lt;!ATTLIST A
+  %attrs;                              -- %coreattrs, %i18n, %events --
+  charset     %Charset;      #IMPLIED  -- char encoding of linked resource --
+  type        %ContentType;  #IMPLIED  -- advisory content type --
+  name        CDATA          #IMPLIED  -- named link end --
+  href        %URI;          #IMPLIED  -- URI for linked resource --
+  hreflang    %LanguageCode; #IMPLIED  -- language code --
+  rel         %LinkTypes;    #IMPLIED  -- forward link types --
+  rev         %LinkTypes;    #IMPLIED  -- reverse link types --
+  accesskey   %Character;    #IMPLIED  -- accessibility key character --
+  shape       %Shape;        rect      -- for use with client-side image maps --
+  coords      %Coords;       #IMPLIED  -- for use with client-side image maps --
+  tabindex    NUMBER         #IMPLIED  -- position in tabbing order --
+  onfocus     %Script;       #IMPLIED  -- the element got the focus --
+  onblur      %Script;       #IMPLIED  -- the element lost the focus --
+  &gt;
+]]&gt;
+
+&lt;![ %HTML.Mobile; [
+&lt;!ELEMENT A - - (%inline;)* -(A)       -- anchor --&gt;
+&lt;!ATTLIST A
+  %attrs;                              -- %coreattrs, %i18n --
+  charset     %Charset;      #IMPLIED  -- char encoding of linked resource --
+  type        %ContentType;  #IMPLIED  -- advisory content type --
+  name        CDATA          #IMPLIED  -- named link end --
+  href        %URI;          #IMPLIED  -- URI for linked resource --
+  hreflang    %LanguageCode; #IMPLIED  -- language code --
+  rel         %LinkTypes;    #IMPLIED  -- forward link types --
+  rev         %LinkTypes;    #IMPLIED  -- reverse link types --
+  accesskey   %Character;    #IMPLIED  -- accessibility key character --
+  tabindex    NUMBER         #IMPLIED  -- position in tabbing order --
+  &gt;
+]]&gt;
+
+&lt;!--================== Client-side image maps ============================--&gt;
+
+&lt;!-- These can be placed in the same document or grouped in a
+     separate document although this isn't yet widely supported --&gt;
+
+&lt;![ %HTML.Strict; [
+&lt;!ELEMENT MAP - - ((%block;)+ | AREA+) -- client-side image map --&gt;
+&lt;!ATTLIST MAP
+  %attrs;                              -- %coreattrs, %i18n, %events --
+  name        CDATA          #REQUIRED -- for reference by usemap --
+  &gt;
+]]&gt;
+&lt;!-- In ISO-HTML, MAP element can only include AREA elements --&gt;
+&lt;![ %HTML.Mobile; [
+&lt;!ELEMENT MAP - - (AREA)+ -- client-side image map --&gt;
+&lt;!ATTLIST MAP
+  %attrs;                              -- %coreattrs, %i18n --
+  name        CDATA          #REQUIRED -- for reference by usemap --
+  &gt;
+]]&gt;
+
+&lt;!ELEMENT AREA - O EMPTY               -- client-side image map area --&gt;
+&lt;![ %HTML.Strict; [
+&lt;!ATTLIST AREA
+  %attrs;                              -- %coreattrs, %i18n, %events --
+  shape       %Shape;        rect      -- controls interpretation of coords --
+  coords      %Coords;       #IMPLIED  -- comma separated list of lengths --
+  href        %URI;          #IMPLIED  -- URI for linked resource --
+  nohref      (nohref)       #IMPLIED  -- this region has no action --
+  alt         %Text;         #REQUIRED -- short description --
+  tabindex    NUMBER         #IMPLIED  -- position in tabbing order --
+  accesskey   %Character;    #IMPLIED  -- accessibility key character --
+  onfocus     %Script;       #IMPLIED  -- the element got the focus --
+  onblur      %Script;       #IMPLIED  -- the element lost the focus --
+  &gt;
+]]&gt;
+&lt;![ %HTML.Mobile; [
+&lt;!ATTLIST AREA
+  %attrs;                              -- %coreattrs, %i18n --
+  shape       %Shape;        rect      -- controls interpretation of coords --
+  coords      %Coords;       #IMPLIED  -- comma separated list of lengths --
+  href        %URI;          #IMPLIED  -- URI for linked resource --
+  nohref      (nohref)       #IMPLIED  -- this region has no action --
+  alt         %Text;         #REQUIRED -- short description --
+  tabindex    NUMBER         #IMPLIED  -- position in tabbing order --
+  accesskey   %Character;    #IMPLIED  -- accessibility key character --
+  &gt;
+]]&gt;
+
+&lt;!--================== The LINK Element ==================================--&gt;
+
+&lt;!--
+  Relationship values can be used in principle:
+
+   a) for document specific toolbars/menus when used
+      with the LINK element in document head e.g.
+        start, contents, previous, next, index, end, help
+   b) to link to a separate style sheet (rel=stylesheet)
+   c) to make a link to a script (rel=script)
+   d) by stylesheets to control how collections of
+      html nodes are rendered into printed documents
+   e) to make a link to a printable version of this document
+      e.g. a postscript or pdf version (rel=alternate media=print)
+--&gt;
+
+&lt;!ELEMENT LINK - O EMPTY               -- a media-independent link --&gt;
+&lt;![ %HTML.Strict; [
+&lt;!ATTLIST LINK
+  %attrs;                              -- %coreattrs, %i18n, %events --
+  charset     %Charset;      #IMPLIED  -- char encoding of linked resource --
+  href        %URI;          #IMPLIED  -- URI for linked resource --
+  hreflang    %LanguageCode; #IMPLIED  -- language code --
+  type        %ContentType;  #IMPLIED  -- advisory content type --
+  rel         %LinkTypes;    #IMPLIED  -- forward link types --
+  rev         %LinkTypes;    #IMPLIED  -- reverse link types --
+  media       %MediaDesc;    #IMPLIED  -- for rendering on these media --
+  &gt;
+]]&gt;
+&lt;![ %HTML.Mobile; [
+&lt;!ATTLIST LINK
+  %attrs;                              -- %coreattrs, %i18n --
+  charset     %Charset;      #IMPLIED  -- char encoding of linked resource --
+  href        %URI;          #IMPLIED  -- URI for linked resource --
+  hreflang    %LanguageCode; #IMPLIED  -- language code --
+  type        %ContentType;  #IMPLIED  -- advisory content type --
+  rel         %LinkTypes;    #IMPLIED  -- forward link types --
+  rev         %LinkTypes;    #IMPLIED  -- reverse link types --
+  media       %MediaDesc;    #IMPLIED  -- for rendering on these media --
+  &gt;
+]]&gt;
+
+&lt;!--=================== Images ===========================================--&gt;
+
+&lt;!-- Length defined in strict DTD for cellpadding/cellspacing --&gt;
+&lt;![ %HTML.Strict; [
+&lt;!ENTITY % Length "CDATA" -- nn for pixels or nn% for percentage length --&gt;
+]]&gt;
+&lt;!ENTITY % MultiLength "CDATA" -- pixel, percentage, or relative --&gt;
+
+&lt;![ %HTML.Strict; [
+&lt;!ENTITY % MultiLengths "CDATA" -- comma-separated list of MultiLength --&gt;
+
+&lt;!ENTITY % Pixels "CDATA" -- integer representing length in pixels --&gt;
+]]&gt;
+
+&lt;!-- To avoid problems with text-only UAs as well as
+   to make image content understandable and navigable
+   to users of non-visual UAs, you need to provide
+   a description with ALT, and avoid server-side image maps --&gt;
+
+&lt;!ELEMENT IMG - O EMPTY                -- Embedded image --&gt;
+&lt;![ %HTML.Strict; [
+&lt;!ATTLIST IMG
+  %attrs;                              -- %coreattrs, %i18n, %events --
+  src         %URI;          #REQUIRED -- URI of image to embed --
+  alt         %Text;         #REQUIRED -- short description --
+  longdesc    %URI;          #IMPLIED  -- link to long description
+                                          (complements alt) --
+  height      %Length;       #IMPLIED  -- override height --
+  width       %Length;       #IMPLIED  -- override width --
+  usemap      %URI;          #IMPLIED  -- use client-side image map --
+  ismap       (ismap)        #IMPLIED  -- use server-side image map --
+  &gt;
+]]&gt;
+&lt;!-- In ISO-HTML, height and width attributes are not supported --&gt;
+&lt;![ %HTML.Mobile; [
+&lt;!ATTLIST IMG
+  %attrs;                              -- %coreattrs, %i18n --
+  src         %URI;          #REQUIRED -- URI of image to embed --
+  alt         %Text;         #REQUIRED -- short description --
+  longdesc    %URI;          #IMPLIED  -- link to long description
+                                          (complements alt) --
+  usemap      %URI;          #IMPLIED  -- use client-side image map --
+  &gt;
+]]&gt;
+
+&lt;!-- USEMAP points to a MAP element which may be in this document
+  or an external document, although the latter is not widely supported --&gt;
+
+&lt;!--==================== OBJECT ======================================--&gt;
+&lt;!--
+  OBJECT is used to embed objects as part of HTML pages
+  PARAM elements should precede other content. SGML mixed content
+  model technicality precludes specifying this formally ...
+--&gt;
+
+&lt;![ %HTML.Strict; [
+&lt;!ELEMENT OBJECT - - (PARAM | %flow;)*
+ -- generic embedded object --&gt;
+&lt;!ATTLIST OBJECT
+  %attrs;                              -- %coreattrs, %i18n, %events --
+  declare     (declare)      #IMPLIED  -- declare but don't instantiate flag --
+  classid     %URI;          #IMPLIED  -- identifies an implementation --
+  codebase    %URI;          #IMPLIED  -- base URI for classid, data, archive--
+  data        %URI;          #IMPLIED  -- reference to object's data --
+  type        %ContentType;  #IMPLIED  -- content type for data --
+  codetype    %ContentType;  #IMPLIED  -- content type for code --
+  archive     %UriList;      #IMPLIED  -- space separated archive list --
+  standby     %Text;         #IMPLIED  -- message to show while loading --
+  height      %Length;       #IMPLIED  -- override height --
+  width       %Length;       #IMPLIED  -- override width --
+  usemap      %URI;          #IMPLIED  -- use client-side image map --
+  name        CDATA          #IMPLIED  -- submit as part of form --
+  tabindex    NUMBER         #IMPLIED  -- position in tabbing order --
+  %reserved;                           -- reserved for possible future use --
+  &gt;
+]]&gt;
+
+&lt;![ %HTML.Mobile; [
+&lt;!ELEMENT OBJECT - - (PARAM | %section.content;)*
+ -- generic embedded object --&gt;
+&lt;!ATTLIST OBJECT
+  %attrs;                              -- %coreattrs, %i18n --
+  declare     (declare)      #IMPLIED  -- declare but don't instantiate flag --
+  classid     %URI;          #IMPLIED  -- identifies an implementation --
+  codebase    %URI;          #IMPLIED  -- base URI for classid, data, archive--
+  data        %URI;          #IMPLIED  -- reference to object's data --
+  type        %ContentType;  #IMPLIED  -- content type for data --
+  codetype    %ContentType;  #IMPLIED  -- content type for code --
+  standby     %Text;         #IMPLIED  -- message to show while loading --
+  usemap      %URI;          #IMPLIED  -- use client-side image map --
+  name        CDATA          #IMPLIED  -- submit as part of form --
+  tabindex    NUMBER         #IMPLIED  -- position in tabbing order --
+  &gt;
+]]&gt;
+
+&lt;!ELEMENT PARAM - O EMPTY              -- named property value --&gt;
+&lt;!ATTLIST PARAM
+  id          ID             #IMPLIED  -- document-wide unique id --
+  name        CDATA          #REQUIRED -- property name --
+  value       CDATA          #IMPLIED  -- property value --
+  valuetype   (DATA|REF|OBJECT) DATA   -- How to interpret value --
+  type        %ContentType;  #IMPLIED  -- content type for value
+                                          when valuetype=ref --
+  &gt;
+
+&lt;!--=================== Horizontal Rule ==================================--&gt;
+&lt;!-- lang and dir attributes are added to incorporate an erratum
+     for HTML 4.0. --&gt;
+
+&lt;!ELEMENT HR - O EMPTY -- horizontal rule --&gt;
+&lt;![ %HTML.Strict; [
+&lt;!ATTLIST HR
+  %attrs;                              -- %coreattrs, %i18n, %events --
+  &gt;
+]]&gt;
+&lt;![ %HTML.Mobile; [
+&lt;!ATTLIST HR
+  %attrs;                              -- %coreattrs, %i18n --
+  &gt;
+]]&gt;
+
+&lt;!--=================== Paragraphs =======================================--&gt;
+
+&lt;![ %HTML.Strict; [
+&lt;!ELEMENT P - O (%inline;)*            -- paragraph --&gt;
+&lt;!ATTLIST P
+  %attrs;                              -- %coreattrs, %i18n, %events --
+  &gt;
+]]&gt;
+
+&lt;![ %HTML.Mobile; [
+&lt;!ELEMENT P - O (%inline;)+            -- paragraph --&gt;
+&lt;!ATTLIST P
+  %attrs;                              -- %coreattrs, %i18n --
+  &gt;
+]]&gt;
+
+&lt;!--=================== Headings =========================================--&gt;
+
+&lt;!--
+  There are six levels of headings from H1 (the most important)
+  to H6 (the least important).
+--&gt;
+
+&lt;!--
+  ISO-HTML requires very strict heading order. If you want to
+  make sure that the document is conforming to this requirement,
+  set the Preparation parameter entity to INCLUDE; it allows you
+  to enforce the strict heading order by introducing "pseudo"
+  elements DIV1 through DIV6.  Those "pseudo" elements shall not
+  be appeared in valid HTML 4.0 Strict documents.
+
+  The following comments are normative requirements of ISO-HTML.
+
+  The H1 element shall not be followed by an H3, H4, H5 or H6 element
+  without an intervening H2 element.
+
+  The H2 element shall not be followed by an H4, H5 or H6 element
+  without an intervening H3 element.
+
+  The H3 element shall not be followed by an H5 or H6 element without
+  an intervening H4 element.
+
+  The H4 element shall not be followed by an H6 element without an
+  intervening H5 element.
+
+  An H2 element shall be preceded by an H1 element.
+
+  An H3 element shall be preceded by an H2 element.
+
+  An H4 element shall be preceded by an H3 element.
+
+  An H5 element shall be preceded by an H4 element.
+
+  An H6 element shall be preceded by an H5 element.
+--&gt;
+
+&lt;![ %HTML.Strict; [
+&lt;!ELEMENT (%heading;)  - - (%inline;)* -- heading --&gt;
+&lt;!ATTLIST (%heading;)
+  %attrs;                              -- %coreattrs, %i18n, %events --
+  &gt;
+]]&gt;
+
+&lt;![ %HTML.Mobile; [
+&lt;!ELEMENT (%heading;)  - - (%inline;)+ -- heading --&gt;
+&lt;!-- The following marked section is for preparation only. --&gt;
+&lt;![ %Preparation; [
+&lt;!ELEMENT DIV1 O O ((%block;)*, (H2,DIV2)* ) &gt;
+&lt;!ELEMENT DIV2 O O ((%block;)*, (H3,DIV3)* ) &gt;
+&lt;!ELEMENT DIV3 O O ((%block;)*, (H4,DIV4)* ) &gt;
+&lt;!ELEMENT DIV4 O O ((%block;)*, (H5,DIV5)* ) &gt;
+&lt;!ELEMENT DIV5 O O ((%block;)*, (H6,DIV6)* ) &gt;
+&lt;!ELEMENT DIV6 O O ((%block;)*) &gt;
+]]&gt;
+&lt;!ATTLIST (%heading;)
+  %attrs;                              -- %coreattrs, %i18n --
+  &gt;
+]]&gt;
+
+&lt;!--=================== Preformatted Text ================================--&gt;
+
+&lt;!-- excludes markup for images and changes in font size --&gt;
+&lt;![ %HTML.Strict; [
+&lt;!ENTITY % pre.exclusion "IMG|OBJECT|BIG|SMALL|SUB|SUP"&gt;
+]]&gt;
+
+&lt;!-- In ISO-HTML, MAP shall not be appeared in PRE element --&gt;
+&lt;!ENTITY % pre.exclusion "IMG|OBJECT|MAP"&gt;
+
+&lt;![ %HTML.Strict; [
+&lt;!ELEMENT PRE - - (%inline;)* -(%pre.exclusion;) -- preformatted text --&gt;
+&lt;!ATTLIST PRE
+  %attrs;                              -- %coreattrs, %i18n, %events --
+  &gt;
+]]&gt;
+
+&lt;![ %HTML.Mobile; [
+&lt;!ELEMENT PRE - - (%inline;)+ -(%pre.exclusion;) -- preformatted text --&gt;
+&lt;!ATTLIST PRE
+  %attrs;                              -- %coreattrs, %i18n --
+  &gt;
+]]&gt;
+
+&lt;!--===================== Inline Quotes ==================================--&gt;
+
+&lt;![ %HTML.Strict; [
+&lt;!ELEMENT Q - - (%inline;)*            -- short inline quotation --&gt;
+&lt;!ATTLIST Q
+  %attrs;                              -- %coreattrs, %i18n, %events --
+  cite        %URI;          #IMPLIED  -- URI for source document or msg --
+  &gt;
+]]&gt;
+
+&lt;![ %HTML.Mobile; [
+&lt;!ELEMENT Q - - (%inline;)+            -- short inline quotation --&gt;
+&lt;!ATTLIST Q
+  %attrs;                              -- %coreattrs, %i18n --
+  cite        %URI;          #IMPLIED  -- URI for source document or msg --
+  &gt;
+]]&gt;
+
+&lt;!--=================== Block-like Quotes ================================--&gt;
+
+&lt;![ %HTML.Strict; [
+&lt;!ELEMENT BLOCKQUOTE - - (%block;|SCRIPT)+ -- long quotation --&gt;
+&lt;!ATTLIST BLOCKQUOTE
+  %attrs;                              -- %coreattrs, %i18n, %events --
+  cite        %URI;          #IMPLIED  -- URI for source document or msg --
+  &gt;
+]]&gt;
+
+&lt;![ %HTML.Mobile; [
+&lt;!ELEMENT BLOCKQUOTE - - (%block;)+ -- long quotation --&gt;
+&lt;!ATTLIST BLOCKQUOTE
+  %attrs;                              -- %coreattrs, %i18n --
+  cite        %URI;          #IMPLIED  -- URI for source document or msg --
+  &gt;
+]]&gt;
+
+&lt;!--=================== Inserted/Deleted Text ============================--&gt;
+
+
+&lt;!-- INS/DEL are handled by inclusion on BODY --&gt;
+&lt;!-- INS/DEL are not supported in HTML 4.0 Mobile --&gt;
+&lt;![ %HTML.Strict; [
+&lt;!ELEMENT (INS|DEL) - - (%flow;)*      -- inserted text, deleted text --&gt;
+&lt;!ATTLIST (INS|DEL)
+  %attrs;                              -- %coreattrs, %i18n, %events --
+  cite        %URI;          #IMPLIED  -- info on reason for change --
+  datetime    %Datetime;     #IMPLIED  -- date and time of change --
+  &gt;
+]]&gt;
+
+&lt;!--=================== Lists ============================================--&gt;
+
+&lt;!-- definition lists - DT for term, DD for its definition --&gt;
+
+&lt;!ELEMENT DL - - (DT|DD)+              -- definition list --&gt;
+&lt;!ATTLIST DL
+  -- %attrs;                              %coreattrs, %i18n, %events --
+  %attrs;                              -- %coreattrs, %i18n --
+  &gt;
+
+&lt;![ %HTML.Strict; [
+&lt;!ELEMENT DT - O (%inline;)*           -- definition term --&gt;
+&lt;!ELEMENT DD - O (%flow;)*             -- definition description --&gt;
+&lt;!ATTLIST (DT|DD)
+  %attrs;                              -- %coreattrs, %i18n, %events --
+  &gt;
+]]&gt;
+
+&lt;![ %HTML.Mobile; [
+&lt;!ELEMENT DT - O (%inline;)+           -- definition term --&gt;
+&lt;!ELEMENT DD - O %section.content; -(ADDRESS) -- definition description --&gt;
+&lt;!ATTLIST (DT|DD)
+  %attrs;                              -- %coreattrs, %i18n --
+  &gt;
+]]&gt;
+
+
+&lt;!ELEMENT OL - - (LI)+                 -- ordered list --&gt;
+&lt;!ATTLIST OL
+  -- %attrs;                              %coreattrs, %i18n, %events --
+  %attrs;                              -- %coreattrs, %i18n --
+  &gt;
+
+&lt;!-- Unordered Lists (UL) bullet styles --&gt;
+&lt;!ELEMENT UL - - (LI)+                 -- unordered list --&gt;
+&lt;!ATTLIST UL
+  -- %attrs;                              %coreattrs, %i18n, %events --
+  %attrs;                              -- %coreattrs, %i18n --
+  &gt;
+
+
+&lt;![ %HTML.Strict; [
+&lt;!ELEMENT LI - O (%flow;)*             -- list item --&gt;
+&lt;!ATTLIST LI
+  %attrs;                              -- %coreattrs, %i18n, %events --
+  &gt;
+]]&gt;
+
+&lt;![ %HTML.Mobile; [
+&lt;!ELEMENT LI - O (%flow;)+             -- list item --&gt;
+&lt;!ATTLIST LI
+  %attrs;                              -- %coreattrs, %i18n --
+  &gt;
+]]&gt;
+
+&lt;!--================ Forms ===============================================--&gt;
+&lt;![ %HTML.Strict; [
+&lt;!-- accept is added to incorporate an erratum for HTML 4.0 --&gt;
+&lt;!ELEMENT FORM - - (%block;|SCRIPT)+ -(FORM) -- interactive form --&gt;
+&lt;!ATTLIST FORM
+  %attrs;                              -- %coreattrs, %i18n, %events --
+  action      %URI;          #REQUIRED -- server-side form handler --
+  method      (GET|POST)     GET       -- HTTP method used to submit the form--
+  enctype     %ContentType;  "application/x-www-form-urlencoded"
+  onsubmit    %Script;       #IMPLIED  -- the form was submitted --
+  onreset     %Script;       #IMPLIED  -- the form was reset --
+  accept      %ContentTypes; #IMPLIED  -- list of MIME types for file upload --
+  accept-charset %Charsets;  #IMPLIED  -- list of supported charsets --
+  &gt;
+]]&gt;
+
+&lt;!-- Content model of FORM element is changed in ISO-HTML --&gt;
+&lt;![ %HTML.Mobile; [
+&lt;!ELEMENT FORM - - %form.content; -(FORM) -- interactive form --&gt;
+&lt;!ATTLIST FORM
+  %attrs;                              -- %coreattrs, %i18n --
+  action      %URI;          #REQUIRED -- server-side form handler --
+  method      (GET|POST)     GET       -- HTTP method used to submit the form--
+  enctype     %ContentType;  "application/x-www-form-urlencoded"
+  accept-charset %Charsets;  #IMPLIED  -- list of supported charsets --
+  &gt;
+]]&gt;
+
+&lt;!-- Each label must not contain more than ONE field --&gt;
+&lt;![ %HTML.Strict; [
+&lt;!ELEMENT LABEL - - (%inline;)* -(LABEL) -- form field label text --&gt;
+&lt;!ATTLIST LABEL
+  %attrs;                              -- %coreattrs, %i18n, %events --
+  for         IDREF          #IMPLIED  -- matches field ID value --
+  accesskey   %Character;    #IMPLIED  -- accessibility key character --
+  onfocus     %Script;       #IMPLIED  -- the element got the focus --
+  onblur      %Script;       #IMPLIED  -- the element lost the focus --
+  &gt;
+]]&gt;
+
+&lt;!-- Content model of LABEL element is changed in ISO-HTML --&gt;
+&lt;![ %HTML.Mobile; [
+&lt;!ELEMENT LABEL - - (%inline;|%formctrl;)+ -(LABEL) -- form field label text --&gt;
+&lt;!ATTLIST LABEL
+  %attrs;                              -- %coreattrs, %i18n --
+  for         IDREF          #IMPLIED  -- matches field ID value --
+  accesskey   %Character;    #IMPLIED  -- accessibility key character --
+  &gt;
+]]&gt;
+
+&lt;![ %HTML.Strict; [
+&lt;!ENTITY % InputType
+  "(TEXT | PASSWORD | CHECKBOX |
+    RADIO | SUBMIT | RESET |
+    FILE | HIDDEN | IMAGE | BUTTON)"
+   &gt;
+]]&gt;
+
+&lt;!-- IMAGE and BUTTON are excluded from ISO-HTML --&gt;
+&lt;!-- Form-based file upload is not supported in HTML 4.0 Mobile --&gt;
+&lt;!ENTITY % InputType
+  "(TEXT | PASSWORD | CHECKBOX |
+    RADIO | SUBMIT | RESET |
+    HIDDEN)"
+   &gt;
+
+&lt;!-- attribute name required for all but submit &amp; reset --&gt;
+&lt;!ELEMENT INPUT - O EMPTY              -- form control --&gt;
+&lt;![ %HTML.Strict; [
+&lt;!ATTLIST INPUT
+  %attrs;                              -- %coreattrs, %i18n, %events --
+  type        %InputType;    TEXT      -- what kind of widget is needed --
+  name        CDATA          #IMPLIED  -- submit as part of form --
+  value       CDATA          #IMPLIED  -- required for radio and checkboxes --
+  checked     (checked)      #IMPLIED  -- for radio buttons and check boxes --
+  disabled    (disabled)     #IMPLIED  -- unavailable in this context --
+  readonly    (readonly)     #IMPLIED  -- for text and passwd --
+  size        CDATA          #IMPLIED  -- specific to each type of field --
+  maxlength   NUMBER         #IMPLIED  -- max chars for text fields --
+  src         %URI;          #IMPLIED  -- for fields with images --
+  alt         CDATA          #IMPLIED  -- short description --
+  usemap      %URI;          #IMPLIED  -- use client-side image map --
+  tabindex    NUMBER         #IMPLIED  -- position in tabbing order --
+  accesskey   %Character;    #IMPLIED  -- accessibility key character --
+  onfocus     %Script;       #IMPLIED  -- the element got the focus --
+  onblur      %Script;       #IMPLIED  -- the element lost the focus --
+  onselect    %Script;       #IMPLIED  -- some text was selected --
+  onchange    %Script;       #IMPLIED  -- the element value was changed --
+  accept      %ContentTypes; #IMPLIED  -- list of MIME types for file upload --
+  %reserved;                           -- reserved for possible future use --
+  &gt;
+]]&gt;
+&lt;![ %HTML.Mobile; [
+&lt;!ATTLIST INPUT
+  %attrs;                              -- %coreattrs, %i18n --
+  type        %InputType;    TEXT      -- what kind of widget is needed --
+  name        CDATA          #IMPLIED  -- submit as part of form --
+  value       CDATA          #IMPLIED  -- required for radio and checkboxes --
+  checked     (checked)      #IMPLIED  -- for radio buttons and check boxes --
+  size        CDATA          #IMPLIED  -- specific to each type of field --
+  maxlength   NUMBER         #IMPLIED  -- max chars for text fields --
+  tabindex    NUMBER         #IMPLIED  -- position in tabbing order --
+  accesskey   %Character;    #IMPLIED  -- accessibility key character --
+  &gt;
+]]&gt;
+
+&lt;!ELEMENT SELECT - - (OPTGROUP|OPTION)+ -- option selector --&gt;
+&lt;![ %HTML.Strict; [
+&lt;!ATTLIST SELECT
+  %attrs;                              -- %coreattrs, %i18n, %events --
+  name        CDATA          #IMPLIED  -- field name --
+  size        NUMBER         #IMPLIED  -- rows visible --
+  multiple    (multiple)     #IMPLIED  -- default is single selection --
+  disabled    (disabled)     #IMPLIED  -- unavailable in this context --
+  tabindex    NUMBER         #IMPLIED  -- position in tabbing order --
+  onfocus     %Script;       #IMPLIED  -- the element got the focus --
+  onblur      %Script;       #IMPLIED  -- the element lost the focus --
+  onchange    %Script;       #IMPLIED  -- the element value was changed --
+  %reserved;                           -- reserved for possible future use --
+  &gt;
+]]&gt;
+&lt;![ %HTML.Mobile; [
+&lt;!ATTLIST SELECT
+  %attrs;                              -- %coreattrs, %i18n --
+  name        CDATA          #IMPLIED  -- field name --
+  size        NUMBER         #IMPLIED  -- rows visible --
+  multiple    (multiple)     #IMPLIED  -- default is single selection --
+  tabindex    NUMBER         #IMPLIED  -- position in tabbing order --
+  &gt;
+]]&gt;
+
+&lt;!ELEMENT OPTGROUP - - (OPTION)+ -- option group --&gt;
+&lt;![ %HTML.Strict; [
+&lt;!ATTLIST OPTGROUP
+  %attrs;                              -- %coreattrs, %i18n, %events --
+  disabled    (disabled)     #IMPLIED  -- unavailable in this context --
+  label       %Text;         #REQUIRED -- for use in hierarchical menus --
+  &gt;
+]]&gt;
+&lt;![ %HTML.Mobile; [
+&lt;!ATTLIST OPTGROUP
+  %attrs;                              -- %coreattrs, %i18n --
+  label       %Text;         #REQUIRED -- for use in hierarchical menus --
+  &gt;
+]]&gt;
+
+&lt;!ELEMENT OPTION - O (#PCDATA)         -- selectable choice --&gt;
+&lt;![ %HTML.Strict; [
+&lt;!ATTLIST OPTION
+  %attrs;                              -- %coreattrs, %i18n, %events --
+  selected    (selected)     #IMPLIED
+  disabled    (disabled)     #IMPLIED  -- unavailable in this context --
+  label       %Text;         #IMPLIED  -- for use in hierarchical menus --
+  value       CDATA          #IMPLIED  -- defaults to element content --
+  &gt;
+]]&gt;
+&lt;![ %HTML.Mobile; [
+&lt;!ATTLIST OPTION
+  %attrs;                              -- %coreattrs, %i18n --
+  selected    (selected)     #IMPLIED
+  label       %Text;         #IMPLIED  -- for use in hierarchical menus --
+  value       CDATA          #IMPLIED  -- defaults to element content --
+  &gt;
+]]&gt;
+
+&lt;!ELEMENT TEXTAREA - - (#PCDATA)       -- multi-line text field --&gt;
+&lt;![ %HTML.Strict; [
+&lt;!ATTLIST TEXTAREA
+  %attrs;                              -- %coreattrs, %i18n, %events --
+  name        CDATA          #IMPLIED
+  rows        NUMBER         #REQUIRED
+  cols        NUMBER         #REQUIRED
+  disabled    (disabled)     #IMPLIED  -- unavailable in this context --
+  readonly    (readonly)     #IMPLIED
+  tabindex    NUMBER         #IMPLIED  -- position in tabbing order --
+  accesskey   %Character;    #IMPLIED  -- accessibility key character --
+  onfocus     %Script;       #IMPLIED  -- the element got the focus --
+  onblur      %Script;       #IMPLIED  -- the element lost the focus --
+  onselect    %Script;       #IMPLIED  -- some text was selected --
+  onchange    %Script;       #IMPLIED  -- the element value was changed --
+  %reserved;                           -- reserved for possible future use --
+  &gt;
+]]&gt;
+&lt;![ %HTML.Mobile; [
+&lt;!ATTLIST TEXTAREA
+  %attrs;                              -- %coreattrs, %i18n --
+  name        CDATA          #IMPLIED
+  rows        NUMBER         #REQUIRED
+  cols        NUMBER         #REQUIRED
+  tabindex    NUMBER         #IMPLIED  -- position in tabbing order --
+  accesskey   %Character;    #IMPLIED  -- accessibility key character --
+  &gt;
+]]&gt;
+
+&lt;!--
+  #PCDATA is to solve the mixed content problem,
+  per specification only whitespace is allowed there!
+ --&gt;
+&lt;![ %HTML.Strict; [
+&lt;!ELEMENT FIELDSET - - (#PCDATA,LEGEND,(%flow;)*) -- form control group --&gt;
+&lt;!ATTLIST FIELDSET
+  %attrs;                              -- %coreattrs, %i18n, %events --
+  &gt;
+]]&gt;
+
+&lt;!-- Content model of FIELDSET element is changed in ISO-HTML --&gt;
+&lt;![ %HTML.Mobile; [
+&lt;!ELEMENT FIELDSET - - (#PCDATA,LEGEND,%form.content;) -(FIELDSET)
+                                       -- form control group --&gt;
+&lt;!ATTLIST FIELDSET
+  %attrs;                              -- %coreattrs, %i18n --
+  &gt;
+]]&gt;
+
+&lt;![ %HTML.Strict; [
+&lt;!ELEMENT LEGEND - - (%inline;)*       -- fieldset legend --&gt;
+&lt;!ENTITY % LAlign "(top|bottom|left|right)"&gt;
+
+&lt;!ATTLIST LEGEND
+  %attrs;                              -- %coreattrs, %i18n, %events --
+  accesskey   %Character;    #IMPLIED  -- accessibility key character --
+  &gt;
+]]&gt;
+
+&lt;!-- Content model of LEGEND element is changed in ISO-HTML --&gt;
+&lt;![ %HTML.Mobile; [
+&lt;!ELEMENT LEGEND - - (#PCDATA)         -- fieldset legend --&gt;
+&lt;!ENTITY % LAlign "(top|bottom|left|right)"&gt;
+
+&lt;!ATTLIST LEGEND
+  %attrs;                              -- %coreattrs, %i18n --
+  accesskey   %Character;    #IMPLIED  -- accessibility key character --
+  &gt;
+]]&gt;
+
+&lt;![ %HTML.Strict; [
+&lt;!ELEMENT BUTTON - -
+     (%flow;)* -(A|%formctrl;|FORM|FIELDSET)
+     -- push button --&gt;
+&lt;!ATTLIST BUTTON
+  %attrs;                              -- %coreattrs, %i18n, %events --
+  name        CDATA          #IMPLIED
+  value       CDATA          #IMPLIED  -- sent to server when submitted --
+  type        (button|submit|reset) submit -- for use as form button --
+  disabled    (disabled)     #IMPLIED  -- unavailable in this context --
+  tabindex    NUMBER         #IMPLIED  -- position in tabbing order --
+  accesskey   %Character;    #IMPLIED  -- accessibility key character --
+  onfocus     %Script;       #IMPLIED  -- the element got the focus --
+  onblur      %Script;       #IMPLIED  -- the element lost the focus --
+  %reserved;                           -- reserved for possible future use --
+  &gt;
+]]&gt;
+
+&lt;!-- Content model of BUTTON element is changed in ISO-HTML --&gt;
+&lt;![ %HTML.Mobile; [
+&lt;!ELEMENT BUTTON - -
+     (%inline;)+ -(A|%formctrl;|FORM|FIELDSET)
+     -- push button --&gt;
+&lt;!ATTLIST BUTTON
+  %attrs;                              -- %coreattrs, %i18n --
+  name        CDATA          #IMPLIED
+  value       CDATA          #IMPLIED  -- sent to server when submitted --
+  type        (submit|reset) submit    -- for use as form button --
+  tabindex    NUMBER         #IMPLIED  -- position in tabbing order --
+  accesskey   %Character;    #IMPLIED  -- accessibility key character --
+  &gt;
+]]&gt;
+
+&lt;!--======================= Tables =======================================--&gt;
+&lt;!-- Tables are not supported in HTML 4.0 Mobile --&gt;
+
+&lt;!-- IETF HTML table standard, see [RFC1942] --&gt;
+
+&lt;!--
+ The BORDER attribute sets the thickness of the frame around the
+ table. The default units are screen pixels.
+
+ The FRAME attribute specifies which parts of the frame around
+ the table should be rendered. The values are not the same as
+ CALS to avoid a name clash with the VALIGN attribute.
+
+ The value "border" is included for backwards compatibility with
+ &lt;TABLE BORDER&gt; which yields frame=border and border=implied
+ For &lt;TABLE BORDER=1&gt; you get border=1 and frame=implied. In this
+ case, it is appropriate to treat this as frame=border for backwards
+ compatibility with deployed browsers.
+--&gt;
+&lt;![ %HTML.Strict; [
+&lt;!ENTITY % TFrame "(void|above|below|hsides|lhs|rhs|vsides|box|border)"&gt;
+
+&lt;!--
+ The RULES attribute defines which rules to draw between cells:
+
+ If RULES is absent then assume:
+     "none" if BORDER is absent or BORDER=0 otherwise "all"
+--&gt;
+
+&lt;!ENTITY % TRules "(none | groups | rows | cols | all)"&gt;
+
+&lt;!-- horizontal placement of table relative to document --&gt;
+&lt;!ENTITY % TAlign "(left|center|right)"&gt;
+
+&lt;!-- horizontal alignment attributes for cell contents --&gt;
+&lt;!ENTITY % cellhalign
+  "align      (left|center|right|justify|char) #IMPLIED
+   char       %Character;    #IMPLIED  -- alignment char, e.g. char=':' --
+   charoff    %Length;       #IMPLIED  -- offset for alignment char --"
+  &gt;
+
+&lt;!-- vertical alignment attributes for cell contents --&gt;
+&lt;!ENTITY % cellvalign
+  "valign     (top|middle|bottom|baseline) #IMPLIED"
+  &gt;
+
+&lt;!ELEMENT TABLE - -
+     (CAPTION?, (COL*|COLGROUP*), THEAD?, TFOOT?, TBODY+)&gt;
+&lt;!ELEMENT CAPTION  - - (%inline;)*     -- table caption --&gt;
+&lt;!ELEMENT THEAD    - O (TR)+           -- table header --&gt;
+&lt;!ELEMENT TFOOT    - O (TR)+           -- table footer --&gt;
+&lt;!ELEMENT TBODY    O O (TR)+           -- table body --&gt;
+&lt;!ELEMENT COLGROUP - O (col)*          -- table column group --&gt;
+&lt;!ELEMENT COL      - O EMPTY           -- table column --&gt;
+&lt;!ELEMENT TR       - O (TH|TD)+        -- table row --&gt;
+&lt;!ELEMENT (TH|TD)  - O (%flow;)*       -- table header cell, table data cell--&gt;
+
+&lt;!ATTLIST TABLE                        -- table element --
+  %attrs;                              -- %coreattrs, %i18n, %events --
+  summary     %Text;         #IMPLIED  -- purpose/structure for speech output--
+  width       %Length;       #IMPLIED  -- table width --
+  border      %Pixels;       #IMPLIED  -- controls frame width around table --
+  frame       %TFrame;       #IMPLIED  -- which parts of frame to render --
+  rules       %TRules;       #IMPLIED  -- rulings between rows and cols --
+  cellspacing %Length;       #IMPLIED  -- spacing between cells --
+  cellpadding %Length;       #IMPLIED  -- spacing within cells --
+  %reserved;                           -- reserved for possible future use --
+  datapagesize CDATA         #IMPLIED  -- reserved for possible future use --
+  &gt;
+
+&lt;!ENTITY % CAlign "(top|bottom|left|right)"&gt;
+
+&lt;!ATTLIST CAPTION
+  %attrs;                              -- %coreattrs, %i18n, %events --
+  &gt;
+
+&lt;!--
+COLGROUP groups a set of COL elements. It allows you to group
+several semantically related columns together.
+--&gt;
+&lt;!ATTLIST COLGROUP
+  %attrs;                              -- %coreattrs, %i18n, %events --
+  span        NUMBER         1         -- default number of columns in group --
+  width       %MultiLength;  #IMPLIED  -- default width for enclosed COLs --
+  %cellhalign;                         -- horizontal alignment in cells --
+  %cellvalign;                         -- vertical alignment in cells --
+  &gt;
+
+&lt;!--
+ COL elements define the alignment properties for cells in
+ one or more columns.
+
+ The WIDTH attribute specifies the width of the columns, e.g.
+
+     width=64        width in screen pixels
+     width=0.5*      relative width of 0.5
+
+ The SPAN attribute causes the attributes of one
+ COL element to apply to more than one column.
+--&gt;
+&lt;!ATTLIST COL                          -- column groups and properties --
+  %attrs;                              -- %coreattrs, %i18n, %events --
+  span        NUMBER         1         -- COL attributes affect N columns --
+  width       %MultiLength;  #IMPLIED  -- column width specification --
+  %cellhalign;                         -- horizontal alignment in cells --
+  %cellvalign;                         -- vertical alignment in cells --
+  &gt;
+
+&lt;!--
+    Use THEAD to duplicate headers when breaking table
+    across page boundaries, or for static headers when
+    TBODY sections are rendered in scrolling panel.
+
+    Use TFOOT to duplicate footers when breaking table
+    across page boundaries, or for static footers when
+    TBODY sections are rendered in scrolling panel.
+
+    Use multiple TBODY sections when rules are needed
+    between groups of table rows.
+--&gt;
+&lt;!ATTLIST (THEAD|TBODY|TFOOT)          -- table section --
+  %attrs;                              -- %coreattrs, %i18n, %events --
+  %cellhalign;                         -- horizontal alignment in cells --
+  %cellvalign;                         -- vertical alignment in cells --
+  &gt;
+
+&lt;!ATTLIST TR                           -- table row --
+  %attrs;                              -- %coreattrs, %i18n, %events --
+  %cellhalign;                         -- horizontal alignment in cells --
+  %cellvalign;                         -- vertical alignment in cells --
+  &gt;
+
+&lt;!-- Scope is simpler than axes attribute for common tables --&gt;
+&lt;!ENTITY % Scope "(row|col|rowgroup|colgroup)"&gt;
+
+&lt;!-- TH is for headers, TD for data, but for cells acting as both use TD --&gt;
+&lt;!ATTLIST (TH|TD)                      -- header or data cell --
+  %attrs;                              -- %coreattrs, %i18n, %events --
+  abbr        %Text;         #IMPLIED  -- abbreviation for header cell --
+  axis        CDATA          #IMPLIED  -- names groups of related headers--
+  headers     IDREFS         #IMPLIED  -- list of id's for header cells --
+  scope       %Scope;        #IMPLIED  -- scope covered by header cells --
+  rowspan     NUMBER         1         -- number of rows spanned by cell --
+  colspan     NUMBER         1         -- number of cols spanned by cell --
+  %cellhalign;                         -- horizontal alignment in cells --
+  %cellvalign;                         -- vertical alignment in cells --
+  &gt;
+]]&gt;
+
+&lt;!--================ Document Head =======================================--&gt;
+&lt;!-- %head.misc; defined earlier on as "STYLE|META|LINK" --&gt;
+&lt;![ %HTML.Strict; [
+&lt;!ENTITY % head.content "TITLE &amp; BASE?"&gt;
+]]&gt;
+&lt;!ENTITY % head.content "TITLE"&gt;
+
+&lt;![ %HTML.Strict; [
+&lt;!ELEMENT HEAD O O (%head.content;) +(%head.misc;) -- document head --&gt;
+]]&gt;
+&lt;!-- In ISO-HTML, start tag of HEAD element cannot be omitted --&gt;
+&lt;![ %HTML.Mobile; [
+&lt;!ELEMENT HEAD - O (%head.content;) +(%head.misc;) -- document head --&gt;
+]]&gt;
+&lt;!ATTLIST HEAD
+  %i18n;                               -- lang, dir --
+  profile     %URI;          #IMPLIED  -- named dictionary of meta info --
+  &gt;
+
+&lt;!-- The TITLE element is not considered part of the flow of text.
+       It should be displayed, for example as the page header or
+       window title. Exactly one title is required per document.
+    --&gt;
+&lt;!ELEMENT TITLE - - (#PCDATA) -(%head.misc;) -- document title --&gt;
+&lt;!ATTLIST TITLE %i18n;&gt;
+
+&lt;!-- BASE element is excluded from ISO-HTML. --&gt;
+&lt;![ %HTML.Strict; [
+&lt;!ELEMENT BASE - O EMPTY               -- document base URI --&gt;
+&lt;!ATTLIST BASE
+  href        %URI;          #REQUIRED -- URI that acts as base URI --
+  &gt;
+]]&gt;
+
+&lt;!ELEMENT META - O EMPTY               -- generic metainformation --&gt;
+&lt;!ATTLIST META
+  %i18n;                               -- lang, dir, for use with content --
+  http-equiv  NAME           #IMPLIED  -- HTTP response header name  --
+  name        NAME           #IMPLIED  -- metainformation name --
+  content     CDATA          #REQUIRED -- associated information --
+  scheme      CDATA          #IMPLIED  -- select form of content --
+  &gt;
+
+&lt;!-- User agents conforming to HTML 4.0 Mobile must avoid showing the
+     contents of these element. Otherwise support for them is not required. --&gt;
+&lt;!ELEMENT STYLE - - %StyleSheet        -- style info --&gt;
+&lt;!ATTLIST STYLE
+  %i18n;                               -- lang, dir, for use with title --
+  type        %ContentType;  #REQUIRED -- content type of style language --
+  media       %MediaDesc;    #IMPLIED  -- designed for use with these media --
+  title       %Text;         #IMPLIED  -- advisory title --
+  &gt;
+
+&lt;!-- SCRIPT is not supported in ISO-HTML --&gt;
+&lt;![ %HTML.Strict; [
+&lt;!ELEMENT SCRIPT - - %Script;          -- script statements --&gt;
+&lt;!ATTLIST SCRIPT
+  charset     %Charset;      #IMPLIED  -- char encoding of linked resource --
+  type        %ContentType;  #REQUIRED -- content type of script language --
+  src         %URI;          #IMPLIED  -- URI for an external script --
+  defer       (defer)        #IMPLIED  -- UA may defer execution of script --
+  event       CDATA          #IMPLIED  -- reserved for possible future use --
+  for         %URI;          #IMPLIED  -- reserved for possible future use --
+  &gt;
+
+&lt;!ELEMENT NOSCRIPT - - (%block;)+
+  -- alternate content container for non script-based rendering --&gt;
+&lt;!ATTLIST NOSCRIPT
+  %attrs;                              -- %coreattrs, %i18n, %events --
+  &gt;
+]]&gt;
+
+&lt;!--================ Document Structure ==================================--&gt;
+&lt;!ENTITY % html.content "HEAD, BODY"&gt;
+
+&lt;![ %HTML.Strict; [
+&lt;!ELEMENT HTML O O (%html.content;)    -- document root element --&gt;
+]]&gt;
+
+&lt;!-- In ISO-HTML, start and end tags of HTML element cannot be omitted --&gt;
+&lt;![ %HTML.Mobile; [
+&lt;!ELEMENT HTML - - (%html.content;)    -- document root element --&gt;
+]]&gt;
+&lt;!ATTLIST HTML
+  %i18n;                               -- lang, dir --
+  &gt;
+</PRE>
+</DIV>
+
+</BODY>
+</HTML>

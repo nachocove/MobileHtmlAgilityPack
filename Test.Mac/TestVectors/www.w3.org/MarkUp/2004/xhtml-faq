@@ -1,0 +1,425 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+       "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <title>XHTML Frequently Answered Questions</title>
+  <meta name="generator" content="amaya 8.5, see http://www.w3.org/Amaya/" />
+  <style type="text/css">
+body {color: black; background: white; font-family: sans-serif}
+h1, h2, h3 {color: blue}
+pre {margin-left: 2em}
+.ns {font-size: 70%}
+code {color: green}
+pre {background: #ffa; border: 1px black dotted; padding: 0.2em}
+pre.html {background: #eee}
+.version {font-size: smaller}</style>
+  <style type="text/css" media="projection">
+    h2, h3 { page-break-before: always; margin-right: 15%; margin-top: 2em; }
+    p.back { position: fixed; right: 0.5em; top: 0.5em; }</style>
+  <link href="http://www.w3.org/StyleSheets/TR/base.css" rel="stylesheet"
+  type="text/css" />
+  <!--link href="overview.css" rel="alternate stylesheet" title="overview"
+  type="text/css" /-->
+</head>
+
+<body>
+<p><img src="http://www.w3.org/Icons/w3c_home" alt="W3C" /></p>
+
+<h1>HTML and XHTML Frequently Answered Questions</h1>
+
+<p>Editor: <a href="http://www.cwi.nl/~steven/">Steven Pemberton</a>,
+W3C/CWI</p>
+
+<p class="version">Version date: 21 July 2004</p>
+
+<p style='padding: 1ex; background: red; color: white; font-weight: bold;'>
+This Document is no longer maintained.
+</p>
+
+
+<p>Other related FAQs:</p>
+<ul>
+  <li><a
+    href="http://www.w3.org/International/geo/html-tech/outline/html-authoring-outline">Authoring
+    Techniques for XHTML &amp; HTML Internationalization 1.0</a></li>
+  <li><a href="http://www.w3.org/International/questions.html">W3C Web
+    Internationalization FAQ</a></li>
+  <li><a href="http://www.w3.org/1999/05/WCAG-REC-fact">Web Content
+    Accessibility</a></li>
+  <li><a href="http://www.w3.org/MarkUp/Forms/2003/xforms-faq.html">XForms
+    1.0 FAQ</a></li>
+  <li><a href="http://www.w3.org/Consortium/W3C-FAQs">A list of all available
+    W3C FAQs</a></li>
+</ul>
+
+<p>To comment on this document, or to send suggestions for questions, please
+email <a href="mailto: www-html-editor@w3.org">www-html-editor@w3.org</a>,
+including the word FAQ in the subject.</p>
+
+<h2>Table of Contents</h2>
+<ol>
+  <li><a href="#need">Why is XHTML needed? Isn't HTML good enough?</a></li>
+  <li><a href="#advantages">What are the advantages of using XHTML rather
+    than HTML?</a></li>
+  <li><a href="#xmldeclaration">Can I just put the XML declaration on top of
+    existing HTML documents? Can I intermix HTML 4.01 and XHTML
+  documents?</a></li>
+  <li><a href="#convert">What is the easiest way to convert my HTML documents
+    to XHTML?</a></li>
+  <li><a href="#fussy">Why are browsers so fussy about XML? They were more
+    accepting with HTML.</a></li>
+  <li><a href="#whycare">Why should I care if my document is in correct HTML?
+    It displays all right on my browser.</a></li>
+  <li><a href="#verify">Where can I go to verify my document uses correct
+    markup?</a></li>
+  <li><a href="#ua">Why do you say "user agent" everywhere, instead of
+    "browser"?</a></li>
+  <li><a href="#ns">Why do I have to use these namespace things in
+  XHTML?</a></li>
+  <li><a href="#texthtml">Why is it allowed to send XHTML 1.0 documents as
+    text/html?</a></li>
+  <li><a href="#browsers">Which browsers accept the media type
+    application/xhtml+xml?</a></li>
+  <li><a href="#ie">Does Microsoft Internet Explorer accept the media type
+    application/xhtml+xml?</a></li>
+  <li><a href="#css">CSS has a lot of special rules that only apply to HTML.
+    Do these also apply to XHTML?</a></li>
+  <li><a href="#docwrite">Does document.write work in XHTML?</a></li>
+  <li><a href="#mime11">Why is it disallowed to send XHTML 1.1 documents as
+    text/html?</a></li>
+  <li><a href="#target">Why was the target attribute removed from XHTML
+    1.1?</a></li>
+  <li><a href="#m12n">What is the use of XHTML Modularization?</a></li>
+  <li><a href="#whyxhtml2">Why is XHTML2 needed? Isn't XHTML 1 good
+    enough?</a></li>
+  <li><a href="#img">Is &lt;img&gt; being replaced by &lt;object&gt; in
+    XHTML2?</a></li>
+  <li><a href="#xlink">Why doesn't XHTML2 use XLink?</a></li>
+  <li><a href="#backwards">Why isn't XHTML2 backwards compatible?</a></li>
+  <li><a href="#xmlspace">Why is xml:space set to 'preserve' on all elements
+    of XHTML? I don't want to see extra space in my output.</a></li>
+</ol>
+
+<h3 id="need">Why is XHTML needed? Isn't HTML good enough?</h3>
+
+<p>HTML is probably the most successful document markup language in the
+world. But when XML was introduced, a two-day workshop was organised to
+discuss whether a new version of HTML in XML was needed. The opinion at the
+workshop was a clear 'Yes': with an XML-based HTML other XML languages could
+include bits of XHTML, and XHTML documents could include bits of other markup
+languages. We could also take advantage of the redesign to clean up some of
+the more untidy parts of HTML, and add some new needed functionality, like
+better forms.</p>
+
+<h3 id="advantages">What are the advantages of using XHTML rather than
+HTML?</h3>
+
+<p>If your document is just pure XHTML 1.0 (not including other markup
+languages) then you will not yet notice much difference. However as more and
+more XML tools become available, such as XSLT for tranforming documents, you
+will start noticing the advantages of using XHTML. XForms for instance will
+allow you to edit XHTML documents (or any other sort of XML document) in
+simple controllable ways. Semantic Web applications will be able to take
+advantage of XHTML documents.</p>
+
+<p>If your document is more than XHTML 1.0, for instance including MathML,
+SMIL, or SVG, then the advantages are immediate: you can't do that sort of
+thing with HTML.</p>
+
+<h3 id="xmldeclaration">Can I just put the XML declaration on top of existing
+HTML documents? Can I intermix HTML 4.01 and XHTML documents?</h3>
+
+<p>No. HTML is not in XML format. You have to make the changes necessary to
+make the document proper XML before you can get it accepted as XML.</p>
+
+<h3 id="convert">What is the easiest way to convert my HTML documents to
+XHTML?</h3>
+
+<p><a href="http://tidy.sourceforge.net/">HTML Tidy</a> gives you the option
+to transform any HTML document into an XHTML one. <a
+href="http://www.w3.org/Amaya/">Amaya</a> is a browser/editor that will save
+HTML documents as XHTML.</p>
+
+<h3 id="fussy">Why are browsers so fussy about XML? They were more accepting
+with HTML.</h3>
+
+<p>This is deliberate. HTML browsers accept any input, correct or incorrect,
+and try to make something sensible of it. This error-correction makes
+browsers very hard to write, especially if all browsers are expected to do
+the same thing. It has also meant that huge numbers of HTML documents are
+incorrect, because since they display OK in the browser, the author isn't
+aware of the errors. This makes it incredibly difficult to write new web user
+agents since documents claiming to be HTML are often so poor.</p>
+
+<h3 id="whycare">Why should I care if my document is in correct HTML? It
+displays all right on my browser.</h3>
+
+<p>All browsers know how to deal with correct HTML. However, if it is
+incorrect, the browser has to repair the document, and since not all browsers
+repair documents in the same way, this introduces differences, so that your
+document may look and work differently on different browsers. Since there are
+hundreds of different browsers, and more coming all the time (not only on
+PCs, but also on PDAs, mobile phones, televisions, printers, even
+refrigerators), it is impossible to test your document on every browser. If
+you use incorrect HTML and your document doesn't work on a particular
+browser, it is your fault; if you use correct HTML and it doesn't work, it is
+a bug in the browser.</p>
+
+<h3 id="verify">Where can I go to verify my document uses correct markup?</h3>
+
+<p>W3C offers a service at <a
+href="http://validator.w3.org/">http://validator.w3.org/</a>. The <a
+href="http://www.w3.org/Amaya/">Amaya</a> browser/editor will also ensure
+that your markup is correct.</p>
+
+<h3 id="ua">Why do you say "user agent" everywhere, instead of "browser"?</h3>
+
+<p>Although browsers are indeed important users of HTML and XHTML, there are
+other programs and systems that read those documents. Search engines for
+instance read documents, but are not browsers. By using the term "user agent"
+we are trying to remind people of the difference.</p>
+
+<p>For example, when you do a Google search often you will see under some of
+the search results something like "This web page uses frames, but your
+browser doesn't support them." therefore surely frightening off some people
+from clicking on that link. The author of the website in question hasn't
+realised that there are more than just browsers, and that they ought to
+include better text in their <code>&lt;noframes&gt;</code> section, so that
+they don't appear so foolish when people search their site.</p>
+
+<h3 id="ns">Why do I have to use these namespace things in XHTML?</h3>
+
+<p>In the early days of HTML different groups and companies added new
+elements and attributes to HTML at will. This threatened to cause a chaos of
+different non-interoperable versions of HTML. XML (the X stands for
+Extensible) allows anyone to use elements and elements from different
+languages, but for a browser or other user agent to know which element
+belongs to which language, you have to tell it. The namespace declarations do
+just that.</p>
+
+<h3 id="texthtml">Why is it allowed to send XHTML 1.0 documents as
+text/html?</h3>
+
+<p>XHTML is an XML format; this means that strictly speaking it should be
+sent with an XML-related media type (<code>application/xhtml+xml</code>,
+<code>application/xml</code>, or <code>text/xml</code>). However XHTML 1.0
+was carefully designed so that with care it would also work on legacy HTML
+user agents as well. If you follow some simple guidelines, you can get many
+XHTML 1.0 documents to work in legacy browsers. However, legacy browsers only
+understand the media type text/html, so you have to use that media type if
+you send XHTML 1.0 documents to them. But be well aware, sending XHTML
+documents to browsers as <code>text/html</code> means that those browsers see
+the documents as HTML documents, not XHTML documents.</p>
+
+<h3 id="browsers">Which browsers accept the media type
+application/xhtml+xml?</h3>
+
+<p>Browsers known to us include all Mozilla-based browsers, such as Mozilla,
+Netscape 5 and higher, Galeon and Firefox, as well as Opera, Amaya, Camino,
+Chimera, DocZilla, iCab, Safari, and all browsers on mobile phones that
+accept WAP2. In fact, any modern browser. Most accept XHTML documents as
+<code>application/xml</code> as well. See the <a
+href="http://www.w3.org/People/mimasa/test/xhtml/media-types/results">XHTML
+Media-type test</a> for details.</p>
+
+<h3 id="ie">Does Microsoft Internet Explorer accept the media type
+application/xhtml+xml?</h3>
+
+<p>No. However, there is a trick that allows you to serve XHTML1.0 documents
+to Internet Explorer as <code>application/xml</code>.</p>
+
+<p>Include at the top of your document the line in bold here:</p>
+<pre>&lt;?xml version="1.0" encoding="iso-8859-1"?&gt;
+<strong>&lt;?xml-stylesheet type="text/xsl" href="copy.xsl"?&gt;</strong>
+&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+          "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"&gt;
+&lt;html xmlns="http://www.w3.org/1999/xhtml"&gt;
+&lt;head&gt;</pre>
+
+<p>where <code>copy.xsl</code> is a file that contains the following:</p>
+<pre>&lt;stylesheet version="1.0"
+     xmlns="http://www.w3.org/1999/XSL/Transform"&gt;
+    &lt;template match="/"&gt;
+        &lt;copy-of select="."/&gt;
+    &lt;/template&gt;
+&lt;/stylesheet&gt;</pre>
+
+<p>Note that this file must be on the same site as the document referring to
+it.</p>
+
+<p>Although you are serving the document as XML, and it gets parsed as XML,
+the browser thinks it has received <code>text/html</code>, and so your XHTML
+1.0 document must follow many of the guidelines for serving to legacy
+browsers.</p>
+
+<p>Your XHTML document will continue to work on browsers that accept XHTML
+1.0 as <code>application/xml</code>.</p>
+
+<h3 id="css">CSS has a lot of special rules that only apply to HTML. Do these
+also apply to XHTML?</h3>
+
+<p>No. CSS rules that apply only to HTML, apply only to documents that are
+delivered as <code>text/html</code>.</p>
+
+<h3 id="docwrite">Does document.write work in XHTML?</h3>
+
+<p>No. Because of the way XML is defined, it is not possible to do tricks
+like this, where markup is generated by scripting while the parser is still
+parsing the markup.</p>
+
+<p>You can still achieve the same effects, but you have to do it by using the
+DOM to add and delete elements.</p>
+
+<h3 id="mime11">Why is it disallowed to send XHTML 1.1 documents as
+text/html?</h3>
+
+<p>XHTML 1.1 is pure XML, and only intended to be XML. It cannot reliably be
+sent to legacy browsers. Therefore XHTML 1.1 documents must be sent with an
+XML-related media type, such as application/xhtml+xml.</p>
+
+<h3 id="target">Why was the target attribute removed from XHTML 1.1?</h3>
+
+<p>It wasn't. XHTML 1.0 comes in three versions: strict, transitional, and
+frameset. All three of these were deliberately kept as close as possible to
+HTML 4.01 as XML would allow. XHTML 1.1 is an updated version of XHTML 1.0
+<em>strict</em>, and no version of HTML strict has ever included the
+<code>target</code> attribute. The other two versions, transitional and
+frameset, were not updated, because there was nothing to update. If you want
+to use the <code>target</code> attribute, use XHTML 1.0 transitional.</p>
+
+<h3 id="m12n">What is the use of XHTML Modularization?</h3>
+
+<p>XHTML Modularization is not aimed at the regular users of XHTML, but at
+designers of XHTML-based languages. It had been observed that companies and
+groups had the tendency to design their own versions of HTML and XHTML that
+were often not interoperable at basic levels. XHTML Modularization splits
+XHTML into a number of modules that can be individually selected when
+defining a new language; in this way any XHTML-based language that uses
+tables is guaranteed to use the same definition of tables, and not some
+divergent version. Modularization also makes it clear where it is OK to add
+new elements, and where it is not.</p>
+
+<h3 id="whyxhtml2">Why is XHTML2 needed? Isn't XHTML 1 good enough?</h3>
+
+<p>HTML and XHTML have done good service, but there are many things that can
+be improved. Areas that have received particular attention include better
+structuring possibilities, removing features that are duplicated in XML,
+usability, accessibility, internationalization, device independence, better
+forms, and reducing the need for scripting.</p>
+
+<h3 id="img">Is &lt;img&gt; being replaced by &lt;object&gt; in XHTML2?</h3>
+
+<p>No. <code>&lt;img&gt;</code> is being replaced in XHTML2, but by something
+else (although you could use <code>&lt;object&gt;</code> if you wanted).</p>
+
+<p>The design of <code>&lt;img&gt;</code> has many problems in HTML:</p>
+<ul>
+  <li>It has no fallback possibilities, so that if you use an image of type
+    PNG for instance, and the browser can't handle that type, the only
+    alternative is to use the <code>alt</code> text. This fact has hampered
+    the adoption of PNG images, which in many ways are better than GIF and
+    JPG, since people have continued to use the lowest-common denominator
+    format, to ensure that everyone can see the images.</li>
+  <li>The <code>alt</code> text cannot be marked up, so that if it gets used,
+    you just get the plain text.</li>
+  <li>It is possible to include a <code>longdesc</code> link to a description
+    of the image, to help people who cannot see, but it is seldom
+  implemented.</li>
+</ul>
+
+<p>What XHTML2 does is say that all images are equivalent to some piece of
+content; it does this by allowing you to put a <code>src</code> attribute on
+any element at all. What this says is: if the image is available, and the
+browser can process it, use it, otherwise use the content of the element. For
+instance:</p>
+<pre>&lt;p src="map.png"&gt;Exit from the station, turn left, 
+   go straight on to &lt;strong&gt;High Street&lt;/strong&gt;,
+   and turn right&lt;/p&gt;</pre>
+
+<p>The advantage of this is that if the image is not available for some
+reason (such as network failure) or the browser can't render that sort of
+image, your document is still usable. If you want to supply more than one
+sort of image, you can do:</p>
+<pre>&lt;p src="map.png"&gt;&lt;span src="map.gif"&gt;Exit from station...&lt;/span&gt;&lt;/p&gt;</pre>
+
+<p>although it is better to use content negotiation if your server supports
+it (and most do):</p>
+<pre>&lt;p src="map"&gt;Exit from station...&lt;/p&gt;</pre>
+
+<p>which would negotiate with the browser which sort of image it accepts, and
+give the browser its preferred sort. If there is no available image, then the
+content of the element would be used. This has an added advantage that you
+can later add other image types on your server and you don't have to change
+the page for it still to work.</p>
+
+<h3 id="xlink">Why doesn't XHTML2 use XLink?</h3>
+
+<p>XLink and XHTML had different requirements for linking that turned out not
+to be reconcilable.</p>
+
+<h3 id="backwards">Why isn't XHTML2 backwards compatible?</h3>
+
+<p>It is, but in a different way to how previous versions of HTML were
+backwards compatible.</p>
+
+<p>Because earlier versions of HTML were special-purpose languages, it was
+necessary to ensure a level of backwards compatibility with new versions so
+that new documents would still be usable in older browsers. For instance,
+this is why the <code>&lt;meta&gt;</code> element has its content in an
+attribute rather than in the content of the element, since it would have
+shown up in older browsers.</p>
+
+<p>However, thanks to XML and stylesheets, such strict element-wise backwards
+compatibility is no longer necessary, since an XML-based browser, of which at
+the time of writing means more than 95% of browsers in use, can process new
+markup languages without having to be updated. Much of XHTML 2 <a
+href="http://w3future.com/weblog/gems/xhtml2.xml">works already in existing
+browsers</a>, browsers that are not pre-programmed to accept XHTML2. Much
+works, but not all: when forms and tables were added to HTML, people had to
+wait for new version of browsers; similarly some parts of XHTML 2, such as
+XForms and XML Events, still require user agents that understand that
+functionality.</p>
+
+<h3 id="xmlspace">Why is xml:space set to 'preserve' on all elements of
+XHTML? I don't want to see extra space in my output.</h3>
+
+<p>The attribute <code>xml:space</code> is about <em>input</em>: that is to
+say, it controls if the spaces will be present in the DOM (i.e. in the
+internal version of the document inside the browser); it says nothing about
+what will appear on your screen. Output whitespace is controlled by the CSS
+property '<code>whitespace</code>'. Set it to '<code>pre</code>' and the
+spaces in the DOM will be preserved on output; set it to
+'<code>normal</code>' and the whitespace will be collapsed (CSS3 will have
+more properties to enable greater control).</p>
+
+<p>This is the reason that all elements are set to
+<code>xml:space="preserve"</code> in XHTML2, otherwise the CSS
+'<code>whitespace</code>' property would have no effect, and you would have
+no control over visible whitespace. The default stylesheet will set
+'<code>whitespace</code>' to '<code>normal</code>' for all elements except
+<code>&lt;pre&gt;</code>, but you will be free to change them.</p>
+
+<hr />
+
+<p id="copyright" class="copyright"><a rel="Copyright"
+href="/Consortium/Legal/ipr-notice#Copyright">Copyright</a>
+&#169;2004 <a href="/"><abbr
+title="World Wide Web Consortium">W3C</abbr></a><sup>&#174;</sup>
+(<a href="http://www.csail.mit.edu/"><abbr
+title="Massachusetts Institute of Technology">MIT</abbr></a>, <a
+href="http://www.ercim.org/"><acronym
+title="European Research Consortium for Informatics and Mathematics">ERCIM</acronym></a>,
+<a href="http://www.keio.ac.jp/">Keio</a>), All Rights Reserved. W3C <a
+href="/Consortium/Legal/ipr-notice#Legal_Disclaimer">liability</a>, <a
+href="/Consortium/Legal/ipr-notice#W3C_Trademarks">trademark</a>, <a
+rel="Copyright" href="/Consortium/Legal/copyright-documents">document
+use</a> and <a rel="Copyright"
+href="/Consortium/Legal/copyright-software">software licensing</a>
+rules apply. Your interactions with this site are in accordance with
+our <a href="/Consortium/Legal/privacy-statement#Public">public</a> and
+<a href="/Consortium/Legal/privacy-statement#Members">Member</a>
+privacy statements.</p>
+</body>
+</html>

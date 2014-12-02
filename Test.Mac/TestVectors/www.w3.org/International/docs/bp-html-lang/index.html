@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Authoring HTML: Language declarations</title>
+    <meta http-equiv='Content-Type' content='text/html;charset=utf-8'/>
+	<link rel="stylesheet" href="local.css" type="text/css" />
+    <!-- 
+      === NOTA BENE ===
+      For the three scripts below, if your spec resides on dev.w3 you can check them
+      out in the same tree and use relative links so that they'll work offline,
+     -->
+    <script src='http://www.w3.org/Tools/respec/respec-w3c-common' class='remove'></script>
+    <script class='remove'>
+      var respecConfig = {
+          // specification status (e.g. WD, LCWD, NOTE, etc.). If in doubt use ED.
+          specStatus:           "ED",
+          
+          // the specification's short name, as in http://www.w3.org/TR/short-name/
+          shortName:            "i18n-html-tech-bidi",
+
+          // if your specification has a subtitle that goes below the main
+          // formal title, define it here
+          // subtitle   :  "an excellent document",
+
+          // if you wish the publication date to be other than today, set this
+          // publishDate:  "2009-08-06",
+
+          // if the specification's copyright date is a range of years, specify
+          // the start date here:
+          // copyrightStart: "2005"
+
+          // if there is a previously published draft, uncomment this and set its YYYY-MM-DD date
+          // and its maturity status
+          // previousPublishDate:  "1977-03-15",
+          // previousMaturity:  "WD",
+
+          // if there a publicly available Editor's Draft, this is the link
+          edDraftURI:           "http://www.w3.org/International/docs/bp-html-bidi/",
+
+          // if this is a LCWD, uncomment and set the end of its review period
+          // lcEnd: "2009-08-05",
+
+          // if you want to have extra CSS, append them to this list
+          // it is recommended that the respec.css stylesheet be kept
+          extraCSS:             [
+		  "http://dev.w3.org/2009/dap/ReSpec.js/css/respec.css",
+		  "http://www.w3.org/International/docs/bp-html-bidi/local.css"],
+
+          // editors, add as many as you like
+          // only "name" is required
+          editors:  [
+              { name: "Richard Ishida", url: "",
+                company: "W3C", companyURL: "" },
+          ],
+
+          // authors, add as many as you like. 
+          // This is optional, uncomment if you have authors as well as editors.
+          // only "name" is required. Same format as editors.
+
+          authors:  [  ],
+          
+          // name of the WG
+          wg:           "Internationalization Working Group",
+          
+          // URI of the public WG page
+          wgURI:        "http://www.w3.org/International/",
+          
+          // name (without the @w3c.org) of the public mailing to which comments are due
+          wgPublicList: "www-international",
+          
+          // URI of the patent status for this WG, for Rec-track documents
+          // !!!! IMPORTANT !!!!
+          // This is important for Rec-track documents, do not copy a patent URI from a random
+          // document unless you know what you're doing. If in doubt ask your friendly neighbourhood
+          // Team Contact.
+          wgPatentURI:  "",
+      };
+    </script>
+  </head>
+  <body>
+  <p id="sotd">This document provides advice on practical techniques related to the creation of content in HTML that is language aware. This is a W3C Draft produced by the <a href="http://www.w3.org/International/core/">Internationalization  Working Group</a>, part of the <a href="http://www.w3.org/International/Activity">W3C Internationalization Activity</a>. The Working Group expects to advance this Working Draft to Working Group Note. Please send comments on this document to <a href="mailto:www-international@w3.org">www-international@w3.org</a> (<a href="http://lists.w3.org/Archives/Public/www-international/">publicly archived</a>).</p>
+
+    <section id='abstract'>
+Specifying the language of content is useful for a wide number of applications, from linguistically-sensitive searching to applying language-specific display properties. In some cases the potential applications for language information are still waiting for implementations to catch up, whereas in others, such as detection of language by voice browsers, it is a necessity today. On the other hand, adding markup for language information to content is something that can and should be done today. Without it, it will not be possible to take advantage of any future developments.
+  </section>
+  
+  <section id="ri20030912.142608197">
+    <h2>Introduction</h2>
+    
+<section id="audience">
+  <h3>Who should use this document?</h3>
+<p>All   authors and producers of HTML  and CSS. </p>
+<p>This document provides guidance for developers of HTML that enables support for international deployment. Enabling international deployment is the responsibility of all content authors, not just localization groups or vendors, and is relevant from the very start of development. <!--Ignoring the advice in this document, or relegating it to a later phase in the development process, will only add unnecessary costs and resource issues at a later date.--></p>
+<p>It is assumed that readers of this document are proficient in developing HTML and XHTML pages - this document is limited to providing advice specifically related to internationalization.</p></section>
+
+<section id="howtouse">
+  <h3>How to use this document</h3>
+<div class="note">If you don't know much about using language in HTML, you may find it useful to familiarise yourself with the concepts introduced in the tutorial <a href="/International/tutorials/language-decl/">Working with language in HTML</a>. That tutorial will help you understand the essential aspects of how to work with language information when authoring HTML and CSS.</div>
+<p>This document lists a number of <span class="new-term">do's and don'ts</span>, which we will refer to as <strong>techniques</strong>, related to authoring pages in right-to-left scripts. Each technique is followed by a 'detail' link which provides further information. Where needed, you can get additional information and explanations by following the links to the appropriate section of the techniques index, listed alongside each section.</p>
+<p>If a technique says 'consider', there are usually pros and cons involved in following the advice given, and you should follow the link to more detailed information to be sure you understand these. In some cases it may be that not all browsers support the features described. In other cases, it may be purely up to you to decide whether or not this is a good idea.</p></section>
+
+<section id="ri20050208.091505539">
+  <h3>Why read this document?</h3>
+  <p>Applications already exist that can use information about the <strong>natural language</strong> (ie. the human, non-programmatic language) of content to deliver to users the most relevant information or styling, based on their language preferences. The more content is tagged and tagged correctly, the more useful and pervasive such applications will become.</p>
+<p>Language information is useful for things such as authoring tools, translation tools, accessibility, font selection, page rendering, search, and scripting.</p>
+<p>These applications can't work, however, if the information about the language of the text is not available. Language information should therefore be specified for the page as a whole, and wherever language changes within the page.</p>
+<p>In the future there will be other applications for language information, driven by developments in technology. For example, implementations of the CSS3 <code class="kw">:first-letter</code> pseudo-element will need language information to apply correct styling. However, we are currently faced with a circular problem. People who don't see the application of language information do not provide information about their content, and language-related applications are slow to be deployed until this information is widely available. This cycle can be broken by content authors taking steps now to declare language information. This is usually very easy to do, and carries no penalties, and it is gradually beginning to happen.</p>
+</section>
+  </section>
+
+
+<section id="ri20040808.100519373">
+<h2>Metadata vs.  text-processing</h2>
+
+<section id="ri20040808.101452727">
+  <h3>The language of the intended audience</h3>
+<p>Metadata that describes the language of the intended audience is about <strong>the document as a whole</strong>. Such metadata may be used for searching, serving the right language version, classification, etc. Where there are language changes in a document, information about the language of the intended audience is not specific enough to support <a href="#ri20040808.102523274">text-processing</a>, that is to say, in a way that would be needed for the application of text-to-speech, styling, automatic font assignment, etc.</p>
+<p>The language of the intended audience does not include every language used in a document. Many documents on the Web contain embedded fragments of content in different languages, whereas the page is clearly aimed at speakers of one particular language. For example, a German city-guide for Beijing may contain useful phrases in Chinese, but it is aimed at a German-speaking audience, not a Chinese one.</p>
+		  <p>On the other hand, it is also possible to imagine a situation where a document contains the same or parallel content in more than one language. For example, a Web page may welcome Canadian readers with French content in the left column, and the same content in English in the right-hand column. Here the document is equally targeted at speakers of both languages, so there are two audience languages. This situation is not as common on the Web as in printed material since it is easy to link to separate pages on the Web for different audiences, but it does occur where there are multilingual communities. Another use case is a blog or a news page aimed at a multilingual community, where some articles on a page are in one language and some in another. </p>
+		  <p>There are also pages where the navigational information, including the page title, is in one language but the real content of the page is in another. While this is not necessarily good practice, it doesn't change the fact that the language of the intended audience is usually that of the content, regardless of the language at the top of the document source.</p>
+		  <p>Metadata about the language of the intended audience is usually best declared outside the document in the HTTP <code class="kw" translate="no">Content-Language</code> header.</p>
+</section>
+<section id="ri20040808.102523274">
+  <h3>The text-processing language</h3>
+<p>When specifying the text-processing language you are declaring the language in which <strong>a specific range of text is actually written</strong>, so that user agents or applications that manipulate the text, such as voice browsers, spell checkers, or style processors can effectively handle the text in question. So we are, by necessity, talking about associating a <em>single</em> language with a <em>specific</em> range of text.</p>
+<p>This specificity distinguishes the declaration of the language for text-processing from <a href="#ri20040808.101452727">the language of the intended audience</a>.</p>
+<p>The language for text-processing is usually best declared using attributes on elements, including the <code class="kw">html</code> element, which contains all the content of the document. Enclosed elements inherit the declared value, but you can, of course, override an initial declaration by specifying a different language on embedded elements where the language changes, eg. a French word in an English paragraph.</p></section>
+
+<section id="ri20050208.093646470">
+  <h3>Relationships between language, character encoding and directionality</h3>
+  <p>There are separate mechanisms for declaring character encoding and directionality in HTML, and these ideas should not be confused with mechanisms for declaring language.</p>
+<p><dfn>Character encoding</dfn> refers to the sequences of bytes that are used to represent characters in text. It is
+			 important to declare which encoding is being used for your document,  but this is a separate issue from declaring language. (To better understand character encoding declarations see <a href="/International/tutorials/tutorial-char-enc/">Handling character encodings in HTML and CSS</a>.)</p><p>Some people think that information about language can be inferred from the character encoding, but this is
+			 not true. There would have to be a one-to-one mapping between encoding and language for this to work, and there isn't. A single
+			 character encoding such as ISO 8859-1 (Latin1), could encode both French and English, as well as a great many other
+			 languages. In addition, different character encodings can be used for a single language, eg, Arabic could be encoded
+			 with 'Windows-1256' or 'ISO 8859-6' or 'UTF-8'.</p>
+			 <p>Nowadays, this argument should be moot anyway, because content authors should always use UTF-8 as the character encoding. Since UTF-8 encodings cover all but the rarest of language use with a single encoding, there is normally no need to match language and encoding.</p>
+			 <p><dfn>Text direction</dfn> is another thing that should not be confused with language. In some scripts, such as Arabic and Hebrew, displayed text is read predominantly from right to left, although within that flow,
+			 numbers and text from other scripts are displayed from left to right. Markup is needed to set the overall right-to-left context, and in some circumstances markup is needed to correctly render bidirectional text, but this cannot necessarily be done using language markup. (To better understand text direction and markup see <a href="/International/tutorials/bidi-xhtml/">Creating HTML Pages in Arabic, Hebrew and Other Right-to-left Scripts</a>.)</p><p>As with encodings and language, there is not always a one-to-one mapping between language and script, and therefore
+			 directionality. For example, Azerbaijani can be written using both right-to-left and left-to-right scripts, and the language code <code class="keyword">az</code> can be relevant for either. In addition, text direction markup used with inline text applies a range of different values to the text, whereas language is a simple switch that is not up to the tasks required.</p></section>
+</section>
+
+<section id="overall">
+  <h2>Declaring the overall language of a page</h2>
+
+<p>Always declare the default language for text in the page using attributes on the <code class="kw">html</code> tag, unless the document contains content aimed at speakers of more than one language. <a href="/International/questions/qa-html-language-declarations#basics" class="detail"  title="Click for explanations and further details.">detail</a></p>
+  <p>Do NOT use the <code class="kw">meta</code> element with the <code class="kw">content</code> attribute set to <code class="kw">Content-Language</code>. <a href="/International/questions/qa-html-language-declarations#metadata" class="detail"  title="Click for explanations and further details.">detail</a></p>
+<p>Use language attributes rather than HTTP to declare the default language for text processing. <a href="/International/questions/qa-http-and-lang" class="detail"  title="Click for explanations and further details.">detail</a>  </p>
+<p>Do not declare the default language of a document in the <code class="kw">body</code> element, use the <code class="kw">html</code> element. <a href="/International/questions/qa-html-language-declarations#basics" class="detail"  title="Click for explanations and further details.">detail</a></p>
+<p>Use the <code class="kw" translate="no">lang</code> attribute for pages served as HTML, and the <code class="kw" translate="no">xml:lang</code> attribute for pages served as XML. For XHTML 1.x and HTML5 polyglot documents, use both together. <a href="/International/questions/qa-html-language-declarations#attributes" class="detail"  title="Click for explanations and further details.">detail</a></p>
+<div class="technique-links">
+<p>Learn more about:</p>
+<ul>
+<li><a href="/International/techniques/authoring-html#language">Language</a></li>
+<li><a href="/International/techniques/authoring-html#textprocessing">Declaring the overall language of a page</a></li>
+</ul>
+</div>
+</section>
+
+
+
+<section id="indoclang">
+  <h2>Identifying in-document language changes</h2>
+
+<p>Use the <code class="kw">lang</code> and/or <code class="kw">xml:lang</code> attributes around text to indicate any changes in language. <a href="/International/questions/qa-html-language-declarations#basics" class="detail"  title="Click for explanations and further details.">detail</a></p>
+          <p>Use the <code class="kw" translate="no">lang</code> attribute for pages served as HTML, and the <code class="kw" translate="no">xml:lang</code> attribute for pages served as XML. For XHTML 1.x and HTML5 polyglot documents, use both together. <a href="/International/questions/qa-html-language-declarations#attributes" class="detail"  title="Click for explanations and further details.">detail</a></p>
+          <p>If the text in attribute values and element content is in different languages, consider using a nested approach. <a href="/International/questions/qa-html-language-declarations/#contentvsattribute" class="detail"  title="Click for explanations and further details.">detail</a></p>
+<div class="technique-links"><p>Learn more about:</p>
+          <ul>
+            <li><a href="/International/techniques/authoring-html#language">Language</a></li>
+            <li><a href="/International/techniques/authoring-html#indoclang">Identifying in-document language changes</a></li>
+          </ul>
+</div>
+</section>
+
+
+<section id="langvalues">
+  <h2>Choosing language values</h2>
+
+<p><span class="link">Use subtags as defined by BCP 47 for language attribute values.</span> <a href="/International/questions/qa-choosing-language-tags#background" class="detail"  title="Click for explanations and further details.">detail </a><span class="link">Use the shortest possible language tag values.</span> <a href="/International/questions/qa-choosing-language-tags#langsubtag" class="detail"  title="Click for explanations and further details.">detail</a></p>
+        <p><span class="link">Where possible, use the codes <code class="kw">zh-Hans</code> and <code class="kw">zh-Hant</code> to refer to Simplified and Traditional Chinese, respectively.</span> <a href="/International/articles/language-tags/Overview.var#script" class="detail"  title="Click for explanations and further details.">detail</a></p>
+        <p><span class="link">Use the subtag <code class="kw">zxx</code> when the text is known to be not in any language.</span> <a href="/International/questions/qa-no-language#nonlinguistic" class="detail"  title="Click for explanations and further details.">detail</a></p>
+        <p><span class="link">If using XML, and the format you are using supports it, use <code>xml:lang=&quot;&quot;</code>, otherwise use <code>xml:lang=&quot;und&quot;</code> when the language is undetermined <em>and you have to label it</em>.</span> <a href="/International/questions/qa-no-language#undetermined" class="detail"  title="Click for explanations and further details.">detail</a></p>
+<div class="technique-links"><p>Learn more about:</p>
+          <ul>
+            <li><a href="/International/techniques/authoring-html#language">Language</a></li>
+            <li><a href="/International/techniques/authoring-html#langvalues">Choosing language values</a></li>
+          </ul>
+</div>
+</section>
+
+
+
+<section id="metadata">
+  <h2>Declaring metadata about the language(s) of the intended audience</h2>
+
+<p>Consider using a <code class="kw">Content-Language</code> HTTP header to declare metadata about the language(s) of the intended audience of a document. <a href="/International/questions/qa-html-language-declarations#metadata" class="detail"  title="Click for explanations and further details.">detail</a></p>
+        <p>Where a document contains content aimed at speakers of more than one language, use the HTTP <code class="kw">Content-Language</code> header with a comma-separated list of language tags. <a href="/International/questions/qa-http-and-lang#http" class="detail"  title="Click for explanations and further details.">detail</a></p>
+<div class="technique-links"><p>Learn more about:</p>
+          <ul>
+            <li><a href="/International/techniques/authoring-html#language">Language</a></li>
+            <li><a href="/International/techniques/authoring-html#primarylanguage">Declaring metadata about the language(s) of the intended audience</a></li>
+          </ul>
+</div>
+</section>
+
+
+<section id="linkdestination">
+  <h2>Indicating the language of a link destination</h2>
+<p>When pointing to a resource in another language, consider the pros and cons before indicating the language of the target document. <a href="/International/questions/qa-link-lang#proscons" class="detail"  title="Click for explanations and further details.">detail</a></p>
+        <p>If you want to indicate that the target document of an <code class="kw" translate="no">a</code> element is in another language, consider the pros and cons before using <code class="kw" translate="no">hreflang</code> with CSS. <a href="/International/questions/qa-link-lang#hreflang" class="detail"  title="Click for explanations and further details.">detail</a></p>
+        <p>Do not use flag icons to indicate languages. <a href="/International/questions/qa-link-lang#flags" class="detail"  title="Click for explanations and further details.">detail</a></p>
+<div class="technique-links"><p>Learn more about:</p>
+          <ul>
+            <li><a href="/International/techniques/authoring-html#language">Language</a></li>
+            <li><a href="/International/techniques/authoring-html#linkdestination">Indicating the language of a link destination</a></li>
+          </ul>
+</div>
+</section>
+
+
+<section class="appendix" id="app-c">
+  <h2> Revision Log</h2>
+  <p>This  Editor's Draft has been changed as follows:</p>
+  <ul>
+  <li>All detailed content from sections 4 to 9 has been removed, to leave only the summary do's and don'ts text.</li>
+  <li>The section &quot;Authoring with localization in mind&quot; has been removed altogether.</li>
+  <li>The section in the introductory material, &quot;Places where language information may appear&quot; has been removed.</li>
+  <li>All do's and don'ts have been revised to incorporate recent changes, esp. related to HTML5.</li>
+  <li>Some editorial changes were made to sections 1 to 3. The section &quot;How to use this document&quot; has been changed to reflect the new composition of the document.</li>
+  <li>The document was recreated as an HTML5 page, and is now authored using respec, and the styles have been changed.</li>
+  </ul>
+</section>
+
+
+<section class='appendix'>
+<h2>Acknowledgements</h2>
+<p>Members of the Internationalization Working Group and former GEO Working Group have contributed their time and valuable comments to shaping these guidelines.</p>
+</section>
+  </body>
+</html>

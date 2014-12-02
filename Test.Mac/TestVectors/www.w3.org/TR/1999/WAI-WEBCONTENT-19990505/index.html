@@ -1,0 +1,2290 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN">
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>Web Content Accessibility Guidelines 1.0</title>
+<!-- Changed by: Ian B. Jacobs,  7-Dec-1998 -->
+<LINK rel="stylesheet" type="text/css" 
+      href="http://www.w3.org/StyleSheets/TR/W3C-REC"> 
+<link rel="STYLESHEET" href="style/default.css" type="text/css">
+</head>
+<BODY>
+<div class="navbar">
+<p>
+[<a accesskey="c" href="#toc">contents</a>] &nbsp;
+[<a href="full-checklist.html">checklist</a>] &nbsp;
+
+<hr class="navbar" title="Navigation area separator">
+</div>
+<DIV class="head">
+  <P><A href="http://www.w3.org/" title="Go to W3C Home Page">
+    <IMG height="48" width="72" alt="W3C"
+    src="http://www.w3.org/Icons/w3c_home"></A></P>
+
+<H1 class="notoc">Web Content Accessibility Guidelines 1.0</H1>
+<H2 class="notoc">W3C Recommendation 5-May-1999</H2>
+
+<DL>
+      <DT>This version:
+      <DD><a rel="Alternate" href="http://www.w3.org/TR/1999/WAI-WEBCONTENT-19990505">http://www.w3.org/TR/1999/WAI-WEBCONTENT-19990505</a>
+      <DD>(<a rel="Alternate" href="wai-pageauth.txt">plain text</a>,
+          <a rel="Alternate" href="wai-pageauth.ps">PostScript</a>,
+          <a rel="Alternate" href="wai-pageauth.pdf"><abbr
+title="Portable Document Format">PDF</abbr></a>,
+          <a href="wai-pageauth.tgz">gzip tar file of
+          <abbr title="Hypertext Markup Language">HTML</abbr></a>,
+          <a href="wai-pageauth.zip"> zip archive of HTML</a>)
+      <DT>Latest version:
+      <DD><a href="http://www.w3.org/TR/WAI-WEBCONTENT">http://www.w3.org/TR/WAI-WEBCONTENT</a>
+      <DT>Previous version:
+      <DD><a href="http://www.w3.org/TR/1999/WAI-WEBCONTENT-19990324">http://www.w3.org/TR/1999/WAI-WEBCONTENT-19990324</a>
+      <DT>Editors:
+      <DD>Wendy Chisholm, 
+            <a href="http://www.tracecenter.org/">Trace R &amp; D Center</a>, 
+            University of Wisconsin -- Madison<br>
+         Gregg Vanderheiden, 
+            <a href="http://www.tracecenter.org/">Trace R &amp; D Center</a>, 
+            University of Wisconsin -- Madison<br>
+         Ian Jacobs, <a href="http://www.w3.org/">W3C</a>
+</DL>
+
+<P class="copyright"><A
+rel="Copyright"
+href="http://www.w3.org/Consortium/Legal/ipr-notice#Copyright"><BR>Copyright</A> &copy; 1999 <A href="http://www.w3.org/"><abbr title="World Wide Web Consortium">W3C</abbr></A>
+(<A href="http://www.lcs.mit.edu/"><abbr title="Massachusetts Institute of Technology">MIT</abbr></A>,
+<A href="http://www.inria.fr/">
+<abbr lang="fr" title="Institut National de Recherche en
+Informatique et Automatique">INRIA</abbr></A>,
+<A href="http://www.keio.ac.jp/">Keio</A>), All Rights Reserved. W3C
+<A href="http://www.w3.org/Consortium/Legal/ipr-notice#Legal_Disclaimer">liability</A>,
+<A href="http://www.w3.org/Consortium/Legal/ipr-notice#W3C_Trademarks">trademark</A>,
+<A rel="Copyright" href="http://www.w3.org/Consortium/Legal/copyright-documents">document
+use</A> and
+<A rel="Copyright" href="http://www.w3.org/Consortium/Legal/copyright-software">software
+licensing</A> rules apply.
+</DIV>
+
+<HR title="Separator from Header">
+
+<h2 class="nonb"> <a name="Abstract">Abstract</a></h2>
+
+
+<P>These guidelines explain how to make <a
+href="#content-structure" title="Definition of Web Content"><span class="dfn-instance">Web content
+</span></a> accessible to people with
+disabilities. The guidelines are intended for all <a
+href="#content-developer" title="Definition of Web Content developer"><span class="dfn-instance">Web content
+developers</span></a> (page authors and site designers) and for
+developers of <a href="#authoring-tool" title="Definition of 
+authoring tool"><span
+class="dfn-instance">authoring tools</span></a>. The primary goal of
+these guidelines is to promote accessibility. However, following them
+will also make Web content more available to <em>all</em> users, whatever
+<a href="#user-agent" title="Definition of user agent"><span class="dfn-instance">user agent</span></a> 
+	they are using (e.g., desktop
+browser, voice browser, mobile phone, automobile-based 
+personal computer, etc.)  or
+constraints they may be operating under (e.g., noisy 
+surroundings, under- or over-illuminated rooms, in a hands-free
+environment, etc.). Following these guidelines will also help people
+find information on the Web more quickly. These guidelines do not
+discourage content developers from using images, video, etc., but
+rather explain how to make multimedia content more accessible to a wide
+audience.
+
+<P>This is a reference document for accessibility principles and
+design ideas. Some of the strategies discussed in this document
+address certain Web internationalization and mobile access
+concerns. However, this document focuses on accessibility and does not
+fully address the related concerns of other 
+<abbr title="World Wide Web Consortium">W3C</abbr> Activities. Please
+consult the <a href="http://www.w3.org/Mobile">W3C Mobile Access
+Activity home page</a> and the
+<a href="http://www.w3.org/International">W3C Internationalization
+Activity home page</a> for more information.
+
+<P>This document is meant to be stable and therefore does not provide
+specific information about browser support for different technologies
+as that information changes rapidly. Instead, the <a
+href="http://www.w3.org/WAI/">Web Accessibility Initiative</a> 
+(<abbr title="Web Accessibility Initiative">WAI</abbr>) Web
+site provides such information (refer to <a
+href="#ref-WAI-UA-SUPPORT">[WAI-UA-SUPPORT]</a>).
+
+<P>This document includes an appendix that organizes all of the <a
+href="#def-checkpoint" title="Definition of checkpoint"><span
+class="dfn-instance">checkpoints</span></a> by topic and priority.
+The checkpoints in the appendix link to their definitions in the
+current document. The topics identified in the appendix include
+images, multimedia, tables, frames, forms, and scripts.  The appendix
+is available as either a
+<a rel="Appendix" href="full-checklist.html">
+tabular summary of checkpoints</a> or as a <a rel="Appendix"
+href="checkpoint-list.html">simple list of checkpoints</a>.
+
+<P>A separate document, entitled "Techniques for Web Content Accessibility Guidelines 1.0" (<a
+href="#ref-TECHNIQUES">[TECHNIQUES]</a>), explains how to implement
+the checkpoints defined in the current document. The Techniques
+Document discusses each checkpoint in more detail and provides
+examples using the 
+Hypertext Markup Language (<abbr title="Hypertext
+Markup Language">HTML</abbr>), 
+Cascading Style Sheets (<abbr title="Cascading Style Sheets">CSS</abbr>),
+Synchronized Multimedia Integration Language 
+(<abbr title="Synchronized Multimedia Integration Language">SMIL</abbr>), 
+and the Mathematical Markup Language (<abbr title="Mathematical
+Markup Language">MathML</abbr>). The Techniques Document also includes
+techniques for document validation and testing, and
+an index of HTML elements and attributes (and which techniques 
+use them). The Techniques Document has been designed to 
+track changes in technology and is expected to be updated 
+more frequently than the current document.
+<strong>Note.</strong> Not all browsers or multimedia tools may
+support the features described in the guidelines. In particular, new
+features of HTML 4.0 or CSS 1 or CSS 2 may not be supported.</P>
+
+<P>"Web Content Accessibility Guidelines 1.0" is part of a series of accessibility guidelines
+published by the <a href="http://www.w3.org/WAI/">Web Accessibility
+Initiative</a>. The series also includes User Agent Accessibility
+Guidelines (<a href="#ref-WAI-USERAGENT">[WAI-USERAGENT]</a>) and
+Authoring Tool Accessibility Guidelines (<a
+href="#ref-WAI-AUTOOLS">[WAI-AUTOOLS]</a>).
+
+<h2 class="nonb"> <a name="Status">Status of this document</a></h2>
+
+<p>This document has been reviewed by W3C Members and other interested
+parties and has been endorsed by the Director as a
+W3C Recommendation. It is a stable document and may be used as
+reference material or cited as a normative reference from another
+documents. W3C's role in making the Recommendation is to draw attention
+to the specification and to promote its widespread deployment. This
+enhances the functionality and universality of the Web.
+
+<P>The English version of this specification is the only normative
+version. However, for translations in other languages see <a
+href="http://www.w3.org/WAI/GL/WAI-WEBCONTENT-TRANSLATIONS">http://www.w3.org/WAI/GL/WAI-WEBCONTENT-TRANSLATIONS</a>.</p>
+
+<P>The list of known errors in this document is available at <a
+href="http://www.w3.org/WAI/GL/WAI-WEBCONTENT-ERRATA">http://www.w3.org/WAI/GL/WAI-WEBCONTENT-ERRATA</a>. Please report errors in this
+document to <a
+href="mailto:wai-wcag-editor@w3.org">wai-wcag-editor@w3.org</a>.
+
+<P>A list of current W3C Recommendations and other technical documents
+can be found at <a
+href="http://www.w3.org/TR">http://www.w3.org/TR</a>.
+
+<p>This document has been produced as part of the W3C <a
+href="http://www.w3.org/WAI">Web Accessibility Initiative</a>. The
+goal of the <a href="http://www.w3.org/WAI/GL">Web Content Guidelines
+Working Group</a> is discussed in the <a
+href="http://www.w3.org/WAI/GL/new-charter.html"> Working Group
+charter</a>.</p>
+
+<!--NewPage--><!-- this is for html2ps -->
+<div class="toc">
+<h2 class="notoc"><a name="toc">Table of Contents</a></h2>
+
+  <ul class="toc">
+    <li class="tocline2"><a href="#Abstract" name="toc-Abstract" class="tocxref"> Abstract</a>
+    <li class="tocline2"><a href="#Status" name="toc-Status" class="tocxref"> Status of this document</a>
+    <li class="tocline2"><a href="#Introduction" name="toc-Introduction" class="tocxref">1. Introduction</a>
+    <li class="tocline2"><a href="#themes" name="toc-themes" class="tocxref">2. Themes of Accessible Design</a>
+    <ul class="toc">
+      <li class="tocline3"><a href="#transform-gracefully" name="toc-transform-gracefully" class="tocxref">2.1 Ensuring Graceful Transformation</a>
+      <li class="tocline3"><a href="#context-and-orientation" name="toc-context-and-orientation" class="tocxref">2.2 Making Content Understandable and Navigable</a>
+    </ul>
+    <li class="tocline2"><a href="#organization" name="toc-organization" class="tocxref">3. How the Guidelines are Organized</a>
+    <ul class="toc">
+      <li class="tocline3"><a href="#conventions" name="toc-conventions" class="tocxref">3.1 Document conventions</a>
+    </ul>
+    <li class="tocline2"><a href="#priorities" name="toc-priorities" class="tocxref">4. Priorities</a>
+    <li class="tocline2"><a href="#Conformance" name="toc-Conformance" class="tocxref">5. Conformance</a>
+    <li class="tocline2"><a href="#Guidelines" name="toc-Guidelines" class="tocxref">6. Web Content Accessibility Guidelines</a>
+    <ul class="toc">
+      <li class="tocline3"><a href="#gl-provide-equivalents" name="toc-gl-provide-equivalents" class="tocxref">1.  Provide equivalent alternatives to auditory and visual content.</a>
+      <li class="tocline3"><a href="#gl-color" name="toc-gl-color" class="tocxref">2.  Don't rely on color alone.</a>
+      <li class="tocline3"><a href="#gl-structure-presentation" name="toc-gl-structure-presentation" class="tocxref">3.  Use markup and style sheets and do so properly.</a>
+      <li class="tocline3"><a href="#gl-abbreviated-and-foreign" name="toc-gl-abbreviated-and-foreign" class="tocxref">4.  Clarify natural language usage</a>
+      <li class="tocline3"><a href="#gl-table-markup" name="toc-gl-table-markup" class="tocxref">5.  Create tables that transform gracefully.</a>
+      <li class="tocline3"><a href="#gl-new-technologies" name="toc-gl-new-technologies" class="tocxref">6.  Ensure that pages featuring new technologies transform gracefully.</a>
+      <li class="tocline3"><a href="#gl-movement" name="toc-gl-movement" class="tocxref">7.  Ensure user control of time-sensitive content changes.</a>
+      <li class="tocline3"><a href="#gl-own-interface" name="toc-gl-own-interface" class="tocxref">8.  Ensure direct accessibility of embedded user interfaces.</a>
+      <li class="tocline3"><a href="#gl-device-independence" name="toc-gl-device-independence" class="tocxref">9.  Design for device-independence.</a>
+      <li class="tocline3"><a href="#gl-interim-accessibility" name="toc-gl-interim-accessibility" class="tocxref">10.  Use interim solutions.</a>
+      <li class="tocline3"><a href="#gl-use-w3c" name="toc-gl-use-w3c" class="tocxref">11.  Use W3C technologies and guidelines.</a>
+      <li class="tocline3"><a href="#gl-complex-elements" name="toc-gl-complex-elements" class="tocxref">12.  Provide context and orientation information.</a>
+      <li class="tocline3"><a href="#gl-facilitate-navigation" name="toc-gl-facilitate-navigation" class="tocxref">13.  Provide clear navigation mechanisms.</a>
+      <li class="tocline3"><a href="#gl-facilitate-comprehension" name="toc-gl-facilitate-comprehension" class="tocxref">14.  Ensure that documents are clear and simple.</a>
+    </ul>
+    <li class="tocline2"><a href="#validation" name="toc-validation" class="tocxref"> Appendix A. -- Validation</a>
+    <li class="tocline2"><a href="#glossary" name="toc-glossary" class="tocxref"> Appendix B. -- Glossary </a>
+    <li class="tocline2"><a href="#Acknowledgments" name="toc-Acknowledgments" class="tocxref"> Acknowledgments</a>
+    <li class="tocline2"><a href="#References" name="toc-References" class="tocxref"> References</a>
+  </ul>
+</div>
+
+<P>The appendix list of checkpoints is available as either a
+<a rel="Appendix" href="full-checklist.html">
+tabular summary of checkpoints</a> or as a <a rel="Appendix"
+href="checkpoint-list.html">simple list of checkpoints</a>.
+
+<DIV class="noprint">
+<HR title="Separator from Introduction">
+</DIV>
+
+<!--NewPage--><!-- this is for html2ps -->
+
+<h2>1. <a name="Introduction">Introduction</a></h2>
+<p>For those unfamiliar with accessibility issues pertaining to
+  Web page design, consider that many users may be operating
+  in contexts very different from your own:</P>
+
+<UL>
+   <LI>They may not be able to see, hear, move, or
+       may not be able to process some types of 
+       information easily or at all.
+   <LI>They may have difficulty reading or comprehending text.
+   <LI>They may not have or be able to use a keyboard or mouse.
+   <LI>They may have a text-only screen, a small screen, or
+       a slow Internet connection.
+   <LI>They may not speak or understand fluently
+       the language in which the document is written.
+   <LI>They may be in a situation where their eyes, ears, or
+       hands are busy or interfered with (e.g., driving to work, 
+       working in a loud environment, etc.).
+   <LI>They may have an early version of a browser, a different
+       browser entirely, a voice browser, or a 
+       different operating system.
+  </UL>
+
+
+  <P>Content developers must consider these
+  different situations during page design.  While there are several
+  situations to consider, each accessible design choice generally
+  benefits several disability groups at once and the Web community as a
+  whole. For example, by using <a href="#style-sheet"
+  title="Definition of style sheets"><span class="dfn-instance">style
+  sheets</span></a> to control font styles and eliminating the FONT element,
+  HTML authors will have more control over their pages, make those
+  pages more accessible to people with low vision, and by sharing the
+  style sheets, will often shorten page download times for all
+  users.
+  
+  <P>The guidelines discuss accessibility issues and provide
+  accessible design solutions. They address typical scenarios
+  (similar to the font style example) that may pose problems for users
+  with certain disabilities. For example, the <a
+  href="#gl-provide-equivalents">first guideline</a> explains how content
+  developers can make images accessible. Some users may not be able to see
+  images, others may use text-based browsers that do not support
+  images, while others may have turned off support for images (e.g.,
+  due to a slow Internet connection). The guidelines do not suggest
+  avoiding images as a way to improve accessibility.  Instead,
+  they explain that providing a <a href="#text-equivalent"
+  title="Definition of text equivalent"><span class="dfn-instance">text
+  equivalent</span></a> of the image will make it accessible. 
+
+  <P>How does a text equivalent make the image accessible? Both words
+  in "text equivalent" are important:</P>
+
+<UL>
+<LI>Text content can be presented to the user as synthesized speech,
+    braille, and visually-displayed text. Each of these three mechanisms
+    uses a different sense -- ears for synthesized speech,
+    tactile for braille, and eyes for visually-displayed text -- making
+    the information accessible to groups representing a variety of sensory
+    and other disabilities.
+
+<LI>In order to be useful, the text must convey the same function or
+purpose as the image.  For example, consider a text equivalent for a
+photographic image of the Earth as seen from outer space. If the
+purpose of the image is mostly that of decoration, then the text
+"Photograph of the Earth as seen from outer space" might fulfill the
+necessary function. If the purpose of the photograph is to illustrate
+specific information about world geography, then the text equivalent
+should convey that information.  If the photograph has been designed
+to tell the user to select the image (e.g., by clicking on it)
+for information about the earth, equivalent text would be
+"Information about the Earth".  Thus, if the text conveys the same
+function or purpose for the user with a disability as the image does
+for other users, then it can be considered a text equivalent.
+</UL>
+
+<P>Note that, in addition to benefitting users with disabilities, text
+equivalents can help all users find pages more quickly, since
+search robots can use the text when indexing the pages.
+
+<P>While Web content developers must provide text equivalents for
+images and other multimedia content, it is the responsibility of <a
+href="#user-agent"> <span class="dfn-instance">user agents</span></a>
+(e.g., browsers and assistive technologies such as <a
+href="#screen-reader"><span class="dfn-instance">screen
+readers</span></a>, <a href="#braille-display"><span
+class="dfn-instance">braille displays</span></a>, etc.)  to present
+the information to the user.
+
+<P><a name="non-text-equivalent"><span class="dfn-instance">Non-text
+equivalents</span></a> of text (e.g., icons, pre-recorded speech, or a
+video of a person translating the text into sign language) can make
+documents accessible to people who may have difficulty accessing
+written text, including many individuals with cognitive disabilities,
+learning disabilities, and deafness. Non-text equivalents of text can
+also be helpful to non-readers. An <a
+href="#auditory-description"><span class="dfn-instance">auditory
+description</span></a> is an example of a non-text equivalent of 
+visual information. An auditory description of a
+multimedia presentation's visual track benefits people who cannot
+see the visual information.
+
+<H2>2. <a name="themes">Themes of Accessible Design</a></H2>
+
+<P>The guidelines address two general themes: ensuring graceful
+transformation, and making content understandable and navigable.
+
+<H3>2.1 <a name="transform-gracefully">Ensuring Graceful Transformation</a></H3>
+
+<p>By following these guidelines, content developers can create pages
+that transform gracefully.  Pages that transform gracefully remain
+accessible despite any of the constraints described in the <a
+href="#Introduction">introduction</a>, including physical, sensory,
+and cognitive disabilities, work constraints, and technological
+barriers. Here are some keys to designing pages that transform
+gracefully:</P>
+
+<ul>
+  <li>Separate structure from presentation (refer to 
+      the difference between <a href="#content-structure" title="Definition of content/structure/presentation"><span class="dfn-instance">content,
+      structure, and presentation</span></a>).
+
+  <li>Provide text (including <a href="#text-equivalent"
+					    title="Definition of text equivalent"><span
+  class="dfn-instance">text equivalents</span></a>). Text
+  can be rendered in ways that are available to almost all browsing
+  devices and accessible to almost all users.</li>
+
+  <LI>Create documents that work even if the user 
+      cannot see and/or hear. Provide information
+      that serves the same purpose or function as
+      audio or video in ways 
+      suited to alternate sensory channels as well. 
+      This does not mean creating a prerecorded
+      audio version of an entire site to make it accessible to
+      users who are blind. Users who are blind can use
+      <a href="#screen-reader" title="Definition of screen reader"><span
+      class="dfn-instance">screen reader</span></a> technology to
+      render all text information in a page.
+</li> 
+
+  <li>Create documents that do not rely on one type of hardware.
+     Pages should be usable by people
+     without mice, with small screens, low resolution screens, 
+     black and white screens, no screens, with only voice or text
+     output, etc.</li>
+</ul>
+
+<p>The theme of graceful transformation is addressed primarily by
+guidelines 1 to 11.</P>
+
+<H3>2.2 <a name="context-and-orientation">Making Content Understandable
+and Navigable</a></H3>
+
+<P>Content developers should make content understandable and
+navigable.  This includes not only making the language clear and
+simple, but also providing understandable mechanisms for navigating
+within and between pages. Providing navigation tools and orientation
+information in pages will maximize accessibility and usability.
+Not all users can make use of visual clues such as image
+maps, proportional scroll bars, side-by-side frames, or graphics that
+guide sighted users of graphical desktop browsers. Users also lose
+contextual information when they can only view a portion of a page,
+either because they are accessing the page one word at a time (speech
+synthesis or <a href="#braille-display" title="Definition of braille display"><span class="dfn-instance">
+braille display</span></a>), or one section at a time (small display,
+or a magnified display). Without orientation information,
+users may not be able to understand very large tables, lists, menus, etc.
+
+<p>The theme of making content understandable and navigable is
+addressed primarily in guidelines 12 to
+14.</P>
+
+
+<H2>3. <a name="organization">How the Guidelines are Organized</a></H2>
+ 
+<p>This document includes fourteen <a
+name="def-guideline">guidelines</a>, or general principles of
+accessible design. Each guideline includes:</P>
+
+<UL>
+<LI>The guideline number.
+<LI>The statement of the guideline.
+<LI>Guideline navigation links. Three links allow
+navigation to the next guideline (right arrow
+icon), the previous guideline (left arrow icon),
+or the current guideline's position in the table
+of contents (up arrow icon).
+<LI>The rationale behind the guideline and some
+groups of users who benefit from it.
+<LI>A list of checkpoint definitions.
+</UL>
+
+<P>The <a name="def-checkpoint">checkpoint</a> definitions in
+each guideline explain how the guideline applies in typical content
+development scenarios.  Each checkpoint definition includes:</P>
+
+<UL>
+<LI>The checkpoint number.
+<LI>The statement of the checkpoint.
+<LI>The priority of the checkpoint. Priority 1 
+checkpoints are highlighted through the use of style sheets.
+<LI>Optional informative notes, clarifying examples,
+and cross references to related guidelines or checkpoints.
+<LI>A link to a section of the 
+Techniques Document (<a href="#ref-TECHNIQUES">[TECHNIQUES]</a>) where
+implementations and examples of the checkpoint are discussed.
+</UL>
+
+<P>Each checkpoint is intended to be
+specific enough so that someone reviewing a page
+or site may verify that the checkpoint has been satisfied.
+
+<H3>3.1 <a name="conventions">Document conventions</a></H3>
+
+<P>The following editorial conventions are used throughout
+this document:</P>
+
+<UL>
+<LI>Element names are in uppercase letters.
+<LI>Attribute names are quoted in lowercase letters. 
+<LI>Links to definitions are highlighted through
+the use of style sheets.
+</UL>
+
+<h2>4. <a name="priorities">Priorities</a></H2>
+
+<p>Each checkpoint has a priority level assigned by the Working
+Group based on the checkpoint's impact on accessibility. 
+
+<dl>
+<dt><a name="wc-priority-1">[Priority&nbsp;1] </a></dt>
+
+<dd>A Web content developer <strong>must</strong> satisfy this
+checkpoint. Otherwise, one or more groups will find it impossible to
+access information in the document. Satisfying this checkpoint is a
+basic requirement for some groups to be able to use Web documents.
+
+
+<dt><a name="wc-priority-2">[Priority&nbsp;2]</a></dt>
+
+<dd>A Web content developer <strong>should</strong> satisfy this
+checkpoint. Otherwise, one or more groups will find it difficult to
+access information in the document. Satisfying this checkpoint will
+remove significant barriers to accessing Web documents.</dd>
+
+<dt><a name="wc-priority-3">[Priority&nbsp;3]</a></dt>
+
+<dd>A Web content developer <strong>may</strong> 
+address this checkpoint. Otherwise,
+one or more groups will find it somewhat difficult to access
+information in the document. Satisfying this checkpoint will improve
+access to Web documents.</dd>
+
+</dl>
+
+<P>Some checkpoints specify a priority level that may change under
+certain (indicated) conditions.
+
+<H2>5. <a name="Conformance">Conformance</a></h2>
+
+
+<P>This section defines three levels of conformance to this
+document:</P>
+
+<UL>
+  <LI><strong>Conformance Level "A"</strong>: 
+all Priority 1 checkpoints are satisfied;
+  <LI><strong>Conformance Level "Double-A"</strong>: 
+all Priority 1 and 2 checkpoints are satisfied;
+  <LI><strong>Conformance Level "Triple-A"</strong>: 
+all Priority 1, 2, and 3 checkpoints are satisfied;
+</UL>
+
+<P><strong>Note.</strong> Conformance levels are spelled out in text
+so they may be understood when rendered to speech.
+
+<P>Claims of conformance to this document must use one of the
+following two forms.</P>
+
+<P>Form 1: Specify:</P>
+<UL>
+<LI>The guidelines title: "Web Content Accessibility Guidelines 1.0"
+<LI>The guidelines <abbr title="Uniform Resource Identifier">URI</abbr>: http://www.w3.org/TR/1999/WAI-WEBCONTENT-19990505
+<LI>The conformance level satisfied: "A", "Double-A", or "Triple-A".
+<LI>The scope covered by the claim (e.g., page, site, or 
+defined portion of a site.).
+</UL>
+
+<P>Example of Form 1:</P>
+<BLOCKQUOTE>
+<P>This page conforms to W3C's "Web Content Accessibility Guidelines 1.0", 
+available at http://www.w3.org/TR/1999/WAI-WEBCONTENT-19990505, level Double-A.
+</BLOCKQUOTE>
+
+<P>Form 2: Include, on each page claiming conformance, one of three
+icons provided by W3C and link the icon to the
+appropriate W3C explanation of the claim. Information about
+the icons and how to insert them in pages is available at
+<a href="#ref-WCAG-ICONS">[WCAG-ICONS]</a>.
+
+<!--NewPage--><!-- this is for html2ps -->
+<DIV class="noprint">
+<HR title="Separator from Guidelines">
+</DIV>
+<h2>6. <a name="Guidelines">Web Content Accessibility Guidelines</a></h2>
+
+<H3 class="guideline">Guideline 1. <a name="gl-provide-equivalents"> Provide equivalent alternatives to
+auditory and visual content.</a></H3>
+<DIV class="noprint"><DIV class="glnav"> <a href="#gl-color"><img alt="Next guideline: 2" src="images/next.jpg"></a> <a href="#gl-facilitate-comprehension"><img alt="Previous guideline: 14" src="images/previous.jpg"></a> <a href="#toc-gl-provide-equivalents"><img alt="Go to contents" src="images/contents.jpg"></a></DIV></DIV>
+
+<H4 class="subhead"><a name="q15"> Provide content that, when presented to the user,
+conveys essentially the same function or purpose as auditory or visual
+content.
+</a></H4>
+
+<P>Although some people cannot use images, movies, sounds, applets,
+etc. directly, they may still use pages that include <a
+href="#equivalent" title="Definition of equivalent"><span
+class="dfn-instance">equivalent</span></a> information to the visual
+or auditory content. The equivalent information must serve the same
+purpose as the visual or auditory content. Thus, a text equivalent for
+an image of an upward arrow that links to a table of contents could be
+"Go to table of contents".  In some cases, an equivalent should also
+describe the appearance of visual content (e.g., for complex charts,
+billboards, or diagrams) or the sound of auditory content (e.g., for
+audio samples used in education).
+
+<P>This guideline emphasizes the importance of providing <a
+href="#text-equivalent" title="Definition of text equivalent"><span
+class="dfn-instance">text equivalents</span></a> of non-text 
+content (images, pre-recorded audio, video). The power of text equivalents
+lies in their capacity to be rendered in ways that are accessible to
+people from various disability groups using a variety of technologies.
+Text can be readily output to speech synthesizers and <a
+href="#braille-display"><span class="dfn-instance">braille
+displays</span></a>, and can be presented visually (in
+a variety of sizes) on computer displays
+and paper. Synthesized speech is critical for individuals who are
+blind and for many people with the reading difficulties that often
+accompany cognitive disabilities, learning disabilities, and
+deafness. Braille is essential for individuals who are both deaf and
+blind, as well as many individuals whose only sensory disability is
+blindness. Text displayed visually benefits
+users who are deaf as well as the majority of Web users.
+
+<P>Providing non-text equivalents (e.g., pictures, videos, and
+pre-recorded audio) of text is also beneficial to some users,
+especially nonreaders or people who have difficulty reading.  In
+movies or visual presentations, visual action such as body language or
+other visual cues may not be accompanied by enough audio information
+to convey the same information. Unless verbal descriptions of this
+visual information are provided, people who cannot see (or look at)
+the visual content will not be able to perceive it.
+
+<h4><a name="q16"> Checkpoints:</a></h4>
+
+<dl class="checkpoints">
+<dt class="checkpoint"><span class="checkpoint"><a name="tech-text-equivalent">1.1</a></span>  Provide a text equivalent for every non-text element  (e.g., via "alt", "longdesc", or in element content). <em>This includes</em>: images, graphical representations of text (including symbols), image map regions, animations (e.g., animated GIFs), applets and programmatic objects, <abbr title="American Standard Code for Information Interchange">ascii</abbr> art, frames, scripts, images used as list bullets, spacers, graphical buttons, sounds (played with or without user interaction), stand-alone audio files, audio tracks of video, and video. <span class="priority1">[Priority&nbsp;1]</span>
+</dt>
+<DD class="checkpoint">
+For example, in HTML:
+<UL>
+<LI>Use "alt" for the IMG, INPUT, and APPLET elements,
+or provide a text equivalent 
+in the content of the OBJECT and APPLET elements. 
+<LI>For complex content (e.g., a chart) where 
+the "alt" text does not provide a complete text
+equivalent, provide an additional
+description using, for example, "longdesc" with IMG or FRAME,
+a link inside an OBJECT element, 
+or a <a href="#d-link">description link</a>.
+<LI>For image maps, either use the "alt" attribute with AREA, or 
+use the MAP element with A elements (and other text) as content.
+</UL>
+<P>Refer also to 
+<a href="#tech-client-side-maps" class="noxref">checkpoint 9.1</a> and <a href="#tech-skip-over-ascii" class="noxref">checkpoint 13.10</a>.
+<!-- Note: visual notification not covered; this is a UA thing -->
+</dd>
+
+<dd><a title="Provide a text equivalent for every non-text element" href="http://www.w3.org/TR/WAI-WEBCONTENT-TECHS/#tech-text-equivalent">Techniques for checkpoint 1.1</a></dd>
+<dt class="checkpoint"><span class="checkpoint"><a name="tech-redundant-server-links">1.2</a></span>  Provide redundant text links for each active region of a server-side image map.  <span class="priority1">[Priority&nbsp;1]</span>
+</dt>
+<dd class="checkpoint">Refer also to
+<a href="#tech-redundant-client-links" class="noxref">checkpoint 1.5</a> and <a href="#tech-client-side-maps" class="noxref">checkpoint 9.1</a>.</dd>
+
+<dd><a title="Provide redundant text links for each active region of a server-side image map." href="http://www.w3.org/TR/WAI-WEBCONTENT-TECHS/#tech-redundant-server-links">Techniques for checkpoint 1.2</a></dd>
+<dt class="checkpoint"><span class="checkpoint"><a name="tech-auditory-descriptions">1.3</a></span> <a href="wai-pageauth.html#until-user-agents">Until user agents</a> can automatically read aloud the text equivalent of a visual track,  provide an auditory description of the important information of the visual track of a multimedia presentation.   <span class="priority1">[Priority&nbsp;1]</span>
+</dt>
+<dd class="checkpoint">Synchronize the
+<a href="#auditory-description"><span class="dfn-instance">auditory 
+description</span></a> with the audio track as per
+<a href="#tech-synchronize-equivalents" class="noxref">checkpoint 1.4</a>.
+Refer to <a href="#tech-text-equivalent" class="noxref">checkpoint 1.1</a> for information about textual
+equivalents for visual information. 
+</DD>
+
+<dd><a title="provide an auditory description of the important information of the visual track of a multimedia presentation." href="http://www.w3.org/TR/WAI-WEBCONTENT-TECHS/#tech-auditory-descriptions">Techniques for checkpoint 1.3</a></dd>
+<dt class="checkpoint"><span class="checkpoint"><a name="tech-synchronize-equivalents">1.4</a></span> For any time-based multimedia presentation (e.g., a movie or animation),  synchronize equivalent alternatives (e.g., captions or auditory descriptions of the visual track) with the presentation.  <span class="priority1">[Priority&nbsp;1]</span>
+</dt>
+
+<dd><a title="synchronize equivalent alternatives (e.g., captions or auditory descriptions of the visual track) with the presentation." href="http://www.w3.org/TR/WAI-WEBCONTENT-TECHS/#tech-synchronize-equivalents">Techniques for checkpoint 1.4</a></dd>
+<dt class="checkpoint"><span class="checkpoint"><a name="tech-redundant-client-links">1.5</a></span> <a href="wai-pageauth.html#until-user-agents">Until user agents</a> render text equivalents for client-side image map links,  provide redundant text links for each active region of a client-side image map.  <span class="priority3">[Priority&nbsp;3]</span>
+</dt>
+<dd class="checkpoint">Refer also to
+<a href="#tech-redundant-server-links" class="noxref">checkpoint 1.2</a> and <a href="#tech-client-side-maps" class="noxref">checkpoint 9.1</a>.</dd>
+
+<dd><a title="provide redundant text links for each active region of a client-side image map." href="http://www.w3.org/TR/WAI-WEBCONTENT-TECHS/#tech-redundant-client-links">Techniques for checkpoint 1.5</a></dd>
+</dl>
+
+<H3 class="guideline">Guideline 2. <a name="gl-color"> Don't rely on color alone.</a></H3>
+<DIV class="noprint"><DIV class="glnav"> <a href="#gl-structure-presentation"><img alt="Next guideline: 3" src="images/next.jpg"></a> <a href="#gl-provide-equivalents"><img alt="Previous guideline: 1" src="images/previous.jpg"></a> <a href="#toc-gl-color"><img alt="Go to contents" src="images/contents.jpg"></a></DIV></DIV>
+
+<h4 class="subhead"><a name="q18"> Ensure that text and graphics are 
+understandable when viewed without color.</a></h4>
+
+<p>If color alone is used to convey information, people who cannot
+differentiate between certain colors and users with devices that have
+non-color or non-visual displays will not receive the information.
+When foreground and background colors are too close to the same
+hue, they may not provide sufficient contrast when viewed using
+monochrome displays or by people with different types of color
+deficits.</p>
+
+<h4><a name="q19"> Checkpoints:</a></h4>
+
+
+<dl class="checkpoints">
+<dt class="checkpoint"><span class="checkpoint"><a name="tech-color-convey">2.1</a></span> Ensure that all information conveyed with color is  also available without color,  for example from context or markup. <span class="priority1">[Priority&nbsp;1]</span>
+</dt>
+
+<dd><a title="also available without color," href="http://www.w3.org/TR/WAI-WEBCONTENT-TECHS/#tech-color-convey">Techniques for checkpoint 2.1</a></dd>
+<dt class="checkpoint"><span class="checkpoint"><a name="tech-color-contrast">2.2</a></span> Ensure that foreground and background  color combinations provide sufficient contrast  when viewed by someone having color deficits or when viewed on a black and white screen. [Priority&nbsp;2 for images, Priority&nbsp;3 for text]. 
+</dt>
+
+<dd><a title="color combinations provide sufficient contrast" href="http://www.w3.org/TR/WAI-WEBCONTENT-TECHS/#tech-color-contrast">Techniques for checkpoint 2.2</a></dd>
+</dl>
+
+<H3 class="guideline">Guideline 3. <a name="gl-structure-presentation"> Use markup and style sheets and do so
+properly.</a></H3>
+<DIV class="noprint"><DIV class="glnav"> <a href="#gl-abbreviated-and-foreign"><img alt="Next guideline: 4" src="images/next.jpg"></a> <a href="#gl-color"><img alt="Previous guideline: 2" src="images/previous.jpg"></a> <a href="#toc-gl-structure-presentation"><img alt="Go to contents" src="images/contents.jpg"></a></DIV></DIV>
+
+<h4 class="subhead"><a name="q21"> Mark up documents with the proper structural elements. Control
+presentation with style sheets rather than with presentation elements
+and attributes.</a></h4>
+
+<p>Using markup improperly -- not according to specification --
+hinders accessibility.  Misusing markup for a presentation effect
+(e.g., using a table for layout or a header to change the font size)
+makes it difficult for users with specialized
+software to understand the organization of the page or to
+navigate through it. Furthermore, using presentation
+markup rather than structural markup to
+convey structure (e.g., constructing what looks like a table of data
+with an HTML PRE element) makes it difficult to render a page
+intelligibly to other devices (refer to the description of
+<a href="#content-structure" title="Definition of content/structure/presentation"><span class="dfn-instance">
+difference between content,
+structure, and presentation</span></a>).
+</p>
+
+<P>Content developers 
+may be tempted to use (or misuse) constructs that achieve a
+desired formatting effect on older browsers. They must be aware that
+these practices cause accessibility problems and must consider
+whether the formatting effect is so critical as to warrant
+making the document inaccessible to some users. 
+
+<P>At the other extreme, content developers must not sacrifice
+appropriate markup because a certain browser or assistive technology
+does not process it correctly.  For example, it is appropriate to use
+the TABLE element in HTML to mark up
+<a href="#tabular-information">
+<span class="dfn-instance">tabular information</span></a> even
+though some older screen readers may not handle side-by-side
+text correctly (refer to <a href="#tech-linear-tables" class="noxref">checkpoint 10.3</a>). Using 
+TABLE correctly and creating tables that transform gracefully (refer to
+<a href="#gl-table-markup" class="noxref">guideline 5</a>) makes it possible for software to render tables other
+than as two-dimensional grids. 
+
+<h4><a name="q22"> Checkpoints:</a></h4>
+ 
+
+<dl class="checkpoints">
+<dt class="checkpoint"><span class="checkpoint"><a name="tech-use-markup">3.1</a></span> When an appropriate markup language exists,  use markup rather than images  to convey information.  <span class="priority2">[Priority&nbsp;2]</span>
+</dt>
+<dd class="checkpoint">For example, use MathML to mark up mathematical
+equations, and <a href="#style-sheet" title="Definition of style sheets"><span class="dfn-instance">
+style sheets</span></a> to format text and control layout. Also,
+avoid using images to represent text -- use text and style sheets
+instead.
+Refer also to <a href="#gl-new-technologies" class="noxref">guideline 6</a> and <a href="#gl-use-w3c" class="noxref">guideline 11</a>.
+</dd>
+
+<dd><a title="use markup rather than images" href="http://www.w3.org/TR/WAI-WEBCONTENT-TECHS/#tech-use-markup">Techniques for checkpoint 3.1</a></dd>
+<dt class="checkpoint"><span class="checkpoint"><a name="tech-identify-grammar">3.2</a></span>  Create documents that validate  to published formal grammars. <span class="priority2">[Priority&nbsp;2]</span>
+</dt>
+<DD class="checkpoint">For example, include a document type
+declaration at the beginning of a 
+document that refers to a published 
+<abbr title="Document Type Definition">DTD</abbr>
+(e.g., the strict HTML 4.0 DTD).</DD>
+
+<dd><a title="Create documents that validate" href="http://www.w3.org/TR/WAI-WEBCONTENT-TECHS/#tech-identify-grammar">Techniques for checkpoint 3.2</a></dd>
+<dt class="checkpoint"><span class="checkpoint"><a name="tech-style-sheets">3.3</a></span>  Use style sheets to control layout and presentation.  <span class="priority2">[Priority&nbsp;2]</span>
+</dt>
+<dd class="checkpoint">For example, use the CSS 'font' property
+instead of the HTML FONT element to control font styles.</dd>
+
+<dd><a title="Use style sheets to control layout and presentation." href="http://www.w3.org/TR/WAI-WEBCONTENT-TECHS/#tech-style-sheets">Techniques for checkpoint 3.3</a></dd>
+<dt class="checkpoint"><span class="checkpoint"><a name="tech-relative-units">3.4</a></span>  Use relative rather than absolute units  in markup language attribute values and style sheet property values. <span class="priority2">[Priority&nbsp;2]</span>
+</dt>
+<dd class="checkpoint">For example, in CSS, use 'em' or percentage
+lengths rather than 'pt' or 'cm', which are absolute
+units. If absolute units are used, 
+validate that the rendered
+content is usable (refer to the
+<a href="#validation">section on validation</a>).
+</dd>
+
+<dd><a title="Use relative rather than absolute units" href="http://www.w3.org/TR/WAI-WEBCONTENT-TECHS/#tech-relative-units">Techniques for checkpoint 3.4</a></dd>
+<dt class="checkpoint"><span class="checkpoint"><a name="tech-logical-headings">3.5</a></span>  Use header elements to convey document structure  and use them according to specification. <span class="priority2">[Priority&nbsp;2]</span>
+</dt>
+<dd class="checkpoint">For example, in HTML, use H2 to indicate
+a subsection of H1. Do not use headers for font effects.</dd>
+
+<dd><a title="Use header elements to convey document structure" href="http://www.w3.org/TR/WAI-WEBCONTENT-TECHS/#tech-logical-headings">Techniques for checkpoint 3.5</a></dd>
+<dt class="checkpoint"><span class="checkpoint"><a name="tech-list-structure">3.6</a></span>  Mark up lists and list items properly.  <span class="priority2">[Priority&nbsp;2]</span>
+</dt>
+<dd class="checkpoint">For example, in HTML, nest OL, UL, and DL lists properly.</dd>
+
+<dd><a title="Mark up lists and list items properly." href="http://www.w3.org/TR/WAI-WEBCONTENT-TECHS/#tech-list-structure">Techniques for checkpoint 3.6</a></dd>
+<dt class="checkpoint"><span class="checkpoint"><a name="tech-quotes">3.7</a></span>  Mark up quotations.  Do not use quotation markup for formatting effects such as indentation. <span class="priority2">[Priority&nbsp;2]</span>
+</dt>
+<dd class="checkpoint">For example, in HTML, use the Q and BLOCKQUOTE elements
+to markup short and longer quotations, respectively.</dd> 
+
+<dd><a title="Mark up quotations." href="http://www.w3.org/TR/WAI-WEBCONTENT-TECHS/#tech-quotes">Techniques for checkpoint 3.7</a></dd>
+</dl>
+
+<H3 class="guideline">Guideline 4. <a name="gl-abbreviated-and-foreign"> Clarify natural language usage</a></H3>
+<DIV class="noprint"><DIV class="glnav"> <a href="#gl-table-markup"><img alt="Next guideline: 5" src="images/next.jpg"></a> <a href="#gl-structure-presentation"><img alt="Previous guideline: 3" src="images/previous.jpg"></a> <a href="#toc-gl-abbreviated-and-foreign"><img alt="Go to contents" src="images/contents.jpg"></a></DIV></DIV>
+
+<h4 class="subhead"><a name="q24"> Use markup that facilitates pronunciation or interpretation of
+abbreviated or foreign text.</a></H4>
+
+<p>When content developers mark up natural language changes in a
+document, speech synthesizers and braille devices can automatically
+switch to the new language, making the document more accessible
+to multilingual users. 
+Content developers should identify the predominant <a
+href="#natural-language" title="Definition of natural language"><span
+class="dfn-instance">natural language</span></a> of a document's
+content (through markup or 
+<abbr title="Hypertext Transfer Protocol">HTTP</abbr> headers).  Content developers should
+also provide expansions of abbreviations and acronyms.  
+
+<P>In addition to helping assistive technologies, natural language
+markup allows search engines to find key words and identify documents
+in a desired language. Natural language markup also improves
+readability of the Web for all people, including those with learning
+disabilities, cognitive disabilities, or people who are deaf.  
+
+<P>When abbreviations and natural language changes are not identified,
+they may be indecipherable when machine-spoken or brailled.</P>
+
+<h4><a name="q25"> Checkpoints:</a></h4>
+
+
+<dl class="checkpoints">
+<dt class="checkpoint"><span class="checkpoint"><a name="tech-identify-changes">4.1</a></span>  Clearly identify changes in the natural language of a document's text  and any <a href="wai-pageauth.html#text-equivalent" title="Definition of text equivalent"><span class="dfn-instance"> text equivalents</span></a> (e.g., captions). <span class="priority1">[Priority&nbsp;1]</span>
+</dt>
+<dd class="checkpoint">For example, in HTML 
+use the "lang" attribute. In <abbr title="Extensible
+Markup Language">XML</abbr>, use "xml:lang". 
+</dd>
+
+<dd><a title="Clearly identify changes in the natural language of a document's text" href="http://www.w3.org/TR/WAI-WEBCONTENT-TECHS/#tech-identify-changes">Techniques for checkpoint 4.1</a></dd>
+<dt class="checkpoint"><span class="checkpoint"><a name="tech-expand-abbr">4.2</a></span>  Specify the expansion of each abbreviation or acronym in a document where it first occurs.  <span class="priority3">[Priority&nbsp;3]</span>
+</dt>
+<dd class="checkpoint">For example, in HTML, 
+use the "title" attribute of the ABBR and ACRONYM elements.
+Providing the expansion in the main body of the document
+also helps document usability.
+</dd>
+
+<dd><a title="Specify the expansion of each abbreviation or acronym in a document where it first occurs." href="http://www.w3.org/TR/WAI-WEBCONTENT-TECHS/#tech-expand-abbr">Techniques for checkpoint 4.2</a></dd>
+<dt class="checkpoint"><span class="checkpoint"><a name="tech-identify-lang">4.3</a></span>  Identify the primary natural language of a document.  <span class="priority3">[Priority&nbsp;3]</span>
+</dt>
+<DD CLASS="CHECKPOINT">
+For example, in HTML set the "lang" attribute on the
+HTML element. In XML, use "xml:lang". 
+Server operators should configure servers to 
+take advantage of HTTP content negotiation mechanisms 
+(<a href="#ref-RFC2068">[RFC2068]</a>, section 14.13) so
+that clients can automatically retrieve
+documents of the preferred language.
+
+<dd><a title="Identify the primary natural language of a document." href="http://www.w3.org/TR/WAI-WEBCONTENT-TECHS/#tech-identify-lang">Techniques for checkpoint 4.3</a></dd>
+</dl>
+
+<H3 class="guideline">Guideline 5. <a name="gl-table-markup"> Create tables that transform gracefully.</a></H3>
+<DIV class="noprint"><DIV class="glnav"> <a href="#gl-new-technologies"><img alt="Next guideline: 6" src="images/next.jpg"></a> <a href="#gl-abbreviated-and-foreign"><img alt="Previous guideline: 4" src="images/previous.jpg"></a> <a href="#toc-gl-table-markup"><img alt="Go to contents" src="images/contents.jpg"></a></DIV></DIV>
+
+<h4 class="subhead"><a name="q27"> Ensure that tables have necessary markup to be 
+transformed by accessible browsers and other user agents.</a></H4>
+
+<P>Tables should be used to mark up truly 
+<a href="#tabular-information">
+<span class="dfn-instance">tabular information</span></a> ("data
+tables"). Content developers should avoid using them to lay out pages
+("layout tables").  Tables for any use also present special problems
+to users of <a href="#screen-reader" title="Definition of screen reader"><span class="dfn-instance">screen
+readers</span></a> (refer to <a href="#tech-linear-tables" class="noxref">checkpoint 10.3</a>).
+
+<p>Some <a href="#user-agent" title="Definition of user agent"> <span
+class="dfn-instance">user agents</span></a> allow users to navigate
+among table cells and access header and other table cell
+information. Unless marked-up properly, these tables
+will not provide user agents with the appropriate information.
+(<a href="#gl-structure-presentation" class="noxref">Refer also to guideline 3</a>.)
+
+<P>The following checkpoints will directly benefit people who access a
+table through auditory means (e.g., a screen reader or an 
+automobile-based personal computer) or who view only a
+portion of the page at a time (e.g., users with blindness or low
+vision using speech output or a <a href="#braille-display" title="Definition of braille display"><span
+class="dfn-instance">braille display,</span></a> or other users of
+devices with small displays, etc.).</P>
+
+<h4><a name="q28"> Checkpoints:</a></h4>
+
+
+<dl class="checkpoints">
+<dt class="checkpoint"><span class="checkpoint"><a name="tech-table-headers">5.1</a></span> For data tables,  identify row and column headers.  <span class="priority1">[Priority&nbsp;1]</span>
+</dt>
+<dd class="checkpoint">For example, in HTML, use TD to
+identify data cells and TH to identify headers.</dd>
+
+<dd><a title="identify row and column headers." href="http://www.w3.org/TR/WAI-WEBCONTENT-TECHS/#tech-table-headers">Techniques for checkpoint 5.1</a></dd>
+<dt class="checkpoint"><span class="checkpoint"><a name="tech-table-structure">5.2</a></span> For data tables that have two or more logical levels of row or column headers,  use markup to associate data cells and header cells.  <span class="priority1">[Priority&nbsp;1]</span>
+</dt> 
+<dd class="checkpoint">For example, in HTML, use THEAD, TFOOT, and TBODY to group
+rows, COL and COLGROUP to group columns, and
+the "axis", "scope", and "headers" attributes, to describe
+more complex relationships among data.</dd>
+
+<dd><a title="use markup to associate data cells and header cells." href="http://www.w3.org/TR/WAI-WEBCONTENT-TECHS/#tech-table-structure">Techniques for checkpoint 5.2</a></dd>
+<dt class="checkpoint"><span class="checkpoint"><a name="tech-avoid-table-for-layout">5.3</a></span>  Do not use tables for layout unless the table makes sense when linearized.  Otherwise, if the table does not make sense, provide an alternative equivalent (which may be a <a href="wai-pageauth.html#linearized-table" title="Definition of linearized table"> <span class="dfn-instance">linearized version</span></a>). <span class="priority2">[Priority&nbsp;2]</span>
+</dt>
+<dd class="checkpoint">
+<strong>Note.</strong> <a
+href="#until-user-agents" title="Definition of until user agents">
+<span class="dfn-instance">Once user agents</span></a>
+support style sheet positioning,
+tables should not be used for layout. <a href="#tech-style-sheets" class="noxref">Refer also to checkpoint 3.3</a>.
+</dd>
+
+<dd><a title="Do not use tables for layout unless the table makes sense when linearized." href="http://www.w3.org/TR/WAI-WEBCONTENT-TECHS/#tech-avoid-table-for-layout">Techniques for checkpoint 5.3</a></dd>
+<dt class="checkpoint"><span class="checkpoint"><a name="tech-table-layout">5.4</a></span> If a table is used for layout,  do not use any structural markup for the purpose of visual formatting.  <span class="priority2">[Priority&nbsp;2]</span>
+</dt> 
+<dd class="checkpoint">For example, in HTML do not use the TH element to
+cause the content of a (non-table header)
+cell to be displayed centered and in bold.</dd>
+
+<dd><a title="do not use any structural markup for the purpose of visual formatting." href="http://www.w3.org/TR/WAI-WEBCONTENT-TECHS/#tech-table-layout">Techniques for checkpoint 5.4</a></dd>
+<dt class="checkpoint"><span class="checkpoint"><a name="tech-table-summaries">5.5</a></span>  Provide summaries for tables.  <span class="priority3">[Priority&nbsp;3]</span>
+</dt> 
+<dd class="checkpoint">For example, in HTML, use the "summary" attribute 
+of the TABLE element.</dd>
+
+<dd><a title="Provide summaries for tables." href="http://www.w3.org/TR/WAI-WEBCONTENT-TECHS/#tech-table-summaries">Techniques for checkpoint 5.5</a></dd>
+<dt class="checkpoint"><span class="checkpoint"><a name="tech-abbreviate-labels">5.6</a></span>  Provide abbreviations for header labels.  <span class="priority3">[Priority&nbsp;3]</span>
+</dt> 
+<dd class="checkpoint">For example, in HTML, use the "abbr" attribute on the TH
+element.</dd>
+
+<dd><a title="Provide abbreviations for header labels." href="http://www.w3.org/TR/WAI-WEBCONTENT-TECHS/#tech-abbreviate-labels">Techniques for checkpoint 5.6</a></dd>
+</dl>
+
+<P><a href="#tech-linear-tables" class="noxref">Refer also to checkpoint 10.3</a>.
+
+<H3 class="guideline">Guideline 6. <a name="gl-new-technologies"> Ensure that pages featuring
+new technologies transform gracefully.</a></H3>
+<DIV class="noprint"><DIV class="glnav"> <a href="#gl-movement"><img alt="Next guideline: 7" src="images/next.jpg"></a> <a href="#gl-table-markup"><img alt="Previous guideline: 5" src="images/previous.jpg"></a> <a href="#toc-gl-new-technologies"><img alt="Go to contents" src="images/contents.jpg"></a></DIV></DIV>
+
+<h4 class="subhead"><a name="q30"> Ensure that pages are accessible even when newer technologies are
+not supported or are turned off.</a></h4>
+
+<P>Although content developers 
+are encouraged to use new technologies that
+solve problems raised by existing technologies, they should know how
+to make their pages still work with older browsers
+and people who choose to turn off features.
+
+<h4><a name="q31"> Checkpoints:</a></h4>
+
+<dl class="checkpoints">
+<dt class="checkpoint"><span class="checkpoint"><a name="tech-order-style-sheets">6.1</a></span>  Organize documents so they may be read without style sheets.  For example, when an HTML document is rendered without associated style sheets, it must still be possible to read the document. <span class="priority1">[Priority&nbsp;1]</span>
+</dt>
+<dd class="checkpoint">
+When content is organized logically, it will be
+rendered in a meaningful order when style sheets
+are turned off or not supported.</dd>
+
+<dd><a title="Organize documents so they may be read without style sheets." href="http://www.w3.org/TR/WAI-WEBCONTENT-TECHS/#tech-order-style-sheets">Techniques for checkpoint 6.1</a></dd>
+<dt class="checkpoint"><span class="checkpoint"><a name="tech-dynamic-source">6.2</a></span>  Ensure that equivalents for dynamic content are updated  when the dynamic content changes. <span class="priority1">[Priority&nbsp;1]</span>
+</dt>
+
+<dd><a title="Ensure that equivalents for dynamic content are updated" href="http://www.w3.org/TR/WAI-WEBCONTENT-TECHS/#tech-dynamic-source">Techniques for checkpoint 6.2</a></dd>
+<dt class="checkpoint"><span class="checkpoint"><a name="tech-scripts">6.3</a></span>  Ensure that pages are usable when scripts, applets, or other programmatic objects are turned off or not supported.  If this is not possible, provide equivalent information on an alternative accessible page. <span class="priority1">[Priority&nbsp;1]</span>
+</dt>
+<dd class="checkpoint">
+For example, ensure that links that trigger scripts work
+when scripts are turned off or not supported (e.g.,
+do not use "javascript:" as the link target).
+If it is not possible to make the
+page usable without scripts, provide a text equivalent with the
+NOSCRIPT element, or use a server-side script instead of a client-side
+script, or provide an alternative accessible page as per
+<a href="#tech-alt-pages" class="noxref">checkpoint 11.4</a>. <a href="#gl-provide-equivalents" class="noxref">Refer also to guideline 1</a>.
+<!-- Add to techniques
+An example of an
+alternative mechanism for an applet simulation is a video recording of
+someone interacting with the applet simulation. -Ian -->
+</dd>
+
+<dd><a title="Ensure that pages are usable when scripts, applets, or other programmatic objects are turned off or not supported." href="http://www.w3.org/TR/WAI-WEBCONTENT-TECHS/#tech-scripts">Techniques for checkpoint 6.3</a></dd>
+<dt class="checkpoint"><span class="checkpoint"><a name="tech-keyboard-operable-scripts">6.4</a></span> For scripts and applets,  ensure that event handlers are input device-independent.   <span class="priority2">[Priority&nbsp;2]</span>
+</dt>
+<dd class="checkpoint">
+Refer to the definition of <a href="#device-independent">
+device independence</a>.</dd>
+
+<dd><a title="ensure that event handlers are input device-independent." href="http://www.w3.org/TR/WAI-WEBCONTENT-TECHS/#tech-keyboard-operable-scripts">Techniques for checkpoint 6.4</a></dd>
+<dt class="checkpoint"><span class="checkpoint"><a name="tech-fallback-page">6.5</a></span>  Ensure that dynamic content is accessible  or provide an alternative presentation or page. <span class="priority2">[Priority&nbsp;2]</span>
+</dt>
+<dd class="checkpoint">For example, in HTML, use
+NOFRAMES at the end of each frameset. For some applications,
+server-side scripts may be more accessible than
+client-side scripts.</dd>
+
+<dd><a title="Ensure that dynamic content is accessible" href="http://www.w3.org/TR/WAI-WEBCONTENT-TECHS/#tech-fallback-page">Techniques for checkpoint 6.5</a></dd>
+</dl>
+
+<p><a href="#tech-alt-pages" class="noxref">Refer also to checkpoint 11.4</a>.
+
+<H3 class="guideline">Guideline 7. <a name="gl-movement"> Ensure user control of time-sensitive content changes.</a></H3>
+<DIV class="noprint"><DIV class="glnav"> <a href="#gl-own-interface"><img alt="Next guideline: 8" src="images/next.jpg"></a> <a href="#gl-new-technologies"><img alt="Previous guideline: 6" src="images/previous.jpg"></a> <a href="#toc-gl-movement"><img alt="Go to contents" src="images/contents.jpg"></a></DIV></DIV>
+
+<h4 class="subhead"><a name="q33"> Ensure that moving, blinking, scrolling, or auto-updating objects
+or pages may be paused or stopped.</a></h4>
+
+<p>Some people with  cognitive  or
+visual disabilities are unable to read moving text
+quickly enough or at all. Movement can also cause such a distraction
+that the rest of the page becomes unreadable for people with
+cognitive disabilities. <a href="#screen-reader" title="Definition of screen reader"><span class="dfn-instance">Screen
+readers</span></a> are unable to read moving text. People with
+physical disabilities might not be able to move
+quickly or accurately enough to interact with moving objects. </p>
+
+<P><strong>Note.</strong> All of the following checkpoints involve
+some content developer responsibility <a
+href="#until-user-agents" title="Definition of until user agents"><span class="dfn-instance">until user
+agents</span></a> provide adequate feature control mechanisms.</P>
+
+<h4><a name="q34"> Checkpoints:</a></h4>
+
+<dl class="checkpoints">
+<dt class="checkpoint"><span class="checkpoint"><a name="tech-avoid-flicker">7.1</a></span> <a href="wai-pageauth.html#until-user-agents" title="Definition of until user agents"><span class="dfn-instance">Until user agents</span></a> allow users to control flickering,  avoid causing the screen to flicker.  <span class="priority1">[Priority&nbsp;1]</span>
+</dt>
+<DD><strong>Note.</strong> People
+with photosensitive epilepsy can have seizures triggered by
+flickering or flashing in the 4 to 59 flashes per second (Hertz) range
+with a peak sensitivity at 20 flashes per second as well as quick
+changes from dark to light (like strobe lights).
+</dd>
+
+<dd><a title="avoid causing the screen to flicker." href="http://www.w3.org/TR/WAI-WEBCONTENT-TECHS/#tech-avoid-flicker">Techniques for checkpoint 7.1</a></dd>
+<dt class="checkpoint"><span class="checkpoint"><a name="tech-avoid-blinking">7.2</a></span> <a href="wai-pageauth.html#until-user-agents" title="Definition of until user agents"><span class="dfn-instance">Until user agents</span></a> allow users to control blinking,  avoid causing content to blink  (i.e., change presentation at a regular rate, such as turning on and off).  <span class="priority2">[Priority&nbsp;2]</span>
+</dt>
+
+<dd><a title="avoid causing content to blink" href="http://www.w3.org/TR/WAI-WEBCONTENT-TECHS/#tech-avoid-blinking">Techniques for checkpoint 7.2</a></dd>
+<dt class="checkpoint"><span class="checkpoint"><a name="tech-avoid-movement">7.3</a></span> <a href="wai-pageauth.html#until-user-agents" title="Definition of until user agents"><span class="dfn-instance">Until user agents</span></a> allow users to freeze moving content,  avoid movement in pages.  <span class="priority2">[Priority&nbsp;2]</span>
+</dt>
+<dd class="checkpoint">When a page includes moving content,
+provide a mechanism within a script
+or applet to allow users to  freeze motion or updates.
+Using style sheets with scripting to create
+movement allows users to turn off 
+or override the effect more easily.
+<a href="#gl-own-interface" class="noxref">Refer also to guideline 8</a>.</dd>
+
+<dd><a title="avoid movement in pages." href="http://www.w3.org/TR/WAI-WEBCONTENT-TECHS/#tech-avoid-movement">Techniques for checkpoint 7.3</a></dd>
+<dt class="checkpoint"><span class="checkpoint"><a name="tech-no-periodic-refresh">7.4</a></span> <a href="wai-pageauth.html#until-user-agents" title="Definition of until user agents"><span class="dfn-instance">Until user agents</span></a> provide the ability to stop the refresh,  do not create periodically auto-refreshing pages.  <span class="priority2">[Priority&nbsp;2]</span>
+</dt>
+<dd class="checkpoint">For example, in HTML, don't
+cause pages to auto-refresh 
+with "HTTP-EQUIV=refresh" until user agents
+allow users to turn off the feature.
+</dd>
+
+<dd><a title="do not create periodically auto-refreshing pages." href="http://www.w3.org/TR/WAI-WEBCONTENT-TECHS/#tech-no-periodic-refresh">Techniques for checkpoint 7.4</a></dd>
+<dt class="checkpoint"><span class="checkpoint"><a name="tech-no-auto-forward">7.5</a></span> <a href="wai-pageauth.html#until-user-agents" title="Definition of until user agents"><span class="dfn-instance">Until user agents</span></a> provide the ability to stop auto-redirect,  do not use markup to redirect pages automatically.  Instead, configure the server to perform redirects.  <span class="priority2">[Priority&nbsp;2]</span>
+</dt>
+
+<dd><a title="do not use markup to redirect pages automatically." href="http://www.w3.org/TR/WAI-WEBCONTENT-TECHS/#tech-no-auto-forward">Techniques for checkpoint 7.5</a></dd>
+</dl>
+
+<p><strong>Note.</strong> The BLINK and MARQUEE elements are not
+defined in any W3C HTML specification and should not be
+used. <a href="#gl-use-w3c" class="noxref">Refer also to guideline 11</a>.</p>
+
+<H3 class="guideline">Guideline 8. <a name="gl-own-interface"> Ensure direct accessibility of embedded user
+interfaces.</a></H3>
+<DIV class="noprint"><DIV class="glnav"> <a href="#gl-device-independence"><img alt="Next guideline: 9" src="images/next.jpg"></a> <a href="#gl-movement"><img alt="Previous guideline: 7" src="images/previous.jpg"></a> <a href="#toc-gl-own-interface"><img alt="Go to contents" src="images/contents.jpg"></a></DIV></DIV>
+
+<h4 class="subhead"><a name="q36"> Ensure that the user interface follows principles 
+of accessible design: device-independent access to
+functionality, keyboard operability, self-voicing, etc.</a></H4>
+
+<P>When an embedded object has its "own interface", the interface --
+like the interface to the browser itself -- must be accessible. If the
+interface of the embedded object cannot be made accessible, an
+alternative accessible solution must be provided.</P>
+
+<P><strong>Note.</strong> For information about accessible interfaces,
+please consult the User Agent Accessibility Guidelines (<a
+href="#ref-WAI-USERAGENT">[WAI-USERAGENT]</a>) and the Authoring Tool
+Accessibility Guidelines (<a
+href="#ref-WAI-USERAGENT">[WAI-AUTOOL]</a>).
+
+<h4><a name="q37"> Checkpoint:</a></h4>
+
+
+<dl class="checkpoints">
+<dt class="checkpoint"><span class="checkpoint"><a name="tech-directly-accessible">8.1</a></span>  Make programmatic elements  such as scripts and applets directly accessible or compatible with assistive technologies [<span class="priority1">Priority&nbsp;1</span> if functionality is <a href="wai-pageauth.html#important" title="Definition of important"><span class="dfn-instance">important</span></a> and not presented elsewhere, otherwise Priority&nbsp;2.]
+</dt>
+<dd class="checkpoint"><a href="#gl-new-technologies" class="noxref">Refer also to guideline 6</a>.</dd>
+
+<dd><a title="Make programmatic elements" href="http://www.w3.org/TR/WAI-WEBCONTENT-TECHS/#tech-directly-accessible">Techniques for checkpoint 8.1</a></dd>
+</dl>
+
+<H3 class="guideline">Guideline 9. <a name="gl-device-independence"> Design for device-independence.</a></H3>
+<DIV class="noprint"><DIV class="glnav"> <a href="#gl-interim-accessibility"><img alt="Next guideline: 10" src="images/next.jpg"></a> <a href="#gl-own-interface"><img alt="Previous guideline: 8" src="images/previous.jpg"></a> <a href="#toc-gl-device-independence"><img alt="Go to contents" src="images/contents.jpg"></a></DIV></DIV>
+
+<h4 class="subhead"><a name="q39"> 
+Use features that enable activation of page elements via a
+variety of input devices.</a></h4>
+
+<p><a href="#device-independent">Device-independent</a> access
+means that the user may interact with the user agent or document
+with a preferred input (or output) device -- mouse, keyboard, voice,
+head wand, or other. If, for example, a form
+control can only be activated with a mouse or other pointing device,
+someone who is using the page without sight, with voice input, or with
+a keyboard or who is using some other non-pointing 
+input device will not be able to use the form.
+
+<P><strong>Note.</strong> Providing text equivalents for image maps or
+images used as links makes it possible for users to interact with them
+without a pointing device. <a href="#gl-provide-equivalents" class="noxref">Refer also to guideline 1</a>. 
+
+<P>Generally, pages that allow keyboard interaction are
+also accessible through speech input or a command line interface.
+
+<h4><a name="q40"> Checkpoints:</a></h4>
+
+
+<dl class="checkpoints">
+<dt class="checkpoint"><span class="checkpoint"><a name="tech-client-side-maps">9.1</a></span>  Provide client-side image maps instead of server-side image maps  except where the regions cannot be defined with an available geometric shape. <span class="priority1">[Priority&nbsp;1]</span>
+</dt>
+<DD class="checkpoint">
+Refer also to <a href="#tech-text-equivalent" class="noxref">checkpoint 1.1</a>, <a href="#tech-redundant-server-links" class="noxref">checkpoint 1.2</a>,
+and <a href="#tech-redundant-client-links" class="noxref">checkpoint 1.5</a>.
+</dd>
+
+<dd><a title="Provide client-side image maps instead of server-side image maps" href="http://www.w3.org/TR/WAI-WEBCONTENT-TECHS/#tech-client-side-maps">Techniques for checkpoint 9.1</a></dd>
+<dt class="checkpoint"><span class="checkpoint"><a name="tech-keyboard-operable">9.2</a></span>  Ensure that any element that has its own interface can be operated in a device-independent manner.  <span class="priority2">[Priority&nbsp;2]</span>
+</dt>
+<dd class="checkpoint">
+Refer to the definition of <a href="#device-independent">
+device independence</a>.</dd>
+<dd class="checkpoint"><a href="#gl-own-interface" class="noxref">Refer also to guideline 8</a>.</dd>
+
+<dd><a title="Ensure that any element that has its own interface can be operated in a device-independent manner." href="http://www.w3.org/TR/WAI-WEBCONTENT-TECHS/#tech-keyboard-operable">Techniques for checkpoint 9.2</a></dd>
+<dt class="checkpoint"><span class="checkpoint"><a name="tech-device-independent-events">9.3</a></span> For scripts,  specify logical event handlers rather than device-dependent event handlers.  <span class="priority2">[Priority&nbsp;2]</span>
+</dt>
+
+<dd><a title="specify logical event handlers rather than device-dependent event handlers." href="http://www.w3.org/TR/WAI-WEBCONTENT-TECHS/#tech-device-independent-events">Techniques for checkpoint 9.3</a></dd>
+<dt class="checkpoint"><span class="checkpoint"><a name="tech-tab-order">9.4</a></span>  Create a logical tab order  through links, form controls, and objects. <span class="priority3">[Priority&nbsp;3]</span>
+</dt>
+<dd class="checkpoint">For example, in HTML, specify tab order via the
+"tabindex" attribute or ensure a logical page design.</dd>
+
+<dd><a title="Create a logical tab order" href="http://www.w3.org/TR/WAI-WEBCONTENT-TECHS/#tech-tab-order">Techniques for checkpoint 9.4</a></dd>
+<dt class="checkpoint"><span class="checkpoint"><a name="tech-keyboard-shortcuts">9.5</a></span>  Provide keyboard shortcuts to important links  (including those in <a href="wai-pageauth.html#image-map" title="Definition of client-side image map"><span class="dfn-instance">client-side image maps</span></a>), form controls, and groups of form controls. <span class="priority3">[Priority&nbsp;3]</span>
+</dt>
+<dd class="checkpoint">For example, in HTML, specify shortcuts
+via the "accesskey" attribute.</dd>
+
+<dd><a title="Provide keyboard shortcuts to important links" href="http://www.w3.org/TR/WAI-WEBCONTENT-TECHS/#tech-keyboard-shortcuts">Techniques for checkpoint 9.5</a></dd>
+</dl>
+
+<H3 class="guideline">Guideline 10. <a name="gl-interim-accessibility"> Use interim solutions.</a></H3>
+<DIV class="noprint"><DIV class="glnav"> <a href="#gl-use-w3c"><img alt="Next guideline: 11" src="images/next.jpg"></a> <a href="#gl-device-independence"><img alt="Previous guideline: 9" src="images/previous.jpg"></a> <a href="#toc-gl-interim-accessibility"><img alt="Go to contents" src="images/contents.jpg"></a></DIV></DIV>
+
+<h4 class="subhead"><a name="q42"> Use interim accessibility solutions
+so that assistive technologies and older browsers will operate
+correctly.</a></h4>
+
+<p>For example, older browsers do not allow users to
+navigate to empty edit boxes. Older screen readers read lists of
+consecutive links as one link. These active elements are therefore
+difficult or impossible to access.  Also, changing the current window
+or popping up new windows can be very disorienting to users
+who cannot see that this has happened.
+
+<P><strong>Note.</strong> The following checkpoints apply <a
+href="#until-user-agents" title="Definition of until user
+agents"><span class="dfn-instance">until user agents</span></a>
+(including <a
+href="#assistive-tech" title="Definition of assistive
+technology"><span class="dfn-instance">assistive
+technologies</span></a>) address these issues. These checkpoints are
+classified as "interim", meaning that the Web Content Guidelines
+Working Group considers them to be valid and necessary to Web
+accessibility <em>as of the publication of this
+document</em>. However, the Working Group does not expect these
+checkpoints to be necessary in the future, once Web technologies have
+incorporated anticipated features or capabilities.</P>
+
+
+<h4><a name="q43"> Checkpoints:</a></h4>
+
+
+<dl class="checkpoints">
+<dt class="checkpoint"><span class="checkpoint"><a name="tech-avoid-pop-ups">10.1</a></span> <a href="wai-pageauth.html#until-user-agents" title="Definition of until user agents"><span class="dfn-instance">Until user agents</span></a> allow users to turn off spawned windows,  do not cause pop-ups or other windows  to appear and do not change the current window without informing the user. <span class="priority2">[Priority&nbsp;2]</span>
+</dt>
+<dd class="checkpoint">For example, in HTML, avoid using a frame whose target
+is a new window.</dd>
+
+<dd><a title="do not cause pop-ups or other windows" href="http://www.w3.org/TR/WAI-WEBCONTENT-TECHS/#tech-avoid-pop-ups">Techniques for checkpoint 10.1</a></dd>
+<dt class="checkpoint"><span class="checkpoint"><a name="tech-unassociated-labels">10.2</a></span> <a href="wai-pageauth.html#until-user-agents" title="Definition of until user agents"><span class="dfn-instance">Until user agents</span></a> support explicit associations between labels and form controls, for all form controls with implicitly associated labels,  ensure that the label is properly positioned.  <span class="priority2">[Priority&nbsp;2]</span>
+</dt>
+<dd class="checkpoint">The label must immediately precede 
+its control on the same line (allowing more than one
+control/label per line) or be in the line preceding the
+control (with only one label and one control per line).
+<a href="#tech-associate-labels" class="noxref">Refer also to checkpoint 12.4</a>.
+</dd>
+
+<dd><a title="ensure that the label is properly positioned." href="http://www.w3.org/TR/WAI-WEBCONTENT-TECHS/#tech-unassociated-labels">Techniques for checkpoint 10.2</a></dd>
+<dt class="checkpoint"><span class="checkpoint"><a name="tech-linear-tables">10.3</a></span> <a href="wai-pageauth.html#until-user-agents" title="Definition of until user agents"><span class="dfn-instance">Until user agents</span></a> (including assistive technologies) render side-by-side text correctly,  provide a linear text alternative  (on the current page or some other) for <em>all</em> tables that lay out text in parallel, word-wrapped columns. <span class="priority3">[Priority&nbsp;3]</span>
+</dt>
+<dd class="checkpoint"><strong>Note.</strong> 
+Please consult the definition of <a href="#linearized-table">
+<span class="dfn-instance">linearized table</span></a>.
+This checkpoint benefits people with 
+<a href="#user-agent" title="Definition of user agent"><span class="dfn-instance">user agents</span></a>
+(such as some <a href="#screen-reader" title="Definition of screen reader"><span
+class="dfn-instance">screen readers</span></a>) 
+that are unable to handle blocks of text presented side-by-side;
+the checkpoint should not discourage 
+content developers from using tables
+to represent <a href="#tabular-information">
+<span class="dfn-instance">tabular information</span></a>.
+</dd>
+
+<dd><a title="provide a linear text alternative" href="http://www.w3.org/TR/WAI-WEBCONTENT-TECHS/#tech-linear-tables">Techniques for checkpoint 10.3</a></dd>
+<dt class="checkpoint"><span class="checkpoint"><a name="tech-place-holders">10.4</a></span> <a href="wai-pageauth.html#until-user-agents" title="Definition of until user agents"><span class="dfn-instance">Until user agents</span></a> handle empty controls correctly,  include default, place-holding characters  in edit boxes and text areas. <span class="priority3">[Priority&nbsp;3]</span>
+</dt>
+<dd class="checkpoint">For example, in HTML, do this for TEXTAREA and
+INPUT.</dd>
+
+<dd><a title="include default, place-holding characters" href="http://www.w3.org/TR/WAI-WEBCONTENT-TECHS/#tech-place-holders">Techniques for checkpoint 10.4</a></dd>
+<dt class="checkpoint"><span class="checkpoint"><a name="tech-divide-links">10.5</a></span> <a href="wai-pageauth.html#until-user-agents" title="Definition of until user agents"><span class="dfn-instance">Until user agents</span></a> (including assistive technologies) render adjacent links distinctly,  include non-link, printable characters  (surrounded by spaces) between adjacent links. <span class="priority3">[Priority&nbsp;3]</span>
+</dt>
+
+<dd><a title="include non-link, printable characters" href="http://www.w3.org/TR/WAI-WEBCONTENT-TECHS/#tech-divide-links">Techniques for checkpoint 10.5</a></dd>
+</dl>
+
+<H3 class="guideline">Guideline 11. <a name="gl-use-w3c"> Use W3C technologies and guidelines.</a></H3>
+<DIV class="noprint"><DIV class="glnav"> <a href="#gl-complex-elements"><img alt="Next guideline: 12" src="images/next.jpg"></a> <a href="#gl-interim-accessibility"><img alt="Previous guideline: 10" src="images/previous.jpg"></a> <a href="#toc-gl-use-w3c"><img alt="Go to contents" src="images/contents.jpg"></a></DIV></DIV>
+
+
+<h4 class="subhead"><a name="q45"> Use W3C technologies (according to specification) and follow
+accessibility guidelines. Where it is not possible to use a W3C
+technology, or doing so results in material that does not transform
+gracefully, provide an alternative version of the content that is
+accessible.</a></h4>
+
+<P>The current guidelines recommend W3C technologies (e.g., HTML,
+CSS, etc.) for several reasons:</P>
+
+<UL>
+<LI>W3C technologies include "built-in" accessibility features.
+<LI>W3C specifications undergo early review to ensure that accessibility
+issues are considered during the design phase.
+<LI>W3C specifications are developed in an open, industry consensus process.
+</UL>
+
+<p>Many non-W3C formats (e.g., <abbr title="Portable Document Format">PDF</abbr>, Shockwave, etc.)  require viewing
+with either plug-ins or stand-alone applications.  Often, these
+formats cannot be viewed or navigated with standard 
+<a href="#user-agent" title="Definition of user agent"><span class="dfn-instance">user agents</span></a> (including <a
+href="#assistive-tech" title="Definition of assistive
+technology"><span class="dfn-instance">assistive
+technologies</span></a>).  Avoiding non-W3C and non-standard features
+(proprietary elements, attributes, properties, and extensions) will
+tend to make pages more accessible to more people using a wider
+variety of hardware and software.  When inaccessible
+technologies (proprietary or not)
+must be used, equivalent accessible pages must be provided.
+
+<P>Even when W3C technologies are used, they must be used in
+accordance with accessibility guidelines. When using new technologies,
+ensure that they transform gracefully (<a href="#gl-new-technologies" class="noxref">Refer also to guideline 6</a>.).
+
+
+<p><strong>Note.</strong> Converting documents (from PDF, PostScript,
+<abbr title="Rich Text Format">RTF</abbr>, etc.) to W3C markup languages (HTML, 
+<abbr title="Extensible Markup Language">XML</abbr>) does not always create
+an accessible document.  Therefore, validate each page for
+accessibility and usability 
+after the conversion process (refer to 
+the <a href="#validation">section on validation</a>). 
+If a page does not readily
+convert, either revise the page until its original
+representation converts appropriately or provide an HTML or plain text
+version.</p>
+
+<h4><a name="q46"> Checkpoints:</a></h4>
+
+
+
+<dl class="checkpoints">
+<dt class="checkpoint"><span class="checkpoint"><a name="tech-latest-w3c-specs">11.1</a></span>  Use W3C technologies when they are available and appropriate for a task and use the latest versions when supported.  <span class="priority2">[Priority&nbsp;2]</span>
+</dt>
+<DD CLASS="CHECKPOINT">Refer to the <a href="#References">list of references</a>
+for information about where to find the latest W3C specifications
+and <a href="#ref-WAI-UA-SUPPORT">[WAI-UA-SUPPORT]</a>
+for information about user agent support for W3C technologies.
+</DD>
+
+<dd><a title="Use W3C technologies when they are available and appropriate for a task and use the latest versions when supported." href="http://www.w3.org/TR/WAI-WEBCONTENT-TECHS/#tech-latest-w3c-specs">Techniques for checkpoint 11.1</a></dd>
+<dt class="checkpoint"><span class="checkpoint"><a name="tech-avoid-deprecated">11.2</a></span>  Avoid deprecated features of W3C technologies.  <span class="priority2">[Priority&nbsp;2]</span>
+</dt>
+<DD CLASS="CHECKPOINT">For example, in HTML, don't use the 
+<a href="#deprecated" title="Definition of deprecated"><span class="dfn-instance">deprecated</span></a>
+FONT element; use style sheets instead
+(e.g., the 'font' property in CSS).</dd>
+
+<dd><a title="Avoid deprecated features of W3C technologies." href="http://www.w3.org/TR/WAI-WEBCONTENT-TECHS/#tech-avoid-deprecated">Techniques for checkpoint 11.2</a></dd>
+<dt class="checkpoint"><span class="checkpoint"><a name="tech-content-preferences">11.3</a></span> Provide information so that users may  receive documents according to their preferences  (e.g., language, content type, etc.) <span class="priority3">[Priority&nbsp;3]</span>
+</dt>
+<DD class="checkpoint"><strong>Note.</strong>
+Use content negotiation where possible.</dd>
+
+<dd><a title="receive documents according to their preferences" href="http://www.w3.org/TR/WAI-WEBCONTENT-TECHS/#tech-content-preferences">Techniques for checkpoint 11.3</a></dd>
+<dt class="checkpoint"><span class="checkpoint"><a name="tech-alt-pages">11.4</a></span> If, <a href="wai-pageauth.html#alt-page-note">after best efforts</a>, you cannot create an <a href="wai-pageauth.html#accessible"><span class="dfn-instance">accessible</span></a> page,  provide a link to an alternative page  that uses W3C technologies, is accessible, has <a href="wai-pageauth.html#equivalent"><span class="dfn-instance">equivalent</span></a> information (or functionality), and is updated as often as the inaccessible (original) page. <span class="priority1">[Priority&nbsp;1]</span>
+</dt>
+
+<dd><a title="provide a link to an alternative page" href="http://www.w3.org/TR/WAI-WEBCONTENT-TECHS/#tech-alt-pages">Techniques for checkpoint 11.4</a></dd>
+</dl>
+
+<P><a name="alt-page-note"><strong>Note.</strong></a> 
+Content developers should only resort to alternative
+pages when other solutions fail because alternative pages
+are generally updated less often than "primary" pages. An out-of-date
+page may be as frustrating as one that is inaccessible since, in both
+cases, the information presented on the original page is
+unavailable.  Automatically generating alternative pages may lead to
+more frequent updates, but content developers 
+must still be careful to ensure
+that generated pages always make sense, and that users are able to
+navigate a site by following links on primary pages, alternative
+pages, or both. Before resorting to an alternative page, 
+reconsider the design of the original page; making it
+accessible is likely to improve it for all users.
+
+<H3 class="guideline">Guideline 12. <a name="gl-complex-elements"> Provide context and orientation information.</a></H3>
+<DIV class="noprint"><DIV class="glnav"> <a href="#gl-facilitate-navigation"><img alt="Next guideline: 13" src="images/next.jpg"></a> <a href="#gl-use-w3c"><img alt="Previous guideline: 11" src="images/previous.jpg"></a> <a href="#toc-gl-complex-elements"><img alt="Go to contents" src="images/contents.jpg"></a></DIV></DIV>
+
+<h4 class="subhead"><a name="q48"> Provide context and orientation information to help users
+understand complex pages or elements.</a></H4>
+
+<P>Grouping elements and providing contextual information about the
+relationships between elements can be useful for all
+users.  Complex relationships between parts of a page may
+be difficult for people with cognitive disabilities
+and people with visual disabilities to interpret.
+
+<h4><a name="q49"> Checkpoints:</a></h4>
+
+
+<dl class="checkpoints">
+<dt class="checkpoint"><span class="checkpoint"><a name="tech-frame-titles">12.1</a></span>  Title each frame  to facilitate frame identification and navigation. <span class="priority1">[Priority&nbsp;1]</span>
+</dt>
+<dd class="checkpoint">For example, in HTML use the "title" attribute on FRAME
+elements.</dd>
+
+<dd><a title="Title each frame" href="http://www.w3.org/TR/WAI-WEBCONTENT-TECHS/#tech-frame-titles">Techniques for checkpoint 12.1</a></dd>
+<dt class="checkpoint"><span class="checkpoint"><a name="tech-frame-longdesc">12.2</a></span>  Describe the purpose of frames  and how frames relate to each other if it is not obvious by frame titles alone.  <span class="priority2">[Priority&nbsp;2]</span>
+</dt>
+<dd class="checkpoint">For example, in HTML, use "longdesc," or a
+<a href="#d-link" title="Definition of description link/d-link"><span class="dfn-instance">description link.</span></a></dd>
+
+<dd><a title="Describe the purpose of frames" href="http://www.w3.org/TR/WAI-WEBCONTENT-TECHS/#tech-frame-longdesc">Techniques for checkpoint 12.2</a></dd>
+<dt class="checkpoint"><span class="checkpoint"><a name="tech-group-information">12.3</a></span>  Divide large blocks of information into more manageable groups  where natural and appropriate. <span class="priority2">[Priority&nbsp;2]</span>
+</dt>
+<dd class="checkpoint">For example, in HTML, use OPTGROUP
+to group OPTION elements inside a SELECT; 
+group form controls with FIELDSET and LEGEND;
+use nested lists where appropriate;
+use headings to structure documents, etc.
+<a href="#gl-structure-presentation" class="noxref">Refer also to guideline 3</a>.</dd>
+
+<dd><a title="Divide large blocks of information into more manageable groups" href="http://www.w3.org/TR/WAI-WEBCONTENT-TECHS/#tech-group-information">Techniques for checkpoint 12.3</a></dd>
+<dt class="checkpoint"><span class="checkpoint"><a name="tech-associate-labels">12.4</a></span>  Associate labels explicitly with their controls.  <span class="priority2">[Priority&nbsp;2]</span>
+</dt>
+<dd class="checkpoint">For example, in HTML use LABEL and its "for" attribute.</dd>
+
+<dd><a title="Associate labels explicitly with their controls." href="http://www.w3.org/TR/WAI-WEBCONTENT-TECHS/#tech-associate-labels">Techniques for checkpoint 12.4</a></dd>
+</dl>
+
+<H3 class="guideline">Guideline 13. <a name="gl-facilitate-navigation"> Provide clear navigation mechanisms.</a></H3>
+<DIV class="noprint"><DIV class="glnav"> <a href="#gl-facilitate-comprehension"><img alt="Next guideline: 14" src="images/next.jpg"></a> <a href="#gl-complex-elements"><img alt="Previous guideline: 12" src="images/previous.jpg"></a> <a href="#toc-gl-facilitate-navigation"><img alt="Go to contents" src="images/contents.jpg"></a></DIV></DIV>
+
+<h4 class="subhead"><a name="q51"> Provide clear and consistent navigation mechanisms --
+orientation information, navigation bars, a site map, etc. -- to
+increase the likelihood that a person will find what they are looking
+for at a site.</a></H4>
+
+<P>Clear and consistent <a href="#nav-mechanism">
+<span class="dfn-instance">navigation
+mechanisms</span></a> are important to people with cognitive
+disabilities or blindness, and benefit all users.
+
+<h4><a name="q52"> Checkpoints:</a></h4>
+
+
+<dl class="checkpoints">
+<dt class="checkpoint"><span class="checkpoint"><a name="tech-meaningful-links">13.1</a></span>  Clearly identify the target of each link.  <span class="priority2">[Priority&nbsp;2]</span>
+</dt>
+<DD class="checkpoint"><a href="#link-text" title="Definition of link text"><span class="dfn-instance">Link
+text</span></a> should be meaningful enough
+to make sense when read out of context -- 
+either on its own or as part of a sequence of links.
+Link text should also be terse.
+<DD class="checkpoint">
+For example, in HTML, write "Information about
+version 4.3" instead of "click here". 
+In addition to clear link text, content developers may
+further clarify the target of a link
+with an informative link title
+(e.g., in HTML, the "title" attribute).
+</DD>
+
+<dd><a title="Clearly identify the target of each link." href="http://www.w3.org/TR/WAI-WEBCONTENT-TECHS/#tech-meaningful-links">Techniques for checkpoint 13.1</a></dd>
+<dt class="checkpoint"><span class="checkpoint"><a name="tech-use-metadata">13.2</a></span>  Provide metadata to add semantic information  to pages and sites. <span class="priority2">[Priority&nbsp;2]</span>
+</dt>
+<dd class="checkpoint">For example, use 
+<abbr title="Resource Description Framework">RDF</abbr> 
+(<a href="#ref-RDF">[RDF]</a>)
+to indicate the document's author, 
+the type of content, etc.</dd>
+<DD class="checkpoint">
+<strong>Note.</strong> Some HTML <a href="#user-agent">
+<span class="dfn-instance">user agents</span></a>
+can build navigation tools from document relations described by
+the HTML LINK element and "rel" or "rev" attributes 
+(e.g., rel="next", rel="previous", rel="index", etc.).
+<a href="#tech-nav-bar" class="noxref">Refer also to checkpoint 13.5</a>.</dd>
+
+<dd><a title="Provide metadata to add semantic information" href="http://www.w3.org/TR/WAI-WEBCONTENT-TECHS/#tech-use-metadata">Techniques for checkpoint 13.2</a></dd>
+<dt class="checkpoint"><span class="checkpoint"><a name="tech-site-description">13.3</a></span>  Provide information about the general layout of a site  (e.g., a site map or table of contents). <span class="priority2">[Priority&nbsp;2]</span>
+</dt>
+<DD class="checkpoint">In describing site layout,
+highlight and explain available accessibility features.</DD>
+
+<dd><a title="Provide information about the general layout of a site" href="http://www.w3.org/TR/WAI-WEBCONTENT-TECHS/#tech-site-description">Techniques for checkpoint 13.3</a></dd>
+<dt class="checkpoint"><span class="checkpoint"><a name="tech-clear-nav-mechanism">13.4</a></span>  Use navigation mechanisms in a consistent manner.  <span class="priority2">[Priority&nbsp;2]</span>
+</dt>
+
+<dd><a title="Use navigation mechanisms in a consistent manner." href="http://www.w3.org/TR/WAI-WEBCONTENT-TECHS/#tech-clear-nav-mechanism">Techniques for checkpoint 13.4</a></dd>
+<dt class="checkpoint"><span class="checkpoint"><a name="tech-nav-bar">13.5</a></span>  Provide navigation bars  to highlight and give access to the navigation mechanism. <span class="priority3">[Priority&nbsp;3]</span>
+</dt>
+
+<dd><a title="Provide navigation bars" href="http://www.w3.org/TR/WAI-WEBCONTENT-TECHS/#tech-nav-bar">Techniques for checkpoint 13.5</a></dd>
+<dt class="checkpoint"><span class="checkpoint"><a name="tech-group-links">13.6</a></span>  Group related links,  identify the group (for user agents), and, <a href="wai-pageauth.html#until-user-agents" title="Definition of until user agents"><span class="dfn-instance">until user agents</span></a> do so, provide a way to bypass the group. <span class="priority3">[Priority&nbsp;3]</span>
+</dt>
+<dd class="checkpoint">
+</dd>
+
+<dd><a title="Group related links," href="http://www.w3.org/TR/WAI-WEBCONTENT-TECHS/#tech-group-links">Techniques for checkpoint 13.6</a></dd>
+<dt class="checkpoint"><span class="checkpoint"><a name="tech-searches">13.7</a></span> If search functions are provided,  enable different types of searches for different skill levels and preferences.  <span class="priority3">[Priority&nbsp;3]</span>
+</dt>
+
+<dd><a title="enable different types of searches for different skill levels and preferences." href="http://www.w3.org/TR/WAI-WEBCONTENT-TECHS/#tech-searches">Techniques for checkpoint 13.7</a></dd>
+<dt class="checkpoint"><span class="checkpoint"><a name="tech-front-loading">13.8</a></span>  Place distinguishing information at the beginning  of headings, paragraphs, lists, etc. <span class="priority3">[Priority&nbsp;3]</span>
+</dt>
+<DD><strong>Note.</strong>
+This is commonly referred to as "front-loading" and is
+especially helpful for people accessing information with serial
+devices such as speech synthesizers. 
+</DD>
+
+<dd><a title="Place distinguishing information at the beginning" href="http://www.w3.org/TR/WAI-WEBCONTENT-TECHS/#tech-front-loading">Techniques for checkpoint 13.8</a></dd>
+<dt class="checkpoint"><span class="checkpoint"><a name="tech-bundled-version">13.9</a></span>  Provide information about document collections  (i.e., documents comprising multiple pages.). <span class="priority3">[Priority&nbsp;3]</span>
+</dt>
+<dd class="checkpoint">For example, in HTML
+specify document collections with the LINK
+element and the "rel" and "rev" attributes. 
+Another way to create a collection is by building
+an archive (e.g., with zip, tar and gzip, stuffit, etc.)
+of the multiple pages.</dd>
+<dd class="checkpoint"><strong>Note.</strong>
+The performance improvement gained by offline 
+processing can make browsing much less
+expensive for people with disabilities who may
+be browsing slowly.
+</dd>
+
+<dd><a title="Provide information about document collections" href="http://www.w3.org/TR/WAI-WEBCONTENT-TECHS/#tech-bundled-version">Techniques for checkpoint 13.9</a></dd>
+<dt class="checkpoint"><span class="checkpoint"><a name="tech-skip-over-ascii">13.10</a></span>  Provide a means to skip over multi-line ASCII art.  <span class="priority3">[Priority&nbsp;3]</span>
+</dt>
+<DD class="checkpoint">
+Refer to <a href="#tech-text-equivalent" class="noxref">checkpoint 1.1</a> and <a href="#ascii-art">the example of ascii art
+in the glossary</a>.</dd>
+
+<dd><a title="Provide a means to skip over multi-line ASCII art." href="http://www.w3.org/TR/WAI-WEBCONTENT-TECHS/#tech-skip-over-ascii">Techniques for checkpoint 13.10</a></dd>
+</dl>
+
+<H3 class="guideline">Guideline 14. <a name="gl-facilitate-comprehension"> Ensure that documents
+are clear and simple.</a></H3>
+<DIV class="noprint"><DIV class="glnav"> <a href="#gl-provide-equivalents"><img alt="Next guideline: 1" src="images/next.jpg"></a> <a href="#gl-facilitate-navigation"><img alt="Previous guideline: 13" src="images/previous.jpg"></a> <a href="#toc-gl-facilitate-comprehension"><img alt="Go to contents" src="images/contents.jpg"></a></DIV></DIV>
+
+<h4 class="subhead"><a name="q54"> Ensure that documents are clear and simple so
+they may be more easily understood.</a></h4>
+
+<P>Consistent page layout, recognizable graphics, and easy to understand
+language benefit all users. In particular, they help
+people with cognitive disabilities or  who
+have difficulty reading. (However, ensure that images
+have text equivalents for people who are blind, have
+low vision, or for any user who cannot or has
+chosen not to view graphics. <a href="#gl-provide-equivalents" class="noxref">Refer also to guideline 1</a>.)
+
+<p>Using clear and simple language promotes effective
+communication. Access to written information can be difficult for
+people who have cognitive or learning disabilities. Using clear and
+simple language also benefits people whose first language differs from
+your own, including those people who communicate primarily in sign
+language.
+
+<h4><a name="q55"> Checkpoints:</a></h4>
+
+<dl class="checkpoints">
+<dt class="checkpoint"><span class="checkpoint"><a name="tech-simple-and-straightforward">14.1</a></span>  Use the clearest and simplest language  appropriate for a site's content. <span class="priority1">[Priority&nbsp;1]</span>
+</dt>
+
+<dd><a title="Use the clearest and simplest language" href="http://www.w3.org/TR/WAI-WEBCONTENT-TECHS/#tech-simple-and-straightforward">Techniques for checkpoint 14.1</a></dd>
+<dt class="checkpoint"><span class="checkpoint"><a name="tech-icons">14.2</a></span>  Supplement text with graphic or auditory presentations where they will facilitate comprehension  of the page.  <span class="priority3">[Priority&nbsp;3]</span>
+</dt>
+<DD><a href="#gl-provide-equivalents" class="noxref">Refer also to guideline 1</a>.</DD>
+
+<dd><a title="Supplement text with graphic or auditory presentations where they will facilitate comprehension" href="http://www.w3.org/TR/WAI-WEBCONTENT-TECHS/#tech-icons">Techniques for checkpoint 14.2</a></dd>
+<dt class="checkpoint"><span class="checkpoint"><a name="tech-consistent-style">14.3</a></span>  Create a style of presentation that is consistent across pages.  <span class="priority3">[Priority&nbsp;3]</span>
+</dt>
+
+<dd><a title="Create a style of presentation that is consistent across pages." href="http://www.w3.org/TR/WAI-WEBCONTENT-TECHS/#tech-consistent-style">Techniques for checkpoint 14.3</a></dd>
+</dl>
+
+<hr>
+<h2 class="nonb"> <a name="validation">Appendix A. -- Validation</a></h2>
+
+<P><strong>Validate accessibility with automatic tools and human
+review. Automated methods are generally rapid and convenient but cannot
+identify all accessibility issues. Human review can help ensure
+clarity of language and ease of navigation.</strong>
+
+<P>Begin using validation methods at the earliest stages of
+development.  Accessibility issues identified early are easier to
+correct and avoid.
+
+<P>Following are some important validation methods, discussed in more
+detail in the <a href="http://www.w3.org/TR/WAI-WEBCONTENT-TECHS#validation"> section
+on validation in the Techniques Document</a>.
+
+<ol>
+<li>Use an automated accessibility tool and browser validation tool.
+Please note that software tools do not address all accessibility
+issues, such as the meaningfulness of link text, the applicability of
+a <a href="#text-equivalent" title="Definition of text equivalent"><span
+class="dfn-instance">text equivalent</span></a>, etc.</li>
+
+<li>Validate syntax (e.g., HTML, XML, etc.).</li>
+
+<li>Validate style sheets (e.g., CSS).</li>
+
+<li>Use a text-only browser or emulator.</li>
+
+<li>Use multiple graphic browsers, with: 
+
+<ul>
+<li>sounds and graphics loaded,
+<li>graphics not loaded,
+<li>sounds not loaded,
+<li>no mouse,
+<li>frames, scripts, style sheets, and applets not loaded
+</ul>
+</li>
+
+<li>Use several browsers, old and new.</li>
+
+<li>Use a self-voicing
+browser, a screen reader, magnification software, a small display,
+etc.</li>
+
+<LI>Use spell and grammar checkers. A person reading a page with a
+speech synthesizer may not be able to decipher the synthesizer's best
+guess for a word with a spelling error. Eliminating grammar problems
+increases comprehension.</li>
+
+<li>Review the document for clarity and simplicity.
+Readability statistics, such as those generated by some word
+processors may be useful indicators of clarity and simplicity.  Better
+still, ask an experienced (human) editor to review written content for
+clarity. Editors can also improve the usability of documents by
+identifying potentially sensitive cultural issues
+that might arise due to language or icon usage.
+
+<LI>Invite people with disabilities to review documents.  Expert
+and novice users with disabilities will provide valuable feedback
+about accessibility or usability problems and their severity.
+
+</ol>
+
+<hr>
+<h2 class="nonb"> <a name="glossary">Appendix B. -- Glossary </a></h2>
+
+<!-- Others: text, derived equivalent, video equivalent
+HTML, RDF -->
+
+<dl>
+
+<dt class="glossary"><a name="accessible"><dfn><b>Accessible</b></dfn></a></dt>
+<DD CLASS="GLOSSARY">Content is accessible when it may
+be used by someone with a disability.</DD>
+
+<dt class="glossary"><a name="applet"><dfn><b>Applet</b></dfn></a></dt>
+
+<dd class="glossary">A program inserted into a Web page.</dd>
+
+
+<dt class="glossary"><a name="assistive-tech"><dfn><b>Assistive technology</b></dfn></a></dt>
+
+<dd class="glossary">
+Software or hardware that has been specifically designed to assist
+people with disabilities in carrying out daily activities.  Assistive
+technology includes wheelchairs, reading machines, devices for
+grasping, etc.  In the area of Web Accessibility, common
+software-based assistive technologies include screen readers, screen
+magnifiers, speech synthesizers, and voice input software that operate
+in conjunction with graphical desktop browsers (among other <a
+href="#user-agent"><span class="dfn-instance">user
+agents</span></a>). Hardware assistive technologies include
+alternative keyboards and pointing devices.
+</dd>
+
+<dt class="glossary"><a name="ascii-art"><dfn><b>ASCII art</b></dfn></a></dt>
+
+<dd class="glossary">ASCII art refers to text characters and symbols
+that are combined to create an image. For example <ABBR
+title="smiley"> ";-)"</ABBR> is the smiley emoticon. The following is
+an ascii figure showing the relationship between flash frequency and
+photoconvulsive response in patients with
+eyes open and closed [<a name="ascii-chart" href="#authoring-tool">skip
+over ascii figure</a> or 
+consult a <a rel="Alternate" href="images/ascii-chart-longdesc.html">description
+of chart</a>]:
+
+<pre> 
+  %   __ __ __ __ __ __ __ __ __ __ __ __ __ __   
+100 |             *                             |
+ 90 |                *  *                       |
+ 80 |          *           *                    |
+ 70 |             @           *                 |
+ 60 |          @                 *              |
+ 50 |       *        @              *           |
+ 40 |                   @              *        |
+ 30 |    *  @              @  @           *     |
+ 20 |                                           |
+ 10 |    @                       @  @  @  @     |
+      0  5 10 15 20 25 30 35 40 45 50 55 60 65 70
+      Flash frequency (Hertz)
+</pre>
+
+</dd>
+
+<dt class="glossary"><a name="authoring-tool"><dfn><b>Authoring tool</b></dfn></a></dt>
+
+<dd class="glossary"><abbr title="Hypertext Markup
+Language">HTML</abbr> editors, document conversion tools, tools that
+generate Web content from databases are all 
+authoring tools. Refer to the
+"Authoring Tool Accessibility Guidelines" (<a
+href="#ref-WAI-AUTOOLS">[WAI-AUTOOLS]</a>) for information about developing
+accessible tools.
+
+<dt class="glossary"><a name="backward-compatible"><dfn><b>Backward compatible</b></dfn></a></dt>
+
+<dd class="glossary">Design that continues to work with earlier versions
+of a language, program, etc.</dd>
+
+<dt class="glossary"><a name="braille"><dfn><b>Braille</b></dfn></a></dt>
+
+<dd class="glossary">Braille uses six raised dots in different patterns to represent
+letters and numbers to be read by people who are blind with their
+fingertips. The word "Accessible" in braille follows:</dd>
+<DD CLASS="GLOSSARY"><img src="images/access.gif" width="300" height="75"
+alt="Accessible"> 
+
+<dd class="glossary">A <a name="braille-display"><dfn><b>braille display</b></dfn>,</a>
+commonly referred to as a "dynamic braille display," raises or lowers
+dot patterns on command from an electronic device, usually a
+computer. The result is a line of braille that can change from moment
+to moment. Current dynamic braille displays range in size from one cell (six
+or eight dots) to an eighty-cell line, most having
+between twelve and twenty cells per line.</dd>
+
+<dt class="glossary"><a name="content-developer"><dfn><b>Content
+developer</b></dfn></a></dt>
+
+<dd class="glossary">Someone who authors Web pages or designs Web sites.</dd>
+
+<dt class="glossary"><a name="deprecated"><dfn><b>Deprecated
+</b></dfn></a></dt>
+
+<DD class="glossary">
+A deprecated element or attribute is one that has been outdated by
+newer constructs. Deprecated elements may become 
+obsolete in future versions of HTML. The
+<a href="http://www.w3.org/TR/WAI-WEBCONTENT-TECHS#html-index">
+index of HTML elements and attributes in
+the Techniques Document</a> indicates which elements
+and attributes are deprecated in HTML 4.0.</DD>
+<DD class="glossary">
+Authors should avoid using deprecated elements and attributes.
+User agents should continue to support for
+reasons of backward compatibility.
+</DD>
+
+<dt class="glossary"><a name="device-independent"><dfn><b>Device independent</b></dfn></a></dt>
+
+<dd class="glossary">
+Users must be able to interact with a user agent
+(and the document it renders) using the supported input and output
+devices of their choice and according to their needs. 
+Input devices may include pointing devices,
+keyboards, braille devices, head wands, microphones, and
+others. Output devices may include monitors, speech synthesizers, and
+braille devices.</dd>
+<dd class="glossary">
+Please note that "device-independent support" does not mean that
+user agents must support every input or output device. User agents
+should offer redundant input and output mechanisms for those devices
+that are supported.  For example, if a user agent supports keyboard
+and mouse input, users should be able to interact with all features
+using either the keyboard or the mouse.
+</dd>
+
+<dt class="glossary"><a name="content-structure"><dfn><b>Document Content,
+Structure, and Presentation</b></dfn></a></dt>
+
+<dd class="glossary">The content of a document refers to
+what it says to the user through natural language,
+images, sounds, movies, animations, etc. 
+The structure of a document is how it is 
+organized logically (e.g., by chapter, with an
+introduction and table of contents, etc.). 
+An <a href="#element"><span class="dfn-instance">element</span></a> 
+(e.g., P, STRONG, BLOCKQUOTE in HTML) that specifies document
+structure is called a <a name="structural-element">structural
+element</a>. The presentation of a
+document is how the document is rendered (e.g., as print, as a
+two-dimensional graphical presentation, as an text-only presentation,
+as synthesized speech, as braille, etc.)
+An <a href="#element"><span class="dfn-instance">element</span></a> 
+that specifies document presentation (e.g., B, FONT, CENTER) 
+is called a <a name="presentation-element">presentation
+element</a>. 
+</dd>
+
+<DD CLASS="GLOSSARY">
+Consider a document header, for example. 
+The content of the header is what 
+the header says (e.g., "Sailboats"). In HTML,
+the header is a structural element
+marked up with, for example, an H2 element.
+Finally, the presentation of the header might be
+a bold block text in the margin, a centered line of text,
+a title spoken with a certain voice style (like an aural
+font), etc.
+</DD>
+
+<dt class="glossary"><a name="dhtml"><dfn><b>Dynamic
+HTML (DHTML)</b></dfn></a></dt> 
+<dd class="glossary">
+<abbr title="Dynamic HTML">DHTML</abbr> is the marketing term applied to
+a mixture of standards including HTML, 
+<a href="#style-sheet" title="Definition of style sheets"><span class="dfn-instance">
+style sheets</span></a>, the
+Document Object Model <a href="#ref-DOM1">[DOM1]</a>
+and scripting.
+However, there is no W3C specification that formally defines 
+DHTML.  Most guidelines may be applicable
+to applications using DHTML, however the following guidelines focus on
+issues related to scripting and style sheets: <a href="#gl-provide-equivalents" class="noxref">guideline 1</a>,
+<a href="#gl-structure-presentation" class="noxref">guideline 3</a>, <a href="#gl-new-technologies" class="noxref">guideline 6</a>, 
+<a href="#gl-movement" class="noxref">guideline 7</a>, and <a href="#gl-device-independence" class="noxref">guideline 9</a>.  </dd>
+
+<dt class="glossary"><a name="element"><dfn><b>Element</b></dfn></a>
+</dt>
+<dd class="glossary">
+<dd>This document uses the term "element" both
+in the strict SGML sense (an element is a syntactic construct) and
+more generally to mean a type
+of content (such as video or sound) or a logical 
+construct (such as a header or list). The second sense
+emphasizes that a guideline inspired by HTML 
+could easily apply to another markup language.
+
+<DD class="glossary">
+Note that some (SGML) elements have content that is rendered
+(e.g., the P, LI, or TABLE elements in HTML), some are replaced
+by external content (e.g., IMG), and some affect
+processing (e.g., STYLE and SCRIPT cause information
+to be processed by a style sheet or script engine).
+An element that causes text characters
+to be part of the document is called a <a name="text-element">
+text element</a>.
+</dd>
+
+<dt class="glossary"><a name="equivalent"><dfn><b>Equivalent</b></dfn></a>
+</dt>
+
+<DD class="glossary">
+Content is "equivalent" to other content when both fulfill essentially
+the same function or purpose upon presentation to the user. 
+In the context of
+this document, the equivalent must fulfill  essentially the same function
+for the person with a disability (at least insofar as is feasible, given
+the nature of the disability and the state of technology), as the primary
+content does for the person without any disability.
+For example, the text "The Full Moon" might convey the same information
+as an image of a full moon when presented to users. Note that
+equivalent information focuses on <strong>fulfilling
+the same function</strong>. If the image is
+part of a link and understanding the image is crucial
+to guessing the link target, an
+equivalent must also give users an idea of the link target.
+Providing equivalent information for inaccessible
+content is one of the primary ways
+authors can make their documents accessible to people with
+disabilities.
+</DD>
+
+<DD CLASS="GLOSSARY">
+As part of fulfilling the same function of content
+an equivalent may involve a description of that content
+(i.e., what the content looks like or sounds like).
+For example, in order for users to understand
+the information conveyed by a complex chart, 
+authors should describe the visual information in the chart.
+</DD>
+
+<DD CLASS="GLOSSARY">
+Since text content can be presented to the user as synthesized
+speech, braille, and visually-displayed text, these guidelines
+require <a name="text-equivalent"><dfn><b>text
+equivalents</b></dfn></a> for graphic and audio information. 
+Text equivalents must be
+written so that they convey all essential content.
+<a name="non-text-equivalent"><dfn><b>Non-text
+equivalents</b></dfn></a> (e.g., an
+auditory description of a visual presentation, a video of a person
+telling a story using sign language as an 
+equivalent for a written story, etc.)
+also improve accessibility for 
+people who cannot access visual information
+or written text, including many individuals with blindness,
+cognitive disabilities, learning disabilities, and deafness.
+
+<DD CLASS="GLOSSARY">
+Equivalent information may be provided in a number of ways, 
+including through attributes (e.g., a text value for the "alt"
+attribute in HTML and SMIL), as part of element content (e.g., the
+OBJECT in HTML), as part of the document's prose, or via a linked
+document (e.g., designated by the "longdesc" attribute in HTML or a <a
+name="d-link"><dfn>description link</dfn></a>).  Depending on the complexity of
+the equivalent, it may be necessary to combine techniques (e.g., use
+"alt" for an abbreviated equivalent, useful to familiar readers, 
+in addition to "longdesc" for a link to more complete information, 
+useful to first-time readers).  
+The details of how and when to provide equivalent information
+are part of the  Techniques Document 
+(<a href="#ref-TECHNIQUES">[TECHNIQUES]</a>).
+</DD>
+
+<DD CLASS="GLOSSARY">
+A <a name="text-transcript"><dfn><b>text transcript</b></dfn></a> 
+is a text equivalent of audio information that includes spoken
+words and non-spoken sounds such as sound effects. 
+A <a name="caption"><dfn><b>caption</b></dfn></a> is a text
+transcript for the audio track of a video presentation that is
+synchronized with the video and audio tracks. Captions are generally
+rendered visually by being superimposed over the video, 
+which benefits people who are deaf and
+hard-of-hearing, and anyone who cannot hear the audio (e.g.,
+when in a crowded room). 
+A <a name="collated-text-transcript"><dfn><b>collated
+text transcript</b></dfn></a> combines (collates) captions
+with text descriptions of video information
+(descriptions of the actions, body language, graphics, and scene
+changes of the video track). These text equivalents make 
+presentations accessible to people who are deaf-blind and to people who
+cannot play movies, animations, etc. It also makes the information
+available to search engines.
+</DD>
+
+<DD CLASS="GLOSSARY">
+One example of a non-text equivalent is an <a
+name="auditory-description"><dfn><b>auditory description</b></dfn></a>
+of the key visual elements of a presentation. 
+The description is either a
+prerecorded human voice or a synthesized voice (recorded or generated
+on the fly). The auditory description
+is synchronized with the audio track of the presentation, usually
+during natural pauses in the audio track. 
+Auditory descriptions include information about actions,
+body language, graphics, and scene changes.
+</DD>
+
+<dt class="glossary"><a name="image"><dfn><b>Image</b></dfn></a></dt>
+
+<dd class="glossary">A graphical presentation.</dd>
+
+<dt class="glossary"><a name="image-map"><dfn><b>Image map</b></dfn></a></dt>
+
+<dd class="glossary">An image that has been divided into regions with associated
+actions. Clicking on an active region causes an action to occur.</dd>
+
+<DD CLASS="GLOSSARY"><a name="client-side-map">When a user clicks on an active region of a 
+client-side image map,</a>
+the user agent calculates in which region the click occurred and
+follows the link associated with that region.  
+<a name="server-side-map">Clicking on an active
+region of a server-side image map</a> causes the coordinates of the click
+to be sent to a server, which then performs some action.
+
+<DD CLASS="GLOSSARY">Content developers 
+can make client-side image maps accessible by providing
+device-independent access to the same links associated with the image
+map's regions. Client-side image maps allow the user agent to provide
+immediate feedback as to whether or not the user's pointer is over an
+active region.
+</DD>
+
+<dt class="glossary"><a name="important"><dfn><b>Important</b></dfn></a></dt>
+
+<dd class="glossary">Information in a document
+is important if understanding that information is
+crucial to understanding the document.</dd>
+
+<dt class="glossary"><a name="linearized-table"><dfn><b>Linearized table</b></dfn></a></dt>
+
+<dd class="glossary">A table rendering process where the contents of
+the cells become a series of paragraphs (e.g., down
+the page) one after another.  The paragraphs will occur in the same
+order as the cells are defined in the document source.
+Cells should make sense when read in order and should
+include <a href="#structural-element">structural
+elements</a> (that create paragraphs, headers, lists, etc.)
+so the page makes sense after linearization.
+</DD>
+
+<dt class="glossary"><a name="link-text"><dfn><b>Link text</b></dfn></a></dt>
+
+<dd class="glossary">The rendered text content of a link.
+</DD>
+
+<dt class="glossary"><a name="natural-language"><dfn><b>Natural
+Language</b></dfn></a></dt>
+
+<DD>Spoken, written, or signed human languages such as French,
+Japanese, American Sign Language, and braille. 
+The natural language of content may
+be indicated with the "lang" attribute in HTML (<a
+href="#ref-HTML40">[HTML40]</a>, section 8.1)
+and the "xml:lang"
+attribute in XML (<a
+href="#ref-XML">[XML]</a>, section 2.12).
+</DD>
+
+<dt class="glossary"><a name="nav-mechanism"><dfn><b>Navigation Mechanism</b></dfn></a></dt>
+
+<DD CLASS="GLOSSARY">A navigation mechanism is any means by which a user can
+navigate a page or site. Some typical mechanisms include:<BR>
+
+<DL>
+<DT><a name="navbar"><em>navigation bars</em></a>
+<DD>A navigation bar is a collection of links 
+to the most important parts of a document or site.
+<DT><a name="sitemap"><em>site maps</em></a>
+<dd> A site map provides a global view of the
+organization of a page or site.
+<DT><a name="table-of-contents"><em>tables of contents</em></a>
+<DD> A table of contents generally lists 
+(and links to) the most important sections of a document. 
+</dd>
+</dl>
+
+<dt class="glossary"><a name="pda"><dfn><b>Personal Digital Assistant
+(PDA)</b></dfn></a></dt>
+
+<dd class="glossary">A <abbr title="Personal Digital Assistant">PDA</abbr> is a small,
+portable computing device.  Most PDAs are used to track personal data
+such as calendars, contacts, and electronic mail. A PDA is generally a
+handheld device with a small screen that allows input from various
+sources.</dd>
+
+<dt class="glossary"><a name="screen-magnifier"><dfn><b>Screen
+magnifier</b></dfn></a></dt>
+
+<dd class="glossary">A software program that magnifies a portion of the screen, so
+that it can be more easily viewed. Screen magnifiers
+are used primarily by individuals
+with low vision.</dd>
+
+<dt class="glossary"><a name="screen-reader"><dfn><b>Screen reader</b></dfn></a></dt>
+
+<dd class="glossary">A software program that reads the contents of the screen aloud
+to a user. Screen readers are used primarily 
+by individuals who are blind. Screen
+readers can usually only read text that is printed, not painted, to
+the screen.</dd>
+
+<dt class="glossary"><a name="style-sheet"><dfn><b>Style sheets</b></dfn></a></dt>
+
+<dd class="glossary">A style sheet is a set of statements that specify presentation of
+a document. Style sheets may have three different origins: they
+may be written by content providers, created by users, or
+built into user agents. In CSS (<a href="#ref-CSS2">[CSS2]</a>),
+the interaction of content provider, user, and user agent
+style sheets is called the <dfn>cascade</dfn>.
+
+<DD CLASS="GLOSSARY"><a
+name="presentation-markup"><dfn><b>Presentation markup</b></dfn></a>
+is markup that achieves a stylistic (rather than structuring) effect
+such as the B or I elements in HTML. Note that the STRONG and EM
+elements are not considered presentation markup since they convey
+information that is independent of a particular font style.
+
+<DT CLASS="GLOSSARY"><a
+name="tabular-information"><dfn><b>Tabular information</b></dfn></a>
+<DD>
+When tables are used to represent logical relationships among
+data -- text, numbers, images, etc., that information is
+called "tabular information" and the tables are
+called "data tables". The relationships expressed by a table
+may be rendered visually (usually on a two-dimensional grid),
+aurally (often preceding cells with header information), 
+or in other formats.
+</DD>
+
+<dt class="glossary"><a name="until-user-agents">
+<dfn><b>Until user agents ...</b></dfn></a></dt>
+
+<DD CLASS="GLOSSARY">
+In most of the checkpoints, content developers are asked to
+ensure the accessibility of their pages and sites. However, there are
+accessibility needs that would be more appropriately met by 
+<a href="#user-agent" title="Definition of user agent"><span class="dfn-instance">user
+agents</span></a> (including 
+<a href="#assistive-tech">
+<span class="dfn-instance">assistive technologies</span></a>). 
+As of the publication of
+this document, not all user agents or
+assistive technologies provide the accessibility control users require
+(e.g., some user agents may not allow users to turn off blinking
+content, or some screen readers may not handle tables well).
+Checkpoints that contain the phrase "until user agents ..."  require
+content developers to provide additional support for accessibility
+until most user agents readily available to their
+audience include the necessary accessibility features.</dd>
+
+<DD CLASS="GLOSSARY">
+<strong>Note.</strong> The W3C WAI Web site 
+(refer to <a href="#ref-WAI-UA-SUPPORT">[WAI-UA-SUPPORT]</a>)
+provides information
+about user agent support for accessibility features. 
+Content developers are encouraged to consult this page
+regularly for updated information.
+</dd>
+
+<dt class="glossary"><a name="user-agent"><dfn><b>User
+agent</b></dfn></a></dt> <DD CLASS="GLOSSARY">Software to access Web
+content, including desktop graphical browsers, text browsers, voice
+browsers, mobile phones, multimedia players, plug-ins, and some
+software assistive technologies used in conjunction with browsers such as
+screen readers, screen magnifiers, and voice recognition software.</dd>
+</dl>
+
+<HR title="separator before acknowledgments">
+<!--NewPage--><!-- this is for html2ps -->
+<H2 class="nonb"> <A NAME="Acknowledgments">Acknowledgments</A></H2>
+
+<dl>
+<dt>Web Content Guidelines Working Group Co-Chairs:</dt>
+
+<dd><a href="mailto:cpl@starlingweb.com">Chuck Letourneau</a>,
+Starling Access Services</dd>
+
+<dd><a href="mailto:gv@tracecenter.org">Gregg Vanderheiden</a>,
+Trace Research and Development</dd>
+
+<dt>W3C Team contacts:</dt>
+
+<dd><a href="mailto:jbrewer@w3.org">Judy Brewer</a> and <a href="mailto:danield@w3.org">Daniel Dardailler</a></dd>
+
+
+<dt>We wish to thank the following people who have contributed their
+time and valuable comments to shaping these guidelines:
+</dt>
+
+<dd>Harvey Bingham, Kevin Carey, Chetz Colwell, Neal Ewers, Geoff
+Freed, Al Gilman, Larry Goldberg, Jon Gunderson, Eric Hansen,
+Phill Jenkins, Leonard
+Kasday, George Kerscher, Marja-Riitta Koivunen, Josh Krieger, Scott
+Luebking, William Loughborough, Murray Maloney, Charles
+McCathieNevile, MegaZone (Livingston Enterprises), Masafumi Nakane,
+Mark Novak, Charles Oppermann, Mike Paciello, David Pawson, Michael Pieper,
+Greg Rosmaita, Liam Quinn, Dave Raggett, T.V. Raman, Robert
+Savellis, Jutta Treviranus, Steve Tyler, Jaap van Lelieveld, and
+Jason White</dd>
+</dl>
+
+<p>The original draft of this document is based on "The Unified Web
+Site Accessibility Guidelines" (<a href="#ref-UWSAG">[UWSAG]</a>)
+compiled by the Trace R &amp; D Center at the University of Wisconsin.
+That document includes a list of additional contributors.
+
+<!--NewPage--><!-- this is for html2ps -->
+<h2 class="nonb"> <a name="References">References</a></h2>
+
+<P>For the latest version of any W3C specification please consult the
+list of <a href="http://www.w3.org/TR">W3C Technical Reports</a>.</P>
+
+<dl>
+
+<dt><a name="ref-CSS1"><b>[CSS1]</b></a></dt>
+
+<dd>"CSS, level 1 Recommendation", B. Bos, H. Wium Lie, eds.,
+17 December 1996, revised 11 January 1999. 
+The CSS1 Recommendation is:
+ <a href="http://www.w3.org/TR/1999/REC-CSS1-19990111">
+http://www.w3.org/TR/1999/REC-CSS1-19990111</a>.<BR>
+The latest version of CSS1 is available at:
+ <a href="http://www.w3.org/TR/REC-CSS1">
+http://www.w3.org/TR/REC-CSS1</a>.
+</dd>
+
+<dt><a name="ref-CSS2"><b>[CSS2]</b></a></dt>
+
+<dd>"CSS, level 2 Recommendation", B. Bos, H. Wium Lie, C. Lilley,
+and I. Jacobs, eds., 12 May 1998.
+The CSS2 Recommendation is:
+ <a href="http://www.w3.org/TR/1998/REC-CSS2-19980512">
+http://www.w3.org/TR/1998/REC-CSS2-19980512</a>.<BR>
+The latest version of CSS2 is available at:
+ <a href="http://www.w3.org/TR/REC-CSS2">
+http://www.w3.org/TR/REC-CSS2</a>.
+
+</dd>
+
+<dt><a name="ref-DOM1"><b>[DOM1]</b></a></dt>
+      <DD>&quot;Document Object Model (DOM) Level 1 Specification&quot;, 
+V. Apparao, S. Byrne, M. Champion, S. Isaacs, I. Jacobs, A. Le Hors, G. Nicol,
+J. Robie, R. Sutor, C. Wilson, and L. Wood, eds., 1 October 1998.
+The DOM Level 1 Recommendation is: 
+<A HREF="http://www.w3.org/TR/1998/REC-DOM-Level-1-19981001">
+http://www.w3.org/TR/1998/REC-DOM-Level-1-19981001</A>. <BR>
+The latest version of DOM Level 1 is available at:
+<A HREF="http://www.w3.org/TR/REC-DOM-Level-1">
+http://www.w3.org/TR/REC-DOM-Level-1</A>
+</DD>
+
+<dt><a name="ref-HTML40"><b>[HTML40]</b></a></dt>
+
+<dd>"HTML 4.0 Recommendation", D. Raggett, A. Le Hors, and I.
+Jacobs, eds., 17 December 1997, revised 24 April 1998.
+ The HTML 4.0 Recommendation is:
+ <a href="http://www.w3.org/TR/1998/REC-html40-19980424">
+http://www.w3.org/TR/1998/REC-html40-19980424</a>.<BR>
+The latest version of HTML 4.0 is available at:
+ <a href="http://www.w3.org/TR/REC-html40">
+http://www.w3.org/TR/REC-html40</a>.
+</dd>
+
+<dt><a name="ref-HTML32"><b>[HTML32]</b></a></dt>
+
+<dd>"HTML 3.2 Recommendation", D. Raggett, ed.,
+14 January 1997. The latest version of HTML 3.2
+is available at:
+ <a href="http://www.w3.org/TR/REC-html32">
+http://www.w3.org/TR/REC-html32</a>.</dd>
+
+<dt><a name="ref-MATHML"><b>[MATHML]</b></a></dt>
+
+<dd>"Mathematical Markup Language", P. Ion and R. Miner, eds.,
+7 April 1998. The MathML 1.0
+Recommendation is:
+<a href="http://www.w3.org/TR/1998/REC-MathML-19980407">
+http://www.w3.org/TR/1998/REC-MathML-19980407</a>.<BR>
+The latest version of MathML 1.0 is available at:
+<a href="http://www.w3.org/TR/REC-MathML">
+http://www.w3.org/TRREC-MathML</a>.
+</dd>
+
+<dt><a name="ref-PNG"><b>[PNG]</b></a></dt>
+
+<dd>"PNG (Portable Network Graphics) Specification", T. Boutell, ed.,
+T. Lane, contributing ed., 1 October 1996.
+The latest version of PNG 1.0 is:
+<a href="http://www.w3.org/TR/REC-png">
+http://www.w3.org/TR/REC-png</a>.
+</dd>
+
+<dt><a name="ref-RDF"><b>[RDF]</b></a></dt>
+
+<dd>"Resource Description Framework
+(RDF) Model and Syntax Specification", O. Lassila, R. Swick,
+eds., 22 February 1999. The RDF Recommendation is:
+<a href="http://www.w3.org/TR/1999/REC-rdf-syntax-19990222">
+http://www.w3.org/TR/1999/REC-rdf-syntax-19990222</a>.<BR>
+The latest version of RDF 1.0 is available at:
+<a href="http://www.w3.org/TR/REC-rdf-syntax">
+http://www.w3.org/TR/REC-rdf-syntax</a>
+</dd>
+
+<DT><A name="ref-RFC2068"><b>[RFC2068]</b></A></DT>
+
+<DD><A href="http://www.ietf.org/rfc/rfc2068.txt">"HTTP Version 1.1"</a>, R. Fielding, J. Gettys, J. Mogul, H.
+Frystyk Nielsen, and T. Berners-Lee, January 1997.</DD>
+
+<dt><a name="ref-SMIL"><b>[SMIL]</b></a></dt>
+
+<dd>"Synchronized Multimedia Integration Language (SMIL) 1.0
+Specification", P. Hoschka, ed., 15 June 1998. 
+The SMIL 1.0 Recommendation is:
+ <a href="http://www.w3.org/TR/1998/REC-smil-19980615">
+http://www.w3.org/TR/1998/REC-smil-19980615</a><BR>
+The latest version of SMIL 1.0 is available at:
+ <a href="http://www.w3.org/TR/REC-smil">
+http://www.w3.org/TR/REC-smil</a>
+</dd>
+
+<dt><a name="ref-TECHNIQUES"><b>[TECHNIQUES]</b></a></dt>
+
+<dd>"Techniques for Web Content Accessibility Guidelines 1.0", W. Chisholm, G. Vanderheiden, I. Jacobs, eds.
+This document explains how to implement the checkpoints defined
+in "Web Content Accessibility Guidelines 1.0". The latest draft of the techniques is
+available at:
+ <a href="http://www.w3.org/TR/WAI-WEBCONTENT-TECHS">
+http://www.w3.org/TR/WAI-WEBCONTENT-TECHS/</a></dd>
+
+
+<dt><a name="ref-WAI-AUTOOLS"><b>[WAI-AUTOOLS]</b></a></dt>
+
+<dd>"Authoring Tool Accessibility Guidelines", J. Treviranus,
+J. Richards, I. Jacobs, C. McCathieNevile, eds. 
+The latest Working Draft of these guidelines for designing
+accessible authoring tools is available at:
+ <a href="http://www.w3.org/TR/WAI-AUTOOLS/">
+http://www.w3.org/TR/WAI-AUTOOLS/</a></dd>
+
+<dt><a name="ref-WAI-UA-SUPPORT"><b>[WAI-UA-SUPPORT]</b></a></dt>
+
+<dd>This page documents known support by user agents (including
+assistive technologies) of some accessibility features listed
+in this document. The page is available at:
+ <a href="http://www.w3.org/WAI/Resources/WAI-UA-Support">
+http://www.w3.org/WAI/Resources/WAI-UA-Support</a></dd>
+
+<dt><a name="ref-WAI-USERAGENT"><b>[WAI-USERAGENT]</b></a></dt>
+
+<dd>"User Agent Accessibility Guidelines", J. Gunderson 
+and I. Jacobs, eds. 
+The latest Working Draft of these guidelines for designing accessible
+user agents is available at:
+ <a href="http://www.w3.org/TR/WAI-USERAGENT/">
+http://www.w3.org/TR/WAI-USERAGENT/</a></dd>
+
+<dt><a name="ref-WCAG-ICONS"><b>[WCAG-ICONS]</b></a></dt>
+<dd>Information about conformance icons for this document and how to
+use them is available at 
+<a href="http://www.w3.org/WAI/WCAG1-Conformance.html">
+http://www.w3.org/WAI/WCAG1-Conformance.html</a></dd>
+
+<dt><a name="ref-UWSAG"><b>[UWSAG]</b></a></dt>
+<DD>"The Unified Web Site Accessibility Guidelines", G.
+Vanderheiden, W. Chisholm, eds. 
+The Unified Web Site Guidelines were compiled by the 
+<a href="http://www.tracecenter.org/">Trace R
+&amp; D Center</a> at the University of Wisconsin under funding from the
+National Institute on Disability and Rehabilitation Research
+(NIDRR),&nbsp; U.S. Dept. of Education. This document is
+available at:
+<a href="http://www.tracecenter.org/docs/html_guidelines/version8.htm">
+http://www.tracecenter.org/docs/html_guidelines/version8.htm</a> 
+</dd>
+
+<dt><a name="ref-XML"><b>[XML]</b></a></dt>
+<dd>"Extensible Markup Language (XML) 1.0.", T. Bray, J. Paoli, C.M. 
+Sperberg-McQueen, eds., 10 February 1998. 
+The XML 1.0 Recommendation is:
+<a href="http://www.w3.org/TR/1998/REC-xml-19980210">
+http://www.w3.org/TR/1998/REC-xml-19980210</a>.<BR>
+The latest version of XML 1.0 is available at:
+<a href="http://www.w3.org/TR/REC-xml">
+http://www.w3.org/TR/REC-xml</a>
+</dd>
+
+</dl>
+
+<P><A href="http://www.w3.org/WAI/WCAG1AAA-Conformance"
+title="Explanation of Level Triple-A Conformance"> <IMG class="conform"
+height="32" width="88" src="http://www.w3.org/WAI/wcag1AAA" alt="Level
+Triple-A conformance icon, W3C-WAI Web Content Accessibility
+Guidelines 1.0"></A>
+
+
+<div class="navbar">
+<p>
+<hr class="navbar" title="Navigation area separator">
+[<a accesskey="c" href="#toc">contents</a>] &nbsp;
+[<a href="full-checklist.html">checklist</a>] &nbsp;
+
+</div></body>
+</html>
+

@@ -1,0 +1,998 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+      "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <title>Amaya FAQ</title>
+  <link href="../amaya.css" rel="stylesheet" type="text/css" />
+  <meta http-equiv="content-type" content="text/html; charset=iso-8859-1" />
+</head>
+
+<body xml:lang="en" lang="en">
+<p class="logos"><img src="../Icons/amaya_logo_65x50.png" alt="Amaya"
+border="0" /> <a href="../"><img border="0" src="../../Icons/WWW/w3c_home"
+alt="W3C" width="72" /> </a> </p>
+
+<div>
+
+<div class="leftside">
+  
+<div>
+<p class="title">About Amaya</p>
+<ul>
+  <li><a href="../Overview.html">Home Page</a></li>
+  <li><a href="../Amaya.html">Overview</a></li>
+  <li><a href="New.html">Release History</a></li>
+  <li><a href="../Press.html">Amaya in the Press</a></li>
+  <li><a href="../screenshots/Overview.html">Screenshots</a></li>
+</ul>
+</div>
+
+<div>
+<p class="title">Download Amaya</p>
+<ul>
+  <li><a href="BinDist.html">Distributions</a></li>
+  <li><a href="SourceDist.html">Sources, Snapshots</a></li>
+  <li><a href="cvs.html">CVS / Github</a></li>
+  <li><a href="Bugs.html">Bug Tracking</a></li>
+</ul>
+</div>
+
+<div>
+<p class="title">Mailing Lists</p>
+<ul>
+  <li><a href="Mailing.html">Amaya Mailing Lists</a></li>
+</ul>
+</div>
+
+<div>
+<p class="title">Documentation</p>
+<ul>
+  <li><a href="Overview.html">Users and Developers</a></li>
+  <li><span class="here">FAQ</span></li>
+  <li><a href="../Templates/Overview.html">Templates</a></li>
+</ul>
+</div>
+
+<div>
+<p class="title">Project Contributors</p>
+<ul>
+  <li><a href="../Actors.html">Contributors</a></li>
+  <li><a href="../Actors.html#contribute1">How to contribute</a></li>
+</ul>
+</div>
+</div>
+</div>
+
+<div class="main">
+<h1>Amaya Frequently Asked Questions</h1>
+
+<p> </p>
+
+<h2>I. Global issues</h2>
+<ol>
+  <li><a href="#L125">Is Amaya an editor or a browser?</a></li>
+  <li><a href="#Where">Where can I get Amaya?</a></li>
+  <li><a href="#Amaya1">Is Amaya available for MacOS ?</a></li>
+  <li><a href="#release">Can I release Amaya on a CD-ROM?</a></li>
+  <li><a href="#make">Can I make some changes and re-release it?</a></li>
+  <li><a href="#L147">Why is Amaya written in C?</a></li>
+  <li><a href="#1.8.">Can I change the dialogue language?</a></li>
+  <li><a href="#1.9">What does the word "Amaya" mean?</a></li>
+</ol>
+
+<h2>II. Using Amaya</h2>
+<ol>
+  <li><a href="#Amaya2">Amaya doesn't start. What can I do?</a></li>
+  <li><a href="#II.19.">Amaya is very very slow</a></li>
+  <li><a href="#II.2">Is Amaya compliant with MathML?</a></li>
+  <li><a href="#edit">Can I edit tags directly?</a></li>
+  <li><a href="#Displayed">Fonts are too small. What can I do?</a></li>
+  <li><a href="#ChangeFonts">How to change fonts?</a></li>
+  <li><a href="#XFonts">Can I get fonts for Amaya?</a></li>
+  <li><a href="#want">How can I change the default window size?</a></li>
+  <li><a href="#parsing">Can I see parsing errors detected by Amaya?</a></li>
+  <li><a href="#What">What is the reason for a very liberal structure
+    enforcement?</a></li>
+  <li><a href="#II.9.">How can I update the document title?</a></li>
+  <li><a href="#II.10.">How to get out of a preformatted, a table, or a
+    division?</a></li>
+  <li><a href="#II11.">Why doesn't Amaya support frames?</a></li>
+  <li><a href="#II12.">Does Amaya support JavaScript and animated
+  images?</a></li>
+  <li><a href="#II13.">Amaya stops reading XHTML, MathML, or SVG
+  documents!</a></li>
+  <li><a href="#II14.">Does Amaya support non-Latin characters?</a></li>
+  <li><a href="#II.15.">Can I use CSS style sheets?</a></li>
+  <li><a href="#II.16.">How can I publish my documents remotely?</a></li>
+  <li><a href="#II.17.">How to control the format of generated dates?</a></li>
+  <li><a href="#II.20">How to move a division?</a></li>
+  <li><a href="#II.21">How to move a column or a row of a table?</a></li>
+  <li><a href="#II.22">How to display two documents side by side?</a></li>
+  <li><a href="#II.23">Installing Amaya on OpenSuse 12.1</a></li>
+</ol>
+
+<h2>III. Compiling Amaya</h2>
+<ol>
+  <li><a href="#Where3">Where can I get the developers documentation?</a></li>
+  <li><a href="#Make">Make complains with missing files</a></li>
+  <li><a href="#Make1">Make fails when compiling the HTML schema</a></li>
+  <li><a href="#GTK">What do I need to compile?</a></li>
+  <li><a href="#L810">I've a problem with ltconfig (or libtool)</a></li>
+  <li><a href="#Make2">Make complains "test: argument expected"</a></li>
+</ol>
+
+<p></p>
+<hr />
+
+<h2 id="I.1."><a name="L125">I.1. Is <b>Amaya</b> an editor or a
+browser?</a></h2>
+
+<p><b>Amaya</b> is mainly an authoring tool with browsing features. Link
+management and remote publishing are key features in a hypertext editor, and
+these features require seamless integration of editing and browsing
+features.</p>
+
+<p></p>
+<hr />
+
+<h2 id="I.2."><a name="Where">I.2. Where can I get <b>Amaya</b>?</a></h2>
+
+<p>You can download the <b>Amaya</b> distribution in various formats, and you
+can use either ftp or http:</p>
+<ul>
+  <li><p>The page at <a
+    href="http://www.w3.org/Amaya/User/BinDist.html">http://www.w3.org/Amaya/User/BinDist.html</a>
+    gives access to a ready to use application for various platforms.</p>
+  </li>
+  <li><p>The page at <a
+    href="http://www.w3.org/Amaya/User/SourceDist.html">http://www.w3.org/Amaya/User/SourceDist.html</a>
+    gives access to the source code.</p>
+  </li>
+</ul>
+
+<p></p>
+<hr />
+
+<h2 id="I.3."><a name="Amaya1">I.3. Is Amaya available for MacOS?</a></h2>
+
+<p>Yes dmg packages are now available</p>
+<ul>
+  <li>amaya-macosx-x.x.dmg for PowerPC - PowerBook</li>
+  <li>amaya-macintel-x.x.dmg for Intel - MacBook</li>
+</ul>
+
+<p>See the distribution page at <a
+href="BinDist.html">http://www.w3.org/Amaya/User/BinDist.html</a></p>
+
+<p></p>
+<hr />
+
+<h2 id="I.4."><a name="release">I.4. Can I release Amaya on a CD-ROM?</a></h2>
+
+<p>Yes, and you can even charge for it, provided the copyright is preserved.</p>
+
+<p></p>
+<hr />
+
+<h2 id="I.5."><a name="make">I.5. Can I make some changes and re-release
+it?</a></h2>
+
+<p>Yes, we encourage people to experiment with Amaya and to improve it. It can
+even be used in commercial software. If you make changes for the better, we
+encourage you to contact us. You may <em>not</em> make changes and continue to
+call it by a trademarked term or misrepresent the origin, capabilities, or
+liabilities associated with its use. You may make valid assertions, such that
+it is based on the Amaya code, or that it is compliant with a Recommended
+Specification of the W3C.</p>
+
+<p></p>
+<hr />
+
+<h2 id="I.6."><a name="L147">I.6. Why is <b>Amaya</b> written in C?</a></h2>
+
+<p>C has a number of advantages that fit well with our purposes. It's a very
+portable and efficient language. Amaya is also based on a pre-existing editing
+library, the Thotlib, which was itself written in C. It was natural to continue
+to develop the Amaya code in C.</p>
+
+<p>A large part of the User Interface is now written in C++.</p>
+
+<p></p>
+<hr />
+
+<h2 id="L402"><a name="1.8." id="_1.8.">I.7. Can I change the dialogue
+language?</a></h2>
+
+<p>By default Amaya works with an English dialogue and comes with an English
+in-line documentation. Other dialogues (French, German, Spanish, Portuguese,
+Italian, Finnish, Russian) and other version of the in-line documentation
+(French, German, Spanish, Russian) are also available provided the user
+downloads the extra amayadoc file as explained in <a
+href="BinDist.html">http://www.w3.org/Amaya/User/BinDist.html</a></p>
+
+<p>The entry <strong>Dialogue language</strong> in the dialogue
+<em>Edit/Preferences/General</em> specifies the language for all of Amaya's
+menus and dialogue messages. The default language is American English (value
+en).</p>
+
+<p>At the present time only seven alternate languages are available: English
+(en), French (fr), German (de), Italian (it), Spanish (es), Portuguese (pt),
+and Finnish (fi). When launched, Amaya loads dialogue files according to the
+current dialogue language: en-, fr-, or de-, it-, es-, pt-, or fi- files,
+respectively. These dialogue files are located in the
+<strong>Amaya/config</strong> directory.</p>
+
+<p></p>
+<hr />
+
+<h2 id="L426"><a name="1.9" id="_1.9">I.8. What does the word "Amaya"
+mean?</a></h2>
+
+<p>The initial name of our editor/browser was Tamaya. A tamaya is a tree that
+is represented on the logo. We chose that name because we had such a tree in
+our office and we though that, with some imagination, it could style <a
+href="New.html">both</a> the image of the Net and the structure of a Web page.
+Unfortunately we were not allowed to continue to use the name Tamaya, as it was
+trade marked and used by a French company. So we decided to drop the first
+letter (T) and our editor/browser is now named Amaya.</p>
+
+<p></p>
+<hr />
+
+<h2 id="II.11"><a name="Amaya2" id="Amaya2">II.1. Amaya doesn't start. What can
+I do?</a></h2>
+
+<p>The most common reason is that Amaya is not able to generate its temporary
+working directory.</p>
+
+<p>The following table shows the default position of this directory in
+different architectures:</p>
+
+<table border="1" cellspacing="0">
+  <tbody>
+    <tr>
+      <td valign="top"
+        style="border:solid .5pt;   padding:0in 5.4pt 0in 5.4pt"><p
+        class="TableHead"><b>Architecture</b></p>
+      </td>
+      <td valign="top"
+      style="border:solid .5pt;   border-left:none;padding:0in 5.4pt 0in 5.4pt"><p
+        class="TableHead"><b>AmayaHome Directory Location</b></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top"
+      style="border:solid .5pt;   border-top:none;padding:0in 5.4pt 0in 5.4pt"><p
+        class="TableText">Unix and Mac OSX</p>
+      </td>
+      <td valign="top"
+      style="border-top:none;border-left:   none;border-bottom:solid .5pt;border-right:solid .5pt;   padding:0in 5.4pt 0in 5.4pt"><p
+        class="TableText"><code>$HOME/.amaya</code></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top"
+      style="border:solid .5pt;   border-top:none;padding:0in 5.4pt 0in 5.4pt"><p
+        class="TableText">Windows 95/ Windows 98</p>
+      </td>
+      <td valign="top"
+      style="border-top:none;border-left:   none;border-bottom:solid .5pt;border-right:solid .5pt;   padding:0in 5.4pt 0in 5.4pt"><p
+        class="TableText"><code>AMAYA-INSTALL-DIR\users\username</code> or, if
+        the user didn't login to Windows,
+        <code>AMAYA-INSTALL-DIR\users\default</code></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top"
+      style="border:solid .5pt;   border-top:none;padding:0in 5.4pt 0in 5.4pt"><p
+        class="TableText">Windows NT/XP</p>
+      </td>
+      <td valign="top"
+      style="border-top:none;border-left:   none;border-bottom:solid .5pt;border-right:solid .5pt;   padding:0in 5.4pt 0in 5.4pt"><p
+        class="TableText"><code>$HOMEDRIVE:\$HOMEPATH\amaya</code><br />
+        by default c:\Documents and Settings\$user_name\amaya</p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<p>If this position is not available, you have to force another position with
+the <strong>AMAYA_USER_HOME</strong> global variable.</p>
+
+<p>This variable must point to an existing and allowed path directory under
+which Amaya will generate its working files and sub-directories.</p>
+
+<p><strong>On Windows platforms</strong>, you should set that variable from the
+System Properties (either accessible from the "System" Control Panel or through
+My Computer -&gt; Properties context menu) "Advanced" page - Environment
+Variables. This way the setting will be in effect for every process.</p>
+<pre>set AMAYA_USER_HOME=C:\Documents and Settings\XX\Amaya</pre>
+
+<p>Do not leave spaces around the variable name and the value, and don't use
+quotes.</p>
+
+<h3>On Unix platforms</h3>
+<ol>
+  <li>It could be a problem during the installation procedure: 
+    <p>If the package is not installed with SU rights, the symbolic link
+    <code>/usr/bin/amaya</code> is not created and the application cannot be
+    launched.</p>
+    <p>The solution is to install the package with the command <code>sudo dpkg
+    -i package_name</code></p>
+  </li>
+  <li>It could be a problem with a missing library: 
+    <p>Check missing libraries with <code>ldd
+    /usr/share/Amaya/wx/bin/amaya_bin</code> or <code>ldd
+    /usr/lib/Amaya/wx/bin/amaya_bin</code></p>
+  </li>
+  <li>If all dynamic libraries needed by the executable file amaya are there,
+    you can launch amaya with strace to see what is wrong 
+    <pre>strace /usr/share/Amaya/wx/bin/amaya_bin</pre>
+    <p>On debian or Ubuntu platforms use <code>strace
+    /usr/lib/Amaya/wx/bin/amaya_bin</code></p>
+  </li>
+</ol>
+
+<p></p>
+<hr />
+
+<h2><a name="II.19." id="II.19.">II.2. Amaya is very very slow</a></h2>
+
+<p>AmayaWX uses OpenGL for page rendering. This allows a better support of SVG
+and animations. The drawback is that Amaya is very dependent on video card's
+drivers, if a driver is buggy, Amaya will probably crash...</p>
+
+<p>On Unix platforms, Amaya comes with the Mesa library to implement OpenGL
+primitives. Mesa is a software OpenGL implemetation so Amaya isn't dependent on
+video card drivers on Unix. If Amaya doesn't start or is very slow on Unix
+platforms it's something else.</p>
+
+<p><strong>On Windows platforms</strong>, Amaya uses hardware OpenGL
+implementation so Amaya is very dependent on video card's drivers. When the
+application doesn't start or is very very slow, we suggest that users check:</p>
+<ol>
+  <li>Update of their video card driver, if there is an available. This update
+    can be found either on the MicroSoft site (see the driver section) or on
+    the site of the Video card provider.</li>
+  <li>Our Windows version includes a patch that fixes the problem  (in file 
+    <code>wxWidgets/src/msw/glcanvas.cpp</code>)</li>
+</ol>
+
+<p></p>
+<hr />
+
+<h2 id="II.1"><a name="II.2" id="II.2">II.3. Is Amaya compliant with
+MathML?</a></h2>
+
+<p>Yes, but the current implementation of MathML 2.0 in Amaya is not complete
+yet. It does not implement the Content part of MathML 2.0. The documentation
+clearly indicates what is available. See section "<a
+href="editing_mathematics/math_issues.html">Known Issues With MathML</a>".</p>
+
+<p></p>
+<hr />
+
+<h2 id="II.2."><a name="edit">II.4. Can I edit tags directly?</a></h2>
+
+<p>Amaya has been built as a structured document editor. This approach allows
+it to handle complex documents and highly structured objects such as tables,
+structured graphics or mathematical expressions. While editing in the HTML or
+the XHML mode, Amaya works on the document tree, not on its textual
+representation, which is generated only at save time, in the syntax you choose
+(plain text, HTML, XHML).</p>
+
+<p>Amaya also allows you to open the source view of the document (entry
+<em>Views/Show source</em>) and then to edit tags. This is done in a separate
+but synchronized document. Amaya shows what part of the source document is
+concerned by the current selection in the formatted document and conversely.
+Both the source document and the formatted document can be edited. Changes done
+in any of these two documents are reflected in the other by the
+<em>File/Synchronize</em> command. Synchronization is also performed
+automatically when the wiew selection changes.</p>
+
+<p></p>
+<hr />
+
+<h2 id="II.3."><a name="Displayed">II.5. Fonts are too small. What can I
+do?</a></h2>
+
+<p>With Amaya you can zoom in and zoom out, document window by document window.
+So each document displayed in a zoomed window will be displayed larger or
+smaller than its normal size according of the current zoom factor. That zoom
+factor acts on all the displayed information (fonts, images, etc.). Commands
+that chage the zoom factor are located in the menu Views.</p>
+
+<p>The <em>Edit/Preferences/General</em> menu allows you to change the font
+zoom factor permanently. By default that zoom factor is 100% (documents are
+displayed with their own size). That zoom factor affects only font sizes but
+not other elements (images, etc.).</p>
+
+<p></p>
+<hr />
+
+<h2 id="II.4."><a name="ChangeFonts">II.6. How to change fonts?</a></h2>
+
+<p>In order to let you choose your fonts, Amaya works with a Font Configuration
+file. By default that Font configuration file is located in the directory
+<code>Amaya/config/</code>:</p>
+<ul>
+  <li>The file <code>"fonts.gl"</code> is used by Mac OSX and Linux versions of
+    Amaya</li>
+  <li>The file <code>"fonts.gl.win"</code> is used by Windows versions of
+  Amaya</li>
+</ul>
+
+<p>For more information about these configutation files, see <a
+href="FontConfig.html">http://www.w3.org/Amaya/User/FontConfig.htm</a>l</p>
+
+<p></p>
+<hr />
+
+<h2 id="II.5."><a name="XFonts">II.7. Can I get fonts for Amaya?</a></h2>
+
+<h3>Amaya WX versions</h3>
+
+<p>Amaya WX works only with TrueType fonts. Amaya distributions comes with
+Esstix fonts (a large set of mathematical symbols) and a set of free TrueType
+fonts. When launched, Amaya looks first for some System pre-installed fonts and
+uses its own fonts if these pre-installed fonts are not available.</p>
+
+<p>On Unix platforms, Amaya WX versions uses 3 configuration files to locate
+needed fonts:<code>Amaya/config/fonts.gl</code>, then
+<code>Amaya/config/fonts.gl.rd</code>, then
+<code>Amaya/config/fonts.gl.deb</code>.</p>
+
+<p>On windows, Amaya WX versions uses one configuration file
+<code>Amaya/config/fonts.gl.win</code>.</p>
+
+<h3>Amaya GTK versions</h3>
+
+<p>Aamaya GTK works with the X Font Server (Xft). Some System distributions
+come with pre-installed fonts or fonts packages that auto-install. Some others
+must be installed by yourself.</p>
+
+<h4 id="must">If you must install fonts by yourself on a Linux platform, you
+have to:</h4>
+<ol>
+  <li>Unzip and/or untar download fonts and install them into
+    <code>/usr/local/share/fonts</code> or
+  <code>/usr/X11R6/lib/X11/fonts</code></li>
+  <li>Install them with the command like "<code>unzip</code> esstix.zip". We
+    recommand to install them in the directory
+    <code>/usr/local/share/fonts/esstix</code></li>
+  <li>Add this new font directory in the Xft configuration file:
+    <code>/etc/X11/XftConfig</code> 
+    <pre>...
+dir "/usr/local/share/fonts/XXX" </pre>
+  </li>
+  <li>Add this new font directory in the right position in the
+    <code>catalogue</code> list of <code>/etc/X11/fs/config</code> 
+    <p>This is an example:</p>
+    <pre>catalogue = /usr/local/share/fonts/truetype,
+        /usr/lib/X11/fonts/misc,
+        /usr/lib/X11/fonts/cyrillic,
+        /usr/lib/X11/fonts/75dpi/:unscaled,
+        /usr/lib/X11/fonts/100dpi/:unscaled,
+        /usr/X11R6/lib/X11/fonts/misc:unscaled,
+        /usr/lib/X11/fonts/URW,
+        /usr/lib/X11/fonts/Type1,
+        /usr/lib/X11/fonts/CID,
+        /usr/lib/X11/fonts/Speedo,
+        /usr/lib/X11/fonts/75dpi,
+        /usr/lib/X11/fonts/100dpi,
+        /usr/local/share/fonts/esstix,
+        /usr/local/share/fonts/japanese
+    </pre>
+  </li>
+  <li>Then generate file descriptors: <code>fonts.scale</code>,
+    <code>fonts.dir</code> and <code>XftCache</code> has follows: 
+    <pre>cd /usr/local/share/fonts/XXX
+ttmkfdir -o fonts.scale
+mkfontdir
+xftcache
+    </pre>
+  </li>
+  <li>Reboot or restart the font server.</li>
+</ol>
+
+<h4 id="Esstix">Esstix Fonts</h4>
+
+<p>Esstix Fonts are available (we provide a <a
+href="http://www.w3.org/Amaya/Distribution/esstix.tar.gz">esstix.tar.gz</a>
+file) at
+<code>ftp://ftp.elsevier.nl/pub/styles/esstix/esstix.zipesstix.tar.gz</code>
+.</p>
+<ol>
+  <li>Get Esstix fonts <a
+    href="http://www.w3.org/Amaya/Distribution/esstix.tar.gz">esstix.tar.gz</a>
+    file</li>
+  <li>Install them with the command "<code>unzip</code> esstix.zip" or
+    "<code>tar xzf</code> esstix.tar.gz". We recommand to install them in the
+    directory <code>/usr/local/share/fonts/esstix</code></li>
+  <li>Add this new font directory in the Xft configuration file:
+    <code>/etc/X11/XftConfig</code> 
+    <pre>...
+dir "/usr/local/share/fonts/esstix" </pre>
+  </li>
+  <li>Then generate file descriptors: <code>fonts.scale</code>,
+    <code>fonts.dir</code> and <code>XftCache</code> has follows: 
+    <pre>cd /usr/local/share/fonts/esstix
+ttmkfdir <span style="color: #FF6969">-c -m20</span> -o fonts.scale
+mkfontdir
+xftcache
+    </pre>
+  </li>
+  <li>Reboot or restart the font server.</li>
+</ol>
+
+<h3 id="Installati1">Amaya Win32 versions</h3>
+
+<p>Installation of Esstix fonts on a Windows platform</p>
+<ol>
+  <li>Get Esstix fonts (we provide a <a
+    href="http://www.w3.org/Amaya/Distribution/ESSTIX.zip">ESSTIX.zip</a>
+  file)</li>
+  <li>Extract the content of this zip file</li>
+  <li>Copy fonts included in the ESSTIX directory into the C:\WINDOWS\Fonts
+    directory.</li>
+</ol>
+
+<p></p>
+<hr />
+
+<h2 id="II.6."><a name="want">II.8. How can I change the default window
+size?</a></h2>
+
+<p>Resize your window to the value you'd like, then use the
+<em>Edit/Preferences/Geometr</em>y menu to save the current geometry of the
+displayed windows. Your modifications won't be lost the next time that Amaya is
+updated.</p>
+
+<p>You can also request to save automatically the geometry on exit in the
+<em>Edit/Preferences/General menu</em>.</p>
+
+<p></p>
+<hr />
+
+<h2 id="II.7."><a name="parsing">II.9. Can I see parsing errors detected by
+Amaya?</a></h2>
+
+<p>Amaya cannot be used to check validity of HTML pages. It accepts valid and
+invalid HTML documents and tries to dynamically correct errors. For example
+it's able to add missing end-tags and to move misplaced elements.</p>
+
+<p>When parsing a XHTML document, Amaya checks it for well-formedness and stops
+as soon as it encounters an error. In that case, Amaya displays an alert box to
+indicate that the document is incomplete.</p>
+
+<p>In both cases (HTML and XHTML documents) when Amaya finds tags and
+attributes it does not know or any error, it generates a log file which can be
+displayed by the command <em>FileShow parsing errors</em>.</p>
+
+<p></p>
+<hr />
+
+<h2 id="II.8."><a name="What">II.10. What is the reason</a> for a very liberal
+structure enforcement?</h2>
+
+<p>Amaya has to cope with existing HTML pages, and very few of them validate
+against the HTML DTD. When designing Amaya, we were faced with a difficult
+choice:</p>
+<ol>
+  <li>Adopt a strict position and reject all invalid pages. Most users would be
+    very disapointed not to be able to see many pages that other Web clients
+    can display;</li>
+  <li>Accept invalid pages and let Amaya fix the most common bugs.</li>
+</ol>
+
+<p>We chose the latter option and decided that Amaya should try to fix bugs,
+but without losing information. If an element is not valid in a given context,
+Amaya tries to change the structure locally to make that element valid, but it
+doesn't delete the element or move it to a different place, which could change
+the document meaning.</p>
+
+<p>The issue is that a DTD only specifies the structure of a document class,
+not its semantics. When you consider an invalid document, there are often
+several ways to transform its structure to make it valid, but each
+transformation may have a different impact on the document semantics. The DTD
+does not allow you to choose the right transformation.</p>
+
+<p>Another important design decision that has been made for Amaya is that, even
+if it accepts invalid documents, the structure and markup that it produces is
+always valid. Obviously, only elements created or changed by Amaya itself are
+concerned here. Some invalid parts of the original document may remain when the
+document is saved.</p>
+
+<p>The above remarks only apply to HTML documents. For XHTML, Amaya has a
+different, very strict behaviour: it <a href="#L672">stops parsing</a> a
+document when it encounters a well-formedness error. The motivation is to help
+XHTML to deploy in a clean way. There are no legacy documents to support.</p>
+
+<p></p>
+<hr />
+
+<h2 id="II.9.1"><a name="II.9." id="II.9.">II.11. How can I update the document
+title?</a></h2>
+
+<p>The document title, like any other head element, can be edited in the
+Structure view of the document. </p>
+
+<p>You can also use the specific dialogue <em>Tools/Change title</em>.</p>
+
+<p></p>
+<hr />
+
+<h2 id="II.10.1"><a name="II.10." id="II.10.">II.12. How to get out of a
+preformatted, a table, or a division?</a></h2>
+
+<p>When the cursor is at the end of a <code>&lt;pre&gt;</code> formatted
+element, hitting the Enter key creates a new line in the &lt;pre&gt;.</p>
+
+<p>To create another element, say a paragraph, before or after the
+<code>&lt;pre&gt;</code> :</p>
+<ul>
+  <li>Select the <code>&lt;pre&gt;</code> element with the <kbd>ESC</kbd> or
+    <kbd>F2</kbd> key or by clicking the <code>pre</code> in the status bar
+    displayed at the bottom of the window.</li>
+  <li>Insert an empty element before or after with <strong>Insert</strong> and
+    <strong>Append</strong> entries of the contextual menu. 
+    <p>If the current editing mode is XML (see the Text/XML button at the
+    bottom right), another way to achieve <strong>Append</strong> action is to
+    press the <kbd>Enter</kbd> key.</p>
+  </li>
+  <li>Use the <strong>Insert</strong> menu or the Elements panel to insert the
+    element you want to create.</li>
+</ul>
+
+<p>This works also for a table or a division (<code>&lt;div&gt;</code>).</p>
+
+<p></p>
+<hr />
+
+<h2 id="II.11."><a name="II11." id="II11.">II.13. Why doesn't Amaya support
+frames?</a></h2>
+
+<p>Frames cause lots of problems for the web model, e.g. standard URLs can only
+point at a frameset or a frame. Links and/or the back button can generate
+strange results. They also cause troubles to people with disabilities and make
+editing more complex. Unfortunately frames are not tagged deprecated and some
+people continue to use them. We recommend people to not use them.</p>
+
+<p></p>
+<hr />
+
+<h2 id="II.12."><a name="II12." id="II12.">II.14. Does Amaya support JavaScript
+and animated images?</a></h2>
+
+<p>Due to a lack of manpower, we have no plan to implement them. These features
+are more important for a browser than for an editor.</p>
+
+<p></p>
+<hr />
+
+<h2 id="II.13."><a name="II13." id="II13.">II.15. Amaya stops reading XHTML,
+MathML, or SVG documents!</a></h2>
+
+<p>XHTML is a reformulation of HTML 4.0 in XML1.0. XHML documents must be well
+formed which is not necessary the case of HTML documents. As soon as the XML
+parser Expat used by Amaya detects an error in the XHTML code it reports an
+error in the "Parsing Errors" file and stops parsing.</p>
+
+<p>The most common errors are:</p>
+<ul>
+  <li>The document declaration is not conform: the doctype or the namespace is
+    not recognized.</li>
+  <li>A closing tag is missing or the starting tag of an empty element doesn't
+    include the final "/".</li>
+  <li>An attribute value is not quoted.</li>
+  <li>The document includes characters that don't match the document charset. 
+    <p>We recommend people to declare the charset of their documents. It could
+    be declared either in the xml declaration, or/and in the meta element of
+    XHTML documents (see an example below).</p>
+    <pre>&lt;?xml version="1.0" encoding="iso-8859-1"?&gt;
+&lt;html xmlns="http://www.w3.org/1999/xhtml"&gt;
+&lt;head&gt;
+&lt;meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" /&gt;
+ ....
+&lt;/head&gt;</pre>
+  </li>
+</ul>
+
+<p>As the default charset is different for HTML documents and XHTML documents,
+it often occurs that authors created ISO-latin-1 XHTML documents which don't
+provide information about the charset. As soon as a character analyzed by the
+XML parser doesn't match a valid UTF 8 character (it should occur if the
+document is encoded in ISO-latin-1 but parsed as an UTF 8 file), the document
+is considered as invalid: the parsing is stopped and an error message is
+displayed.</p>
+
+<p>In that specific case, you may try to reopen the document with a different
+charset, ISO-8859-1 or a set of other charset with the menu entry
+<em>File&gt;Force a Character Coding</em>.</p>
+
+<p>When the XHTML documents is not well formed, Amaya proposes to read the
+document as a simple HTML file. After that, you will be able to resave it back
+as an XHTML file with the <strong>Save As</strong> command.</p>
+
+<p></p>
+<hr />
+
+<h2 id="II.14."><a name="II14." id="II14.">II.16. Does Amaya support non-Latin
+characters?</a></h2>
+
+<p>The Unicode support is not completely finished yet. Depending on fonts
+available on your computer, some characters may or may not be displayed. Not
+available characters are displayed as small boxes.</p>
+
+<p></p>
+<hr />
+
+<h2 id="II.15.1"><a name="II.15." id="II.15.">II.17. Can I use CSS style
+sheets?</a></h2>
+
+<p>Amaya supports cascading style sheets (CSS), but the implementation is not
+complete yet. Many types of selectors and style properties are already
+available. Each release brings new CSS features. Check the <a
+href="CSSStatus.html">status of the CSS implementation</a> for the current
+release.</p>
+
+<p></p>
+<hr />
+
+<h2 id="II.16.1"><a name="II.16." id="II.16.">II.18. How can I publish my
+documents remotely?</a></h2>
+
+<p>Amaya supports remote publishing using the HTTP PUT method but it is not
+able to save files using FTP.</p>
+
+<p>PUT needs not only to be supported by the web server, but also
+implemented.</p>
+
+<p>Apache httpd doesn't implement PUT by default ; however, it provides hooks
+whereby you can install a PUT handler to implement the protocol. </p>
+<ul>
+  <li>Read information about <a href="Put.html">Configuring your WWW server
+    with the PUT method</a> </li>
+  <li>If you google for "apache http put" you will find some useful articles
+    too.</li>
+</ul>
+
+<p>You can also try to install and activate WebDav module:</p>
+<ul>
+  <li>See <a
+    href="http://www.nabble.com/put-method-cgi-script-or-webdav--td18162564.html">http://www.nabble.com/put-method-cgi-script-or-webdav--td18162564.html</a></li>
+</ul>
+
+<p></p>
+<hr />
+
+<h2 id="II.17.1"><a name="II.17." id="II.17.">II.19. How to control the format
+of generated dates?</a></h2>
+
+<p>Amaya provides a $Date feature. When saving a file Amaya inserts the current
+date wherever it encounters a text <strong>"date:</strong>" between two '$' or
+special comments. The <em>XHTML/Insert time stamp</em> menu entry allows you to
+generate this date at the current position in the document.</p>
+
+<p>The format of the generated date depends on a Amaya configuration
+variable.</p>
+<pre>ISO_DATE=Yes (default value) generates "YYYY-MM-DD"</pre>
+<pre>YYYY = The year as a decimal number including the century.</pre>
+<pre>MM = The month as a decimal number (range 01 to 12).</pre>
+<pre>DD = The day of the month as a decimal number (range 01 to 31).</pre>
+<pre>ISO_DATE=No generates "DD-MM-YYYY"</pre>
+<pre>DD = The day of the month as a decimal number (range 01 to 31).</pre>
+<pre>MM = The month as a decimal number (range 01 to 12).</pre>
+<pre>YYYY = The year as a decimal number including the century.</pre>
+<hr />
+
+<h2><a name="II.20" id="II.20">II.20 How to move a division?</a></h2>
+
+<p>To copy or cut a division:</p>
+<ul>
+  <li>Select a point within the division.</li>
+  <li>Click in the status bar (at the bottom of the window) on the
+    <code>&lt;div&gt;</code>, or press the <kbd>F2</kbd> (or <kbd>Esc</kbd>)
+    key until the <code>&lt;div&gt;</code> element is selected.</li>
+  <li>Copy or cut it.</li>
+</ul>
+
+<p>To paste the division before or after another division:</p>
+<ul>
+  <li>Select the division like if you want to copy it.</li>
+  <li>If you want to paste the copied division before, use the
+    <strong>Insert</strong> entry of the contextual menu to create an empty
+    element before the division.</li>
+  <li>If you want to paste the copied division after, use the
+    <strong>Append</strong> entry of the contextual menu to create an empty
+    element after the division. 
+    <p>If the current editing mode is XML (see the Text/XML button at the
+    bottom right), another way to achieve the <strong>Append</strong> action is
+    to press the <kbd>Enter</kbd> key.</p>
+  </li>
+  <li>Paste at that new position.</li>
+</ul>
+<hr />
+
+<h2><a name="II.21" id="II.21">II.21 How to move a column or a row of a
+table?</a></h2>
+
+<p>To copy or cut a column:</p>
+<ul>
+  <li>Use the <strong>Select column</strong> entry in the <strong>Tools/Edit
+    table</strong> submenu. 
+    <p>You can also start the selection in a cell, extend to another cell in
+    the same column. Hitting the <kbd>F2</kbd> key extends the selection to the
+    whole column. Amaya changes to column selection mode.</p>
+  </li>
+  <li>Copy or cut it.</li>
+</ul>
+
+<p>To paste a column before or after another column:</p>
+<ul>
+  <li>To paste a column before an existing column, click on a cell in the
+    existing column and use item <strong>Paste before</strong> of the
+    <strong>Tools/Edit table</strong> submenu. 
+    <p>If the selection is at the beginning of the cell, the
+    <strong>Paste</strong> command is equivalent to a <strong>Paste
+    before</strong> command.</p>
+  </li>
+  <li>To paste a column after an existing column, click on a cell in the
+    existing column and use item <strong>Paste after</strong> of the
+    <strong>Tools/Edit table</strong> submenu. 
+    <p>If the selection is not at the beginning of the cell, the
+    <strong>Paste</strong> command is equivalent to a <strong>Paste
+    after</strong> command.</p>
+  </li>
+</ul>
+
+<p>To copy or cut a row:</p>
+<ul>
+  <li>You start the selection in a cell. Hitting the <kbd>F2</kbd> key until it
+    extends the selection to the whole row.</li>
+  <li>Copy or cut it.</li>
+</ul>
+
+<p>To paste a row before or after another row:</p>
+<ul>
+  <li>To paste a row before an existing row, click at the beginning of the
+    first cell in the existing row and use the <strong>Paste</strong>
+  command.</li>
+  <li>To paste a row after an existing row, click on a cell but not at the
+    beginning of the first cell and use the <strong>Paste</strong> command.</li>
+</ul>
+<hr />
+
+<h2><a name="II.22" id="II.22">II.22 How to display two documents side by
+side?</a></h2>
+
+<p>You can display two documents side by side in the window by dragging a
+document tab to the left or right side of the displayed document.</p>
+<hr />
+
+<h2><a name="II.23" id="II.23">II.23 Installing Amaya on OpenSuse 12.1</a></h2>
+
+<p>See <a
+href="http://lists.w3.org/Archives/Public/www-amaya/2012JanMar/0014.html">Rigo's
+mail</a> about installing libraptor</p>
+
+<p></p>
+<hr />
+
+<h2 id="III.1."><a name="Where3">III.1. Where can I get the developer's
+documentation?</a></h2>
+
+<p>Those who want to extend or change the Amaya application need to read the
+following documentation:</p>
+<ul>
+  <li>Overview of the <a
+    href="http://www.w3.org/Amaya/User/AmayaArchi.html">Amaya
+  architecture.</a></li>
+  <li>The <a href="http://www.w3.org/Amaya/User/APIman.toc.html">Thot API
+    manual</a> explains how the Thotlib works and gives the list of available
+    functions</li>
+  <li>The <a href="http://www.w3.org/Amaya/User/Appman.toc.html">Thot
+    Application generation manual</a> explains how to generate menus and the
+    mechanism of Thot events.</li>
+  <li>The <a href="http://www.w3.org/Amaya/User/languages.toc.html">Thot
+    language manual</a> gives the syntax of the S, P and T languages.</li>
+  <li>The page <a
+    href="http://www.w3.org/Amaya/User/Amaya-dev.html">Amaya-dev.html</a> gives
+    team conventions for writing the Thotlib and the Amaya code.</li>
+</ul>
+
+<p></p>
+<hr />
+
+<h2 id="III.2."><a name="Make">III.2. Make complains with missing files</a></h2>
+
+<p>This error occurs when one forgot to create the object subtree before
+launching the configure process. As explained in the <a
+href="http://www.w3.org/Amaya/User/Autoconf.html">Autoconf page</a>, you have
+to create first a subtree (<em>obj</em> or any other name) for object code and
+launch configure to create the Makefile(s):</p>
+<pre>cd Amaya</pre>
+<pre>mkdir obj </pre>
+<pre>cd obj</pre>
+<pre> ../configure</pre>
+
+<p></p>
+<hr />
+
+<h2 id="III.3."><a name="Make1">III.3. Make fails when compiling the HTML
+schema</a></h2>
+
+<p>Thot compilers need a <strong>cpp</strong> preprocessor:</p>
+<ul>
+  <li>If you use GNU tools, configure should invoke the gcc compiler with the
+    right options. You can check that file <em>Options</em> contains the
+    following definition: 
+    <pre>CPP     = gcc -E -x c</pre>
+  </li>
+  <li>In other cases you have to make sure that the <strong>cpp</strong>
+    preprocessor is in your PATH.</li>
+</ul>
+<hr />
+
+<h2 id="III.4."><a name="GTK">III.4. What do I need to compile?</a></h2>
+
+<p>The new version of Amaya uses OpenGL (native or Mesa) canvas and wxWidgets
+toolkit, GTK+2.0 on Linux, Win32 on Windows and Cocoa on MacOSX, raptor.</p>
+
+<p>See the <a href="AmayaWX.html">Amaya WX README</a> page.</p>
+<hr />
+
+<h2 id="III.5.">III.5. <a name="L810">I've a problem with ltconfig (or
+libtool)</a></h2>
+
+<p>Some platforms may have different versions of the autoconf and libtool
+tools. If you get a message similar to:</p>
+<pre>libtool: ltconfig version '' does not match ltmain.sh version '1.x.x'
+Fatal configuration error.  See the libtool docs for more information.</pre>
+
+<p>Try running the following commands in both the <code>Amaya</code> and the
+libwww directory:</p>
+<pre>aclocal \</pre>
+<pre>&amp;&amp; libtoolize --force --copy \</pre>
+<pre>&amp;&amp; automake --foreign --force-missing --add-missing --copy \</pre>
+<pre>&amp;&amp; autoconf</pre>
+
+<p>Thanks to Maxim Zakharov for this <a
+href="http://lists.w3.org/Archives/Public/www-amaya-dev/2002Mar/0004.html">tip.</a></p>
+<hr />
+
+<h2 id="III.6.">III.6. <a name="Make2" id="Make2">Make complains "test:
+argument expected"</a></h2>
+
+<p>The default shell version that your make command is probably too old. Try
+using bash instead by invoking the make command in your compilation directory
+as follows:</p>
+<pre>      make SHELL=/path/to/your/bash</pre>
+<hr />
+</div>
+
+<p><a href="http://validator.w3.org/"><img border="0"
+src="http://validator.w3.org/images/valid_icons/valid-xhtml10.png"
+alt="Valid xhtml" height="31" width="88" /></a> <a href="/Amaya"><img
+src="../Icons/w3c-amaya.gif" alt="W3C-Amaya" align="bottom" /></a></p>
+<address>
+  Irène Vatton<br />
+  Date: <!--$date=-->2012-10-03<!--$--> 
+</address>
+
+<p class="policyfooter"><small>Copyright  ©  1994-2012 <a
+href="http://www.inria.fr/">INRIA</a> and <a href="/">W3C</a><sup>® </sup> (<a
+href="http://www.lcs.mit.edu/">MIT</a>, <a
+href="http://www.ercim.org/">ERCIM</a>, <a
+href="http://www.keio.ac.jp/">Keio</a>), All Rights Reserved. W3C <a
+href="/Consortium/Legal/ipr-notice.html#Legal_Disclaimer">liability,</a> <a
+href="/Consortium/Legal/ipr-notice.html#W3C_Trademarks">trademark</a>, <a
+href="/Consortium/Legal/copyright-documents.html">document use </a>and <a
+href="/Consortium/Legal/copyright-software.html">software licensing </a>rules
+apply. Your interactions with this site are in accordance with our <a
+href="/Consortium/Legal/privacy-statement.html#Public">public</a> and <a
+href="/Consortium/Legal/privacy-statement.html#Members">Member</a> privacy
+statements.</small></p>
+</body>
+</html>

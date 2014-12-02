@@ -1,0 +1,370 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+  <meta name="description" content="W3C Math: MathML puts math on the Web">
+  <meta name="keywords"
+  content="MathML, W3C Math Working Group,  Mathematical Markup Language, math on the Web, HTML documents,          mathematics, interactive math">
+  <title>W3C Math: MathML puts math on the Web</title>
+  <link rel="stylesheet" type="text/css" media="screen, projection"
+    href="stylesheets/mathmlhome.css">
+  <link rel="stylesheet" type="text/css" media="print"
+    href="stylesheets/mathmlhomeprint.css">
+<!--
+  <style type="text/css">
+body { margin-left: 5%;
+margin-right: 5%; 
+font-family: Trebuchet, Arial, sans-serif;
+}
+h1 {font-size:230%; text-align:center}
+h1,h2,h3,h4 {font-family: Trebuchet, Arial, sans-serif; color: black }
+b { color:black}
+caption { text-decoration: underline; margin-top: 1em }
+blockquote { color: #101010; font-style:italic }
+pre { font-family: Trebuchet, Arial, sans-serif; color:black;}
+div.disclaimer {margin-left: -8%}
+p.first {text-align:center; color:black; font-size:110%}
+  </style>
+-->
+    <style type="text/css">
+      .header span {vertical-align: middle; display: inline-block;
+        padding-left: 5%; max-width: 34%; /* 95% - headerpic - logo */
+        font-size: 0.5em} /* because the text is quite long */
+      dt {font-weight: bold; margin: 1.3em 0 0 0}
+      dd, dd > p:first-child {margin: 0; padding: 0}
+      ul {list-style: disc}
+      dl dl {margin-left: 2em}
+    </style>
+</head>
+
+<body>
+    <div id="container">
+      <h1 class="header">
+        <img class="headerpic" src="Home/images/BlueCalc.png"
+	  alt="Mechanical Caculator" ><a href="/"><img class="logo"
+	    src="Home/images/w3cLogo.png"
+	    alt="World Wide Web Consortium
+	    (W3C)"></a><span>Mathematical Markup Language (MathML)
+	  &ndash; Frequently Asked Questions (FAQ)</span>
+      </h1>
+
+      <div class="content">
+        <div class="column2">
+
+<blockquote>
+  "MathML will make the Web even better for educational, scientific and
+  technical materials. It also has the potential to make mathematics
+  accessible to those with visual disabilities. It will allow mathematical
+  content to be reused and exchanged with technical computing systems for
+  further manipulation." -- Tim Berners-Lee, Director W3C</blockquote>
+<dl id=WGeds>
+  <dt><b>Math Working Group co-chair:</b>
+  <dd>Patrick Ion, AMS <a href="mailto:ion@ams.org">ion@ams.org</a>
+    </dd>
+  <dt><b>MathML FAQ page editors:</b></dt>
+    <dd>Stephen Buswell, Stilo Technology Ltd <a
+      href="mailto:sb@stilo.com">sb@stilo.com</a><br>
+      Robert S. Sutor, IBM, <a
+      href="mailto:sutor@us.ibm.com">sutor@us.ibm.com</a><br>
+    </dd>
+</dl>
+<!--          -->
+<!-- Contents -->
+<!--          -->
+
+<h2>Contents:</h2>
+<ul>
+  <li><a href="#goals">The Goals of MathML</a></li>
+  <li><a href="#syntax">MathML Syntax</a></li>
+  <li><a href="#browser">The MathML Browser Interface</a></li>
+  <li><a href="#tech">Technical MathML Issues</a></li>
+  <li><a href="#WG">The W3C Math Working Group</a></li>
+  <li><a href="#tools">MathML Tools, Products and Content</a></li>
+  <li><a href="#more">More About MathML</a></li>
+</ul>
+<!--       -->
+<!-- Goals -->
+<!--       -->
+<h2 id="goals">The Goals of MathML</h2>
+
+<dl>
+<dt>What are the goals of MathML?
+<dd>
+<p>The principal goal of MathML is to enable mathematics to be served, received,
+and processed on the Web, just as HTML has enabled this functionality for
+text. In more detail, MathML is intended to:
+<ul>
+  <li>encode mathematical material suitable for teaching and scientific
+    communication at all levels.</li>
+  <li>encode both mathematical notation and mathematical meaning.</li>
+  <li>facilitate conversion to and from other math formats, both
+    presentational and semantic.</li>
+  <li>allow the passing of information intended for specific renderers and
+    applications.</li>
+  <li>support efficient browsing for lengthy expressions.</li>
+  <li>provide for extensibility.</li>
+  <li>be well suited to template and other math editing techniques.</li>
+  <li>be human legible (though it is very verbose), and simple for software
+    to generate and process.</li>
+</ul>
+
+<dt>Who are the intended users?
+<dd>
+<p>MathML is intended to be used (indirectly usually) by everyone from
+high-school mathematics students to academics and engineers in industry
+(These categories are not necessarily distinct !).  It also provides an
+interchange mechanism between applications processing mathematical
+representation in some form.</p>
+
+<dt>Why do the goals of MathML go beyond the display of mathematical
+expressions?
+<dd>
+<p>The Web represents a fundamental change in the underlying metaphor for
+knowledge storage, a change in which interconnectivity and interactivity play
+central roles. The intention is to provide ways of communicating mathematics
+which, in addition to rendering mechanisms, facilitate automatic processing,
+searching and indexing, and reuse in other mathematical applications and
+contexts. This includes contexts where the underlying mathematical semantics
+are important, such as, for example, in a distance learning course in Linear
+Algebra.</p>
+</dl>
+<!-- -->
+<!-- MathML Syntax -->
+<!-- -->
+<h2 id="syntax">MathML Syntax</h2>
+
+<dl>
+<dt>MathML is verbose - I edit HTML by hand with emacs, and MathML looks tedious
+to read and edit in text form.
+<dd>
+<p>True! The verbosity of MathML is largely a consequence of the WG decision to
+use <a href="http:www.w3.org/TR/PR-xml"> XML </a>as the base syntax. The
+reasons for doing this include standardisation, availability of tools and the
+general tendency of web-based applications to use XML as a carrier format.
+The downside is that the encodings become verbose for examples of any
+complexity, with resulting requirements on tools for MathML generation and
+manipulation. See <a href="#tools">MathML Tools, Products and
+Content.</a>
+
+<dt>Backwards compatibility - Why has MathML not reused TeX/LaTeX, or the SGML
+DTDs ISO 12083 or AAP Math?
+<dd>
+<p>TeX and LaTeX are very widely used for encoding mathematical expressions.
+However, they encode only the surface presentation of an expression, and do
+not encode either semantic information or structural information. One of the
+WG goals is to provide a presentation mechanism that not only has the
+expressive capabilities of TeX, but also has enough information in it so that
+the presentation is:
+<ul>
+  <li>accessible to the visually impaired;</li>
+  <li>capable of doing a good job of linebreaking expressions, since the
+    author can not know the window size and font size in which the MathML
+    should render.</li>
+</ul>
+<p>In addition to a presentation interface, it is necessary to provide
+mechanisms for encoding mathematical semantic content, and controlling the
+interface between the embedded MathML fragment and the browser processing the
+containing page. We also considered that it was preferable for a document
+with embedded mathematical formulas to require only one type of parser rather
+than having a completely different type of encoding for the mathematics level.
+
+<p>SGML DTDs are oriented towards entire documents governed by one DTD rather
+than math fragments within Web pages. Apart from the work done on the
+development of a 'Semantic Maths DTD fragment' within the ISO 12083 working
+group (not part of the standard), existing SGML DTDs are
+presentation-oriented and lack support for content encoding.</p>
+
+<dt>Does the verbose MathML syntax takes a long time to transfer across the net
+and parse?
+<dd>
+<p>By comparison with existing image based methods of embedding math(s) in web
+pages, for example GIF files, MathML is relatively quick to transfer and
+process.
+</dl>
+<!--                               -->
+<!-- The MathML Browser Interfacex -->
+<!--                               -->
+<h2 id="browser">The MathML Browser Interface</h2>
+
+<dl>
+<dt>MathML is XML-based. Will the browser manufacturers support XML fully? Will
+they support MathML natively?
+<dd>
+<p>Yes. Both Microsoft and Netscape have publicly declared support for the XML
+recommendation. Some XML support is already available for IE 4.  As the
+browser manufacturers move toward fuller support of XML and the associated
+style sheet standards such as <a href="http://www.w3.org/Style/">XSL</a> that
+are developing, support for MathML will become more "native".
+
+<dt>Can I get a plugin or applet to render MathML?
+<dd>
+<p>Yes, see <a href="#tools">MathML Tools, Products and Content</a>
+
+<dt>Is there a MIME type for MathML?
+<dd>
+<p>Yes, there are three:
+<dl>
+<dt>"application/mathml-presentation+xml"
+<dd>MathML instances that consist solely of presentation markup.
+<dt>"application/mathml-content+xml"
+<dd>MathML instances that consist solely of content markup. 
+<dt>"application/mathml+xml"
+<dd>Any valid MathML instance. Must be used for MathML instances that are
+a mix of presentation and content markup, or 
+where the composition of an instance is not
+known or cannot be guaranteed.
+</dl>
+
+<dt>Can I embed APPLET, EMBED or OBJECT tags within MathML?
+<dd>
+<p>MathML is defined as an XML application, so there is no special support for
+embedding web objects within MathML fragments. You can use APPLET and EMBED
+in the containing HTML page to launch an applet or plugin to render and
+process a MathML fragment or file.
+</dl>
+
+<h2 id="tech">Technical MathML Issues</h2>
+
+<dl>
+<dt>Does the WG still intend to develop a short form input syntax as part of
+MathML?
+<dd>
+<p>During the development of MathML it has become clear that the requirements on
+input syntaxes vary so widely that no single syntax will satisfy all users.
+Various members of the WG have developed input syntaxes for their particular
+tools.  The WG will provide technical advice to all those who are involved in
+the development of input syntaxes for MathML-aware tools. Input syntaxes do
+not form part of the core MathML recommendation.
+
+<dt>Can I overload the presentation for content elements - for instance, can I
+render &amp;ImaginaryI; as 'j'?
+<dd>
+<p>Yes, you can use the semantics element to attach a preferred presentation
+(encoded in MathML presentation elements) as an annotation-xml.
+
+<dt>How do you use entities to stop whitespace compression?
+<dd>
+<p>With difficulty!
+
+<dt>Why is math(s) difficult to render in a browser. Microsoft Equation Editor
+has no difficulty rendering math(s)?
+<dd>
+<p>The main problem is that existing browsers don't provide an adequate
+interface for third-party software used to render such as plugins, applets or
+ActiveX controls. It is hoped this will be solved as a result on work on the
+next generation of HTML, DOM and CSS. In addition, with due respect to a
+successful piece of software, it cannot be said that Equation Editor provides
+math presentation of the highest quality or gives widely portable
+results.
+
+<p>As an example of the kinds of problems faced: The rendering code for an
+embedded piece of mathematics would like to use a font size and family that
+matches the font used for the rest of the document's text. The plugin would
+like to control the vertical positioning for a math expression relative to
+the baseline of the text line in which the math is placed. The plugin would
+like to negotiate the height and width for the math object according to the
+space needed and not have this fixed at authoring time.  At present, because
+of the lack of a way of communication between embedded objects and the
+containing document, none of these requirements can be met.
+
+<p>A richer model for the rendering objects that compose a document, that
+doesn't treat plugins as impoverished distant relatives will go a long way to
+solving the problems.
+
+<dt>Has the Unicode consortium accepted the additional characters
+proposed by the
+WG?
+<dd>
+<p>Yes, all characters for which MathML defines entities are in
+Unicode since version&nbsp;5.
+</dl>
+<!-- -->
+<!-- MathML Tools , Products and Content -->
+<!-- -->
+<h2 id="tools">MathML Tools , Products and Content</h2>
+
+<dl>
+<dt>Which products do (or will) support MathML input/output/editing?
+<dd>
+<p>See the <a href="implementations.html">implementations page</a>.</p>
+
+<dt>Is automatic translation to and from LaTeX possible? Is there anything
+available which does it?
+<dd>
+<p>
+Generation of MathML from that in LaTeX documents (presentation and content)
+is certainly possible. Organisations working on this problem include <a
+href="www.csd.wo.ca">University of Western Ontario</a>, and the <a
+href="www.ams.org">AMS</a> and SIAM.
+
+<dt>I am a content provider (e.g. a technical publisher). (Why) Should I convert
+my legacy data to MathML. How?
+<dd>
+<p>The usual dilemma with emerging standards: content is useless without tools
+to create and manipulate it, and tool vendors are reluctant to embark upon
+costly developments when the market for the product is unclear. However,
+there are already a number of tools under development, see <a
+href="#tools">MathML Tools</a>.
+
+<p>Another important issue is the general trend of web-based applications
+towards the use of XML as a carrier format.  MathML is the only 'standard'
+XML DTD for maths on the Web. Indeed, the working group of the ISO 12083
+committee considers that MathML could be an appropriate 'plugin' mathematics
+module in a future modular version of the 12083 standard.</p>
+</dl>
+<!-- -->
+<!-- More about MathML -->
+<!-- -->
+<h2 id="more">More about MathML</h2>
+
+<dl>
+<dt>Where can I learn more about MathML?
+<dd>
+<p>you can find out more at the <a href="http://www.w3.org/Math">W3C Web
+site</a>.
+
+<dt>To what extent has MathML been accepted by the public and industry outside
+the W3C Math WG and its friends? What is being done to further this?
+<dd>
+<p>One of the tasks of the re-chartered W3C Math WG is to promote the adoption
+of MathML in industry and academia. More information can be found on the Math
+WG's Web page <a
+href="http://www.w3.org/Math/">http://www.w3.org/Math/</a>
+</dl>
+<!--                            -->
+<!-- The W3C Math Working Group -->
+<!--                            -->
+<h2 id="WG">The W3C Math Working Group</h2>
+
+<p>See the <a href="workingGroup.html">Working Group Page</a>.</p>
+
+<dl>
+<dt>How do I join the W3C Math Working group?
+<dd>
+<p>
+Send e-mail to one of the <a href="#WGeds">co-chairs</a>
+</dl>
+
+<address>
+  Maintained by:<br>
+
+<a href="mailto:ion@ams.org">Patrick Ion</a>(co-chair for the Math working
+group).<br>
+W3C contact for math: Bert Bos (bert@w3.org)<br>
+Last edit: September 2011
+</address>
+
+<p class="copyright"><a rel="Copyright"
+href="/Consortium/Legal/ipr-notice#Copyright">Copyright</a> ©
+1998-2011 <a href="/"><acronym title="World Wide Web
+Consortium">W3C</acronym></a><sup>®</sup> (<a
+href="http://www.csail.mit.edu/"><acronym title="Massachusetts
+Institute of Technology">MIT</acronym></a>, <a
+href="http://www.ercim.eu/"><acronym title="European Research
+Consortium for Informatics and Mathematics">ERCIM</acronym></a>, <a
+href="http://www.keio.ac.jp/">Keio</a>), All Rights Reserved.
+
+</div>
+</div>
+</div>
+</body>
+</html>

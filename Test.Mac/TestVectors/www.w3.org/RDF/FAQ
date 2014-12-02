@@ -1,0 +1,694 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+RDFa 1.0//EN" "http://www.w3.org/MarkUp/DTD/xhtml-rdfa-1.dtd">
+<html version="XHTML+RDFa 1.0" xmlns="http://www.w3.org/1999/xhtml"
+	  xmlns:dc="http://purl.org/dc/terms/" 
+	  xmlns:foaf="http://xmlns.com/foaf/0.1/" 
+	  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" 
+	  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	  xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+	  xmlns:faq="http://www.w3.org/2008/02/faqTerms.rdf#"
+	  xmlns:rss="http://purl.org/rss/1.0/"
+>
+  <head profile="http://www.w3.org/1999/xhtml/vocab http://www.w3.org/2005/10/profile">
+    <title>W3C Semantic Web FAQ</title>
+     <link rel="icon" type="image/png" href="/2001/sw/favicon-sw.png" />
+     <link href="/2001/sw/swstyle.css" rel="stylesheet" type="text/css" />
+     <link href="/2001/sw/forFAQ/faq.css" rel="stylesheet" type="text/css" />
+     <link href="/2001/sw/swstyleExtras.css" rel="stylesheet" type="text/css" />
+	 <link rel="meta" type="application/rdf+xml" title="FAQ in RDF" href="http://www.w3.org/2001/sw/SW-FAQ.rdf" />
+	 <link rel="alternate" type="application/rss+xml" title="FAQ RSS1.0 feed" href="/2001/sw/SW-FAQ-feed.rdf" />
+	 <meta name="description" content="Frequently asked questions about the Semantic Web"/>
+	 <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+     <script src="forFAQ/prototype.js" type="text/javascript"></script>
+     <script src="forFAQ/faq.js" type="text/javascript"></script>
+	 <base href="http://www.w3.org/2001/sw/SW-FAQ"/>
+  </head>
+  <body onload="Faq.prepareFaq();">
+    <p class="banner"><a href="/2001/sw/" ><img src="/Icons/SW/sw-horz-w3c" width="241" height="48" alt="W3C SW Logo"/></a></p>
+    <p>
+      On this page: <a href="#WhatIsTheSW">What is the Semantic Web?</a> | <a href="#HowDoesTheSWRelatesTo">How does the
+      Semantic Web relate to…</a> | <a href="#HowDoIParticipate">How do I participate in the Semantic Web?</a>
+      | <a href="#TechieQuestions">Questions on RDF, Ontologies, SPARQL, Rules…</a>
+    <br/>
+      Further links: <a href="/2001/sw/SW-FAQ-feed.rdf">RSS 1.0 feed to this FAQ</a> | <a href=
+      "/2001/sw/anews">Activity News</a> | <a href="/2001/sw/">Activity Home page</a>
+    <br/>
+      <a href="#" onclick="Faq.expandAll();">Expand all questions</a> | <a href="#" onclick="Faq.collapseAll();">Collapse all questions</a>
+    </p>
+    <h1 class="title">
+      W3C Semantic Web Frequently Asked Questions
+    </h1>
+	
+	<blockquote>
+	  <p><span class="summary">The <strong>Semantic Web</strong> provides a
+	  common framework that allows <strong>data</strong> to be shared and reused
+	  across application, enterprise, and community boundaries. It is a
+	  collaborative effort led by W3C with participation from a large number of
+	  researchers and industrial partners.</span></p>
+	</blockquote>	
+	
+    <p>
+      Click on the question to see the answer; clicking on the question again will collapse it.
+      Alternatively, the "tab" character can be used to jump from question to question 
+	  and the "enter"/"return" to expand/collapse a it. 
+	  Finally, all questions <a href="#" onclick="Faq.expandAll();">can be expanded</a>
+	  (or <a href="#" onclick="Faq.collapseAll();">collapsed</a>) with one click.
+    </p>
+
+    <p>
+      There is also a <a href="http://esw.w3.org/topic/SweoIG/SW-FAQ">wiki page</a> where new or
+      current questions, and the answers thereof, can be discussed.
+    </p>
+	
+	<div rel="rdfs:seeAlso">
+		<div class="category" id="WhatIsTheSW" about="#WhatIsTheSW" rev="faq:inGroup" property="dc:label" content="What is the Semantic Web?">
+		  <h2 class="category-title">What is the Semantic Web?</h2>
+		  <div class="faq" id="swgoals" about="#swgoals" typeof="faq:FAQ" property="dc:date" content="2007-04-17T00:00+00:00">
+			<h3 class="question" property="faq:question">How would you define the main goals of the Semantic Web?</h3>
+			<div class="answer" property="faq:answer" datatype="">
+				<p>The <em>Semantic Web is a Web of data</em>. There is a lot of data we all use every day, and it's not part of the Web. For example, I can see my bank statements on the web, and my photographs, and I can see my appointments in a calendar. But can I see my photos in a calendar to see what I was doing when I took them? Can I see bank statement lines in a calendar? Why not? Because we don't have a web of data. Because data is controlled by applications, and each application keeps it to itself.
+				</p>
+			
+			  <p>
+				The vision of the Semantic Web is to extend principles of the Web from documents to data. Data should be accessed using the general Web architecture using, e.g., URI-s; data should be related to one another just as documents (or portions of documents) are already. This also means creation of a common framework that allows data to be shared and reused across application, enterprise, and community boundaries, to be processed automatically by tools as well as manually, including revealing possible new relationships among pieces of data. 
+			  </p>
+			  	
+			  <p>
+				Semantic Web technologies can be used in a variety of application areas; for example: in <em>data integration</em>, whereby data in various locations and various formats can be integrated in one, seamless application; in <em>resource discovery and classification</em> to provide better, domain specific search engine capabilities; in <em>cataloging</em> for describing the content and content relationships available at a particular Web site, page, or digital library; by <em>intelligent software agents</em> to facilitate knowledge sharing and exchange; in <em>content rating</em>; in describing <em>collections</em> of pages that represent a single logical “document”; for describing <em>intellectual property rights</em> of Web pages (see, eg, the <a href="http://creativecommons.org/technology/usingmarkup">Creative Commons</a>), and in many others. The list of <a href="http://www.w3.org/2001/sw/sweo/public/UseCases/">Semantic Web Case Studies and Use Cases</a> gives some further examples.</p>		  
+			  
+			</div>
+		  </div>
+		  <p class="permalink"><a href="#swgoals">(permalink)</a></p>
+
+		  <div class="faq" id="othersw" about="#othersw" typeof="faq:FAQ" property="dc:date" content="2008-06-27T00:00+00:00">
+			<h3 class="question" property="faq:question">Are there any other definitions or thought of Semantic Web, if any?</h3>
+			<div class="answer" property="faq:answer" datatype="">
+			  <p>
+				No <em>formal</em> definitions, but of course there are different approaches. Indeed, the complexity and variety of applications referring to the Semantic Web is increasing every day, which means that various application areas, implementers, developers, etc, would emphasize different aspects of Semantic Web technologies. This wide range of applications include data integration, knowledge representation and analysis, cataloguing services, improving search algorithms and methods, social networks, etc. 
+			  </p>
+			</div>
+		  </div>
+		  <p class="permalink"><a href="#othersw">(permalink)</a></p>
+
+		  <div class="faq" id="whatarebuildingblocks" about="#whatarebuildingblocks" typeof="faq:FAQ" property="dc:date" content="2007-04-17T00:00+00:00">
+			<h3 class="question" property="faq:question">What are the major building blocks of the Semantic Web?</h3>
+			<div class="answer" property="faq:answer" datatype="">
+			  <p>In order to achieve the goals <a href="#swgoals">described above</a>, the most important is to be able to define and describe the relations among data (i.e., resources) on the Web. This is not unlike the usage of hyperlinks on the current Web that connect the current page with another one: the hyperlinks defines a relationship between the current page and the target. One major difference is that, on the Semantic Web, such relationships can be established between <em>any</em> two resources, there is no notion of “current” page. Another major difference is that the relationship (i.e, the link) itself is <em>named</em>, whereas the link used by a human on the (traditional) Web is not and their role is deduced by the human reader. The definition of those relations allow for a better and automatic interchange of data. <a href="#whrdf">RDF</a>, which is one of the fundamental building blocks of the Semantic Web, gives a formal definition for that interchange.
+			  </p>
+			  <p>
+				On that basis, additional building blocks are built around this central notion. Some examples are:
+			  </p>
+			  <ul>
+				<li>Tools to query information described through such relationships (eg, SPARQL)
+				</li>
+				<li>Tools to have a finer and more detailed classification and characterization of those relationships as well as the resources being characterized. This ensures interoperability, more complex automatic behaviors. For example, a community can agree what name to use for a relationship connecting a page to one’s calendar; this name can then be used by a large number of users and applications without the necessity to redefine such names every time. 
+				(E.g., RDF Schemas, OWL, SKOS)
+				</li>
+				<li>For more complex cases, tools are available to define logical relationships among resources and their relationships (for example, if a relationships binds a person to his/her email address, it is feasible to declare that the email address is unique, ie, the address is not shared by several persons). Tools based on this level (e.g., OWL, Rules) can ensure more interoperability, can reveal inconsistencies and find new relationships. 
+				</li>
+				<li>Tools to extract from, and to bind to traditional data sources to ensure their interchange with data from other sources. (E.g., GRDDL, RDFa, POWDER)
+				</li>
+			  </ul>
+			</div>
+		  </div>
+		  <p class="permalink"><a href="#whatarebuildingblocks">(permalink)</a></p>
+		  <div class="faq" id="whatarekillerapps" about="#whatarekillerapps" typeof="faq:FAQ" property="dc:date" content="2007-04-12T00:00+00:00">
+			<h3 class="question" property="faq:question">What is the “killer application” for the Semantic Web?</h3>
+			<div class="answer" property="faq:answer" datatype="">
+			  <p>
+				It is difficult to predict what a “killer application” is for a specific technology, and the prediction is often erroneous. That said, the integration of currently unbound and independent “silos” of data in a coherent application is certainly a good candidate. Specific examples are currently explored in areas like <a href="http://esw.w3.org/topic/SemanticWebForLifeSciences">Health Care and Life Sciences</a>, <a href="http://www.swed.org.uk">Public Administration</a>, <a href="http://www.swop-project.eu/">Engineering</a>, etc.
+			  </p>
+			</div>
+		  </div>
+		  <p class="permalink"><a href="#whatarekillerapps">(permalink)</a></p>
+		  <div class="faq" id="swonbrowser" about="#swonbrowser" typeof="faq:FAQ" property="dc:date" content="2007-04-12T00:00+00:00">
+			<h3 class="question" property="faq:question">Will I “see” the Semantic Web in my everyday browser?</h3>
+			<div class="answer" property="faq:answer" datatype="">
+			  <p>
+				Not necessarily, at least not directly. The Semantic Web technologies may act behind the scenes, resulting in a better user experience, rather than directly influencing the “look” on the browser. This is already happening: there are Web Sites (e.g., Sun’s <a href="http://www.sun.com/servers/wp.html/">white paper collection site</a>, or Nokia’s <a href="http://www.forum.nokia.com/">support portal for their S60 series device</a>, <a href="http://pressroom.oracle.com/">Oracle’s virtual press room</a>, <a href="http://www.harpers.org/">Harper’s online magazine</a>, or <a href="http://finance.yahoo.com">Yahoo!’s Finance portal</a>) that use Semantic Web technologies in the background.
+			  </p>
+			</div>
+		  </div>
+		  <p class="permalink"><a href="#swonbrowser">(permalink)</a></p>
+		  <div class="faq" id="isthisresearch" about="#isthisresearch" typeof="faq:FAQ" property="dc:date" content="2007-07-29T00:00+00:00">
+			<h3 class="question" property="faq:question">Is the Semantic Web just research, or does it have industrial applications?</h3>
+			<div class="answer" property="faq:answer" datatype="">
+			  <p>
+				As all innovative technologies, the Semantic Web underwent an evolution starting at research labs, being then picked up by the Open Source community, then by small and specialized startups and finally by business in general. Remember: the Web was originally developed in a High Energy Physics center!
+			  </p>
+			  <p>
+				At present, the Semantic Web is increasingly used by small and large business. <a href="http://www.oracle.com/technology/tech/semantic_technologies/index.html">Oracle</a>, <a href="http://www.alphaworks.ibm.com/tech/semanticstk">IBM</a>, <a href="http://www.adobe.com/products/xmp/index.html">Adobe</a>, <a href="http://www.softwareag.com/corporate/news/pressroom/pressreleases/20050309_enterprise_information_integration_page.asp">Software AG</a>, or <a href="http://www.yahoo.com">Yahoo!</a> are only some of the large corporations that have picked up this technology already and are selling tools as well as complete business solutions. Large application areas, like the <a href="http://esw.w3.org/topic/SemanticWebForLifeSciences">Health Care and Life Sciences</a>, look at the data integration possibilities of the Semantic Web as one of the technologies that might offer significant help in solving their R&amp;D problems.
+			  </p>
+			  <p>It is worth consulting the list of <a href="http://www.w3.org/2001/sw/sweo/public/UseCases/">Semantic Web Case Studies and Use Cases</a>; it gives a good overview of existing applications. Note that the list is often updated, when new application examples come in.</p>		  
+			</div>
+		  </div>
+		  <p class="permalink"><a href="#isthisresearch">(permalink)</a></p>
+		  <div class="faq" id="complication" about="#complication" typeof="faq:FAQ" property="dc:date" content="2007-04-17T00:00+00:00">
+			<h3 class="question" property="faq:question">Does one have to understand the theory of formal ontologies and logic to use the Semantic Web?</h3>
+			<div class="answer" property="faq:answer" datatype="">
+			  <p>First of all, <a href="#whmustont">as pointed out elsewhere in this document</a>, one can develop Semantic Web applications without using ontologies. Very useful applications can be built without those, relying on the most fundamental, and simple concept of the Semantic Web. However, even if ontologies, rules, reasoners, etc, are used, the average user should not care about the complexities of, say, the details of reasoning. All this is done “under the hood”. What the developer needs to operate with are usually simple logical patterns of the sort “Given that <code>(Flipper isA Dolphin)</code> and <code>(Dolphin isAlso Mammal)</code>, one can conclude that <code>(Flipper isA Mammal)</code>".
+			  </p>
+			  <p>Compare it to SQL. The official SQL standards, the formal semantics of SQL, and indeed its implementations, are extremely complex and understood by a few specialists only. Nevertheless, a large number of users use SQL in practice, without caring about the underlying complexities.
+			  </p>
+			</div>
+		  </div>
+		  <p class="permalink"><a href="#complication">(permalink)</a></p>
+		  <div class="faq" id="relateweb" about="#relateweb" typeof="faq:FAQ" property="dc:date" content="2007-04-12T00:00+00:00">
+			<h3 class="question" property="faq:question">How is the Semantic Web related to the existing Web?</h3>
+			<div class="answer" property="faq:answer" datatype="">
+			  <p>The Semantic Web is an <em>extension</em> of the current Web and not its replacement. Islands of RDF and possibly related ontologies can be developed incrementally. Major application areas (like Health Care and Life Sciences) may choose to “locally” adopt Semantic Web technologies, and this can then spread over the Web in general. In other words, one should not think in terms of “rebuilding” the Web.
+			  </p>
+			</div>
+		  </div>
+		  <p class="permalink"><a href="#relateweb">(permalink)</a></p>
+		  
+		  <div class="faq" id="datacopyright" about="#datacopyright" typeof="faq:FAQ" property="dc:date" content="2007-04-12T00:00+00:00">
+			<h3 class="question" property="faq:question">Aren't there major copyright questions if the data in an integration process are cached?</h3>
+			<div class="answer" property="faq:answer" datatype="">There are and there aren't. There is just the way the Web raises this issue already; after all, documents browsed by a traditional browser are usually cached on the client side. And there aren't, because this does not seem to have created major problems on the Web so far, and the Semantic Web is not fundamentally different in this respect.
+			</div>
+		  </div>
+		  <p class="permalink"><a href="#datacopyright">(permalink)</a></p>
+		  <div class="faq" id="swactivity" about="#swactivity" typeof="faq:FAQ" property="dc:date" content="2007-04-17T00:00+00:00">
+			<h3 class="question" property="faq:question" datatype="">What is the Semantic Web activity at W3C?</h3>
+			<div class="answer" property="faq:answer">
+			  <p>The <a href="/2001/sw/">Semantic Web Activity</a> at W3C groups together all the Working and Interest Groups whose goals are to improve the current Semantic Web technologies or to contribute to their wider adoption. The <a href="/2001/sw/">activity home page</a> gives an up-to-date list of the current work at W3C.
+			  </p>
+			</div>
+		  </div>
+		  <p class="permalink"><a href="#swactivity">(permalink)</a></p>
+		</div>
+		<div class="category" id="HowDoesTheSWRelatesTo" about="#HowDoesTheSWRelatesTo" rev="faq:inGroup" property="dc:label" content="How does the Semantic Web relate to…">
+		  <h2 class="category-title">How does the Semantic Web relate to…</h2>
+		  <div class="faq" id="relAI" about="#relAI" typeof="faq:FAQ" property="dc:date" content="2007-04-17T00:00+00:00">
+			<h3 class="question" property="faq:question">… Artificial Intelligence?</h3>
+			<div class="answer" property="faq:answer" datatype="">
+			  <p>Some parts of the Semantic Web technologies are based on results of Artificial Intelligence research, like knowledge representation (e.g., for ontologies or rules), model theory (e.g., for the precise semantics of RDF and RDF Schemas), or various types of logics (e.g., for rules). However, it must be noted that Artificial Intelligence has a number of research areas (e.g., image recognition) that are completely orthogonal to the Semantic Web.
+			  </p>
+			  <p>It is also true that the development of the Semantic Web brought some new perspectives to the Artificial Intelligence community: the “Web effect”, i.e., the merge of knowledge coming from different sources, usage of URIs, the necessity to reason with incomplete data; etc.
+			  </p>
+			</div>
+		  </div>
+		  <p class="permalink"><a href="#relAI">(permalink)</a></p>
+		  <div class="faq" id="relDL" about="#relDL" typeof="faq:FAQ" property="dc:date" content="2007-04-12T00:00+00:00">
+			<h3 class="question" property="faq:question">… Description Logic?</h3>
+			<div class="answer" property="faq:answer" datatype="">
+			  <p>Description Logic is the mathematical theory (stemming from knowledge representation) that is at the basis of some of the technologies defined on the Semantic Web, like the so-called <a href="http://www.w3.org/TR/2009/REC-owl2-direct-semantics-20091027/">“Direct Semantics” of OWL</a> (loosely referred to as OWL-DL).</p>
+			</div>
+		  </div>
+		  <p class="permalink"><a href="#relDL">(permalink)</a></p>
+		  <div class="faq" id="relXML" about="#relXML" typeof="faq:FAQ" property="dc:date" content="2008-01-31T00:00+00:00">
+			<h3 class="question" property="faq:question">… XML? When should I use RDF and when should I use XML?</h3>
+			<div class="answer" property="faq:answer" datatype="">
+			  <p>Both formalisms have their strengths and weaknesses; their area of usage is different. The two data models serve different constituencies and the choice really depends on the application. There is no better or worse; only different.
+			  </p>
+			  <p>One of XML’s strengths is its ability to describe strict hierarchies. Applications may rely on and indeed exploit the position of an element in a hierarchy: for example, most browsers provide a different rendering of HTML’s <code>li</code> element depending on how “deep” the enclosing list is. XML makes it easy to control the content via XML Schemas and combine XML data that abide to the same Schema or DTD.
+			  </p>
+			  <p>However, combining <em>different</em> XML hierarchies (technically, DOM trees) within the same application may become very complex. XML is not an easy tool for <em>data integration</em>. On the other hand, RDF consists of a very loose set of relations (triples). Due to its <a href="#weburi">usage of URIs</a> it is very easy to seamlessly merge triple sets, ie, data described in RDF within the same application; it is therefore ideal for the integration of possibly heterogenous information on the Web. But this has its price: reconstructing hierarchies from RDF may become quite complex. As an example, it would be fairly complicated (and unnecessary) to describe, eg, vector graphics, using RDF; use <a href="http://www.w3.org/Graphics/SVG/">SVG</a> instead!
+			  </p>
+			  <p>RDF based vocabularies, and the accompanying semantic formalisms like RDFS or OWL, also make it easy to define inference possibilities on RDF data. Although this could be done around XML dialects, too, it would remain application specific and not portable.</p>
+			  <p>For existing XML-based vocabularies, one can develop an <a href="http://www.w3.org/TR/grddl-primer/">GRDDL transformation</a> to RDF using a language such as XSLT and then use the power of RDF to merge your pre-existing XML formats. For new vocabularies, this technique allows you to use both XML and RDF-based versions of your vocabulary, gaining the advantages of both.
+			  </p>
+			</div>
+		  </div>
+		  <p class="permalink"><a href="#relXML">(permalink)</a></p>
+		  <div class="faq" id="relXMLS" about="#relXMLS" typeof="faq:FAQ" property="dc:date" content="2008-01-31T00:00+00:00">
+			<h3 class="question" property="faq:question">… XML Schemas? What do ontologies buy me that XML and XML Schema don't?</h3>
+			<div class="answer" property="faq:answer" datatype="">
+			  <p>This issue is also related to the issue of using XML or RDF, addressed in a <a href="#relXML">previous question</a>. First of all, let us quote from the <a href="/TR/owl-guide/">OWL Guide recommendation</a>:
+			  </p>
+			  <blockquote>
+				<ul>
+				  <li>An ontology differs from an XML Schema in that it is a knowledge representation, not a message format. Most industry based Web standards consist of a combination of message formats and protocol specifications. These formats have been given an operational semantics, such as, “Upon receipt of this <code>PurchaseOrder</code> message, transfer <code>Amount</code> dollars from <code>AccountFrom</code> to <code>AccountTo</code> and ship <code>Product</code>.” But the specification is not designed to support reasoning outside the transaction context. For example, we won’t in general have a mechanism to conclude that because the <code>Product</code> is a type of <code>Chardonnay</code> it must also be a white wine.
+				  </li>
+				  <li>One advantage of OWL ontologies will be the availability of tools that can reason about them. Tools will provide generic support that is not specific to the particular  subject domain, which would be the case if one were to build a system to reason about a specific industry-standard XML schema. […] They will benefit from third party tools based on the formal properties of the OWL language, tools that will deliver an assortment of capabilities that most organizations would be hard pressed to duplicate.
+				  </li>
+				</ul>
+			  </blockquote>
+			  <p>Also, XML data is very sensitive to the XML Schema it refers to. If the XML Schema changes, the <em>same</em> XML data may become invalid, i.e., being rejected by Schema-aware parsers. Somewhat similar dependence on RDF Schemas and Ontologies exist for RDF data, too: if the RDF Schema or OWL Ontology changes, the inferences drawn from the RDF data may change. However, the core RDF data is still usable, there is no notion of the data being “rejected” by, e.g., a parser due to a Schema/Ontology change. In general, RDF is more robust against changing of Schemas and Ontologies than XML is versus Schemas. Note that a GRDDL transformation from XML to RDF may be given by an XML Schema as <a href="http://www.w3.org/TR/grddl/#ns-bind">described in the GRDDL specification</a>. This allows any XML document that validates according to the XML Schema given at the namespace URI of the XML vocabulary to be converted to RDF.
+			  </p>
+			</div>
+		  </div>
+		  <p class="permalink"><a href="#relXMLS">(permalink)</a></p>
+		  <div class="faq" id="relHTMLMeta" about="#relHTMLMeta" typeof="faq:FAQ" property="dc:date" content="2007-04-12T00:00+00:00">
+			<h3 class="question" property="faq:question">… HTML meta headers?</h3>
+			<div class="answer" property="faq:answer" datatype="">
+			  <p>The <code>meta</code> and <code>link</code> elements in HTML can be used to add metadata to an HTML page. In Semantic Web terms, this is equivalent to the process of defining RDF relationships for that page as a “source”. Note, however, that these elements can be used to define relationships for the enclosing HTML file only, whereas the Semantic Web allows the definition of relationships on <em>any</em> resource on the Web. That also means that the <code>meta</code> and <code>link</code> elements can be used <em>by the author of the document only</em>, whereas, on the Semantic Web, anybody could publish metadata concerning that page. GRDDL allows easy and automatic extraction of meta header data, such as that given by Dublin Core, to RDF.
+			  </p>
+			</div>
+		  </div>
+		  <p class="permalink"><a href="#relHTMLMeta">(permalink)</a></p>
+		  <div class="faq" id="reltag" about="#reltag" typeof="faq:FAQ" property="dc:date" content="2007-11-27T00:00+00:00">
+			<h3 class="question" property="faq:question">… tagging, folksonomies</h3>
+			<div class="answer" property="faq:answer" datatype="">
+			  <p> Tagging has emerged as a popular method of categorizing content. Users are allowed to attach arbitrary strings to their data items (for example, blog entries and photographs). While tagging is easy and useful, it often discards a lot of the semantics of the data. A folksonomy tag is typically 2/3 of an RDF triple. The subject is known: e.g., the URL for the flickr image being tagged, or the URL being bookmarked in delicious. The object is known: e.g., <code>http://flickr.com/photos/tags/cats</code> or <code>http://del.icio.us/tag/cats</code>. But the predicate to connect them is often missing. <a href="http://www.flickr.com/groups/api/discuss/72157594497877875/">Machine-tags</a> lend themselves to RDF more since they better capture the relationship between the subject  and the object. Folksonomy providers are encouraged to capture or infer the semantics around their tags and to leverage semantic web technologies such as RDF and SKOS to publish machine readable versions of their concept schemes.
+			  </p>
+			  <p>Another issue arising with tags is that the number of different tags meaning the same things but differing in spelling, lower or upper case, usage of space or underscore characters etc., may create major obstacles to them being used on a larger scale. There are a number of initiatives, start-up companies, projects, etc., that aim at combining the two approaches, providing a little bit of extra rigour using Semantic Web techniques to create new type of applications (<a hreflang="http://www.opencalais.com/">Reuters’ Open Calais service</a>, <a hreflang="http://www.twine.com">Radar Networks’ Twine</a>, the <a href="http://moat-project.org/">MOAT initiative</a>, <a href="http://www.commontag.org/Home">Common Tag</a>, etc.).</p>
+			</div>
+		  </div>
+		  <p class="permalink"><a href="#reltag">(permalink)</a></p>
+		  <div class="faq" id="relmf" about="#relmf" typeof="faq:FAQ" property="dc:date" content="2008-01-31T00:00+00:00">
+			<h3 class="question" property="faq:question">… microformats</h3>
+			<div class="answer" property="faq:answer" datatype="">
+			  <p> Microformats are usually relatively small and simple sets of terms agreed upon by a community. Data models developed within the framework of the Semantic Web have the potential to be more expressive, rigorous, and formal (and are usually larger). Both can be used to express structured data within web pages. In some cases, microformats are appropriate because the extra features provided by Semantic Web technologies are not necessary. Other cases requiring more rigor will not be able to use microformats.
+			  </p>
+			  <p> Data described in microformats each address a <em>specific</em> problem area. One has to develop a program well-adapted to a particular microformat, to the way it uses, say, the class and property="dc:date" content attributes. It also becomes difficult (though possible) to combine different microformats. In contrast, RDF can represent <em>any</em> information—including that extracted from microformats present on the page. This is where microformats can benefit from RDF—the generality of the Semantic Web tools makes it easier to reuse existing tools, eg, a query language and combining statements from different origins easily belongs to the very essence of the Semantic Web.
+			  </p>
+			  <p><a href="http://www.w3.org/2001/sw/grddl-wg/">GRDDL</a> is a “bridge” to the microformats approach; it defines a general procedure whereby microformats stored in an XHTML file can be transformed into RDF on–the–fly. A list of microformat to RDF vocabulary can be found on <a href="http://esw.w3.org/topic/CustomRdfDialects">on the ESW Wiki</a>. Another technology is <a href="http://www.w3.org/TR/rdfa-syntax">RDFa</a> that defines an XHTML1.1 module giving the possibility to use virtually any RDF vocabulary as annotations of the XHTML content; a bit like microformats with somewhat more rigor and a better way of <em>integrating</em> different vocabularies within the same document. There is also an ongoing work to adapt RDFa to the upcoming HTML version, HTML5.
+			  </p>
+			</div>
+		  </div>
+		  <p class="permalink"><a href="#relmf">(permalink)</a></p>
+		  <div class="faq" id="relweb2" about="#relweb2" typeof="faq:FAQ" property="dc:date" content="2007-04-12T00:00+00:00">
+			<h3 class="question" property="faq:question">… Web 2.0?</h3>
+			<div class="answer" property="faq:answer" datatype="">
+			  <p>One aspect of Web 2.0, beyond the exciting new interfaces and the usage of a common intelligence, is that it pushes intelligence and active agents from the server to the client, more specifically the browser. Development of active client-side application also means that these applications use all kinds of <strong>data</strong>; data that are on the Web somewhere, or data that is embedded in the page though not necessarily visible on the screen. Examples are microformats type annotation of the page, calendar data on the Web, tagged images or links stored on a web site, etc. This aspect of Web 2.0, ie, that applications are based on <em>combining</em> various types of data (“mashing up” the data) that are spread all around on the Web coincides with the very essence of the Semantic Web. What the Semantic Web provides is a more consistent model and tools for the definition and the usage of qualified relationships among data on the Web. I.e., both technologies focus on intelligent data sharing. A number of typical Web 2.0 demonstrations and applications emerge that, in the background, use Semantic Web tools combined with AJAX and other, exciting user interface approaches.
+			  </p>
+			  <p> In many cases, using RDF-based techniques makes the mashing up process easier, mainly when data collected by one application is reused by another one somewhere down the line. The general nature of RDF makes this “mashup chaining” straightforward, which is not always the case for simpler Web 2.0 applications.
+			  </p>
+			  <p>Trying to present these two approaches as alternatives, or even claiming folksonomies to be superior to the Semantic Web approach, has been a topic of the blogosphere and various publications for a while, but both communities realize these days that these two techniques are complementary rather than competitive. </p>
+			</div>
+		  </div>
+		  <p class="permalink"><a href="#relweb2">(permalink)</a></p>
+		</div>
+		<div class="category" id="HowDoIParticipate" about="#HowDoIParticipate" rev="faq:inGroup" property="dc:label" content="How do I participate in the Semantic Web?">
+		  <h2 class="category-title">How do I participate in the Semantic Web?</h2>
+		  <div class="faq" id="Manual" about="#Manual" typeof="faq:FAQ" property="dc:date" content="2007-04-17T00:00+00:00">
+			<h3 class="question" property="faq:question" datatype=""> Does the Semantic Web require me to manually markup all the existing web-pages, or to convert all the data in relational databases into RDF?</h3>
+			<div class="answer" property="faq:answer" datatype="">
+			  <p>The Semantic Web is about a web of data. The data itself can reside in databases, spreadsheets, Wiki pages, or indeed traditional web pages.
+			  </p>
+			  <p> The challenge is to develop tools that can “export” these data into RDF form: RDF plays the role of a common model, as a kind of a “glue” to integrate the data. That does <em>not</em> mean that the data must be <em>physically converted</em> into RDF form and stored in, say, RDF/XML. Instead, automatic procedures, for example <a href= "http://esw.w3.org/topic/RdfAndSql">SQL to RDF converters</a> for relational databases, <a href="grddl-wg/">GRDDL</a> processors for XHTML files with <a href= "http://en.wikipedia.org/wiki/Microformats">microformats</a>, <a href="http://www.w3.org/TR/rdfa-syntax">RDFa</a>, etc, can produce RDF data on-the-fly as an answer to, eg, queries. RDF data may also be included in the data via other tools (e.g, <a href="http://www.adobe.com/products/xmp/index.html">Adobe’s XMP</a> data that gets automatically added to JPEG images by Photoshop). Authoring tools also exist to develop, eg, ontologies on a high level instead of editing the ontology files directly. Of course, direct editing of RDF data is sometimes necessary, but it can be expected to become less and less prevalent as smarter editors come to the fore.
+			  </p>
+			  <p>Clearly, lots of development is still to be done in this area, and it is a subject of active Research and Development. The goal is to reuse, as much as possible, <em>existing</em> data in its <em>existing</em> form, and minimize the RDF data that has to be created manually. Note that, in fall 2009, W3C has started a Working Group, called <a href="http://www.w3.org/2001/sw/rdb2rdf/">RDB2RDF WG</a>, that aims at standardizing the description on how relational database data should be converted into RDF. First results of that group are expected in early 2010.
+			  </p>
+			</div>
+		  </div>
+		  <p class="permalink"><a href="#Manual">(permalink)</a></p>
+		  <div class="faq" id="publd" about="#publd" typeof="faq:FAQ" property="dc:date" content="2007-04-17T00:00+00:00">
+			<h3 class="question" property="faq:question">Does the Semantic Web require me to put all my data into the public domain? What about my sensitive data?</h3>
+			<div class="answer" property="faq:answer" datatype="">
+			  <p>The Semantic Web provides an application framework that <em>extends</em> the current Web, does not replace it. That also means that the current infrastructure of firewalls, various levels of protections, encryption, etc, remain in place. If, for whatever reason (privacy, business, etc), the data should be kept behind the firewall on the Intranet, rather than being in the open, this just means that that particular Semantic Web application operates on the Intranet. This is not unlike the development of the traditional Web, the usage of Web Services, etc: a number of applications were developed to be used behind corporate firewalls; some of them migrated later to the full Web, some other stayed behind the firewall. The same is valid for Semantic Web applications.
+			  </p>
+			</div>
+		  </div>
+		  <p class="permalink"><a href="#publd">(permalink)</a></p>
+		  <div class="faq" id="tools" about="#tools" typeof="faq:FAQ" property="dc:date" content="2007-04-17T00:00+00:00">
+			<h3 class="question" property="faq:question">Where do I find tools for Semantic Web development?</h3>
+			<div class="answer" property="faq:answer" datatype="">
+			  <p> There are several lists on the Web that give a more-or-less comprehensive overview of the various available tools. There is a <a href= "http://esw.w3.org/topic/SemanticWebTools">Wiki page</a> on the W3C ESW Wiki site that is maintained by the W3C staff as well as the community at large. This page includes references to programming environments, validators that can be used to validate RDF/XML data or OWL ontologies, SPARQL endpoints, specialized editors or triple databases. It also includes references to other lists.
+			  </p>
+			</div>
+		  </div>
+		  <p class="permalink"><a href="#tools">(permalink)</a></p>
+		  <div class="faq" id="toolqual" about="#toolqual" typeof="faq:FAQ" property="dc:date" content="2007-04-17T00:00+00:00">
+			<h3 class="question" property="faq:question">Are the SW tools as robust and as ubiquitous as, say, the xerces XML parser?</h3>
+			<div class="answer" property="faq:answer" datatype="">
+			  <p>In general most of the tools are of a good quality already. On the open source domain <a href="http://jena.sourceforge.net">Jena</a>, <a href="http://sourceforge.net/projects/sesame/">Sesame</a>, or <a href="http://librdf.org/">Redland</a>, for example, can easily be compared to xerces in their widespread usage and richness of features; databases like <a href= "http://mulgara.org/">Mulgara</a>, <a href="http://www.franz.com/agraph/allegrograph/">AllegroGraph</a>, or <a href="http://virtuoso.openlinksw.com/">Virtuoso</a> are also in widespread use and have undergone a very thorough development in the past few years. There are more and more commercial tools, including editors, professional databases, content management systems, ontology creation and validation tools, etc. The <a href= "http://esw.w3.org/topic/SemanticWebTools">Wiki page</a> on the W3C ESW Wiki site gives a good overview of most of those.
+			  </p>
+			  <p>Obviously, there is room for improvement. SW is a younger technology than XML and it still needs time to catch up and have tools of the same maturity and efficiency level than the XML World. However, huge improvements have already been made in the past few years in all areas, and large-scale enterprise deployment is also happening already. In general: availability of tools is not a reason any more for not developing Semantic Web applications…
+			  </p>
+			</div>
+		  </div>
+		  <p class="permalink"><a href="#toolqual">(permalink)</a></p>
+		  <div class="faq" id="rdfxhtml" about="#rdfxhtml" typeof="faq:FAQ" property="dc:date" content="2008-06-27T00:00+00:00">
+			<h3 class="question" property="faq:question">How do I put RDF into my (X)HTML Pages?</h3>
+			<div class="answer" property="faq:answer" datatype="">
+			  <p>The <a href="http://www.w3.org/TR/grddl-primer/">GRDDL</a> provides a “bridge” to the microformats approach while <a href="http://www.w3.org/TR/xhtml-rdfa-primer/">RDFa</a> provides an XHTML1.1 module that gives the possibility to use virtually any RDF vocabulary as annotations of the XHTML content, yielding RDF data. Both approaches can be used.</p>
+			</div>
+		  </div>
+		  <p class="permalink"><a href="#rdfxhtml">(permalink)</a></p>
+		  <div class="faq" id="reldb" about="#reldb" typeof="faq:FAQ" property="dc:date" content="2007-04-12T00:00+00:00">
+			<h3 class="question" property="faq:question">How do I export my data from a Relational Database?</h3>
+			<div class="answer" property="faq:answer" datatype="">
+			  <p> There are a number of open source tools; see the <a href="http://esw.w3.org/topic/RdfAndSql">W3C Wiki page</a> for a few examples. These tools typically have their own languages for defining the mapping between the database to RDF. W3C has started work on defining standards in this area in September 2009, done by the <a href="http://www.w3.org/2001/sw/rdb2rdf/">RDB2RDF Working Group</a>.</p>
+			  <p>In general, methods exist to convert RDF queries (e.g., in SPARQL) into SQL queries on-the-fly; ie, the RDB looks like an RDF store when queried by an RDF tool. The details of the mapping from Relational Tables to RDF notions is usually described for a specific database using either a small ontology and/or a set of rules; this is the only manual information to be generated for the conversion.</p>
+			</div>
+		  </div>
+		  <p class="permalink"><a href="#reldb">(permalink)</a></p>
+		  <div class="faq" id="learn" about="#learn" typeof="faq:FAQ" property="dc:date" content="2007-04-12T00:00+00:00">
+			<h3 class="question" property="faq:question">How can I learn more about the Semantic Web?</h3>
+			<div class="answer" property="faq:answer" datatype="">
+			  <p><a href="http://planetrdf.com/guide/">Dave Beckett's Resource Description Framework (RDF) Resource Guide</a> gives a quite comprehensive list of references to Semantic Web related articles. The <a href="/2001/sw/">home page of the Semantic Web Activity</a> lists all the recommendations, gives references to some of the presentations, articles, etc, that have been given by the W3C staff or the members of the working groups on the subject. A <a href="http://www.w3.org/2001/sw/BestPractices/Tutorials">separate page lists</a> a number of tutorials that might be of interest.
+			  </p>
+			  <p>The (now defunct) <a href="http://www.w3.org/2001/sw/BestPractices">Semantic Web Best Practices and Deployment Working Group</a> has produced a number of notes that might be useful when developing ontologies, setting up servers to serve RDF data, using XML Schema datatypes with RDF, etc. 
+			  </p>
+			  <p> A number of books have also been published. A <a href="http://esw.w3.org/topic/SwBooks">list of books is given on W3C’s Wiki site</a>, comprising (at this moment) over 40 books in different languages, published by major publishers like O’Reilly, MIT Press, Cambridge University Press, Springer Verlag, …
+			  </p>
+			</div>
+		  </div>
+		  <p class="permalink"><a href="#learn">(permalink)</a></p>
+		  <div class="faq" id="papers" about="#papers" typeof="faq:FAQ" property="dc:date" content="2007-04-17T00:00+00:00">
+			<h3 class="question" property="faq:question">Where can I find papers/publications about the Semantic Web?</h3>
+			<div class="answer" property="faq:answer" datatype="">
+			  <p> There are a number of conference series that are either dedicated to the Semantic Web or which always have a significant Semantic Web track. The best known are:
+			  </p>
+			  <ul>
+				<li>The “International Semantic Web Conference” series is a yearly event that publishes its proceedings by Springer (the proceedings are <a href= "http://iswc2006.semanticweb.org/">online since 2006</a>). While these conferences typically circulate around the globe, the “European Semantic Web Conference” and the “Asian Semantic Web Conference” series are held somewhere in Europe, respectively in Asia.
+				</li>
+				<li> <a href="http://www.iw3c2.org/">The “International World Wide Web
+				  Conference”</a> is a major yearly conference on World Wide Web Technologies in general, which always has a strong Semantic Web track both for the academic and the developers’ communities. Look at the <a href="http://www.iw3c2.org">page of the organizing committee</a> for further details on these conferences and links to their proceedings.
+				</li>
+				<li>The yearly <a href="http://www.semantic-conference.com/">Semantic Technologies</a> conference has also become a major event. It is less focussed on the research aspects of the Semantic Web but concentrates rather on the industrial, business aspects, new applications and developments.</li>
+			  </ul>
+			</div>
+		  </div>
+		  <p class="permalink"><a href="#papers">(permalink)</a></p>
+		  <div class="faq" id="findont" about="#findont" typeof="faq:FAQ" property="dc:date" content="2007-04-12T00:00+00:00">
+			<h3 class="question" property="faq:question">Where do I find ontologies, terminologies, or datasets for my applications?</h3>
+			<div class="answer" property="faq:answer"  datatype="">
+			  <p> There are several portals that collect information on existing ontologies. A good example is <a href="http://www.schemaweb.info/">SchemaWeb</a>. Another one is the <a href="http://pingthesemanticweb.com/">“PingTheSemanticWeb”</a> service which collects information about new RDF documents on the Web based on “pings” sent by applications generating data and on RDF autodiscovery links found by people browsing the Web. It currently contains information about ~7 million RDF files. There are also search engines, like <a href="http://iws.seu.edu.cn/services/falcons/objectsearch/index.jsp">Falcon</a>, <a href="http://www.sindice.com/query/keyword">Sindice</a>, or <a href="http://kmi-web05.open.ac.uk/WatsonWUI/">Watson</a> and others (see the <a href="http://esw.w3.org/topic/SemanticWebTools#head-09ab45ef1fb5d28af30c2787c5ef6705329abc5d">separate section on the tool’s wiki page</a>) that specialize on searching Semantic Web documents.
+			  </p>
+			</div>
+		  </div>
+		  <p class="permalink"><a href="#findont">(permalink)</a></p>
+		  <div class="faq" id="semwebdataview" about="#semwebdataview" typeof="faq:FAQ" property="dc:date" content="2007-04-17T00:00+00:00">
+			<h3 class="question" property="faq:question">Can I see Semantic Web data directly in my browser?</h3>
+			<div class="answer" property="faq:answer" datatype="">
+			  <p> You can have a human-readable display of RDF data by using RDF data browsers like <a href="http://dig.csail.mit.edu/2005/ajar/ajaw/tab.html">the Tabulator</a>, <a href= "http://www4.wiwiss.fu-berlin.de/rdf_browser/">Disco</a>, <a href="http://sig.ma/">Sig.ma</a>, <a href="http://visinav.deri.org/">VisiNav</a>, or the <a href= "http://demo.openlinksw.com/DAV/JS/rdfbrowser/index.html">OpenLink RDF Browser</a>, and web browser extensions like the <a href="http://sioc-project.org/firefox">Semantic Radar</a>. While end users will not have a need to see Semantic Web data (instead they will benefit from better information systems built on top of it) it may be helpful to developers to be aware of Semantic Web data directly so that they can use this information in their applications.
+			  </p>
+			</div>
+		  </div>
+		  <p class="permalink"><a href="#semwebdataview">(permalink)</a></p>
+		  <div class="faq" id="community" about="#community" typeof="faq:FAQ" property="dc:date" content="2007-04-17T00:00+00:00">
+			<h3 class="question" property="faq:question">Is there a community of developers I can join?</h3>
+			<div class="answer" property="faq:answer" datatype="">
+			  <p>The <a href="http://www.w3.org/2001/sw/interest/">W3C Semantic Web Interest Group</a> is one of those and probably the best place to join first. It is a public mailing list and is also active on the #swig IRC channel Freenode.
+			  </p>
+			  <p> There are also various grass-root communities that concentrate on some specific aspects or goal around the Semantic Web. Some examples:
+			  </p>
+			  <ul>
+				<li> <a href="http://usefulinc.com/doap/" property="dc:title" content="Description of a Project">DOAP</a>: a project to describe information about open-source software projects
+				</li>
+				<li> <a href="http://xmlns.com/foaf/0.1/" property="dc:title" content="Friend of a friend">FOAF</a>: a project to describe information about people and their social relations (see also the #foaf IRC channel on Freenode)
+				</li>
+				<li> <a href="http://sioc-project.org/" property="dc:title" content= "Semantically-Interlinked Online Communities">SIOC</a>: a project to describe  information about online community sites (blogs, bulletin boards, …) and use this information to connect these sites together.
+				</li>
+				<li> <a href=
+				  "http://esw.w3.org/topic/SweoIG/TaskForces/CommunityProjects/LinkingOpenData">Linking Open Data on the Semantic Web</a>: is project whose goal is to make various open data sources available on the Web as RDF and to set RDF links between data items from different data sources.
+				</li>
+			  </ul>
+			  <p> Another source is the <a href="http://planetrdf.com">PlanetRDF Blog aggregator</a> that aggregates the blogs of a number active Semantic Web developers from around the World.
+			  </p>
+			</div>
+		  </div>
+		  <p class="permalink"><a href="#community">(permalink)</a></p>
+	
+		  <div class="faq" id="logos" about="#logos" typeof="faq:FAQ" property="dc:date" content="2007-10-21T00:00+00:00">
+			<h3 class="question" property="faq:question">Why has W3C developed the new cube logo?</h3>
+			<div class="answer" property="faq:answer"  datatype=""> The <a href="http://www.w3.org/2007/10/sw-logos.html">new logo</a> has been created as a high level  image to represent the Semantic Web, and the technology buttons have been designed to create consistent branding for all of the standards that make up the Semantic Web. Going forwards we are planning to create pictograms for the standards for t-shirts, mugs, etc. In that context, you'll be seeing the familiar blue RDF triple again.
+			</div>
+		  </div>
+		  <p class="permalink"><a href="#logos">(permalink)</a></p>
+		</div>
+		<div class="category" id="TechieQuestions" about="#TechieQuestions" rev="faq:inGroup" property="dc:label" content="Questions on RDF, Ontologies, SPARQL, Rules…">
+		  <h2 class="category-title">Questions on RDF, Ontologies, SPARQL, Rules…</h2>
+		  <div class="faq" id="whrdf" about="#whrdf" typeof="faq:FAQ" property="dc:date" content="2007-04-12T00:00+00:00">
+			<h3 class="question" property="faq:question">What is RDF?</h3>
+			<div class="answer" property="faq:answer"  datatype="">
+			  <p> RDF—the <a href="/TR/REC-rdf-syntax">Resource Description Framework</a>—is a standard model for data interchange on the Web. RDF has features that facilitate data merging even if the underlying schemas differ, and it specifically supports the evolution of schemas over time without requiring all the data consumers to be changed.
+			  </p>
+			  <p>RDF extends the linking structure of the Web to use URIs to name the relationship between things as well as the two ends of the link (this is usually referred to as a “triple”). Using this simple model, it allows structured and semi-structured data to be mixed, exposed, and shared across different applications.
+			  </p>
+			  <p> This linking structure forms a directed, labelled graph, where the edges represent the named link between two resources, represented by the graph nodes. This <em>graph view</em> is the easiest possible mental model for RDF and is often used in easy-to-understand visual explanations.
+			  </p>
+			  <p> The <a href="http://www.w3.org/TR/rdf-primer/">“RDF Primer”</a> is a good material for further reading on RDF.
+			  </p>
+			</div>
+		  </div>
+		  <p class="permalink"><a href="#whrdf">(permalink)</a></p>
+		  <div class="faq" id="serialization" about="#serialization" typeof="faq:FAQ" property="dc:date" content="2007-04-17T00:00+00:00">
+			<h3 class="question" property="faq:question">What formats can RDF be represented in?</h3>
+			<div class="answer" property="faq:answer" datatype="">
+			  <p> RDF statements (or triples) can be encoded in a number of different formats, whether XML based (e.g., <a href="http://www.w3.org/TR/rdf-syntax-grammar/">RDF/XML</a>) or not (<a href="http://www.w3.org/TeamSubmission/turtle/">Turtle</a>, <a href="http://www.w3.org/TR/rdf-testcases/#ntriples">N-triples</a>, …). In general it does not really matter which of these formats (or serializations) are used to express data—the information is represented in RDF triples and the particular format is only the “syntactic sugar”. Most RDF tools can parse several of these serialization formats.
+			  </p>
+			  <p> Compare to “numbers” as opposed to “numerals”. Numbers are mathematical concepts; <a href="http://en.wikipedia.org/wiki/Numeral">numerals</a> are a representation thereof using Roman, Arabic, hexadecimal, octal, etc, representations. Some of those representations (like Roman) may be very complicated, some of those may be simpler or more familiar, but they all represent the same abstract concept.
+			  </p>
+			</div>
+		  </div>
+		  <p class="permalink"><a href="#serialization">(permalink)</a></p>
+		  <div class="faq" id="whrdfxml" about="#whrdfxml" typeof="faq:FAQ" property="dc:date" content="2008-01-31T00:00+00:00">
+			<h3 class="question" property="faq:question">Isn’t RDF simply an XML application?</h3>
+			<div class="answer" property="faq:answer" datatype="">
+			  <p> No. The fundamental model of RDF is independent of XML. <a href="#whrdf">RDF</a> is a model describing qualified (or named) relationships between two (Web) resources, or between a Web resource and a literal. At that fundamental level, the only commonality between RDF and the XML World is the usage of the XML Schema datatypes to characterize literals in RDF. In fact, using <a href="http://www.w3.org/TR/grddl-primer/">GRDDL</a>, a way to automate mappings from XML to RDF easily, many XML vocabularies can be considered applications of RDF.
+			  </p>
+			  <p> Note that <em>one</em> of the serialization formats of RDF is indeed based on XML (<a href="http://www.w3.org/TR/rdf-syntax-grammar/">RDF/XML</a>), and this is probably the most widely used format today. But others exist, see the <a href="#serialization">separate question on RDF representation</a>.
+			  </p>
+			</div>
+		  </div>
+		  <p class="permalink"><a href="#whrdfxml">(permalink)</a></p>
+		  <div class="faq" id="weburi" about="#weburi" typeof="faq:FAQ" property="dc:date" content="2007-04-12T00:00+00:00">
+			<h3 class="question" property="faq:question">Where is the “Web” in the Semantic Web?</h3>
+			<div class="answer" property="faq:answer"  datatype="">
+			  <p>The Semantic Web standards follow the <a href="http://www.w3.org/TR/webarch/">design principles of the Web</a> in order to allow the growth of a planet-wide collection of semantically-rich data. The key element of this design is the use of Web addresses (URIs) to <em>name</em> things. Because the meaning of a term in a language without central control becomes established by its consistent use to achieve the same effect, and URIs are used around the World to access web pages, the Web is used to establish globally-shared meaning for URIs in the Semantic Web. (This is what people mean when they say RDF URIs are “grounded” in the Web.)
+			  </p>
+			  <p> As with the Web in general, this approach allows the Semantic Web to grow and evolve without any central control or authority, but while still maintaining as much consistency and authorial control as needed for particular applications or particular enterprises. The techniques for doing all this are still evolving, but ideally whenever anyone sees a Semantic Web URI they can use it in their browser and see authoritative documentation about its use. Moreover, whenever some software encounters a URI in a Semantic Web context, it can dereference it and find an ontology which precisely specifies how the term is related to other terms. The software may thus learn and exploit new terms which are synonymous with terms it already knows, or related in more complex and useful (but logically precise) ways.
+			  </p>
+			  <p> All this results in the ability to find and correctly merge data from multiple sources, sometimes even when they are provided with different ontologies.
+			  </p>
+			  <p> “In the Semantic Web, it is not the Semantic which is new, it is the Web which is new” Chris Welty, IBM
+			  </p>
+			</div>
+		  </div>
+		  <p class="permalink"><a href="#weburi">(permalink)</a></p>
+		  <div class="faq" id="whquery" about="#whquery" typeof="faq:FAQ" property="dc:date" content="2007-04-12T00:00+00:00">
+			<h3 class="question" property="faq:question">How can I query RDF data?</h3>
+			<div class="answer" property="faq:answer" datatype="">
+			  <p> The <a href="http://www.w3.org/2001/sw/DataAccess/">W3C Data Access Working Group</a> has developed the <a href="http://www.w3.org/TR/rdf-sparql-query/">SPARQL Query Language</a>. SPARQL defines queries in terms of <em>graph patterns</em> that are matched against the <a href="#whrdf">directed graph</a> representing the RDF data. SPARQL contains capabilities for querying required and optional graph patterns along with their conjunctions and disjunctions. The result of the match can also be used to construct new RDF graphs using separate graph patterns.
+			  </p>
+			  <p> SPARQL can be used as part of a general programming environment, like Jena, but queries can also be sent as messages to a remote SPARQL endpoints using the companion technologies <a href="http://www.w3.org/TR/rdf-sparql-protocol/">SPARQL Protocol</a> and <a href="http://www.w3.org/TR/rdf-sparql-XMLres/">SPARQL Query Result in XML</a>. Using such SPARQL endpoints, applications can query remote RDF data and even construct new RDF graphs, without any local processing or programming burden. For more questions on SPARQL, see also the separate <a href="http://thefigtrees.net/lee/sw/sparql-faq">FAQ on SPARQL</a>.
+			  </p>
+			</div>
+		  </div>
+		  <p class="permalink"><a href="#whquery">(permalink)</a></p>
+		  <div class="faq" id="xquery" about="#xquery" typeof="faq:FAQ" property="dc:date" content="2007-04-17T00:00+00:00">
+			<h3 class="question" property="faq:question">Why not use SQL and/or XQuery to query RDF data? Why develop yet another query language?</h3>
+			<div class="answer" property="faq:answer" datatype="">
+			  <p> SPARQL is a query language developed for the RDF data model; queries themselves <em>look and act</em> like RDF. I.e., the queries are independent of the physical representation of the RDF data (the structure of the databases, their representation in an RDF/XML file, etc). If query was done via, for example, XQuery, the application would have to know how that particular RDF data exactly represented as RDF/XML (and RDF/XML is <a href="#whrdfxml">only one of the possible serialization</a> of the RDF data).
+			  </p>
+			</div>
+		  </div>
+		  <p class="permalink"><a href="#xquery">(permalink)</a></p>
+	
+		  <div class="faq" id="queryUpdate" about="#queryUpdate" typeof="faq:FAQ" property="dc:date" content="2008-02-11T00:00+00:00">
+			<h3 class="question" property="faq:question">Can I use SPARQL to insert, delete, or update RDF data?</h3>
+			<div class="answer" property="faq:answer" datatype="">
+			  <p>The current, standardized version of SPARQL deals only with retrieving selected data from RDF graphs. There is no equivalent of the SQL <tt>INSERT</tt>, <tt>UPDATE</tt>, or <tt>DELETE</tt> statements. Most RDF-based applications handle new, changing, and stale data directly via the APIs provided by <a href="http://esw.w3.org/topic/SemanticWebTools#head-805c63479c854babe4657d5184de605910f6d3e2">specific RDF storage systems</a>.  Alternatively, RDF data can exist virtually (i.e. created on-demand in response to a SPARQL query). Also, there are systems which create RDF data from other forms of markup, such as  <a href="http://wiki.ontoworld.org/index.php/Semantic_Wiki_State_Of_The_Art">Wiki markup</a> or <a href="http://wingerz.com/blog/?p=35">the Atom Syndication Format</a>.</p>
+			  
+			  <p>However, there is indeed demand to cover this functionality, too. The 
+				<a href="http://www.w3.org/2007/OWL/">SPARQL Working Group</a> is currently active in developing a new version of SPARQL, and this will include these facilities, too. A first, draft version of the <a href="http://www.w3.org/TR/sparql11-update/">SPARQL 1.1 Update</a> document is already available.</p>	
+			</div>
+		  </div>
+		  <p class="permalink"><a href="#queryUpdate">(permalink)</a></p>
+		  
+		  <div class="faq" id="sparql2" about="#sparql2" typeof="faq:FAQ" property="dc:date" content="2009-04-28T00:00+00:00">
+			<h3 class="question" property="faq:question">Will there be a SPARQL “Next”? When will feature X be standardized?</h3>
+			<div class="answer" property="faq:answer" datatype="">
+				<p>SPARQL users have asked for many extensions to the SPARQL query language. Some of these have been accomodated by SPARQL implementations. In an attempt to inform SPARQL users and to minimize implementation differences of non-standard SPARQL features a new  <a href="http://www.w3.org/2007/OWL/">SPARQL Working Group</a> has been set up early 2009. This group is busy defining the minimal number of extensions that can be done without backward incompatibilities and do not require a too large addition to the initial version of SPARQL. The first drafts have been <a href="http://www.w3.org/blog/SW/2009/10/23/first_drafts_for_sparql_1_1_published">published in October 2009</a> and the work is planned to be completed (resulting in an updated version of SPARQL, currently called SPARQL 1.1) by the end of 2010.</p>
+			</div>
+		  </div>
+		  <p class="permalink"><a href="#sparql2">(permalink)</a></p>
+	
+		  <div class="faq" id="whontrole" about="#whontrole" typeof="faq:FAQ" property="dc:date" content="2007-05-15T00:00+00:00">
+			<h3 class="question" property="faq:question">What role do ontologies and/or rules have on the Semantic Web?</h3>
+			<div class="answer" property="faq:answer" datatype="">
+				<p>On the Semantic Web both ontologies and rules are used to express extra constraints and  logical relationships among resources. An example for their usage is to help data integration  when, for example, different terms are used to describe the same thing in different data sets, or  when a bit of extra knowledge may lead to the discovery of new relationships.
+				</p>
+				<p>Ontologies and rules refer to two different traditions stemming from logic, as developed in the past decades. Whereas ontologies are more closely related to classification systems, and particularly to description logic, rules rely more on the advances of logic programming and rule based systems. 
+				</p>
+				<p>See the separate questions on <a href="#whont">Ontologies</a> and on <a href="#whrules">Rules</a>.</p>
+			</div>
+		  </div>
+		  <p class="permalink"><a href="#whontrole">(permalink)</a></p>
+		  <div class="faq" id="whont" about="#whont" typeof="faq:FAQ" property="dc:date" content="2007-05-15T00:00+00:00">
+			<h3 class="question" property="faq:question">What are ontologies in the Semantic Web context?</h3>
+			<div class="answer" property="faq:answer" datatype="">
+			 <p> Ontologies define the concepts and relationships used to describe and represent an area of knowledge. Ontologies are used to classify the terms used in a particular application, characterize possible relationships, and define possible constraints on using those relationships. In practice, ontologies can be very complex (with several thousands of terms) or very simple (describing one or two concepts only).
+			  </p>
+			<p> An example for the role of ontologies or rules on the Semantic Web is to help data integration when, for example, ambiguities may exist on the terms used in the different data sets, or when a bit of extra knowledge may lead to the discovery of new relationships.
+			  </p>
+			  <p> A general example may help. A bookseller may want to integrate data coming from different publishers. The data can be imported into a common RDF model, eg, by using converters to the publishers’ databases. However, one database may use the term “author”, whereas the other may use the  term “creator”. To make the integration complete, and extra “glue” should be added to the RDF data, describing the fact that the relationship described as “author” is the same as “creator”. This extra piece  of information is, in fact, an ontology, albeit an extremely simple one.
+			  </p>
+			  <p>Languages like RDF Schemas and various variants of OWL provide languages to express ontologies in the Semantic Web context. These are stable specifications, published in 2004, with an update of OWL (denoted by “OWL 2”) published 2009. </p>
+			</div>
+		  </div>
+		  <p class="permalink"><a href="#whont">(permalink)</a></p>
+		  <div class="faq" id="whrules" about="#whrules" typeof="faq:FAQ" property="dc:date" content="2007-05-15T00:00+00:00">
+			<h3 class="question" property="faq:question">What are rules on the Semantic Web?</h3>
+			<div class="answer" property="faq:answer" datatype="">
+				<p>The term “rules” in the context of the Semantic Web refers to elements of logic programming and rule based systems bound to Semantic Web data. Rules offer a way to express, for  example, constraints on the relationships defined by by RDF, or may be used to discover new, implicit relationships. 
+				</p>
+				<p> Various rule systems (production rules, Prolog-like systems, etc) are very different from one another, and it is not possible to define <em>one</em> rule language to encompass them all. However, it is possible to define a “core” that is essentially understood by all rule  systems. This core is based on restricted kind of rule, called a “Horn” rule, which (like most rules) has the form “<strong>if</strong> conditions <strong>then</strong> consequence”, but it places certain  restrictions on the kinds of conditions and consequences that can be  used. 
+				</p>
+				<p> A general example may help. While integrating data coming from different sources, the data may include references to persons, their name,  homepage, email addresses, etc. However, the data does not say when two  persons should be considered as identical, although this is clearly  important for a full integration. An extra condition can be expressed  stating that “if two persons have similar names, home pages, and email addresses, then they are identical”. Such condition can be naturally expressed with Horn rules. 
+				</p>
+				<p>The <a href="/2005/rules/wg/">Rule Interchange Format (RIF) Working Group</a> is currently working on a precise definition of this “core” Rule language, on ways to extend this rule language to various  variants (production rules, logic programming, etc), to exchange expression of rules among systems, and to define the precise relationships of these rules with OWL ontologies and their  usage with RDF triples.</p>
+			</div>
+		  </div>
+		  <p class="permalink"><a href="#whrules">(permalink)</a></p>
+		  <div class="faq" id="rulesandonts" about="#rulesandonts" typeof="faq:FAQ" property="dc:date" content="2007-05-15T00:00+00:00">
+			<h3 class="question" property="faq:question">How do I know when to use OWL and when to Rules? How can I use them both together?</h3>
+			<div class="answer" property="faq:answer" datatype="">
+			    <p>First of all, the question arises whether it is possible to use these two technologies together. The answer is yes. One of the six recommendation track documents of RIF is called <a href="http://www.w3.org/TR/rif-rdf-owl/">“RIF RDF and OWL Compatibility”</a>. In layman’s term, what it describes is how the two “sides”, i.e., the rule and the classification sides, should work together on the same data set. It defines some sort of an interplay between two different mechanisms: the, shall we say, logic programming part and the knowledge representation part. Implementations doing both are a bit like hybrid cars: they have two parallel engines and a well defined connections between those two. That said, the document only defines what the combination means; whether, for example, engines will always succeed in handling the two worlds together in a finite time is not necessarily guaranteed in all cases. But we can be positive: in many cases (ie, by accepting restrictions here and there) this combination does work well, and there are, actually, good implementations out there that do just that.</p>
+				
+				<p>The substantive differences is that RIF (i.e., logic programming) and OWL are designed to allow for optimizations of different sets of problems. Very broadly speaking, OWL optimizes for taxonomic reasoning problems within an ontology specification (i.e., without the data), and logic programs optimize for reasoning problems within the data (i.e., without the ontology). So a reasonable rule of thumb is, if one’s ontology is very large one should probably use OWL, and if data set is very large, one should probably use RIF. That being said, the expressive differences are quite minor, and it very often boils down to personal experience and taste: some feel more comfortable using rules while others prefer knowledge representation.</p>
+			</div>
+		  </div>
+		  <p class="permalink"><a href="#rulesandonts">(permalink)</a></p>
+		  <div class="faq" id="whinference" about="#whinference" typeof="faq:FAQ" property="dc:date" content="2007-04-12T00:00+00:00">
+			<h3 class="question" property="faq:question">What is “inference” on the Semantic Web?</h3>
+			<div class="answer" property="faq:answer" datatype="">
+			  <p> Broadly speaking, inference on the Semantic Web can be characterized by discovering new relationships. As <a href="#whrdf">described elsewhere in this FAQ</a>, the data is modeled as a set of (named) relationships between resources. “Inference” means that automatic procedures can generate new relationships based on the data and based on some additional information in the form of an ontology or a set of rules. Whether the new relationships are explicitly added to the set of data, or are returned at query time, is simply an implementation issue.
+			  </p>
+			  <p> A simple example may help. The data set to be considered may include the relationship <code>(Flipper isA Dolphin)</code>. An ontology may declare that “every <code>Dolphin</code> is also a <code>Mammal</code>”. That means that a Semantic Web program understanding the notion of “<code>X</code> is also <code>Y</code>” can add to the set of relationships the statement <code>(Flipper isA Mammal)</code>, although that was <em>not</em> part of the original data. One can also say that the new relationship was “discovered”.
+			  </p>
+			</div>
+		  </div>
+		  <p class="permalink"><a href="#whinference">(permalink)</a></p>
+		  <div class="faq" id="whmustont" about="#whmustont" typeof="faq:FAQ" property="dc:date" content="2008-02-14T00:00+00:00">
+			<h3 class="question" property="faq:question">Must I use ontologies for Semantic Web Applications?</h3>
+			<div class="answer" property="faq:answer" datatype="">
+			  <p> It depends on the application. <a href="#whinference">The answer on the role of ontologies and/or rules</a> includes a very simple ontology example. Some applications may decide not to use even such small ontologies, and rely on the logic of the application program. Some application may choose to use very simple ontologies like the one described, and let a general Semantic Web environment use that extra information to make the identification of the terms. Some applications need an agreement on common terminologies, without any rigor imposed by a logic system. Finally, some applications may need more complex ontologies with complex reasoning procedures. It all depends on the requirements and the goals of the applications.
+			  </p>
+			  <p> The current Semantic Web technologies offer a large palette of languages to describe simple or complex terminologies: <a href="http://www.w3.org/TR/rdf-schema/">RDF Schemas</a>, <a href="http://www.w3.org/TR/swbp-skos-core-guide">SKOS</a>, <a href="http://www.w3.org/TR/rif-overview/">RIF</a> or various dialects/profiles of <a href="http://www.w3.org/TR/owl2-overview/">OWL</a> (OWL DL, OWL 2 QL, OWL 2 EL, OWL 2 RL, OWL Full).  These technologies differ in expressiveness but also in complexity. Applications have a choice along a range from RDF Schema for representing the simplest ontology level, to OWL Full for  maximum expressiveness. In addition semantic web users are encouraged to leverage existing ontologies where possible: e.g., SKOS for representing basic structures like thesauri, taxonomies or other controlled  vocabularies. Good places to look for existing ontologies are detailed <a href="#findont">elsewhere in this FAQ</a>. They also have a choice of not to use any of those; the usage of ontologies is <em>not</em> a requirement for Semantic Web applications.
+			  </p>
+			</div>
+		  </div>
+		  <p class="permalink"><a href="#whmustont">(permalink)</a></p>
+		  <div class="faq" id="whtopont" about="#whtopont" typeof="faq:FAQ" property="dc:date" content="2007-04-12T00:00+00:00">
+			<h3 class="question" property="faq:question">Does the Semantic Web try to impose meaning from the top?</h3>
+			<div class="answer" property="faq:answer" datatype="">
+			  <p> No. What the Semantic Web technologies do is to define the “language” with well understood rules and internal semantics, ie, <a href= "http://www.w3.org/TR/rdf-schema/">RDF Schemas</a>, various dialects of <a href= "http://www.w3.org/TR/owl2-overview/">OWL</a>, or <a href="http://www.w3.org/TR/swbp-skos-core-guide">SKOS</a>. Which of those formalisms are used (if any) and what is “expressed” in those language is entirely up to the applications. Ontologies may be developed by small communities, from “below”, so to say, and shared with other communities.
+			  </p>
+			</div>
+		  </div>
+		  <p class="permalink"><a href="#whtopont">(permalink)</a></p>
+		  <div class="faq" id="whgiantont" about="#whgiantont" typeof="faq:FAQ" property="dc:date" content="2008-01-22T00:00+00:00">
+			<h3 class="question" property="faq:question">Does the Semantic Web require everybody to subscribe to a single, predefined, giant ontology?</h3>
+			<div class="answer" property="faq:answer" datatype="">
+			  <p> Obviously, that would not be feasible. If ontologies are used, they can come from anywhere and be mixed freely. In fact the “ethos” of the Semantic Web is to <em>share</em> and <em>reuse</em> as much as possible, and lot of work is done to semi-automatically bridge different vocabularies. Typical Semantic Web applications mix ontologies developed by different communities on the Web, like the <a href= "http://dublincore.org/documents/dces/">Dublin Core metadata</a>, <a href= "http://xmlns.com/foaf/0.1/">FOAF</a> (friend-of-a-friend) terms, etc.
+			  </p>
+			  <p> The Semantic Web’s attitude to ontologies is no more than a rationalization of actual data-sharing practice. Applications can and do interact without achieving or attempting to achieve global consistency and coverage. A system that presents a retailer’s wares to customers will harvest information from suppliers’ databases (themselves likely to use heterogeneous formats) and map it onto the retailer’s preferred data format for re-presentation. Automatic tax return software takes bank data, in the bank’s preferred format, and maps them onto the tax form. There is no requirement for global ontologies here. There isn’t even a requirement for agreement or global translations between the specific ontologies being used except in the subset of terms relevant for the particular transaction. Agreement need only be local, but adoption of vocabularies from existing ontologies facilitates data sharing and integration. Of course, some of the vocabularies may become more and more widely used and adopted, but the evolution is more bottom-up, rather than top-down.
+			  </p>
+			</div>
+		  </div>
+		  <p class="permalink"><a href="#whgiantont">(permalink)</a></p>
+	
+		  <div class="faq" id="noTermAgreement" about="#noTermAgreement" typeof="faq:FAQ" property="dc:date" content="2008-01-22T00:00+00:00">
+			<h3 class="question" property="faq:question">People will never get common agreement on terms; won’t this lead to the failure of the Semantic Web?</h3>
+			<div class="answer" property="faq:answer" datatype="">
+			  <p>The issue, referred to by this question, is that different people will not agree on exactly how to define all concepts.  Eg, while most  people have a fairly standard concept of a “dog” or a “cat”, not everyone can distinguish between a “scalar” and a “vector”, for instance.  Any computer application  which tries to standardize its ontology will necessarily distort what at least some people are really trying to express; as a consequence, there will be ontological mismatches across parts of the Web designed by different people. The issue is whether this may not ruin the very goals of the Semantic Web.</p>
+			  
+			  <p>However, the Semantic Web does <em>not</em> rely on having one, big, all-encompassing ontology. Instead, the Semantic Web is built up from small like-minded communities that can find agreement on terms amongst  themselves. Applications, then, can and do interact without attempting to achieve global consensus. There is no requirement for global ontologies: instead, an application need only map the terms relevant for a particular transaction into a common vocabulary. Of course, though agreement need only be local, adoption of existing vocabularies facilitates data sharing and integration.
+			  </p>
+			  
+			  <p>Note that this issue is, essentially, the same as the one asking whether the Semantic Web requires  everybody to subscribe to a single, predefined, giant ontology; see also the <a href="#whtopont">answer to that question</a>, including further examples.</p>
+			 </div>
+		  </div>
+		  <p class="permalink"><a href="#noTermAgreement">(permalink)</a></p>
+	
+		  <div class="faq" id="whontdev" about="#whontdev" typeof="faq:FAQ" property="dc:date" content="2007-04-12T00:00+00:00">
+			<h3 class="question" property="faq:question">What is involved in developing an ontology using Semantic Web technologies?</h3>
+			<div class="answer" property="faq:answer" datatype="">
+			  <p>
+				The real difficulty, when developing an ontology, is to <em>understand</em> the problem that has to be modeled and <em>find an agreement</em> on a community level. <a href= "http://www.w3.org/TR/rdf-schema/">RDF Schemas</a> and/or <a href= "http://www.w3.org/TR/owl2-overview/">OWL</a> provide a framework to formalize those ontologies in a specific language; the time and energy needed to learn and use them is only a fraction of the time needed to develop an ontology itself, ie, understand the terms and the relationships of given area of knowledge and agree with your peers. Ontology development tools, like Protégé or SWOOP, hide most of the syntax complexity and let the user concentrate on the real representation issues.
+			  </p>
+			</div>
+		  </div>
+		  <p class="permalink"><a href="#whontdev">(permalink)</a></p>
+	
+		  <div class="faq" id="logicIncosistency" about="#logicIncosistency" typeof="faq:FAQ" property="dc:date" content="2008-01-22T00:00+00:00">
+			<h3 class="question" property="faq:question">Consequences of inconsistency in formal logic: doesn’t that ruin the Semantic Web?</h3>
+			<div class="answer" property="faq:answer" datatype="">
+			  <p>The problem referred to by this question is the fact that, in formal logic, if there   is an inconsitency somewhere, then it is possible to draw <em>all</em> conclusions <em>and</em> their negations. The issue is whether this would not create major difficulties on the Semantic Web.</p>
+			  
+			  <p>“Inference” in terms of the Semantic Web can be characterized by discovering new relationships (as explained <a href="#whinference">in the answer of another question</a>). These inferences are mostly done within a restricted, “guarded” subset of first order logic. Usually, reasoning on the Semantic Web does not use the full power of first order (or higher order) logic, and therefore avoids some of the dangerous issues that can come from an inferred inconsistency. In other words, in practice, no major difficulties can be expected.</p>
+			</div>
+		  </div>
+		  <p class="permalink"><a href="#logicIncosistency">(permalink)</a></p>
+	
+		  <div class="faq" id="whontstand" about="#whontstand" typeof="faq:FAQ" property="dc:date" content="2007-04-12T00:00+00:00">
+			<h3 class="question" property="faq:question">Will W3C be standardizing any particular ontologies?</h3>
+			<div class="answer" property="faq:answer" datatype="">
+			  <p> In general, ontologies should be created and maintained by various, specialized communities. The preference of W3C is to let these other communities develop their own ontologies; this is the case for well known ontologies like the <a href= "http://dublincore.org/documents/dces/">Dublin Core</a>, <a href= "http://xmlns.com/foaf/0.1/">FOAF</a>, <a href="http://usefulinc.com/doap">DOAP</a>, etc.
+			  </p>
+			  <p>
+				There are cases, however, when ontologies are developed at W3C. This is the case when, for example, another W3C technology needs its own, specialized ontology (<a href= "http://www.w3.org/TR/EARL10-Schema/">EARL</a> is a good example), when W3C feels that the existence of a particular ontology is crucial for the advancement of the Semantic Web, or when the community prefers to use, for example, the facilities offered by the <a href="http://www.w3.org/2005/Incubator/">Incubator Activity of W3C</a>.
+			  </p>
+			</div>
+		  </div>
+		  <p class="permalink"><a href="#whontstand">(permalink)</a></p>
+		  <div class="faq" id="skos" about="#skos" typeof="faq:FAQ" property="dc:date" content="2007-11-27T00:00+00:00">
+			<h3 class="question" property="faq:question">What is SKOS?</h3>
+			<div class="answer" property="faq:answer" datatype="">
+				The <a href="http://www.w3.org/TR/skos-reference">Simple Knowledge Organization System (SKOS)</a> is an ontology for expressing the basic structure and content of concept schemes such as thesauri, classification schemes, subject heading lists, taxonomies, glossaries, folksonomies, other types of controlled vocabularies. It provides a standard, low-cost way of migrating existing concept schemes to the Semantic Web, so that they can be  used as-is for the development of lightweight Semantic Web applications. SKOS is increasingly seen as a bridging technology, providing the missing link between the rigorous logical formalism of ontology languages such as OWL and the chaotic, informal and weakly-structured world of social approaches to information management, as exemplified by social tagging applications.         
+			</div>
+		  </div>
+		  <p class="permalink"><a href="#skos">(permalink)</a></p>
+		  <div class="faq" id="whpubldata" about="#whpubldata" typeof="faq:FAQ" property="dc:date" content="2007-11-26T00:00+00:00">
+			<h3 class="question" property="faq:question">Is there an uptake in public datasets for the Semantic Web? Are there major data published for the Semantic Web already?</h3>
+			<div class="answer" property="faq:answer" datatype="">
+			  <p>
+				Major datasets (or access to existing datasets) are created quite often these days. Just some examples:
+			  </p>
+			  <ul>
+				<li>The <a href="http://dbpedia.org">DBpedia</a> community effort to query Wikipedia like a database (see also a <a href="http://www.mkbergman.com/?p=354">more detailed blog entry</a> on this project).</li>
+				<li>
+				  <a href="http://www.ingentaconnect.com/">IngentaConnect</a> bibliographic metadata (around 200 million triples)</li>
+				<li>
+				  <a href="http://www.w3.org/TR/wordnet-rdf/">RDF/OWL representation of Wordnet</a>
+				</li>
+				<li>eBusiness ontology for products and services: <a href="http://www.heppnetz.de/eclassowl">eClassOwl</a>
+				</li>
+				<li>the <a href="http://www.geneontology.org/">Gene Ontology</a>, to describe gene and gene products attributes in any organisms
+				</li>
+				<li>protein sequence and annotation data: <a href="http://www.isb-sib.ch/~ejain/rdf/"> UniProt</a>
+				</li>
+				<li>
+				  <a href="http://www.geonames.org/ontology/">Geonames Ontology and associated RDF  data</a>: geographical features (e.g., information on the city of Berlin) encoded in RDF
+				</li>
+			  </ul>
+			  <p>Whereas these are randomly chosen and individual examples, the <a href= "http://esw.w3.org/topic/SweoIG/TaskForces/CommunityProjects/LinkingOpenData">“Linking Open Data on the Semantic Web”</a> community project aims not only at making various open data sources available on the Web as RDF, but also to create links <em>among</em> the various data sets, thereby creating a nucleus for a Web of Data. All data sets bound together by this projects include billions of RDF triples, with millions of triples among the various datasets.</p>
+			</div>
+		  </div>
+		  <p class="permalink"><a href="#whpubldata">(permalink)</a></p>
+		</div>
+	</div>
+    <hr />
+    <address class="contact" >
+	  <span rel="dc:contributor">
+	      Maintained by
+	      <span about="http://www.ivan-herman.net/me" typeof="foaf:Person dc:Agent" property="foaf:name" content="Ivan Herman">
+		      <a href="http://www.w3.org/People/Ivan">Ivan Herman</a>
+	          (<span property="foaf:mbox" content="mailto:ivan@w3.org">&lt;ivan@w3.org&gt;</span>), 
+	          (W3C) Semantic Web Activity Lead <br/>
+	      </span>
+	  </span>
+      <span property="dc:date">2009-11-12</span>
+       <br/>The <code>faq.js</code> script is the work of Lee Feigenbaum.
+    </address>
+    <p>
+      <small>$Id: SW-FAQ.html,v 1.97 2009/11/12 10:51:33 ivan Exp $</small>
+    </p>
+     <p class="copyright">
+      <a rel="Copyright" href="http://www.w3.org/Consortium/Legal/ipr-notice#Copyright">Copyright</a> © 1994-2009
+      <a href="/"><acronym title="World Wide Web Consortium">W3C</acronym></a> <sup>®</sup>
+      (<a href="http://www.csail.mit.edu/"><acronym title=
+      "Massachusetts Institute of Technology">MIT</acronym></a>, <a href=
+      "http://www.ercim.org/"><acronym title=
+      "European Research Consortium for Informatics and Mathematics">ERCIM</acronym></a>, <a href=
+      "http://www.keio.ac.jp/">Keio</a>), All Rights Reserved. W3C <a href=
+      "/Consortium/Legal/ipr-notice#Legal_Disclaimer">liability</a>, <a href=
+      "/Consortium/Legal/ipr-notice#W3C_Trademarks">trademark</a>, <a rel="Copyright" href=
+      "/Consortium/Legal/copyright-documents">document use</a> and <a rel="Copyright" href=
+      "/Consortium/Legal/copyright-software">software licensing</a> rules apply. Your interactions
+      with this site are in accordance with our <a href=
+      "/Consortium/Legal/privacy-statement#Public">public</a> and <a href=
+      "/Consortium/Legal/privacy-statement#Members">Member</a> privacy statements.
+    </p>	
+	<p><a href="SW-FAQ.rdf"><img class="rdfimg" alt="rdf icon for the file in RDF" src="http://www.w3.org/RDF/icons/rdf_flyer.24"/></a>&nbsp;
+    <a href="http://validator.w3.org/check?uri=referer"><img
+        src="http://www.w3.org/Icons/valid-xhtml-rdfa-blue"
+        alt="Valid XHTML + RDFa"   /></a>
+   </p>
+  </body>
+</html>

@@ -1,0 +1,442 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+  <title>Membership Fees - W3C</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="Help" href="/Help/" />
+  <link rel="stylesheet" href="/2008/site/css/minimum" type="text/css" media="handheld, all" />
+  <style type="text/css"  media="print, screen and (min-width: 481px)">@import url("/2008/site/css/advanced");</style>
+  <link href="/2008/site/css/minimum" rel="stylesheet" type="text/css" media="handheld, only screen and (max-device-width: 480px)" />
+  <meta name="viewport" content="width=device-width"/>
+  <link rel="stylesheet" href="/2008/site/css/print" type="text/css" media="print" />
+  <!-- Custom Stylesheet -->
+  <link href="/Consortium/fees-style.css" type="text/css" rel="stylesheet" media="all"/>
+  <link rel="shortcut icon" href="/2008/site/images/favicon.ico" type="image/x-icon" />
+  </head>
+<body id="www-w3-org" class="w3c_public">
+ <div id="w3c_container">
+  <div id="w3c_mast"> <!-- #w3c_mast / Page top header -->
+   <h1 class="logo"><a tabindex="2" accesskey="1" href="/"><img src="/2008/site/images/logo-w3c-mobile-lg" width="90" height="53" alt="W3C" /></a>
+   <span class="alt-logo">W3C</span>
+   </h1>
+   <div id="w3c_nav">
+        <form action="http://www.w3.org/Help/search" method="get" enctype="application/x-www-form-urlencoded">
+       <!-- w3c_sec_nav is populated through js -->
+       <div class="w3c_sec_nav"><!-- --></div>
+           <ul class="main_nav"> <!-- Main navigation menu -->
+     <li class="first-item"><a href="/standards/">Standards</a></li><li><a href="/participate/">Participate</a></li><li><a href="/Consortium/membership">Membership</a></li><li class="last-item"><a href="/Consortium/">About W3C</a></li>
+       <li class="search-item">
+      <div id="search-form">
+       <input tabindex="3" class="text" name="q" value="" title="Search" />
+       <button id="search-submit" name="search-submit" type="submit"><img class="submit" src="/2008/site/images/search-button" alt="Search" width="21" height="17" /></button> 
+      </div>
+    </li>
+   </ul>
+     </form>
+   </div>
+  </div> <!-- /end #w3c_mast -->
+  <div id="w3c_main"> 
+    <div id="w3c_logo_shadow" class="w3c_leftCol">
+      <img height="32" alt="" src="/2008/site/images/logo-shadow" />
+    </div>
+   <div id="w3c_sidenavigation" class="w3c_leftCol">       <h2 class="offscreen">Site Navigation</h2>
+    <h3 class="category"><span class="ribbon"><a href="/Consortium/membership.html" title="Up to Membership">Membership <img src="/2008/site/images/header-link" alt="Header link" width="13" height="13" class="header-link"/></a></span></h3>
+       <ul class="theme">
+        <li><a href="/Consortium/membership-benefits.html">Membership Benefits</a></li>
+        <li><a href="/Consortium/join.html">Join W3C</a></li>
+        <li><a class="current">Membership Fees</a></li>
+        <li><a href="/Consortium/membership-faq.html">Membership FAQ</a></li>
+        <li><a href="/Consortium/Member/List">Current Members</a></li>
+        <li><a href="/Submission/">Member Submissions</a></li>
+        <li><a href="/Consortium/Member/Testimonial/List.html">Member Testimonials</a></li>
+       </ul>
+       <br/>
+      </div>
+   <div class="w3c_mainCol">
+          <div id="w3c_crumbs">
+       <div id="w3c_crumbs_frame">
+        <ul class="bct"> <!-- .bct / Breadcrumbs -->
+          <li class="skip"><a tabindex="1" accesskey="2" title="Skip to content (e.g., when browsing via audio)" href="#w3c_content_body">Skip</a></li>
+          <li><a href="/">W3C</a>&#160;<span class="cr">&#x00bb;</span>&#160;</li>
+          <li><a href="/Consortium/membership.html">Membership</a>&#160;<span class="cr">&#x00bb;</span>&#160;</li>
+          <li class="current">Membership Fees</li>
+        </ul>            
+     </div>
+    </div>    <h1 class="title">Membership Fees - W3C</h1>
+    <div id="w3c_content_body">
+    <div class="line">
+<div class="intro">
+<p class="tPadding"> In order to promote a diverse Membership that represents the
+interests of organizations around the world, W3C fees vary depending
+on the annual revenues, type, and location of headquarters of an
+organization. For instance, as of 2014-12-01, a small company in India
+would pay 1,905&nbsp;USD annually, a non-profit in the United States would pay 
+7,900&nbsp;USD,
+ and a large company in France would pay
+59,500&nbsp;EUR. Please
+note that comma (",") is used to separate thousands in the 
+tables below. <strong>Note</strong>: Fees do not reflect any local taxes, for which the Member is responsible.</p>
+
+<p>Use this fee calculator to determine the annual Membership
+fee for a new Member, given a country and date. The calculator
+covers the <a href="fee-history">complete history of W3C fees</a>. 
+</p>
+
+<p><strong>Notes</strong>: Fees for dates selected in the future are subject to change. <a href="http://www.w3.org/community/about/fees/">Business Group Fees</a> are described elsewhere.</p>
+
+</div><h2>View Fees By</h2>
+<h3 class="h4">Country</h3>
+<div>
+  <form id="fee-calc" action="fees#results" method="get">
+  <div class="data">
+    <table cellpadding="0" cellspacing="0" class="lMargin">
+    <colgroup>
+     <col width="50%"/>
+     <col width="50%"/>
+    </colgroup>
+      <tr>
+        <td>Country of organization headquarters<br/>
+	<span style="font-style: italic; font-size: .83em"><a href="contact">Contact W3C</a>
+	if country not in list.</span>
+	</td>
+        <td>
+          <select name="countryCode">
+<option value="">[select country]</option>
+<option value="AF"> Afghanistan</option>
+<option value="AL"> Albania</option>
+<option value="DZ"> Algeria</option>
+<option value="AS"> American Samoa</option>
+<option value="AD"> Andorra</option>
+<option value="AO"> Angola</option>
+<option value="AI"> Anguilla</option>
+<option value="AG"> Antigua and Barbuda</option>
+<option value="AR"> Argentina</option>
+<option value="AM"> Armenia</option>
+<option value="AW"> Aruba</option>
+<option value="AU"> Australia</option>
+<option value="AT"> Austria</option>
+<option value="AZ"> Azerbaijan</option>
+<option value="BS"> Bahamas, The</option>
+<option value="BH"> Bahrain</option>
+<option value="BD"> Bangladesh</option>
+<option value="BB"> Barbados</option>
+<option value="BY"> Belarus</option>
+<option value="BE"> Belgium</option>
+<option value="BZ"> Belize</option>
+<option value="BJ"> Benin</option>
+<option value="BM"> Bermuda</option>
+<option value="BT"> Bhutan</option>
+<option value="BO"> Bolivia</option>
+<option value="BQ"> Bonaire, Saint Eustatius and Saba</option>
+<option value="BA"> Bosnia and Herzegovina</option>
+<option value="BW"> Botswana</option>
+<option value="BR"> Brazil</option>
+<option value="BN"> Brunei Darussalam</option>
+<option value="BG"> Bulgaria</option>
+<option value="BF"> Burkina Faso</option>
+<option value="BI"> Burundi</option>
+<option value="KH"> Cambodia</option>
+<option value="CM"> Cameroon</option>
+<option value="CA"> Canada</option>
+<option value="CV"> Cape Verde</option>
+<option value="KY"> Cayman Islands</option>
+<option value="CF"> Central African Republic</option>
+<option value="TD"> Chad</option>
+<option value="CL"> Chile</option>
+<option value="CN"> China</option>
+<option value="CO"> Colombia</option>
+<option value="KM"> Comoros</option>
+<option value="CG"> Congo</option>
+<option value="CD"> Congo, Rep.</option>
+<option value="CR"> Costa Rica</option>
+<option value="CI"> Cote d'Ivoire</option>
+<option value="HR"> Croatia</option>
+<option value="CU"> Cuba</option>
+<option value="CW"> Curaçao</option>
+<option value="CY"> Cyprus</option>
+<option value="CZ"> Czech Republic</option>
+<option value="DK"> Denmark</option>
+<option value="DJ"> Djibouti</option>
+<option value="DM"> Dominica</option>
+<option value="DO"> Dominican Republic</option>
+<option value="EC"> Ecuador</option>
+<option value="EG"> Egypt, Arab Rep.</option>
+<option value="SV"> El Salvador</option>
+<option value="GQ"> Equatorial Guinea</option>
+<option value="ER"> Eritrea</option>
+<option value="EE"> Estonia</option>
+<option value="ET"> Ethiopia</option>
+<option value="FO"> Faeroe Islands</option>
+<option value="FJ"> Fiji</option>
+<option value="FI"> Finland</option>
+<option value="FR"> France</option>
+<option value="PF"> French Polynesia</option>
+<option value="GA"> Gabon</option>
+<option value="GM"> Gambia, The</option>
+<option value="GE"> Georgia</option>
+<option value="DE"> Germany</option>
+<option value="GH"> Ghana</option>
+<option value="GR"> Greece</option>
+<option value="GL"> Greenland</option>
+<option value="GD"> Grenada</option>
+<option value="GU"> Guam</option>
+<option value="GT"> Guatemala</option>
+<option value="GN"> Guinea</option>
+<option value="GW"> Guinea-Bissau</option>
+<option value="GY"> Guyana</option>
+<option value="HT"> Haiti</option>
+<option value="HN"> Honduras</option>
+<option value="HK"> Hong Kong SAR, China</option>
+<option value="HU"> Hungary</option>
+<option value="IS"> Iceland</option>
+<option value="IN"> India</option>
+<option value="ID"> Indonesia</option>
+<option value="IR"> Iran, Islamic Rep.</option>
+<option value="IQ"> Iraq</option>
+<option value="IE"> Ireland</option>
+<option value="IL"> Israel</option>
+<option value="IT"> Italy</option>
+<option value="JM"> Jamaica</option>
+<option value="JP"> Japan</option>
+<option value="JO"> Jordan</option>
+<option value="KZ"> Kazakhstan</option>
+<option value="KE"> Kenya</option>
+<option value="KI"> Kiribati</option>
+<option value="KR"> Korea</option>
+<option value="KP"> Korea, Dem. Rep.</option>
+<option value="XK"> Kosovo</option>
+<option value="KW"> Kuwait</option>
+<option value="KG"> Kyrgyz Republic</option>
+<option value="LA"> Lao PDR</option>
+<option value="LV"> Latvia</option>
+<option value="LB"> Lebanon</option>
+<option value="LS"> Lesotho</option>
+<option value="LR"> Liberia</option>
+<option value="LY"> Libya</option>
+<option value="LI"> Liechtenstein</option>
+<option value="LT"> Lithuania</option>
+<option value="LU"> Luxembourg</option>
+<option value="MO"> Macao, China</option>
+<option value="MK"> Macedonia, FYR</option>
+<option value="MG"> Madagascar</option>
+<option value="MW"> Malawi</option>
+<option value="MY"> Malaysia</option>
+<option value="MV"> Maldives</option>
+<option value="ML"> Mali</option>
+<option value="MT"> Malta</option>
+<option value="MH"> Marshall Islands</option>
+<option value="MR"> Mauritania</option>
+<option value="MU"> Mauritius</option>
+<option value="YT"> Mayotte</option>
+<option value="MX"> Mexico</option>
+<option value="FM"> Micronesia, Fed. Sts.</option>
+<option value="MD"> Moldova</option>
+<option value="MC"> Monaco</option>
+<option value="MN"> Mongolia</option>
+<option value="ME"> Montenegro</option>
+<option value="MA"> Morocco</option>
+<option value="MZ"> Mozambique</option>
+<option value="MM"> Myanmar</option>
+<option value="NA"> Namibia</option>
+<option value="NP"> Nepal</option>
+<option value="NL"> Netherlands</option>
+<option value="NC"> New Caledonia</option>
+<option value="NZ"> New Zealand</option>
+<option value="NI"> Nicaragua</option>
+<option value="NE"> Niger</option>
+<option value="NG"> Nigeria</option>
+<option value="MP"> Northern Mariana Islands</option>
+<option value="NO"> Norway</option>
+<option value="OM"> Oman</option>
+<option value="PK"> Pakistan</option>
+<option value="PW"> Palau</option>
+<option value="PS"> Palestinian Territory</option>
+<option value="PA"> Panama</option>
+<option value="PG"> Papua New Guinea</option>
+<option value="PY"> Paraguay</option>
+<option value="PE"> Peru</option>
+<option value="PH"> Philippines</option>
+<option value="PL"> Poland</option>
+<option value="PT"> Portugal</option>
+<option value="PR"> Puerto Rico</option>
+<option value="QA"> Qatar</option>
+<option value="RO"> Romania</option>
+<option value="RU"> Russia</option>
+<option value="RW"> Rwanda</option>
+<option value="SX"> Saint Maarten</option>
+<option value="WS"> Samoa</option>
+<option value="SM"> San Marino</option>
+<option value="ST"> Sao Tome and Principe</option>
+<option value="SA"> Saudi Arabia</option>
+<option value="SN"> Senegal</option>
+<option value="RS"> Serbia</option>
+<option value="SC"> Seychelles</option>
+<option value="SL"> Sierra Leone</option>
+<option value="SG"> Singapore</option>
+<option value="SK"> Slovak Republic</option>
+<option value="SI"> Slovenia</option>
+<option value="SB"> Solomon Islands</option>
+<option value="SO"> Somalia</option>
+<option value="ZA"> South Africa</option>
+<option value="SS"> South Sudan</option>
+<option value="ES"> Spain</option>
+<option value="LK"> Sri Lanka</option>
+<option value="KN"> St. Kitts and Nevis</option>
+<option value="LC"> St. Lucia</option>
+<option value="VC"> St. Vincent and the Grenadines</option>
+<option value="SD"> Sudan</option>
+<option value="SR"> Suriname</option>
+<option value="SZ"> Swaziland</option>
+<option value="SE"> Sweden</option>
+<option value="CH"> Switzerland</option>
+<option value="SY"> Syrian Arab Republic</option>
+<option value="TW"> Taiwan</option>
+<option value="TJ"> Tajikistan</option>
+<option value="TZ"> Tanzania</option>
+<option value="TH"> Thailand</option>
+<option value="TL"> Timor-Leste</option>
+<option value="TG"> Togo</option>
+<option value="TO"> Tonga</option>
+<option value="TT"> Trinidad and Tobago</option>
+<option value="TN"> Tunisia</option>
+<option value="TR"> Turkey</option>
+<option value="TM"> Turkmenistan</option>
+<option value="TV"> Tuvalu</option>
+<option value="UG"> Uganda</option>
+<option value="UA"> Ukraine</option>
+<option value="AE"> United Arab Emirates</option>
+<option value="GB"> United Kingdom</option>
+<option value="US"> United States</option>
+<option value="UY"> Uruguay</option>
+<option value="UZ"> Uzbekistan</option>
+<option value="VU"> Vanuatu</option>
+<option value="VA"> Vatican</option>
+<option value="VE"> Venezuela, RB</option>
+<option value="VN"> Vietnam</option>
+<option value="VI"> Virgin Islands (U.S.)</option>
+<option value="YE"> Yemen, Rep.</option>
+<option value="ZM"> Zambia</option>
+<option value="ZW"> Zimbabwe</option>
+
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td>Membership start date</td>
+        <td>
+<select name="quarter">
+<option label="January 1st" value="01-01">January 1st</option>
+<option label="April 1st" value="04-01">April 1st</option>
+<option label="July 1st" value="07-01">July 1st</option>
+<option label="October 1st" value="10-01" selected="selected">October 1st</option>
+</select>
+
+          &nbsp;<input type="text" size="4" name="year" value="2014" />
+        </td>
+      </tr>
+      <!--
+      <tr>
+        <td>Compare with fees on [optional]</td>
+        <td>
+<select name="quarter2">
+<option label="January 1st" value="01-01">January 1st</option>
+<option label="April 1st" value="04-01">April 1st</option>
+<option label="July 1st" value="07-01">July 1st</option>
+<option label="October 1st" value="10-01" selected="selected">October 1st</option>
+</select>
+
+          &nbsp;<input type="text" size="4" name="year2" value="2014" />
+        </td>
+      </tr>
+      -->	
+      <tr>
+      <td><input type="submit" value="Show Fees for this Country"/></td>
+      </tr>
+    </table>
+    </div>
+  </form>
+</div>
+
+<h3 class="h4">Currency</h3>
+<div>
+  <form id="fee-calc-all" action="fees#results" method="get">
+  <input type="hidden" value="1" name="showall" />
+  <p>For each currency that may be used to pay W3C dues,
+  show all fee tables for a chosen quarter, and those
+  for the next quarter if they differ. By default, the current quarter
+  is shown.</p>
+
+  <div class='data'>
+  <table cellpadding="0" cellspacing="0" class="lMargin">
+    <colgroup>
+     <col width="50%"/>
+     <col width="50%"/>
+    </colgroup>
+
+    <tr>
+      <td>Membership start date</td>
+      <td>
+<select name="quarter_chosen">
+<option label="January 1st" value="01-01">January 1st</option>
+<option label="April 1st" value="04-01">April 1st</option>
+<option label="July 1st" value="07-01">July 1st</option>
+<option label="October 1st" value="10-01" selected="selected">October 1st</option>
+</select>
+
+          &nbsp;<input type="text" size="4" name="year_chosen" value="2014" />
+        </td>
+      </tr>
+      <tr>
+      <td><input type="submit" value="Show All Fees" /></td>
+      </tr>
+    </table>
+    </div>
+  </form>
+
+</div>          </div> <!-- /end .line -->
+        </div> <!-- /end #w3c_content_body -->
+      </div> <!-- /end #w3c_mainCol -->
+    </div> <!-- end #w3c_main -->
+  </div> <!-- /end #w3c_container -->
+
+<div id="w3c_footer">
+  <div id="w3c_footer-inner">
+    <h2 class="offscreen">Footer Navigation</h2>
+    <div class="w3c_footer-nav">
+      <h3>Navigation</h3>
+      <ul class="footer_top_nav">   
+       <li><a href="/">Home</a></li>
+       <li><a href="/standards/">Standards</a></li>
+       <li><a href="/participate/">Participate</a></li>
+       <li><a href="/Consortium/membership">Membership</a></li>
+       <li class="last-item"><a href="/Consortium/">About W3C</a></li>
+      </ul>
+    </div>
+    <div class="w3c_footer-nav">
+      <h3>Contact W3C</h3>
+      <ul class="footer_bottom_nav">
+           <li><a href="/Consortium/contact">Contact</a></li>
+           <li><a accesskey="0" href="/Help/">Help and FAQ</a></li>
+           <li><a href="/Consortium/sponsor/">Sponsor / Donate</a></li>
+           <li><a href="/Consortium/siteindex">Site Map</a></li>
+           <li><address id="w3c_signature"><a href="http://lists.w3.org/Archives/Public/site-comments/">Feedback</a></address></li>
+      </ul>
+    </div>
+    <div class="w3c_footer-nav">
+      <h3>W3C Updates</h3>
+      <ul class="footer_follow_nav">
+           <li>
+                        <a href="http://twitter.com/W3C" title="Follow W3C on Twitter"><img src="/2008/site/images/twitter-bird" alt="Twitter" class="social-icon" width="78" height="83" /></a>
+                        <a href="http://identi.ca/w3c" title="See W3C on Identica"><img src="/2008/site/images/identica-logo" alt="Identica" class="social-icon" width="91" height="83" /></a>
+          </li>
+     </ul>
+    </div>
+    <!-- #footer address / page signature -->
+        <p class="copyright">Copyright © 2014 W3C <sup>®</sup> (<a href="http://www.csail.mit.edu/"><acronym title="Massachusetts Institute of Technology">MIT</acronym></a>, <a href="http://www.ercim.eu/"><acronym title="European Research Consortium for Informatics and Mathematics"> ERCIM</acronym></a>, <a href="http://www.keio.ac.jp/">Keio</a>, <a href="http://ev.buaa.edu.cn/">Beihang</a>) <a href="/Consortium/Legal/ipr-notice">Usage policies apply</a>.</p>
+  </div>
+</div><!-- /end #footer --><div id="w3c_scripts">
+  <script type="text/javascript" src="/2008/site/js/main"><!-- --></script>
+</div>
+
+</body>
+</html>

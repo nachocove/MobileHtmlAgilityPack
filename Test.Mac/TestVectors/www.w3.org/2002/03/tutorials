@@ -1,0 +1,345 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="ROBOTS" content="INDEX, NOFOLLOW" />
+<title>Tutorials and Courses - W3C</title><link rel="stylesheet" href="/2008/site/css/minimum" type="text/css" media="handheld, all" /><style type="text/css" media="print, screen and (min-width: 481px)" xml:space="preserve">
+     @import url("/2008/site/css/advanced");
+</style><link href="/2008/site/css/minimum" rel="stylesheet" type="text/css" media="handheld, only screen and (max-device-width: 480px)" /><meta name="viewport" content="width=device-width" /><link rel="stylesheet" href="/2008/site/css/print" type="text/css" media="print" /><link rel="shortcut icon" href="/2008/site/images/favicon.ico" type="image/x-icon" /></head><body id="www-w3-org" class="w3c_public"><div id="w3c_container">
+    
+
+         <div id="w3c_mast">
+            <h1 class="logo">
+               <a tabindex="2" accesskey="1" href="/"><img src="/2008/site/images/logo-w3c-mobile-lg" width="90" height="53" alt="W3C" /></a>
+               <span class="alt-logo">W3C</span>
+            </h1>
+            <div id="w3c_nav">
+               
+		
+		             
+               <form action="/Help/search" method="get" enctype="application/x-www-form-urlencoded"><div class="w3c_sec_nav"><!-- --></div><ul class="main_nav"><li class="first-item">
+                        <a href="/standards/">Standards</a>
+                     </li><li>
+                        <a href="/participate/">Participate</a>
+                     </li><li>
+                        <a href="/Consortium/membership">Membership</a>
+                     </li><li class="last-item">
+                        <a href="/Consortium/">About W3C</a>
+                     </li><li class="search-item">
+                        <div id="search-form">
+                           <input tabindex="3" class="text" name="q" value="" title="Search" type="text" />
+                           <button id="search-submit" name="search-submit" type="submit"><img class="submit" src="/2008/site/images/search-button" alt="Search" width="21" height="17" /></button>
+                        </div>
+                     </li></ul></form>
+               
+            </div> 
+            
+         </div> 
+ 
+         
+
+         <div id="w3c_main">
+            <div id="w3c_logo_shadow" class="w3c_leftCol">
+               <img height="32" alt="" src="/2008/site/images/logo-shadow" />
+            </div>
+            
+            <div class="w3c_leftCol"><h2 class="offscreen">Site Navigation</h2>
+    <h3 class="category"><span class="ribbon"><a href="/participate/discussion.html" title="Up to Mail, News, Blogs, Podcasts, and Tutorials">Mail, News, Blogs, Podcasts, and Tutorials <img src="/2008/site/images/header-link" alt="Header link" width="13" height="13" class="header-link" /></a></span></h3>
+       <ul class="theme">
+        <li><a href="/News/">News</a></li>
+        <li><a href="/News/Public/">Weekly Newsletter</a></li>
+        <li><a href="/blog/">W3C Blogs</a></li>
+        <li><a href="/Mail/">Mailing Lists</a></li>
+        <li><a href="/participate/podcastsvideo.html">Podcasts and Video</a></li>
+        <li><a class="current">Tutorials and Courses</a></li>
+        <li><a href="/TeamSubmission/">Team Submissions</a></li>
+       </ul>
+       <br /></div>
+            <div class="w3c_mainCol">
+               <div id="w3c_crumbs">
+       <div id="w3c_crumbs_frame">
+        <ul class="bct"> <!-- .bct / Breadcrumbs -->
+          <li class="skip"><a tabindex="1" accesskey="2" title="Skip to content (e.g., when browsing via audio)" href="#w3c_content_body">Skip</a></li>
+          <li><a href="/">W3C</a> <span class="cr">»</span> </li>
+          <li><a href="/participate/">Participate</a> <span class="cr">»</span> </li>
+          <li><a href="/participate/discussion.html">Mail, News, Blogs, Podcasts, and…</a> <span class="cr">»</span> </li>
+          <li class="current">Tutorials and Courses</li>
+        </ul>            
+     </div>
+    </div>
+               <h1 class="title">Tutorials and Courses</h1>
+               <div id="w3c_content_body">
+                  <div class="line">
+		    <div class="intro" id="w3c_toggle_include">
+                     <p class="tPadding">W3C groups often publish tutorials and online courses to help people learn about <a href="/standards/">W3C technologies</a>. We invite you to let us know about other tutorials at site-comments@w3.org. <strong>Note:</strong> Some of these resources have been produced
+outside W3C; W3C provides these links as a service to the community but takes no responsibility for the content or changes to the content.
+                     See also:</p>
+<ul class="show_items">
+  <li>plans for any upcoming <a href="/participate/eventscal#training">training sessions</a></li>
+<li><a href="/participate/promote#education">information for educators</a>, for example Web standards curricula.</li>
+</ul>
+		    </div>
+         <div class="hierarchy groupdesc">
+	   <div class="expand_block closed">
+                     <h2 class="h3 tutorialentry" id="webdesign_accessibility">
+                        <span class="expand_section">Accessibility</span>
+                     </h2>
+                     <ul class="show_items expand_description"><li>
+                           <a href="/WAI/gettingstarted/Overview">Introducing Web Accessibility</a>
+                        </li><li>
+			                        <a href="http://www.w3.org/TR/wai-aria-primer/">WAI-ARIA Primer</a>
+			                     </li><li><a href="/standards/webdesign/accessibility">More on accessibility…</a></li></ul>
+	   </div>
+                     <div class="expand_block closed"><h3 class="tutorialentry" id="webdesign_audiovideo"><span class="expand_section">Audio and Video </span></h3><ul class="show_items expand_description"><li>
+                           <a href="/AudioVideo/#Getting">SMIL Tutorials</a>
+                        </li><li><a href="/standards/webdesign/audiovideo">More on audio and video …</a></li></ul></div>
+                     
+
+                     <div class="expand_block closed"><h3 class="tutorialentry" id="webofdevices_independence"><span class="expand_section">Device Independence and Content Negotation </span></h3><ul class="show_items expand_description"><li>
+                           <a href="http://www.w3.org/TR/cselection-primer/">Content Selection Primer 1.0</a>
+                        </li><li>
+                           <a href="http://www.w3.org/TR/dial-primer/">DIAL Part 0: Primer</a>
+                        </li><li><a href="/standards/webofdevices/independence">More on device independence and content negotation …</a></li></ul></div>
+
+                     
+
+                     <div class="expand_block closed"><h3 class="tutorialentry" id="webdesign_graphics"><span class="expand_section">Graphics </span></h3><ul class="show_items expand_description"><li>
+                           <a href="http://www.w3.org/Consortium/Offices/Presentations/SVG/">Large
+      slide set for an SVG Tutorial</a>, (cca 190 slides). There is also a <a href="http://www.w3.org/Consortium/Offices/Presentations/SVG/ShortTutorial/">shorter,
+      more compact version</a> (cca 80 slides). Both sets are kept up-to-date
+      with the development of SVG. Both slide sets are in SVG.</li><li>
+	                          <a href="http://www.w3.org/TR/SVGPrintPrimer12/">SVG Print 1.2, Part 1: Primer</a>
+                        </li><li>
+	                          <a href="http://www.w3.org/TR/SVGFilterPrimer12/">SVG Filters 1.2, Part 1: Primer</a>
+                        </li>
+						<li>
+	                          <a href="http://www.w3.org/2010/09/intro_svg_course_description.php">Introduction to SVG</a> (online course)
+                        </li><li><a href="/standards/webdesign/graphics">More on graphics …</a></li></ul></div>
+
+                     
+
+                     <div class="expand_block closed"><h3 class="tutorialentry" id="webdesign_htmlcss"><span class="expand_section">HTML and CSS </span></h3><ul class="show_items expand_description">
+		     <li>
+		       <a href="/community/webed/wiki/HTML/Training">HTML5 Reference Material</a>
+		     </li>
+             <li>
+               <a href="http://www.w3devcampus.com/html5-w3c-training/">W3DevCampus' HTML5 online training course</a> 
+             </li>
+		     <li>
+		       <a href="/2010/Talks/0119-next-web-plh/">The Next Open Web Platform</a>, slideset
+		     </li>
+ <li>
+                           <a href="/Style/CSS/learning">Learning Cascading Style Sheets</a>
+                        </li><li>
+                           <a href="/MarkUp/Guide/">HTML 4.01 Tutorial</a>
+                        </li><li>
+                           <a href="/MarkUp/Guide/Advanced">Advanced HTML 4.01 Tutorial</a>
+			 </li>
+			 <li>
+			   <a href="/MarkUp/2004/xhtml-faq">HTML and XHTML Frequently Answered Questions (FAQ)</a>
+			 </li>
+<li>
+                           <a href="/MarkUp/Guide/xhtml-m12n-tutorial/">How to create XHTML Family
+      modules and markup languages for fun and profit</a>
+                        </li><li>
+                           <a href="/MarkUp/2004/xmlevents-for-html-authors">XML Events for HTML Authors</a>
+                        </li>
+			<li>
+			  <a href="http://slaout.linux62.org/html_css/">Tutoriel HTML &amp; CSS</a> (in French / en Français)
+			</li>
+			<li>
+                           <a href="/MarkUp/#tutorials">More HTML tutorials</a>
+                        </li><li><a href="/standards/webdesign/htmlcss">More on html and css …</a></li></ul></div>
+
+                     
+
+                     <div class="expand_block closed"><h3 class="tutorialentry" id="webarch_identifiers"><span class="expand_section">Identifiers (URIS and more) </span></h3><ul class="show_items expand_description"><li>
+                           <a href="/Addressing/#background">URI tutorials</a>
+                        </li><li><a href="/standards/webarch/identifiers">More on identifiers (uris and more) …</a></li></ul></div>
+                     
+
+                     <div class="expand_block closed"><h3 class="tutorialentry" id="webdesign_i18n"><span class="expand_section">Internationalization </span></h3><ul class="show_items expand_description"><li>
+			                        <a href="http://www.w3.org/International/articlelist">Internationalization articles, best practices &amp; tutorials</a>
+			                     </li><li><a href="/standards/webdesign/i18n">More on internationalization …</a></li></ul></div>
+
+	   <div class="expand_block closed">
+	     <h3 class="h3 tutorialentry" id="webdesign_mobilweb">
+	       <span class="expand_section">Mobile Web</span>
+	     </h3>
+	     <ul class="show_items expand_description">
+             <li>
+              <a href="http://www.w3devcampus.com/writing-great-web-applications-for-mobile/">W3DevCampus' Programming mobile Web applications</a>
+            </li>
+	       <li>
+		 <a href="/Mobile/training/">Mobile Web Initiative Training</a> <em>Note: Obsolete but kept for reference</em>
+	       </li>
+	     </ul>
+	   </div>
+                     <div class="expand_block closed"><h3 class="tutorialentry" id="webdesign_privacy"><span class="expand_section">Privacy </span></h3><ul class="show_items expand_description"><li>
+                           <a href="/TR/p3pdeployment">P3P Deployment Guide</a>
+                        </li><li>
+                           <a href="/P3P/details">How to Create and Publish Your Company's P3P
+      Policy (in 6 Easy Steps)</a>
+                        </li><li>
+                           <a href="/P3P/#Enable">More P3P Tutorials</a>
+                        </li><li><a href="/standards/webdesign/privacy">More on privacy …</a></li></ul></div>
+
+                     
+                     <div class="expand_block closed"><h3 class="tutorialentry" id="xml_security"><span class="expand_section">Security </span></h3><ul class="show_items expand_description"><li>
+                           <a href="/Encryption/2001/#Background">XML Encryption and XML Signature
+    tutorials</a>
+                        </li><li><a href="/standards/xml/security">More on security …</a></li></ul></div>
+
+                     
+                     <div class="expand_block closed"><h3 class="tutorialentry" id="semanticweb_data"><span class="expand_section">Semantic Web Data </span></h3><ul class="show_items expand_description"><li>
+			                        <a href="http://www.w3.org/2009/Talks/0615-SanJose-tutorial-IH/">Introduction to the Semantic Web</a>, Ivan Herman
+		       </li><li>
+			                        <a href="http://www.cambridgesemantics.com/2008/09/sem-web-introduction/#(1)">Introduction to the Semantic Web</a>, Lee Feigenbaum
+		       </li>
+<li>
+                           <a href="/2000/10/swap/doc/">Semantic Web Tutorial Using N3</a>
+                        </li>
+
+<li>
+                           <a href="/2000/10/swap/Primer">Getting into RDF &amp; Semantic Web
+      using N3</a>
+                        </li><li>
+                           <a href="/TR/rdf-primer/">RDF Primer</a>
+                        </li><li>
+			                        <a href="/MarkUp/2009/rdfa-for-html-authors">RDFa for HTML Authors</a>
+			                     </li><li>
+			                        <a href="http://www.slideshare.net/fabien_gandon/rdfa-in-a-nutshell-v1">RDFa in a Nutshell (slides)</a>
+			                     </li>
+								<li><a href="http://www.w3.org/TR/powder-primer/">Protocol for Web Description Resources (POWDER): Primer</a>, Kai Scheppe</li>
+
+
+<li>
+                           <a href="/RDF/#overview">More RDF Tutorials</a>
+                        </li><li>
+                           <a href="http://www.w3.org/Consortium/Offices/Presentations/RDFTutorial/">Slide
+      set</a> consisting of around 120 slides. Available both in HTML and in
+      SVG formats.</li><li><a href="/standards/semanticweb/data">More on semantic web data …</a></li></ul></div>
+
+                     
+
+                     <div class="expand_block closed"><h3 class="tutorialentry" id="semanticweb_ontology"><span class="expand_section">Semantic Web Ontology </span></h3><ul class="show_items expand_description"><li>
+			                        <a href="http://www.w3.org/2007/OWL/wiki/Primer">OWL 2 Web Ontology Language Primer</a>
+		                      </li><li>
+			                        <a href="/TR/skos-primer/">SKOS Simple Knowledge Organization System Primer</a>
+		                      </li><li><a href="/standards/semanticweb/ontology">More on semantic web ontology …</a></li></ul></div>
+
+                     
+
+                     <div class="expand_block closed"><h3 class="tutorialentry" id="webdesign_script"><span class="expand_section">Scripting and Ajax </span></h3><ul class="show_items expand_description"><li>
+                           <a href="http://www.w3.org/TR/xbl-primer/">XBL 2.0 Primer: An Introduction for Developers</a>
+                        </li><li><a href="/standards/webdesign/script">More on scripting and ajax …</a></li></ul></div>
+
+
+                     <div class="expand_block closed"><h3 class="tutorialentry" id="webofdevices_voice"><span class="expand_section">Voice Browsing </span></h3><ul class="show_items expand_description"><li>
+                           <a href="/Voice/Guide/">Getting started with VoiceXML 2.0</a>
+                        </li>
+			<li><a href="http://www.w3.org/2010/Talks/0225-vow-project-review/VBWG_project_review.pdf">Voice on the Web</a> - Dan Burnett</li>
+			<li><a href="/Voice/#tutorials">More voice browsing tutorials …</a></li>
+		     <li><a href="/standards/webofdevices/voice">More on voice browsing …</a></li></ul></div>
+
+                     
+
+                     <div class="expand_block closed"><h3 class="tutorialentry" id="webofservices_description"><span class="expand_section">Web Services Description </span></h3><ul class="show_items expand_description"><li>
+                           <a href="http://www.w3.org/TR/powder-primer/">Protocol for Web Description Resources (POWDER): Primer</a>
+                        </li><li>
+                           <a href="http://www.w3.org/TR/ws-cdl-10-primer/">Web Services Choreography Description Language: Primer </a>
+                        </li><li>
+                           <a href="http://www.w3.org/TR/wsdl20-primer">Web Services Description Language (WSDL) Version 2.0 Part 0: Primer</a>
+                        </li><li><a href="/standards/webofservices/description">More on web services description …</a></li></ul></div>
+
+		                   
+
+                     <div class="expand_block closed"><h3 class="tutorialentry" id="webofservices_protocols"><span class="expand_section">Web Services Protocols </span></h3><ul class="show_items expand_description"><li>
+                           <a href="/TR/soap12-part0/">A Primer to SOAP 1.2</a>
+                        </li><li><a href="/standards/webofservices/protocols">More on web services protocols …</a></li></ul></div>
+
+                     
+
+                     <div class="expand_block closed"><h3 class="tutorialentry" id="xml_components"><span class="expand_section">XForms (and other XML Components) </span></h3><ul class="show_items expand_description"><li>
+                           <a href="http://www.w3.org/MarkUp/Forms/2003/xforms-for-html-authors">Xforms for HTML Authors</a>
+                        </li><li><a href="/standards/xml/components">More on xforms (and other xml components) …</a></li></ul></div>
+
+                     
+                     <div class="expand_block closed"><h3 class="tutorialentry" id="xml_core"><span class="expand_section">XML (Extensible Markup Language) Essentials </span></h3><ul class="show_items expand_description"><li>
+                           <a href="/XML/#dev">XML Tutorials</a>
+                        </li><li>
+                           <a href="http://www.sitepoint.com/article/really-good-introduction-xml/">A Really, Really, Really Good Introduction to XML</a>
+                        </li><li>
+                           <a href="http://www.w3.org/TR/exi-primer/">Efficient XML Interchange (EXI) Primer</a>
+                        </li><li><a href="/standards/xml/core">More on xml (extensible markup language) core …</a></li></ul></div>
+
+
+                     
+                     <div class="expand_block closed"><h3 class="tutorialentry" id="xml_schema"><span class="expand_section">XML Schema </span></h3><ul class="show_items expand_description"><li>
+                           <a href="/TR/xmlschema-0/">A Primer to XML Schema</a>
+                        </li><li><a href="/standards/xml/schema">More on xml schema …</a></li></ul></div>
+
+                     
+
+                     <div class="expand_block closed"><h3 class="tutorialentry" id="xml_transformation"><span class="expand_section">XML Transformations (XSL) </span></h3><ul class="show_items expand_description"><li>
+                           <a href="/Style/XSL/#Tutorials">XSL Tutorials</a>
+                        </li><li><a href="/standards/xml/transformation">More on xml transformations (xsl) …</a></li></ul></div>
+                     
+                     
+
+	 </div>
+	                 </div>
+               </div>
+            </div>
+         </div>
+         
+         
+         
+      </div><div id="w3c_footer">
+         <div id="w3c_footer-inner">
+            <h2 class="offscreen">Footer Navigation</h2>
+            <div class="w3c_footer-nav">
+               <h3>Navigation</h3>
+               <ul class="footer_top_nav"><li>
+                     <a href="/">Home</a>
+                  </li><li>
+                     <a href="/standards/">Standards</a>
+                  </li><li>
+                     <a href="/participate/">Participate</a>
+                  </li><li>
+                     <a href="/Consortium/membership">Membership</a>
+                  </li><li class="last-item">
+                     <a href="/Consortium/">About W3C</a>
+                  </li></ul>
+            </div>
+            <div class="w3c_footer-nav">
+               <h3>Contact W3C</h3>
+               <ul class="footer_bottom_nav"><li>
+                     <a href="/Consortium/contact">Contact</a>
+                  </li><li>
+                     <a accesskey="0" href="/Help/">Help and FAQ</a>
+                  </li><li>
+                     <a href="/Consortium/sponsor/">Sponsor / Donate</a>
+                  </li><li>
+                     <a href="/Consortium/siteindex">Site Map</a>
+                  </li><li>
+                     <address id="w3c_signature">
+                        <a href="http://lists.w3.org/Archives/Public/site-comments/">Feedback</a></address>
+                  </li></ul>
+            </div>
+            <div class="w3c_footer-nav">
+               <h3>W3C Updates</h3>
+               <ul class="footer_follow_nav"><li>
+                     <a href="http://twitter.com/W3C" title="Follow W3C on Twitter">
+                        <img src="/2008/site/images/twitter-bird" alt="Twitter" width="78" height="83" class="social-icon" />
+                     </a>
+                     
+                  </li></ul>
+            </div>
+            <p class="copyright">Copyright © 2012 W3C <sup>®</sup> (<a href="http://www.csail.mit.edu/">
+                  <acronym title="Massachusetts Institute of Technology">MIT</acronym>
+               </a>, <a href="http://www.ercim.org/">
+                  <acronym title="European Research Consortium for Informatics and Mathematics"> ERCIM</acronym>
+               </a>, <a href="http://www.keio.ac.jp/">Keio</a>, <a href="http://ev.buaa.edu.cn/">Beihang</a>) <a href="/Consortium/Legal/ipr-notice">Usage policies apply</a>.</p>
+         </div>
+      </div><!-- Generated from data/scripts.php, ../../smarty/{scripts.tpl} --><!-- At the bottom for performance reasons --><div id="w3c_scripts">
+         <script type="text/javascript" src="/2008/site/js/main" xml:space="preserve"><!-- --></script>
+      </div></body></html>

@@ -1,0 +1,758 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+"http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Translations of the HTML 4 Specification</title>
+<link rel="stylesheet" type="text/css"
+href="http://www.w3.org/StyleSheets/TR/base.css">
+<style type="text/css">
+   body {
+      background: white;
+      color: black;
+   }
+</style>
+</head>
+<body>
+<div class="head">
+<p><a href="http://www.w3.org/" title="Go to W3C Home Page"><img
+height="48" width="72" alt="W3C"
+src="http://www.w3.org/Icons/w3c_home"></a></p>
+
+<h1>Translations of the HTML 4 Specification</h1>
+
+<dl>
+<dt>The latest version of HTML 4.01:</dt>
+
+<dd><a
+href="http://www.w3.org/TR/html401">http://www.w3.org/TR/html401</a></dd>
+
+<dd>HTML 4.01 supersedes
+<a href="http://www.w3.org/TR/REC-html40">HTML 4.0</a>.</dd>
+
+<dt>The latest version of HTML 4:</dt>
+
+<dd><a href="http://www.w3.org/TR/html4">http://www.w3.org/TR/html4</a></dd>
+
+<dt>This document last modified:</dt>
+
+<dd>$Date: 2003/05/30 08:46:06 $</dd>
+</dl>
+
+<p class="copyright"><a
+href="http://www.w3.org/Consortium/Legal/ipr-notice-20000612#Copyright"
+>Copyright</a> &copy;1999-2003 <a href="http://www.w3.org/"><abbr
+title="World Wide Web Consortium">W3C</abbr></a><sup>&reg;</sup>
+(<a href="http://www.lcs.mit.edu/"><abbr
+title="Massachusetts Institute of Technology">MIT</abbr></a>, <a
+href="http://www.ercim.org/"><acronym
+title="European Research Consortium for Informatics and Mathematics">ERCIM</acronym></a>,
+<a href="http://www.keio.ac.jp/">Keio</a>), All Rights Reserved. W3C <a
+href="/Consortium/Legal/ipr-notice#Legal_Disclaimer">liability</a>, <a
+href="/Consortium/Legal/ipr-notice#W3C_Trademarks">trademark</a>, <a
+rel="Copyright" href="/Consortium/Legal/copyright-documents">document
+use</a> and <a rel="Copyright"
+href="/Consortium/Legal/copyright-software">software licensing</a>
+rules apply.</p>
+</div>
+
+<hr>
+
+<h2><a id="about" name="about">About W3C translations</a></h2>
+
+<p>The normative version of the HTML 4 specification is in English.
+If English is not your first language, volunteers are working to
+provide translations in other languages.</p>
+
+<p>Please refer to the page about
+<a href="/Consortium/Translation/">Translations at W3C</a>.</p>
+
+<h3><a id="how" name="how">How to volunteer as a translator</a></h3>
+
+<p>If you wish to volunteer as a translator for a W3C specification, please
+write to <a href="mailto:w3c-translators&#64;w3.org">w3c-translators&#64;w3.org</a>.
+In your message, be sure to include the URI of the specification you wish
+to translate and the language of the translation.</p>
+
+<p>The mailing list w3c-translators&#64;w3.org is also a discussion
+forum for people working on translations of W3C specifications such
+as the Web Content Accessibility Guidelines. To subscribe to this list,
+send an email to <a href="mailto:w3c-translators-request&#64;w3.org"
+>w3c-translators-request&#64;w3.org</a> with the word "subscribe" in
+the subject line (include the word "unsubscribe" if you want to
+unsubscribe). The <a id="trans" name="trans"
+href="http://lists.w3.org/Archives/Public/w3c-translators/">w3c-translators
+archive</a> is available online.</p>
+
+<h3><a id="IPR" name="IPR">Intellectual Property Rights and
+translations</a></h3>
+
+<p>Translators must give W3C permission to republish the translated
+version and to allow readers to make copies without restrictions.
+The copyright details for translations of W3C specifications are
+explained in
+<a href="http://www.w3.org/Consortium/Legal/IPR-FAQ-20000620.html#translate"
+>section 5.6 of W3C's IPR FAQ</a>.</p>
+
+<h2><a id="list" name="list">Translations of HTML 4 specifications</a></h2>
+
+<p>The following lists the people who have volunteered for
+particular languages in the order in which they volunteered. The
+specification is quite long, so translators may wish to share work
+on writing and reviewing translations.</p>
+
+<ul>
+<li><a href="#Arabic">Arabic</a></li>
+
+<li><a href="#Bengali">Bengali</a></li>
+
+<li><a href="#Catalan">Catalan</a></li>
+
+<li><a href="#Chinese">Chinese</a></li>
+
+<li><a href="#Danish">Danish</a></li>
+
+<li><a href="#Dutch">Dutch</a></li>
+
+<li><a href="#Finnish">Finnish</a></li>
+
+<li><a href="#French">French</a></li>
+
+<li><a href="#Galician">Galician</a></li>
+
+<li><a href="#German">German</a></li>
+
+<li><a href="#Greek">Greek</a></li>
+
+<li><a href="#Hebrew">Hebrew</a></li>
+
+<li><a href="#Hungarian">Hungarian</a></li>
+
+<!--
+<li><a href="#Icelandic">Icelandic</a></li>
+-->
+
+<li><a href="#Indonesian">Indonesian</a></li>
+
+<li><a href="#Italian">Italian</a></li>
+
+<li><a href="#Japanese">Japanese</a></li>
+
+<li><a href="#Korean">Korean</a></li>
+
+<!--
+<li><a href="#Norwegian">Norwegian</a></li>
+-->
+
+<li><a href="#Polish">Polish</a></li>
+
+<li><a href="#Portuguese">Portuguese</a></li>
+
+<li><a href="#Romanian">Romanian</a></li>
+
+<li><a href="#Russian">Russian</a></li>
+
+<li><a href="#Serbian">Serbian</a></li>
+
+<li><a href="#Slovak">Slovak</a></li>
+
+<li><a href="#Spanish">Spanish</a></li>
+
+<li><a href="#Swedish">Swedish</a></li>
+
+<li><a href="#Tamil">Tamil</a></li>
+
+<li><a href="#Thai">Thai</a></li>
+
+<li><a href="#Turkish">Turkish</a></li>
+
+<li><a href="#Vietnamese">Vietnamese</a></li>
+</ul>
+
+<dl>
+<dt><a id="Arabic" name="Arabic">Arabic</a></dt>
+
+<dd>
+<ul>
+<li>Ahmed Bagi
+<!-- &lt;bagi&#64;liverpool.ac.uk&gt; -->
+&lt;Ahmed&#64;abagi.freeserve.co.uk&gt; or
+&lt;aahmed.bagi&#64;virgin.net&gt; or
+&lt;abagi&#64;co.umist.ac.uk&gt;</li>
+</ul>
+</dd>
+
+<dt><a id="Bengali" name="Bengali">Bengali</a></dt>
+
+<dd>
+<ul>
+<li>Rezaur Rahman &lt;atmreza&#64;fnmail.com&gt;</li>
+</ul>
+</dd>
+
+<dt><a id="Catalan" name="Catalan">Catalan</a></dt>
+
+<dd>
+<ul>
+<li>Daniel Martinez &lt;daniel&#64;myhouse.zzn.com&gt;</li>
+</ul>
+</dd>
+
+<dt><a id="Chinese" name="Chinese">Chinese</a></dt>
+
+<dd>
+<ul>
+<li>Rick Chiang &lt;rchiang&#64;coocoo.tnjc.edu.tw&gt;</li>
+
+<li>Yule Show &lt;yuleshow&#64;iname.com&gt;</li>
+
+<li>Maobing Jin &lt;mjin&#64;intl.com&gt;, see
+<a href="http://research.intl.com/~mjin/html/">Chinese translation</a></li>
+
+<li>Julius Mong &lt;julius&#64;clara.net&gt;</li>
+
+<li>Ming-Cheng Hsu &lt;noty&#64;posy.net&gt;</li>
+
+<li>Li Dan &lt;danli&#64;public.gb.com.cn&gt;</li>
+
+<li>john lam &lt;johnlam&#64;hotmail.com&gt; (Mandarin)</li>
+
+<li>YangXHUI&#64;term.star.com.cn (simplified Chinese)</li>
+
+<li>Liu Weizhong &lt;liuwz&#64;expert.hust.edu.cn&gt; (simplified Chinese)</li>
+
+<li>Shufang Wu &lt;wsfang&#64;pubms.pku.edu.cn&gt;</li>
+
+<li>Kelly O'Hoy &lt;webtreck&#64;dsuper.net&gt; (BIG5 and GB versions)</li>
+
+<li>Ken Cheung &lt;ken&#64;cafeinfo.com&gt;, see
+<a href="http://www.cafeinfo.com/HTML">Second Chinese translation</a></li>
+
+<li>Lee Kin Fun Peter &lt;plee0534&#64;netvigator.com&gt;</li>
+
+<li>David Lee &lt;dlee&#64;a-vip.com&gt;</li>
+
+<li>Hong-Yang Jia &lt;hyjia&#64;ns.icm.ac.cn&gt;</li>
+</ul>
+</dd>
+
+<dt><a id="Danish" name="Danish">Danish</a></dt>
+
+<dd>
+<ul>
+<li>Anders B. Skj&oslash;naa &lt;ABS&#64;HTMS.DK&gt;,
+Bo Pr&aelig;st Nielsen &lt;bpn&#64;htms.dk&gt;,
+Carsten Hess &lt;crh&#64;htms.dk&gt;, and
+Freddie Sachmann &lt;fsa&#64;htms.dk&gt;</li>
+
+<li>Ulrik Guldb&aelig;k &lt;ulrik&#64;mensa.se&gt;</li>
+
+<li>John martin &lt;diabolos&#64;hotmail.com&gt;</li>
+
+<li>Michael Westergaard &lt;mwestergaard&#64;usa.net&gt;</li>
+</ul>
+</dd>
+
+<dt><a id="Dutch" name="Dutch">Dutch</a></dt>
+
+<dd>
+<ul>
+<li>Joachim Schwarte &lt;schwarte&#64;iwb.uni-stuttgart.de&gt;</li>
+
+<li>Hans Kort &lt;kraskort&#64;dds.nl&gt;</li>
+
+<li>JanWillem Groenenberg &lt;jw&#64;escher.ptf.hro.nl&gt;</li>
+
+<li>Koen deBoeve &lt;de.boeve&#64;pandora.be&gt;</li>
+
+<li>Andy Camps &lt;andy.camps&#64;wanadoo.be&gt;, see
+<a href="http://www.playgarden.com/html4/cover.htm">Dutch translation of
+HTML 4.01 in progress</a></li>
+</ul>
+</dd>
+
+<dt><a id="Finnish" name="Finnish">Finnish</a></dt>
+
+<dd>
+<ul>
+<li>Olli Koponen &lt;okoponen&#64;cc.helsinki.fi&gt;</li>
+</ul>
+</dd>
+
+<dt><a id="French" name="French">French</a></dt>
+
+<dd><p>The <a href="http://www.la-grange.net/w3c/html4.01/cover.html">French 
+translation of HTML 4.01</a> (Work in Progress) is done by the mailing-list <a 
+href="http://lists.w3.org/Archives/Public/w3c-translators-fr/"
+>w3-translators-fr&#64;w3.org</a> (including Leyla Greengard,
+Alix Marchandise-Franquet, St&eacute;phanie Booth, Claude Chaunier, Eric 
+Schreiner, Karl Dubost)</p>
+
+<!--
+<p>The <a href="http://www.la-grange.net/w3c/html4.01/">French
+translation of HTML 4.0</a> (work in progress) is available on the
+Web. The translating team includes:</p>
+
+<ul>
+<li>Marc Augier &lt;marc.augier&#64;ac.com&gt;,
+Samira Cuny &lt;samira.cuny&#64;bristol.ac.uk&gt;,
+Karl Dubost &lt;karl&#64;la-grange.net&gt;,
+Pierre-Alexandre Giasson &lt;barnum_&#64;hotmail.com&gt;
+Alix Marchandise &lt;afranq&#64;husc.harvard.edu&gt;,
+Marc-Alexis Morelle &lt;marc-alexis&#64;malexism.com&gt;,
+Nikko &lt;ruity&#64;magic.fr&gt; 
+St&eacute;phane Le Solliec &lt;sls&#64;n-partners.com&gt;
+</li>
+</ul>
+
+<p>Another
+<a href="http://www.eisti.fr/eistiweb/docs/normes/html4/cover.html">French
+translation of HTML 4.0</a> (old Working Draft) is also available
+on the Web (is it still maintained?). The translating team includes
+Marc Augier, J&eacute;r&ocirc;me Chouraqui, Samira Cuny, Karl
+Dubost, Alix Marchandise, Marc-Alexis Morelle, St&eacute;phane Le
+Solliec.</p>
+-->
+
+<ul>
+<li>Joachim Schwarte &lt;schwarte&#64;iwb.uni-stuttgart.de&gt;</li>
+
+<li>Bruno Gautier &lt;webmaster&#64;ild.com&gt; or
+&lt;webmaster&#64;telefrance.com&gt;</li>
+
+<li>Samira CUNY &lt;samira.cuny&#64;bristol.ac.uk&gt;</li>
+
+<li>A. Yazid &lt;nextsoft&#64;ist.cerist.dz&gt;</li>
+
+<li>V.G. FREMAUX &lt;vf&#64;eisti.fr&gt;</li>
+
+<li>Florent 'SNyB' Monteilhet &lt;flm&#64;nat.fr&gt;</li>
+</ul>
+</dd>
+
+<dt><a id="Galician" name="Galician">Galician</a></dt>
+
+<dd>
+<ul>
+<li>Xos&eacute; Calvo &lt;html&#64;galizaweb.net&gt;,
+see <a href="http://www.galizaweb.net/html4/cover.html">Galician
+translation</a></li>
+</ul>
+</dd>
+
+<dt><a id="German" name="German">German</a></dt>
+
+<dd>
+<ul>
+<li><p><a href="http://edition-w3.de/TR/1999/REC-html401-19991224/">German
+translation of HTML 4.01</a> by:</p>
+<ul>
+<li>Christine K&uuml;hnel &lt;kuehnel&#64;screenexa.net&gt;</li>
+<li>Stefan Mintert &lt;<a href="http://www.mintert.com/stefan/mail/"
+>http://www.mintert.com/stefan/mail/</a>&gt;</li>
+<li>Stefan Schumacher &lt;sts&#64;schumacher-netz.de&gt;</li>
+</ul>
+</li>
+<li>Joachim Schwarte &lt;schwarte&#64;iwb.uni-stuttgart.de&gt;</li>
+
+<li>Stefan Wenzel &lt;webmaster&#64;cccc.de&gt;</li>
+
+<li>Susan M. Plaumann &lt;susan&#64;smp-services.com&gt;</li>
+
+<li>Patrick Schmid &lt;patrickschmid&#64;iname.com&gt;</li>
+
+<li>Martin Jeitler &lt;mjeitler&#64;aol.com&gt;</li>
+
+<li>Till Krullmann &lt;Till.Krullmann&#64;iname.com&gt;</li>
+
+<li>Peter Prisack &lt;pp&#64;net-map.com&gt;</li>
+
+<li>Christof Roduner &lt;rodch&#64;bluewin.ch&gt;</li>
+
+<li>Mehrdad Mortezai &lt;mehrdad&#64;mortezai.com&gt;</li>
+</ul>
+</dd>
+
+<dt><a id="Greek" name="Greek">Greek</a></dt>
+
+<dd>
+<ul>
+<li>Ioannis Velissarakos &lt;yiannis&#64;orama.com&gt;</li>
+
+<li>Devletoglou Vassilis &lt;indigo&#64;otenet.gr&gt;</li>
+</ul>
+</dd>
+
+<dt><a id="Hebrew" name="Hebrew">Hebrew</a></dt>
+
+<dd>
+<ul>
+<li>Alex Aharonson &lt;doty&#64;netvision.net.il&gt;</li>
+
+<li>Edith Ohri &lt;edit&#64;actcom.co.il&gt;</li>
+</ul>
+</dd>
+
+<dt><a id="Hungarian" name="Hungarian">Hungarian</a></dt>
+
+<dd>
+<ul>
+<li>Buza Zoltan &lt;zozo&#64;ndi.jupiter.vein.hu&gt;</li>
+</ul>
+</dd>
+
+<!--
+<dt><a id="Icelandic" name="Icelandic">Icelandic</a></dt>
+
+<dd>
+<ul>
+<li>Ars&aelig;ll Benediktsson &lt;arsaell&#64;a.sol.no&gt;</li>
+</ul>
+-->
+
+<dt><a id="Indonesian" name="Indonesian">Indonesian</a></dt>
+
+<dd>
+<ul>
+<li>M. Y. Teddy Abrian &lt;myteddy&#64;cpimsx.ptcpi.com&gt;</li>
+
+<li>Rachman Chavik &lt;rachman&#64;mad.scientist.com&gt;</li>
+
+<li>john lam &lt;johnlam&#64;hotmail.com&gt;</li>
+</ul>
+</dd>
+
+<dt><a id="Italian" name="Italian">Italian</a></dt>
+
+<dd>
+<ul>
+<li>Michele Diodati &lt;michele&#64;diodati.org&gt;,
+see <a href="http://www.diodati.org/w3c/html401/cover.html">Italian
+translation of HTML 4.01</a></li>
+
+<li>Simone Chiaretta &lt;simonech&#64;logicapiu.it&gt;</li>
+
+<li>Daniele K. Gabriele &lt;kosma&#64;energymedia.net&gt;</li>
+
+<li>Giorgio Olivero &lt;olivero&#64;vivalda.com&gt;</li>
+
+<li>Armando R. La Mura &lt;alamura&#64;poboxes.com&gt;</li>
+
+<li>Ernesto Amato &lt;ernesto.a&#64;usa.net&gt;</li>
+
+<li>Daniela Musto &lt;musto&#64;iei.pi.cnr.it&gt;</li>
+
+<li>The following contributors to this
+<a href="http://www.liberliber.it/biblioteca/w/world_wide_web_consortium/specifiche_html40/html/cover.html">Italian
+translation</a> belong to
+the <a href="http://www.liberliber.it">Liber Liber group</a>: 
+
+<ul>
+<li>Stefano Basagni &lt;basagni&#64;utdallas.edu&gt;</li>
+
+<li>Vincenzo Bitti &lt;mc4631&#64;mclink.it&gt;</li>
+
+<li>Gianluca Braschi &lt;gbraschi&#64;line.net&gt;</li>
+
+<li>Anna Caprarelli &lt;md5577&#64;mclink.it&gt;</li>
+
+<li>Domenico Ciuffreda &lt;domciuff&#64;gargano.net&gt;</li>
+
+<li>Simone Diamanti &lt;diamanti&#64;pegasus.dsc.unibo.it&gt;</li>
+
+<li>Michele Diodati &lt;diodati&#64;mclink.it&gt;</li>
+
+<li>Benedetto di Salle &lt;ubimaior&#64;tin.it&gt;</li>
+
+<li>Giorgio V. Felchero and Paola Blason &lt;plbgio&#64;tin.it&gt;</li>
+
+<li>Daniele K. Gabriele &lt;kosma&#64;energymedia.net&gt;</li>
+
+<li>Enrico Grandi &lt;egrandi&#64;alinet.it&gt;</li>
+
+<li>Giorgio Guzzetta &lt;gguzze&#64;tin.it&gt;</li>
+
+<li>Armando L. La Mura &lt;alamura&#64;poboxes.com&gt;</li>
+
+<li>Roberto Pili &lt;robpili&#64;jet.es&gt;</li>
+
+<li>Vittorio Romano &lt;romano&#64;cli.di.unipi.it&gt;</li>
+
+<li>Final revision by: Eugenio Bettin &lt;eugeniob&#64;ukrpack.net&gt;</li>
+</ul>
+</li>
+</ul>
+</dd>
+
+<dt><a id="Japanese" name="Japanese">Japanese</a></dt>
+
+<dd>
+<ul>
+<li>Japanese translation of HTML 4.0 has been published by
+<a href="http://www.jsa.or.jp/">Japanese Standards Association</a>
+as JIS TR X 0033:2002 (it includes a list of changes from HTML 4.0 to
+HTML 4.01)</li>
+
+<li><a href="http://www.asahi-net.or.jp/~bd9y-ktu/">Yasutaka Kato</a>
+&lt;y.kato&#64;personal.email.ne.jp&gt; (see
+<a href="http://www.asahi-net.or.jp/~bd9y-ktu/html4rec_f/cover.html">Japanese
+translation</a>)</li>
+
+<li>Susumu Taniguchi &lt;tany&#64;phoenix-c.or.jp&gt;</li>
+
+<li>UCHIDA akira &lt;uchida&#64;happy.email.ne.jp&gt;, (see Japanese
+translations of
+<a href="http://www.asahi-net.or.jp/~sd5a-ucd/rec-html401j/">HTML 4.01</a> and
+<a href="http://www.asahi-net.or.jp/~sd5a-ucd/rec-html40j/">HTML 4.0</a>)</li>
+</ul>
+</dd>
+
+<dt><a id="Korean" name="Korean">Korean</a></dt>
+
+<dd>
+<ul>
+<li>Kyongha Lee &lt;khlee&#64;grigg.chungnam.ac.kr&gt;</li>
+
+<li>Han Kim &lt;i27700&#64;lgen.co.kr&gt;</li>
+
+<li>Moon S. Lee &lt;moonslee&#64;hotmail.com&gt;</li>
+
+<li>Prof. Chul-Hwan Lee &lt;chlee56&#64;gyeyang.inchon-e.ac.kr&gt;</li>
+
+<li>Taeho Lee &lt;webmaster&#64;trio.co.kr&gt;.
+<a href="http://trio.co.kr/autohtml.html">Korean translation of HTML 4.0</a>.
+<a href="http://trio.co.kr/webrefer/html/cover.html">Korean translation of
+HTML 4.01</a></li>
+</ul>
+</dd>
+
+<!--
+<dt><a id="Norwegian" name="Norwegian">Norwegian</a></dt>
+
+<dd>
+<ul>
+<li>Ars&aelig;ll Benediktsson &lt;arsaell&#64;a.sol.no&gt;</li>
+</ul>
+</dd>
+-->
+
+<dt><a id="Polish" name="Polish">Polish</a></dt>
+
+<dd>
+<ul>
+<li>Michal P. Slabyn &lt;baltazar&#64;albion.pl&gt;</li>
+</ul>
+</dd>
+
+<dt><a id="Portuguese" name="Portuguese">Portuguese</a></dt>
+
+<dd>
+<ul>
+<li>Eduardo Alex Peixoto Ruiz &lt;ruiz&#64;servidor.ssnet.com.br&gt;
+(Brazilian)</li>
+
+<li>Diego Campos &lt;diegocampos&#64;usa.net&gt; (Brazilian)</li>
+
+<li>Henrique Franco &lt;kicofranco&#64;iname.com&gt; (Brazilian)</li>
+
+<li>Armando A. Cottim &lt;nop02875&#64;mail.telepac.pt&gt;</li>
+
+<li>Pedro Miguel Custodio &lt;pecus&#64;civil.ist.utl.pt&gt;</li>
+
+<li>Felipe Gouveia &lt;gouveia&#64;correiodecaracas.com&gt; (Iberian)</li>
+
+<li>Gerardo V. Lisboa &lt;gvlx&#64;technologist.com&gt;</li>
+
+<li>Angelica Timas-DaSilva &lt;atimasdasilva&#64;msn.com&gt; (Iberian)</li>
+
+<li>Marcelo Santos &lt;marcelo&#64;chez.com&gt;</li>
+
+<li>Rafael Cardoso de Souza &lt;jubsrafa&#64;iconet.com.br&gt;</li>
+</ul>
+</dd>
+
+<dt><a id="Romanian" name="Romanian">Romanian</a></dt>
+
+<dd>
+<ul>
+<li>Castellina Zisu &lt;castellinaz&#64;yahoo.com&gt;</li>
+
+<li>Cristian Ignat &lt;cri&#64;suceava.iiruc.ro&gt;</li>
+</ul>
+</dd>
+
+<dt><a id="Russian" name="Russian">Russian</a></dt>
+
+<dd>
+<ul>
+<li>Aleksey Borisovitch SHCHERBAKOV &lt;knight&#64;iris.sei.irk.ru&gt;</li>
+
+<li>Hans Kort &lt;kraskort&#64;dds.nl&gt; <em>potentially</em></li>
+
+<!--
+<li>Vlad V. Maluk &lt;vlad&#64;usue.ru&gt;</li>
+-->
+
+<li>Alexander Belopolsky &lt;belopols&#64;physics.unc.edu&gt;, see
+<a hreflang="ru" href="http://sunsite.unc.edu/belopols/html40">Russian
+translation in progress</a></li>
+
+<!--
+<li>Roman Kurakin &lt;strik&#64;server.inse.kiae.ru&gt;</li>
+-->
+
+<li>Anton Ulyanov &lt;ulyanov&#64;chat.ru&gt;</li>
+
+<li>Pavel Veretennikov &lt;najugi&#64;acad.latnet.lv&gt;</li>
+
+<!--
+<li>Nicholay Gradetsk &lt;grani&#64;cs.wvu.edu&gt;</li>
+-->
+
+<li>Julia Podaniova &lt;jvp&#64;stack.ru&gt; (Added 14 July 1999).
+<a hreflang="ru" href="http://www.stack.ru/~julia/HTML4/cover.html">Second
+russian translation in progress.</a></li>
+
+<li>Alexandr Pyramidin &lt;a_pyramidin&#64;yahoo.com&gt;, see
+<a href="http://pyramidin.narod.ru/html401/index.htm">Russian
+translation of HTML 4.01</a>
+</li>
+</ul>
+</dd>
+
+<dt><a id="Serbian" name="Serbian">Serbian</a></dt>
+
+<dd>
+<ul>
+<li>Jovan Savovich &lt;jovan&#64;chat.ru&gt;</li>
+</ul>
+</dd>
+
+<dt><a id="Slovak" name="Slovak">Slovak</a></dt>
+
+<dd>
+<ul>
+<li>Erika Tupy &lt;eztupy&#64;ix.netcom.com&gt;</li>
+</ul>
+</dd>
+
+<dt><a id="Spanish" name="Spanish">Spanish</a></dt>
+
+<dd>
+<ul>
+<li>Juan R. Pozo &lt;jrpozo&#64;conclase.net&gt;,
+see <a href="http://html.conclase.net/w3c/html401-es/cover.html">Spanish
+translation of HTML 4.01</a></li>
+</ul>
+
+<ul>
+<li>Joachim Schwarte &lt;schwarte&#64;iwb.uni-stuttgart.de&gt;</li>
+
+<li>Gustavo Zamboni &lt;gzamboni&#64;gtwing.efn.uncor.edu&gt;</li>
+
+<li>Jose Antonio Quijada &lt;quijada&#64;engr.arizona.edu&gt;</li>
+
+<li>Domingo A. Siliceo &lt;106437.2541&#64;compuserve.com&gt;</li>
+
+<li>Mar&iacute;a de las Mercedes Doffi &lt;mdoffi&#64;gtwing.efn.uncor.edu&gt;</li>
+
+<li>Eleazar Gonzalez &lt;eleazar&#64;ix.netcom.com&gt;</li>
+
+<li>Aitzol Xabier I&ntilde;aki &lt;inakiz&#64;hotmail.com&gt;</li>
+
+<li>Juan Dar&iacute;o Convers &lt;jdconvers&#64;hecosistemas.com&gt;</li>
+
+<li>Ricardo Javier Bello Rosas &lt;rbello&#64;iname.com&gt;</li>
+
+<li>Erick Rojas &lt;erojas&#64;uniandes.edu.co&gt;</li>
+
+<li>Juan Carlos Hern&aacute;ndez Pazos &lt;pazos&#64;geocities.com&gt;</li>
+
+<li>Erick A. Perez H. &lt;hammer&#64;lords.com&gt;</li>
+
+<li>Alejandro Mart&iacute;n &lt;enrique.martin&#64;telefonica.es&gt;</li>
+
+<li>Ignacio Gonzalo &lt;ignacio.gonzalo&#64;METASOFT.es&gt;</li>
+
+<li>Alfredo E. Alvarenga &lt;alfredo&#64;alvarenga-colbert.com&gt;</li>
+
+<li>Felipe Gouveia &lt;gouveia&#64;correiodecaracas.com&gt; (Venezuelan)</li>
+
+<li>Bego&ntilde;a Fernandez Ruiz &lt;0287380f01&#64;abonados.cplus.es&gt;</li>
+
+<li>Cesar Augusto Sanchez &lt;wwwmngr&#64;manizales.cetcol.net.co&gt;</li>
+
+<li>Angelica Timas-DaSilva &lt;atimasdasilva&#64;msn.com&gt;</li>
+
+<li>Antonio Aneiros L&oacute;pez &lt;aal&#64;ctv.es&gt;</li>
+
+<li>alextapia &lt;alextapia&#64;yahoo.com&gt;</li>
+
+<li>Cape Verdean Creole</li>
+
+<li>Angelica Timas-DaSilva &lt;atimasdasilva&#64;msn.com&gt;</li>
+
+<li>Carlos Eduardo Benitez &lt;cbenitez&#64;mundoperonista.com.ar&gt;</li>
+
+<li>Horacio C. Clerc &lt;hclerc&#64;cantv.net&gt;</li>
+
+<li>Jos&eacute; Luiz Navarro P&eacute;rez &lt;jlnavarro&#64;tutopia.com&gt;</li>
+
+<li>Saludos, Paco &lt;fparada&#64;tsc.uvigo.es&gt;</li>
+</ul>
+</dd>
+
+<dt><a id="Swedish" name="Swedish"
+href="http://scout.rsn.bth.se/html/cover.html">Swedish</a></dt>
+
+<dd>
+<ul>
+<li>Jan Barkstr&ouml;m &lt;barkis&#64;home.se&gt;</li>
+
+<li>Fredrik Jonson &lt;pt97fjo&#64;student.bth.se&gt;</li>
+
+<!--
+<li>Michelle Winther &lt;winther.price&#64;swipnet.se&gt;</li>
+-->
+</ul>
+</dd>
+
+<dt><a id="Tamil" name="Tamil">Tamil</a></dt>
+
+<dd>
+<ul>
+<li>Senthil Nathan &lt;kanimozhi&#64;thamizh.com&gt;</li>
+</ul>
+</dd>
+
+
+<dt><a id="Thai" name="Thai">Thai</a></dt>
+
+<dd>
+<ul>
+<li>L. Sanhakij &lt;napa34&#64;samart.co.th&gt;</li>
+</ul>
+</dd>
+
+<dt><a id="Turkish" name="Turkish">Turkish</a></dt>
+
+<dd>
+<ul>
+<li>Ayta&ccedil; Akt&uuml;n &lt;canfer&#64;perl.emu.edu.tr&gt;</li>
+
+<li>Orkun TURKMEN &lt;orkunt&#64;bornova.ege.edu.tr&gt;</li>
+</ul>
+</dd>
+
+<dt><a id="Vietnamese" name="Vietnamese">Vietnamese</a></dt>
+
+<dd>
+<ul>
+<li>Victor N. Vu &lt;victorv&#64;orincon.com&gt;</li>
+
+<li>Nechi Giang &lt;nechi&#64;conde.com&gt;</li>
+</ul>
+</dd>
+</dl>
+</body>
+</html>

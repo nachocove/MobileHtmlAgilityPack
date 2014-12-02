@@ -1,0 +1,473 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+    <title>The Voice Browser Working Group</title>
+    <style type="text/css" media="screen">
+        @import "public.css";
+        body { background-color: white };
+
+
+        table
+        {
+                border-collapse: collapse;
+                margin: 1em auto;
+        }
+
+        table caption
+        {
+                margin-left: auto;
+                margin-right: auto;
+        }
+
+        table, tr, th, td { border: 1px solid black; }
+        th, td { padding: 5px 1em; }
+
+        th
+        {
+                background: #bbb; /* #005a9c;*/
+                color: #000;
+        }
+    </style>
+  </head>
+  <body base="http://www.w3.org/Voice/" xml:base="http://www.w3.org/Voice/">
+
+    <div class="top-banner">
+      <a href="/">
+        <img alt="W3C" src="/Icons/WWW/w3c_home" />
+      </a>
+      <a href="../../UbiWeb/">
+        <img src="../../Icons/ubi212" width="212" height="48" alt="Uniquitous Web Domain" />
+      </a>
+    </div>
+
+    <div class="main-box">
+      <h1>The Voice Browser Working Group</h1>
+      <div class="intro">    
+    <p>The Voice Browser Working Group's mission is to support <strong>browsing the web by voice</strong>. The web is much
+    more than just the web pages you can see, it is also the web pages you can hear and speak to.  While end users are familiar 
+    with interacting with visual html web pages rendered in their browser of choice, many users might be surprised to realize
+    that today they regularly interact with the voice web through <strong>VoiceXML (VXML)</strong> and other technologies developed
+    and standardized by the Voice Browser Working Group.  Just as many sites have an html presence on the web for visual browsing, most large
+    companies have a vxml presence on the web for voice browsing, which is most often accessed by calling the
+    companies phone number. Unlike most visual web browsers, voice web browsers are typically without chrome and run
+    in the cloud, so they are often transparent to the end user.  But otherwise, all the normal power of the web
+    applies including taking advantage of web services, markup, linking, uris, cacheing, standards, accessibility,
+    and cross-browser support.</p>
+
+<h2>Voice Browser Specifications</h1>
+    <p>There are a suite of independent standards that are also supported as a parts of VoiceXML. These standards can be, and are being, used alone in non-VXML
+    contexts; however, they achieve a powerful synergy when used in support of VXML.  The latest recommendation of these web standards are:</p>
+    <dl>
+      <dt><a href="http://www.w3.org/TR/voicexml21">VoiceXML</a> (VXML)</dt>
+      <dd>a language for for creating audio dialogs that feature synthesized speech, digitized audio, recognition of spoken and 
+      DTMF key input, recording of spoken input, telephony, and mixed initiative conversations;</dd>
+      <dt><a href="http://www.w3.org/TR/speech-grammar/">Speech Grammar Recognition Specification</a> (SRGS)</dt> 
+      <dd>a document language that can be used by developers to specify the words and patterns of words to be listened for by a speech recognizer or other grammar processor;</dd>
+      <dt><a href="http://www.w3.org/TR/semantic-interpretation/">Semantic Interpretation for Speech Recognition</a> (SISR)</dt>
+      <dd>a document format that represents annotations to grammar rules for extracting the semantic results from recognition;</dd>
+      <dt><a href="http://www.w3.org/TR/pronunciation-lexicon/">Pronunciation Lexicon Specification</a> (PLS)</dt>
+      <dd>a representation of phonetic information for use in speech recognition and synthesis;</dd>
+      <dt><a href="http://www.w3.org/TR/speech-synthesis11/">Speech Synthesis Markup Language</a> (SSML)</dt>
+      <dd>a markup language for rendering a combination of prerecorded speech, synthetic speech, and music;</dd>
+    </dl>
+
+    <p>In addition to recommendations that are used as part of VoiceXML, there are a couple of powerful specifications that are used
+    to interact and control voice sessions (as well as control many other types of sessions and processes).  These are:</p>
+    <dl>
+      <dt><a href="http://www.w3.org/TR/ccxml/">Call Control</a> (CCXML)</dt>
+      <dd>a markup language to enable fine-grained control of speech (signal processing) resources and telephony resources to perform 
+      scenarios such as call screening, whisper call waiting, and call transfer;</dd>
+      <dt><a href="http://www.w3.org/TR/scxml/">State Chart XML</a> (SCXML)</dt>
+      <dd>a markup language to simply and precisely represent the semantics of state machines;</dd>
+    </dl>
+
+<h2 id="Milestones">Milestones</h3>
+<p>The W3C <a href="Group/">Voice Browser Working Group (members only)</a> is <a href="http://www.w3.org/2012/01/voice-charter.html">chartered</a> to develop the next generation of the voice web.
+
+Currently the group's main area of focus is driving SCXML to the final W3C Recommendation status,
+and the publication plan is as follows:</p>
+
+<table class="roadmap" width="80%">
+  <tbody>
+    <tr>
+      <th rowspan="1" colspan="1">Specification</th>
+      <th rowspan="1" colspan="1"><acronym title="First Working Draft">FPWD</acronym></th>
+      <th rowspan="1" colspan="1"><acronym title="Last Call Working Draft">LC</acronym></th>
+      <th rowspan="1" colspan="1"><acronym title="Candidate Recommendation">CR</acronym></th>
+      <th rowspan="1" colspan="1"><acronym title="Proposed Recommendation">PR</acronym></th>
+      <th rowspan="1" colspan="1"><acronym title="Recommendation">Rec</acronym></th>
+    </tr>
+    <tr>
+      <th scope="row">SCXML 1.0</th>
+      <td>Completed</td>
+      <td>1st LCWD: Completed<br/>2nd LCWD: Completed<br/>3rd LCWD: Completed</td>
+      <td>Completed</td>
+      <td>Q2 2014</td>
+      <td>Q3 2014</td>
+    </tr>
+  </tbody>
+</table>
+  </div>
+
+      <div class="columns-container">
+        <div class="left-content">
+          <div class="side-item">
+            <div class="side-item-title">
+              <a name="Specifications" id="Specifications">Specifications</a>
+            </div>
+
+            <div class="side-item-content">
+              <ul>
+                <li>
+                  <a href="http://www.w3.org/TR/voicexml20/">VXML 2.0</a>
+                </li>
+                <li>
+                  <a href="http://www.w3.org/TR/speech-grammar/">SRGS 1.0</a>
+                </li>
+                <li>
+                  <a href="http://www.w3.org/TR/speech-synthesis/">SSML 1.0</a>
+                </li>
+                <li>
+                  <a href="http://www.w3.org/TR/semantic-interpretation/">SISR 1.0</a>
+                </li>
+                <li>
+                  <a href="http://www.w3.org/TR/pronunciation-lexicon/">PLS 1.0</a>
+                </li>
+                <li>
+                  <a href="http://www.w3.org/TR/ccxml/">CCXML 1.0</a>
+                </li>
+                <li>
+                  <a href="http://www.w3.org/TR/voicexml21/">VXML 2.1</a>
+                </li>
+                <li>
+                  <a href="http://www.w3.org/TR/speech-synthesis11/">SSML 1.1</a>
+                </li>
+                <li>
+                  <a href="http://www.w3.org/TR/scxml/">SCXML 1.0</a>
+                </li>
+                <li>
+                  <a href="http://www.w3.org/TR/voicexml30/">VXML 3.0</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="side-item">
+            <div class="side-item-title">
+              <a name="Mailing_Lists" id="Mailing_Lists">Mailing Lists</a>
+            </div>
+            <div class="side-item-content">
+              <ul>
+                <li><a href="http://lists.w3.org/Archives/Public/www-voice/">www-voice</a>: the Public Voice Browser mailing list</li>
+                <li><a href="http://lists.w3.org/Archives/Member/w3c-voice-wg/">w3c-voice-wg</a>: the Member confidential Voice Browser mailing list</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="side-item">
+            <div class="side-item-title">
+              <a name="Software" id="Software">Software</a>
+            </div>
+            <div class="side-item-content">
+              <ul>
+                <li>
+                  <a href="http://evolution.voxeo.com/">Voxeo Evolution</a>
+                </li>
+                <li>
+                  <a href="http://studio.tellme.com/">Tellme Voice Studio</a>
+                </li>
+                <li>
+                  <a href="http://cafe.bevocal.com/">Nuance Cafe</a>
+                </li>
+                <li></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="side-item">
+            <div class="side-item-title">
+              <a name="Translations" id="Translations">Translations</a>
+            </div>
+            <div class="side-item-content">
+              <ul>
+                <li>
+                  <a href="http://www.yoyodesign.org/doc/w3c/ssml1/">SSML 1.0 (French)</a>
+                </li>
+                <li>
+                  <a href="http://www.yoyodesign.org/doc/w3c/speech-grammar-20040316/index.html">SRGS 1.0 (French)</a>
+                </li>
+                <li>
+                  <a href="http://www.yoyodesign.org/doc/w3c/voicexml20/">VXML 2.0 (French)</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="side-item">
+            <div class="side-item-title">
+              <a name="Implementations" id="Implementations">Implementations</a>
+            </div>
+            <div class="side-item-content">
+              <ul>
+                <li>
+                  <a href="voice-implementations.html">W3C Speech Interface Implementations</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="right-content">
+          <div class="side-item">
+            <div class="side-item-title">
+              <a name="Tutorials" id="Tutorials">Tutorials</a>
+            </div>
+            <div class="side-item-content">
+              <ul>
+                <li><a href="http://www.w3.org/TR/voice-intro/">W3C Speech Interface Framework</a> introduction</li>
+                <li><a href="http://www.w3.org/Voice/Guide/">Getting started with VoiceXML 2.0</a> by Dave Raggett</li>
+                <li><a href="http://www.w3.org/2010/Talks/0225-vow-project-review/VBWG_project_review.pdf">Voice on the Web</a> by Dan Burnett</li>
+                <li>
+                  <a href="http://www.vxml.org/">Voxeo tutorial</a>
+                </li>
+                <li>
+                  <a href="https://studio.tellme.com/vxml2/ovw/#tutor">Tellme studio tutorial</a>
+                </li>
+                <li>
+                  <a href="http://cafe.bevocal.com/docs/tutorial/">Nuance tutorial</a>
+                </li>
+                <li>
+                  <a href="http://www.voicexml.org/voicexml-tutorials">VoiceXML Forum tutorial</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="side-item">
+            <div class="side-item-title">
+              <a name="Reference" id="Reference">Reference</a>
+            </div>
+            <div class="side-item-content">
+              <ul>
+                <li><a href="http://www.w3.org/2004/01/pp-impl/34665/status">Patent Disclosures</a> for the Voice Browser Working Group</li>
+                <li><a href="http://www.w3.org/2012/01/voice-charter.html">Charter</a> of the voice group</li>
+                <li><a href="http://www.w3.org/Voice/Activity">Activity</a> statement for the group</li>
+                <li><a href="http://www.w3.org/2001/10/MOU.txt">Memorandum of understanding</a> with the VoiceXML Forum</li>
+                <li>
+                  <a href="http://www.w3.org/TR/2005/NOTE-ssml-sayas-20050526/">Note on say-as</a>
+                </li>
+                <li><a href="http://www.w3.org/Voice/2006/DFP">Note on Data-Flow-Presentation</a> framework</li>
+                <li><a href="http://www.w3.org/Submission/2001/13/">XHTML + Voice Profile submission</a> from IBM, Motorola, and Opera</li>
+                <li><a href="http://www.w3.org/TR/emma/">Extended Multimodal Annotation language</a> (EMMA)</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="side-item">
+            <div class="side-item-title">
+              <a name="Articles" id="Articles">Articles</a>
+            </div>
+            <div class="side-item-content">
+              <ul>
+                <li><a href="http://www.w3.org/Voice/2006/voicexml3.pdf">Sneak Preview: VoiceXML 3.0</a> by Jim Barnett, Emily Candell, Jerry Carter, Rafah Hosn and Scott McGlashan for SpeechTek (August, 2006)</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="side-item">
+            <div class="side-item-title">
+              <a name="Workshops" id="Workshops">Workshops</a>
+            </div>
+            <div class="side-item-content">
+              <ul>
+                <li>
+                  <a href="http://www.w3.org/2010/02/convapps/summary.html">Workshop on Conversational Applications</a>
+                </li>
+                <li>
+                  <a href="http://www.w3.org/2008/08/siv/summary.html">Workshop on Speaker biometrics and VoiceXML 3.0</a>
+                </li>
+                <li><a href="http://www.w3.org/2005/08/SSML/ssml-workshop-agenda.html">Workshop on Internationalizing the Speech Synthesis Markup Language (SSML)</a> in Beijing</li>
+                <li><a href="http://lists.w3.org/Archives/Public/www-voice/2006JulSep/0000.html">Workshop on Internationalizing the Speech Synthesis Markup Language (SSML)</a> in Greece</li>
+                <li><a href="http://www.w3.org/2006/10/SSML/summary.html">Workshop on Internationalizing the Speech Synthesis Markup Language (SSML)</a> in India</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="side-item">
+            <div class="side-item-title">
+              <a name="Links" id="Links">Links</a>
+            </div>
+            <div class="side-item-content">
+              <ul>
+                <li><a href="http://www.w3.org/Voice/Group/">Voice Browser Working Group</a>: the member confidential working group site</li>
+                <li>
+                  <a href="http://www.voicexml.org/">VoiceXML Forum</a>
+                </li>
+                <li>
+                  <a href="http://www.speechtechmag.com/">Speech Technology Magazine</a>
+                </li>
+                <li>
+                  <a href="http://www.kenrehor.com/voicexml/">World of VoiceXML</a>
+                </li>
+                <li><a href="http://irc.w3.org">W3C web based IRC</a> (#voice is the VBWG channel)</li>
+              </ul>
+            </div>
+          </div>
+
+
+
+
+        </div>
+        <div class="centre-content">
+          <h2 id="news">News</h2>
+
+          <h3>
+            <a name="news-29 May 2014-State_Chart_XML_-SCXML-:_3rd_LCWD_is_published" id="news-29 May 2014-State_Chart_XML_-SCXML-:_3rd_LCWD_is_published"><span class="date">29 May 2014</span>: State Chart XML (SCXML): Third Last Call Working Draft is published</a>
+          </h3>
+<p>The <a href="http://www.w3.org/Voice/">Voice Browser Working Group</a> has published a Last Call Working Draft of <a href="http://www.w3.org/TR/2014/WD-scxml-20140529/">State Chart XML (SCXML): State Machine Notation for Control Abstraction</a>. This document describes SCXML, or the &#8220;State Chart extensible Markup Language&#8221;. SCXML provides a generic state-machine based execution environment based on CCXML and Harel State Tables. Comments are welcome through <strong>26 June</strong>.</p>
+
+          <h3>
+            <a name="news-13 March 2014-State_Chart_XML_-SCXML-:_CR_is_published" id="news-13 March 2014-State_Chart_XML_-SCXML-:_CR_is_published"><span class="date">13 March 2014</span>: State Chart XML (SCXML): Candidate Recommendation is published</a>
+          </h3>
+          <p>
+          <a href="http://www.w3.org/TR/2014/CR-scxml-20140313/">
+          Candidate Recommendation of SCXML</a> is published.
+
+          There are only minor editorial changes from the previous draft.
+          A <a href="http://www.w3.org/TR/2014/CR-scxml-20140313/diff.html">
+          diff-marked version</a>is also available for comparison purposes.
+
+          Please read
+          the <a href="http://www.w3.org/Voice/2013/scxml-irp/">Implementation
+          Report Plan</a> and send your SCXML implementation reports
+          to <a href="mail-to:www-voice@w3.org">www-voice@w3.org</a>.
+          </p>
+
+<!--
+          <h2 id="news">News</h2>
+
+          <h3>
+            <a name="news-1 August 2013-State_Chart_XML_-SCXML-:_2nd LCWD_is_published" id="news-1 August 2013-State_Chart_XML_-SCXML-:_2nd LCWD_is_published"><span class="date">1 August 2013</span>: State Chart XML (SCXML): Second Last Call Working Draft is published</a>
+          </h3>
+          <p>
+      <a href="http://www.w3.org/TR/2013/WD-scxml-20130801/">Second Last Call WD of SCXML</a> is published. 
+      A <a href="http://www.w3.org/TR/2013/WD-scxml-20130801/diff.html">diff-marked version</a>is also available for comparison purposes.
+
+      The main differences from the previous draft are numerous
+      corrections to and clarifications of the normative wording as
+      well as the algorithm for SCXML interpretation.
+    </p>
+
+          <h3>
+            <a name="news-6 December 2012-State_Chart_XML_-SCXML-:_LCWD_is_published" id="news-6 December 2012-State_Chart_XML_-SCXML-:_LCWD_is_published"><span class="date">6 December 2012</span>: State Chart XML (SCXML): Last Call Working Draft is published</a>
+          </h3>
+          <p>
+      <a href="http://www.w3.org/TR/2012/WD-scxml-20121206/">Last Call WD of SCXML</a> is published. 
+      A <a href="http://www.w3.org/TR/2012/WD-scxml-20121206/diff.html">diff-marked version</a>is also available for comparison purposes.
+      The main difference from the previous draft is corrections to the interpretation algorithm.
+    </p>
+
+          <h3>
+            <a name="news-16 February 2012-State_Chart_XML_-SCXML-:_tenth_Working_Draft_is_published" id="news-16 February 2012-State_Chart_XML_-SCXML-:_tenth_Working_Draft_is_published"><span class="date">16 February 2012</span>: State Chart XML (SCXML): 10th Working Draft is published</a>
+          </h3>
+          <p>
+      <a href="http://www.w3.org/TR/2012/WD-scxml-20120216/">10th WD of SCXML</a> is published. 
+      A <a href="http://www.w3.org/TR/2012/WD-scxml-20120216/diff.html">diff-marked version</a>is also available for comparison purposes.
+      The main differences from the previous draft are numerous corrections to and clarifications of the wording of the normative assertions.
+    </p>
+          <h3>
+            <a name="news-05 July 2011-Call_Control_eXtensible_Markup_Language_-CCXML-_Version_1.0_is_a_W3C_Recommendation" id="news-05 July 2011-Call_Control_eXtensible_Markup_Language_-CCXML-_Version_1.0_is_a_W3C_Recommendation"><span class="date">05 July 2011</span>: Call Control eXtensible Markup Language (CCXML) Version 1.0 is a W3C Recommendation</a>
+          </h3>
+	<p>The Voice Browser Working Group is pleased to announce that <a href="http://www.w3.org/TR/2011/REC-ccxml-20110705/">CCXML</a> is now a W3C Recommendation!</p>
+	<p>CCXML is designed to provide telephony call control support for dialog systems, such as VoiceXML.</p>
+
+          <h3>
+            <a name="news-26 April 2011-State_Chart_XML_-SCXML-:_nineth_Working_Draft_is_published" id="news-26 April 2011-State_Chart_XML_-SCXML-:_nineth_Working_Draft_is_published"><span class="date">26 April 2011</span>: State Chart XML (SCXML): nineth Working Draft is published</a>
+          </h3>
+          <p>
+      <a href="http://www.w3.org/TR/2011/WD-scxml-20110426/">9th WD of SCXML</a> is published. 
+      A <a href="http://www.w3.org/TR/2011/WD-scxml-20110426/diff.html">diff-marked version</a>is also available for comparison purposes.
+      The main difference from the previous draft is corrections to the interpretation algorithm.
+    </p>
+
+          <h3>
+            <a name="news-4-5 June 2011-Workshop_on_Mobile_and_Web_Technologies_in_Social_and_Economic_Development" id="news-4-5 June 2011-Workshop_on_Mobile_and_Web_Technologies_in_Social_and_Economic_Development"><span class="date">4-5 June 2011</span>: Workshop on Mobile and Web Technologies in Social and Economic Development</a>
+          </h3>
+          <p>
+      <a href="http://www.webfoundation.org/">The World Wide Web Foundation</a> is organising 
+      <a href="http://public.webfoundation.org/2011/01/MW4D_WS/">the Workshop on Mobile and Web Technologies in Social and Economic Development</a> in Tanzania.
+      The workshop is about themes that are dear to the foundation and related to voice-browsing in developing countries.
+      See also the <a href="http://www.webfoundation.org/2011/02/announcing-the-workshop-on-mobile-and-web-technologies-in-social-and-economic-development/">official announcement</a> on the foundation's site. 
+    </p>
+          <h3>
+            <a name="news-16 December 2010-State_Chart_XML_-SCXML-:_eighth_Working_Draft_is_published" id="news-16 December 2010-State_Chart_XML_-SCXML-:_eighth_Working_Draft_is_published"><span class="date">16 December 2010</span>: State Chart XML (SCXML): eighth Working Draft is published</a>
+          </h3>
+          <p>
+      <a href="http://www.w3.org/TR/2010/WD-scxml-20101216/">8th WD of SCXML</a> is published.
+      A <a href="http://www.w3.org/TR/2011/WD-scxml-20101216/diff.html">diff-marked version</a>is also available for comparison purposes.
+      The main difference from the previous draft is the removal of profiles.
+    </p>
+          <h3>
+            <a name="news-16 December 2010-Voice_Extensible_Markup_Language_-VoiceXML-_3.0:_eighth_Working_Draft_is_published" id="news-16 December 2010-Voice_Extensible_Markup_Language_-VoiceXML-_3.0:_eighth_Working_Draft_is_published"><span class="date">16 December 2010</span>: Voice Extensible Markup Language (VoiceXML) 3.0: eighth Working Draft is published</a>
+          </h3>
+          <p>
+      <a href="http://www.w3.org/TR/2010/WD-voicexml30-20101216/">8th WD of VXML 3.0</a> is published.
+      A <a href="http://www.w3.org/TR/2011/WD-voicexml30-20101216/diff.html">diff-marked version</a>is also available for comparison purposes.
+      The main differences from the previous draft are described in <a href="http://www.w3.org/TR/2010/WD-voicexml30-20101216/#Changes">Appendix F</a>.
+    </p>
+          <h3>
+            <a name="news-7 September 2010-Speech_Synthesis_Markup_Language_-SSML-_Version_1.1_is_a_W3C_Recommendation" id="news-7 September 2010-Speech_Synthesis_Markup_Language_-SSML-_Version_1.1_is_a_W3C_Recommendation"><span class="date">7 September 2010</span>: Speech Synthesis Markup Language (SSML) Version 1.1 is a W3C Recommendation</a>
+          </h3>
+          <p>
+      <a href="http://www.w3.org/TR/2010/REC-speech-synthesis11-20100907/">SSML 1.1</a> is an official recommendation.  See the 
+      <a href="http://www.w3.org/2010/08/ssml-pr">press release</a> for more about this important milestone.
+    </p>
+          <h3>
+            <a name="news-31 August 2010-Voice_Extensible_Markup_Language_-VoiceXML-_3.0:_Seventh_Working_Draft_is_published" id="news-31 August 2010-Voice_Extensible_Markup_Language_-VoiceXML-_3.0:_Seventh_Working_Draft_is_published"><span class="date">31 August 2010</span>: Voice Extensible Markup Language (VoiceXML) 3.0: Seventh Working Draft is published</a>
+          </h3>
+          <p>
+      <a href="http://www.w3.org/TR/2010/WD-voicexml30-20100831/">7th WD of VXML 3.0</a> is published.
+      A <a href="http://www.w3.org/TR/2011/WD-voicexml30-20100831/diff.html">diff-marked version</a>is also available for comparison purposes.
+      The main differences from the previous draft are described in <a href="http://www.w3.org/TR/2010/WD-voicexml30-20100831/#Changes">Appendix F</a>.
+    </p>
+          <h3>
+            <a name="news-30 June 2010-Workshop_on_Conversational_Applications" id="news-30 June 2010-Workshop_on_Conversational_Applications"><span class="date">30 June 2010</span>: Workshop on Conversational Applications</a>
+          </h3>
+          <p>
+      The <a href="http://www.w3.org/2010/02/convapps/summary.html">summary of the Workshop on Conversational Applications</a> in Somerset, New Jersey, US 
+      on 18-19 June 2010 is now available. Participants from 12 organizations fucused discussion on the use cases of possible conversational applications and
+      clarified limitations of the current W3C language model in order to develop a more comprehensive one. 
+      <a href="http://www.w3.org/2010/02/convapps/minutes.html">Detailed minutes</a> are also available. 
+    </p>
+          <h3>
+            <a name="news-17 June 2010-Voice_Extensible_Markup_Language_-VoiceXML-_3.0:_Sixth_Working_Draft_is_published" id="news-17 June 2010-Voice_Extensible_Markup_Language_-VoiceXML-_3.0:_Sixth_Working_Draft_is_published"><span class="date">17 June 2010</span>: Voice Extensible Markup Language (VoiceXML) 3.0: Sixth Working Draft is published</a>
+          </h3>
+          <p>
+      <a href="http://www.w3.org/TR/2010/WD-voicexml30-20100617/">6th WD of VXML 3.0</a> is published.
+      A <a href="http://www.w3.org/TR/2011/WD-voicexml30-20100617/diff.html">diff-marked version</a>is also available for comparison purposes.
+      The main differences from the previous draft are described in <a href="http://www.w3.org/TR/2010/WD-voicexml30-20100617/#Changes">Appendix F</a>.
+    </p>
+          <h3>
+            <a name="news-13 May 2010-State_Chart_XML_-SCXML-:_Seventh_Working_Draft_is_published" id="news-13 May 2010-State_Chart_XML_-SCXML-:_Seventh_Working_Draft_is_published"><span class="date">13 May 2010</span>: State Chart XML (SCXML): Seventh Working Draft is published</a>
+          </h3>
+          <p>
+      <a href="http://www.w3.org/TR/2010/WD-voicexml30-20100513/">7th WD of VXML 3.0</a> is published.
+      A <a href="http://www.w3.org/TR/2011/WD-voicexml30-20100513/diff.html">diff-marked version</a>is also available for comparison purposes.
+      The main differences from the previous draft are the removal of the &lt;anchor&gt; element, a revision of the interpretation algorithm and addition of a brief description on DOM Event I/O Processor. 
+    </p>
+-->
+        </div>
+
+
+      </div>
+
+      <address>
+<!--<a href="http://www.w3.org/People/all#mdw">Matt Womer</a> (mdw@w3.org),-->
+<a href="http://www.w3.org/People/all#ashimura">Kazuyuki Ashimura</a> (ashimura@w3.org),
+    Team Contact for Voice Browser Working Group<br />$Id: Overview.html,v 1.687 2014-06-14 21:59:26 ashimura Exp $.<br />This page was generated using XSLT. The <a href="Overview.xml">XML source</a> is also available for viewing on an
+XSLT-enabled browser.</address>
+    </div>
+  </body>
+</html>

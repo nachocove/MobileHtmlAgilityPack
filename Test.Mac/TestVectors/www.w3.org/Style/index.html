@@ -1,0 +1,612 @@
+<!DOCTYPE html SYSTEM "http://www.w3.org/Style/HTML40-plus-blink.dtd">
+<!--
+	The above is a "custom" DTD, because the text below uses
+	<blink>, which isn't actually an HTML element. Including
+	<blink> is meant as a *joke*. Adding it to a DTD doesn't make
+	it any more standard or any more meaningful. DON'T CREATE
+	CUSTOM DTDs!
+-->
+<html lang=en>
+<head profile="http://www.microformats.org/wiki/hcard-profile">
+<!-- This isn't the profile, just a related page, but for lack of better... -->
+
+<title>Web Style Sheets</title>
+<meta name="description" content="W3C's overview of Web style sheets.">
+
+<meta name="keywords" content="style, stylesheets, stylesheet, style sheet,
+digital publishing,
+W3C, CSS, CSS1, CSS2, XSL, Web, Cascading Style Sheets, level 1,
+level 2, Extensible Style Language, XSLT, layout, formatting">
+
+<link rel=stylesheet title="Gold + navbar"
+  href="threepart-f.css" media="screen, print, projection, tv">
+
+<!-- The following variant is for windows that aren't tall enough for
+     the fixed menu. Use the scrolling menu instead. -->
+<link rel=stylesheet title="Gold + navbar"
+  href="threepart.css" media="only screen and (max-height: 27em)">
+
+<link rel="alternate stylesheet" title="Blue shadows" href="main.css">
+<link rel="alternate stylesheet" title="Blue shadows" href="map-ns.css">
+<link rel="alternate stylesheet" title="Blue shadows" href="map.css" media="all">
+<!-- map.css is better than map-ns, but must be hidden from NS 4.x -->
+<link rel="alternate stylesheet" title="Blue shadows" href="banner-k.css">
+<link rel="alternate stylesheet" title="Blue shadows" href="shadows.css" media="all">
+
+<link rel="alternate stylesheet" title="Without navigation bar" href="main.css">
+<link rel="alternate stylesheet" title="Without navigation bar" href="map-ns.css">
+<link rel="alternate stylesheet" title="Without navigation bar" href="map.css" media="all">
+<link rel="alternate stylesheet" title="Without navigation bar" href="banner-none.css">
+<link rel="alternate stylesheet" title="Without navigation bar" href="shadows.css">
+
+<link rel="alternate stylesheet" title="Oldstyle"
+  href="http://www.w3.org/StyleSheets/Core/Oldstyle">
+<link rel="alternate stylesheet" title="Modernist"
+  href="http://www.w3.org/StyleSheets/Core/Modernist">
+<link rel="alternate stylesheet" title="Midnight"
+  href="http://www.w3.org/StyleSheets/Core/Midnight">
+<link rel="alternate stylesheet" title="Ultramarine"
+  href="http://www.w3.org/StyleSheets/Core/Ultramarine">
+<link rel="alternate stylesheet" title="Swiss"
+  href="http://www.w3.org/StyleSheets/Core/Swiss">
+<link rel="alternate stylesheet" title="Chocolate"
+  href="http://www.w3.org/StyleSheets/Core/Chocolate">
+<link rel="alternate stylesheet" title="Traditional"
+  href="http://www.w3.org/StyleSheets/Core/Traditional">
+<link rel="alternate stylesheet" title="Steely"
+  href="http://www.w3.org/StyleSheets/Core/Steely">
+<link rel="alternate stylesheet" title="Forest (by David Baron)"
+  href="http://dbaron.org/style/forest">
+<link rel="alternate stylesheet" title="Plain (by David Baron)"
+  href="http://dbaron.org/style/plain">
+
+<!--
+<link rel="alternate stylesheet" title="Gold (right) + navbar" href="threepart.css">
+<link rel="alternate stylesheet" title="Gold (left) + navbar" href="threepart-left.css">
+<link rel="alternate stylesheet" title="Gold (right)" href="threepart-nobanner.css">
+<link rel="alternate stylesheet" title="Gold (left)" href="threepart-left-nobanner.css">
+<link rel="alternate stylesheet" title="Gold (left, fixed) + navbar" href="threepart-left-f.css">
+<link rel="alternate stylesheet" title="Gold (right, fixed)" href="threepart-nobanner-f.css">
+<link rel="alternate stylesheet" title="Gold (left, fixed)" href="threepart-left-nobanner-f.css">
+-->
+
+<link rel=stylesheet title="Handheld"
+  href="handheld.css" media="handheld">
+<link rel=stylesheet title="Handheld"
+  href="handheld-bw.css" media="only handheld and (monochrome)">
+
+<style type="text/css">
+  table {border-collapse: separate; border-spacing: 0.5em}
+  blink {text-decoration: blink}
+</style>
+
+<link rel=home title="W3C" href="/">
+<link rel=top title="(this page)" href="./">
+<link rel=chapter title="CSS" href="CSS/">
+<link rel=chapter title="XSL" href="XSL/">
+<link rel=bookmark title="Activities" href="../Consortium/activities">
+<link rel=bookmark title="Tech.&nbsp;reports" href="../TR/">
+<link rel=bookmark title="Translations" href="../Consortium/Translation/">
+<link rel=bookmark title="Software" href="../Status">
+<link rel=index title="Site&nbsp;index" href="../Consortium/siteindex">
+<link rel=search title="Search" href="http://search.w3.org/">
+<link rel=copyright title="Copyright" href="../Consortium/Legal/ipr-notice.html#Copyright">
+<link rel=author href="mailto:bert@w3.org">
+
+<link rel=alternate hreflang=af class=notranslate title="Afrikaans [2010-09-30]" href="http://www.web-styles.co.za/Style/index.html">
+<link rel=alternate hreflang=ar class=notranslate title="&#1575;&#1604;&#1593;&#1585;&#1576;&#1610;&#1577; (Arabic) [2009-08-26]" href="http://www.webstyles.ae.org/Style/index.html">
+<link rel=alternate hreflang=az class=notranslate title="Az&#601;rbaycan (Azerbaijani) [2009-01-21]" href="http://www.software4life.biz/Style/">
+<link rel=alternate hreflang=bg class=notranslate title="&#1041;&#1098;&#1083;&#1075;&#1072;&#1088;&#1089;&#1082;&#1080; (Bulgarian) [2008-07-26]" href="http://dichev.com/Style/">
+<link rel=alternate hreflang=bn class=notranslate title="&#2476;&#2494;&#2434;&#2482;&#2494; (Bengali) [2009-07-03]" href="http://www.webstyles-bengali.in/Style/index.html">
+<link rel=alternate hreflang=ca class=notranslate title="Catal&#224; (Catalan) [2010-09-30]" href="http://www.catalan-webstyles.com/Style/index.html">
+<link rel=alternate hreflang=cs class=notranslate title="&#268;esky (Czech) [2009-07-02]" href="http://www.csstipster.info/WebStyleSheets.htm">
+<link rel=alternate hreflang=da class=notranslate title="Dansk (Danish) [2009-08-12]" href="http://www.x-web.org/w3c/style/">
+<link rel=alternate hreflang=de class=notranslate title="Deutsch (German) [2009-11-24]" href="http://www.webmeister.at/Style/">
+<link rel=alternate hreflang=el class=notranslate title="&#917;&#955;&#955;&#951;&#957;&#953;&#954;&#940; (Greek) [2008-01-13]" href="http://www.merbau.info/Style/">
+<link rel=alternate hreflang=en class=notranslate title="English" href="Overview.html">
+<link rel=alternate hreflang=es class=notranslate title="Espa&#241;ol (Spanish) [2008-04-01]" href="http://www.spanish-translator-services.com/espanol/t/Style/">
+<link rel=alternate hreflang=et class=notranslate title="Eesti (Estonian) [2009-07-03]" href="http://buildingblocksjava.com/ee/Style/WebSS.htm">
+<link rel=alternate hreflang=fa class=notranslate title="&#1601;&#1575;&#1585;&#1587;&#1740; (Farsi) [2010-05-01]" href="http://www.farsibuddy.com/w3c/style/">
+<link rel=alternate hreflang=fi class=notranslate title="Suomi (Finnish) [2009-02-03]" href="http://www.webstyles-finnish.info/Style/">
+<link rel=alternate hreflang=fr class=notranslate title="Fran&ccedil;ais (French) [2009-02-03]" href="http://www.stylesheets.fr/Style/">
+<link rel=alternate hreflang=he class=notranslate title="&#1506;&#1489;&#1512;&#1497;&#1514; (Hebrew) [2009-08-17]" href="http://www.webstyles-hebrew.com/Style/index.html">
+<link rel=alternate hreflang=hi class=notranslate title="&#2361;&#2367;&#2344;&#2381;&#2342;&#2368; (Hindi) [2009-08-11]" href="http://www.webstyles.in/Style/index.html">
+<link rel=alternate hreflang=hr class=notranslate title="Hrvatski (Croatian) [2012-04-02]" href="http://www.crolingva.com/w3c/style/">
+<link rel=alternate hreflang=hu class=notranslate title="Magyar (Hungarian) [2010-09-30]" href="http://www.hungarian-webstyles.com/Style/index.html">
+<link rel=alternate hreflang=id class=notranslate title="Bahasa Indonesia (Indonesian) [2007-11-09]" href="http://www.idebagus.com/w3/Style/">
+<link rel=alternate hreflang=is class=notranslate title="&#205;slenska (Icelandic) [2009-10-12]" href="http://www.w3iceland.com/style/">
+<link rel=alternate hreflang=it class=notranslate title="Italiano (Italian) [2009-02-03]" href="http://www.web-styles.it/Style/">
+<link rel=alternate hreflang=ja class=notranslate title="&#26085;&#26412;&#35486; (Japanese) [2008-10-21]" href="http://www.a2ztutorial.com/Style/">
+<link rel=alternate hreflang=ka class=notranslate title="&#4325;&#4304;&#4320;&#4311;&#4323;&#4314;&#4312; (Georgian) [2008-03-04]" href="http://www.gew3.org/Style/">
+<link rel=alternate hreflang=kk class=notranslate title="&#1178;&#1072;&#1079;&#1072;&#1179;&#1096;&#1072; (Kazakh) [2008-11-04]" href="http://www.kazaja.com/Style/">
+<link rel=alternate hreflang=km class=notranslate title="ភាសាខ្មែរ (Khmer) [2014-08-12]" href="http://www.khmerw3c.com/">
+<link rel=alternate hreflang=ko class=notranslate title="&#54620;&#44397;&#50612; (Korean) [2009-08-14]" href="http://www.webstyles.kr/Style/index.html">
+<link rel=alternate hreflang=lt class=notranslate title="Lietuvi&#371; (Lithuanian) [2009-08-15]" href="http://www.css-styles.lt/Style/">
+<link rel=alternate hreflang=lv class=notranslate title="Latvie&#353;u valoda (Latvian) [2007-10-25]" href="http://www.reviews4u.org/Style/lv/">
+<link rel=alternate hreflang=mo class=notranslate title="Moldovan (Moldavian) [2007-10-16]" href="http://www.mow3.com/Style/">
+<link rel=alternate hreflang=nb class=notranslate title="Norsk (Norwegian) [2008-11-20]" href="http://www.bjornenki.com/articles/w3_style">
+<link rel=alternate hreflang=ne class=notranslate title="&#2344;&#2375;&#2346;&#2366;&#2354;&#2368; (Nepalese) [2010-04-01]" href="http://www.traveldoozie.com/w3/style/">
+<link rel=alternate hreflang=nl class=notranslate title="Nederlands (Dutch) [2008-07-26]" href="http://www.sftcc.com/style/">
+<link rel=alternate hreflang=pl class=notranslate title="Polski (Polish) [2006-11-02]" href="http://www.allster.info/tlumaczenia/WebSS.htm">
+<link rel=alternate hreflang=pt class=notranslate title="Portugu&ecirc;s (Portuguese) [2009-02-03]" href="http://www.webstyles-portuguese.info/Style/">
+<link rel=alternate hreflang=ro-1 class=notranslate title="Rom&#226;n&#259; (Romanian) [Teodor Birca] [2008-01-11]" href="http://www.softacid.net/scripts/w3/style.htm">
+<link rel=alternate hreflang=ro-2 class=notranslate title="Rom&#226;n&#259; (Romanian) [Shelest Dmitry] [2007-11-26]" href="http://www.reviewzcenter.com/Style/">
+<link rel=alternate hreflang=ru class=notranslate title="&#1056;&#1091;&#1089;&#1089;&#1082;&#1080;&#1081; (Russian) [2007-07-23]" href="http://www.indeep76.com/Style/ru/">
+<link rel=alternate hreflang=sk class=notranslate title="Sloven&#269;ina (Slovak) [2009-07-28]" href="http://www.dhtmlonline.com/sk/WebSS.htm">
+<link rel=alternate hreflang=sq class=notranslate title="Shqip (Albanian) [2009-09-21]" href="http://css-al.com/webstylesheets.htm">
+<link rel=alternate hreflang=sr-cyrl class=notranslate title="&#1057;&#1088;&#1087;&#1089;&#1082;&#1080; (Serbian) [2008-03-27]" href="http://www.inverudio.com/w3c/Style/">
+<link rel=alternate hreflang=sr-latn class=notranslate title="Srpski (Serbian) [2008-03-27]" href="http://www.inverudio.com/w3c/Style/index-L.html">
+<link rel=alternate hreflang=sv class=notranslate title="Svenska (Swedish) [2009-02-03]" href="http://www.webstyles-swedish.info/Style/">
+<link rel=alternate hreflang=th class=notranslate title="&#3652;&#3607;&#3618; (Thai) [2010-01-18]" href="http://www.thaiw3c.com/">
+<link rel=alternate hreflang=tk class=notranslate title="T&#252;rkmen (Turkmen) [2009-01-12]" href="http://tudevelopment.com/style/tu/">
+<link rel=alternate hreflang=tl class=notranslate title="Tagalog [2008-11-04]" href="http://tl.tz8.de/style.html">
+<link rel=alternate hreflang=tt class=notranslate title="&#1090;&#1072;&#1090;&#1072;&#1088;&#1095;&#1072; (Tatar) [2007-01-11]" href="http://www.tatarw3.com/Style/">
+<link rel=alternate hreflang=uk class=notranslate title="&#1059;&#1082;&#1088;&#1072;&#1111;&#1085;&#1089;&#1100;&#1082;&#1072; (Ukrainian) [2007-07-23]" href="http://www.indeep76.com/Style/ua/">
+<link rel=alternate hreflang=uz class=notranslate title="&#1038;&#1079;&#1073;&#1077;&#1082; (Uzbek) [2010-09-30]" href="http://www.uzbek-webstyles.com/Style/index.html">
+<link rel=alternate hreflang=vi class=notranslate title="Ti&#7871;ng Vi&#7879;t (Vietnamese) [2010-03-14]" href="http://asiatranslate.org/w3/style-vi/">
+<link rel=alternate hreflang=zh-hans class=notranslate title="&#31616;&#20307;&#20013;&#25991; (Chinese simplified) [2009-02-03]" href="http://www.webstyles-chinese.info/Style/">
+<link rel=alternate hreflang=zh-hant class=notranslate title="&#32321;&#39636;&#20013;&#25991; (Traditional Chinese) [2009-03-02]" href="http://www.certifiedchinesetranslation.com/openaccess/Style.html">
+
+
+<p class=translations>(<a title="About the translations" href="/Style/translating">Languages:</a>
+<a rel=alternate hreflang=af href="http://www.web-styles.co.za/Style/index.html"><abbr class=notranslate title="Afrikaans [2010-09-30]">af</abbr></a>
+<a rel=alternate hreflang=ar href="http://www.webstyles.ae.org/Style/index.html"><abbr class=notranslate title="&#1575;&#1604;&#1593;&#1585;&#1576;&#1610;&#1577; (Arabic) [2009-08-26]">ar</abbr></a>
+<a rel=alternate hreflang=az href="http://www.software4life.biz/Style/"><abbr class=notranslate title="Az&#601;rbaycan (Azerbaijani) [2009-01-21]">az</abbr></a>
+<a rel=alternate hreflang=bg href="http://dichev.com/Style/"><abbr class=notranslate title="&#1041;&#1098;&#1083;&#1075;&#1072;&#1088;&#1089;&#1082;&#1080; (Bulgarian) [2008-07-26]">bg</abbr></a>
+<a rel=alternate hreflang=bn href="http://www.webstyles-bengali.in/Style/index.html"><abbr class=notranslate title="&#2476;&#2494;&#2434;&#2482;&#2494; (Bengali) [2009-07-03]">bn</abbr></a>
+<a rel=alternate hreflang=ca href="http://www.catalan-webstyles.com/Style/index.html"><abbr class=notranslate title="Catal&#224; (Catalan) [2010-09-30]">ca</abbr></a>
+<a rel=alternate hreflang=cs href="http://www.csstipster.info/WebStyleSheets.htm"><abbr class=notranslate title="&#268;esky (Czech) [2009-07-02]">cs</abbr></a>
+<a rel=alternate hreflang=da href="http://www.x-web.org/w3c/style/"><abbr class=notranslate title="Dansk (Danish) [2009-08-12]">da</abbr></a>
+<a rel=alternate hreflang=de href="http://www.webmeister.at/Style/"><abbr class=notranslate title="Deutsch (German) [2009-11-24]">de</abbr></a>
+<a rel=alternate hreflang=el href="http://www.merbau.info/Style/"><abbr class=notranslate title="&#917;&#955;&#955;&#951;&#957;&#953;&#954;&#940; (Greek) [2008-01-13]">el</abbr></a>
+<a rel=alternate hreflang=en href="Overview.html"><abbr class=notranslate title="English">en</abbr></a>
+<a rel=alternate hreflang=es href="http://www.spanish-translator-services.com/espanol/t/Style/"><abbr class=notranslate title="Espa&#241;ol (Spanish) [2008-04-01]">es</abbr></a>
+<a rel=alternate hreflang=et href="http://buildingblocksjava.com/ee/Style/WebSS.htm"><abbr class=notranslate title="Eesti (Estonian) [2009-07-03]">et</abbr></a>
+<a rel=alternate hreflang=fa href="http://www.farsibuddy.com/w3c/style/"><abbr class=notranslate title="&#1601;&#1575;&#1585;&#1587;&#1740; (Farsi) [2010-05-01]">fa</abbr></a>
+<a rel=alternate hreflang=fi href="http://www.webstyles-finnish.info/Style/"><abbr class=notranslate title="Suomi (Finnish) [2009-02-03]">fi</abbr></a>
+<a rel=alternate hreflang=fr href="http://www.stylesheets.fr/Style/"><abbr class=notranslate title="Fran&ccedil;ais (French) [2009-02-03]">fr</abbr></a>
+<a rel=alternate hreflang=he href="http://www.webstyles-hebrew.com/Style/index.html"><abbr class=notranslate title="&#1506;&#1489;&#1512;&#1497;&#1514; (Hebrew) [2009-08-17]">he</abbr></a>
+<a rel=alternate hreflang=hi href="http://www.webstyles.in/Style/index.html"><abbr class=notranslate title="&#2361;&#2367;&#2344;&#2381;&#2342;&#2368; (Hindi) [2009-08-11]">hi</abbr></a>
+<a rel=alternate hreflang=hr href="http://www.crolingva.com/w3c/style/"><abbr class=notranslate title="Hrvatski (Croatian) [2012-04-02]">hr</abbr></a>
+<a rel=alternate hreflang=hu href="http://www.hungarian-webstyles.com/Style/index.html"><abbr class=notranslate title="Magyar (Hungarian) [2010-09-30]">hu</abbr></a>
+<a rel=alternate hreflang=id href="http://www.idebagus.com/w3/Style/"><abbr class=notranslate title="Bahasa Indonesia (Indonesian) [2007-11-09]">id</abbr></a>
+<a rel=alternate hreflang=is href="http://www.w3iceland.com/style/"><abbr class=notranslate title="&#205;slenska (Icelandic) [2009-10-12]">is</abbr></a>
+<a rel=alternate hreflang=it href="http://www.web-styles.it/Style/"><abbr class=notranslate title="Italiano (Italian) [2009-02-03]">it</abbr></a>
+<a rel=alternate hreflang=ja href="http://www.a2ztutorial.com/Style/"><abbr class=notranslate title="&#26085;&#26412;&#35486; (Japanese) [2008-10-21]">ja</abbr></a>
+<a rel=alternate hreflang=ka href="http://www.gew3.org/Style/"><abbr class=notranslate title="&#4325;&#4304;&#4320;&#4311;&#4323;&#4314;&#4312; (Georgian) [2008-03-04]">ka</abbr></a>
+<a rel=alternate hreflang=kk href="http://www.kazaja.com/Style/"><abbr class=notranslate title="&#1178;&#1072;&#1079;&#1072;&#1179;&#1096;&#1072; (Kazakh) [2008-11-04]">kk</abbr></a>
+<a rel=alternate hreflang=km href="http://www.khmerw3c.com/"><abbr class=notranslate title="ភាសាខ្មែរ (Khmer) [2014-08-12]">km</abbr></a>
+<a rel=alternate hreflang=ko href="http://www.webstyles.kr/Style/index.html"><abbr class=notranslate title="&#54620;&#44397;&#50612; (Korean) [2009-08-14]">ko</abbr></a>
+<a rel=alternate hreflang=lt href="http://www.css-styles.lt/Style/"><abbr class=notranslate title="Lietuvi&#371; (Lithuanian) [2009-08-15]">lt</abbr></a>
+<a rel=alternate hreflang=lv href="http://www.reviews4u.org/Style/lv/"><abbr class=notranslate title="Latvie&#353;u valoda (Latvian) [2007-10-25]">lv</abbr></a>
+<a rel=alternate hreflang=mo href="http://www.mow3.com/Style/"><abbr class=notranslate title="Moldovan (Moldavian) [2007-10-16]">mo</abbr></a>
+<a rel=alternate hreflang=nb href="http://www.bjornenki.com/articles/w3_style"><abbr class=notranslate title="Norsk (Norwegian) [2008-11-20]">nb</abbr></a>
+<a rel=alternate hreflang=ne href="http://www.traveldoozie.com/w3/style/"><abbr class=notranslate title="&#2344;&#2375;&#2346;&#2366;&#2354;&#2368; (Nepalese) [2010-04-01]">ne</abbr></a>
+<a rel=alternate hreflang=nl href="http://www.sftcc.com/style/"><abbr class=notranslate title="Nederlands (Dutch) [2008-07-26]">nl</abbr></a>
+<a rel=alternate hreflang=pl href="http://www.allster.info/tlumaczenia/WebSS.htm"><abbr class=notranslate title="Polski (Polish) [2006-11-02]">pl</abbr></a>
+<a rel=alternate hreflang=pt href="http://www.webstyles-portuguese.info/Style/"><abbr class=notranslate title="Portugu&ecirc;s (Portuguese) [2009-02-03]">pt</abbr></a>
+<a rel=alternate hreflang=ro-1 href="http://www.softacid.net/scripts/w3/style.htm"><abbr class=notranslate title="Rom&#226;n&#259; (Romanian) [Teodor Birca] [2008-01-11]">ro-1</abbr></a>
+<a rel=alternate hreflang=ro-2 href="http://www.reviewzcenter.com/Style/"><abbr class=notranslate title="Rom&#226;n&#259; (Romanian) [Shelest Dmitry] [2007-11-26]">ro-2</abbr></a>
+<a rel=alternate hreflang=ru href="http://www.indeep76.com/Style/ru/"><abbr class=notranslate title="&#1056;&#1091;&#1089;&#1089;&#1082;&#1080;&#1081; (Russian) [2007-07-23]">ru</abbr></a>
+<a rel=alternate hreflang=sk href="http://www.dhtmlonline.com/sk/WebSS.htm"><abbr class=notranslate title="Sloven&#269;ina (Slovak) [2009-07-28]">sk</abbr></a>
+<a rel=alternate hreflang=sq href="http://css-al.com/webstylesheets.htm"><abbr class=notranslate title="Shqip (Albanian) [2009-09-21]">sq</abbr></a>
+<a rel=alternate hreflang=sr-cyrl href="http://www.inverudio.com/w3c/Style/"><abbr class=notranslate title="&#1057;&#1088;&#1087;&#1089;&#1082;&#1080; (Serbian) [2008-03-27]">sr-cyrl</abbr></a>
+<a rel=alternate hreflang=sr-latn href="http://www.inverudio.com/w3c/Style/index-L.html"><abbr class=notranslate title="Srpski (Serbian) [2008-03-27]">sr-latn</abbr></a>
+<a rel=alternate hreflang=sv href="http://www.webstyles-swedish.info/Style/"><abbr class=notranslate title="Svenska (Swedish) [2009-02-03]">sv</abbr></a>
+<a rel=alternate hreflang=th href="http://www.thaiw3c.com/"><abbr class=notranslate title="&#3652;&#3607;&#3618; (Thai) [2010-01-18]">th</abbr></a>
+<a rel=alternate hreflang=tk href="http://tudevelopment.com/style/tu/"><abbr class=notranslate title="T&#252;rkmen (Turkmen) [2009-01-12]">tk</abbr></a>
+<a rel=alternate hreflang=tl href="http://tl.tz8.de/style.html"><abbr class=notranslate title="Tagalog [2008-11-04]">tl</abbr></a>
+<a rel=alternate hreflang=tt href="http://www.tatarw3.com/Style/"><abbr class=notranslate title="&#1090;&#1072;&#1090;&#1072;&#1088;&#1095;&#1072; (Tatar) [2007-01-11]">tt</abbr></a>
+<a rel=alternate hreflang=uk href="http://www.indeep76.com/Style/ua/"><abbr class=notranslate title="&#1059;&#1082;&#1088;&#1072;&#1111;&#1085;&#1089;&#1100;&#1082;&#1072; (Ukrainian) [2007-07-23]">uk</abbr></a>
+<a rel=alternate hreflang=uz href="http://www.uzbek-webstyles.com/Style/index.html"><abbr class=notranslate title="&#1038;&#1079;&#1073;&#1077;&#1082; (Uzbek) [2010-09-30]">uz</abbr></a>
+<a rel=alternate hreflang=vi href="http://asiatranslate.org/w3/style-vi/"><abbr class=notranslate title="Ti&#7871;ng Vi&#7879;t (Vietnamese) [2010-03-14]">vi</abbr></a>
+<a rel=alternate hreflang=zh-hans href="http://www.webstyles-chinese.info/Style/"><abbr class=notranslate title="&#31616;&#20307;&#20013;&#25991; (Chinese simplified) [2009-02-03]">zh-hans</abbr></a>
+<a rel=alternate hreflang=zh-hant href="http://www.certifiedchinesetranslation.com/openaccess/Style.html"><abbr class=notranslate title="&#32321;&#39636;&#20013;&#25991; (Traditional Chinese) [2009-03-02]">zh-hant</abbr></a>)
+
+<h1>Web Style Sheets<br>
+home page</h1>
+
+<p class=hide>(This page uses CSS style sheets)
+
+<div class=map>
+<p id=p1><a rel="bookmark" href="#news">What's new?</a>
+
+<p id=p2><a rel="bookmark" href="#what">What are style sheets?</a>
+
+<p id=p3><a rel="bookmark" href="#press">Press clippings</a>
+
+<p id=p4><a rel="bookmark" href="#conferences">Conferences</a>
+
+<p id=p5><a rel="chapter" href="CSS/">CSS</a>
+
+<p id=p7><a rel="chapter" href="XSL/">XSL</a>
+
+<p id=p6><a rel="bookmark" href="#dsssl">DSSSL</a>
+
+<p id=p8><a rel="bookmark" href="#CSS-DOM">CSS-DOM &amp; SAC</a>
+</div>
+
+<blockquote class="motto">
+<p><a href="http://www.useit.com/alertbox/styles_vs_frames.html">&#8220;Hopefully,
+future Web innovations will emulate the example set by the Web Consortium in
+its work on CSS&#8221;</a>
+<address>
+<a
+href="http://www.useit.com/alertbox/styles_vs_frames.html">&#8212;&nbsp;Jakob
+Nielsen</a>
+</address>
+</blockquote>
+
+<div class="back">
+<div class="section" id="news">
+
+<h2>What's new?</h2>
+
+<p>See the &#8220;what's new?&#8221; sections of <a href="CSS/#news"
+>CSS,</a> <a href="XSL/#news" >XSL</a> and <a href="../dpub/">Digital
+Publishing.</a>
+
+</div>
+</div>
+
+<div class="back">
+<div class="section" id="what">
+
+<h2>What are style sheets?</h2>
+
+<p>Style sheets describe how documents are presented on screens, in
+print, or perhaps how they are pronounced. W3C has actively promoted
+the use of style sheets on the Web since the Consortium was founded in
+1994. The <a href="Activity">Style Activity</a> has produced several W3C
+Recommendations (CSS1, CSS2, XPath, XSLT). <a href="CSS/">CSS</a>
+especially is widely implemented in browsers.
+
+<p>By attaching style sheets to structured documents on the Web (e.g.
+HTML), authors and readers can influence the presentation of documents
+without sacrificing device-independence or adding <a
+href="customdtd"><blink>new HTML tags</blink></a>.
+
+<p>The easiest way to start experimenting with style sheets is to find
+a <a href="CSS/#browsers">browser that supports CSS</a>. Discussions
+about style sheets are carried out on the <a
+href="http://www.w3.org/Mail/Lists.html#www-style">www-style@w3.org</a>
+mailing list and on <a
+href="news:comp.infosystems.www.authoring.stylesheets">
+comp.&shy;infosystems.&shy;www.&shy;authoring.&shy;stylesheets</a>.
+
+<p>The W3C Style Activity is also developing <a href="XSL/">XSL</a>,
+which consists of a combination of XSLT and &#8220;Formatting Objects&#8221;
+(XSL-FO).
+
+</div>
+</div>
+
+<div class="back">
+<div class="section" id="why">
+
+<h2>Why two Style Sheet languages?</h2>
+
+<p class="alt-hint">Wondering which one to choose? Read <a
+href="CSS-vs-XSL">"CSS &amp; XSL"</a>
+
+<p>The fact that W3C has developed XSL in addition to CSS has caused
+some confusion. Why develop a second style sheet language when
+implementors haven't even finished the first one? The answer can be
+found in the table below:
+
+<table>
+<tr><th>                         <th>CSS <th>XSL
+<tr><td>Can be used with HTML?   <td>yes <td>no
+<tr><td>Can be used with XML?    <td>yes <td>yes
+<tr><td>Transformation language? <td>no  <td>yes
+<tr><td>Syntax                   <td>CSS <td>XML
+</table>
+
+<p>The unique features are that CSS can be used to style HTML &amp; XML
+documents. XSL, on the other hand, is able to transform documents. For
+example, XSL can be used to transform XML data into HTML/CSS documents
+on the Web server. This way, the two languages complement each other
+and can be used together.
+
+<p>Both languages can be used to <a href="styling-XML">style XML
+documents</a>.
+
+<p>CSS and XSL use the same underlying formatting model and designers
+therefore have access to the same formatting features in both
+languages. W3C will work hard to ensure that interoperable
+implementations of the formatting model are available.
+
+<p>A W3C Note on <a href="/TR/NOTE-XSL-and-CSS">"Using XSL and CSS
+together"</a> is available.
+
+</div>
+</div>
+
+<div class="back">
+<div class="section" id="press">
+
+<h2>Press clippings</h2>
+
+<p>If you are new to the subject, you may want to start by reading
+some press clippings on style sheets:
+<ul>
+
+<li><a href="http://www.useit.com/alertbox/9707a.html">Effective Use
+of Style Sheets</a>, by <a href="http://www.useit.com/jakob/">Jakob
+Nielsen</a> (in: <em><a
+href="http://www.useit.com/alertbox/">Alertbox</a>,</em> July 1997),
+Also recommended: his book <a
+href="http://www.useit.com/errata/"><cite>Designing Web usability: the
+practice of simplicity</cite></a> (New Riders, 2000).
+
+<li><span class="date">2000-06-02</span> <a
+href="http://www.oreillynet.com/pub/a/network/2000/06/30/magazine/mozilla_stylesheets.html"><cite>Tap
+the power of Mozilla's user style sheets,</cite></a> an article by <a
+href="http://www.oreillynet.com/pub/au/83">Andrew Wooldridge</a> in
+the <a href="http://www.mozillazine.org/">O'Reilly MozillaZine</a>,
+shows why client-side style sheets are so important.
+
+<li><a
+href="http://www.xml.com/pub/a/2000/03/29/tutorial/index.html">XML Web
+pages with Mozilla</a>, by <a href="http://www.simonstl.com/">Simon
+St. Laurent</a>, a tutorial on styling XML.
+
+</ul>
+
+<p>See the <a href="CSS/">CSS</a> and <a href="XSL/">XSL</a> pages for
+more (and more recent) articles.
+
+</div>
+</div>
+
+<div class="back">
+<div class="section" id="css">
+
+<h2>CSS</h2>
+
+<p class="hint">Information about the buttons at the bottom of this
+page is available on the <a
+href="http://www.w3.org/Style/CSS/Buttons/">button page</a> and at the
+<a href="http://jigsaw.w3.org/css-validator/">CSS validator</a>.
+
+<p><a href="CSS/">Cascading Style Sheets</a> (CSS) is a style sheet
+mechanism that has been specifically developed to meet the needs of
+Web designers and users.
+<ul>
+
+<li><a href="CSS/#learning">How can I learn more about CSS?</a>
+
+<li><a href="CSS/software#browsers">What browsers support CSS? And what
+features do they support?</a>
+
+<li><a href="CSS/software#editors">What authoring tools support CSS?</a>
+
+<li><a href="CSS/current-work">Where are the CSS specifications?</a>
+</ul>
+
+</div>
+</div>
+
+<div class="back">
+<div class="section" id="xsl">
+
+<h2>XSL</h2>
+
+<p>W3C has a Working Group to develop the eXtensible Style
+Language (XSL). XSL builds on DSSSL and CSS and is primarily targeted
+for highly structured XML data which, e.g., needs element reordering
+before presentation. For more information on XSL see the <a
+href="XSL/">W3C XSL resource page</a>.
+
+</div>
+</div>
+
+<div class="back">
+<div class="section" id="dpub">
+
+<h2>Digital Publishing</h2>
+
+<p>The <a href="../dpub/" >Digital Publishing activity and Interest
+Group</a> looks at how Web technology can be improved for and used in
+publishing. Both XSL and CSS play a big role, along with other
+technologies, such as <a href="../XML/" >XML,</a> <a
+href="../Graphics/SVG/" >SVG</a> and <a href="../RDF/" >RDF.</a>
+
+</div>
+</div>
+
+<div class="back">
+<div class="section" id="dsssl">
+
+<h2>DSSSL</h2>
+
+<p>DSSSL is a document tree transformation and style language in with
+many adherents in the SGML community. DSSSL resources on the Web:
+<ul>
+
+<li>The <a
+href="http://www.ibiblio.org/pub/sun-info/standards/dsssl/draft/">
+Document Style Semantics and Specification Language (DSSSL)</a>
+specification is available in compressed form.
+
+<li><a href="http://www.mulberrytech.com/dsssl/dssslist/">DSSSList</a> is the
+DSSSL Users' Mailing List.
+
+<li><a href="http://www.jclark.com/jade/">Jade</a> is <a
+href="http://www.jclark.com/">James Clark</a>'s DSSSL engine.
+</ul>
+
+</div>
+</div>
+
+<div class="back">
+<div class="section" id="CSS-DOM">
+
+<h2>CSS-DOM &amp; SAC</h2>
+
+<p>A CSS file can be created and edited &#8220;by hand,&#8221; i.e.,
+with a text editor, but you can also write a program in ECMAscript,
+Java or some other language, that manipulates a style sheet. This is
+in fact so common, that there are software libraries of useful
+functions available. To help in porting such program &amp; libraries
+to different computer platforms, W3C has developed a specification
+called <em>CSS-DOM,</em> that defines a set of functions that all such
+libraries must provide.
+
+<p>The CSS Document Object Model is an <em>API</em> (Abstract
+Programming Interface) for manipulating CSS (and to a certain extent
+also other style languages) from within a program. An API is the
+specification of a software library. You can see it as a manual: it
+describes the functions and their parameters, but doesn't contain the
+actual code.
+
+<p>There are several CSS-DOM libraries available, for different
+platforms. Many of them are free. Many browsers have a CSS-DOM library
+built-in, for use by ECMAScript programs.
+
+<p>SAC (Simple API for CSS) is a complement to the CSS-DOM. The
+CSS-DOM contains functions to manipulate a style sheet after it has
+been loaded into memory; the functions defined by SAC help in
+<em>parsing</em> a style sheet, i.e., in transferring a style sheet
+from a file into memory.
+
+<p>The <a href="../TR/DOM-Level-2-Style/">CSS-DOM</a> is a W3C
+Recommendation. <a href="CSS/SAC/">SAC</a> is a project under
+development. <a href="CSS/#software">Some software</a> (other than
+browsers) is listed on the CSS overview page.
+
+</div>
+</div>
+
+<div class="back">
+<div class="section" id="conferences">
+
+<h2>Conferences, workshops, research</h2>
+
+<div class="alt-hint">
+<p>See also:
+<ul>
+<li><a href="../Member/Eventscal">W3C calendar [members only]</a>
+
+<li><a href="news:news.announce.conferences">Usenet newsgroup
+news.&#8201;announce.&#8201;conferences</a>
+
+</ul>
+</div>
+
+<p>The W3C team and representatives of W3C members often give <a
+href="../Talks/">presentations.</a>
+
+</div>
+</div>
+
+<div class="back">
+<div class="section" id="dynamic">
+
+<h2>Dynamic HTML</h2>
+
+<p>Dynamic HTML is a term used to describe HTML pages with dynamic
+content. <a href="CSS/">CSS</a> is one of three components in dynamic
+HTML; the other two are <a href="../MarkUp/">HTML</a> itself and
+JavaScript (which is being standardized under the name <a
+href="http://www.ecma.ch/ecma1/STAND/ecma%2D262.htm">EcmaScript</a>).
+The three components are glued together with <a
+href="../DOM/">DOM</a>, the Document Object Model.
+
+</div>
+</div>
+
+<div class="back">
+<div class="section" id="resource">
+
+<h2>Related resources</h2>
+<ul>
+
+<li><a href="http://www.dmoz.org/">DMOZ</a> (the Open Directory Project)
+pages on <a
+href="http://www.dmoz.org/Computers/Data_Formats/Markup_Languages/XML/Style_Sheets/">XML
+&amp; style sheets</a> and on <a
+href="http://www.dmoz.org/Computers/Data_Formats/Style_Sheets/CSS/">CSS</a>.
+
+<li><a href="http://www.mcsr.olemiss.edu/~mudws/font.html">What's
+wrong with the &lt;FONT> element?</a>
+
+<li><a
+href="http://alis.isoc.org/web_ml/html/fontface.en.html">&lt;FONT
+FACE> considered harmful</a>
+
+<li>W3C hosts the <a
+href="http://www.w3.org/Mail/Lists.html#www-style">www-style@w3.org</a>
+mailing list on style sheets. Feel free to add yourself or browse the
+<a href="http://lists.w3.org/Archives/Public/www-style/">archive</a>.
+
+<li>David Siegel's <a
+href="http://web.archive.org/web/20021125050819/http://www.dsiegel.com/balkanization/">
+Balkanization of the
+web</a>
+(1995&ndash;1996)
+
+<li>A separate page on <a href="History/">historical style sheet
+proposals</a> is also available.
+
+<li>The history of CSS is described in <a
+href="LieBos2e/history/">chapter 20</a> of the book <a
+href="http://www.informit.com/store/product.aspx?isbn=0321193121&amp;rll=1"><cite>Cascading
+Style Sheets, designing for the Web,</cite></a> by H&aring;kon Wium Lie and
+Bert Bos (3rd ed., 2005, Addison Wesley, ISBN 0-321-19312-1)
+</ul>
+
+</div>
+</div>
+
+<div class="endmatter">
+<div class="banner">
+<p>
+<a rel=home class=home href="../"><img alt="W3C" src="../Icons/w3c_home"></a>
+<a rel=bookmark href="../Consortium/activities">Activities</a>
+<a rel=bookmark href="../TR/"><abbr title="Technical">Tech.</abbr>&nbsp;reports</a>
+<a rel=bookmark href="../Consortium/Translation/">Translations</a>
+<a rel=bookmark href="../Status">Software</a>
+<a rel=index href="../Consortium/siteindex">Site&nbsp;index</a>
+<a rel=search href="http://search.w3.org/">Search</a>
+</div>
+
+<p class="button"><a href="http://www.w3.org/Style/CSS/Buttons/"><img
+alt="CSS" src="http://www.w3.org/Style/CSS/Buttons/mwcts"></a> <a
+href="http://jigsaw.w3.org/css-validator"><img
+src="http://jigsaw.w3.org/css-validator/images/vcss" alt="Valid
+CSS!"></a>
+
+<address class=vcard>
+<img class=photo src="../People/Bos/bert6.png" alt="">
+<a class="fn url" href="../People/Bos/">Bert Bos</a>,
+<span class=org>W3C</span> <span class=title>Style Activity Lead</span>
+</address>
+<address>
+<a href="../Help/Webmaster.html">Webmaster</a> 
+</address>
+<address>
+Last updated: $Date: 2014-08-12 16:41:00 $ GMT 
+</address>
+
+<p class="policyfooter"><small><a rel=copyright
+href="../Consortium/Legal/ipr-notice.html#Copyright">Copyright</a>
+&nbsp;&copy;&nbsp;1997-2014 <a href="http://www.w3.org/">W3C</a> (<a
+href="http://www.csail.mit.edu/">MIT</a>, <acronym title="European Research
+Consortium for Informatics and Mathematics"><a
+href="http://www.ercim.org/">ERCIM</a></acronym>, <a
+href="http://www.keio.ac.jp/">Keio</a>)</small>
+</div>
+
+</body>
+</html>
+<!-- Keep this comment at the end of the file
+Local variables:
+mode: sgml
+sgml-declaration:"~/SGML/HTML4.decl"
+sgml-default-doctype-name:"html"
+sgml-minimize-attributes:t
+sgml-nofill-elements:("pre" "style" "br")
+sgml-live-element-indicator:t
+End:
+-->

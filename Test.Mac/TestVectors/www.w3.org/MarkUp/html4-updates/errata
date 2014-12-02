@@ -1,0 +1,395 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+"http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>HTML 4 Errata</title>
+<LINK rel="stylesheet" type="text/css" 
+      href="http://www.w3.org/StyleSheets/TR/base.css"> 
+<style type="text/css">
+body {
+    background: white;
+    color: black;
+    }
+.error { color: yellow; background-color: blue }
+.editorial { color: red }
+.clarification { color: green }
+.docprob { color: orange }
+.entry { font-weight: bold }
+</style>
+</head>
+<body>
+<DIV class="head">
+  <P><A href="http://www.w3.org/" title="Go to W3C Home Page"><IMG
+    height="48" width="72" alt="W3C"
+    src="http://www.w3.org/Icons/w3c_home"></A></P>
+
+<H1>HTML 4 Errata</H1>
+
+<dl>
+<dt>The latest version of HTML 4.01:
+<dd><a href="http://www.w3.org/TR/html401">http://www.w3.org/TR/html401</a>
+<DD>HTML 4.01 supersedes
+<a href="http://www.w3.org/TR/1998/REC-html40-19980424">HTML 4.0</a>.
+<dt>The latest version of HTML 4:
+<dd><a href="http://www.w3.org/TR/html4">http://www.w3.org/TR/html4</a>
+<dt>This document last modified:
+<DD>$Date: 2005/03/23 14:19:27 $
+</dl>
+<P class="copyright"><A
+href="http://www.w3.org/Consortium/Legal/ipr-notice#Copyright"> Copyright</A>
+&copy;1999-2005 <A href="http://www.w3.org/"><abbr title="World Wide Web
+Consortium">W3C</abbr></A><sup>&reg;</sup> (<A href="http://www.csail.mit.edu/"><abbr
+title="Massachusetts Institute of Technology">MIT</abbr></A>, <A
+href="http://www.ercim.org/"><abbr
+title="European Research Consortium for Informatics and Mathematics">ERCIM</abbr></A>, <A
+href="http://www.keio.ac.jp/">Keio</A>), All Rights Reserved. W3C <A
+href="http://www.w3.org/Consortium/Legal/ipr-notice#Legal_Disclaimer">liability</A>,
+<A href="http://www.w3.org/Consortium/Legal/ipr-notice#W3C_Trademarks">trademark</A>,
+<A href="http://www.w3.org/Consortium/Legal/copyright-documents">document
+use</A> and <A
+href="http://www.w3.org/Consortium/Legal/copyright-software">software
+licensing</A> rules apply.</P> 
+</DIV>
+<HR>
+
+<h2>About this document</h2>
+
+<P>This document records known errata to HTML 4 specifications,
+including HTML 4.0 and HTML 4.01 (which supersedes HTML 4.0).
+
+<P>Errata for HTML 4.0 versions are listed in separate documents:</P>
+
+<UL>
+<LI><a href="../html40-updates/REC-html40-19971218-errata">Errata
+in the 18 December 1997 version of HTML 4.0</a>
+<LI><a href="../html40-updates/REC-html40-19980424-errata">Errata
+in the 24 April 1998 version of HTML 4.0</a>
+</UL>
+
+<P>This document records errata beginning with the
+<a href="http://www.w3.org/TR/1999/REC-html401-19991224">
+24 December 1999 specification of HTML 4.01</a>.
+
+<P>Please email error reports to <a
+href="mailto:www-html-editor@w3.org">www-html-editor@w3.org</a>.
+
+<H3>How this document is organized</H3>
+
+<P>Each erratum entry below includes the following information:</P>
+
+<UL>
+<LI>A unique entry number.
+<LI>The date it was added to the errata page.
+<LI>Whether the entry is considered an important
+error, a minor typographical error, a clarification,
+or a known problem with the document itself.
+<LI>The document version and section referred to.
+<LI>A description of the problem and correction
+if applicable.
+</UL>
+
+<P>References to this errata sheet should refer to it
+as of a specific date and include the number of the
+most recent error recorded.
+
+<h2>Known Errors in HTML 4.01</h2>
+
+<DL>
+<DT><a name="entry-1">1.</a> <span class="entry">Missing
+reference to changes from 4.0 to 4.01</span>
+<DD>Added: 17 Jan 2000
+<DD><span class="editorial">Type: Editorial</span>
+<DD>Refers to: 
+<a href="../../TR/1999/REC-html401-19991224/">
+24 Dec 1999 version</a>, 
+<a href="../../TR/1999/REC-html401-19991224/about.html#h-1.1">
+1.1 How the specification is organized</a>, Appendixes
+<DD>Description: The paragraph does not refer to the 
+changes from HTML 4.0 to HTML 4.01.
+<DD>Correction: Include that information.
+
+<DT><a name="entry-2">2.</a> 
+<span class="entry">Values of marginwidth/marginheight
+may be 0.</span>
+<DD>Added: 17 Jan 2000
+<DD><span class="error">Type: Error</span>
+<DD>Refers to: 
+<a href="../../TR/1999/REC-html401-19991224/">
+24 Dec 1999 version</a>, 
+<a href="../../TR/1999/REC-html401-19991224/present/frames.html#h-16.2.2">
+16.2.2 The FRAME element</a>
+<DD>Description: The definitions of the marginwidth
+and marginheight attributes say that the value must be an integer
+greater than zero.
+<DD>Correction: The value must be an integer greater than
+or equal to zero. That is, furthermore, what
+the 
+<a href="../../TR/1999/REC-html401-19991224/appendix/changes.html#h-A.1.2">
+list of changes</a> states.
+
+<DT><a name="entry-3">3.</a> 
+<span class="entry">Missing semicolons
+in entity name of parameter entity references</span>
+<DD>Added: 17 Jan 2000
+<DD><span class="editorial">Type: Editorial</span>
+<DD>Refers to: 
+<a href="../../TR/1999/REC-html401-19991224/">
+24 Dec 1999 version</a>, 
+<a href="../../TR/1999/REC-html401-19991224/types.html">
+6 Basic HTML data types</a>
+<DD>Description: 
+Every entity name of parameter entity reference is followed 
+by semicolon in DTDs (and fragment DTDs). 
+<DD>Correction: Examples of 
+parameter entity references in section 6.8 - 6.13 should be:
+"%LanguageCode;" (section 6.8), "%Charset;" (section 6.9),
+"%Character;" (section 6.10), "%Datetime;" (section 6.11),
+"%LinkTypes;" (section 6.12), and "%MediaDesc;" (section 6.13).
+
+<DT><a name="entry-4">4.</a> 
+<span class="entry">URIs also used for background images</span>
+<DD>Added: 26 Jan 2000
+<DD><span class="editorial">Type: Editorial</span>
+<DD>Refers to: 
+<a href="../../TR/1999/REC-html401-19991224/">
+24 Dec 1999 version</a>, 
+<a href="../../TR/1999/REC-html401-19991224/intro/intro.html#h-2.1.3">
+2.1.3 Relative URIs</a>
+<DD>Description: 
+This section lists elements in the HTML that use URIs but
+omits the (deprecated) use of background images specified
+on the BODY element.
+<DD>Correction: Add another bullet:
+"Designate a background image
+(see the <samp class="einst">BODY</samp> element). 
+This is a deprecated 
+usage and style sheets should be used instead."
+
+
+<DT><a name="entry-5">5.</a> 
+<span class="entry">Missing DTD comment for <samp class="einst">OPTION</samp>/<samp class="ainst-OPTION">selected</samp></span>
+<DD>Added: 26 Jan 2000
+<DD><span class="editorial">Type: Editorial</span>
+<DD>Refers to: 
+<a href="../../TR/1999/REC-html401-19991224/">
+24 Dec 1999 version</a>, 
+<a href="../../TR/1999/REC-html401-19991224/sgml/dtd.html">
+21 Document Type Definition</a>
+<DD>Description: The "selection" attribute of the
+<samp class="einst">OPTION</samp> element is missing a comment.
+Also, this example appears in the section
+<a href="../../TR/1999/REC-html401-19991224/intro/sgmltut.html#h-3.3.4.2">
+3.3.4.2 Boolean attributes</a>. While it was corrected in this
+version of the specification, the correction doesn't appear
+in the list of changes.
+<DD>Correction: Add the comment
+"option is pre-selected" to the DTD.
+
+<DT><a name="entry-6">6.</a> 
+<span class="entry">Missing DTD comment for <samp class="einst">OPTION</samp>/<samp class="ainst-OPTION">selected</samp></span>
+<DD>Added: 26 Jan 2000
+<DD><span class="editorial">Type: Editorial</span>
+<DD>Refers to: 
+<a href="../../TR/1999/REC-html401-19991224/">
+24 Dec 1999 version</a>, 
+<a href="../../TR/1999/REC-html401-19991224/sgml/dtd.html">
+21 Document Type Definition</a>
+<DD>Description: The "selection" attribute of the
+<samp class="einst">OPTION</samp> element is missing a comment.
+Also, this example appears in the section
+<a href="../../TR/1999/REC-html401-19991224/intro/sgmltut.html#h-3.3.4.2">
+3.3.4.2 Boolean attributes</a>. While it was corrected in this
+version of the specification, the correction doesn't appear
+in the list of changes.
+<DD>Correction: Add the comment
+"option is pre-selected" to the DTD.
+
+<DT><a name="entry-7">7.</a> 
+<span class="entry">Gzipped PDF file problematic on Macs</span>
+<DD>Added: 26 Jan 2000
+<DD><span class="docprob">Type: Document Issue</span>
+<DD>Refers to: 
+<a href="../../TR/1999/REC-html401-19991224/">
+24 Dec 1999 version</a>.
+<DD>Description: When unzipped, the PDF format 
+of the specification may cause problems on 
+Adobe Acrobat on MacIntoshes. 
+<DD>Correction: Try using the Postscript
+format. The PDF format will not be gzipped in future versions.
+
+<DT><a name="entry-8">8.</a> 
+<span class="entry">Syntax error in comments </span>
+<DD>Added: 26 Jan 2000
+<DD><span class="editorial">Type: Editorial</span>
+<DD>Refers to: 
+<a href="../../TR/1999/REC-html401-19991224/">
+24 Dec 1999 version</a>,
+<a href="../../TR/1999/REC-html401-19991224/struct/global.html#h-7.4.4">
+7.4.4. Meta data, "Meta and Search Engines"</a>
+<DD>Description: The comments
+such as "&lt;-- For speakers of US English --&gt;" are missing
+an "!" after the "&lt;".
+<DD>Correction: "&lt;!-- For speakers of US English --&gt;"
+The same applies to the two comments that follow.
+
+<DT><a name="entry-9">9.</a> 
+<span class="entry">Use "hreflang" with "Alternate" link types </span>
+<DD>Added: 26 Jan 2000
+<DD><span class="error">Type: Error</span>
+<DD>Refers to: 
+<a href="../../TR/1999/REC-html401-19991224/">
+24 Dec 1999 version</a>,
+<a href="../../TR/1999/REC-html401-19991224/types.html#type-links">
+6.12 Link types</a>
+<DD>Description: The definition of "Alternate" link types
+says to use the <samp class="ainst">lang</samp> attribute
+to indicate a translated document.
+<DD>Correction: Use <samp class="ainst">hreflang</samp>
+to suggest the language of the linked document.
+
+<DT><a name="entry-10">10.</a> 
+<span class="entry">content-disposition: attachment</span>
+<DD>Added: 26 Jan 2000
+<DD><span class="error">Type: Error</span>
+<DD>Refers to: 
+<a href="../../TR/1999/REC-html401-19991224/">
+24 Dec 1999 version</a>,
+<a href="../../TR/html40/interact/forms.html#h-17.13.4.2">
+17.13.4 Form content types, "multipart/form-data"</a>
+<DD>Description:
+<a href="http://www.ietf.org/rfc/rfc2388.txt">RFC2388</a>
+ incorrectly states in section 4.4:
+"in the case of multiple files, in a "content-disposition:
+file" header of the subpart." This syntax appears
+in the examples in section 17.13.4.2
+<DD>Correction: Change to "content-disposition: attachment".
+
+<DT><a name="entry-11">11.</a> 
+<span class="entry">OBJECT instantiation</span>
+<DD>Added: 26 Jan 2000
+<DD><span class="clarification">Type: Clarification</span>
+<DD>Refers to: 
+<a href="../../TR/1999/REC-html401-19991224/">
+24 Dec 1999 version</a>,
+<a href="../../TR/1999/REC-html401-19991224/struct/objects.html#h-13.3.4">
+13.3.4 Object declarations and instantiations</a>
+<DD>Description: Indicate how <samp class="einst">OBJECT</samp>
+instantiation works.
+<DD>Correction: After this part of the example at the end of 13.3.4:
+<PRE>
+...later in the document...
+&lt;P&gt;A neat &lt;A href="#earth.declaration"&gt; animation of The Earth!&lt;/A&gt;
+</PRE>
+Add:
+<PRE>
+Another way of instantiating such a declared object is:
+   &lt;object data="#earth.declaration"&gt;&lt;/object&gt;
+</PRE>
+</DD>
+
+<DT><a name="entry-12">12.</a> 
+<span class="entry">Unzipping PDF/PS on Windows</span>
+<DD>Added: 28 April 2000
+<DD><span class="docprob">Type: Document Problem</span>
+<DD>Refers to: 
+<a href="../../TR/1999/REC-html401-19991224/">
+24 Dec 1999 version</a>,
+<a href="../../TR/1999/REC-html401-19991224/html40.pdf.gz">
+Gzipped PDF version</a> (as well as PS, I presume).
+<DD>Description: Problem unzipping html40.pdf.gz.
+<DD>Correction: There is no problem with the gzipped
+PDF file. If you are having problems unzipping the file
+it may be that Windows has already unzipped it for you
+during the download. In this case, simply remove the ".gz" 
+suffix from the file and view it with your PDF viewer.</DD>
+
+<DT><a name="entry-13">13.</a> 
+<span class="entry">Local links to style sheets in gzipped
+distribution</span>
+<DD>Added: 12 May 2001
+<DD><span class="docprob">Type: Document Problem</span>
+<DD>Refers to: 
+<a href="../../TR/1999/REC-html401-19991224/">
+24 Dec 1999 version</a>,
+<a href="../../TR/1999/REC-html401-19991224/html40.tgz">
+Gzip'ed tar archive of HTML</a>.
+<DD>Description: Absolute links to style sheets and icons.
+<DD>Correction: This was a conscious decision, but may 
+be revised in a future release to allow for easier offline
+viewing. In theory, caching should address this issue, but
+in practice that won't work in today's browsing
+environments.
+</DD>
+
+<DT><a name="entry-14">14.</a> 
+<span class="entry">Clarify element declaration
+exceptions in tutorial.</span>
+<DD>Added: 12 May 2001
+<DD><span class="clarification">Type: Clarification</span>
+<DD>Refers to: 
+<a href="../../TR/1999/REC-html401-19991224/">
+24 Dec 1999 version</a>,
+<a href="../../TR/1999/REC-html401-19991224/intro/sgmltut.html#h-3.3.3.1">
+section 3.3.1 Content model definitions</a>.
+<DD>Description: Exceptions (inclusions and exclusions from
+the content model) not well-described.
+<DD>Correction: Indicate that exceptions { <code>+(A)</code> 
+and <code>-(A)</code> } appear at the
+end of the content model description. Show example of this using
+the <code>A</code> element declaration.
+</DD>
+
+<DT><a name="entry-15">15.</a> 
+<span class="entry">It is not specified whether
+the values of the "coords" attribute (A and AREA elements)
+are 0-based or 1-based</span>
+<DD>Added: 12 May 2001
+<DD><span class="error">Type: Error</span>
+<DD>Refers to: 
+<a href="../../TR/1999/REC-html401-19991224/">
+24 Dec 1999 version</a>,
+<a href="../../TR/1999/REC-html401-19991224/struct/objects.html#edef-AREA">
+section 13.6.1 AREA element declaration</a>.
+<DD>Description: The specification is unclear about whether x,y coordinates are
+0-based or 1-based. Is the top left corner (0,0) or (1,1)?
+<DD>Correction: None yet (seeking HTML WG input).
+</DD>
+
+<DT><a name="entry-16">16.</a> 
+<span class="entry">Mistaken reference to image
+instead of object.
+</span>
+<DD>Added: 12 May 2001
+<DD><span class="editorial">Type: Editorial</span>
+<DD>Refers to: 
+<a href="../../TR/1999/REC-html401-19991224/">
+24 Dec 1999 version</a>,
+<a href="../../TR/1999/REC-html401-19991224/present/graphics.html#h-15.1.3.1">
+section 15.1.3.1 Float an object</a>.
+<DD>Description: The "align" attribute values "left" and "right"
+refer to objects first, then images.
+<DD>Correction: Substitute "object" for "image" in second
+sentence of each definition, as in 
+"Subsequent text flows along the object's right side."
+</DD>
+
+<DT><a name="entry-17">17.</a> 
+<span class="entry">
+Example missing <code>TITLE</code> element in head.
+</span>
+<DD>Added: 12 May 2001
+<DD><span class="editorial">Type: Editorial</span>
+<DD>Refers to: 
+<a href="../../TR/1999/REC-html401-19991224/">
+24 Dec 1999 version</a>, 
+<a href="../../TR/1999/REC-html401-19991224/present/styles.html#h-14.1">section 14.1</a>.
+<DD>Description: The example in the introduction is a complete
+HTML 4.01 document instance and is missing a required
+<code>TITLE</code> element in the <code>HEAD</code>.
+<DD>Correction: Add a <code>TITLE</code> element.
+</DD>
+
+</DL>
+</body>
+</html>

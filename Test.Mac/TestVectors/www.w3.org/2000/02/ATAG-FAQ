@@ -1,0 +1,562 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"
+"http://www.w3.org/TR/REC-html40/loose.dtd">
+<HTML>
+<HEAD>
+  <META http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+  <TITLE>Fact Sheet: "W3C Authoring Tool Accessibility Guidelines 1.0"</TITLE>
+  <LINK href="/StyleSheets/press.css" rel="stylesheet" type="text/css">
+</HEAD>
+<BODY>
+<P>
+<A href="/"><IMG alt="W3C" src="http://www.w3.org/Icons/WWW/w3c_home" width="72"
+    height="48" border="0"></A>
+<H1>
+  Fact Sheet for "Authoring Tool Accessibility Guidelines 1.0"
+</H1>
+<DIV class="header">
+  <P lang="en">
+  (also available in
+  <A href="ATAG-FAQ.html.ja" hreflang="ja" title="Japanese version">Japanese</A>)
+</DIV>
+<DIV align="center">
+  <TABLE class="navbar" cellpadding="12" width="70%">
+    <TR>
+      <TD align="center">
+	  <HR>
+	<P class="navitem">
+	<A href="ATAG-PressRelease">Press Release</A>
+	<P>
+	  <HR>
+      </TD>
+      <TD align="center">
+	  <HR>
+	<P class="navitem">
+	<A href="ATAG-Testimonial">Testimonials</A>
+	<P>
+	  <HR>
+      </TD>
+      <TD align="center">
+	  <HR>
+	<P class="navitem">
+	Fact Sheet
+	<P>
+	  <HR>
+      </TD>
+    </TR>
+  </TABLE>
+</DIV>
+<P>
+  <HR>
+<P>
+This "Frequently Asked Questions" (<abbr>FAQ</abbr>) page provides background
+on the World Wide Web Consortium's (<abbr>W3C</abbr>)
+<A HREF="http://www.w3.org/TR/2000/REC-ATAG10-20000203">Authoring Tool
+Accessibility Guidelines 1.0</A> Recommendation, released on February 3,
+2000.
+<H2>
+  <A name="contents">Contents</A>
+</H2>
+<OL>
+  <LI>
+    <A HREF="#general">General Questions:</A>
+    <UL>
+      <LI>
+	<A HREF="#whatauth">What is an authoring tool?</A>
+      <LI>
+	<A HREF="#whatin">What is in these guidelines?</A>
+      <LI>
+	<A HREF="#howdo">How can authoring tools support the production of accessible
+	Web content?</A>
+      <LI>
+	<A HREF="#whynec">Why are these guidelines necessary?</A>
+      <LI>
+	<A HREF="#demand">Will there be a demand for authoring tools that implement
+	these guidelines?</A>
+    </UL>
+  <LI>
+    <A HREF="#background">Background:</A>
+    <UL>
+      <LI>
+	<A HREF="#differ">What is the difference between these guidelines and other
+	Web accessibility guidelines?</A>
+      <LI>
+	<A HREF="#involve">Who has been involved in developing these guidelines?</A>
+      <LI>
+	<A HREF="#learn">How does one learn more about the Web Accessibility
+	Initiative?</A>
+      <LI>
+	<A HREF="#role">What is the role of the W3C in Web accessibility?</A>
+    </UL>
+  <LI>
+    <A HREF="#Availability">Availability of implementations:</A>
+    <UL>
+      <LI>
+	<A HREF="#howsoon">How soon will there be tools available that implement
+	these guidelines?</A>
+      <LI>
+	<A HREF="#bestnow">What are the best tools available now for creation of
+	accessible Web sites?</A>
+      <LI>
+	<A HREF="#eval">If Web site developer want to evaluate their current authoring
+	tool, where would they start?</A>
+      <LI>
+	<A HREF="#w3ctools">Will W3C's own tools be conformant to these guidelines?</A>
+    </UL>
+  <LI>
+    <A HREF="#support">Support and resources for developers:</A>
+    <UL>
+      <LI>
+	<A HREF="#prior">Are the checkpoints prioritized so a developer will know
+	what features are most important?</A>
+      <LI>
+	<A HREF="#refmat">What kind of reference material is available for tool
+	developers who want to implement these guidelines?</A>
+      <LI>
+	<A HREF="#open">Are there any open-source materials or reference implementations
+	available?</A>
+      <LI>
+	<A HREF="#resource">What other resources are available to support accessibility
+	of the Web?</A>
+    </UL>
+  <LI>
+    <A HREF="#aboutconf">About conformance:</A>
+    <UL>
+      <LI>
+	<A HREF="#levels">Are there different levels of conformance?</A>
+      <LI>
+	<A HREF="#knowif">How will I know if a tool that I want to buy supports these
+	guidelines?</A>
+      <LI>
+	<A HREF="#mustauth">Do authors have to use tools that conform to create
+	accessible Web pages?</A>
+    </UL>
+  <LI>
+    <A HREF="#conftools">Will conformant tools...</A>
+    <UL>
+      <LI>
+	<A HREF="#easy">be easy or hard to use?</A>
+      <LI>
+	<A HREF="#usable">be usable by people with disabilities?</A>
+      <LI>
+	<A HREF="#interesting">allow people to create interesting Web pages?</A>
+      <LI>
+	<A HREF="#automate">fully automate the creation of accessible content?</A>
+      <LI>
+	<A HREF="#interop">produce content that works across different kinds of
+	browsers?</A>
+      <LI>
+	<A HREF="#explain">explain how to caption audio or describe video?</A>
+      <LI>
+	<A HREF="#verify">provide some way to verify accessibility of Web pages?</A>
+      <LI>
+	<A HREF="#turnoff">allow users to turn off the prompts, alerts, checking,
+	etc., if they don't want to use them?</A>
+      <LI>
+	<A HREF="#knowhtml">require users to know much <abbr>HTML</abbr> to make
+	accessible Web pages?</A>
+      <LI>
+	<A HREF="#convert">require users to convert their existing code?</A>
+    </UL>
+    <P>
+      <HR>
+</OL>
+<H2>
+  <A NAME="general">1. General Questions:</A>
+</H2>
+<H3>
+  <A NAME="whatauth">What is an authoring tool?</A>
+</H3>
+<P>
+An authoring tool is software that people use to create Web pages and Web
+sites. Authoring tools include text editors, WYSIWYG ("what you see is what
+you get") editors, save-as-HTML conversion tools (word processors, spreadsheets,
+presentation software, etc.), tools that generate content from databases,
+multimedia editors, formating tools, and site management tools.
+<H3>
+  <A NAME="whatin">What is in these guidelines?</A>
+</H3>
+<P>
+The <A HREF="http://www.w3.org/TR/2000/REC-ATAG10-20000203">Authoring Tool
+Accessibility Guidelines 1.0</A> (<abbr>ATAG</abbr> 1.0) include seven general
+guidelines, or principles, each of which has several checkpoints, or requirements
+-- twenty-eight all together. Checkpoints are assigned one of three priority
+levels. A companion
+<A HREF="http://www.w3.org/TR/2000/REC-ATAG10-20000203/atag10-chklist.html">Checklist
+of Checkpoints</A> sorts all checkpoints by priority, including a set of
+relative-priority checkpoints, which address authoring tool support for
+checkpoints in the
+<A HREF="http://www.w3.org/TR/1999/WAI-WEBCONTENT-19990505">Web Content
+Accessibility Guidelines 1.0</A>. The guidelines also include an introduction,
+information about how to indicate conformance to the document, and references.
+<H3>
+  <A NAME="howdo">How do authoring tools support the production of accessible
+  Web content?</A>
+</H3>
+<P>
+Authoring tools can support the production of accessible Web content by
+generating valid markup automatically; by checking the accessibility of content
+created; by prompting the author for necessary changes; and by informing
+the author how to create accessible content.
+<H3>
+  <A NAME="whynec">Why are these guidelines necessary?</A>
+</H3>
+<P>
+Many of today's authoring tools create markup that is difficult for people
+with disabilities to access. Since the Web has become such a key information
+resource, it is important to ensure that people with disabilities can use
+the Web. The Authoring Tool Accessibility Guidelines 1.0 will make it much
+easier for Web site developers to create sites that meet accessibility goals
+established by the W3C's
+<A HREF="http://www.w3.org/TR/1999/WAI-WEBCONTENT-19990505">Web Content
+Accessibility Guidelines 1.0</A>, and will make it possible for more people
+with disabilities to create content themselves.
+<H3>
+  <A NAME="demand">Will there be a demand for authoring tools that implement
+  these guidelines?</A>
+</H3>
+<P>
+There is an increasing number of public and private-sector organizations
+that are interested in ensuring accessibility of their Web sites, and in
+some cases, governmental policies that require accessibility of certain kinds
+of Web sites. These organizations are already requesting information on tools
+that produce accessible content, and we expect the demand to increase.
+<H2>
+  <A NAME="background">2. Background:</A>
+</H2>
+<H3>
+  <A NAME="differ">What is the difference between these guidelines and other
+  Web accessibility guidelines? </A>
+</H3>
+<P>
+The <A HREF="http://www.w3.org/TR/WCAG">Web Content Accessibility
+Guidelines</A> explain how to design Web pages that are accessible. The
+<A HREF="http://www.w3.org/TR/UAAG">User Agent Accessibility Guidelines</A>
+explain how to develop browsers and multimedia players that can be used by
+people regardless of disability. The
+<A HREF="http://www.w3.org/TR/ATAG">Authoring Tool Accessibility Guidelines</A>
+explain how to develop authoring tools that make it easier to produce accessible
+Web pages that conform to the Web Content Accessibility Guidelines.
+<H3>
+  <A NAME="involve">Who has been involved in developing these guidelines?</A>
+</H3>
+<P>
+The <A HREF="http://www.w3.org/WAI/AU">Authoring Tool Accessibility Guidelines
+Working Group</A> (AUWG), which developed <abbr>ATAG</abbr> 1.0, includes
+representatives of industry, the disability community, and research
+organizations. Active members during development of these guidelines included
+IBM, Lotus Corporation, Microsoft Corporation, the <abbr>HTML</abbr> Writers
+Guild, the Adaptive Technology Resource Centre of Canada, TRACE Research
+and Development Center, Texas School for the Blind and Visually Impaired,
+Smith-Kettlewell Eye Research Institute, and the Visually Impaired Computers
+Users' Group of New York. In addition, the guidelines received review and
+comment during their development by members of the Web Accessibility Initiative
+(<abbr title="Web Acessibility Initiative">WAI</abbr>) Interest Group, by
+W3C Member organization representatives, and by other software developers,
+and all feedback was reviewed and incorporated where relevant.
+<H3>
+  <A NAME="learn">How does one learn more about the Web Accessibility Initiative
+  (<abbr>WAI</abbr>)?</A>
+</H3>
+<P>
+The <A HREF="http://www.w3.org/WAI">Web Accessibility Initiative home page</A>
+includes a variety of information about WAI: resources, events, Working Group
+activities, involvement opportunities, and sponsorship opportunities.
+<H3>
+  <A NAME="role">What is the role of W3C in Web accessibility?</A>
+</H3>
+<P>
+W3C hosts the Web Accessibility Initiative, bringing expertise in accessibility
+to the W3C Member organizations and to the Web community at large. New W3C
+specifications are reviewed to ensure that they do not compromise and where
+possible &nbsp;that they enhance the accessibility of the Web, ensuring that
+the Web is developed to its full potential for all its users.
+<H2>
+  <A NAME="Availability">3. Availability of Implementations:</A>
+</H2>
+<H3>
+  <A NAME="howsoon">How soon will there be tools available that implement these
+  guidelines?</A>
+</H3>
+<P>
+At the time of the release of <abbr>ATAG</abbr> 1.0, every requirement of
+the Guidelines has been implemented by one or more existing tools, though
+no tool yet satisfies all checkpoints. In addition, authoring tool developers
+are planning <abbr>ATAG</abbr> 1.0 support in upcoming products, indicated
+among the <A HREF="ATAG-Testimonial.html">wide range of testimonials</A>.
+<H3>
+  <A NAME="bestnow">What are the best tools available now for creation of
+  accessible Web sites?</A>
+</H3>
+<P>
+Since no tool yet conforms to any <abbr>ATAG</abbr> 1.0 conformance level
+at the time of <abbr>ATAG</abbr> 1.0 release, the most appropriate tool for
+a given author may depend upon the needs and skills of the author in
+consideration with various available tools. Does the authoring tool produce
+valid markup? Tool output can be tested against
+<A href="http://validator.w3.org/">W3C validators</A>. Does a tool make it
+easy or difficult to add accessibility information into pages, and does it
+check accessibility semi-automatically? If not,
+<A HREF="http://www.w3.org/WAI/ER/existingtools.html">existing evaluation
+tools</A> can be used in conjunction with existing authoring tools to facilitate
+checking. Check the <A href="http://www.w3.org/WAI">WAI home page</A> for
+links to updated information on implementation status of <abbr>ATAG</abbr>
+1.0 in different authoring tools.
+<H3>
+  <A NAME="eval">If a Web site developer wanted to evaluate their current authoring
+  tool, where would they start?</A>
+</H3>
+<P>
+The Web site developer could review the
+<A HREF="http://www.w3.org/TR/2000/REC-ATAG10-20000203/atag10-chklist.html">Checklist
+of Checkpoints for Authoring Tool Accessibility Guidelines 1.0</A> and
+accompanying
+<A HREF="http://www.w3.org/TR/2000/NOTE-ATAG10-TECHS-20000203/">Techniques
+for Authoring Tool Accessibility</A>, and compare the authoring tool against
+these. This would require some familiarity with <abbr>ATAG</abbr> 1.0 as
+well as the Web Content Accessibility Guidelines. Alternatively, the Web
+site developer could ask the developer of the authoring tool how soon that
+product will support <abbr>ATAG</abbr> 1.0.
+<H3>
+  <A NAME="w3ctools">Will W3C's own tools be conformant to these guidelines?</A>
+</H3>
+<P>
+W3C has a testbed authoring tool/browser known as
+<A HREF="http://www.w3.org/Amaya">Amaya</A>. The Amaya development team has
+developed a workplan to implement <abbr>ATAG</abbr> 1.0, and has begun
+development on the implementations.
+<H2>
+  <A NAME="support">4. Support and Resources for Developers:</A>
+</H2>
+<H3>
+  <A NAME="prior">Are the checkpoints prioritized in some way, so a developer
+  will know what features are most important?</A>
+</H3>
+<P>
+<abbr>ATAG</abbr> 1.0 has three
+<A HREF="http://www.w3.org/TR/2000/REC-ATAG10-20000203/#priorities">priority
+levels</A>, which relate to the goals of the document. Priority one checkpoints
+are essential to meeting the goals of the document; priority two checkpoints
+are important to meeting the goals; and priority three checkpoints are beneficial
+to meeting the goals. The goals of the document are that the authoring tool
+be accessible; that it generate accessible content by default; and that it
+encourage the creation of accessible content. In addition, some checkpoints
+have relative priority, in that they reference the priority levels of checkpoints
+from the <A HREF="http://www.w3.org/TR/1999/WAI-WEBCONTENT-19990505">Web
+Content Accessibility Guidelines 1.0</A> for which they provide implementation
+guidance in authoring tools.
+<H3>
+  <A NAME="refmat">What kind of reference materials are available for tool
+  developers who want to implement these guidelines?</A>
+</H3>
+<P>
+The
+<A HREF="http://www.w3.org/TR/2000/REC-ATAG10-20000203/atag10-chklist">Checklist
+of Checkpoints for Authoring Tool Accessibility Guidelines 1.0</A> that
+accompanies these guidelines provides a reference listing, by priority, of
+all <abbr>ATAG</abbr> 1.0 checkpoints, for assessing current product features
+with regard to <abbr>ATAG</abbr> 1.0. A W3C Note
+<A HREF="http://www.w3.org/TR/2000/NOTE-ATAG10-TECHS-20000203/">Techniques
+for Authoring Tool Accessibility 1.0</A> describes strategies for implementing
+the checkpoints and provides references to material relevant for specific
+topics such as the accessibility of multimedia content.
+<H3>
+  <A NAME="open">Are there any open-source materials or reference implementations
+  available?</A>
+</H3>
+<P>
+<A HREF="http://www.w3.org/TR/2000/NOTE-ATAG10-TECHS-20000203/">Techniques
+for Authoring Tool Accessibility 1.0</A> includes references to tools, including
+open-source tools, that demonstrate different strategies for meeting the
+checkpoints. In addition, W3C's continuing development of its open-source
+test-bed authoring
+tool/browser&nbsp;<A HREF="http://www.w3.org/Amaya">Amaya</A> has started
+to implement <abbr>ATAG</abbr> 1.0.
+<H3>
+  <A NAME="resource">What other resources are available to support accessibility
+  of the Web?</A>
+</H3>
+<P>
+The <A HREF="http://www.w3.org/WAI">Web Accessibility Initiative</A> publishes
+a wide range of resources to support accessibility of the Web. Many of these
+are linked from the
+"<A HREF="http://www.w3.org/WAI/#Resources">resources</A>" section of the
+WAI home page, such as other <A HREF="http://www.w3.org/WAI/#gt">guidelines
+and techniques </A>documents; <A HREF="http://www.w3.org/WAI/#ei">easy
+introductions</A> to Web accessibility (Quick Tips, Curricula, WAI Overview,
+etc.); <A HREF="http://www.w3.org/WAI/#tr">technical references</A> (on
+<abbr>HTML</abbr>, <abbr>CSS</abbr>, <abbr>SMIL</abbr>, and other W3C technical
+reports); and a collection of pages with relevant
+<A HREF="http://www.w3.org/WAI/#rl">reference links</A> (policies, alternate
+browsers, evaluation tools, etc.).
+<H2>
+  <A NAME="aboutconf">5. About Conformance:</A>
+</H2>
+<H3>
+  <A NAME="levels">Are there different levels of conformance to
+  <abbr>ATAG</abbr>?</A>
+</H3>
+<P>
+<abbr>ATAG</abbr> 1.0 has three levels of conformance, which correspond to its
+three <A HREF="#prior">priority</A> levels. Authoring tools that satisfy
+all priority one checkpoints conform at "Level-A"; authoring tools that satisfy
+all priority one and two checkpoints conform at level "Double-A"; and authoring
+tools that implement all three priority levels conform at level "Triple-A".
+All conformance levels include relative priority checkpoints.
+<H3>
+  <A NAME="knowif">How will I know if a tool that I want to buy supports these
+  guidelines?</A>
+</H3>
+<P>
+An authoring tool that supports these guidelines will most likely claim
+conformance at the appropriate <A href="#levels">conformance level</A>. Further
+<A href="http://www.w3.org/WAI/Conformance">information on claims of conformance
+for <abbr>ATAG</abbr> 1.0</A> is available on the Web. The
+<A HREF="http://www.w3.org/WAI/AU">Authoring Tool Guidelines Working Group</A>
+will continue to compile
+<A HREF="http://www.w3.org/1999/12/atag-implemented">implementation
+information</A>, available at the time of this release in a preliminary report
+only, and list authoring tools that conform to different <abbr>ATAG</abbr>
+1.0 conformance levels as those tools become available and as information
+about new tools becomes available to the Web Accessibility Initiative.
+<H3>
+  <A NAME="mustauth">Do authors have to use conformant tools to create accessible
+  Web pages?</A>
+</H3>
+<P>
+It is possible to create accessible Web pages with non-conformant tools,
+by using either a text editor, WYSIWYG, or other editor, and directly applying
+the <A HREF="http://www.w3.org/TR/1999/WAI-WEBCONTENT-19990505">Web Content
+Accessibility Guidelines 1.0</A> while creating the page. This may involve
+more steps than if using a conformant tool, for instance going into the source
+code to ensure that the tool is generating valid code, or performing steps
+manually to check the accessibility of a page. For authors who are less familiar
+with the <A HREF="http://www.w3.org/TR/1999/WAI-WEBCONTENT-19990505">Web
+Content Accessibility Guidelines 1.0</A>, authoring tools that conform to
+<abbr>ATAG</abbr> 1.0 may significantly facilitate production of accessible
+Web sites.
+<H2>
+  <A NAME="conftools">6. Will Conformant Tools...</A>
+</H2>
+<H3>
+  <A name="easy">...be easy or difficult to use?</A>
+</H3>
+<P>
+Authoring tools are easy or difficult to use according to the level of user
+experience they presume. The fact that a tool supports <abbr>ATAG</abbr>
+1.0 should not directly affect its ease of use, with the exception that when
+authoring accessible pages, an ATAG-conformant tool would be easier to use
+than a similar tool that was not ATAG-conformant since the first tool would
+automate some steps involved in making a Web page accessible.
+<H3>
+  <A NAME="usable">...be usable by people with disabilities?</A>
+</H3>
+<P>
+An ATAG-conformant tool should be usable by people with disabilities since
+accessibility of the tool itself is covered by the guidelines.
+<H3>
+  <A NAME="interesting">...allow people to create interesting Web pages?</A>
+</H3>
+<P>
+Conformant tools will allow people to create interesting Web pages. The degree
+of "interest" in a Web page can be related to the design skills of the author,
+the nature of the content on the page, and the capabilities of the authoring
+tool with regard to support for different markup languages
+(<abbr>HTML</abbr>, SMIL, SVG, etc.) and presentation formats (CSS1, CSS2,
+etc.). Whatever the capabilities of the tool, <abbr>ATAG</abbr> 1.0 provides
+guidance on how to ensure that those capabilities support accessibility.
+<H3>
+  <A NAME="automate">...fully automate the creation of accessible content?</A>
+</H3>
+<P>
+While ATAG-conformant tools can automate some accessibility requirements,
+such as production of valid markup, they cannot automate all accessibility
+requirements. For instance, they cannot automate reliable production of
+alternative text for a complex image used in a specific context -- however,
+they may be able to automate re-use of that alternative text the next time
+that the image appears on a Web site.
+<H3>
+  <A NAME="interop">...produce content that works across different kinds of
+  browsers?</A>
+</H3>
+<P>
+One of W3C's primary goals is to promote the interoperability of the Web.
+<abbr>ATAG</abbr> 1.0 emphasizes production of content that is consistent
+with established Web standards, and which therefore has the greatest chance
+of working across current browsers as well as the browsers of the future,
+as Web technologies converge.
+<H3>
+  <A NAME="explain">...explain how to caption audio or describe video?</A>
+</H3>
+<P>
+ATAG-conformant tools include help files which explain how to perform potentially
+unfamiliar steps such as captioning audio or describing video for the first
+time, where relevant to the type of tool. In addition, sample or tutorial
+files accompanying conformant tools would include some examples of how to
+author accessibility information.
+<H3>
+  <A NAME="verify">...provide some way to verify accessibility of Web pages?</A>
+</H3>
+<P>
+ATAG-conformant tools are required to provide functions for validating
+accessibility of the Web pages they produce.
+<H3>
+  <A NAME="turnoff">...allow the user to turn off prompts, alerts, checking,
+  etc., if he or she didn't want to use them?</A>
+</H3>
+<P>
+The extent of configurability depends on the type of tool. In many tools,
+functions such as prompting, alerts, and validation could be adjusted or
+turned off by the user; while other tools might always have accessibility
+features "turned on."
+<H3>
+  <A NAME="knowhtml">...require the user to know much <abbr>HTML</abbr> to
+  make accessible Web pages?</A>
+</H3>
+<P>
+This depends on the type of tool. Some tools assume no knowledge of
+<abbr>HTML</abbr> or other markup language, and others either require some
+knowledge, or allow the user to edit source code directly when needed. With
+tools that do not conform to <abbr>ATAG</abbr> 1.0, the user often must know
+some <abbr>HTML</abbr> to be able to fix accessibility problems that the
+tool creates.
+<H3>
+  <A NAME="convert">...require the user to convert their existing code?</A>
+</H3>
+<P>
+This depends primarily on the type of tool used to produce existing source
+code. A page already using valid code should not require conversion for the
+purpose of accessibility, although it might require the addition of information
+such as providing a summary for a table. A page containing large amounts
+of inaccessible markup from a previous authoring tool could require conversion
+or "repair" of the source code. Some conformant tools may make conversions
+automatically; while others might reject code that is invalid.
+<P>
+  <HR>
+<DIV align="center">
+  <TABLE class="navbar" cellpadding="12" width="70%">
+    <TR>
+      <TD align="center">
+	  <HR>
+	<P class="navitem">
+	<A href="ATAG-PressRelease">Press Release</A>
+	<P>
+	  <HR>
+      </TD>
+      <TD align="center">
+	  <HR>
+	<P class="navitem">
+	<A href="ATAG-Testimonial">Testimonials</A>
+	<P>
+	  <HR>
+      </TD>
+      <TD align="center">
+	  <HR>
+	<P class="navitem">
+	Fact Sheet
+	<P>
+	  <HR>
+      </TD>
+    </TR>
+  </TABLE>
+</DIV>
+</BODY></HTML>

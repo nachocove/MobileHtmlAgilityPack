@@ -1,0 +1,217 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+  <title>Supporters Program - W3C</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="ROBOTS" content="INDEX, NOFOLLOW" />
+    <link rel="Help" href="/Help/" />
+  <link rel="stylesheet" href="/2008/site/css/minimum" type="text/css" media="handheld, all" />
+  <style type="text/css"  media="print, screen and (min-width: 481px)">@import url("/2008/site/css/advanced");</style>
+  <link href="/2008/site/css/minimum" rel="stylesheet" type="text/css" media="handheld, only screen and (max-device-width: 480px)" />
+  <meta name="viewport" content="width=device-width"/>
+  <link rel="stylesheet" href="/2008/site/css/print" type="text/css" media="print" />
+  <!-- Custom Stylesheet -->
+  <link href="/Consortium/sup-style.css" type="text/css" rel="stylesheet" media="all"/>
+  <link rel="shortcut icon" href="/2008/site/images/favicon.ico" type="image/x-icon" />
+  </head>
+<body id="www-w3-org" class="w3c_public">
+ <div id="w3c_container">
+  <div id="w3c_mast"> <!-- #w3c_mast / Page top header -->
+   <h1 class="logo"><a tabindex="2" accesskey="1" href="/"><img src="/2008/site/images/logo-w3c-mobile-lg" width="90" height="53" alt="W3C" /></a>
+   <span class="alt-logo">W3C</span>
+   </h1>
+   <div id="w3c_nav">
+        <form action="http://www.w3.org/Help/search" method="get" enctype="application/x-www-form-urlencoded">
+       <!-- w3c_sec_nav is populated through js -->
+       <div class="w3c_sec_nav"><!-- --></div>
+           <ul class="main_nav"> <!-- Main navigation menu -->
+     <li class="first-item"><a href="/standards/">Standards</a></li><li><a href="/participate/">Participate</a></li><li><a href="/Consortium/membership">Membership</a></li><li class="last-item"><a href="/Consortium/">About W3C</a></li>
+       <li class="search-item">
+      <div id="search-form">
+       <input tabindex="3" class="text" name="q" value="" title="Search" />
+       <button id="search-submit" name="search-submit" type="submit"><img class="submit" src="/2008/site/images/search-button" alt="Search" width="21" height="17" /></button> 
+      </div>
+    </li>
+   </ul>
+     </form>
+   </div>
+  </div> <!-- /end #w3c_mast -->
+  <div id="w3c_main"> 
+    <div id="w3c_logo_shadow" class="w3c_leftCol">
+      <img height="32" alt="" src="/2008/site/images/logo-shadow" />
+    </div>
+   <div id="w3c_sidenavigation" class="w3c_leftCol">       <h2 class="offscreen">Site Navigation</h2>
+    <h3 class="category"><span class="ribbon"><a href="/Consortium/sponsor/org.html" title="Up to Organization Sponsor">Organization Sponsor <img src="/2008/site/images/header-link" alt="Header link" width="13" height="13" class="header-link"/></a></span></h3>
+       <ul class="theme">
+        <li><a class="current">Supporters Program</a></li>
+        <li><a href="/Consortium/supporter-policy.html">Supporters Program Policies</a></li>
+        <li><a href="/Consortium/sup-faq.html">Supporters Program FAQ</a></li>
+       </ul>
+       <br/>
+      </div>
+   <div class="w3c_mainCol">
+          <div id="w3c_crumbs">
+       <div id="w3c_crumbs_frame">
+        <ul class="bct"> <!-- .bct / Breadcrumbs -->
+          <li class="skip"><a tabindex="1" accesskey="2" title="Skip to content (e.g., when browsing via audio)" href="#w3c_content_body">Skip</a></li>
+          <li><a href="/">W3C</a>&#160;<span class="cr">&#x00bb;</span>&#160;</li>
+          <li><a href="/Consortium/">About&#160;W3C</a>&#160;<span class="cr">&#x00bb;</span>&#160;</li>
+          <li><a href="/Consortium/sponsor/">Sponsorships&#160;and&#160;Donations</a>&#160;<span class="cr">&#x00bb;</span>&#160;</li>
+          <li><a href="/Consortium/sponsor/org.html">Organization&#160;Sponsor</a>&#160;<span class="cr">&#x00bb;</span>&#160;</li>
+          <li class="current">Supporters Program</li>
+        </ul>            
+     </div>
+    </div>    <h1 class="title">Supporters Program - W3C</h1>
+    <div id="w3c_content_body">
+    <div class="line">
+      
+     <div class="unit size3on4">
+<div class="intro">
+<p>W3C operations are primarily financed through Membership dues (see
+also information about <a
+href="join">W3C
+Membership</a>).  Through the <strong>W3C Supporters Program</strong>,
+Members and non-Members alike make <a
+href="supporters">general contributions</a>, both financial and of
+goods such as software and hardware, to help support W3C's
+operations. Though W3C appreciates the support of these contributors, 
+this should not be considered an endorsement of any products,
+services, or other materials they may provide.</p>
+
+<p><a href="#about">More about the Supporters
+program</a> can be found below, including <a href="#faq">frequently asked questions (FAQ)</a>.
+A version of this page <a href="sup?details=1">with more
+  Supporter details</a> is available.
+</p>
+
+<p id="wishlist">You may also want to participate in the
+<a href="/QA/Tools/Donate">W3C Validator Donation Program</a>.</p>
+</div><h2 id="premier">Premier Supporters</h2><h2 id="major">Major Supporters</h2>
+<div class="data spec">
+
+<table>
+
+<tr>
+<td><a href="http://www.carid.com">CARiD.com</a></td><td><a href="http://www.dhgate.com/">china wholesale</a></td><td><a href="http://www.hyve.com/cloud-hosting">Hyve Limited</a></td>
+</tr>
+
+</table>
+
+</div>
+
+<div class="data spec">
+
+<table>
+
+<tr><th>Supporter</th><th>Contribution</th></tr>
+
+<tr>
+<td><a href="http://www.oxygenxml.com/">oXygen, XML Editor</a></td><td>Goods</td>
+</tr>
+
+<tr>
+<td><a href="http://www.OpenConf.com">OpenConf Peer-Review & Conference System</a></td><td>Goods</td>
+</tr>
+
+</table>
+
+</div>
+<h2 id="contributing">Contributing Supporters</h2><h2 id="about">About the Supporters Program</h2>
+
+<p>W3C thanks the individuals and organizations listed on this
+page who have
+made contributions to the Consortium.
+Supporters are acknowledged on
+this page and may use the <a href="supporter-policy#logo">W3C
+Supporter Logos</a>. W3C also welcomes <a
+href="sup-faq#fillappl">smaller donations</a> of less than a value of
+100
+ USD using paypal or other means, although there is no associated acknowledgment on the W3C Web
+site or corresponding Supporter logo.</p>
+
+<p>You may propose to W3C to donate goods that do not appear on
+this list, but please note that W3C may choose not to accept them. In this
+case, we recommend that you consider a financial donation instead.
+In general:</p>
+
+<ul class="show_items">
+<li>When we accept a software donation, licenses are only made
+available to the W3C staff.</li>
+<li>We do not accept unsolicited offers to design Web pages.</li>
+</ul>
+
+<p>If you have any questions about the W3C Supporters Program, <a
+href="supporter-policy">Supporters Program Policy</a>, or <a
+href="supporters">Application</a>, please contact W3C at
+&lt;supporters&#064;w3.org&gt;.</p>
+
+<p>Please note that this program is not about W3C offering software
+or other technical support.</p>
+
+<h3 id="faq">Questions about Donations?</h3>
+
+<p>Please consult the <a href="sup-faq">Donations FAQ</a> for answers to questions such as:</p>
+
+<ul>
+<li><a href="sup-faq#fillappl">How do I become a W3C Supporter?</a></li>
+<li><a href="sup-faq#getlink">Can I get a link on this page?</a></li>
+<li><a href="sup-faq#rank">Will the link from the Supporters page improve my 
+ranking by search engines?</a></li>
+</ul>            </div>
+        <div class="unit size1on4 lastUnit w3c_rhs"> <!-- #contextnav / aka rightmenu -->
+	    <h2 class="h4 category">Supporters Program</h2>
+	    <ul class="theme right-list">
+	      <li><a href="supporters" title="Make a Donation">Make a Donation</a></li>
+	      <li><a href="https://www.paypal.com/cgi-bin/webscr?cmd=_xclick&amp;business=ercim-supporters%40w3%2eorg&amp;item_name=W3C%20Supporters%20Program%3a%20&amp;currency_code=USD&amp;lc=US" title="Make a Donation with Paypal">Make a Donation with Paypal</a></li>
+	      <li><a href="sup-faq" title="FAQ">FAQ</a></li>
+	      <li><a href="supporter-policy" title="Policies">Policies</a></li>
+	      <li><a href="supporter-policy#logo" title="Logos">Logos</a></li>
+            </ul>
+        </div>                               <!-- /end #contextnav -->
+          </div> <!-- /end .line -->
+        </div> <!-- /end #w3c_content_body -->
+      </div> <!-- /end #w3c_mainCol -->
+    </div> <!-- end #w3c_main -->
+  </div> <!-- /end #w3c_container -->
+
+<div id="w3c_footer">
+  <div id="w3c_footer-inner">
+    <h2 class="offscreen">Footer Navigation</h2>
+    <div class="w3c_footer-nav">
+      <h3>Navigation</h3>
+      <ul class="footer_top_nav">   
+       <li><a href="/">Home</a></li>
+       <li><a href="/standards/">Standards</a></li>
+       <li><a href="/participate/">Participate</a></li>
+       <li><a href="/Consortium/membership">Membership</a></li>
+       <li class="last-item"><a href="/Consortium/">About W3C</a></li>
+      </ul>
+    </div>
+    <div class="w3c_footer-nav">
+      <h3>Contact W3C</h3>
+      <ul class="footer_bottom_nav">
+           <li><a href="/Consortium/contact">Contact</a></li>
+           <li><a accesskey="0" href="/Help/">Help and FAQ</a></li>
+           <li><a href="/Consortium/sponsor/">Sponsor / Donate</a></li>
+           <li><a href="/Consortium/siteindex">Site Map</a></li>
+           <li><address id="w3c_signature"><a href="http://lists.w3.org/Archives/Public/site-comments/">Feedback</a></address></li>
+      </ul>
+    </div>
+    <div class="w3c_footer-nav">
+      <h3>W3C Updates</h3>
+      <ul class="footer_follow_nav">
+           <li>
+                        <a href="http://twitter.com/W3C" title="Follow W3C on Twitter"><img src="/2008/site/images/twitter-bird" alt="Twitter" class="social-icon" width="78" height="83" /></a>
+                        <a href="http://identi.ca/w3c" title="See W3C on Identica"><img src="/2008/site/images/identica-logo" alt="Identica" class="social-icon" width="91" height="83" /></a>
+          </li>
+     </ul>
+    </div>
+    <!-- #footer address / page signature -->
+        <p class="copyright">Copyright © 2014 W3C <sup>®</sup> (<a href="http://www.csail.mit.edu/"><acronym title="Massachusetts Institute of Technology">MIT</acronym></a>, <a href="http://www.ercim.eu/"><acronym title="European Research Consortium for Informatics and Mathematics"> ERCIM</acronym></a>, <a href="http://www.keio.ac.jp/">Keio</a>, <a href="http://ev.buaa.edu.cn/">Beihang</a>) <a href="/Consortium/Legal/ipr-notice">Usage policies apply</a>.</p>
+  </div>
+</div><!-- /end #footer --><div id="w3c_scripts">
+  <script type="text/javascript" src="/2008/site/js/main"><!-- --></script>
+</div>
+
+</body>
+</html>

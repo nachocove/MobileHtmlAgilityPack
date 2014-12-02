@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head><title>Web Graphics</title>
+<meta name="keywords" content="Graphics, Web, XML, SVG,  web graphics, optimisation, gif, jpeg, png, cgm, svg, xml, 
+images in xml, html, content negotiation, conneg, graphical quality, colors, formats, web safe colors"/>
+<meta name="description" content="Overview of graphics formats for the Web from W3C. Includes links to descriptions of SVG, WebCGM, PNG, JPEG and GIF, plus how to integrate images in XML and HTML pages"/>
+<meta http-equiv="content-type" content="text/html; charset=iso-8859-1" />
+<style type="text/css"><!--
+body {background: white; color: black; font-family: Georgia, Times, serif;}
+div.main { margin-left: 5%; margin-right: 2% }
+h1, h2, h3 {font-family: arial, helvetica, sans-serif }
+h2 {margin-left:-2%}
+.date {color: #000; background: #DFD;  font-style: italic; font-weight: bold; 
+vertical-align: top; border: none}
+.format {color: #000; background: #DFD;  font-style: italic; font-weight: bold; 
+vertical-align: top; border: none}
+td {margin: 6px }
+.banner img { border: none}
+.offsite:link {color: #393 }
+.offsite:visited {color: #666 }
+.newslist {margin: 3px 8px}
+pre {  font-family: Syntax, "Courier New", Courier, monospace }
+.qdlogo { height: 48px; color: #903; /* border: thin solid #903; */ font-weight: bold; font-family: Hattenschweiller, Impact, serif; vertical-align: middle}
+.filler { color: #777; font-style: italic }
+--></style>
+</head>
+<body>
+<p class="banner"><a href="/"><img  alt="W3C " src="/Icons/WWW/w3c_home"  style="border: 0"/></a>
+<a
+href="http://www.w3.org/Interaction/"><img src="http://www.w3.org/Icons/interaction.png"
+style="border: 0"
+ width="212" height="48" alt="Interaction Domain" /></a>
+<a href="/Graphics/Activity"><img  alt="Graphics Activity" 
+src="/Icons/WWW/graphics_48x48.png"/></a>
+</p>
+
+<h1>Graphics on the Web</h1>
+<div class="main">
+
+<h2>What is W3C Doing?</h2>
+<p>Please see the <a href="Activity">W3C Graphics Activity statement</a> to find out what W3C is currently doing and has already done in the area of Web Graphics, including <a href="SVG">SVG</a>, <a href="WebCGM">WebCGM Profile</a>, and <a href="PNG">PNG</a>.</p>
+
+<h2><a name="Formats">Formats</a></h2>
+
+<p>There is no limit in the Web specifications to the graphical formats that can be used 
+on the Web. You just need a MIME type so that the format is labelled correctly for transfer 
+across the Web, and so that a suitable viewer (if one exists) can be located at the other end.</p>
+
+<p>In practice, certain formats are more widely understood than others; certain formats 
+are more suited to one type of graphical data than another; so you should make an
+ informed choice about what format to use.</p>
+
+<table>
+
+<tr><th abbr="format" id="f1"></th><th abbr="more info at" id="f2"></th></tr>
+
+<tr><td class="format"><p>Portable Network Graphics (PNG)</p></td><td><p><a
+href="PNG">W3C Overview of PNG</a></p>
+<p><a href="http://www.libpng.org/pub/png/" class="offsite">PNG Group homepage</a></p></td></tr>
+
+<tr><td class="format"><p>Joint Photographic Experts Group (JPEG)</p></td><td><p><a
+href="JPEG">W3C Overview of JPEG</a></p>
+<p><a href="http://www.jpeg.org/" class="offsite">ISO JPEG homepage</a></p></td></tr>
+
+<tr><td class="format"><p>Graphics Interchange Format (GIF)</p></td><td><p
+class="filler">to be added</p></td></tr>
+
+<tr><td class="format"><p>Scalable Vector Graphics (SVG)</p></td><td><p><a
+href="SVG">W3C Overview of SVG</a></p></td></tr>
+
+<tr><td class="format"><p>Web CGM Profile</p></td><td><p><a
+href="WebCGM">W3C Overview of the WebCGM Profile</a></p>
+<p><a href="http://www.cgmopen.org" class="offsite">CGM Open website</a></p></td></tr>
+</table>
+
+<h2><a name="InXML">Inclusion in XML</a></h2>
+
+<p>The <a href="/TR/REC-xml">XML specification</a> does not prescribe or limit which graphics format you can use. It also does not provide a standard method to describe image inclusion. Work in progress at W3C on <em>XLink and XPointer</em> will add standard hyperlinking capabilities  - including links to graphics - to XML. This work provides the 
+same hyperlinking capabilities HTML users will be familiar with - simple, since ended links to embedded media and simple, single-ended hypermedia links - but also provides more advanced compound links, bidirectional links, and out of line links. This provides a standardised basis which XML languages can use for the actual linking part.</p>
+
+<h3>Scalable Vector Graphics (SVG)</h3>
+
+<p><a href="SVG">SVG</a>, a vector graphics format designed at W3C, written 
+in XML and stylable with CSS, is starting to become a popular choice for including 
+graphics in XML documents. It may be included either by linkage, or by textual inclusion
+in an XML document that uses a different namespace. Because SVG can itself include raster 
+images such as JPEG and PNG, SVG can be used to add raster and mixed vector/raster 
+graphics to XML documents. SVG uses XLink and XPointer to provide linking functionality.</p>
+
+<p>SVG does not limit but <strong>does prescribe</strong> the formats that can be used. 
+All conformant SVG implementations must support PNG and JPEG and SVG images. Other 
+formats may also be supported by various implementations, but these two can be relied upon.</p>
+
+<h3>Background image, using <b>CSS</b></h3>
+<p>Any XML element can (when displayed visually) be given a <a href="http://www.w3.org/TR/REC-CSS2/colors.html#background-properties">background 
+image</a> using 
+<a href="/Style/CSS">Cascading Style Sheets (CSS)</a>. The background color can also be specified, and the image will composite onto the background color if it has transparent portions. This allows the same image to be re-used with different visuall presentations. 
+The width and height of the 
+image can be adjusted. It can repeat in the horizontal(x) direction, vertical (y) 
+direction, both , or neither. The position of the image relative to the box taken 
+up by the element can be adjusted.</p>
+<!-- if this were XML I could have used an entity for that -->
+
+<p>CSS does not prescribe or limit which graphics format you can use.</p>
+<!-- tell em once, tell em often (and yes, that means SVG images in CSS) -->
+
+<h2><a name="InHTML">Inclusion in HTML</a></h2>
+
+<p>The <a href="/TR/REC-html40">HTML specification</a> does not prescribe or limit which 
+graphics format you can use.</p>
+
+<p>Graphics may be associated with an HTML document in five standard ways:</p>
+
+<h3>External link, using <b>A</b></h3>
+<p>This allows any stand-alone viewer to be used, which can (but need not) be a different program to that used to display HTML. Useful for unusual image formats. Use the <a 
+href="http://www.w3.org/TR/REC-html40/struct/links.html#h-12.2">A element</a> in HTML for this.</p>
+
+<h3>Inline image, using <b>IMG</b>, <b>OBJECT</b> or <b>APPLET</b></h3>
+
+<p>There are <a href="http://www.w3.org/TR/REC-html40/struct/objects">three ways to include inline objects in HTML</a>.</p>
+
+<p>The <a href="http://www.w3.org/TR/REC-html40/struct/objects.html#h-13.2">IMG 
+element</a> is the most common method for using graphics in HTML pages. For faster display, 
+the <span class="attr">width</span> and <span class="attr">height</span> of the image 
+can be given as attributes. One attribute that is required is <span 
+class="attr">alt</span>, used to give an alternate textual string for people 
+browsing with images off, or who cannot see the images.
+The string <em>cannot contain any markup</em>. A <span class="attr">longdesc</span> 
+attribute lets you point to a longer description - often in HTML - which can have 
+markup and richer formatting.</p>
+
+<p>The <a href="http://www.w3.org/TR/REC-html40/struct/objects.html#h-13.3">OBJECT 
+element</a> in HTML can contain other elements nested within it, unlike IMG which is 
+empty. This means that several different formats can be offered, using nested OBJECT 
+elements, with a final textual alternative (including markup, links, etc) right at
+the center. The outermost element which can be displayed will be used.</p>
+
+<p>The <a href="http://www.w3.org/TR/REC-html40/struct/objects.html#h-13.4">APPLET 
+element</a> is used for embedding applets into the HTML page. These applets can do 
+many things biut o\a common task is to use them to display images, particularly ones 
+in unusual formats or which need to be presented under the control of a program for 
+some other reason.</p>
+
+<h3>Background image, using <b>CSS</b></h3>
+<p>Any HTML element can (when displayed visually) be given a 
+<a href="http://www.w3.org/TR/REC-CSS2/colors.html#background-properties">background 
+image</a> using 
+<a href="/Style/CSS">Cascading Style Sheets (CSS)</a>. The background color can also be specified, and the image will composite onto the background color if it has transparent portions. This allows the same image to be re-used with different visuall presentations. 
+The width and height of the 
+image can be adjusted. It can repeat in the horizontal(x) direction, vertical (y) 
+direction, both , or neither. The position of the image relative to the box taken 
+up by the element can be adjusted.</p>
+
+<p>CSS does not prescribe or limit which graphics format you can use.</p>
+
+<!-- server side and client side imagemaps
+
+rollovers
+
+-->
+
+
+
+</div>
+<hr class="xhtml"/>
+
+
+<address><a href="/people/chris">Chris</a><br class="xhtml"/>
+Created: <tt>18 Jan 1995</tt><br class="xhtml"/>
+Last updated: <tt>$Date: 2003/04/30 12:25:41 $</tt><br class="xhtml"/>
+<a href="http://validator.w3.org/"><img style="border:0;width:88px;height:31px"
+     src="http://www.w3.org/Icons/valid-xhtml10"
+     alt="Valid XHTML 1.0!" height="31" width="88"/></a>
+
+<a href="http://jigsaw.w3.org/css-validator"><img style="border:0;width:88px;height:31px" 
+             src="http://jigsaw.w3.org/css-validator/images/vcss" 
+             alt="Valid CSS!"/></a>
+</address>
+<p class="copyright"><small><a rel="Copyright"
+href="/Consortium/Legal/ipr-notice#Copyright">Copyright</a> &#xa9; 1994-2003
+<a href="/"><acronym
+title="World Wide Web Consortium">W3C</acronym></a><sup>&#xae;</sup> (<a
+href="http://www.lcs.mit.edu/"><acronym
+title="Massachusetts Institute of Technology">MIT</acronym></a>, <a
+href="http://www.ercim.org/"><acronym
+title="European Research Consortium for Informatics and
+Mathematics">ERCIM</acronym></a>, <a
+href="http://www.keio.ac.jp/">Keio</a>), All Rights Reserved.
+
+W3C <a
+href="/Consortium/Legal/ipr-notice#Legal_Disclaimer">liability</a>, <a
+href="/Consortium/Legal/ipr-notice#W3C_Trademarks">trademark</a>, <a
+rel="Copyright" href="/Consortium/Legal/copyright-documents">document
+use</a>
+and <a rel="Copyright" href="/Consortium/Legal/copyright-software">software
+licensing</a> rules apply. Your interactions with this site are in
+accordance
+with our <a href="/Consortium/Legal/privacy-statement#Public">public</a> and
+<a href="/Consortium/Legal/privacy-statement#Members">Member</a> privacy
+statements.</small>
+</p>
+</body></html>

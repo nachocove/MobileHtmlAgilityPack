@@ -1,0 +1,509 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US">
+<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  
+
+
+  <title>Fact Sheet for "Web Content Accessibility Guidelines 1.0"</title>
+
+  <link rel="stylesheet" href="/WAI/wai-main.css" type="text/css" />
+</head>
+
+<body>
+<div id="controls"><ul>
+<li><a href="#main" shape="rect"><img src="/Icons/downinpage.png" alt="" /> Skip to content </a></li>
+    <li><a href="/WAI/changedesign.html" shape="rect">| Change 
+      text size or colors </a> </li>
+    </ul></div>
+
+
+    <div id="masthead"><p id="logos"><a href="http://www.w3.org/" title="W3C Home" shape="rect"><img alt="W3C logo" height="48" src="/Icons/w3c_home" width="72" /></a><a href="http://www.w3.org/WAI/" title="WAI Home" shape="rect"><img alt="Web Accessibility Initiative (WAI)         logo" height="48" src="/WAI/images/wai-temp" /></a></p></div>
+
+    <div id="tagline"><p>WAI: Strategies, guidelines, resources to make the
+        Web accessible to people with disabilities</p></div>
+
+<div id="nav"><h2>Site Navigation</h2><p id="w3cnav"><a href="http://www.w3.org/">W3C Home</a></p><p id="subhomenav"><a href="/WAI/">Web Accessibility Initiative (WAI) Home</a></p><ol id="nav1" type="A"><li><a href="../../WAI/gettingstarted/Overview.html" shape="rect">Introducing Accessibility</a></li><li class="current-nav"><a href="../../WAI/guid-tech.html" shape="rect">Guidelines &amp; 
+        Techniques</a><ol class="anno"><li class="current-nav"><a href="../../WAI/intro/wcag.php" shape="rect">Web Content (WCAG)</a><ul><li class="current-nav"><a href="../../WAI/intro/wcag10docs.php" shape="rect">WCAG 1.0 Documents</a><ol type="i"><li><a href="/TR/WCAG10/full-checklist.html" shape="rect">Checklist of 
+                    Checkpoints <img src="/Icons/tr.png" alt="technical report" /></a></li><li><a href="/TR/WCAG10/" shape="rect">WCAG 1.0 <img src="/Icons/tr.png" alt="technical report" /></a></li><li><a href="/WAI/GL/WAI-WEBCONTENT-ERRATA" shape="rect">Errata 
+                    <img src="/Icons/tr.png" alt="technical report" /></a></li><li><a href="/WAI/GL/WAI-WEBCONTENT-TRANSLATIONS" shape="rect">Translations 
+                    <img src="/Icons/tr.png" alt="technical report" /></a></li><li><a href="/TR/WCAG10-TECHS/" shape="rect">Techniques <img src="/Icons/tr.png" alt="technical report" /></a></li><li><a href="/TR/WCAG10-CORE-TECHS/" shape="rect">Core Techniques 
+                    <img src="/Icons/tr.png" alt="technical report" /></a></li><li><a href="/TR/WCAG10-HTML-TECHS/" shape="rect">HTML Techniques 
+                    <img src="/Icons/tr.png" alt="technical report" /></a></li><li><a href="/TR/WCAG10-CSS-TECHS/" shape="rect">CSS Techniques 
+                    <img src="/Icons/tr.png" alt="technical report" /></a></li><li><a href="../../WAI/intro/wcag10.php" shape="rect">Navigating</a></li><li id="current-node" class="current-nav"><span class="label"><span id="current-icon">»</span>Fact Sheet 
+                    (FAQ)</span></li><li><a href="/WAI/wcag-curric/" shape="rect">Curriculum <img src="/Icons/tr.png" alt="technical report" /></a></li><li><a href="../../WAI/WCAG1-Conformance.html" shape="rect">Conformance Logos</a></li></ol></li><li><a href="../../WAI/intro/wcag20.php" shape="rect">WCAG 2.0 Documents</a></li><li><a href="../../WAI/WCAG20/CR/Overview.html" shape="rect">2.0 CR Implementation</a></li></ul></li><li><a href="../../WAI/intro/atag.php" shape="rect">Authoring Tool (ATAG)</a></li><li><a href="../../WAI/intro/uaag.php" shape="rect">User Agent (UAAG)</a></li><li><a href="../../WAI/intro/earl.php" shape="rect">Evaluation Language (EARL)</a></li><li><a href="../../WAI/intro/aria.php" shape="rect">WAI-ARIA (Rich Applications)</a></li><li><a href="../../WAI/specific-techs.html" shape="rect">Specific Technologies</a></li><li><a href="../../WAI/intro/w3c-process.php" shape="rect">Development Process</a></li></ol></li><li><a href="../../WAI/managing.html" shape="rect">Managing Accessibility</a></li><li><a href="../../WAI/eval/Overview.html" shape="rect">Evaluating Accessibility</a></li><li><a href="../../WAI/groups.html" shape="rect">WAI Groups</a></li><li><a href="../../WAI/about-links.html" shape="rect">About WAI</a></li></ol><div id="nav-static"><ul>
+        
+      <li><a shape="rect" href="../../WAI/sitemap.html">WAI Site Map</a></li>
+      <li><a shape="rect" href="../../WAI/sitehelp.html">Help with WAI Site</a></li>
+      <li><a shape="rect" href="../../WAI/wai-translations.html"><img src="/WAI/images/translations-small-1.png" alt="" /> 
+          Translations</a></li>
+      <li><a shape="rect" href="../../WAI/highlights/about-rss.html"><img src="/Icons/rss1.gif" alt="" /> 
+          About RSS</a></li>
+      <li><a href="/WAI/search.php" shape="rect"><img src="/WAI/images/search-icon.png" alt="" /> Search</a></li>
+    </ul></div></div>
+
+<div id="main"> 
+<h1>Fact Sheet for "Web Content Accessibility Guidelines 1.0"</h1>
+<p class="highlight-version">WCAG 2.0 was published in December 2008, and is recommended over WCAG 1.0. <strong>See <a href="http://www.w3.org/WAI/intro/wcag.php">Web Content
+  Accessibility Guidelines (WCAG) Overview</a></strong>.</p>
+
+<p><strong>Published May 1999</strong></p>
+  <p>This "Frequently Asked Questions" (FAQ) page provides background on W3C's "Web Content Accessibility Guidelines 1.0" Recommendation, released on May 5, 1999. The document address is <a href="http://www.w3.org/TR/1999/WAI-WEBCONTENT-19990505" shape="rect">http://www.w3.org/TR/1999/WAI-WEBCONTENT-19990505</a>
+</p>
+  <h2>Contents</h2>
+<ol>
+  <li>
+    <a href="#what-are" shape="rect">What are the Web Content Accessibility Guidelines?</a>  </li>
+  <li>
+    <a href="#conformance" shape="rect">What are the "priorities" and "conformance levels,"
+    and how does one use the logos?</a>  </li>
+  <li>
+
+    <a href="#audience" shape="rect">Who are these guidelines written for?</a>  </li>
+  <li>
+    <a href="#need" shape="rect">Why are these guidelines needed? Why are they important?</a>  </li>
+  <li>
+    <a href="#demographics" shape="rect">How many people are affected by issues of Web
+    accessibility?</a>  </li>
+  <li>
+    <a href="#barriers" shape="rect">What are some examples of common barriers on Web pages?</a>
+  </li>
+  <li>
+    <a href="#usability" shape="rect">How will these guidelines affect usability &amp; appearance
+    of sites for non-disabled users?</a>  </li>
+  <li>
+    <a href="#text" shape="rect">Why don't the guidelines recommend using text-only pages?</a>  </li>
+  <li>
+    <a href="#cost" shape="rect">Does it cost more to make a site accessible?</a>
+  </li>
+  <li>
+    <a href="#authoring" shape="rect">Are some authoring tools better for making accessible
+    sites than others?</a>  </li>
+  <li>
+    <a href="#required" shape="rect">Will these guidelines become a requirement? Are there
+    legal consequences for not making a site accessible?</a>  </li>
+  <li>
+    <a href="#supporting" shape="rect">What supporting resources are available for using these
+    guidelines?</a>  </li>
+  <li>
+
+    <a href="#tools" shape="rect">Are there tools that can help me? Can I test the accessibility
+    of my site?</a>  </li>
+  <li>
+    <a href="#important" shape="rect">What is the most important thing to understand in terms
+    of making a site accessible?</a>  </li>
+  <li>
+    <a href="#stable" shape="rect">Will the guidelines be stable across evolving Web
+    technologies?</a>  </li>
+  <li>
+    <a href="#involved" shape="rect">Who has been involved in developing these guidelines?</a>
+  </li>
+  <li>
+    <a href="#examples" shape="rect">What Web sites are already using these guidelines? Can
+    I see examples?</a>  </li>
+  <li>
+    <a href="#other" shape="rect">How are these guidelines related to the other W3C/WAI
+    guidelines?</a>  </li>
+  <li>
+    <a href="#more" shape="rect">How does one learn more about Web accessibility and the
+    WAI?</a>  </li>
+  <li>
+
+    <a href="#W3Crole" shape="rect">What is the role of the W3C in Web accessibility?</a></li>
+</ol>
+<p>  </p>
+<hr />
+<h2>
+  <a name="what-are" id="what-are" shape="rect">1. What are the "Web Content Accessibility Guidelines"?</a>
+</h2>
+<p>
+The "<a href="http://www.w3.org/TR/WAI-WEBCONTENT" shape="rect">Web Content Accessibility
+Guidelines 1.0</a>" are a W3C specification providing guidance on accessibility
+of Web sites for people with disabilities. They have been developed by the
+W3C's <a href="http://www.w3.org/WAI" shape="rect">Web Accessibility Initiative</a>. The
+specification contains fourteen guidelines which are general principles of
+accessible design. Each guideline is associated with one or more checkpoints
+describing how to apply that guideline to particular features of Web pages.
+An appendix to the guidelines,
+"<a href="http://www.w3.org/TR/WAI-WEBCONTENT/full-checklist.html" shape="rect">List of
+Checkpoints for the Web Content Accessibility Guidelines 1.0</a>" presents
+the checkpoints sorted by priority for easy reference. These guidelines not
+only make pages more accessible to people with disabilities, but also have
+the side benefit of making pages more accessible to all users, or to users
+using different browsers or one of the emerging handheld or voice-based
+computers.
+</p>
+<h2>
+  <a name="conformance" id="conformance" shape="rect">2. What are the "priorities" and "conformance levels,"
+  and how does one use the logos?</a>
+</h2>
+<p>
+Each checkpoint is assigned one of three
+<a href="http://www.w3.org/TR/WAI-WEBCONTENT/wai-pageauth.html#priorities" shape="rect">priority
+levels</a>. Priority one is for checkpoints that a developer must satisfy
+otherwise some groups of people will be unable to access information on a
+site; priority two a developer should satisfy or else it will be very difficult
+to access information; priority three a developer may satisfy otherwise,
+some people will find it difficult to access information.</p>
+<p>
+The specification defines three
+"<a href="http://www.w3.org/TR/WAI-WEBCONTENT/wai-pageauth.html#Conformance" shape="rect">conformance
+levels</a>" to facilitate reference by other organizations. Conformance level
+"Single-A" includes priority one checkpoints; "Double-A" includes priority
+one and two; "Triple-A" includes priority one, two and three.</p>
+<p>
+For those whose pages follow the guidelines,
+<a href="http://www.w3.org/WAI/WCAG1-Conformance" shape="rect">logos</a> are available
+which can be placed on their site to show conformance. See question 13 for
+information on partially automated checkers to help in assessing sites.
+</p>
+<h2>
+  <a name="audience" id="audience" shape="rect">3. Who are these guidelines written for?</a>
+</h2>
+<p>
+The guidelines are written for a variety of audiences--people who are designing
+Web sites; people who are checking existing Web sites for accessibility;
+organizations that wish to require a given level of accessibility for their
+Web sites; and others who are interested in ensuring that people with
+disabilities can access information on the Web.</p>
+<h2>
+  <a name="need" id="need" shape="rect">4. Why are these guidelines needed? Why are they important?
+  </a>
+</h2>
+<p>
+People with different kinds of disabilities can experience difficulty using
+the Web due to a combination of barriers in the information on Web pages,
+and barriers in the "user agents" (browsers, multimedia players, or assistive
+technologies such as screen readers or voice recognition).</p>
+<p>
+The Web Content Accessibility Guidelines deal specifically with reduction
+of barriers on Web pages. For some people with disabilities, barriers can
+mean lack of access to information needed for educational programs; lack
+of access to employment-related information or workplace intranets; lack
+of access to information on civic activities or programs; inability to
+participate in E-Commerce; or prevent lack of access to information on the
+Web in general.</p>
+<h2>
+
+  <a name="demographics" id="demographics" shape="rect">5. How many people are affected by issues of Web
+  accessibility?</a>
+</h2>
+<p>
+The percentage of people with disabilities in many populations is between
+10% and 20%. Not all disabilities affect access to information technologies
+such as the Web (for instance, difficulty walking, or a heart condition,
+would not affect Web access) but many do.</p>
+<p>
+Just as with other parts of the population, not all people with disabilities
+have access to the Web. But the number of people using the Web is steadily
+increasing, and for people with disabilities access to this technology is
+sometimes even more critical than for the general population which may have
+an easier time accessing traditional sources of information such as print
+media.</p>
+<h2>
+  <a name="barriers" id="barriers" shape="rect">6. What are examples of some common barriers on Web
+  pages?</a>
+</h2>
+<p>
+These guidelines address barriers in Web pages which people with physical,
+visual, hearing, and cognitive/neurological disabilities may encounter. Common
+accessibility problems on Web sites include: images without alternative text;
+lack of alternative text for imagemap hot-spots; misleading use of structural
+elements on pages; uncaptioned audio or undescribed video; lack of alternative
+information for users who cannot access frames or scripts; tables that are
+difficult to decipher when linearized; or sites with poor color contrast.</p>
+<h2>
+  <a name="usability" id="usability" shape="rect">7. How will these guidelines affect usability and appearance
+  of sites for non-disabled users? </a>
+
+</h2>
+<p>
+Accessible Web sites can be just as creatively designed as inaccessible sites.
+The Web Content Accessibility Guidelines address how to make a large variety
+of Web features accessible, rather than recommending that sites be dull or
+boring. The goal is to ensure that all kinds of Web sites, including multimedia,
+work well for all users. In general, accessible Web sites don't need to be
+designed to be very different. They just need to be designed to be flexible;
+flexible so that users can operate them in different ways (with keyboard
+and mouse), and flexible so that they transform gracefully into intelligible
+and useful pages if particular technologies are not supported, or cannot
+be used by particular users or browsers.</p>
+<p>
+Many features of the guidelines will actually improve usability of Web sites
+for non-disabled users, by ensuring that sites are more easily navigable,
+and that they can be accessed through a variety of different kinds of devices
+rather than only a traditional graphical desk-top browser.</p>
+<h2>
+  <a name="text" id="text" shape="rect">8. Why don't the guidelines recommend using text-only pages?</a>
+</h2>
+<p>
+Text-only pages should not be necessary to ensure accessibility of Web pages
+that follow the "Web Content Accessibility Guidelines," except in very rare
+cases. In fact, text-only pages are frequently counterproductive to accessibility
+since they tend to be kept less up-to-date than "primary pages," or in some
+cases leave out information that is on primary pages.</p>
+<p>
+Many sites that have made a commitment to accessibility in the past have
+used text-only pages as a solution; however, by following these guidelines
+it should be unnecessary in almost all cases, or even inadvisable, to set
+up and maintain a separate set of text-only pages.</p>
+<h2>
+  <a name="cost" id="cost" shape="rect">9. Does it cost more to make a site accessible?</a>
+
+</h2>
+<p>
+Designing a new site to be accessible should not add significantly to development
+cost. Some aspects of accessibility, such as use of style sheets, can actually
+reduce the costs of maintaining or updating sites, and this benefit should
+increase over time as style sheets are more evenly implemented in browsers
+and available as an authoring strategy in authoring tools.</p>
+<p>
+For existing sites, the ease or difficulty of making sites accessible depends
+on a variety of factors, including the size of a site, the complexity of
+a site, and the authoring tool that was used to make a site. Periodic upgrades
+or reviews of sites can be good opportunities to review the accessibility
+of sites. When compared with the broader audience that a site is available
+to, and the greater usability for other users as well, accessible sites can
+be cost-effective.</p>
+<h2>
+  <a name="authoring" id="authoring" shape="rect">10. Are some authoring tools better for making accessible
+  sites than others?</a>
+</h2>
+<p>
+Key features to look for in Web authoring tools include production of valid
+HTML and CSS, support for key accessibility features in those specifications,
+and user-configurable prompting, alerts, validation and help for accessible
+authoring. Look for this information in product literature, or enquire of
+the authoring tool developer. For more information on authoring tool
+accessibility, see the W3C <a href="http://www.w3.org/TR/WAI-AUTOOLS" shape="rect">Authoring
+Tool Accessibility Guidelines</a>.</p>
+<h2>
+  <a name="required" id="required" shape="rect">11. Will these guidelines become a requirement? Are there
+  legal consequences for not making accessible pages?</a>
+
+</h2>
+<p>
+These guidelines are a specification developed by the W3C, an international,
+vendor-neutral industry consortium, and have been developed under W3C process.
+W3C is not a legislative body and the Web Content Accessibility Guidelines
+specification is not a regulation. The guidelines may be informally or formally
+adopted by different kinds of organizations to clarify what level of
+accessibility that organization requires for particular Web sites. If you
+would like to learn more about specific laws or policies in different countries
+which have bearing on accessibility requirements for Web sites, some of these
+are available in the <a href="http://www.w3.org/WAI/References/Policy" shape="rect">policy
+references</a> section of the WAI site. Please contact the relevant legal
+authority for more details on obligations and/or enforcement.</p>
+<h2>
+  <a name="supporting" id="supporting" shape="rect">12. What supporting resources are available for using
+  these guidelines?</a>
+</h2>
+<p>
+The two most important documents for using the guidelines are linked directly
+from the guidelines themselves. The
+"<a href="http://www.w3.org/TR/WAI-WEBCONTENT/full-checklist.html" shape="rect">List of
+Checkpoints</a>," an appendix to the guidelines, groups the checkpoints by
+priority and type for ease of reference. The
+"<a href="http://www.w3.org/TR/WAI-WEBCONTENT/wai-pageauth-tech.html" shape="rect">Techniques</a>"
+document explains how to mark-up different accessibility features in various
+mark-up languages.
+</p>
+<p>
+In addition, the Web Accessibility Initiative International Program Office's
+work includes education and outreach activities. As a result, WAI frequently
+adds resources which may be helpful in training, reference, or on-line
+instruction. There is a very short
+"<a href="http://www.w3.org/WAI/References/QuickTips" shape="rect">Quick Tips</a>" reference
+card available in a business-card sized format, providing reminders of key
+concepts in the guidelines. There are
+<a href="http://www.w3.org/WAI/#Resources" shape="rect">technical references</a> on the
+accessibility features in HTML and CSS. There is a reference list of browsers
+which links to information on access features of different browsers. At the
+time of this release WAI is developing an on-line curriculum to accompany
+the Web Content Accessibility Guidelines. These and more resources are available
+from the <a href="http://www.w3.org/WAI" shape="rect">WAI home page</a>.</p>
+<h2>
+  <a name="tools" id="tools" shape="rect">13. Are there tools that can help me? Can I test the
+  accessibility of my site?</a>
+</h2>
+<p>
+There are an increasing number of tools that can help in designing or evaluating
+accessibility of sites. Around the time of this release,
+"<a href="http://www.cast.org/bobby" shape="rect">Bobby</a>," which is an accessibility
+checker developed by the Center for Applied Special Technology (CAST), will
+be updated to perform an automated on-line test of many of the checkpoints
+that are part of the "<a href="http://www.w3.org/TR/WAI-WEBCONTENT" shape="rect">Web Content
+Accessibility Guidelines 1.0</a>." Such accessibility checkers can often
+help with an initial identification of barriers on a site. Because no tool
+can perform a complete automated test of accessibility, and because false
+positives and false negatives are possible on some sites, claims of a particular
+conformance level must rely on manual checking as well. In using any evaluation
+tool or logo, including <a href="http://www.w3.org/WAI/WCAG1-Conformance" shape="rect">WAI's
+logos</a>, it is important to examine what document version the tool or logo
+is synchronized with, and any additional information about how it is intended
+to be used.
+</p>
+<p>
+Additional tools under development include tools to help retrofit sites and
+plug-ins to assist legacy browsers in properly rendering newer mark-up. WAI
+conducts working and interest groups focusing on evaluation and repair tools,
+and helps coordinate the efforts of developers involved in building various
+tools to help with accessibility.</p>
+<h2>
+  <a name="important" id="important" shape="rect">14. What is the most important thing to understand in
+  terms of making a site accessible?</a>
+</h2>
+<p>
+The most important thing to understand in terms of making a site accessible
+is that people use the Web in very different ways. A site should therefore
+present information in a way that people can access it regardless of what
+kind of hardware or software they are using, and regardless of how they navigate
+through a site. Web designers cannot assume that everyone uses the same kinds
+of devices the same way.</p>
+<h2>
+  <a name="stable" id="stable" shape="rect">15. Will the guidelines be stable across evolving Web
+  technologies?</a>
+</h2>
+<p>
+The Web Content Accessibility Guidelines are designed to be both
+forwards-compatible and backwards-compatible to the greatest extent possible
+within the context of evolving Web technologies. Within the document, the
+fourteen guidelines focus on principles of accessible design and are abstract
+enough to be stable over time. Each set of checkpoints associated with a
+particular guideline is specific to a particular feature of Web pages, but
+still general to a variety of mark-up and presentation languages, and therefore
+expected to be relatively stable over time. Certain checkpoints include the
+phrase "until user agents..." because, as browsers and assistive technologies
+such as screen readers evolve, they will be able to automatically handle
+certain items that currently create barriers on pages.</p>
+<p>
+
+The separate
+"<a href="http://www.w3.org/TR/WAI-WEBCONTENT/wai-pageauth-tech.html" shape="rect">Techniques</a>"
+document, which is not part of the normative guidelines document, is specific
+to individual mark-up languages, and will be updated more frequently as
+technologies evolve.</p>
+<h2>
+  <a name="involved" id="involved" shape="rect">16. Who has been involved in developing these
+  guidelines?</a>
+</h2>
+<p>
+As Members in an international industry consortium, W3C 's 300+
+<a href="http://www.w3.org/Consortium/Member/List" shape="rect">Member organizations</a>
+have had frequent opportunities to review and comment on the guidelines as
+they have evolved, and some Member organizations have participated directly
+in the Web Content Guidelines Working Group, or in the WAI Interest Group
+which provides on-going discussion and input to WAI working groups on Web
+accessibility needs and solutions. In addition W3C's Web Accessibility Initiative
+provides a forum for disability organizations, accessibility research centers,
+and government to participate with industry representatives under W3C process.
+Participation in the Web Content Accessibility Guidelines has included
+representation from all of these areas, with extensive international
+participation. As a W3C Recommendation, this specification has undergone
+formal review by W3C Member organizations and all comments raised have been
+addressed.</p>
+<h2>
+  <a name="examples" id="examples" shape="rect">17. What Web sites are already using these guidelines?
+  Can I see examples?</a>
+
+</h2>
+<p>
+The release of the Web Content Accessibility Guidelines as a
+<a href="http://www.w3.org/TR/#About" shape="rect">Recommendation</a> signified its
+stabilization. WAI has received commitments from a variety of organizations
+who plan for their sites to conform with the guidelines. Many sites are
+expressing interest in conforming at the "Double-A" level , meaning all priority
+one and two checkpoints. As sites implement the guidelines, WAI will provide
+links to a sampling of sites where there is a commitment to maintain at least
+a Double-A conformance rating. Please visit the WAI home page for more
+information.</p>
+<h2>
+  <a name="other" id="other" shape="rect">18. How are these guidelines related to the other WAI guidelines,
+  and other WAI work?</a>
+</h2>
+<p>
+The Web Content Accessibility Guidelines address one aspect of the accessibility
+equation -- how accessible is the content on a site. A second part of the
+equation is the accessibility of browsers, which WAI is addressing that through
+a set of "<a href="http://www.w3.org/TR/WAI-USERAGENT" shape="rect">User Agent Accessibility
+Guidelines</a>." A third part of the equation is accessibility of the authoring
+tools used to develop sites, which is addressed through the
+"<a href="http://www.w3.org/TR/WAI-AUTOOLS" shape="rect">Authoring Tool Accessibility
+Guidelines</a>." If authoring tools become more supportive of accessible
+authoring, it will greatly facilitate the accessible content creation.
+</p>
+<p>
+In addition to guidelines development, WAI also works internally within W3C
+on ensuring that the technologies of the Web, such as HTML, CSS, SMIL, XML,
+DOM, etc., support accessibility. WAI coordinates with other organizations
+to develop tools which can assist in evaluation, and retrofitting pages and
+providing proxy solutions to support accessibility. WAI has an active education
+and outreach effort, and some activity coordinating with research and development
+which can affect future Web access.</p>
+<h2>
+  <a name="more" id="more" shape="rect">19. How does one learn more about accessibility and WAI?</a>
+</h2>
+<p>
+The WAI home page, at
+<a href="http://www.w3.org/WAI" shape="rect">http://www.w3.org/WAI</a>, has up-to-date
+information on all the resources of the Web Accessibility Initiative. There
+are resource and reference areas which are updated frequently; lists of upcoming
+events; links to WAI's many working groups and interest groups; and an overall
+interest group for general discussion of Web accessibility issues. There
+are a great many organizations doing excellent work in the area of Web
+accessibility, and many of these participate in WAI. WAI's reference links
+provide a start to finding many of these organizations.</p>
+<h2>
+  <a name="W3Crole" id="W3Crole" shape="rect">20. What is the role of W3C in Web accessibility?</a>
+</h2>
+<p>
+
+<a href="http://www.w3.org" shape="rect">W3C</a>'s mission is to promote the evolution
+and interoperability of the Web. The Web Accessibility Initiative, hosted
+by the W3C, is an essential aspect of the work needed to promote the universality
+of the Web.</p>
+<p>  </p>
+<hr />
+<h2>
+  About the Web Accessibility Initiative
+</h2>
+<p>
+W3C's Web Accessibility Initiative (WAI), in partnership with organizations
+around the world, is pursuing accessibility of the Web through five complementary
+activities: ensuring that the core technologies of the Web support accessibility;
+developing guidelines for page authoring, user agents, and authoring tools;
+developing evaluation and repair tools for accessibility; conducting education
+and outreach; and tracking research and development that can affect the future
+accessibility of the Web. The WAI International Program Office is supported
+in part by funding from the U.S. National Science Foundation, U.S. Department
+of Education's National Institute on Disability and Rehabilitation Research,
+European Commission's DG XIII Telematics Applications Programme for Disabled
+and Elderly, the Government of Canada, IBM, Lotus Development Corporation,
+Microsoft Corporation, and NCR. For more information on the Web Accessibility
+Initiative, see <a href="http://www.w3.org/WAI" shape="rect">http://www.w3.org/WAI</a></p>
+<!-- end main -->
+<h2>Related Documents </h2>
+<ul>
+  <li><a href="/1999/05/WCAG-RECPressRelease" shape="rect">Press Release <img src="/Icons/tr.png" alt="different format" /></a></li>
+  <li><a href="/1999/05/WCAG-REC-test" shape="rect">Testimonials <img src="/Icons/tr.png" alt="different format" /></a></li>
+</ul>
+</div>
+<div id="footer">
+  <h2>Document Information</h2>
+<p><strong>Version 1.0 May 1999</strong></p>
+  <p>[<a href="/WAI/contacts" shape="rect">Contacting WAI</a>] Feedback welcome to <a href="mailto:wai-eo-editors@w3.org" shape="rect">wai-eo-editors@w3.org</a> 
+    (a publicly archived list).</p>
+
+<div class="copyright"><p><a rel="Copyright" href="/Consortium/Legal/ipr-notice#Copyright" shape="rect">Copyright</a> © 1994-2008
+<a href="/" shape="rect"><acronym title="World Wide Web Consortium">W3C</acronym></a><sup>®</sup> (<a href="http://www.csail.mit.edu/" shape="rect"><acronym title="Massachusetts Institute of Technology">MIT</acronym></a>, <a href="http://www.ercim.org/" shape="rect"><acronym title="European Research Consortium for Informatics and Mathematics">ERCIM</acronym></a>,
+<a href="http://www.keio.ac.jp/" shape="rect">Keio</a>), All Rights Reserved. W3C
+<a href="/Consortium/Legal/ipr-notice#Legal_Disclaimer" shape="rect">liability</a>,
+
+<a href="/Consortium/Legal/ipr-notice#W3C_Trademarks" shape="rect">trademark</a>,
+<a rel="Copyright" href="/Consortium/Legal/copyright-documents" shape="rect">document use</a> and <a rel="Copyright" href="/Consortium/Legal/copyright-software" shape="rect">software
+licensing</a> rules apply. Your interactions with this site are in
+accordance with our <a href="/Consortium/Legal/privacy-statement#Public" shape="rect">public</a> and <a href="/Consortium/Legal/privacy-statement#Members" shape="rect">Member</a> privacy
+statements.</p></div>
+<!-- end footer --></div>
+</body>
+</html>

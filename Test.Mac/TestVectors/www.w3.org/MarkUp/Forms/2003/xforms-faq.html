@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+       "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+  <title>XForms 1.0 Frequently Asked Questions</title>
+  <link href="http://www.w3.org/StyleSheets/TR/base.css" rel="stylesheet"
+  type="text/css" />
+</head>
+
+<body>
+<p><img src="http://www.w3.org/Icons/WWW/w3c_home" alt="W3C" /></p>
+
+<h1 class="title">XForms 1.0 Frequently Asked Questions</h1>
+
+<h2 class="author">W3C Forms Working Group</h2>
+
+<p>This document is being put together by the members of the W3C XForms
+Working Group as a repository of Frequently Asked Questions about XForms
+1.0.</p>
+
+<p>Please send suggestions or comments about this FAQ to www-forms@w3.org (<a
+href="http://lists.w3.org/Archives/Public/www-forms/">archives</a>),
+including the word FAQ in the subject line.</p>
+
+<h2>Table of Contents</h2>
+<ul>
+  <li><a href="#advantages">What are the advantages of XForms?</a></li>
+  <li><a href="#new">What can I do with XForms that I can't do with old HTML
+    Forms?</a></li>
+  <li><a href="#complicated">Is XForms more complicated than HTML
+  Forms?</a></li>
+  <li><a href="#browsers">Will we have to wait for new browsers?</a></li>
+  <li><a href="#pdas">Will XForms work on PDAs and mobile phones?</a></li>
+  <li><a href="#servers">What servers (currently) support XForms?</a></li>
+  <li><a href="#who">Who is backing XForms?</a></li>
+  <li><a href="#others">Aren't other companies also coming with new forms
+    technologies too?</a></li>
+  <li><a href="#resources">What other resources are there?</a></li>
+</ul>
+
+<h2 id="advantages">What are the advantages of XForms?</h2>
+
+<p>Here are the primary benefits:</p>
+<dl>
+  <dt>XForms improves the user experience</dt>
+    <dd>XForms has been designed to allow much to be checked by the browser,
+      such as types of fields being filled in, that a particular field is
+      required, or that one date is later than another. This reduces the need
+      for round trips to the server or for extensive script-based solutions,
+      and improves the user experience by giving immediate feedback to what
+      is being filled in.</dd>
+  <dt>It is XML, and it can submit XML</dt>
+    <dd>XForms is properly integrated into XML: it is in XML, the data it
+      collects in the form is XML, it can load external XML documents as
+      initial data, and can submit the results as XML. By including the user
+      in the XML pipeline, it at last means you can have end-to-end XML,
+      right up to the user's desktop.</dd>
+  <dt>It combines existing XML technologies</dt>
+    <dd>Rather than reinventing the wheel, XForms uses a number of existing
+      XML technologies, such as XPath for addressing and calculating values,
+      and XML Schema for defining data types. This has a dual benefit: ease
+      of learning for people who already know these technologies, and the
+      ability for implementors to use off-the-shelf components to build their
+      systems.</dd>
+  <dt>It is device independent</dt>
+    <dd>The same form can be delivered <em>without change</em> to a
+      traditional browser, a PDA, a mobile phone, a voice browser, and even
+      some more exotic emerging clients such as an Instant Messenger. This
+      greatly eases providing forms to a wide audience, since forms only need
+      to be authored once.</dd>
+  <dt>It is easier to author complicated forms</dt>
+    <dd>Because XForms uses declarative markup to declare properties of
+      values, and to build relationships between values, it is much easier
+      for the author to create complicated, adaptive, forms, without having
+      to resort to scripting.</dd>
+  <dt>It is internationalized</dt>
+    <dd>Because the data submitted is XML, it is properly
+    internationalized.</dd>
+  <dt>It is accessible</dt>
+    <dd>XForms has been designed so that it will work equally well with
+      accessible technologies (for instance for blind users) as with
+      traditional visual browsers.</dd>
+</dl>
+
+<h2 id="new">What can I do with XForms that I can't do with old HTML
+Forms?</h2>
+
+<p>XForms can do everything that HTML Forms can do, and then some. In
+particular XForms lets you:</p>
+<ul>
+  <li>Check data values while the user is typing them in.</li>
+  <li>Indicate that certain fields are required, and that the form cannot be
+    submitted without them.</li>
+  <li>Submit forms data as XML.</li>
+  <li>Integrate with Web services, for instance by using SOAP and XML
+  RPC.</li>
+  <li>Submit the same form to different servers (for instance a search string
+    to different search engines).</li>
+  <li>Save and restore values to and from a file.</li>
+  <li>Use the result of a submit as input to a further form.</li>
+  <li>Get the initial data for a form from an external document.</li>
+  <li>Calculate submitted values from other values.</li>
+  <li>Constrain values in certain ways, such as requiring them to be in a
+    certain range.</li>
+  <li>Build 'shopping basket' and 'wizard' style forms without needing to
+    resort to scripting.</li>
+</ul>
+
+<h2 id="complicated">Is XForms more complicated than HTML Forms?</h2>
+
+<p>No. The XForms Recommendation may make it look complicated, but it is not
+a tutorial on XForms; it is addressed to implementors who need to know exact
+details about how to implement XForms, and so is very detailed.</p>
+
+<p>The same form written in HTML Forms and XForms looks pretty much the same.
+It is when you start to design forms that HTML wasn't designed to handle that
+XForms starts to become much simpler. So XForms contains things that HTML
+Forms doesn't, but that is in order to make forms creation simpler. See <a
+href="http://www.w3.org/MarkUp/Forms/2003/xforms-for-html-authors.html">XForms
+for HTML Authors</a> for examples.</p>
+
+<h2 id="browsers">Will we have to wait for new browsers?</h2>
+
+<p>No. There are already several implementations that let you use XForms with
+existing browsers, either with plugins or by transforming the forms at the
+server, as well as a number of browsers that implement XForms natively.</p>
+
+<p>There is a list of <a
+href="http://www.w3.org/MarkUp/Forms/#implementations">XForms
+Implementations</a> that contains details of many of these implementations;
+an <a href="http://www.xml.com/pub/a/2003/09/10/xforms.html">editorial
+review</a> including screen shots of some of them, can be found at
+xml.com.</p>
+
+<h2 id="pdas">Will XForms work on PDAs and mobile phones?</h2>
+
+<p>At the time of writing XForms has been demonstrated on PDAs and mobile
+phones using proxies, using the same techniques that are often used to
+present web content on smaller devices. We anticipate that native XForms
+clients will appear on mobile devices soon.</p>
+
+<h2 id="servers">What servers (currently) support XForms?</h2>
+
+<p>All of them! XForms has several new submission methods compared with HTML
+Forms, but these are all standard HTTP methods for sending data over the
+network. XForms can use 'PUT' to put data to a server, can talk to a SOAP or
+XML RPC server, but also supports legacy formats allowing forms to work with
+all existing forms servers.</p>
+
+<h2 id="who">Who is backing XForms?</h2>
+
+<p>The XForms working group that created XForms contains representatives from
+many major computing companies, see the <a
+href="http://www.w3.org/2003/10/xforms-pressrelease">press-release</a> and <a
+href="http://www.w3.org/2003/10/xforms-testimonial">testimonials</a> about
+XForms for details. On top of this there are a <a
+href="http://www.w3.org/MarkUp/Forms/#implementations">large number of
+implementations</a> emerging. In fact XForms is the most-implemented W3C
+specification ever at this stage in its life-cycle.</p>
+
+<p>Some large user populations are beginning to emerge, including the British
+Government's e-government initiative, one country's tax service, and a
+country's insurance industry.</p>
+
+<h2 id="others">Aren't other companies also coming with new forms
+technologies too?</h2>
+
+<p>That's right. Forms were the basis of the e-commerce revolution and they
+are still a hot topic! However, the many companies backing XForms believe
+that there are advantages in using a non-proprietary technology that is based
+on common standards, and not tied to a single vendor. It means a wealth of
+user agents on a variety of platforms. Furthermore, we believe that once you
+have appreciated the advantages of the XForms approach -- authoring once for
+multiple platforms, integration in XML, ability to 'edit' external XML
+documents -- you will want no other!</p>
+
+<h2 id="resources">What other resources are there?</h2>
+
+<p>The <a href="http://www.w3.org/MarkUp/Forms/">XForms home page</a> is a
+good source of information about XForms.</p>
+
+<p>There are books about XForms appearing, and a search for "XForms" at any
+well known online bookstore will reveal them.</p>
+
+<p>There is an introduction to <a
+href="http://www.w3.org/MarkUp/Forms/2003/xforms-for-html-authors.html">XForms
+for HTML Authors</a>.</p>
+</body>
+</html>

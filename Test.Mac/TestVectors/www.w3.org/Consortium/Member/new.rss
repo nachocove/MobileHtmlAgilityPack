@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:dc="http://purl.org/dc/elements/1.1/"
+  xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+  xmlns:cc="http://web.resource.org/cc/"
+  xmlns="http://purl.org/rss/1.0/">
+
+<channel rdf:about="http://www.w3.org/Consortium/Member/List">
+<title>New W3C Members</title>
+<link>http://www.w3.org/Consortium/Member/List</link>
+<description></description>
+<dc:language>en</dc:language>
+<dc:creator>W3C Staff and Contributors</dc:creator>
+
+<dc:date>2014-11-24T20:16:59+00:00</dc:date>
+<items>
+<rdf:Seq>
+<rdf:li rdf:resource="http://dublincore.org" />
+<rdf:li rdf:resource="https://www.gov.uk" />
+<rdf:li rdf:resource="http://www.bpce.fr" />
+<rdf:li rdf:resource="http://workingontologist.com/" />
+<rdf:li rdf:resource="http://lepidum.co.jp/" />
+<rdf:li rdf:resource="http://www.audyx.com" />
+<rdf:li rdf:resource="http://www.allerin.com" />
+<rdf:li rdf:resource="http://www.shiftmobility.com" />
+<rdf:li rdf:resource="http://www.html5forum.or.kr" />
+<rdf:li rdf:resource="http://www.target.com" />
+</rdf:Seq>
+</items>
+</channel>
+<item rdf:about="http://dublincore.org">
+<title>Dublin Core Metadata Initiative (DCMI) joined W3C</title>
+<link>http://dublincore.org</link>
+<description>        <![CDATA[<p>Dublin Core Metadata Initiative (DCMI) joined as a new W3C Member.</p>]]>
+</description>
+<dc:subject>W3C Membership</dc:subject>
+<dc:language>en</dc:language>
+<dc:date>2014-11-24T20:16:57+00:00</dc:date>
+</item><item rdf:about="https://www.gov.uk">
+<title>HM Government joined W3C</title>
+<link>https://www.gov.uk</link>
+<description>        <![CDATA[<p>HM Government joined as a new W3C Member.</p>]]>
+</description>
+<dc:subject>W3C Membership</dc:subject>
+<dc:language>en</dc:language>
+<dc:date>2014-11-18T10:56:15+00:00</dc:date>
+</item><item rdf:about="http://www.bpce.fr">
+<title>GROUPE BPCE joined W3C</title>
+<link>http://www.bpce.fr</link>
+<description>        <![CDATA[<p>GROUPE BPCE joined as a new W3C Member.</p>]]>
+</description>
+<dc:subject>W3C Membership</dc:subject>
+<dc:language>en</dc:language>
+<dc:date>2014-11-12T06:59:22+00:00</dc:date>
+</item><item rdf:about="http://workingontologist.com/">
+<title>Working Ontologist LLC joined W3C</title>
+<link>http://workingontologist.com/</link>
+<description>        <![CDATA[<p>Working Ontologist LLC joined as a new W3C Member.</p>]]>
+</description>
+<dc:subject>W3C Membership</dc:subject>
+<dc:language>en</dc:language>
+<dc:date>2014-11-04T15:03:34+00:00</dc:date>
+</item><item rdf:about="http://lepidum.co.jp/">
+<title>Lepidum Company Limited joined W3C</title>
+<link>http://lepidum.co.jp/</link>
+<description>        <![CDATA[<p>Lepidum Company Limited joined as a new W3C Member.</p>]]>
+</description>
+<dc:subject>W3C Membership</dc:subject>
+<dc:language>en</dc:language>
+<dc:date>2014-10-24T01:21:33+00:00</dc:date>
+</item><item rdf:about="http://www.audyx.com">
+<title>Audyx joined W3C</title>
+<link>http://www.audyx.com</link>
+<description>        <![CDATA[<p>Audyx joined as a new W3C Member.</p>]]>
+</description>
+<dc:subject>W3C Membership</dc:subject>
+<dc:language>en</dc:language>
+<dc:date>2014-10-23T10:09:49+00:00</dc:date>
+</item><item rdf:about="http://www.allerin.com">
+<title>Allerin joined W3C</title>
+<link>http://www.allerin.com</link>
+<description>        <![CDATA[<p>Allerin joined as a new W3C Member.</p>]]>
+</description>
+<dc:subject>W3C Membership</dc:subject>
+<dc:language>en</dc:language>
+<dc:date>2014-10-21T11:23:40+00:00</dc:date>
+</item><item rdf:about="http://www.shiftmobility.com">
+<title>SHIFTMobility Inc. joined W3C</title>
+<link>http://www.shiftmobility.com</link>
+<description>        <![CDATA[<p>SHIFTMobility Inc. joined as a new W3C Member.</p>]]>
+</description>
+<dc:subject>W3C Membership</dc:subject>
+<dc:language>en</dc:language>
+<dc:date>2014-10-17T10:04:52+00:00</dc:date>
+</item><item rdf:about="http://www.html5forum.or.kr">
+<title>HTML5 Converged Technology Forum joined W3C</title>
+<link>http://www.html5forum.or.kr</link>
+<description>        <![CDATA[<p>HTML5 Converged Technology Forum joined as a new W3C Member.</p>]]>
+</description>
+<dc:subject>W3C Membership</dc:subject>
+<dc:language>en</dc:language>
+<dc:date>2014-10-15T05:43:09+00:00</dc:date>
+</item><item rdf:about="http://www.target.com">
+<title>Target joined W3C</title>
+<link>http://www.target.com</link>
+<description>        <![CDATA[<p>Target joined as a new W3C Member.</p>]]>
+</description>
+<dc:subject>W3C Membership</dc:subject>
+<dc:language>en</dc:language>
+<dc:date>2014-10-14T13:01:44+00:00</dc:date>
+</item></rdf:RDF>

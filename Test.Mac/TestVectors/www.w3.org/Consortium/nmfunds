@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+    "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+    <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=iso-8859-1"/>
+    <title>Thank You, W3C Funders    </title>
+      <link type="text/css" rel="stylesheet"
+       href="http://www.w3.org/StyleSheets/TR/base.css" />
+      <style type="text/css">
+
+        table {
+           clear:both
+        }
+
+	table th, table td {
+	  text-align: left;
+	  padding: .5em 1em .5em 0 !important;
+	}
+
+	table, table th, table td {
+	  background: transparent;
+	  vertical-align: top;
+	}
+
+	table td { 
+	  border-top: 1px solid #777;
+	  font-size: smaller;
+	}
+
+        .details { font-size: smaller }
+  
+        .funders {
+         padding: 1em;
+         border: thin black solid;
+         background: #fffbd5;
+         width: 80%;
+        }
+       
+        .fundlist {
+         clear: right;
+         list-style-type: square;
+         list-style-position: inside;
+         padding-left: 0;
+         margin-left: 1em; 
+         margin-bottom: 1.5em;
+         }
+
+        .fundlist li {
+         color: #4e7b9f;
+         padding-left: 0;
+         margin-left: 0;
+        }
+
+        .fundlist li span {
+         color: black;
+         background: inherit;
+        }
+      </style>
+    </head>
+    <body>   
+    <p><a href="/"><img src="http://www.w3.org/Icons/w3c_home.png" alt="W3C"
+      /></a></p><div style="float: right; margin-left: 1em; margin-top: 0 "><img style="border: thin black solid; padding: 0"  src="http://www.w3.org/2007/01/w3c10.jpg"
+    alt="W3C10 Scene"/>
+    <p style="text-align: center; font-style: italic">
+    W3C Staff and Members Celebrating <a href="/2004/09/W3C10">W3C10 in Boston</a>
+    </p></div><h1>Thank You, W3C Funders</h1> 
+    <p>W3C is deeply grateful to the organizations listed below for
+    their current financial support.  These grants, external contracts,
+    and other <strong>funding outside Member dues</strong>
+    support a variety of work at W3C, including
+    Member-approved <a href="/Consortium/activities">Activities</a>
+    (including Working Groups), W3C public communications, and W3C
+    internal operations. They also help connect W3C to important
+    communities and developments in emerging technologies and research.
+    </p>
+
+    <p>W3C is the leading standards body for
+    Web technology thanks to the support it receives from funders,
+    <a href="/Consortium/Member/List">W3C Members</a>, the
+    <a href="/Consortium/Recruitment/Fellows">W3C Fellows Program</a>, and
+    contributions through the <a
+    href="/Consortium/sup">W3C Supporters Program</a>.</p>
+    <h3>Summary of Current W3C Funding Sources Outside Member
+    Dues</h3><p>This is the list of current 
+       W3C funding sources outside Member dues.
+See below for <a href="#current-details">details of current sources</a> .</p>    <div class="current funders">
+    <ul class="fundlist"><li><a class="funder" href="http://www.compose-project.eu/">Collaborative Open Market to Place Objects at your Service (Compose)</a> <span class="details">[<a href="#details1">details</a>]</span></li><li><a class="funder" href="http://dcentproject.eu">Decentralised Citizen ENgagement Technologies (D-CENT)</a> <span class="details">[<a href="#details2">details</a>]</span></li><li><a class="funder" href="http://www.globalitv.eu/ ">GlobalITV</a> <span class="details">[<a href="#details3">details</a>]</span></li><li><a class="funder" href="http://html5apps-project.eu/">HTML5Apps</a> <span class="details">[<a href="#details4">details</a>]</span></li><li><a class="funder" href="http://mediascapeproject.eu/">Mediascape</a> <span class="details">[<a href="#details5">details</a>]</span></li><li><a class="funder" href="http://www.primelife.eu/">Privacy and Identity Management in Europe for Life (PrimeLife)</a> <span class="details">[<a href="#details6">details</a>]</span></li><li><a class="funder" href="http://www.w3.org/2013/share-psi/">Share-PSI 2.0 (Share-PSI)</a> <span class="details">[<a href="#details7">details</a>]</span></li><li><a class="funder" href="http://www.smartopendata.eu/">SmartOpenData (SmOD)</a> <span class="details">[<a href="#details8">details</a>]</span></li><li><span class="funder">TPWG Chair Support (tpwgchair)</span> <span class="details">[<a href="#details9">details</a>]</span></li><li><span class="funder">W3C Fellow (U.Edinburgh) (University of Edinburgh)</span> <span class="details">[<a href="#details10">details</a>]</span></li><li><a class="funder" href="http://w3.org/conf">W3Conf Developer Conference (W3Conf)</a> <span class="details">[<a href="#details11">details</a>]</span></li><li><span class="funder">WAI Core</span> <span class="details">[<a href="#details12">details</a>]</span></li><li><span class="funder">WAI Sponsors</span> <span class="details">[<a href="#details13">details</a>]</span></li><li><span class="funder">WAI-DEV</span> <span class="details">[<a href="#details14">details</a>]</span></li><li><span class="funder">WebPlatform Stewards (WebPlatform)</span> <span class="details">[<a href="#details15">details</a>]</span></li>    </ul>
+    </div>
+  <p>If you are participating in an EU Project, please see our documentation on <a href="http://www.w3.org/participate/eu-research.html">participation in W3C by EU-funded projects</a>.</p>
+    <p>If your organization wishes to join this list of funders,
+    please contact the W3C Communications Team at w3t-pr@w3.org.</p>
+
+    <p>We would also like to thank the 
+       individuals who have worked diligently to secure this funding
+       for W3C.</p>  
+  <h2 id="current-details">Details About Current Funding Sources</h2>
+
+  <p>These are details about current W3C funding sources outside Member dues.</p>
+  <table cellspacing="0">
+  <thead>
+  <tr>
+    <th>Funding name</th>
+    <th>Funding source(s)</th>
+    <th>Managed by</th>
+    <th>Secured by</th>
+    <th>Work supported</th>
+    <th>Starts</th>
+    <th>Ends</th>
+  </tr>
+  </thead>
+  <tbody><tr><td><a id='details1'></a><a class="funder" href="http://www.compose-project.eu/">Collaborative Open Market to Place Objects at your Service (Compose)</a></td><td><a href='http://europa.eu/'>European Commission</a></td><td>Philipp Hoschka</td><td>Philipp Hoschka</td><td></td><td>Nov 2012</td><td>Oct 2015</td></tr>
+<tr><td><a id='details2'></a><a class="funder" href="http://dcentproject.eu">Decentralised Citizen ENgagement Technologies (D-CENT)</a></td><td><a href='http://europa.eu/'>European Commission</a></td><td>Harry Halpin</td><td>Harry Halpin</td><td><a href='http://www.w3.org/Social/'>Social</a></td><td>Jan 2014</td><td>May 2016</td></tr>
+<tr><td><a id='details3'></a><a class="funder" href="http://www.globalitv.eu/ ">GlobalITV</a></td><td><a href='http://europa.eu/'>European Commission</a></td><td>Philipp Hoschka</td><td>Philipp Hoschka</td><td></td><td>Dec 2013</td><td>Nov 2015</td></tr>
+<tr><td><a id='details4'></a><a class="funder" href="http://html5apps-project.eu/">HTML5Apps</a></td><td><a href='http://europa.eu/'>European Commission</a></td><td>Philipp Hoschka</td><td>Philipp Hoschka</td><td></td><td>Oct 2013</td><td>Sep 2015</td></tr>
+<tr><td><a id='details5'></a><a class="funder" href="http://mediascapeproject.eu/">Mediascape</a></td><td><a href='http://europa.eu/'>European Commission</a></td><td>Philipp Hoschka</td><td>Philipp Hoschka</td><td></td><td>Oct 2013</td><td>Jun 2016</td></tr>
+<tr><td><a id='details6'></a><a class="funder" href="http://www.primelife.eu/">Privacy and Identity Management in Europe for Life (PrimeLife)</a></td><td><a href='http://cordis.europa.eu/ist/'>Information Society Technologies</a></td><td>Rigo Wenning</td><td>Rigo Wenning,  , Carine Bournez</td><td><a href='http://www.w3.org/Privacy/'>Privacy</a></td><td>Mar 2008</td><td>Dec 2014</td></tr>
+<tr><td><a id='details7'></a><a class="funder" href="http://www.w3.org/2013/share-psi/">Share-PSI 2.0 (Share-PSI)</a></td><td><a href='http://europa.eu/'>European Commission</a></td><td>Phil Archer</td><td>Phil Archer</td><td></td><td>Feb 2014</td><td>Jul 2016</td></tr>
+<tr><td><a id='details8'></a><a class="funder" href="http://www.smartopendata.eu/">SmartOpenData (SmOD)</a></td><td><a href='http://europa.eu/'>European Commission</a></td><td>Phil Archer</td><td>Phil Archer</td><td></td><td>Nov 2013</td><td>Oct 2015</td></tr>
+<tr><td><a id='details9'></a><span class="funder">TPWG Chair Support (tpwgchair)</span></td><td><a href='http://www.w3.org/2011/tracking-protection/'>TPWG Sponsors</a></td><td>Wendy Seltzer</td><td></td><td></td><td>May 2014</td><td>open</td></tr>
+<tr><td><a id='details10'></a><span class="funder">W3C Fellow (U.Edinburgh) (University of Edinburgh)</span></td><td><a href='uri to funding source description'>W3C Fellow (U.Edinburgh)</a></td><td>Harry Halpin</td><td>Harry Halpin</td><td></td><td>Mar 2009</td><td>Dec 2014</td></tr>
+<tr><td><a id='details11'></a><a class="funder" href="http://w3.org/conf">W3Conf Developer Conference (W3Conf)</a></td><td><a href='http://w3.org/conf'>W3Conf Developer Conference</a></td><td>Doug Schepers</td><td>Doug Schepers</td><td></td><td>Nov 2011</td><td>open</td></tr>
+<tr><td><a id='details12'></a><span class="funder">WAI Core</span></td><td><a href='http://www.ed.gov/'>US Department of Education, National Institute on Disability and Rehabilitation Research</a></td><td>Judy Brewer</td><td>Judy Brewer</td><td><a href='http://www.w3.org/WAI/Technical/'>WAI Technical Activity</a></td><td>Oct 2010</td><td>Sep 2015</td></tr>
+<tr><td><a id='details13'></a><span class="funder">WAI Sponsors</span></td><td><a href='http://www.w3.org/WAI/Sponsor'>WAI Sponsorship</a></td><td>Judy Brewer</td><td>Judy Brewer</td><td><a href='http://www.w3.org/WAI/IPO/'>WAI International Program Office</a>, <a href='http://www.w3.org/WAI/Technical/'>WAI Technical Activity</a></td><td>Sep 1997</td><td>open</td></tr>
+<tr><td><a id='details14'></a><span class="funder">WAI-DEV</span></td><td><a href='http://europa.eu/'>European Commission</a></td><td>Shadi Abou-Zahra</td><td>Shadi Abou-Zahra</td><td><a href='http://www.w3.org/WAI/IPO/'>WAI International Program Office</a>, <a href='http://www.w3.org/WAI/Technical/'>WAI Technical Activity</a></td><td>Apr 2014</td><td>Mar 2016</td></tr>
+<tr><td><a id='details15'></a><span class="funder">WebPlatform Stewards (WebPlatform)</span></td><td><a href='http://WebPlatform.org'>WebPlatform Stewards</a></td><td>Doug Schepers</td><td>Doug Schepers</td><td></td><td>Oct 2012</td><td>open</td></tr>
+      </tbody>
+      </table><div id="foot">
+
+<hr/>
+<address><a href="/People/Jacobs/">Ian Jacobs, Head of W3C Communications</a>.<br/>Please send feedback to <a href="mailto:site-comments@w3.org">site-comments@w3.org</a> (<a href="http://lists.w3.org/Archives/Public/site-comments/">public
+archive</a>).<br/><a href="Overview.html#translations">Translations of this page</a> may be available.
+<br/>
+    Last modified $Date: 2008/01/02 07:00:23 $ by $Author: ijacobs $</address>
+<p class="small"><a href="http://www.w3.org/Consortium/Legal/ipr-notice#Copyright">Copyright</a>
+&#xA9; 2004-2008 <a href="/"><acronym title="World Wide Web Consortium">W3C</acronym></a><sup>&#xAE;</sup> (<a href="http://www.csail.mit.edu/"><acronym title="Massachusetts Institute of Technology">MIT</acronym></a>, <a href="http://www.ercim.org/"><acronym title="European Research Consortium for Informatics and Mathematics">ERCIM</acronym></a>,
+<a href="http://www.keio.ac.jp/">Keio</a>), All Rights
+Reserved. W3C <a href="/Consortium/Legal/ipr-notice#Legal_Disclaimer">liability</a>, <a href="/Consortium/Legal/ipr-notice#W3C_Trademarks">trademark</a>, <a rel="Copyright" href="/Consortium/Legal/copyright-documents">document use</a> and <a rel=" Copyright" href="/Consortium/Legal/copyright-software">software licensing</a> rules
+apply. Your interactions with this site are in accordance with our <a href="/Consortium/Legal/privacy-statement#Public">public</a>
+and <a href="/Consortium/Legal/privacy-statement#Members">Member</a> privacy
+statements.</p></div>
+
+</body>
+</html>

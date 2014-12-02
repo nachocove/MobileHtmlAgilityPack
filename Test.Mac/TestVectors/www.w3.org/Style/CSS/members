@@ -1,0 +1,752 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<!-- Editors & translators, please, edit members.en.tmpl, not .html -->
+
+<html lang=en>
+ <head profile="http://microformats.org/profile/hcard">
+  <title>CSS WG members</title>
+
+  <meta content="Public home page of the CSS Working Group of W3C"
+   name=description>
+  <meta content="text/html; charset=utf-8" http-equiv=Content-Type>
+  <meta content="width=device-width" name=viewport>
+  <link href="../CSS/w3c-2010/main"
+   media="screen, handheld, projection, tv" rel=stylesheet title=Main>
+  <link href="../CSS/floatspan-n"
+   media="screen, handheld, projection, tv" rel="alternate stylesheet"
+   title=Cascade>
+  <link href="../CSS/daily-color"
+   media="screen, handheld, projection, tv" rel="alternate stylesheet"
+   title=Cascade>
+  <link href="../CSS/floatspan"
+   media="screen, handheld, projection, tv" rel="alternate stylesheet"
+   title="Cascade (older browsers)">
+  <link href="../CSS/daily-color"
+   media="screen, handheld, projection, tv" rel="alternate stylesheet"
+   title="Cascade (older browsers)">
+  <link href="../CSS/asymmetric"
+   media="screen, handheld, projection, tv" rel="alternate stylesheet"
+   title=Asymmetric>
+  <link href="../CSS/draft" media="screen, projection, tv"
+   rel="alternate stylesheet" title="Draft 3">
+  <link href="../CSS/draft-rg" media="screen, projection, tv"
+   rel="alternate stylesheet" title="Draft 2">
+  <link href="../CSS/twocolumn-print" media=print rel=stylesheet>
+  <link href="../../" rel=home title=W3C>
+  <link href="../CSS/" rel=top title=CSS>
+  <link href="../CSS/" rel=first title=CSS>
+  <link href="../CSS/Planet/" rel=last
+   title="The Future Of CSS (syndicator)">
+  <link href="../CSS/current-work" rel=chapter title=Roadmap>
+  <link href="../Examples/007/" rel=chapter title=Examples>
+  <link href="../../Consortium/activities" rel=bookmark
+   title=Activities>
+  <link href="../../TR/" rel=bookmark title="Tech. reports">
+  <link href="../../Consortium/Translation/" rel=bookmark
+   title=Translations>
+  <link href="../../Status" rel=bookmark title=Software>
+  <link href="../../Consortium/siteindex" rel=index
+   title="Site index">
+  <link href="../../Help/search" rel=search title=Search>
+  <link href="../../Consortium/Legal/ipr-notice.html#Copyright"
+   rel=copyright title=Copyright>
+  <link href="mailto:bert@w3.org%20(Bert%20Bos)" rel=author>
+  <link href="./" rel=up title=CSS>
+  <link href=Disclosures.html rel=prev title="Patent disclosures">
+  <link href="Buttons/" rel=next title="Made with CSS">
+  <style type="text/css">
+   table {margin: 1.2em 0; width: 100%; table-layout: fixed;
+    border-collapse: collapse; text-align: left}
+   td, th {vertical-align: baseline; padding: 0}
+   td + td, th + th {padding-left: 0.3em}
+
+   /* This simulates dot leaders, until the leaders() keyword is
+   ready. Bugs: If the name is split over two lines, the affiliation
+   starts too high. */
+
+   td {max-width: 40em; overflow: hidden}
+   td span::before {float: left; width: 0; white-space: nowrap; content:
+    ". . . . . . . . . . . . . . . . . . . . "
+    ". . . . . . . . . . . . . . . . . . . . "
+    ". . . . . . . . . . . . . . . . . . . . "
+    ". . . . . . . . . . . . . . . . . . . . "
+    ". . . . . . . . . . . . . . . . . . . . "
+    ". . . . . . . . . . . . . . . . . . . . "}
+   td span {background: white}
+
+   /* Allow column breaks in the table of members */
+   #members {break-inside: auto}
+   h2 {break-after: avoid}
+  </style>
+  <style media="screen, handheld, projection, tv" title=Main
+   type="text/css">
+   a[href=members] {background: #EEE}
+  </style>
+  <link href="http://www.hostgator-coupon-code.org/members.html"
+   hreflang=ar rel=alternate title="العربية [2009-11-23]">
+  <link href=members.be.php3 hreflang=be rel=alternate
+   title="Беларуская [2010-10-25]">
+  <link href="http://dichev.com/Style/CSS/members/" hreflang=bg
+   rel=alternate title="Български [2009-01-23]">
+  <link href="http://www.cssuniverse.info/members.htm" hreflang=cs
+   rel=alternate title="Česky [2009-07-02]">
+  <link href="http://www.x-web.org/w3c/css/members/" hreflang=da
+   rel=alternate title=Dansk>
+  <link href=members.de.php3 hreflang=de rel=alternate
+   title="Deutsch [2010-10-22]">
+  <link href="http://www.gemsdir.com/w3c/members_el.htm" hreflang=el
+   rel=alternate title="Ελληνικά [2009-07-29]">
+  <link href=members.en.php3 hreflang=en rel=alternate title=English>
+  <link href="http://es.tz8.de/style-css-members.html" hreflang=es
+   rel=alternate title="Español [2008-11-04]">
+  <link href="http://buildingblocksjava.com/ee/Style/members.htm"
+   hreflang=et rel=alternate title="Eesti [2009-07-03]">
+  <link href="http://www.gemsdir.com/w3c/members_fr.htm" hreflang=fr
+   rel=alternate title="Français">
+  <link href="http://www.w3-hi.org/Style/CSS/members.html" hreflang=hi
+   rel=alternate title="हिन्दी [2010-05-07]">
+  <link href="http://www.gemsdir.com/w3c/members_hr.htm" hreflang=hr
+   rel=alternate title="Hrvatski [2009-07-24]">
+  <link href="http://www.videofize.com/Style/CSS/members.html"
+   hreflang=id rel=alternate title="Bahasa Indonesia [2010-01-18]">
+  <link href="http://www.gemsdir.com/w3c/members_it.htm" hreflang=it
+   rel=alternate title="Italiano [2009-07-29]">
+  <link href="http://www.loaid.com/Style/CSS/members.html" hreflang=ja
+   rel=alternate title=" 日本語 [2009-10-05]">
+  <link href="http://www.spoiwo.com/members.htm" hreflang=nb-1
+   rel=alternate title="Norsk [2009-07-03]">
+  <link href="http://www.bjornenki.com/articles/w3_style_css_members"
+   hreflang=nb-2 rel=alternate title="Norsk [2009-07-23]">
+  <link href=members.nl.php3 hreflang=nl rel=alternate
+   title="Nederlands [2010-10-22]">
+  <link href="http://pressrelease24.com/members.htm" hreflang=pl
+   rel=alternate title="Polski [2009-06-02]">
+  <link href=members.ru.php3 hreflang=ru rel=alternate
+   title="Русский [2010-10-22]">
+  <link href="http://www.dhtmlonline.com/sk/members.htm" hreflang=sk
+   rel=alternate title="Slovenčina (Slovak) [2009-07-28]">
+  <link href="http://css-al.com/members.php3.htm" hreflang=sq
+   rel=alternate title="Shqip [2009-09-21]">
+  <link href="http://www.funwithcss.com/members.htm" hreflang=sv
+   rel=alternate title="Svenska [2009-07-02]">
+  <link href="http://www.codingbasic.com/style/members.html"
+   hreflang=th rel=alternate title="ไทย [2009-09-04]">
+  <link href="http://tl.tz8.de/style-css-members.html" hreflang=tl
+   rel=alternate title="Tagalog [2008-11-04]">
+  <link href="http://tr.tz8.de/style-css-members.html" hreflang=tr
+   rel=alternate title="Türkçe [2008-11-04]">
+  <link href="http://www.indeep76.com/Style/CSS/members_uk.php"
+   hreflang=uk rel=alternate title="Українська [2009-02-03]">
+  <link href="http://www.virtualmlstours.com/Style/CSS/members.html"
+   hreflang=vi rel=alternate title="Tiếng Việt [2009-10-13]">
+  <link href="http://www.shanghai.ws/w3c/CSS/members.html"
+   hreflang=zh-hans rel=alternate title="简体中文 [2009-12-15]">
+  <link
+   href="http://www.thewebpractice.com/w3c/CSS-traditional/members.html"
+   hreflang=zh-hant rel=alternate title="繁體中文 [2009-12-15]">
+
+ <body>
+  <div class=section id=language>
+   <p><a href="#translations">Languages</a>
+  </div>
+
+  <h1><a href="http://www.webat25.org/"
+   title="Web 25th anniversary"><em>Cascading Style Sheets</em> working
+   group</a></h1>
+
+  <div class=section id=intro> <!-- h2></h2 -->
+   <p>This page is about the CSS Working Group.
+
+   <p>For general information about CSS, see the <a href="./">CSS Home
+    Page.</a>
+
+   <p>For the group's meeting schedule, see the <a href="../Group/"
+    title="CSS WG internal page">internal page [member-only link].</a>
+  </div>
+
+  <div class=section id=contribute>
+   <h2>Participating</h2>
+
+   <p>The CSS working group discusses all technical matters on a public
+    mailing list, <a
+    href="http://lists.w3.org/Archives/Public/www-style/"><strong>www-style@w3.org.</strong></a>
+    See <a href="current-work#contribute">“If you want to help”</a>
+    for more about that list.
+
+   <p>The current draft CSS specifications are listed and explained on
+    the <a href=current-work>“current work”</a> page. In March
+    2008, the group started using <a
+    href="/2005/06/tracker/">Tracker</a> to keep lists of <a
+    href="../CSS/Tracker/">issues, actions and group members.</a> See
+    also the <a href="../../2010/09/CSSWG/charter">working group's
+    charter (version 2011–2013).</a>
+
+   <p>The group also maintains a <a href="/blog/CSS">blog…</a>
+
+   <p>… and if you want to know what it is like to be a member, read
+    <a
+    href="http://fantasai.inkedblade.net/weblog/2011/inside-csswg/">Fantasai's
+    “about:csswg.”</a>
+  </div>
+
+  <div class=section id=members>
+   <h2>Members</h2>
+
+   <p>The following is the complete list of <a
+    href="../../Consortium/Member/List">W3C member organizations</a>
+    that participate in the CSS working group with one or more people.
+    (See <a href="../../Consortium/join"> “How to become a W3C
+    member”</a> and the <a href="../../participate/faq">Participation
+    FAQ</a> for information on joining W3C as a member.)
+
+   <table class=data>
+    <thead>
+     <tr>
+      <th>Name
+
+      <th>Affiliation
+
+    <tbody>
+    <tr class=vcard>
+      <td class=fn><span>Glenn Adams</span>
+      <td class=org>Skynav, Inc.
+
+    <tr class=vcard>
+      <td class=fn><span>Rossen Atanassov</span>
+      <td class=org>Microsoft Corporation
+
+    <tr class=vcard>
+      <td class=fn><span>Tab Atkins Jr.</span>
+      <td class=org>Google, Inc.
+
+    <tr class=vcard>
+      <td class=fn><span>Takao Baba</span>
+      <td class=org>Beyond Perspective Solutions ltd
+
+    <tr class=vcard>
+      <td class=fn><span>Shezan Baig</span>
+      <td class=org>Bloomberg
+
+    <tr class=vcard>
+      <td class=fn><span>Mihail-Alexandru Balan</span>
+      <td class=org>Adobe Systems Inc.
+
+    <tr class=vcard>
+      <td class=fn><span>David Baron</span>
+      <td class=org>Mozilla Foundation
+
+    <tr class=vcard>
+      <td class=fn><span>Bert Bos</span>
+      <td class=org>W3C Staff
+
+    <tr class=vcard>
+      <td class=fn><span>Rob Buis</span>
+      <td class=org>Samsung Electronics Co., Ltd.
+
+    <tr class=vcard>
+      <td class=fn><span>Caroline Burle</span>
+      <td class=org>NIC.br - Brazilian Network Information Center
+
+    <tr class=vcard>
+      <td class=fn><span>Newton Calegari</span>
+      <td class=org>NIC.br - Brazilian Network Information Center
+
+    <tr class=vcard>
+      <td class=fn><span>Bo Campbell</span>
+      <td class=org>IBM Corporation
+
+    <tr class=vcard>
+      <td class=fn><span>Angelo Cano</span>
+      <td class=org>Antenna House, Inc.
+
+    <tr class=vcard>
+      <td class=fn><span>Adenilson Cavalcanti</span>
+      <td class=org>Samsung Electronics Co., Ltd.
+
+    <tr class=vcard>
+      <td class=fn><span>Carlos Cecconi</span>
+      <td class=org>NIC.br - Brazilian Network Information Center
+
+    <tr class=vcard>
+      <td class=fn><span>Tantek Çelik</span>
+      <td class=org>Mozilla Foundation
+
+    <tr class=vcard>
+      <td class=fn><span>Manyoung Cho</span>
+      <td class=org>MIRAE WEB Inc.
+
+    <tr class=vcard>
+      <td class=fn><span>Koeun Choi</span>
+      <td class=org>Samsung Electronics Co., Ltd.
+
+    <tr class=vcard>
+      <td class=fn><span>Kenneth Christiansen</span>
+      <td class=org>Intel Corporation
+
+    <tr class=vcard>
+      <td class=fn><span>Yaso Córdova</span>
+      <td class=org>NIC.br - Brazilian Network Information Center
+
+    <tr class=vcard>
+      <td class=fn><span>Dave Cramer</span>
+      <td class=org>Hachette Livre
+
+    <tr class=vcard>
+      <td class=fn><span>Alex Critchfield</span>
+      <td class=org>Antenna House, Inc.
+
+    <tr class=vcard>
+      <td class=fn><span>John Daggett</span>
+      <td class=org>Mozilla Foundation
+
+    <tr class=vcard>
+      <td class=fn><span>Beth Dakin</span>
+      <td class=org>Apple, Inc.
+
+    <tr class=vcard>
+      <td class=fn><span>Alex Danilo</span>
+      <td class=org>Google, Inc.
+
+    <tr class=vcard>
+      <td class=fn><span>Bruno de Oliveira Abinader</span>
+      <td class=org>Samsung Electronics Co., Ltd.
+
+    <tr class=vcard>
+      <td class=fn><span>Vagner Diniz</span>
+      <td class=org>NIC.br - Brazilian Network Information Center
+
+    <tr class=vcard>
+      <td class=fn><span>James Dovey</span>
+      <td class=org>Rakuten,Inc.
+
+    <tr class=vcard>
+      <td class=fn><span>Arron Eicholz</span>
+      <td class=org>W3C Invited Experts
+
+    <tr class=vcard>
+      <td class=fn><span>Katie Ellison</span>
+      <td class=org>Microsoft Corporation
+
+    <tr class=vcard>
+      <td class=fn><span>Elika Etemad</span>
+      <td class=org>W3C Invited Experts
+
+    <tr class=vcard>
+      <td class=fn><span>Reinaldo Ferraz</span>
+      <td class=org>NIC.br - Brazilian Network Information Center
+
+    <tr class=vcard>
+      <td class=fn><span>Simon Fraser</span>
+      <td class=org>Apple, Inc.
+
+    <tr class=vcard>
+      <td class=fn><span>Sylvain Galineau</span>
+      <td class=org>Adobe Systems Inc.
+
+    <tr class=vcard>
+      <td class=fn><span>Hartmut Richard Glaser</span>
+      <td class=org>NIC.br - Brazilian Network Information Center
+
+    <tr class=vcard>
+      <td class=fn><span>Daniel Glazman</span>
+      <td class=org>Disruptive Innovations
+
+    <tr class=vcard>
+      <td class=fn><span>Laszlo Gombos</span>
+      <td class=org>Samsung Electronics Co., Ltd.
+
+    <tr class=vcard>
+      <td class=fn><span>Aryeh Gregor</span>
+      <td class=org>Mozilla Foundation
+
+    <tr class=vcard>
+      <td class=fn><span>Rebecca Hauck</span>
+      <td class=org>Adobe Systems Inc.
+
+    <tr class=vcard>
+      <td class=fn><span>Israel Hilerio</span>
+      <td class=org>Microsoft Corporation
+
+    <tr class=vcard>
+      <td class=fn><span>Sarah Horton</span>
+      <td class=org>The Paciello Group, LLC
+
+    <tr class=vcard>
+      <td class=fn><span>David Hyatt</span>
+      <td class=org>Apple, Inc.
+
+    <tr class=vcard>
+      <td class=fn><span>akiyoshi ibuki</span>
+      <td class=org>Rakuten,Inc.
+
+    <tr class=vcard>
+      <td class=fn><span>Dongwoo Joshua Im</span>
+      <td class=org>Samsung Electronics Co., Ltd.
+
+    <tr class=vcard>
+      <td class=fn><span>Richard Ishida</span>
+      <td class=org>W3C Staff
+
+    <tr class=vcard>
+      <td class=fn><span>Koji Ishii</span>
+      <td class=org>Google, Inc.
+
+    <tr class=vcard>
+      <td class=fn><span>Kunio Ito</span>
+      <td class=org>Rakuten,Inc.
+
+    <tr class=vcard>
+      <td class=fn><span>Dael Jackson</span>
+      <td class=org>W3C Invited Experts
+
+    <tr class=vcard>
+      <td class=fn><span>Dean Jackson</span>
+      <td class=org>Apple, Inc.
+
+    <tr class=vcard>
+      <td class=fn><span>John Jansen</span>
+      <td class=org>Microsoft Corporation
+
+    <tr class=vcard>
+      <td class=fn><span>Brian Kardell</span>
+      <td class=org>jQuery Foundation
+
+    <tr class=vcard>
+      <td class=fn><span>Brad Kemper</span>
+      <td class=org>W3C Invited Experts
+
+    <tr class=vcard>
+      <td class=fn><span>Ian Kilpatrick</span>
+      <td class=org>Google, Inc.
+
+    <tr class=vcard>
+      <td class=fn><span>Jirka Kosek</span>
+      <td class=org>W3C Invited Experts
+
+    <tr class=vcard>
+      <td class=fn><span>Philippe Le Hégaret</span>
+      <td class=org>W3C Staff
+
+    <tr class=vcard>
+      <td class=fn><span>WonSuk Lee</span>
+      <td class=org>Samsung Electronics Co., Ltd.
+
+    <tr class=vcard>
+      <td class=fn><span>Twinsen Liang</span>
+      <td class=org>Tencent
+
+    <tr class=vcard>
+      <td class=fn><span>Håkon Wium Lie</span>
+      <td class=org>Opera Software
+
+    <tr class=vcard>
+      <td class=fn><span>Rune Lillesveen</span>
+      <td class=org>Opera Software
+
+    <tr class=vcard>
+      <td class=fn><span>Chris Lilley</span>
+      <td class=org>W3C Staff
+
+    <tr class=vcard>
+      <td class=fn><span>Peter Linss</span>
+      <td class=org>HP
+
+    <tr class=vcard>
+      <td class=fn><span>Luke Macpherson</span>
+      <td class=org>Google, Inc.
+
+    <tr class=vcard>
+      <td class=fn><span>Shinsuke Matsuki</span>
+      <td class=org>ACCESS CO., LTD.
+
+    <tr class=vcard>
+      <td class=fn><span>Alexis Menard</span>
+      <td class=org>Intel Corporation
+
+    <tr class=vcard>
+      <td class=fn><span>Michael Miller</span>
+      <td class=org>Antenna House, Inc.
+
+    <tr class=vcard>
+      <td class=fn><span>Selma Morais</span>
+      <td class=org>NIC.br - Brazilian Network Information Center
+
+    <tr class=vcard>
+      <td class=fn><span>Shinyu Murakami</span>
+      <td class=org>Antenna House, Inc.
+
+    <tr class=vcard>
+      <td class=fn><span>Masayuki Nakano</span>
+      <td class=org>Mozilla Foundation
+
+    <tr class=vcard>
+      <td class=fn><span>Edward O'Connor</span>
+      <td class=org>Apple, Inc.
+
+    <tr class=vcard>
+      <td class=fn><span>Christopher Palmer</span>
+      <td class=org>Bloomberg
+
+    <tr class=vcard>
+      <td class=fn><span>Simon Pieters</span>
+      <td class=org>Opera Software
+
+    <tr class=vcard>
+      <td class=fn><span>Benjamin Poulain</span>
+      <td class=org>Apple, Inc.
+
+    <tr class=vcard>
+      <td class=fn><span>Deblyn prado</span>
+      <td class=org>NIC.br - Brazilian Network Information Center
+
+    <tr class=vcard>
+      <td class=fn><span>Anton Prowse</span>
+      <td class=org>W3C Invited Experts
+
+    <tr class=vcard>
+      <td class=fn><span>Keshav Puttaswamy</span>
+      <td class=org>Microsoft Corporation
+
+    <tr class=vcard>
+      <td class=fn><span>Liam Quin</span>
+      <td class=org>W3C Staff
+
+    <tr class=vcard>
+      <td class=fn><span>Matt Rakow</span>
+      <td class=org>Microsoft Corporation
+
+    <tr class=vcard>
+      <td class=fn><span>Florian Rivoal</span>
+      <td class=org>W3C Invited Experts
+
+    <tr class=vcard>
+      <td class=fn><span>Jacob Rossi</span>
+      <td class=org>Microsoft Corporation
+
+    <tr class=vcard>
+      <td class=fn><span>Andrey Rybka</span>
+      <td class=org>Bloomberg
+
+    <tr class=vcard>
+      <td class=fn><span>Hiroshi Sakakibara</span>
+      <td class=org>Beyond Perspective Solutions ltd
+
+    <tr class=vcard>
+      <td class=fn><span>Simon Sapin</span>
+      <td class=org>Mozilla Foundation
+
+    <tr class=vcard>
+      <td class=fn><span>Nathalia Sautchuk Patrício</span>
+      <td class=org>NIC.br - Brazilian Network Information Center
+
+    <tr class=vcard>
+      <td class=fn><span>Dirk Schulze</span>
+      <td class=org>Adobe Systems Inc.
+
+    <tr class=vcard>
+      <td class=fn><span>Mike Sherov</span>
+      <td class=org>jQuery Foundation
+
+    <tr class=vcard>
+      <td class=fn><span>Leslie Sikos</span>
+      <td class=org>Sikos Web Consulting
+
+    <tr class=vcard>
+      <td class=fn><span>David Singer</span>
+      <td class=org>Apple, Inc.
+
+    <tr class=vcard>
+      <td class=fn><span>Alan Stearns</span>
+      <td class=org>Adobe Systems Inc.
+
+    <tr class=vcard>
+      <td class=fn><span>Shane Stephens</span>
+      <td class=org>Google, Inc.
+
+    <tr class=vcard>
+      <td class=fn><span>Leif Arne Storset</span>
+      <td class=org>Opera Software
+
+    <tr class=vcard>
+      <td class=fn><span>Alan Turransky</span>
+      <td class=org>Interactive Advertising Bureau - IAB
+
+    <tr class=vcard>
+      <td class=fn><span>Asir Vedamuthu</span>
+      <td class=org>Microsoft Corporation
+
+    <tr class=vcard>
+      <td class=fn><span>Lea Verou</span>
+      <td class=org>W3C Invited Experts
+
+    <tr class=vcard>
+      <td class=fn><span>Jet Villegas</span>
+      <td class=org>Mozilla Foundation
+
+    <tr class=vcard>
+      <td class=fn><span>Ian Vollick</span>
+      <td class=org>Google, Inc.
+
+    <tr class=vcard>
+      <td class=fn><span>Greg Whitworth</span>
+      <td class=org>Microsoft Corporation
+
+    <tr class=vcard>
+      <td class=fn><span>Kazutaka Yamamoto</span>
+      <td class=org>Nippon Telegraph &amp; Telephone Corp. (NTT)
+
+    <tr class=vcard>
+      <td class=fn><span>Flavio Yanai</span>
+      <td class=org>NIC.br - Brazilian Network Information Center
+
+    <tr class=vcard>
+      <td class=fn><span>Steve Zilles</span>
+      <td class=org>Adobe Systems Inc.
+   </table>
+  </div>
+
+  <div class=section id=banner>
+   <h2>Site navigation</h2>
+
+   <form action="../../Help/search">
+    <ul>
+     <li class=home><a href="http://www.w3.org/" rel=home><img alt=W3C
+      src="http://www.w3.org/Icons/w3c_home"></a>
+
+     <li><a href="./">CSS home</a>
+
+     <li><a href=learning>Learn &amp; use</a>
+
+     <li><a href=software>Soft­ware</a>
+
+     <li><a href=current-work
+      title="Participate in the development of the CSS standard">Par­tic­i­pate
+      / <span title="All specifications and drafts">drafts</span></a>
+
+     <li class=search><input accesskey=E id=inputField maxlength=255
+      name=q size=10><button accesskey=G name=sa type=submit><img
+      alt=Search src="../../2008/site/images/search-button"
+      title=Search></button>
+    </ul>
+   </form>
+  </div>
+
+  <div class=section id=endmatter>
+   <address class=vcard><img alt="" class=photo
+    src="../../People/Bos/bert3-small.jpg"> <a class="fn url"
+    href="../../People/Bos/">Bert Bos</a>, <span class=role>style
+    activity lead</span><br>
+    <small><a href="/Consortium/Legal/ipr-notice#Copyright"
+    rel=copyright>Copyright</a> © 1994–2014 <a href="/"><acronym
+    title="World Wide Web Consortium">W3C</acronym><sup>®</sup></a></small></address>
+
+   <p>Last updated Fri 17 Oct 2014 06:20:10 AM CEST
+  </div>
+
+  <div class=section id=translations>
+   <h2>Languages</h2>
+
+   <ul>
+    <li><a href="http://www.hostgator-coupon-code.org/members.html"
+     hreflang=ar rel=alternate title=2009-11-23>العربية</a>
+
+    <li><a href=members.be.php3 hreflang=be rel=alternate
+     title=2010-10-25>Беларуская</a>
+
+    <li><a href="http://dichev.com/Style/CSS/members/" hreflang=bg
+     rel=alternate title=2009-01-23>Български</a>
+
+    <li><a href="http://www.cssuniverse.info/members.htm" hreflang=cs
+     rel=alternate title=2009-07-02>Česky</a>
+
+    <li><a href="http://www.x-web.org/w3c/css/members/" hreflang=da
+     rel=alternate>Dansk</a>
+
+    <li><a href=members.de.php3 hreflang=de rel=alternate
+     title=2010-10-22>Deutsch</a>
+
+    <li><a href="http://www.gemsdir.com/w3c/members_el.htm" hreflang=el
+     rel=alternate title=2009-07-29>Ελληνικά</a>
+
+    <li><a href=members.en.php3 hreflang=en rel=alternate>English</a>
+
+    <li><a href="http://es.tz8.de/style-css-members.html" hreflang=es
+     rel=alternate title=2008-11-04>Español</a>
+
+    <li><a href="http://buildingblocksjava.com/ee/Style/members.htm"
+     hreflang=et rel=alternate title=2009-07-03>Eesti</a>
+
+    <li><a href="http://www.gemsdir.com/w3c/members_fr.htm" hreflang=fr
+     rel=alternate>Français</a>
+
+    <li><a href="http://www.w3-hi.org/Style/CSS/members.html"
+     hreflang=hi rel=alternate title=2010-05-07>हिन्दी</a>
+
+    <li><a href="http://www.gemsdir.com/w3c/members_hr.htm" hreflang=hr
+     rel=alternate title=2009-07-24>Hrvatski</a>
+
+    <li><a href="http://www.videofize.com/Style/CSS/members.html"
+     hreflang=id rel=alternate title=2010-01-18>Bahasa Indonesia</a>
+
+    <li><a href="http://www.gemsdir.com/w3c/members_it.htm" hreflang=it
+     rel=alternate title=2009-07-29>Italiano</a>
+
+    <li><a href="http://www.loaid.com/Style/CSS/members.html"
+     hreflang=ja rel=alternate title=2009-10-05> 日本語</a>
+
+    <li><a href="http://www.spoiwo.com/members.htm" hreflang=nb-1
+     rel=alternate title=2009-07-03>Norsk</a>
+
+    <li><a
+     href="http://www.bjornenki.com/articles/w3_style_css_members"
+     hreflang=nb-2 rel=alternate title=2009-07-23>Norsk</a>
+
+    <li><a href=members.nl.php3 hreflang=nl rel=alternate
+     title=2010-10-22>Nederlands</a>
+
+    <li><a href="http://pressrelease24.com/members.htm" hreflang=pl
+     rel=alternate title=2009-06-02>Polski</a>
+
+    <li><a href=members.ru.php3 hreflang=ru rel=alternate
+     title=2010-10-22>Русский</a>
+
+    <li><a href="http://www.dhtmlonline.com/sk/members.htm" hreflang=sk
+     rel=alternate title=2009-07-28>Slovenčina (Slovak)</a>
+
+    <li><a href="http://css-al.com/members.php3.htm" hreflang=sq
+     rel=alternate title=2009-09-21>Shqip</a>
+
+    <li><a href="http://www.funwithcss.com/members.htm" hreflang=sv
+     rel=alternate title=2009-07-02>Svenska</a>
+
+    <li><a href="http://www.codingbasic.com/style/members.html"
+     hreflang=th rel=alternate title=2009-09-04>ไทย</a>
+
+    <li><a href="http://tl.tz8.de/style-css-members.html" hreflang=tl
+     rel=alternate title=2008-11-04>Tagalog</a>
+
+    <li><a href="http://tr.tz8.de/style-css-members.html" hreflang=tr
+     rel=alternate title=2008-11-04>Türkçe</a>
+
+    <li><a href="http://www.indeep76.com/Style/CSS/members_uk.php"
+     hreflang=uk rel=alternate
+     title=2009-02-03>Українська</a>
+
+    <li><a href="http://www.virtualmlstours.com/Style/CSS/members.html"
+     hreflang=vi rel=alternate title=2009-10-13>Tiếng Việt</a>
+
+    <li><a href="http://www.shanghai.ws/w3c/CSS/members.html"
+     hreflang=zh-hans rel=alternate title=2009-12-15>简体中文</a>
+
+    <li><a
+     href="http://www.thewebpractice.com/w3c/CSS-traditional/members.html"
+     hreflang=zh-hant rel=alternate title=2009-12-15>繁體中文</a>
+   </ul>
+
+   <p><a href="/Style/CSS/translating">About the translations</a>
+  </div>
+  <!-- Keep this comment at the end of the file
+Local variables:
+mode: html
+sgml-indent-step:1
+End:
+-->

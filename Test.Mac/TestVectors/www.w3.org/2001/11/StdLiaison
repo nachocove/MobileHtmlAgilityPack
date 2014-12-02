@@ -1,0 +1,1556 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+      "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+  <title>Liaisons - W3C</title>
+  <link media="handheld, all" type="text/css"
+  href="http://www.w3.org/2008/site/css/minimum" rel="stylesheet" />
+  <style type="text/css" xml:space="preserve" media="print, screen and (min-width: 481px)">
+
+     @import url("http://www.w3.org/2008/site/css/advanced");</style>
+  <link media="handheld, only screen and (max-device-width: 480px)"
+  type="text/css" rel="stylesheet"
+  href="http://www.w3.org/2008/site/css/minimum" />
+  <meta content="width=device-width" name="viewport" />
+  <link media="print" type="text/css"
+  href="http://www.w3.org/2008/site/css/print" rel="stylesheet" />
+  <link type="image/x-icon"
+  href="http://www.w3.org/2008/site/images/favicon.ico" rel="shortcut icon" />
+</head>
+
+<body class="w3c_public" id="www-w3-org">
+
+<div id="w3c_container">
+
+<div id="w3c_mast">
+<h1 class="logo"><a href="http://www.w3.org/" accesskey="1" tabindex="2"><img
+width="90" height="53" alt="W3C"
+src="http://www.w3.org/2008/site/images/logo-w3c-mobile-lg" /></a> <span
+class="alt-logo">W3C</span> </h1>
+
+<div id="w3c_nav">
+
+<form enctype="application/x-www-form-urlencoded" method="get"
+action="http://www.w3.org/Help/search">
+
+  <div class="w3c_sec_nav">
+  <!-- -->
+  </div>
+  <ul class="main_nav">
+    <li class="first-item"><a href="http://www.w3.org/standards/">Standards</a>
+    </li>
+    <li><a href="http://www.w3.org/participate/">Participate</a> </li>
+    <li><a href="http://www.w3.org/Consortium/membership">Membership</a> </li>
+    <li class="last-item"><a href="http://www.w3.org/Consortium/">About W3C</a>
+    </li>
+    <li class="search-item">
+      <div id="search-form">
+      <input type="text" title="Search" value="" name="q" class="text"
+      tabindex="3" /> <button type="submit" name="search-submit"
+      id="search-submit"><img width="21" height="17" alt="Search"
+      src="http://www.w3.org/2008/site/images/search-button" class="submit"
+      /></button> </div>
+    </li>
+  </ul>
+</form>
+</div>
+</div>
+
+<div id="w3c_main">
+
+<div class="w3c_leftCol" id="w3c_logo_shadow">
+<img height="32" src="http://www.w3.org/2008/site/images/logo-shadow" alt="" />
+</div>
+
+<div class="w3c_leftCol">
+<h2 class="offscreen">Site Navigation</h2>
+
+<h3 class="category"><span class="ribbon"><a title="Up to Participate"
+href="http://www.w3.org/participate/">Participate <img width="13" height="13"
+class="header-link" alt="Header link"
+src="http://www.w3.org/2008/site/images/header-link" /></a></span></h3>
+<ul class="theme">
+  <li><a href="http://www.w3.org/participate/eventscal.html">Calendar of
+    Events</a></li>
+  <li><a href="http://www.w3.org/participate/discussion.html">Mail, News,
+    Blogs, Podcasts, and Tutorials</a></li>
+  <li><a href="http://www.w3.org/participate/review.html">Specification Reviews
+    and Public Feedback</a></li>
+  <li><a href="http://www.w3.org/participate/implementation.html">Code and
+    Implementation</a></li>
+  <li><a href="http://www.w3.org/participate/promote.html">Promote Web
+    Standards</a></li>
+  <li><a href="http://www.w3.org/Consortium/activities.html">Groups</a></li>
+  <li><a class="current">Liaisons</a></li>
+  <li><a href="http://www.w3.org/participate/faq.html">Participation
+  FAQ</a></li>
+</ul>
+<br />
+</div>
+
+<div class="w3c_mainCol">
+
+<div id="w3c_crumbs">
+
+<div id="w3c_crumbs_frame">
+<ul class="bct">
+  <!-- .bct / Breadcrumbs -->
+  <li class="skip"><a href="#w3c_content_body"
+    title="Skip to content (e.g., when browsing via audio)" accesskey="2"
+    tabindex="1">Skip</a></li>
+  <li><a href="http://www.w3.org/">W3C</a> <span class="cr">»</span> </li>
+  <li><a href="http://www.w3.org/participate/">Participate</a> <span
+    class="cr">»</span> </li>
+  <li class="current">Liaisons</li>
+</ul>
+</div>
+</div>
+
+<h1 class="title">Liaisons</h1>
+<ul class="w3c_toc">
+  <li class="toc_prefix">On this page → </li>
+  <li><a href="#main">liaisons table</a><span class="bullet"> • </span></li>
+  <li><a href="#mission">mission of W3C international liaisons</a><span
+    class="bullet"> • </span></li>
+  <li><a href="#contact">contacting W3C to establish a liaison</a><span
+    class="bullet"> • </span></li>
+  <li><a href="#about">about the liaisons table</a><span
+    class="bullet"> • </span></li>
+  <li><a
+    href="#considerations">considerations when establishing a liaison</a><span
+    class="bullet"> • </span></li>
+  <li><a href="#dejure">W3C and de jure standards</a></li>
+</ul>
+
+<div id="w3c_content_body">
+
+<div class="line">
+
+<div class="intro">
+<p class="tPadding">Many organizations in addition to W3C develop standards for
+the Internet or the Web. In order coordinate the development of the Web, W3C
+engages in <a href="#main">liaisons with numerous organizations</a> after
+careful <a href="#considerations">consideration of the costs and benefits</a>.
+</p>
+
+<p>Liaison index → <a href="#n3">3</a><span class="bullet"> • </span> <a
+href="#A">A</a><span class="bullet"> • </span> <a href="#B">B</a><span
+class="bullet"> • </span> <a href="#C">C</a><span class="bullet"> •
+</span> <a href="#D">D</a><span class="bullet"> • </span> <a
+href="#E">E</a><span class="bullet"> • </span> <a href="#F">F</a><span
+class="bullet"> • </span> <a href="#G">G</a> <span class="bullet">•
+</span> <a href="#H">H</a><span class="bullet">• </span> <a
+href="#I">I</a><span class="bullet"> • </span> <a href="#J">J</a><span
+class="bullet"> • </span><a href="#L">L </a><span class="bullet">•</span>
+<a href="#N">N</a><span class="bullet"> • </span><a href="#O">O</a><span
+class="bullet"> • </span> <a href="#S">S</a><span class="bullet"> •
+</span> <a href="#T">T</a><span class="bullet"> • </span> <a
+href="#U">U</a><span class="bullet"> • </span> <a href="#V">V</a><span
+class="bullet"> • </span> <a href="#W">W</a> </p>
+</div>
+
+<div class="data">
+
+<table border="1"
+summary="Summary of W3C partnerships. Table headers: Organization, Web activities, W3C Activities, name of W3C Contact"
+id="main">
+  <thead>
+    <tr>
+      <th>Organization</th>
+      <th>W3C Activities affected</th>
+      <th>W3C contact</th>
+      <th class="lastColumn">Liaison contact</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a id="n3"><!-- --></a><a href="http://www.3gpp.org/" id="ThreeGPP"
+        name="ThreeGPP">3GPP</a> 3rd Generation Partnership Project</td>
+      <td><a href="http://www.w3.org/2002/mmi/">Multimodal Interaction</a>, <a
+        href="http://www.w3.org/AudioVideo/">SMIL</a>, <a
+        href="http://www.w3.org/Graphics/SVG/Overview.htm8">SVG</a>, <a
+        href="http://www.w3.org/AudioVideo/TT/">Timed Text</a> </td>
+      <td>Multimodal: <a href="http://www.w3.org/People/all#ashimura">Kazuyuki
+        Ashimura</a> 
+
+        <p>SMIL: <a href="http://www.w3.org/People/tmichel/">Thierry Michel</a>
+        <br />
+        SVG: <a href="http://www.w3.org/People/Lilley/">Chris Lilley</a> <br />
+        Timed Text: <a href="http://www.w3.org/People/LeHegaret/">Philippe Le
+        Hégaret</a></p>
+      </td>
+      <td class="lastColumn">Multimodal: <a
+        href="mailto:paolo.usai@etsi.org">Paolo Usai</a> <br />
+        SMIL: <a href="mailto:paolo.usai@etsi.org">Paolo Usai</a> <br />
+        SVG: <a href="mailto:Tolga.Capin@nokia.com">Tolga Capin</a>, <a
+        href="mailto:paolo.usai@etsi.org">Paolo Usai</a> <br />
+        Timed Text: <a href="mailto:paolo.usai@etsi.org">Paolo Usai</a> </td>
+    </tr>
+    <tr>
+      <td><a id="A"><!-- --></a><a href="http://www.access-board.gov/"
+        name="AccessBoard" id="AccessBoard">Access Board (US)</a></td>
+      <td><a href="http://www.w3.org/WAI/">WAI</a></td>
+      <td><a href="http://www.w3.org/People/Brewer/">Judy Brewer</a></td>
+      <td class="lastColumn">David Capozzi</td>
+    </tr>
+    <tr>
+      <td id="AIGA"><a href="http://www.aiga.org/">AIGA</a> The Professional
+        Association for Design</td>
+      <td><a href="http://www.w3.org/2005/Incubator/owea/">OWEA</a></td>
+      <td><a href="http://www.w3.org/People/danield/">Daniel Dardailler</a></td>
+      <td>Ben Friedman</td>
+    </tr>
+    <tr>
+      <td><a href="http://www.afnor.fr/">AFNOR</a> (French ISO)</td>
+      <td>Generic Liaisons</td>
+      <td><a href="http://www.w3.org/People/danield/">Daniel Dardailler</a></td>
+      <td>Jean Laurens, Josée Auber</td>
+    </tr>
+    <tr>
+      <td><a href="http://www.atia.org/" id="ATIA" name="ATIA">Assistive
+        Technology Industry Association (ATIA)</a></td>
+      <td><a href="http://www.w3.org/WAI/">WAI</a> </td>
+      <td><a href="http://www.w3.org/People/Brewer/">Judy Brewer</a> </td>
+      <td class="lastColumn">David Dikter</td>
+    </tr>
+    <tr>
+      <td><a href="http://www.apache.org/" id="Apache" name="Apache">Apache</a>
+        The Apache Software Foundation</td>
+      <td><a href="http://www.w3.org/Status">Open Source</a> </td>
+      <td><a href="http://www.w3.org/People/Eric/">Eric Prud'hommeaux</a> </td>
+      <td class="lastColumn"><a href="mailto:board@apache.org">Apache board</a>
+      </td>
+    </tr>
+    <tr>
+      <td><a href="http://www.aicto.org/" id="AICTO" name="AICTO">Arab <acronym
+        title="Information and Communication Technologies">ICT</acronym>
+        Organization (AICTO)</a> </td>
+      <td><a href="http://www.w3.org/WAI">WAI</a></td>
+      <td><a href="http://www.w3.org/People/shadi/">Shadi Abou-Zahra</a> </td>
+      <td class="lastColumn">Rakia Baccouche<br />
+        Khedija Ghariani</td>
+    </tr>
+    <tr>
+      <td><a href="http://www.atsc.org/cms/" id="ATSC" name="ATSC">Advanced
+        Television Systems Committee (ATSC)</a></td>
+      <td><a href="http://www.w3.org/2011/webtv/">Web and TV</a>,<br />
+        <a href="http://www.w3.org/AudioVideo/TT/">Timed Text</a> </td>
+      <td><a href="http://www.w3.org/People/all#ashimura">Kazuyuki Ashimura</a>
+        (Web and TV)<br />
+        <a href="http://www.w3.org/People/LeHegaret/">Philippe Le Hégaret</a>
+        (Timed Text) </td>
+      <td class="lastColumn">Mark Richer</td>
+    </tr>
+    <tr>
+      <td><a id="B"><!-- --></a><a
+        href="http://www.w3.org/2001/11/www.bsi-global.com/" id="BSI"
+        name="BSI">British Standards Institution (BSI)</a> </td>
+      <td><a href="http://www.w3.org/WAI">WAI</a></td>
+      <td><a href="http://www.w3.org/People/Brewer/">Judy Brewer</a>, <a
+        href="http://www.w3.org/People/shadi/">Shadi Abou-Zahra</a> </td>
+      <td class="lastColumn">Jean Stride</td>
+    </tr>
+    <tr>
+      <td><a id="C"><!-- --></a><a href="http://www.cenorm.be/" id="CEN"
+        name="CEN">European Committee for Standardization (CEN)</a> </td>
+      <td>Generic Liaisons <a href="http://www.w3.org/P3P/">Privacy</a>, <a
+        href="http://www.w3.org/WAI/">WAI</a> 
+
+        <p><a href="http://www.w3.org/2004/copras/">COPRAS</a> </p>
+      </td>
+      <td><a href="http://www.w3.org/People/all#rigo">Rigo Wenning</a>, <a
+        href="http://www.w3.org/People/Brewer/">Judy Brewer</a>, <a
+        href="http://www.w3.org/People/shadi/">Shadi Abou-Zahra</a>, <a
+        href="http://www.w3.org/People/danield">Daniel Dardailler</a></td>
+      <td class="lastColumn"><a href="mailto:john.ketchell@cenorm.be">John
+        Ketchell</a> <br />
+        Barbara Gatti</td>
+    </tr>
+    <tr>
+      <td><a href="http://www.cenorm.be/">CEN</a> <a
+        href="http://www.cen.eu/CEN/Sectors/sectors/isss/activity/Page/ws-elssi.aspx">(ELSSI
+        EMD)</a></td>
+      <td><a href="http://www.w3.org/standards/semanticweb/">Semantic Web</a>,
+        Ontology development </td>
+      <td><a href="http://www.w3.org/People/all#eric">Eric
+      Prud'hommeaux</a></td>
+      <td class="lastColumn"><a
+        href="mailto:david.leal@caesarsystems.co.uk">David Leal</a></td>
+    </tr>
+    <tr>
+      <td><a id="CESI" name="CESI" href="http://www.cesi.cn/www/en/">CESI</a>
+        China Electronics Standardization Institute</td>
+      <td>Generic Liaisons, 
+
+        <p><a href="http://www.w3.org/2002/ws/">Web Services</a></p>
+      </td>
+      <td><a href="http://www.w3.org/People/danield">Daniel Dardailler</a></td>
+      <td class="lastColumn"><p><a href="mailto:yuanyuan@cesi.ac.cn">Ms. Yuan
+        Yuan</a> </p>
+      </td>
+    </tr>
+    <tr>
+      <td><a href="http://www.continuaalliance.org/">Continua Health
+        Alliance</a> </td>
+      <td>Device API, Mobile, HCLS</td>
+      <td><a href="http://www.w3.org/People/Dom/">Dominique
+      Hazael-Massieux</a></td>
+      <td>Chuck Parker 
+
+        <p>Jose Manrique Lopez de la Fuente</p>
+      </td>
+    </tr>
+    <tr>
+      <td><a href="http://dashif.org/" id="dashif" name="dashif">DASH Industry
+        Forum (DASH-IF)</a> </td>
+      <td><a href="http://www.w3.org/html/wg/">HTML</a>,<br />
+        <a href="http://www.w3.org/2011/webtv/">Web and TV</a>,<br />
+        <a href="http://www.w3.org/AudioVideo/TT/">TTML</a> </td>
+      <td><a href="http://www.w3.org/People/all#mike">Michael[tm] Smith</a>
+        (HTML)<br />
+        <a href="http://www.w3.org/People/all#ashimura">Kazuyuki Ashimura</a>
+        (Web and TV)<br />
+        <a href="http://www.w3.org/People/LeHegaret/">Philippe Le Hégaret</a>
+        (TTML) </td>
+      <td class="lastColumn"><a href="mailto:irajs@live.com">Iraj
+      Sodagar</a></td>
+    </tr>
+    <tr>
+      <td><a id="D"><!-- --></a><a
+        href="http://www.ict.etsi.fr/DATSCG_overview.htm" id="DATSCG"
+        name="DATSCG">Design For All and Assistive Technology Standardization
+        Co-ordination Group (DATSCG)</a> </td>
+      <td><a href="http://www.w3.org/WAI/">WAI</a></td>
+      <td><a href="http://www.w3.org/People/shadi/">Shadi Abou-Zahra</a> </td>
+      <td class="lastColumn">Gill Whitney<br />
+        Barbara Gatti </td>
+    </tr>
+    <tr>
+      <td><a href="http://www.dtg.org.uk">Digital TV Group</a></td>
+      <td><a href="/html">HTML</a>, <a href="/style">CSS</a>, Canvas Element,
+        <a href="http://www.w3.org/html/wg/media/">Media extensions</a>, <a
+        href="http://www.w3.org/2011/webtv/">Web and TV</a>, Testing.</td>
+      <td><a href="http://www.w3.org/People/all#ashimura">Kazuyuki Ashimura</a> 
+
+        <p><a href="http://www.w3.org/People/all#ph">Philipp Hoschka</a></p>
+      </td>
+      <td><a href="mailto:sgauntlett@dtg.org.uk">Simon Gauntlett</a> [DTG
+        Technology Director], <a href="mailto:Chris.Collis@cabot.co.uk">Chris
+        Collis</a> [Chair Security Group], <a
+        href="mailto:grobertson@dtg.org.uk">George Robertson</a> [Chair IP
+        Delivery Group] , <a href="mailto:ateffahi@dtg.org.uk">Ali
+      Teffahi</a></td>
+    </tr>
+    <tr>
+      <td><a href="http://www.diplomacy.edu/">DiploFoundation</a> </td>
+      <td><a href="http://www.w3.org/2007/IntlRel.html">Generic
+      Liaisons</a></td>
+      <td><a href="http://www.w3.org/People/all#danield">Daniel
+      Dardailler</a></td>
+      <td class="lastColumn"><a href="mailto:jovank@diplomacy.edu">Jovan
+        Kurbalija</a></td>
+    </tr>
+    <tr>
+      <td><a href="http://dublincore.org/" id="DC" name="DC">DCMI</a> Dublin
+        Core Accessibility Group</td>
+      <td><a href="http://www.w3.org/2001/sw/">Semantic Web</a>, <a
+        href="http://www.w3.org/WAI">WAI</a></td>
+      <td><a href="http://www.w3.org/People/shadi/">Shadi Abou-Zahra</a> </td>
+      <td class="lastColumn">Liddy Nevile</td>
+    </tr>
+    <tr>
+      <td><a href="http://www.daisy.org/" id="Daisy" name="Daisy">DAISY
+        Consortium</a> </td>
+      <td><a href="http://www.w3.org/WAI/">WAI</a></td>
+      <td><a href="http://www.w3.org/People/Brewer/">Judy Brewer</a> </td>
+      <td class="lastColumn">George Kerscher</td>
+    </tr>
+    <tr>
+      <td><a href="http://www.dlna.org/" id="Daisy1" name="Daisy1">DLNA
+        (Digital Living Network Alliance)</a> </td>
+      <td><a href="http://www.w3.org/html/wg/">HTML, </a> 
+
+        <p><a href="http://www.w3.org/2011/webtv/">Web and TV</a></p>
+      </td>
+      <td><a href="http://www.w3.org/People/all#danield">Daniel Dardailler</a> 
+
+        <p><a href="http://www.w3.org/People/all#ashimura">Kazuyuki
+        Ashimura</a> </p>
+      </td>
+      <td class="lastColumn">Amol Bhagwat</td>
+    </tr>
+    <tr>
+      <td><a id="E"><!-- --></a><a href="http://www.ecma-international.org/"
+        id="ECMA" name="ECMA">Ecma International</a> </td>
+      <td><a href="http://www.w3.org/">HTML, Web Apps, I18n, Security</a><br />
+        <a href="http://testthewebforward.org/">Testing</a><br />
+      </td>
+      <td><a href="http://www.w3.org/People/all#danield">Daniel
+        Dardailler</a><br />
+      </td>
+      <td class="lastColumn"><a
+        href="mailto:istvan@ecma-international.org">Istvan Sebestyen</a> 
+
+        <p><a href="mailto:josee.auber@hp.com">Josée Auber</a></p>
+      </td>
+    </tr>
+    <tr>
+      <td><a id="Echonet" name="Echonet"
+        href="http://www.echonet.gr.jp/english/index.htm">ECHONET
+      Consortium</a></td>
+      <td><a href="http://www.w3.org/2002/mmi/">Multimodal Interaction</a></td>
+      <td><p><a href="http://www.w3.org/People/all#ashimura">Kazuyuki
+        Ashimura</a></p>
+      </td>
+      <td class="lastColumn"><a href="mailto:info@echonet.gr.jp">Morio
+        Hirahara</a></td>
+    </tr>
+    <tr>
+      <td><a><!-- --></a><a href="http://www.euroaccessibility.org/"
+        id="EuroAccessibility"
+        name="EuroAccessibility">EuroAccessibility</a><br />
+        <a href="http://www.euracert.org/" id="euracert"
+        name="euracert">EuraCert</a> </td>
+      <td><a href="http://www.w3.org/WAI/">WAI</a> </td>
+      <td><a href="http://www.w3.org/People/shadi/">Shadi Abou-Zahra</a> </td>
+      <td class="lastColumn">Dominique Burger</td>
+    </tr>
+    <tr>
+      <td id="ec"><a href="http://europa.eu.int/comm/index_en.htm">European
+        Commission</a><br />
+        <a href="http://ec.europa.eu/dgs/connect/">DG CONNECT</a> 
+
+        <p><a href="http://ec.europa.eu/dgs/informatics/">DG DIGIT</a></p>
+
+        <p><a href="http://ec.europa.eu/enterprise/index_en.htm">DG
+        Enterprise</a></p>
+
+        <p><a
+        href="http://eur-lex.europa.eu/LexUriServ/LexUriServ.do?uri=OJ:C:2011:349:0004:0006:EN:PDF">Multistakeholder
+        Platform</a></p>
+
+        <p><a href="http://ec.europa.eu/dgs/jrc/">DG JRC</a></p>
+      </td>
+      <td><p>Generic Liaisons</p>
+
+        <p>Working Groups (as Invited Experts) and Community Groups</p>
+      </td>
+      <td><p><a href="http://www.w3.org/People/Brewer/">Judy Brewer</a></p>
+
+        <p><a href="http://www.w3.org/People/all#ph">Philipp Hoschka</a></p>
+
+        <p><a href="http://www.w3.org/People/all#rigo">Rigo Wenning</a></p>
+
+        <p><a href="http://www.w3.org/People/danield/">Daniel Dardailler</a></p>
+
+        <p><a href="http://www.w3.org/People/all#jeff">Jeff Jaffe</a></p>
+
+        <p><a href="http://www.w3.org/People/all#phila">Phil Archer</a></p>
+      </td>
+      <td class="lastColumn"><p>From Commissioner level to PO.</p>
+
+        <p>Legal issues related to Commission Staff participating in W3C
+        activities are handled by the Central IP Service. <a
+        href="mailto:EC-IPR@ec.europa.eu">EC-IPR@ec.europa.eu</a>. (specific
+        contact: <a href="mailto:Huseyin.KEBAPCI@ec.europa.eu">Huseyin
+        Kebapci</a>).</p>
+      </td>
+    </tr>
+    <tr>
+      <td><a href="http://www.edf-feph.org/" id="EDF" name="EDF">European
+        Disability Forum (EDF)</a></td>
+      <td><a href="http://www.w3.org/WAI">WAI</a></td>
+      <td><a href="http://www.w3.org/People/shadi/">Shadi Abou-Zahra</a></td>
+      <td>Nadège Riche</td>
+    </tr>
+    <tr>
+      <td><a href="http://www.etsi.org/" id="ETSI" name="ETSI">European
+        Telecommunications Standards Institute (ETSI)</a></td>
+      <td>Generic Liaisons (ICTSR, ICT MSP, Sophia Antipolis, ERCIM)</td>
+      <td><a href="http://www.w3.org/People/danield/">Daniel Dardailler,</a> 
+
+        <p><a href="http://www.w3.org/People/all#rigo">Rigo Wenning</a></p>
+      </td>
+      <td class="lastColumn"><p>Bernardo Correia</p>
+
+        <p><a href="mailto:Margot.Dor@etsi.org">Margot Dor</a> </p>
+
+        <p>Herman Brand</p>
+      </td>
+    </tr>
+    <tr>
+      <td><a href="http://www.etsi.org/" id="ETSIWAI" name="ETSIWAI">ETSI (ESO
+        role)</a></td>
+      <td><a href="http://www.w3.org/WAI">WAI</a></td>
+      <td><a href="http://www.w3.org/People/shadi/">Shadi Abou-Zahra, </a> 
+
+        <p><a href="http://www.w3.org/People/Brewer/">Judy Brewer</a> </p>
+      </td>
+      <td class="lastColumn"><p>Mike Pluke, Gavin Craig, and Mathias Schneider
+        for M376</p>
+      </td>
+    </tr>
+    <tr>
+      <td><a href="http://www.etsi.org/" id="ETSIMCD" name="ETSIMCD">ETSI MCD
+        (Media Content Delivery)</a></td>
+      <td><a href="http://www.w3.org/2011/webtv/">Web and TV</a>. DAP</td>
+      <td><a href="http://www.w3.org/People/all#ph">Philipp Hoschka</a> 
+
+        <p>Giuseppe Pascale</p>
+      </td>
+      <td class="lastColumn">Chantal Bonardi</td>
+    </tr>
+    <tr>
+      <td><a href="http://fcc.gov/">Federal Communications Commission (USA
+        FCC)</a></td>
+      <td><a href="http://www.w3.org/WAI">WAI</a></td>
+      <td><a href="http://www.w3.org/People/Brewer/">Judy Brewer</a></td>
+      <td>Karen Strauss</td>
+    </tr>
+    <tr>
+      <td><a id="F"><!-- --></a><a href="http://www.fstc.org/" id="FSTC"
+        name="FSTC">Financial Services Technology Consortium (FSTC)</a> </td>
+      <td>General Liaisons</td>
+      <td><a href="http://www.w3.org/People/all#swick">Ralph Swick</a> </td>
+      <td class="lastColumn"><a href="http://www.fstc.org/about/staff.php">Dan
+        Schutzer</a>, Executive Director (and AC Rep)</td>
+    </tr>
+    <tr>
+      <td><a id="G"><!-- --></a><a href="http://www.g3ict.org/" id="G3ICT"
+        name="G3ICT">Global Initiative for Inclusive ICTs (G3ICT)</a></td>
+      <td><a href="http://www.w3.org/WAI">WAI</a></td>
+      <td><a href="http://www.w3.org/People/shadi/">Shadi Abou-Zahra</a>, <a
+        href="http://www.w3.org/People/Brewer/">Judy Brewer</a></td>
+      <td>Axel Leblois</td>
+    </tr>
+    <tr>
+      <td><a id="GP"><!-- --></a><a href="http://www.globalplatform.org/"
+        id="GP" name="GP">GlobalPlatform</a></td>
+      <td><a href="http://www.w3.org/Security">Security</a>, <a
+        href="http://www.w3.org/2007/uwa/">Ubiquitous Web Application</a></td>
+      <td><a href="http://www.w3.org/People/#hhalpin">Harry Halpin</a> </td>
+      <td><a href="mailto:gil.bernabeu@globalplatform.org">Gil Bernabeu</a>
+        (Technical Director)</td>
+    </tr>
+    <tr>
+      <td><a name="G2" id="G2"><!-- --></a><a href="http://www.gs1.org/"
+        id="GS1" name="GS1">GS1</a></td>
+      <td><a href="http://www.w3.org/Markup">HTML</a> 
+
+        <p><a href="http://www.w3.org/2001/sw/">Semantic Web</a></p>
+      </td>
+      <td><a href="http://www.w3.org/People/all#phila">Phil Archer</a></td>
+      <td><a href="http://www.gs1.org/about/media_centre/bratt">Steven R.
+        Bratt</a> (CTO)</td>
+    </tr>
+    <tr>
+      <td><a href="http://www.gsm.org/" id="GSMA" name="GSMA">GSM Association
+        (GSMA)</a></td>
+      <td><a href="http://www.w3.org/Mobile">Mobile</a>, <a
+        href="http://www.w3.org/community/networkfriendly/">Network Friendly
+        CG</a></td>
+      <td><a href="http://www.w3.org/People/all#ph">Philipp Hoschka</a></td>
+      <td>David Hutton (GSMA), Paul Gosden (GSMA TSG)</td>
+    </tr>
+    <tr>
+      <td><a id="H"><!-- --></a><a href="http://www.hbbtv.org/" id="HbbTV"
+        name="HbbTV">Hybrid Broadcast Broadband TV (HbbTV)</a></td>
+      <td><a href="http://www.w3.org/2011/webtv/">Web and TV</a></td>
+      <td><a href="http://www.w3.org/People/all#ph">Philipp Hoschka</a></td>
+      <td>Peter MacAvock. Co-Chair HbbTV Requirements Group</td>
+    </tr>
+    <tr>
+      <td><a id="I"><!-- --></a><a id="ICTSR" name="ICTSR"
+        href="http://www.ictsb.org/">ICTSR (EU Standard Roundtable))</a> </td>
+      <td>General liaison/coordination</td>
+      <td><p><a href="/people/danield">Daniel Dardailler</a></p>
+      </td>
+      <td class="lastColumn">Bernardo Correia, ETSI Secretariat</td>
+    </tr>
+    <tr>
+      <td><a id="I3A" name="I3A" href="http://www.i3a.org/">International
+        Imaging Industry Association (I3A)</a> </td>
+      <td><a href="http://www.w3.org/2005/Incubator/mmsem/">MMSem XG</a>, DIG35
+        metadata standard, OWL conversion</td>
+      <td><a href="mailto:raphael.troncy@cwi.nl">Raphaël Troncy</a>, 
+
+        <p><a href="mailto:danield@w3.org">Daniel Dardailler</a></p>
+      </td>
+      <td class="lastColumn"><a href="mailto:jamesp@i3a.org">James A.
+        Peyton</a> </td>
+    </tr>
+    <tr>
+      <td><a href="http://www.icann.org/" id="ICANN" name="ICANN">ICANN</a> 
+
+        <p class="via">(through <a
+        href="http://www.icann.org/general/bylaws.htm#XI-A-2">Technical Liaison
+        Group</a>)</p>
+      </td>
+      <td><a href="http://www.w3.org/Addressing/">URI</a>, IDN, Generic
+      Liaisons</td>
+      <td><a href="http://www.w3.org/People/all#wseltzer">Wendy Seltzer</a>, <a
+        href="http://www.w3.org/People/danield">Daniel Dardailler, </a><a
+        href="http://www.w3.org/People/all#jeff">Jeff Jaffe</a></td>
+      <td class="lastColumn">CEO, Chairman, board members, staff</td>
+    </tr>
+    <tr>
+      <td><a href="http://www.color.org/" id="ICC" name="ICC">International
+        Color Consortium (ICC)</a></td>
+      <td><a href="http://www.w3.org/Graphics/">Graphics</a> </td>
+      <td><a href="http://www.w3.org/People/Lilley/">Chris Lilley</a> </td>
+      <td class="lastColumn"> Ann L McCarthy</td>
+    </tr>
+    <tr>
+      <td><a href="http://www.ida-secretariat.org/" id="IDA"
+        name="IDA">International Disability Alliance (IDA)</a></td>
+      <td><a href="http://www.w3.org/WAI">WAI</a></td>
+      <td><a href="http://www.w3.org/People/shadi/">Shadi Abou-Zahra</a></td>
+      <td>Ellen Walker</td>
+    </tr>
+    <tr>
+      <td>ICT Standardization Steering Group, DG Enterprise</td>
+      <td>Generic Liaisons, EU Recognition</td>
+      <td><a href="mailto:rigo@w3.org">Rigo Wenning</a> </td>
+      <td class="lastColumn"><p><a
+        href="mailto:kiritkumar.lathia@gmail.com">Kiritkumar Lathia</a></p>
+
+        <p><a href="mailto:isavh@microsoft.com">Isabelle Valet-Harper</a></p>
+
+        <p>Anne Lehouck</p>
+      </td>
+    </tr>
+    <tr id="idpf">
+      <td><a href="http://www.idpf.org/">International Digital Publishing Forum
+        (EPUB/OpenEBook) - IDPF</a> </td>
+      <td><a href="http://www.w3.org/html/">HTML</a>, <a
+        href="http://www.w3.org/Style/">Style</a>, <a
+        href="http://www.w3.org/Graphics/">Graphics</a>, <a
+        href="http://www.w3.org/2006/rwc/">Rich Web Client</a>, <a
+        href="http://www.w3.org/2008/WebVideo/">Video</a>, <a
+        href="http://www.w3.org/International/">I18N</a> , <a
+        href="http://www.w3.org/WAI">WAI</a></td>
+      <td><a href="mailto:mike@w3.org">Michael(tm) Smith</a> 
+
+        <p><a href="http://www.w3.org/People/Brewer/">Judy Brewer</a> (WAI)</p>
+
+        <p><a href="http://www.w3.org/People/Lilley/">Chris Lilley</a>
+        (Graphics) </p>
+
+        <p><a href="http://www.w3.org/People/all#bert">Bert Bos</a> (Style)</p>
+      </td>
+      <td class="lastColumn">
+        <div>
+        <a href="mailto:kerscher@montana.com">George Kerscher</a> (WAI)</div>
+
+        <div>
+        <a href="mailto:bmccoy@idpf.org">Bill McCoy</a> 
+
+        <p>Koji Ishii (CSS) </p>
+
+        <p>Jun Fujisawa (SVG)</p>
+        </div>
+      </td>
+    </tr>
+    <tr id="idpf1">
+      <td><a href="http://www.idpf.org/">International Digital Publishing Forum
+        (EPUB/OpenEBook) - IDPF</a> – AAL working group</td>
+      <td><a href="http://www.w3.org/Style/">Style</a></td>
+      <td><a href="http://www.w3.org/People/all#bert">Bert Bos</a> (Style) </td>
+      <td class="lastColumn"><a href="mailto:duga@google.com">Brady Duga</a>
+      </td>
+    </tr>
+    <tr>
+      <td><a href="http://standards.ieee.org" id="IEEE1" name="IEEE1">IEEE
+        Standards</a></td>
+      <td>Generic</td>
+      <td><a href="/People/danield">Daniel Dardailler</a> 
+
+        <p>Jeff Jaffe</p>
+      </td>
+      <td class="lastColumn">Steve Mills (retired), Karen McCabe (<a
+        href="http://open-stand.org">OpenStand</a>)</td>
+    </tr>
+    <tr>
+      <td><a href="http://standards.ieee.org/develop/project/23026.html"
+        id="IEEE2" name="IEEE2">IEEE P23026</a> (Websites mgnt, same as SC7 JTC
+        1)</td>
+      <td><p><a href="http://www.w3.org/MarkUp/">HTML</a>, <a
+        href="http://www.w3.org/style">CSS, </a><a
+        href="http://www.w3.org/WAI">WAI,</a><a href="/privacy">Privacy</a></p>
+      </td>
+      <td><a href="/People/danield">Daniel Dardailler</a></td>
+      <td class="lastColumn"><a href="annette.reilly@computer.org">Annette
+        Reilly</a>, WG Chair</td>
+    </tr>
+    <tr>
+      <td><a href="http://www.ietf.org/" id="IETF" name="IETF">The Internet
+        Engineering Task Force (IETF)</a> </td>
+      <td>Security, Privacy, HTML, Rich Web Applications, Real-Time
+        Communications 
+
+        <p>Generic</p>
+      </td>
+      <td><a href="http://www.w3.org/People/LeHegaret/">Philippe Le
+        Hégaret,</a> <a href="http://www.w3.org/People/Seltzer">Wendy
+        Seltzer</a><br />
+        see also: <a
+        href="http://www.w3.org/Archives/Public/public-ietf-w3c/">public-ietf-w3c</a> 
+
+        <p><a href="/People/danield">Daniel Dardailler</a></p>
+
+        <p>Jeff Jaffe</p>
+      </td>
+      <td class="lastColumn"><a
+        href="http://www.ietf.org/liaisonActivities.html">Mark Nottingham</a> 
+
+        <p>Leslie Daigle, Russ Housley (<a
+        href="http://open-stand.org">OpenStand</a>)</p>
+      </td>
+    </tr>
+    <tr>
+      <td><a href="http://www.intgovforum.org/" name="IGF" id="IGF">The
+        Internet Governance Forum (IGF)</a> </td>
+      <td>Generic Liaisons, Followup to <a name="WSIS" id="WSIS">WSIS</a></td>
+      <td><p><a href="http://www.w3.org/People/all#wseltzer">Wendy
+        Seltzer</a></p>
+
+        <p><a href="http://www.w3.org/People/shadi/">Shadi Abou-Zahra</a></p>
+      </td>
+      <td class="lastColumn">IGF UN Secretary, chair</td>
+    </tr>
+    <tr>
+      <td><a id="IGF-DCOS" name="IGF-DCOS"
+        href="http://www.itu.int/themes/accessibility/dc">IGF Dynamic Coalition
+        on Open Standards (DCOS)</a></td>
+      <td>Open Standardization</td>
+      <td><a href="http://www.w3.org/People/danield">Daniel Dardailler</a> </td>
+      <td class="lastColumn">DCOS coordinator</td>
+    </tr>
+    <tr>
+      <td><a id="IGF-DCAD" name="IGF-DCAD"
+        href="http://www.intgovforum.org/Dynamic%20Coalitions.php?listy=4">IGF
+        Dynamic Coalition on Accessibility and Disability (DCAD)</a></td>
+      <td><a href="http://www.w3.org/WAI">WAI</a> </td>
+      <td><a href="http://www.w3.org/People/shadi/">Shadi Abou-Zahra</a> </td>
+      <td class="lastColumn">Andrea Saks, Alexandra Gaspari</td>
+    </tr>
+    <tr>
+      <td><a href="http://www.imsglobal.org/" name="IMS" id="IMS">IMS Global
+        Learning Consortium, Inc.</a> </td>
+      <td><a href="http://www.w3.org/WAI/">WAI</a> </td>
+      <td><a href="http://www.w3.org/People/Brewer/">Judy Brewer</a> </td>
+      <td class="lastColumn">Jutta Treviranus</td>
+    </tr>
+    <tr>
+      <td><a href="http://www.incits.org/tc_home/ia.htm">INCITS Study Group on
+        Accessibility</a> </td>
+      <td><a href="http://www.w3.org/WAI/">WAI</a> </td>
+      <td><a href="http://www.w3.org/People/Brewer/">Judy Brewer</a> </td>
+      <td class="lastColumn"><p>Ms. <a href="mailto:andisnow@us.ibm.com">Andi
+        Snow-Weaver</a></p>
+      </td>
+    </tr>
+    <tr>
+      <td><a id="IPTV" name="IPTV" href="http://www.iptvforum.jp/en/">IPTV
+        Forum Japan</a></td>
+      <td><a href="http://www.w3.org/2011/webtv/">Web and TV</a>, <a
+        href="http://www.w3.org/MarkUp/">HTML</a>, <a
+        href="http://www.w3.org/2009/dap/">DAP</a>, <a
+        href="http://www.w3.org/2008/webapps/">WebApps</a></td>
+      <td><p><a href="http://www.w3.org/People/all#ashimura">Kazuyuki
+        Ashimura</a> (Web and TV, HTML), <a
+        href="http://www.w3.org/People/Dom/">Dominique Hazaël-Massieux</a>
+        (DAP),</p>
+
+        <p><a href="http://www.w3.org/People/Schepers/">Doug Schepers</a>
+        (WebApps)</p>
+      </td>
+      <td class="lastColumn">Shozo Fukui</td>
+    </tr>
+    <tr>
+      <td><a id="IPTC" name="IPTC" href="http://www.iptc.org/">International
+        Press Telecommunications Council (IPTC)</a></td>
+      <td><a href="http://www.w3.org/2005/Incubator/mmsem/">MMSem XG</a>, OWL
+        conversion, RDFa</td>
+      <td><a href="mailto:raphael.troncy@cwi.nl">Raphaël Troncy</a>, 
+
+        <p><a href="http://www.w3.org/People/all#ivan">Ivan Herman</a> </p>
+      </td>
+      <td class="lastColumn"><a href="mailto:Misha.Wolf@reuters.com">Misha
+        Wolf</a> 
+
+        <p>Michael Steidl</p>
+      </td>
+    </tr>
+    <tr>
+      <td><a href="http://www.iso.ch/">ISO</a> <a
+        href="http://www.iso.org/iso/jtc1_home.html">JTC 1</a> <a
+        href="http://www.w3.org/2010/03/w3c-pas-submission.html">PAS</a>
+        status, ARO</td>
+      <td>Generic Liaisons</td>
+      <td><a href="http://www.w3.org/People/danield/">Daniel Dardailler</a></td>
+      <td class="lastColumn">Josée Auber, PAS Mentor, HP. 
+
+        <p>Karen Higginbottom JTC 1 secretary</p>
+      </td>
+    </tr>
+    <tr>
+      <td><a href="http://www.iso.ch/">ISO</a> JTC1/<a
+        href="http://std.dkuug.dk/jtc1/sc2/">SC2</a> and its WG2 
+
+        <p class="via">(Class C Liaison)</p>
+      </td>
+      <td><a href="http://www.w3.org/International">I18N</a> </td>
+      <td><a href="http://www.w3.org/People/Ishida/">Richard Ishida</a> </td>
+      <td class="lastColumn"><a href="mailto:mikeksar@microsoft.com">Mike
+        Ksar</a> </td>
+    </tr>
+    <tr>
+      <td><a href="http://www.iso.ch/">ISO</a> <a id="JTC11"
+        name="JTC11">JTC1</a>/<a
+        href="http://isotc.iso.org/livelink/livelink?func=ll&amp;objId=327973&amp;objAction=browse&amp;sort=name">SC
+        24</a> 
+
+        <p class="via">(Class C Liaison)</p>
+      </td>
+      <td><a href="http://www.w3.org/Graphics/">Graphics</a> </td>
+      <td><a href="mailto:chris@w3.org">Chris Lilley</a> </td>
+      <td class="lastColumn"><a href="mailto:Jean.Stride@bsi-global.com">Jean
+        Stride</a> </td>
+    </tr>
+    <tr>
+      <td><a href="http://www.iso.ch/" id="ISO" name="ISO">ISO</a> <a
+        href="http://isotc.iso.org/livelink/livelink/fetch/2000/2122/327993/customview.html?func=ll&amp;objId=327993">JTC1</a>/<a
+        href="http://jtc1sc32.org/">SC 32</a> 
+
+        <p class="via">(Class C Liaison)</p>
+      </td>
+      <td>XML and Dublin Core</td>
+      <td><a href="http://www.w3.org/people/quin">Liam Quin</a></td>
+      <td class="lastColumn"><a href="mailto:jim.melton@oracle.com">Jim
+        Melton</a> </td>
+    </tr>
+    <tr>
+      <td><a href="http://www.iso.ch/">ISO</a> JTC1/ <a
+        href="http://www.itscj.ipsj.or.jp/sc34/">SC 34</a> OOXML, ODF </td>
+      <td><a href="http://www.w3.org/XML/">XML</a></td>
+      <td><a href="http://www.w3.org/people/quin">Liam Quin</a></td>
+      <td class="lastColumn"><a href="mailto:innovimax@gmail.com">Mohamed
+        Zergaoui</a></td>
+    </tr>
+    <tr>
+      <td>ISO JTC1 SC35 WG6</td>
+      <td><a href="http://www.w3.org/WAI">WAI</a></td>
+      <td><a href="http://www.w3.org/People/Brewer/">Judy Brewer</a></td>
+      <td>Janina Sajka</td>
+    </tr>
+    <tr>
+      <td><a href="http://www.iso.ch/">ISO</a> JTC1/<a
+        href="http://itscj.ipsj.or.jp/sc29/">SC 29</a>/<a
+        href="http://itscj.ipsj.or.jp/sc29/29w12901.htm">WG1</a> (JPEG) 
+
+        <p class="via">(Class C Liaison)</p>
+      </td>
+      <td><a href="http://www.w3.org/Graphics">Graphics</a>, <a
+        href="http://www.w3.org/Graphics/PNG/">PNG</a> 
+
+        <p>SVG</p>
+      </td>
+      <td><a href="mailto:chris@w3.org">Chris Lilley</a></td>
+      <td><p><a href="http://www.linkedin.com/pub/dave-singer/0/a/66b">David
+        Singer</a></p>
+
+        <p><a href="mailto:ogura@itscj.ipsj.or.jp">Yukiko Ogura</a></p>
+      </td>
+    </tr>
+    <tr>
+      <td><a id="MPEG" name="MPEG"></a><a href="http://www.iso.ch/">ISO</a>
+        JTC1/<a href="http://itscj.ipsj.or.jp/sc29/">SC 29</a>/WG11 (MPEG) 
+
+        <p class="via">(Class C Liaison)</p>
+      </td>
+      <td><a href="http://www.w3.org/Graphics">Graphics</a>, <a
+        href="http://www.w3.org/2005/Incubator/mmsem/">MMSem XG</a>, <a
+        href="http://www.w3.org/2008/webapps/">WebApps</a>, <a
+        href="http://www.w3.org/2011/webtv/">Web and TV</a> 
+
+        <p>Fonts, <a href="http://www.w3.org/AudioVideo/TT/">Timed Text</a></p>
+      </td>
+      <td><a href="mailto:plh@w3.org">Philippe Le Hégaret</a> (Timed Text)<br
+        />
+        <a href="mailto:chris@w3.org">Chris Lilley</a> (SVG, Fonts) 
+
+        <p><a href="mailto:raphael.troncy@cwi.nl">Raphaël Troncy</a> (MMSem XG
+        chair)</p>
+
+        <p><a href="http://www.w3.org/2001/11/even">Doug Schepers</a>
+        (WebApps)</p>
+
+        <p><a href="http://www.w3.org/People/all#ashimura">Kazuyuki
+        Ashimura</a> (Web and TV)<br />
+        </p>
+      </td>
+      <td class="lastColumn"><br />
+        <a href="mailto:jean-claude.dufourd@telecom-paristech.fr">Dr.
+        Jean-Claude Dufourd</a> 
+
+        <p>See the <a
+        href="http://www.w3.org/2005/Incubator/mmsem/liaison/29n79301.doc">XG
+        liaison statement</a> </p>
+
+        <p><a href="mailto:watanabe@itscj.ipsj.or.jp">Shinji Watanabe</a></p>
+
+        <p>Secretary, SC 29</p>
+
+        <p>Vladimir Levantovsky</p>
+      </td>
+    </tr>
+    <tr>
+      <td><a href="http://www.iso.ch/">ISO</a> TC 68/ WG 4 
+
+        <p class="via">(Class D Liaison)</p>
+      </td>
+      <td><a href="http://www.w3.org/2002/ws/">Web Services</a> (on ISO side:
+        Financial services) </td>
+      <td><p><a href="mailto:steve@pi4tech.com">Steve Ross-Talbot</a>
+        (WS-CDL)</p>
+
+        <p><a href="http://www.w3.org/People/all#ylafon">Yves Lafon</a></p>
+      </td>
+      <td class="lastColumn">Matthew Rawlings</td>
+    </tr>
+    <tr>
+      <td><a id="SWGA" name="SWGA">ISO</a> JTC 1 <a
+        href="http://www.jtc1access.org/">SWG Accessibility </a></td>
+      <td><a href="http://www.w3.org/WAI">WAI</a> </td>
+      <td><a href="mailto:jbrewer@w3.org">Judy Brewer</a> 
+
+        <p><a href="http://www.w3.org/People/shadi/">Shadi Abou-Zahra</a></p>
+      </td>
+      <td class="lastColumn"><a href="mailto:karen_higginbottom@hp.com">Karen
+        Higginbottom</a> 
+
+        <p><a href="mailto:alli@microsoft.com">Alex Li</a></p>
+      </td>
+    </tr>
+    <tr>
+      <td><a href="http://isoc.org" id="ISOC" name="ISOC">ISOC</a></td>
+      <td>Generic</td>
+      <td class="lastColumn">Jeff Jaffe, <a href="/people/danield">Daniel
+        Dardailler</a></td>
+      <td>Lynn St Amour, Markus Kummer</td>
+    </tr>
+    <tr>
+      <td><a href="http://www.itic.org/" id="ITIC" name="ITIC">ITIC</a> </td>
+      <td><a href="http://www.w3.org/WAI/">WAI</a> </td>
+      <td><a href="http://www.w3.org/People/Brewer">Judy Brewer</a> </td>
+      <td class="lastColumn">Ken Saelets,<br />
+        Don Deutsch</td>
+    </tr>
+    <tr>
+      <td><a href="http://www.itu.int/" id="ITU" name="ITU">International
+        Telecommunication Union (ITU)</a></td>
+      <td>Generic Liaisons</td>
+      <td><a href="http://www.w3.org/People/danield/">Daniel Dardailler</a>, <a
+        href="http://www.w3.org/People/shadi/">Shadi Abou-Zahra</a> </td>
+      <td class="lastColumn">Alexandra Gaspari, Various ITU staff</td>
+    </tr>
+    <tr>
+      <td><a href="http://www.itu.int/net/about/itu-t.aspx" id="ITU-Driver"
+        name="ITU-Driver">ITU-T</a> <a
+        href="http://www.itu.int/en/ITU-T/focusgroups/distraction/Pages/default.aspx">Focus
+        Group on Driver Distraction</a></td>
+      <td><a href="http://www.w3.org/2002/mmi/">Multimodal Interaction</a></td>
+      <td><a href="http://www.w3.org/People/#ashimura">Kazuyuki Ashimura</a>
+      </td>
+      <td class="lastColumn">Scott Pennock ITU-T</td>
+    </tr>
+    <tr>
+      <td><a href="http://www.itu.int/net/about/itu-t.aspx" id="ITU-COP"
+        name="ITU-COP">ITU-T</a> <a
+        href="http://www.itu.int/en/ITU-T/jca/COP/Pages/default.aspx">JCA-COP
+        (Child Protection)</a></td>
+      <td><a href="http://www.w3.org/2001/sw/">Semantic Web</a>, <a
+        href="http://www.w3.org/TR/powder-dr/">POWDER</a></td>
+      <td><a href="http://www.w3.org/People/all#phila">Phil Archer</a></td>
+      <td class="lastColumn"><a href="mailto:aheineman@ntia.doc.gov">Ashley
+        Heineman</a> Chair JCA-COP</td>
+    </tr>
+    <tr>
+      <td><a href="http://www.itu.int/net/about/itu-t.aspx" id="ITU-JCA"
+        name="ITU-JCA">ITU-T</a> <a
+        href="http://www.itu.int/en/ITU-T/jca/ahf/Pages/default.aspx">JCA-AHF
+        and Q16/26</a></td>
+      <td><a href="http://www.w3.org/WAI">WAI</a></td>
+      <td><a href="http://www.w3.org/People/shadi/">Shadi Abou-Zahra</a> </td>
+      <td class="lastColumn">Yushi Naito 
+
+        <p>SG 16 Chairman </p>
+      </td>
+    </tr>
+    <tr>
+      <td><a href="http://www.itu.int/net/about/itu-t.aspx" id="ITU-G13"
+        name="ITU-G13">ITU-T</a> <a
+        href="http://www.itu.int/en/ITU-T/studygroups/2013-2016/13/Pages/default.aspx">Group
+        13</a></td>
+      <td><a href="http://www.w3.org/2002/mmi/">Multimoal</a></td>
+      <td><a href="http://www.w3.org/People/all#ashimura">Kazuyuki Ashimura</a>
+      </td>
+      <td class="lastColumn"><a href="mailto:gmlee@kaist.ac.kr">Gyu Myoung
+        Lee</a> </td>
+    </tr>
+    <tr>
+      <td><a href="http://www.itu.int/net/about/itu-t.aspx" id="ITU-G16"
+        name="ITU-G16">ITU-T</a> <a
+        href="http://www.itu.int/ITU-T/studygroups/com16/index.asp">Group 16
+        IPTV</a></td>
+      <td>eHealth, <a href="http://www.w3.org/2011/webtv/">Web and TV</a></td>
+      <td><p><a href="http://www.w3.org/People/all#ashimura">Kazuyuki
+        Ashimura</a></p>
+
+        <p><a href="http://www.w3.org/People/all#ddavis">Daniel Davis</a></p>
+      </td>
+      <td class="lastColumn"><a
+        href="mailto:kawamori.masahito@lab.ntt.co.jp">Masahito Kawamori</a>,
+        Rosa Angeles-León de Vivero</td>
+    </tr>
+    <tr>
+      <td><a href="http://www.itu.int/net/about/itu-t.aspx" id="ITU-G17"
+        name="ITU-G17">ITU-T</a> <a
+        href="http://www.itu.int/ITU-T/studygroups/com17/index.asp">Group
+      17</a></td>
+      <td><a href="http://www.w3.org/2011/webappsec">Security</a>, <a
+        href="http://www.w3.org/2008/webapps/">WebApp</a>, <a
+        href="http://www.w3.org/html/wg/">HTML</a></td>
+      <td><a href="http://www.w3.org/People/danield">Daniel Dardailler</a></td>
+      <td class="lastColumn">Martin Euchner</td>
+    </tr>
+    <tr>
+      <td><a href="http://www.iw3c2.org/" id="IW3C2" name="IW3C2">IW3C2</a>
+        International WWW Conference Committee</td>
+      <td><a href="http://www.w3.org/">Communications</a> </td>
+      <td><a href="http://www.w3.org/People/all#ivan">Ivan Herman</a> </td>
+      <td class="lastColumn">Mary Ellen Zurko </td>
+    </tr>
+    <tr>
+      <td><a id="J"><!-- --></a><a href="http://www.jisc.go.jp/" name="JIS"
+        id="JIS">Japanese Industrial Standards Committee, X 8341-3 Working
+        Group 2</a> </td>
+      <td><a href="http://www.w3.org/WAI/">WAI</a> </td>
+      <td><a href="http://www.w3.org/People/Brewer/">Judy Brewer</a>, <a
+        href="http://www.w3.org/People/shadi/">Shadi Abou-Zahra</a></td>
+      <td class="lastColumn">Makoto Ueki (InfoAxia)</td>
+    </tr>
+    <tr>
+      <td><a id="L" href="http://www.leadingpractice.com">LEADing
+      Practice</a></td>
+      <td><a href="http://www.w3.org/2012/ldp/charter">Linked Data</a> 
+
+        <p>Generic Liaisons &amp; Open Standards</p>
+      </td>
+      <td><a href="/people/danield">Daniel Dardailler</a></td>
+      <td><a href="mailto:mvr@leadingpractice.com">Prof. Mark von Rosing,</a> 
+
+        <p><a href="mailto:pl@leadingpractice.com">Paul Lombardi</a></p>
+      </td>
+    </tr>
+    <tr>
+      <td><a id="N">National</a> Information Society Agency (<a
+        href="http://www.nia.or.kr/files/ko/nia2009/html/goEnglis.html">NIA</a>)</td>
+      <td><a href="http://www.w3.org/WAI">WAI</a></td>
+      <td><a href="http://www.w3.org/People/Brewer/">Judy Brewer</a></td>
+      <td>Joon-Ho Hyun</td>
+    </tr>
+    <tr>
+      <td><a id="O"><!-- --></a><a href="http://www.oasis-open.org/" id="OASIS"
+        name="OASIS">Organization for the Advancement of Structured Information
+        Standards (OASIS)</a> 
+
+        <p>W3C Member</p>
+      </td>
+      <td>Generic Liaisons, 
+
+        <p><a href="http://www.w3.org/MarkUp/">HTML</a></p>
+
+        <p><a href="http://www.w3.org/Security/">Security</a></p>
+
+        <p><a href="http://www.w3.org/egov/">eGov</a> </p>
+
+        <p>SVG (ODF liaison)</p>
+      </td>
+      <td><p><a href="http://www.w3.org/People/Schepers/">Doug Schepers</a>
+        (SVG, ODF)</p>
+      </td>
+      <td class="lastColumn"><p><a href="mailto:dang@mit.edu">Daniel
+        Greenwood</a> (MIT), LegalXML eContracts Committee</p>
+
+        <p>Digital Signatures Extended (DSS-X) TC: Juan Carlos Cruellas<br />
+        eXtensible Access Control Markup Language (XACML) TC: Hal Lockhart<br />
+        Security Services (SAML) TC: Hal Lockhart<br />
+        Web Services Federation TC: Mike McIntosh (through Bruce Rich)<br />
+        Web Services Secure Exchange (WS-SX) TC: Hal Lockhart, Frederick Hirsch
+        </p>
+
+        <p>Scott McGrath, OASIS, Senior Director of Member Services<br />
+        Michael Brauer, ODF TC<br />
+        Rob Weir, ODF TC </p>
+      </td>
+    </tr>
+    <tr>
+      <td><a href="http://www.oecd.org/">OECD</a> <a
+        href="http://www.internetac.org/">ITAC</a></td>
+      <td>Generic Liaisons, Privacy, Open Standard</td>
+      <td><a href="http://www.w3.org/People/danield">Daniel Dardailler</a> 
+
+        <p><a href="http://www.w3.org/people/rigo">Rigo Wenning</a>, <a
+        href="http://www.w3.org/People/Seltzer">Wendy Seltzer</a></p>
+      </td>
+      <td>Christine Runnegar, ISOC 
+
+        <p>Bill Graham, ISOC</p>
+      </td>
+    </tr>
+    <tr>
+      <td><a href="http://www.ogf.org/" id="OGF" name="OGF">Open Grid Forum
+        (OGF)</a> </td>
+      <td>Web Services, Semantic Web</td>
+      <td><a href="http://www.w3.org/People/danield">Daniel Dardailler </a></td>
+      <td class="lastColumn"> <a href="mailto:dder@ecs.soton.ac.uk">David De
+        Roure</a> </td>
+    </tr>
+    <tr>
+      <td><a href="http://www.openmobilealliance.org/">OMA</a> <a id="oma"
+        href="#oma" name="oma">Open Mobile Alliance</a> 
+
+        <p class="via">(through <a
+        href="http://www.w3.org/Consortium/Legal/2008/07-W3C-OMA-Agreement.html">MoU
+        with OMA</a>)</p>
+      </td>
+      <td><a href="http://www.w3.org/Style/CSS/">CSS</a>, <a
+        href="http://www.w3.org/Graphics">Graphics</a> <a
+        href="http://www.w3.org/MarkUp/">HTML</a>, <a
+        href="http://www.w3.org/2002/mmi/">Multimodal Interaction,</a> Mobile
+        Web Initiative <a
+        href="http://www.w3.org/2005/Incubator/federatedsocialweb/">Federated
+        Social Web</a> </td>
+      <td><a href="mailto:chris@w3.org">Chris Lilley</a>,<a
+        href="mailto:ph@w3.org">Philipp Hoschka</a>, ,<a
+        href="mailto:harry@w3.org">Harry Halpin</a>(Federated Social Web) </td>
+      <td class="lastColumn">Kieran McAleese 
+
+        <p>Kimmo Halonen</p>
+
+        <p>Mobile Web Initiative: Jari Alvinen</p>
+
+        <p>Federated Social Web: Goix Laurent Walter</p>
+
+        <p><a
+        href="http://www.w3.org/2001/11/OMA-LIAISON@MAIL.OPENMOBILEALLIANCE.ORG">Victoria
+        Gray</a>.</p>
+      </td>
+    </tr>
+    <tr>
+      <td><a href="http://www.omg.org/" id="OMG" name="OMG">Object Management
+        Group (OMG)</a> </td>
+      <td>Web Services, <a href="http://www.w3.org/DOM/">DOM</a></td>
+      <td><a href="http://www.w3.org/People/LeHegaret/">Philippe
+        Le Hégaret</a></td>
+      <td class="lastColumn"><a href="mailto:nemiah@omg.org">James
+      Nemiah</a></td>
+    </tr>
+    <tr>
+      <td><a href="http://www.openebook.org/" id="OpenEbook"
+        name="OpenEbook">Open eBook Forum (OeBF)</a> </td>
+      <td><a href="http://www.w3.org/WAI/">WAI</a> </td>
+      <td><a href="http://www.w3.org/People/Brewer/">Judy Brewer</a> </td>
+      <td class="lastColumn"> </td>
+    </tr>
+    <tr>
+      <td><a id="ogc" name="ogc" href="http://www.opengis.org/">Open GIS
+        Consortium (OGC)</a> </td>
+      <td><a href="http://www.w3.org/Graphics/SVG">SVG</a> </td>
+      <td><a href="http://www.w3.org/People/Chris/">Chris Lilley</a>, <a
+        href="mailto:ralph@w3.org">Ralph Swick</a> 
+
+        <p><a href="http://www.w3.org/People/all#ivan">Ivan Herman</a></p>
+      </td>
+      <td class="lastColumn">Carl Reed, <a
+        href="mailto:rlake@galdosinc.com">Ron Lake</a> 
+
+        <p>Raj Singh</p>
+      </td>
+    </tr>
+    <tr>
+      <td><a id="opensocial" name="opensocial"
+        href="http://opensocial.org/">OpenSocial Foundation</a> </td>
+      <td><a href="http://www.w3.org/TandS/">Technology and Society</a> </td>
+      <td><a href="http://www.w3.org/People/#hhalpin">Harry Halpin</a> </td>
+      <td class="lastColumn"><p><a href="jmertic@sugarcrm.com">John Mertic</a>,
+        <a href="mailto:andybs@us.ibm.com">Andy Smith</a></p>
+
+        <p><a href="mailto:mark.weitzel@jivesoftware.com">Mark Weitzel</a></p>
+      </td>
+    </tr>
+    <tr>
+      <td><a href="http://www.owasp.org/" id="owasp">Open Web Application
+        Security Project (OWASP)</a> </td>
+      <td><a href="http://www.w3.org/TandS/">Technology and Society</a>
+
+        <p><a href="http://www.w3.org/Security/">Security</a></p>
+
+        <p>Privacy, TAG</p>
+
+        <p></p>
+      </td>
+      <td><a href="http://www.w3.org/People/danield"></a><a
+        href="http://www.w3.org/People/Seltzer">Wendy Seltzer</a></td>
+      <td class="lastColumn">Sebastien Deleersnyder</td>
+    </tr>
+    <tr>
+      <td><a id="S"><!-- --></a><a id="SWSA" name="SWSA"
+        href="http://www.iswsa.org/">Semantic Web Science Association
+        (SWSA)</a> </td>
+      <td><a href="http://www.w3.org/2001/sw/">Semantic Web</a>, <a
+        href="http://www.w3.org/egov/">eGov</a></td>
+      <td><a href="mailto:ivan@w3.org">Ivan Hermann</a> </td>
+      <td class="lastColumn">James Hendler</td>
+    </tr>
+    <tr>
+      <td><a id="SMPTE" name="SMPTE" href="http://www.smpte.org/">SMPTE</a>
+      </td>
+      <td><a href="http://www.w3.org/AudioVideo/">SYMM,</a> <a
+        href="http://www.w3.org/AudioVideo/TT/">Timed Text</a></td>
+      <td><a href="mailto:tmichel@w3.org">Thierry Michel,</a><a
+        href="http://www.w3.org/People/LeHegaret/">Philippe Le Hégaret</a>
+      </td>
+      <td class="lastColumn"><a href="mailto:mdolan@newtbt.com">Mike Dolan</a>
+      </td>
+    </tr>
+    <tr>
+      <td><a id="T"><!-- --></a><a href="http://www.opengroup.org/" id="TOG"
+        name="TOG">The Open Group</a> </td>
+      <td>Generic Liaisons</td>
+      <td><p><a href="http://www.w3.org/People/danield/">Daniel
+        Dardailler</a></p>
+      </td>
+      <td class="lastColumn"> Scott Hansen</td>
+    </tr>
+    <tr>
+      <td><a id="tta" name="tta"
+        href="http://www.tta.or.kr/English/index.jsp">Telecommunications
+        Technology Association (TTA)</a></td>
+      <td><a href="http://www.w3.org/2011/webtv/">Web and TV</a> </td>
+      <td><a href="http://www.w3.org/People/all#ashimura">Kazuyuki
+        Ashimura</a>,<br />
+        <a href="http://www.w3.org/People/all#ddavis">Daniel Davis</a> </td>
+      <td class="lastColumn"><a href="mailto:dhlee@tta.or.kr">DongHoon
+      Lee</a></td>
+    </tr>
+    <tr>
+      <td><a id="U"><!-- --></a><a href="http://www.unicode.org/" id="Unicode"
+        name="Unicode">Unicode</a></td>
+      <td><a href="http://www.w3.org/International/">I18N</a> </td>
+      <td><a href="http://www.w3.org/People/Ishida/">Richard Ishida</a> </td>
+      <td class="lastColumn"> <a href="mailto:mark.davis@us.ibm.com">Mark
+        Davis</a> </td>
+    </tr>
+    <tr>
+      <td><a href="http://www.unece.org/cefact/" id="UNC"
+        name="UNC">UN/CEFACT</a> </td>
+      <td>Generic Liaisons</td>
+      <td><a href="http://www.w3.org/People/danield/">Daniel Dardailler</a>
+      </td>
+      <td class="lastColumn"> <a href="mailto:Stuart.Feder@bis.org">Stuart
+        Feder</a> </td>
+    </tr>
+    <tr>
+      <td><a href="http://www.unesco.org/">UNESCO</a> </td>
+      <td><a href="http://www.w3.org/International">I18N</a>, <a
+        href="http://www.w3.org/WAI/">WAI</a>, Generic Liaisons</td>
+      <td><a href="http://www.w3.org/people/danield">Daniel Dardailler</a>, <a
+        href="http://www.w3.org/people/ishida">Richard Ishida</a>, <a
+        href="http://www.w3.org/People/shadi/">Shadi Abou-Zahra</a> </td>
+      <td class="lastColumn"><a href="mailto:a.plathe@unesco.org">Axel
+        Plathe</a>, <a href="mailto:c.menezes@unesco.org">Claudio Menezes</a>,
+        Irmgarda Kasinskaite </td>
+    </tr>
+    <tr>
+      <td><a href="http://www.upnp.org/">UPnP</a> Forum</td>
+      <td><a href="http://www.w3.org/2011/webtv/">Web and TV</a>, <a
+        href="http://www.w3.org/2009/dap/">DAP</a>, Testing</td>
+      <td><a href="http://www.w3.org/People/all#ashimura">Kazuyuki
+      Ashimura</a></td>
+      <td class="lastColumn">Clarke Stevens</td>
+    </tr>
+    <tr>
+      <td><a id="V"><!-- --></a><a href="http://www.vendorcom.com/"
+        id="Vendorcom" name="Vendorcom">Vendorcom Forum</a> </td>
+      <td><a href="http://www.w3.org/2014/04/payments/Activity.html">Web
+        Payments</a></td>
+      <td><a href="http://www.w3.org/People/AlanBird/">J. Alan Bird</a></td>
+      <td class="lastColumn"><a href="mailto:paul.rodgers@vendorcom.com">Paul
+        Rogers</a> </td>
+    </tr>
+    <tr>
+      <td><a href="http://www.voicexml.org/" id="VoiceXML"
+        name="VoiceXML">VoiceXML Forum</a> 
+
+        <p class="via">(through <a href="http://www.w3.org/2001/10/MOU.txt">MoU
+        with VoiceXML Forum</a>)</p>
+      </td>
+      <td><a href="http://www.w3.org/Voice/">Voice Browser</a>, <a
+        href="http://www.w3.org/2002/mmi/">Multimodal Interaction</a></td>
+      <td><a href="http://www.w3.org/People/all#ashimura">Kazuyuki
+      Ashimura</a></td>
+      <td class="lastColumn"><a
+        href="mailto:michelle.hunt@ieee-isto.org">Michelle Hunt</a> </td>
+    </tr>
+    <tr>
+      <td><a id="W"><!-- --></a><a href="http://www.wabcluster.org/" id="WAB"
+        name="WAB">Web Accessibility Benchmarking (WAB) Cluster</a> </td>
+      <td><a href="http://www.w3.org/WAI">WAI</a></td>
+      <td><a href="http://www.w3.org/People/shadi/">Shadi Abou-Zahra</a></td>
+      <td class="lastColumn">Eric Velleman, Carlos Velasco, Mikael Snaprud,
+        Dominique Burger </td>
+    </tr>
+    <tr>
+      <td><a href="http://www.webstandards.org/" id="WASP" name="WASP">The Web
+        Standards Project (WASP)</a></td>
+      <td><a href="http://www.w3.org/">Communications</a> </td>
+      <td><a href="http://www.w3.org/People/Jacobs">Ian Jacobs</a></td>
+      <td class="lastColumn">Jeffrey Zeldman</td>
+    </tr>
+    <tr>
+      <td><a href="http://www.web3d.org/" id="Web3D" name="Web3D">Web3D</a>
+        Web3D Consortium 
+
+        <p>Member</p>
+      </td>
+      <td><a href="http://www.w3.org/Graphics/">Graphics</a> Generic
+      Liaisons</td>
+      <td><a href="http://www.w3.org/People/Lilley/">Chris Lilley</a></td>
+      <td class="lastColumn"><a href="mailto:brutzman@nps.edu">Don Brutzman</a>
+        <br />
+      </td>
+    </tr>
+    <!--
+                                                                                                                                                                                                                                                                        <tr>                                                                                                                                                                                  <td><a href="http://www.ws-i.org/" id="WS-I" name="WS-I">WS-I</a> Web                                                                                                                                                                                            Services Interoperability Organization</td>                                                                                                                                                                                  <td><a href="/2002/ws/">Web Services</a> </td>                                                                                                                                                                                                                                          <td>Yves Lafon</td>                                                                                                                                                                                  <td class="lastColumn">Ed Cobb (management), Jeff Mischkinski                                                                                                                                                                                          (technical)</td>                                                                                                                                                                                </tr>                                                                                                                                                                                                                                        -->
+  </tbody>
+</table>
+</div>
+
+<h2 id="mission">Mission of W3C International Liaisons</h2>
+
+<p>W3C is determined to improve W3C's liaisons with international organizations
+in the areas of policy and standardization and to reinforce W3C's commitment to
+developing one Web for all. The W3C staff provides the leadership to coordinate
+and to empower W3C Offices. The staff acts as a catalyst and enabler for both
+the W3C management team and the Offices, with whom it shares best practices and
+resources.</p>
+
+<p>International Relations focuses on spreading W3C's messages and technologies
+beyond the Consortium's usual geographical and Web community frontiers. We
+pursue the vision and plan outlined in the white paper <cite><a
+href="http://www.w3.org/2005/02/W3C-Global-Focus.html">Worldwide Participation
+in the World Wide Web Consortium</a> </cite> with the goal of making it easier
+for new stakeholders to discover and participate in W3C's work and values.</p>
+
+<h2 id="contact">Contacting W3C to Establish a Liaison</h2>
+
+<p>The best way to reach W3C about liaisons and partnerships is to send email
+to <a href="mailto:team-liaisons@w3.org">team-liaisons@w3.org</a> which will
+reach <a href="http://www.w3.org/People/danield/">Daniel Dardailler</a>, <a
+href="http://www.w3.org/People/all#rigo">Rigo Wenning</a>, <a
+href="http://www.w3.org/People/all#wseltzer">Wendy Seltzer</a>, <a
+href="http://www.w3.org/People/all#jeff">Jeff Jaffe</a>, and other W3C staff
+members active in the area. Please see the public <a
+href="http://www.w3.org/2007/IntlRel.html">International Relations</a> page of
+W3C.</p>
+
+<p>We have additional information about <a
+href="http://www.w3.org/participate/eu-research">participation in W3C by
+EU-funded projects</a>.</p>
+
+<p>For relationships between W3C and government driven organizations like ISO,
+ITU, EU normalization (ETSI, CEN), UN efforts like IGF/WSISs, national bodies
+(ANSI, AFNOR, etc.), and for political liaison activities with other Internet
+organizations like IETF, ICANN, ISOC, etc., please cc <a
+href="http://www.w3.org/People/danield/">Daniel Dardailler</a> in any case.</p>
+
+<p>If you prefer private communication, please contact <a
+href="http://www.w3.org/People/danield/">Daniel Dardailler</a>.</p>
+
+<h2 id="about">About the Liaison Table</h2>
+
+<p>Each entry in the following table of partnerships (active or not)
+includes:</p>
+<ul class="show_items">
+  <li>the name of the organization, linked to its homepage. In addition, formal
+    agreements can be listed here.</li>
+  <li>the W3C activities or technologies affected by the liaison</li>
+  <li>one or several contact names within W3C</li>
+  <li>one or several liaison contact names (preferrably using an http URL,
+    rather than a mailto)</li>
+</ul>
+
+<p>For more information about a particular liaison, please refer to the contact
+page for the listed individual(s).</p>
+
+<h2 id="considerations">Considerations When Establishing a Liaison</h2>
+
+<p>W3C finds its liaisons fall into two categories:</p>
+<ul class="show_items">
+  <li><a href="#simple">simple liaisons</a></li>
+  <li><a href="#formal">formal agreements for joint work</a>, involving a
+    Memorandum of Understanding (<acronym>MoU</acronym>), signed on paper and
+    reviewed by W3C legal, and the Advisory Committee, per process
+  requirement.</li>
+</ul>
+
+<p>We list both types of liaisons in the table above. Per the <a
+href="http://www.w3.org/2005/10/Process-20051014/liaisons">W3C
+ProcessDocument</a>, all liaisons, of any kind, must be coordinated by the Team
+due to requirements for public communication, IPR or confidentiality policies.
+Mutual <a href="http://www.w3.org/Member/">membership</a> agreements are also
+possible.</p>
+
+<p>W3C may choose not to pursue a liaison with an organization that has
+selective or arbitrary membership policies that serve only to benefit
+pre-existing or dominant members.</p>
+
+<p>To request any liaison, please send a brief email to the <a
+href="#contact">liaison contact.</a></p>
+
+<h3 id="simple">Simple liaisons</h3>
+
+<p>In general, the goal of a simple liaison is for both parties to gain a
+better understanding of their respective activities and look for opportunities
+to work together. For example, W3C appreciates understanding how other
+organizations use W3C technology, whether they require extensions, the proper
+way to manage those extensions, how to bring extensions back into W3C, and so
+on. Other organizations may find a simple liaison valuable for soliciting W3C
+input on a Web-related question.</p>
+
+<p>Most often, W3C establishes simple liaisons with non-profit organizations,
+other standards bodies, or any other entity that may wish to build consensus
+around an emerging Web technology. Simple liaisons are active as soon as both
+partie agree to make the information public in this page. </p>
+
+<h3 id="formal">Formal Agreements for Joint Work</h3>
+
+<p>In some cases, W3C is asked to establish a formal liaison that has a
+contractual framework, either because there are joint deliverables, or an
+agreed share of technical responsibilities with coordination, with
+considerations for confidentiality, shared press coverage, or IPR.</p>
+
+<p>While W3C supports all liaisons with other groups, the organization and
+development of these formal liaisons requires time and resources, and the
+agreement of the W3C membership at large, so. W3C's decision to pursue a
+liaison with a Partner is ultimately based on the perceived costs and benefits.
+</p>
+
+<p>For an historical record of how Formal Liaisons are created, please see the
+2003 <a
+href="http://www.w3.org/2003/06/Process-20030618/liaisons.html#LiaisonCreation">Process
+Document</a>, which used to described the details (no longer the case in the
+current Process).</p>
+
+<h2 id="dejure">W3C and De Jure Standards</h2>
+
+<p>This section describes some of W3C's relationships with <em>de jure</em>
+bodies such as ISO, in addition to the direct technical activity liaisons
+mentioned above.</p>
+
+<h3>W3C is an "ISO/IEC JTC 1 PAS" Submitter</h3>
+
+<p>At the end of October 2010, W3C was approved as a JTC 1 Recognized PAS
+Submitter for an overall scope defined as "any stable core Web technologies
+produced by W3C that are also in scope of JTC 1". The PAS process is standard
+transposition procedure whereby organizations accredited as valid PAS
+Submitters can send their specifications directly for country voting, to become
+ISO/IEC standards. See the <a href="http://www.w3.org/2010/04/pasfaq.html">W3C
+PAS Submission FAQ</a>.</p>
+
+<h3>W3C Approved RS Originator Organization (ARO) Status for ISO/JTC1</h3>
+
+<p>In January 2007, W3C became an <a
+href="http://isotc.iso.org/livelink/livelink/fetch/2000/2122/327993/755080/5860393/Approved_RS_Originator_Organizations_AROs_.html?nodeid=7500268&amp;vernum=0">Approved
+RS Originator Organization (ARO) for ISO/JTC1</a>. This means that ISO/JTC1
+standards may refer to W3C Recommendations "as-is." That process is described
+in the <a
+href="http://isotc.iso.org/livelink/livelink/fetch/2000/2122/327993/755080/1054033/2541871/JTC001-N-9871.pdf?nodeid=8499119&amp;vernum=0">Letter
+Ballot on the JTC 1 Standing Document on Normative References</a></p>
+<!--
+<p>In July 2010, W3C submitted a <a href="http://www.w3.org/2010/03/w3c-pas-submission.html">ISO/IEC JTC 1 PAS Submitter Application</a>.</p>-->
+
+<p>For more information about W3C's ARO or PAS status, please contact Daniel
+Dardailler &lt;danield@w3.org&gt;.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="w3c_footer">
+
+<div id="w3c_footer-inner">
+<h2 class="offscreen">Footer Navigation</h2>
+
+<div class="w3c_footer-nav">
+<h3>Navigation</h3>
+<ul class="footer_top_nav">
+  <li><a href="http://www.w3.org/">Home</a> </li>
+  <li><a href="http://www.w3.org/standards/">Standards</a> </li>
+  <li><a href="http://www.w3.org/participate/">Participate</a> </li>
+  <li><a href="http://www.w3.org/Consortium/membership">Membership</a> </li>
+  <li class="last-item"><a href="http://www.w3.org/Consortium/">About W3C</a>
+  </li>
+</ul>
+</div>
+
+<div class="w3c_footer-nav">
+<h3>Contact W3C</h3>
+<ul class="footer_bottom_nav">
+  <li><a href="http://www.w3.org/Consortium/contact">Contact</a> </li>
+  <li><a href="http://www.w3.org/Help/" accesskey="0">Help and FAQ</a> </li>
+  <li><a href="http://www.w3.org/Consortium/sponsor/">Sponsor / Donate</a> </li>
+  <li><a href="http://www.w3.org/Consortium/siteindex">Site Map</a> </li>
+  <li><address id="w3c_signature">
+      <a href="http://lists.w3.org/Archives/Public/site-comments/">Feedback</a> 
+    </address>
+  </li>
+</ul>
+</div>
+
+<div class="w3c_footer-nav">
+<h3>W3C Updates</h3>
+<ul class="footer_follow_nav">
+  <li><a title="Follow W3C on Twitter" href="http://twitter.com/W3C"><img
+    width="78" height="83" class="social-icon" alt="Twitter"
+    src="http://www.w3.org/2008/site/images/twitter-bird" /> </a> </li>
+</ul>
+</div>
+
+<p class="copyright">Copyright © 2012 W3C <sup>®</sup> (<a
+href="http://www.csail.mit.edu/"><acronym
+title="Massachusetts Institute of Technology">MIT</acronym> </a>, <a
+href="http://www.ercim.org/"><acronym
+title="European Research Consortium for Informatics and Mathematics">ERCIM</acronym>
+</a>, <a href="http://www.keio.ac.jp/">Keio</a>, <a
+href="http://ev.buaa.edu.cn/">Beihang</a>) <a
+href="http://www.w3.org/Consortium/Legal/ipr-notice">Usage policies
+apply</a>.</p>
+</div>
+</div>
+<!-- Generated from data/scripts.php, ../../smarty/{scripts.tpl} -->
+<!-- At the bottom for performance reasons -->
+
+<div id="w3c_scripts">
+<script type="text/javascript" xml:space="preserve" src="http://www.w3.org/2008/site/js/main">
+
+<!-- --></script>
+</div>
+</body>
+</html>

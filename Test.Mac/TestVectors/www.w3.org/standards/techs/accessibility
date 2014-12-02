@@ -1,0 +1,798 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<title>Accessibility (All) Current Status - W3C</title>
+<link rel="Help" href="http://www.w3.org/Help/" />
+<link rel="stylesheet" href="/2008/site/css/minimum" type="text/css" media="handheld, all" />
+<style type="text/css" media="print, screen and (min-width: 481px)">
+/*<![CDATA[*/
+@import url("/2008/site/css/advanced");
+/*]]>*/
+</style>
+<link href="/2008/site/css/minimum" rel="stylesheet" type="text/css" media="handheld, only screen and (max-device-width: 480px)" />
+<link rel="stylesheet" href="/2008/site/css/print" type="text/css" media="print" />
+<link rel="shortcut icon" href="/2008/site/images/favicon.ico" type="image/x-icon" />
+<link rel="alternate" type="application/atom+xml" title="W3C Publications" href="/TR/tr.xml" />
+<link rel="alternate" type="application/rdf+xml" title="TR data" href="/2002/01/tr-automation/tr.rdf" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="viewport" content="width=device-width" />
+</head>
+<body id="www-w3-org" class="w3c_public">
+<div id="w3c_container">
+    <div id="w3c_mast">
+<h1 class="logo"><a tabindex="2" accesskey="1" href="/"><img src="/2008/site/images/logo-w3c-mobile-lg" width="90" height="53" alt="W3C" /></a> <span class="alt-logo">W3C</span></h1>
+<div id="w3c_nav">
+<form action="//www.w3.org/Help/search" method="get" enctype="application/x-www-form-urlencoded">
+<!-- w3c_sec_nav is populated through js -->
+<div class="w3c_sec_nav"><!-- --></div>
+<ul class="main_nav"><!-- Main navigation menu -->
+<li class="first-item"><a href="/standards/">Standards</a></li>
+<li><a href="http://www.w3.org/participate/">Participate</a></li>
+<li><a href="http://www.w3.org/Consortium/membership">Membership</a></li>
+<li class="last-item"><a href="http://www.w3.org/Consortium/">About W3C</a></li>
+<li class="search-item">
+<div id="search-form"><input tabindex="3" class="text" name="q" value="" title="Search" /> <button id="search-submit" name="search-submit" type="submit"><img class="submit" src="/2008/site/images/search-button" alt="Search" width="21" height="17" /></button></div>
+</li>
+</ul>
+</form>
+</div>
+</div>
+<!-- /end #w3c_mast -->
+    <div id="w3c_main">
+        <div id="w3c_logo_shadow" class="w3c_leftCol">
+            <img height="32" alt="" src="/2008/site/images/logo-shadow" />
+        </div>
+        <div class="w3c_mainCol">
+<div id="w3c_crumbs">
+       <div id="w3c_crumbs_frame">
+        <ul class="bct"> <!-- .bct / Breadcrumbs -->
+          <li class="skip"><a tabindex="1" accesskey="2" title="Skip to content (e.g., when browsing via audio)" href="#w3c_content_body">Skip</a></li>
+          <li><a href="/">W3C</a>&#xA0;<span class="cr">&#xBB;</span>&#xA0;</li>
+          <li><a href="/standards/">Standards</a>&#xA0;<span class="cr">&#xBB;</span>&#xA0;</li>
+          <li><a href="/TR/">All&#xA0;Standards&#xA0;and&#xA0;Drafts</a>&#xA0;<span class="cr">&#xBB;</span>&#xA0;</li>
+          <li class="current">Accessibility (All) Current Status</li>
+        </ul>            
+     </div>
+    </div>
+    <h1 class="title">Accessibility (All) Current Status</h1>
+    <ul class="w3c_toc">
+   <li>
+      <a href="#completed">completed&#xA0;work</a>
+            &#x2014;&#xA0;including&#xA0;<a href="#stds">standards</a>
+            <span class="bullet">&#x2022; </span>
+   </li>   <li>
+      <a href="#drafts">drafts</a>
+      <span class="bullet">&#x2022; </span>
+   </li>   <li>
+      <a href="#obsolete">obsolete&#xA0;specifications</a>
+   </li></ul>
+            <div id="w3c_content_body"><div id="w3c_generated_status">
+      <p id="w3c_toggle_include" class="default_open intro tPadding">This page summarizes the relationships among specifications, whether they are finished standards or drafts. Below, each title
+links to the most recent version of a document.</p>
+
+      
+      <h2 id="completed">Completed Work</h2>
+      <p>
+         <a href="/TR/tr-technology-stds">W3C Recommendations</a> have
+    been reviewed by W3C Members, by software developers, and by other
+    W3C groups and interested parties, and are endorsed by the
+    Director as Web Standards. Learn more about the <a href="/Consortium/Process/tr#rec-advance">W3C Recommendation
+    Track</a>.</p>
+      <p>
+         <a href="/2005/10/Process-20051014/tr.html#q75">Group Notes</a> are <em>not</em> standards and do not
+    have the same level of W3C endorsement.</p>
+            <h3 id="stds">Standards</h3>
+      <div class="data lMargin rMargin">
+         <table class="w3c_spec_summary_table">
+            <tbody>
+                           <tr>
+                  <td class="table_datecol">
+                     <a href="/standards/history/wai-aria" title="Accessible Rich Internet Applications (WAI-ARIA) 1.0 publication history">2014-03-20</a>
+                  </td>
+                  <td>
+                     <h4 class="w3c_status_title">
+                        <a title="status is REC" href="http://www.w3.org/TR/2014/REC-wai-aria-20140320/">Accessible Rich Internet Applications (WAI-ARIA) 1.0</a>
+                     </h4>
+                     <div class="expand_description">
+                        <p>Accessibility of Web content to people with disabilities requires semantic information about widgets, structures, and behaviors, in order to allow Assistive Technologies to make appropriate transformations. This specification provides an ontology of roles, states, and properties that set out an abstract model for accessible interfaces and can be used to improve the accessibility and interoperability of Web Content and Applications. This information can be mapped to accessibility frameworks that use this information to provide alternative access solutions. Similarly, this information can be used to change the rendering of content dynamically using different style sheet properties. The result is an interoperable method for associating behaviors with document-level markup. This document is part of the WAI-ARIA suite described in the ARIA Overview.</p>
+                     </div>
+                  </td>
+               </tr>
+                            <tr>
+                  <td class="table_datecol">
+                     <a href="/standards/history/wai-aria-implementation" title="WAI-ARIA 1.0 User Agent Implementation Guide publication history">2014-03-20</a>
+                  </td>
+                  <td>
+                     <h4 class="w3c_status_title">
+                        <a title="status is REC" href="http://www.w3.org/TR/2014/REC-wai-aria-implementation-20140320/">WAI-ARIA 1.0 User Agent Implementation Guide</a>
+                     </h4>
+                     <div class="expand_description">
+                        <p>Describes how user agents should support keyboard navigation, respond to roles, states, and properties provided in Web content via WAI-ARIA, and expose this to accessibility APIs.</p>
+                     </div>
+                  </td>
+               </tr>
+                            <tr>
+                  <td class="table_datecol">
+                     <a href="/standards/history/role-attribute" title="Role Attribute 1.0 publication history">2013-03-28</a>
+                  </td>
+                  <td>
+                     <h4 class="w3c_status_title">
+                        <a title="status is REC" href="http://www.w3.org/TR/2013/REC-role-attribute-20130328/">Role Attribute 1.0</a>
+                     </h4>
+                     <div class="expand_description">
+                        <p>The Role Attribute defined in this specification allows the author to annotate markup languages with machine-extractable semantic information about the purpose of an element.</p>
+                     </div>
+                  </td>
+               </tr>
+                            <tr>
+                  <td class="table_datecol">
+                     <a href="/standards/history/WCAG20" title="Web Content Accessibility Guidelines (WCAG) 2.0 publication history">2008-12-11</a>
+                  </td>
+                  <td>
+                     <h4 class="w3c_status_title">
+                        <a title="status is REC" href="http://www.w3.org/TR/2008/REC-WCAG20-20081211/">Web Content Accessibility Guidelines (WCAG) 2.0</a>
+                     </h4>
+                     <div class="expand_description">
+                        <p>Web Content Accessibility Guidelines (WCAG) 2.0 covers a wide range of recommendations for making Web content more accessible. Following these guidelines will make content accessible to a wider range of people with disabilities, including blindness and low vision, deafness and hearing loss, learning disabilities, cognitive limitations, limited movement, speech disabilities, photosensitivity and combinations of these. Following these guidelines will also often make your Web content more usable to users in general. </p> <p>WCAG 2.0 success criteria are written as testable statements that are not technology-specific. Guidance about satisfying the success criteria in specific technologies, as well as general information about interpreting the success criteria, is provided in separate documents. <span>See Web Content Accessibility Guidelines (WCAG) Overview for an introduction and links to WCAG technical and educational material.</span> </p> <p> <span>WCAG 2.0 succeeds Web Content Accessibility Guidelines 1.0 [WCAG10], which was published as a W3C Recommendation May 1999. Although it is possible to conform either to WCAG 1.0 or to WCAG 2.0 (or both), the W3C recommends that new and updated content use WCAG 2.0. The W3C also recommends that Web accessibility policies reference WCAG 2.0. </span> </p>
+                     </div>
+                  </td>
+               </tr>
+                            <tr>
+                  <td class="table_datecol">
+                     <a href="/standards/history/UAAG10" title="User Agent Accessibility Guidelines 1.0 publication history">2002-12-17</a>
+                  </td>
+                  <td>
+                     <h4 class="w3c_status_title">
+                        <a title="status is REC" href="http://www.w3.org/TR/2002/REC-UAAG10-20021217/">User Agent Accessibility Guidelines 1.0</a>
+                     </h4>
+                     <div class="expand_description">
+                        <p>This document provides guidelines for designing user agents that lower barriers to Web accessibility for people with disabilities (visual, hearing, physical, cognitive, and neurological). User agents include HTML browsers and other types of software that retrieve and render Web content. A user agent that conforms to these guidelines will promote accessibility through its own user interface and through other internal facilities, including its ability to communicate with other technologies (especially assistive technologies). Furthermore, all users, not just users with disabilities, should find conforming user agents to be more usable.</p> <p>In addition to helping developers of HTML browsers and media players, this document will also benefit developers of assistive technologies because it explains what types of information and control an assistive technology may expect from a conforming user agent. Technologies not addressed directly by this document (e.g., technologies for braille rendering) will be essential to ensuring Web access for some users with disabilities.</p>
+                     </div>
+                  </td>
+               </tr>
+                            <tr>
+                  <td class="table_datecol">
+                     <a href="/standards/history/ATAG10" title="Authoring Tool Accessibility Guidelines 1.0 publication history">2000-02-03</a>
+                  </td>
+                  <td>
+                     <h4 class="w3c_status_title">
+                        <a title="status is REC" href="http://www.w3.org/TR/2000/REC-ATAG10-20000203">Authoring Tool Accessibility Guidelines 1.0</a>
+                     </h4>
+                     <div class="expand_description">
+                        <p>This specification provides guidelines for Web authoring tool developers. Its purpose is two-fold: to assist developers in designing authoring tools that produce accessible Web content and to assist developers in creating an accessible authoring interface.</p> <p>Authoring tools can enable, encourage, and assist users ("authors") in the creation of accessible Web content through prompts, alerts, checking and repair functions, help files and automated tools. It is just as important that all people be able to author content as it is for all people to have access to it. The tools used to create this information must therefore be accessible themselves. Adoption of these guidelines will contribute to the proliferation of Web content that can be read by a broader range of readers and authoring tools that can be used by a broader range of authors.</p> <p>This document is part of a series of accessibility documents published by the <abbr>W3C</abbr> Web Accessibility Initiative (<abbr>WAI</abbr>).</p>
+                     </div>
+                  </td>
+               </tr>
+                            <tr>
+                  <td class="table_datecol">
+                     <a href="/standards/history/WAI-WEBCONTENT" title="Web Content Accessibility Guidelines 1.0 publication history">1999-05-05</a>
+                  </td>
+                  <td>
+                     <h4 class="w3c_status_title">
+                        <a title="status is REC" href="http://www.w3.org/TR/1999/WAI-WEBCONTENT-19990505/">Web Content Accessibility Guidelines 1.0</a>
+                     </h4>
+                     <div class="expand_description">
+                        <p>These guidelines explain how to make Web content accessible to people with disabilities. The guidelines are intended for all Web content developers (page authors and site designers) and for developers of authoring tools. The primary goal of these guidelines is to promote accessibility. However, following them will also make Web content more available to <em>all</em> users, whatever user agent they are using (e.g., desktop browser, voice browser, mobile phone, automobile-based personal computer, etc.) or constraints they may be operating under (e.g., noisy surroundings, under- or over-illuminated rooms, in a hands-free environment, etc.). Following these guidelines will also help people find information on the Web more quickly. These guidelines do not discourage content developers from using images, video, etc., but rather explain how to make multimedia content more accessible to a wide audience.</p> <p>This is a reference document for accessibility principles and design ideas. Some of the strategies discussed in this document address certain Web internationalization and mobile access concerns. However, this document focuses on accessibility and does not fully address the related concerns of other <abbr>W3C</abbr> Activities. Please consult the W3C Mobile Access Activity home page and the W3C Internationalization Activity home page for more information.</p> <p>This document is meant to be stable and therefore does not provide specific information about browser support for different technologies as that information changes rapidly. Instead, the Web Accessibility Initiative (<abbr>WAI</abbr>) Web site provides such information (refer to [WAI-UA-SUPPORT]).</p> <p>This document includes an appendix that organizes all of the checkpoints by topic and priority. The checkpoints in the appendix link to their definitions in the current document. The topics identified in the appendix include images, multimedia, tables, frames, forms, and scripts. The appendix is available as either a tabular summary of checkpoints or as a simple list of checkpoints.</p> <p>A separate document, entitled "Techniques for Web Content Accessibility Guidelines 1.0" ([TECHNIQUES]), explains how to implement the checkpoints defined in the current document. The Techniques Document discusses each checkpoint in more detail and provides examples using the Hypertext Markup Language (<abbr>HTML</abbr>), Cascading Style Sheets (<abbr>CSS</abbr>), Synchronized Multimedia Integration Language (<abbr>SMIL</abbr>), and the Mathematical Markup Language (<abbr>MathML</abbr>). The Techniques Document also includes techniques for document validation and testing, and an index of HTML elements and attributes (and which techniques use them). The Techniques Document has been designed to track changes in technology and is expected to be updated more frequently than the current document. <strong>Note.</strong> Not all browsers or multimedia tools may support the features described in the guidelines. In particular, new features of HTML 4.0 or CSS 1 or CSS 2 may not be supported.</p> <p>"Web Content Accessibility Guidelines 1.0" is part of a series of accessibility guidelines published by the Web Accessibility Initiative. The series also includes User Agent Accessibility Guidelines ([WAI-USERAGENT]) and Authoring Tool Accessibility Guidelines ([WAI-AUTOOLS]).</p>
+                     </div>
+                  </td>
+               </tr>
+                         </tbody>
+         </table>
+      </div>
+                  <h3 id="notes">Group Notes</h3>
+      <div class="data lMargin rMargin">
+         <table class="w3c_spec_summary_table">
+            <tbody>
+                           <tr>
+                  <td class="table_datecol">
+                     <a href="/standards/history/UNDERSTANDING-WCAG20" title="Understanding WCAG 2.0 publication history">2014-09-16</a>
+                  </td>
+                  <td>
+                     <h4 class="w3c_status_title">
+                        <a title="status is NOTE" href="http://www.w3.org/TR/2014/NOTE-UNDERSTANDING-WCAG20-20140916/">Understanding WCAG 2.0</a>
+                     </h4>
+                     <div class="expand_description">
+                        <p>Provides detailed information about the intent of each WCAG 2.0 success criterion and describes benefits, examples, failure conditions, and recommended techniques in various technologies.</p>
+                     </div>
+                  </td>
+               </tr>
+                            <tr>
+                  <td class="table_datecol">
+                     <a href="/standards/history/WCAG20-TECHS" title="Techniques for WCAG 2.0 publication history">2014-09-16</a>
+                  </td>
+                  <td>
+                     <h4 class="w3c_status_title">
+                        <a title="status is NOTE" href="http://www.w3.org/TR/2014/NOTE-WCAG20-TECHS-20140916/">Techniques for WCAG 2.0</a>
+                     </h4>
+                     <div class="expand_description">
+                        <p>Documents authoring practices in various technologies that may be used to satisfy the WCAG 2.0 success criteria.</p>
+                     </div>
+                  </td>
+               </tr>
+                            <tr>
+                  <td class="table_datecol">
+                     <a href="/standards/history/wcag2ict" title="Guidance on Applying WCAG 2.0 to Non-Web Information and Communications Technologies (WCAG2ICT) publication history">2013-09-05</a>
+                  </td>
+                  <td>
+                     <h4 class="w3c_status_title">
+                        <a title="status is NOTE" href="http://www.w3.org/TR/2013/NOTE-wcag2ict-20130905/">Guidance on Applying WCAG 2.0 to Non-Web Information and Communications Technologies (WCAG2ICT)</a>
+                     </h4>
+                     <div class="expand_description">
+                        <p>Describes how the Web Content Accessibility Guidelines (WCAG) 2.0 and its principles, guidelines, success criteria and conformance model can be applied to non-Web Information and Communications Technologies (ICT), including non-web documents and software.</p>
+                     </div>
+                  </td>
+               </tr>
+                            <tr>
+                  <td class="table_datecol">
+                     <a href="/standards/history/xhtml-role" title="XHTML Role Attribute Module publication history">2010-12-16</a>
+                  </td>
+                  <td>
+                     <h4 class="w3c_status_title">
+                        <a title="status is NOTE" href="http://www.w3.org/TR/2010/NOTE-xhtml-role-20101216">XHTML Role Attribute Module</a>
+                     </h4>
+                     <div class="expand_description">
+                        <p>The XHTML Role Attribute defined in this specification allows the author to annotate XML Languages with machine-extractable semantic information about the purpose of an element. Use cases include accessibility, device adaptation, server-side processing, and complex data description. This attribute can be integrated into any markup language based upon XHTML Modularization [XHTMLMOD].</p>
+                     </div>
+                  </td>
+               </tr>
+                            <tr>
+                  <td class="table_datecol">
+                     <a href="/standards/history/xhtml-access" title="XHTML Access Module publication history">2010-12-16</a>
+                  </td>
+                  <td>
+                     <h4 class="w3c_status_title">
+                        <a title="status is NOTE" href="http://www.w3.org/TR/2010/NOTE-xhtml-access-20101216">XHTML Access Module</a>
+                     </h4>
+                     <div class="expand_description">
+                        <p>The XHTML Access module defines an element that, when used in conjunction with other XHTML modules in XHTML Family Markup Languages, enables a more robust accessibility model than is presently possible.</p>
+                     </div>
+                  </td>
+               </tr>
+                            <tr>
+                  <td class="table_datecol">
+                     <a href="/standards/history/mwbp-wcag" title="Relationship between Mobile Web Best Practices (MWBP) and Web Content Accessibility Guidelines (WCAG) publication history">2009-07-09</a>
+                  </td>
+                  <td>
+                     <h4 class="w3c_status_title">
+                        <a title="status is NOTE" href="http://www.w3.org/TR/2009/NOTE-mwbp-wcag-20090709/">Relationship between Mobile Web Best Practices (MWBP) and Web Content Accessibility Guidelines (WCAG)</a>
+                     </h4>
+                     <div class="expand_description">
+                        <p>This technical report describes the similarities and differences between the <a href="http://www.w3.org/WAI/intro/wcag" shape="rect">Web Content Accessibility Guidelines (WCAG)</a> and the <a href="http://www.w3.org/TR/mobile-bp/" shape="rect">Mobile Web Best Practices 1.0</a>.</p>
+                     </div>
+                  </td>
+               </tr>
+                            <tr>
+                  <td class="table_datecol">
+                     <a href="/standards/history/wcag2-req" title="Requirements for WCAG 2.0 publication history">2006-04-25</a>
+                  </td>
+                  <td>
+                     <h4 class="w3c_status_title">
+                        <a title="status is NOTE" href="http://www.w3.org/TR/2006/NOTE-wcag2-req-20060425/">Requirements for WCAG 2.0</a>
+                     </h4>
+                     <div class="expand_description">
+                        <p>Requirements used for development of WCAG 2.0.</p>
+                     </div>
+                  </td>
+               </tr>
+                            <tr>
+                  <td class="table_datecol">
+                     <a href="/standards/history/turingtest" title="Inaccessibility of CAPTCHA publication history">2005-11-23</a>
+                  </td>
+                  <td>
+                     <h4 class="w3c_status_title">
+                        <a title="status is NOTE" href="http://www.w3.org/TR/2005/NOTE-turingtest-20051123/">Inaccessibility of CAPTCHA</a>
+                     </h4>
+                     <div class="expand_description">
+                        <p> A common method of limiting access to services made available over the Web is visual verification of a bitmapped image. This presents a major problem to users who are blind, have low vision, or have a learning disability such as dyslexia. This document examines a number of potential solutions that allow systems to test for human users while preserving access by users with disabilities. </p>
+                     </div>
+                  </td>
+               </tr>
+                            <tr>
+                  <td class="table_datecol">
+                     <a href="/standards/history/UAAG10-TECHS" title="Techniques for User Agent Accessibility Guidelines
+1.0 publication history">2002-12-17</a>
+                  </td>
+                  <td>
+                     <h4 class="w3c_status_title">
+                        <a title="status is NOTE" href="http://www.w3.org/TR/2002/NOTE-UAAG10-TECHS-20021217/">Techniques for User Agent Accessibility Guidelines
+1.0</a>
+                     </h4>
+                     <div class="expand_description">
+                        <p>This document provides techniques for satisfying the checkpoints defined in "User Agent Accessibility Guidelines 1.0" <cite>[UAAG10]</cite>. These techniques address key aspects of the accessibility of user interfaces, content rendering, application programming interfaces (<acronym>APIs</acronym>), and languages such as the Hypertext Markup Language (<acronym>HTML</acronym>), Cascading Style Sheets (<acronym>CSS</acronym>) and the Synchronized Multimedia Integration Language (<acronym>SMIL</acronym>).</p> <p>The techniques listed in this document are not required for conformance to the Guidelines. These techniques are not necessarily the only way of satisfying the checkpoint, nor are they a definitive set of requirements for satisfying a checkpoint.</p>
+                     </div>
+                  </td>
+               </tr>
+                            <tr>
+                  <td class="table_datecol">
+                     <a href="/standards/history/ATAG10-TECHS" title="Techniques for Authoring Tool Accessibility Guidelines
+1.0 publication history">2002-10-29</a>
+                  </td>
+                  <td>
+                     <h4 class="w3c_status_title">
+                        <a title="status is NOTE" href="http://www.w3.org/TR/2002/NOTE-ATAG10-TECHS-20021029/">Techniques for Authoring Tool Accessibility Guidelines
+1.0</a>
+                     </h4>
+                     <div class="expand_description">
+                        <p>This document provides information to authoring tool developers who wish to satisfy the checkpoints of "Authoring Tool Accessibility Guidelines 1.0" [ATAG10]. It includes suggested techniques, sample strategies in deployed tools, and references to other accessibility resources (such as platform-specific software accessibility guidelines) that provide additional information on how a tool may satisfy each checkpoint.</p> <p>This document is part of a series of accessibility documents published by the <abbr>W3C</abbr> Web Accessibility Initiative (<abbr>WAI</abbr>).</p>
+                     </div>
+                  </td>
+               </tr>
+                            <tr>
+                  <td class="table_datecol">
+                     <a href="/standards/history/WCAG10-CORE-TECHS" title="Core Techniques for Web Content Accessibility Guidelines 1.0 publication history">2000-11-06</a>
+                  </td>
+                  <td>
+                     <h4 class="w3c_status_title">
+                        <a title="status is NOTE" href="http://www.w3.org/TR/2000/NOTE-WCAG10-CORE-TECHS-20001106">Core Techniques for Web Content Accessibility Guidelines 1.0</a>
+                     </h4>
+                     <div class="expand_description">
+                        <p>Techniques that apply across technologies for authors of Web content who wish to claim conformance to WCAG 1.0</p>
+                     </div>
+                  </td>
+               </tr>
+                            <tr>
+                  <td class="table_datecol">
+                     <a href="/standards/history/WCAG10-CSS-TECHS" title="CSS Techniques for Web Content Accessibility Guidelines 1.0 publication history">2000-11-06</a>
+                  </td>
+                  <td>
+                     <h4 class="w3c_status_title">
+                        <a title="status is NOTE" href="http://www.w3.org/TR/2000/NOTE-WCAG10-CSS-TECHS-20001106">CSS Techniques for Web Content Accessibility Guidelines 1.0</a>
+                     </h4>
+                     <div class="expand_description">
+                        <p>This document describes techniques for authoring accessible Cascading Style Sheets (<acronym>CSS</acronym>). Cascading Style Sheets are defined by the W3C Recommendations "CSS Level 1" <cite>[CSS1]</cite> and "CSS Level 2" <cite> [CSS2]</cite>. This document is intended to help authors of Web content who wish to claim conformance to "Web Content Accessibility Guidelines 1.0" (<cite>[WCAG10]</cite>). While the techniques in this document should help people author <acronym>CSS</acronym> that conforms to "Web Content Accessibility Guidelines 1.0", these techniques are neither guarantees of conformance nor the only way an author might produce conforming content.</p> <p>This document is part of a series of documents about techniques for authoring accessible Web content. For information about the other documents in the series, please refer to "Techniques for Web Content Accessibility Guidelines 1.0" <cite>[WCAG10-TECHS]</cite>.</p> <p> <strong>Note:</strong> This document contains a number of examples that illustrate accessible solutions in CSS but also deprecated examples that illustrate what content developers should not do. The deprecated examples are highlighted and readers should approach them with caution -- they are meant for illustrative purposes only.</p>
+                     </div>
+                  </td>
+               </tr>
+                            <tr>
+                  <td class="table_datecol">
+                     <a href="/standards/history/WCAG10-HTML-TECHS" title="HTML Techniques for Web Content Accessibility Guidelines 1.0 publication history">2000-11-06</a>
+                  </td>
+                  <td>
+                     <h4 class="w3c_status_title">
+                        <a title="status is NOTE" href="http://www.w3.org/TR/2000/NOTE-WCAG10-HTML-TECHS-20001106">HTML Techniques for Web Content Accessibility Guidelines 1.0</a>
+                     </h4>
+                     <div class="expand_description">
+                        <p>This document describes techniques for authoring accessible Hypertext Markup Language (<acronym>HTML</acronym>) content (refer to HTML 4.01 <cite> [HTML4]</cite>). This document is intended to help authors of Web content who wish to claim conformance to "Web Content Accessibility Guidelines 1.0" (<cite>[WCAG10]</cite>). While the techniques in this document should help people author HTML that conforms to "Web Content Accessibility Guidelines 1.0", these techniques are neither guarantees of conformance nor the only way an author might produce conforming content.</p> <p>This document is part of a series of documents about techniques for authoring accessible Web content. For information about the other documents in the series, please refer to "Techniques for Web Content Accessibility Guidelines 1.0" <cite>[WCAG10-TECHS]</cite>.</p> <p> <strong>Note:</strong> This document contains a number of examples that illustrate accessible solutions in CSS but also deprecated examples that illustrate what content developers should not do. The deprecated examples are highlighted and readers should approach them with caution -- they are meant for illustrative purposes only.</p>
+                     </div>
+                  </td>
+               </tr>
+                            <tr>
+                  <td class="table_datecol">
+                     <a href="/standards/history/WCAG10-TECHS" title="Techniques for Web Content Accessibility Guidelines 1.0 publication history">2000-11-06</a>
+                  </td>
+                  <td>
+                     <h4 class="w3c_status_title">
+                        <a title="status is NOTE" href="http://www.w3.org/TR/2000/NOTE-WCAG10-TECHS-20001106/">Techniques for Web Content Accessibility Guidelines 1.0</a>
+                     </h4>
+                     <div class="expand_description">
+                        <p>Gateway to a series of related documents that provide techniques for satisfying the requirements defined in WCAG 1.0.</p>
+                     </div>
+                  </td>
+               </tr>
+                          </tbody>
+           </table>
+         </div>
+                   <h2 id="drafts">Drafts</h2>
+      <p>Below are draft documents:
+            <a href="/2005/10/Process-20051014/tr.html#RecsCR">Candidate Recommendations</a>,            <a href="/2005/10/Process-20051014/tr.html#last-call">Last Call Drafts</a>,            <a href="/2005/10/Process-20051014/tr.html#RecsWD">other Working Drafts</a>      .
+      Some of these may become Web Standards through the <a href="/Consortium/Process/tr#rec-advance">W3C Recommendation Track
+      process</a>. Others may be published as Group Notes or
+      become obsolete specifications.</p>
+                  <h3 id="cr">Candidate Recommendations</h3>
+      <div class="data lMargin rMargin">
+         <table class="w3c_spec_summary_table">
+            <tbody>
+                              <tr>
+                  <td class="table_datecol">
+                     <a href="/standards/history/ATAG20" title="Authoring Tool Accessibility Guidelines (ATAG) 2.0 publication history">2013-11-07</a>
+                  </td>
+                  <td>
+                     <h4 class="w3c_status_title">
+                        <a title="status is CR" href="http://www.w3.org/TR/2013/CR-ATAG20-20131107/">Authoring Tool Accessibility Guidelines (ATAG) 2.0</a>
+                     </h4>
+                     <div class="expand_description">
+                        <div> <p>This specification provides guidelines for designing Web content authoring tools that are more accessible for people with disabilities. An authoring tool that conforms to these guidelines will promote accessibility by providing an accessible user interface to authors with disabilities as well as enabling, supporting, and promoting the production of accessible Web content by all authors.</p> </div> <p>The "Authoring Tool Accessibility Guidelines 2.0" (<acronym>ATAG</acronym> 2.0) is part of a series of accessibility guidelines published by the <acronym>W3C</acronym> Web Accessibility Initiative (<acronym>WAI</acronym>).</p>
+                     </div>
+                  </td>
+               </tr>
+                         </tbody>
+         </table>
+      </div>
+                  <h3 id="lcwd">Last Call Drafts</h3>
+      <div class="data lMargin rMargin">
+         <table class="w3c_spec_summary_table">
+            <tbody>
+                              <tr>
+                  <td class="table_datecol">
+                     <a href="/standards/history/EARL10-Schema" title="Evaluation and Report Language (EARL) 1.0 Schema publication history">2011-05-10</a>
+                  </td>
+                  <td>
+                     <h4 class="w3c_status_title">
+                        <a title="status is LCWD" href="http://www.w3.org/TR/2011/WD-EARL10-Schema-20110510/">Evaluation and Report Language (EARL) 1.0 Schema</a>
+                     </h4>
+                     <div class="expand_description">
+                        <p>This document describes the formal schema of the Evaluation and Report Language (<acronym>EARL</acronym>) 1.0. The Evaluation and Report Language is a standardized vocabulary to express test results. The primary motivation for developing this language is to facilitate the exchange of test results between Web accessibility evaluation tools in a vendor neutral and platform independent format. It also provides reusable vocabulary for generic quality assurance and validation purposes. While this document focuses on the technical details of the specification, a companion document [Guide] describes the motivations for <acronym>EARL</acronym> and provides a tutorial introduction to its use.</p>
+                     </div>
+                  </td>
+               </tr>
+                         </tbody>
+         </table>
+      </div>
+                  <h3 id="wd">Other Working Drafts</h3>
+      <div class="data lMargin rMargin">
+         <table class="w3c_spec_summary_table">
+            <tbody>
+                             <tr>
+                  <td class="table_datecol">
+                     <a href="/standards/history/UAAG20" title="User Agent Accessibility Guidelines (UAAG) 2.0 publication history">2014-09-25</a>
+                  </td>
+                  <td>
+                     <h4 class="w3c_status_title">
+                        <a title="status is WD" href="http://www.w3.org/TR/2014/WD-UAAG20-20140925/">User Agent Accessibility Guidelines (UAAG) 2.0</a>
+                     </h4>
+                     <div class="expand_description">
+                        <p>This document provides guidelines for designing user agents that lower barriers to Web accessibility for people with disabilities. User agents include browsers and other types of software that retrieve and render Web content. A user agent that conforms to these guidelines will promote accessibility through its own user interface and through other internal facilities, including its ability to communicate with other technologies (especially assistive technologies). Furthermore, all users, not just users with disabilities, should find conforming user agents to be more usable.</p> <p>In addition to helping developers of browsers and media players, this document will also benefit developers of assistive technologies because it explains what types of information and control an assistive technology may expect from a conforming user agent. Technologies not addressed directly by this document (e.g., technologies for braille rendering) will be essential to ensuring Web access for some users with disabilities.</p> <p>The "User Agent Accessibility Guidelines 2.0" (<acronym>UAAG</acronym> 2.0) is part of a series of accessibility guidelines published by the <acronym>W3C</acronym> Web Accessibility Initiative (<acronym>WAI</acronym>).</p>
+                     </div>
+                  </td>
+               </tr>
+                            <tr>
+                  <td class="table_datecol">
+                     <a href="/standards/history/UAAG20-Reference" title="UAAG 2.0 Reference: Explanations, Examples, and Resources for User Agent Accessibility Guidelines 2.0 publication history">2014-09-25</a>
+                  </td>
+                  <td>
+                     <h4 class="w3c_status_title">
+                        <a title="status is WD" href="http://www.w3.org/TR/2014/WD-UAAG20-Reference-20140925/">UAAG 2.0 Reference: Explanations, Examples, and Resources for User Agent Accessibility Guidelines 2.0</a>
+                     </h4>
+                     <div class="expand_description">
+                        <p>This document provides explanation of the intent of UAAG 2.0 success criteria, examples of implementation of the UAAG 2.0 guidelines, best practice recommendations and additional resources for the guidelines.</p>
+                     </div>
+                  </td>
+               </tr>
+                            <tr>
+                  <td class="table_datecol">
+                     <a href="/standards/history/media-accessibility-reqs" title="Media Accessibility User Requirements publication history">2014-08-14</a>
+                  </td>
+                  <td>
+                     <h4 class="w3c_status_title">
+                        <a title="status is WD" href="http://www.w3.org/TR/2014/WD-media-accessibility-reqs-20140814/">Media Accessibility User Requirements</a>
+                     </h4>
+                     <div class="expand_description">
+                        <p>Aggregates requirements of a user with disabilities with respect to audio and video on the Web, providing background on user needs, alternative content technologies, and their application on the Web.</p>
+                     </div>
+                  </td>
+               </tr>
+                            <tr>
+                  <td class="table_datecol">
+                     <a href="/standards/history/aria-in-html" title="Using WAI-ARIA in HTML publication history">2014-06-26</a>
+                  </td>
+                  <td>
+                     <h4 class="w3c_status_title">
+                        <a title="status is WD" href="http://www.w3.org/TR/2014/WD-aria-in-html-20140626/">Using WAI-ARIA in HTML</a>
+                     </h4>
+                     <div class="expand_description">
+                        <p>This document is a practical guide for developers on how to add accessibility information to HTML elements using ARIA, a markup mechanism for making Web content and Web applications more accessible to people with disabilities.</p>
+                     </div>
+                  </td>
+               </tr>
+                            <tr>
+                  <td class="table_datecol">
+                     <a href="/standards/history/indie-ui-context" title="IndieUI: User Context 1.0 publication history">2014-06-26</a>
+                  </td>
+                  <td>
+                     <h4 class="w3c_status_title">
+                        <a title="status is WD" href="http://www.w3.org/TR/2014/WD-indie-ui-context-20140626/">IndieUI: User Context 1.0</a>
+                     </h4>
+                     <div class="expand_description">
+                        <p>Defines a set of preferences that users can choose to expose to web applications, and an API for user agents to access the preferences and listen for changes. Web applications can use this information to optimize the presentation without a requirement to target a specific device, operating system, or locale.</p>
+                     </div>
+                  </td>
+               </tr>
+                            <tr>
+                  <td class="table_datecol">
+                     <a href="/standards/history/wai-aria-1.1" title="Accessible Rich Internet Applications (WAI-ARIA) 1.1 publication history">2014-06-12</a>
+                  </td>
+                  <td>
+                     <h4 class="w3c_status_title">
+                        <a title="status is WD" href="http://www.w3.org/TR/2014/WD-wai-aria-1.1-20140612/">Accessible Rich Internet Applications (WAI-ARIA) 1.1</a>
+                     </h4>
+                     <div class="expand_description">
+                        <p>Recommends approaches for developers of rich internet applications to make widgets, navigation, and behaviors accessible using WAI-ARIA roles, states, and properties. WAI-ARIA 1.1 adds features new since WAI-ARIA 1.0 to complete the HTML + ARIA accessibility model. It is expected this will complement HTML 5.1.</p>
+                     </div>
+                  </td>
+               </tr>
+                            <tr>
+                  <td class="table_datecol">
+                     <a href="/standards/history/core-aam-1.1" title="Core Accessibility API Mappings 1.1 publication history">2014-06-12</a>
+                  </td>
+                  <td>
+                     <h4 class="w3c_status_title">
+                        <a title="status is WD" href="http://www.w3.org/TR/2014/WD-core-aam-1.1-20140612/">Core Accessibility API Mappings 1.1</a>
+                     </h4>
+                     <div class="expand_description">
+                        <p>Describes how user agents should expose semantics of web content languages to various accessibility APIs in an interoperable manner. This helps users with disabilities to obtain and interact with information using assistive technologies. This specification defines core functionality; other specifications depend on and extend this for specific technologies.</p>
+                     </div>
+                  </td>
+               </tr>
+                            <tr>
+                  <td class="table_datecol">
+                     <a href="/standards/history/indie-ui-events" title="IndieUI: Events 1.0 publication history">2014-05-29</a>
+                  </td>
+                  <td>
+                     <h4 class="w3c_status_title">
+                        <a title="status is WD" href="http://www.w3.org/TR/2014/WD-indie-ui-events-20140529/">IndieUI: Events 1.0</a>
+                     </h4>
+                     <div class="expand_description">
+                        <p>An abstraction between device-specific user interaction events and inferred user intent such as scroll, activate, etc. This provides an intermediate layer between device- and modality-specific user interaction events, and the basic user interface functionality used by Web applications.</p>
+                     </div>
+                  </td>
+               </tr>
+                            <tr>
+                  <td class="table_datecol">
+                     <a href="/standards/history/indie-ui-requirements" title="Requirements for IndieUI: Events 1.0 and IndieUI: User Context 1.0 publication history">2014-04-22</a>
+                  </td>
+                  <td>
+                     <h4 class="w3c_status_title">
+                        <a title="status is WD" href="http://www.w3.org/TR/2014/WD-indie-ui-requirements-20140422/">Requirements for IndieUI: Events 1.0 and IndieUI: User Context 1.0</a>
+                     </h4>
+                     <div class="expand_description">
+                        <p>Outlines the requirements that the IndieUI Working Group has set for development of IndieUI: Events 1.0 and IndieUI: User Context 1.0.</p>
+                     </div>
+                  </td>
+               </tr>
+                            <tr>
+                  <td class="table_datecol">
+                     <a href="/standards/history/IMPLEMENTING-ATAG20" title="Implementing ATAG 2.0 publication history">2013-11-07</a>
+                  </td>
+                  <td>
+                     <h4 class="w3c_status_title">
+                        <a title="status is WD" href="http://www.w3.org/TR/2013/WD-IMPLEMENTING-ATAG20-20131107/">Implementing ATAG 2.0</a>
+                     </h4>
+                     <div class="expand_description">
+                        <p>Implementing ATAG 2.0 is an essential guide to understanding and using "Authoring Tool Accessibility Guidelines 2.0" [ATAG20]. Although the normative definitions and requirements for ATAG 2.0 can all be found in the ATAG 2.0 document itself, the concepts and provisions may be new to some people. Implementing ATAG 2.0 provides a non-normative extended commentary on each guideline and each success criterion to help readers better understand the intent and how the guidelines and success criteria work together. It also provides examples that the Working Group has identified for each success criterion. </p>
+                     </div>
+                  </td>
+               </tr>
+                            <tr>
+                  <td class="table_datecol">
+                     <a href="/standards/history/wai-aria-practices" title="WAI-ARIA 1.0 Authoring Practices publication history">2013-03-07</a>
+                  </td>
+                  <td>
+                     <h4 class="w3c_status_title">
+                        <a title="status is WD" href="http://www.w3.org/TR/2013/WD-wai-aria-practices-20130307/">WAI-ARIA 1.0 Authoring Practices</a>
+                     </h4>
+                     <div class="expand_description">
+                        <p>This document specifies Best Practices for delivering accessible rich internet applications using <cite>WAI-ARIA</cite> [<cite>ARIA</cite>]. The principle objective is to produce a usable, accessible experience over the Web. It provides recommended approaches to create accessible Web content using WAI-ARIA roles, states, and properties to make widgets, navigation, and behaviors accessible. The document also describes considerations that might not be evident to most implementers from the WAI-ARIA specification alone. This document is directed primarily to Web application developers, but the guidance is also useful to user agent and assistive technology developers. This document is part of the WAI-ARIA suite described in the WAI-ARIA Overview.</p>
+                     </div>
+                  </td>
+               </tr>
+                            <tr>
+                  <td class="table_datecol">
+                     <a href="/standards/history/accessibility-metrics-report" title="Research Report on Web Accessibility Metrics publication history">2012-08-30</a>
+                  </td>
+                  <td>
+                     <h4 class="w3c_status_title">
+                        <a title="status is WD" href="http://www.w3.org/TR/2012/WD-accessibility-metrics-report-20120830/">Research Report on Web Accessibility Metrics</a>
+                     </h4>
+                     <div class="expand_description">
+                        <p>Accessibility metrics can extend the existing WCAG 2.0 conformance model to provide scores for the accessibility level of websites in more depth and detail. This Report provides considerations for validity, reliability, sensitivity, adequacy, and complexity as the main qualities of measuring web accessibility. The Report is a consolidated view of the outcomes of the <a href="http://www.w3.org/WAI/RD/2011/metrics/">Website Accessibility Metrics Online Symposium</a>.</p>
+                     </div>
+                  </td>
+               </tr>
+                            <tr>
+                  <td class="table_datecol">
+                     <a href="/standards/history/Content-in-RDF10" title="Representing Content in RDF 1.0 publication history">2011-05-10</a>
+                  </td>
+                  <td>
+                     <h4 class="w3c_status_title">
+                        <a title="status is WD" href="http://www.w3.org/TR/2011/WD-Content-in-RDF10-20110510/">Representing Content in RDF 1.0</a>
+                     </h4>
+                     <div class="expand_description">
+                        <p>This document is a specification for a vocabulary to represent Content in <acronym>RDF</acronym>. This vocabulary is intended to provide a flexible framework within different usage scenarios to semantically represent any type of content, be it on the Web or in local storage media. For example, it can be used by Web accessibility evaluation tools to record a representation of the assessed Web content in an Evaluation And Report Language (EARL) 1.0 Schema evaluation report. The document contains introductory information on its usage and some examples.</p>
+                     </div>
+                  </td>
+               </tr>
+                            <tr>
+                  <td class="table_datecol">
+                     <a href="/standards/history/EARL10-Guide" title="Developer Guide for Evaluation and Report Language (EARL) 1.0 publication history">2011-05-10</a>
+                  </td>
+                  <td>
+                     <h4 class="w3c_status_title">
+                        <a title="status is WD" href="http://www.w3.org/TR/2011/WD-EARL10-Guide-20110510/">Developer Guide for Evaluation and Report Language (EARL) 1.0</a>
+                     </h4>
+                     <div class="expand_description">
+                        <p>This document is an introductory guide to the Evaluation and Report Language (EARL) 1.0. EARL is a vocabulary, the terms of which are defined across a set of specifications and technical notes, that is used to describe test results. The primary motivation for developing this vocabulary is to facilitate the exchange of test results between Web accessibility evaluation tools in a vendor-neutral and platform-independent format. </p>
+                     </div>
+                  </td>
+               </tr>
+                            <tr>
+                  <td class="table_datecol">
+                     <a href="/standards/history/HTTP-in-RDF10" title="HTTP Vocabulary in RDF 1.0 publication history">2011-05-10</a>
+                  </td>
+                  <td>
+                     <h4 class="w3c_status_title">
+                        <a title="status is WD" href="http://www.w3.org/TR/2011/WD-HTTP-in-RDF10-20110510/">HTTP Vocabulary in RDF 1.0</a>
+                     </h4>
+                     <div class="expand_description">
+                        <p>The identification of resources on the Web by <acronym>URI</acronym> alone may not be sufficient, as other factors such as <acronym>HTTP</acronym> content negotiation might come into play. This issue is particularly significant for quality assurance testing, conformance claims, and reporting languages like the W3C Evaluation And Report Language (EARL). This document provides a representation of the HTTP vocabulary in <acronym>RDF</acronym>, to allow quality assurance tools to record the HTTP headers that have been exchanged between a client and a server. The RDF terms defined by this document represent the core HTTP specification defined by <acronym>RFC</acronym> 2616, as well as additional HTTP headers registered by <acronym>IANA</acronym>. These terms can also be used to record <acronym>HTTPS</acronym> exchanges.</p>
+                     </div>
+                  </td>
+               </tr>
+                            <tr>
+                  <td class="table_datecol">
+                     <a href="/standards/history/Pointers-in-RDF10" title="Pointer Methods in RDF 1.0 publication history">2011-05-10</a>
+                  </td>
+                  <td>
+                     <h4 class="w3c_status_title">
+                        <a title="status is WD" href="http://www.w3.org/TR/2011/WD-Pointers-in-RDF10-20110510/">Pointer Methods in RDF 1.0</a>
+                     </h4>
+                     <div class="expand_description">
+                        <p>Add content here.</p>
+                     </div>
+                  </td>
+               </tr>
+                            <tr>
+                  <td class="table_datecol">
+                     <a href="/standards/history/wai-aria-primer" title="WAI-ARIA 1.0 Primer publication history">2010-09-16</a>
+                  </td>
+                  <td>
+                     <h4 class="w3c_status_title">
+                        <a title="status is WD" href="http://www.w3.org/TR/2010/WD-wai-aria-primer-20100916/">WAI-ARIA 1.0 Primer</a>
+                     </h4>
+                     <div class="expand_description">
+                        <p>The <acronym>WAI</acronym>-<acronym>ARIA</acronym> Primer introduces developers to the use of WAI-ARIA [ARIA] for addressing the accessibility of dynamic Web content for people with disabilities. This primer explains the accessibility problems posed by hybrid technologies such as DHTML and Ajax. It introduces the technologies to map controls, Ajax live regions, and events to accessibility APIs, including custom controls used for Rich Internet Applications. The primer also describes new navigation techniques to mark common Web elements such as menus, primary content, secondary content, banner information and other types of Web structures. These new technologies can be used to improve the accessibility and usability of Web resources by people with disabilities, without extensive modification to existing libraries of Web resources. This document is part of the WAI-ARIA suite described in the WAI-ARIA Overview.</p>
+                     </div>
+                  </td>
+               </tr>
+                            <tr>
+                  <td class="table_datecol">
+                     <a href="/standards/history/wai-age-literature" title="Web Accessibility for Older Users: A Literature Review publication history">2008-05-14</a>
+                  </td>
+                  <td>
+                     <h4 class="w3c_status_title">
+                        <a title="status is WD" href="http://www.w3.org/TR/2008/WD-wai-age-literature-20080514/">Web Accessibility for Older Users: A Literature Review</a>
+                     </h4>
+                     <div class="expand_description">
+                        <p>This document provides a review and analysis of guidelines and articles relating to the needs of older people with Web accessibility needs due to ageing, and compares these with the needs of people with disabilities as already addressed in WAI guidelines. The focus is particularly on Europe but applies internationally as well. This review is being undertaken in order to inform the development of educational materials which can better promote the needs of people who have accessibility needs due to ageing, and potential development of profiles and/or extensions on WAI guidelines.</p>
+                     </div>
+                  </td>
+               </tr>
+                            <tr>
+                  <td class="table_datecol">
+                     <a href="/standards/history/wai-aria-roadmap" title="Roadmap for Accessible Rich Internet Applications (WAI-ARIA Roadmap) publication history">2008-02-04</a>
+                  </td>
+                  <td>
+                     <h4 class="w3c_status_title">
+                        <a title="status is WD" href="http://www.w3.org/TR/2008/WD-wai-aria-roadmap-20080204/">Roadmap for Accessible Rich Internet Applications (WAI-ARIA Roadmap)</a>
+                     </h4>
+                     <div class="expand_description">
+                        <p>The Roadmap for Accessible Rich Internet Applications addresses the accessibility of dynamic Web content for people with disabilities. The roadmap introduces the technologies to map controls, Ajax live regions, and events to accessibility APIs, including custom controls used for Rich Internet Applications. The roadmap also describes new navigation techniques to mark common Web structures as menus, primary content, secondary content, banner information and other types of Web structures. These new technologies can be used to improve the accessibility and usability of Web resources by people with disabilities, without extensive modification to existing libraries of Web resources. This document is part of the WAI-ARIA suite described in the WAI-ARIA Overview.</p>
+                     </div>
+                  </td>
+               </tr>
+                            <tr>
+                  <td class="table_datecol">
+                     <a href="/standards/history/UAAG20-requirements" title="User Agent Accessibility Guidelines 2.0 Requirements publication history">2007-10-31</a>
+                  </td>
+                  <td>
+                     <h4 class="w3c_status_title">
+                        <a title="status is WD" href="http://www.w3.org/TR/2007/WD-UAAG20-requirements-20071031/">User Agent Accessibility Guidelines 2.0 Requirements</a>
+                     </h4>
+                     <div class="expand_description">
+                        <p>This First Public Working Draft outlines the requirements that the User Agent Accessibility Guidelines Working Group (UAWG) has set for development of User Agent Accessibility Guidelines 2.0 (UAAG 2.0). These requirements are based on feedback from the use of UAAG 1.0 and will be used to determine if the UAWG has met its goals as UAAG 2.0 advances through the W3C Recommendation Track Process.</p>
+                     </div>
+                  </td>
+               </tr>
+                            <tr>
+                  <td class="table_datecol">
+                     <a href="/standards/history/xag" title="XML Accessibility Guidelines publication history">2002-10-03</a>
+                  </td>
+                  <td>
+                     <h4 class="w3c_status_title">
+                        <a title="status is WD" href="http://www.w3.org/TR/2002/WD-xag-20021003">XML Accessibility Guidelines</a>
+                     </h4>
+                     <div class="expand_description">
+                        <p>Requirements intended to be used for development of WCAG 2.0 Techniques, superceded by later plans.</p>
+                     </div>
+                  </td>
+               </tr>
+                            <tr>
+                  <td class="table_datecol">
+                     <a href="/standards/history/ATAG-wombat" title="Authoring Tool Accessibility Guidelines &quot;Wombat&quot; publication history">2001-12-21</a>
+                  </td>
+                  <td>
+                     <h4 class="w3c_status_title">
+                        <a title="status is WD" href="http://www.w3.org/TR/2001/WD-ATAG-wombat-20011221/">Authoring Tool Accessibility Guidelines &quot;Wombat&quot;</a>
+                     </h4>
+                     <div class="expand_description">
+                        <p>This specification provides guidelines for Web authoring tool developers. Its purpose is two-fold: to assist developers in designing authoring tools that produce accessible Web content and to assist developers in creating an accessible authoring interface.</p> <p>Authoring tools can enable, encourage, and assist users ("authors") in the creation of accessible Web content through prompts, alerts, checking and repair functions, help files and automated tools. It is just as important that all people be able to author content as it is for all people to have access to it. The tools used to create this information must therefore be accessible themselves. Adoption of these guidelines will contribute to the proliferation of Web content that can be read by a broader range of readers and authoring tools that can be used by a broader range of authors.</p> <p>This document is part of a series of accessibility documents published by the <abbr>W3C</abbr> Web Accessibility Initiative (<abbr>WAI</abbr>).</p>
+                     </div>
+                  </td>
+               </tr>
+                         </tbody>
+         </table>
+      </div>
+                   <h2 id="obsolete">Obsolete Specifications</h2>
+      <p>These specifications have either been superseded by others,
+      or have been abandoned. They remain available for archival
+      purposes, but are not intended to be used.</p>
+            <h3 id="retired">
+        Retired
+      </h3>
+      <div class="data lMargin rMargin">
+         <table class="w3c_spec_summary_table">
+            <tbody>
+                           <tr>
+                  <td class="table_datecol">
+                     <a href="/standards/history/wcag2-tech-req" title="Requirements for WCAG 2.0 Checklists and Techniques publication history">2003-02-07</a>
+                  </td>
+                  <td>
+                     <h4 class="w3c_status_title">
+                        <a title="status is WD" href="http://www.w3.org/TR/2003/WD-wcag2-tech-req-20030207/">Requirements for WCAG 2.0 Checklists and Techniques</a>
+                     </h4>
+                     <div class="expand_description">
+                        <p>This is a W3C Working Draft produced by the Web Content Accessibility Guidelines Working Group (WCAG WG). It describes requirements for Checklists and Techniques described by the Web Content Accessibility Guidelines 2.0 (WCAG 2.0). These requirements are related to but different from Requirements for WCAG 2.0 in that "Requirements for WCAG 2.0 Checklists and Techniques" specifies requirements for the technology-specific documents produced by the WCAG WG while "Requirements for WCAG 2.0" specifies general requirements for the general usability of documents produced by the WCAG WG. The Working Group encourages feedback about these requirements as well as participation in the development of WCAG 2.0 by people who have experience creating Web content that conforms to Web Content Accessibility Guidelines 1.0. </p>
+                     </div>
+                  </td>
+               </tr>
+                              <tr>
+                  <td class="table_datecol">
+                     <a href="/standards/history/AERT" title="Techniques For Accessibility Evaluation And Repair Tools publication history">2000-04-26</a>
+                  </td>
+                  <td>
+                     <h4 class="w3c_status_title">
+                        <a title="status is WD" href="http://www.w3.org/TR/2000/WD-AERT-20000426">Techniques For Accessibility Evaluation And Repair Tools</a>
+                     </h4>
+                     <div class="expand_description">
+                        <p>This document describes techniques that Web accessibility validation tools may use to evaluate the conformance of HTML documents to the Web Content Accessibility Guidelines 1.0 (WCAG 1.0). This document also describes techniques that Web authoring tools may use to help authors modify HTML documents to conform to WCAG 1.0. We anticipate that tool developers may develop accessibility validation and/or repair modules to be incorporated into commercial authoring tools, validation tools, and perhaps user agents.</p>
+                     </div>
+                  </td>
+               </tr>
+                          </tbody>
+         </table>
+      </div>
+              </div>
+</div>
+        </div> <!-- /end #w3c_mainCol -->
+    </div> <!-- end #w3c_main -->
+</div> <!-- /end #w3c_container -->
+
+<div id="w3c_footer">
+<div id="w3c_footer-inner">
+<h2 class="offscreen">Footer Navigation</h2>
+<div class="w3c_footer-nav">
+<h3>Navigation</h3>
+<ul class="footer_top_nav">
+<li><a href="http://www.w3.org/">Home</a></li>
+<li><a href="http://www.w3.org/standards/">Standards</a></li>
+<li><a href="http://www.w3.org/participate/">Participate</a></li>
+<li><a href="http://www.w3.org/Consortium/membership">Membership</a></li>
+<li class="last-item"><a href="http://www.w3.org/Consortium/">About W3C</a></li>
+</ul>
+</div>
+<div class="w3c_footer-nav">
+<h3>Contact W3C</h3>
+<ul class="footer_bottom_nav">
+<li><a href="http://www.w3.org/Consortium/contact">Contact</a></li>
+<li><a accesskey="0" href="/Help/">Help and FAQ</a></li>
+<li><a href="http://www.w3.org/Consortium/sponsor/">Sponsor / Donate</a></li>
+<li><a href="http://www.w3.org/Consortium/siteindex">Site Map</a></li>
+<li>
+<address id="w3c_signature"><a href="http://lists.w3.org/Archives/Public/site-comments/">Feedback</a></address>
+</li>
+</ul>
+</div>
+<div class="w3c_footer-nav">
+<h3>W3C Updates</h3>
+<ul class="footer_follow_nav">
+<li><a href="http://twitter.com/W3C" title="Follow W3C on Twitter"><img src="/2008/site/images/twitter-bird" alt="Twitter" class="social-icon" width="78" height="83" /></a></li>
+</ul>
+</div>
+<!-- #footer address / page signature -->
+<p class="copyright">Copyright © 2014
+W3C <sup>®</sup> (<a href="http://www.csail.mit.edu/"><abbr title="Massachusetts Institute of Technology">MIT</abbr></a>, <a href="http://www.ercim.eu/"><abbr title="European Research Consortium for Informatics and Mathematics"> ERCIM</abbr></a>, <a href="http://www.keio.ac.jp/">Keio</a>, <a href="http://ev.buaa.edu.cn/">Beihang</a>) <a href="/Consortium/Legal/ipr-notice">Usage policies apply</a>.</p>
+</div>
+</div>
+<div id="w3c_scripts"><script type="text/javascript" src="/2008/site/js/main"></script></div>
+<script src="/2008/site/sf/js/3877145.js"></script>
+</body>
+</html>

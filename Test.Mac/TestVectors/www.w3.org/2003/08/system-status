@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+       "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US">
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=iso-8859-1" />
+  <title>W3C System Status</title>
+  <style type="text/css">
+<!--
+.date { font-style: italic; }
+-->
+  </style>
+  <link rel="stylesheet" type="text/css"
+  href="http://www.w3.org/StyleSheets/base.css" />
+  <link rel="stylesheet" type="text/css" href=
+  "http://www.w3.org/Stylesheets/activities.css" />
+
+  <link rel="stylesheet" type="text/css" href=
+  "http://www.w3.org/2007/10/systeam" />
+  <link href="/StyleSheets/generic-navbar-1.css" type="text/css"
+  rel="stylesheet" />
+
+</head>
+
+<body>
+<p><a href="/"><img src="/Icons/WWW/w3c_home" alt="W3C" width="72"
+height="48" /></a> <a href="/blog/systeam"><img src="http://www.w3.org/Icons/WWW/sys"
+  height="48" width="212" alt="Systems Team" /></a></p>
+
+<ul id="navbar">
+<li><a href="/2003/08/system-status-archive">System status archive</a></li>
+<li><a
+href="https://lists.w3.org/Archives/Member/system-notices/">System notices archive</a></li>
+<li><a href="http://www.w3.org/2004/12/SystemEventCommunicationsScheme">System
+Event Communications</a></li>
+
+<li><a href="/Help/whereami">From which W3C mirror are my requests being served?</a></li>
+</ul>
+
+<h1>W3C System Status</h1>
+
+<h2 style="clear: both;">All clear</h2>
+
+<p>W3C services should be up and running normally.  If you like, you can read about past incidents in our <a href="/2003/08/system-status-archive">system status archive</a>.</p>
+
+<p>Read about past incidents in our <a href="/2003/08/system-status-archive">system status archive</a>.</p>
+
+<hr />
+<address>
+  <a href="/Help/Webmaster.html">Webmaster</a><br />
+  Last updated: $Date: 2014-01-27 18:26:27 $
+</address>
+
+</body>
+</html>

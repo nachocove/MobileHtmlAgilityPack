@@ -1,0 +1,208 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>W3C Workshops</title><link rel="stylesheet" href="/2008/site/css/minimum" type="text/css" media="handheld, all" /><style type="text/css" media="print, screen and (min-width: 481px)" xml:space="preserve">
+     @import url("/2008/site/css/advanced");
+</style><link href="/2008/site/css/minimum" rel="stylesheet" type="text/css" media="handheld, only screen and (max-device-width: 480px)" /><meta name="viewport" content="width=device-width" /><link rel="stylesheet" href="/2008/site/css/print" type="text/css" media="print" /><link rel="shortcut icon" href="/2008/site/images/favicon.ico" type="image/x-icon" /></head><body id="www-w3-org" class="w3c_public"><div id="w3c_container">
+    
+
+         <div id="w3c_mast">
+            <h1 class="logo">
+               <a tabindex="2" accesskey="1" href="/"><img src="/2008/site/images/logo-w3c-mobile-lg" width="90" height="53" alt="W3C" /></a>
+               <span class="alt-logo">W3C</span>
+            </h1>
+            <div id="w3c_nav">
+               
+		
+		             
+               <form action="/Help/search" method="get" enctype="application/x-www-form-urlencoded"><div class="w3c_sec_nav"><!-- --></div><ul class="main_nav"><li class="first-item">
+                        <a href="/standards/">Standards</a>
+                     </li><li>
+                        <a href="/participate/">Participate</a>
+                     </li><li>
+                        <a href="/Consortium/membership">Membership</a>
+                     </li><li class="last-item">
+                        <a href="/Consortium/">About W3C</a>
+                     </li><li class="search-item">
+                        <div id="search-form">
+                           <input tabindex="3" class="text" name="q" value="" title="Search" type="text" />
+                           <button id="search-submit" name="search-submit" type="submit"><img class="submit" src="/2008/site/images/search-button" alt="Search" width="21" height="17" /></button>
+                        </div>
+                     </li></ul></form>
+               
+            </div> 
+            
+         </div> 
+ 
+         
+
+         <div id="w3c_main">
+            <div id="w3c_logo_shadow" class="w3c_leftCol">
+               <img height="32" alt="" src="/2008/site/images/logo-shadow" />
+            </div>
+            
+            
+            <div class="w3c_leftCol"><h2 class="offscreen">Site Navigation</h2>
+    <h3 class="category"><span class="ribbon"><a href="/participate/eventscal.html" title="Up to Calendar of Events">Calendar of Events <img src="/2008/site/images/header-link" alt="Header link" width="13" height="13" class="header-link" /></a></span></h3>
+       <ul class="theme">
+        <li><a href="/Talks/">Talks by W3C Speakers</a></li>
+        <li><a class="current">W3C Workshops</a></li>
+        <li><a href="/participate/meetings.html">Membership Meetings</a></li>
+        <li><a href="/participate/otherevents/">Conferences Endorsed by W3C</a></li>
+       </ul>
+       <br /></div>
+            <div class="w3c_mainCol">
+               <div id="w3c_crumbs">
+       <div id="w3c_crumbs_frame">
+        <ul class="bct"> <!-- .bct / Breadcrumbs -->
+          <li class="skip"><a tabindex="1" accesskey="2" title="Skip to content (e.g., when browsing via audio)" href="#w3c_content_body">Skip</a></li>
+          <li><a href="/">W3C</a>&#xA0;<span class="cr">&#xBB;</span>&#xA0;</li>
+          <li><a href="/participate/">Participate</a>&#xA0;<span class="cr">&#xBB;</span>&#xA0;</li>
+          <li><a href="/participate/eventscal.html">Calendar&#xA0;of&#xA0;Events</a>&#xA0;<span class="cr">&#xBB;</span>&#xA0;</li>
+          <li class="current">W3C Workshops</li>
+        </ul>            
+     </div>
+    </div>
+               <h1 class="title">W3C Workshops</h1>
+
+               <ul class="w3c_toc">
+	       <li class="toc_prefix">On this page &#x2192; </li>
+	       <li><a href="#upcoming">upcoming</a><span class="bullet">&#xA0;&#x2022; </span></li>
+	       <li><a href="#recent">recent</a></li>
+	       </ul>
+
+               <div id="w3c_content_body">
+
+	                 <div class="line">
+	                    <div class="unit size3on4">
+
+	                       <p class="intro tPadding">W3C organizes Workshops to promote early involvement in
+	      the development of W3C activities from Members and the
+	      public. The goal of a workshop is usually either to convene
+	      experts and other interested parties for an exchange of
+	      ideas about a technology or policy, or to address the
+	      pressing concerns of W3C Members. A list of <a href="archive">past W3C Workshops</a> is available.</p>
+	      
+	      <h2 id="upcoming">Upcoming Workshops</h2>
+	      <div class="w3c_events_talks">
+	                       <div id="workshopsupcoming" class="w3c_upcoming_events"></div>
+	      </div>
+	                
+	      <h2 id="recent">Recent Workshops</h2>
+	      <div class="w3c_events_talks">
+		<div id="workshopsrecent" class="w3c_upcoming_events"><ul class="vevent_list">
+    <li class="vevent">
+      <div class="date">
+<span class="dtstart"><span class="year">2014</span><span class="mm-dd">-11-20</span></span>
+<span class="paren">(</span><span class="dd-mmm">20 NOV</span><span class="paren">)</span>
+<span class="date-separator"> &#x2013; </span>
+<span class="dtend"><span class="year">2014</span><span class="mm-dd">-11-21</span></span>
+<span class="paren">(</span><span class="dd-mmm">21 NOV</span><span class="paren">)</span>
+</div>      <div class="info-wrap">
+       <p class="summary">      <a href="https://www.w3.org/2014/privacyws/" class="uri url">Workshop on Privacy and User&#x2013;Centric Controls</a>
+</p>
+           <p class="location">Berlin, Germany</p>       <p class="host">Hosted by Deutsche Telekom</p>
+            <div class="description">
+     <p>Participants will investigate strategies toward better privacy protection on the Web that are effective and lead to benefits in the near term. This includes discussing basic privacy UI features that will, on the long run, create a user experience that loops with user expectations. We expect certain controls and dashboards in a car. Perhaps we can create a similar clarity for the privacy dashboard of our devices. </p>
+<p>The Workshop focus will be on users: user experience, user behavior and how we can offer controls that provide the necessary transparency of privacy-affecting interactions. We will also discuss how developers can meet users' privacy needs on the Web, including what APIs are necessary for user privacy.</p>
+  </div>
+      </div>
+    </li>
+    <li class="vevent">
+      <div class="date single">
+<span class="dtstart"><span class="year">2014</span><span class="mm-dd">-09-11</span></span>
+<span class="paren">(</span><span class="dd-mmm">11 SEP</span><span class="paren">)</span>
+</div>      <div class="info-wrap">
+       <p class="summary">      <a href="http://lanyrd.com/2014/extwebsummit-berlin/" class="uri url">Extensible Web Summit</a>
+</p>
+           <p class="location">Berlin, Germany</p>       <p class="host">Hosted by Beuth University</p>
+                </div>
+    </li>
+    <li class="vevent">
+      <div class="date">
+<span class="dtstart"><span class="year">2014</span><span class="mm-dd">-09-10</span></span>
+<span class="paren">(</span><span class="dd-mmm">10 SEP</span><span class="paren">)</span>
+<span class="date-separator"> &#x2013; </span>
+<span class="dtend"><span class="year">2014</span><span class="mm-dd">-09-11</span></span>
+<span class="paren">(</span><span class="dd-mmm">11 SEP</span><span class="paren">)</span>
+</div>      <div class="info-wrap">
+       <p class="summary">      <a href="http://www.w3.org/2012/webcrypto/webcrypto-next-workshop/Overview.html" class="uri url">Workshop on Web Cryptography Next Steps</a>
+</p>
+           <p class="location">Mountain View, USA</p>       <p class="host">Hosted by Microsoft, sponsored by Google and Tyfone</p>
+            <div class="description">
+     <p>The Workshop will focus on authentication, hardware tokens, and next steps for cryptography on the Web.</p>
+  </div>
+      </div>
+    </li>
+</ul></div>
+	      </div>
+    </div>
+
+	                    <div class="unit size1on4 lastUnit w3c_rhs">
+		                      
+		                         <h2 class="h4 category">Quick links</h2>
+		
+		                         <ul class="theme right-list"><li>
+                                 <a href="archive">Archive of Workshops</a>
+                              </li><li>
+		                               <a title="Subscribe to calendar of W3C Workshops" href="/participate/workshops.ics">
+		    Subscribe <img src="/2008/site/images/icons/cal.gif" alt="Calendar feed" />
+		                               </a>
+		                            </li></ul>
+		                      
+	                    </div>
+	                 </div>
+	              </div>
+            </div>
+         </div>
+         
+         
+         
+      </div><div id="w3c_footer">
+         <div id="w3c_footer-inner">
+            <h2 class="offscreen">Footer Navigation</h2>
+            <div class="w3c_footer-nav">
+               <h3>Navigation</h3>
+               <ul class="footer_top_nav"><li>
+                     <a href="/">Home</a>
+                  </li><li>
+                     <a href="/standards/">Standards</a>
+                  </li><li>
+                     <a href="/participate/">Participate</a>
+                  </li><li>
+                     <a href="/Consortium/membership">Membership</a>
+                  </li><li class="last-item">
+                     <a href="/Consortium/">About W3C</a>
+                  </li></ul>
+            </div>
+            <div class="w3c_footer-nav">
+               <h3>Contact W3C</h3>
+               <ul class="footer_bottom_nav"><li>
+                     <a href="/Consortium/contact">Contact</a>
+                  </li><li>
+                     <a accesskey="0" href="/Help/">Help and FAQ</a>
+                  </li><li>
+                     <a href="/Consortium/sponsor/">Sponsor / Donate</a>
+                  </li><li>
+                     <a href="/Consortium/siteindex">Site Map</a>
+                  </li><li>
+                     <address id="w3c_signature">
+                        <a href="http://lists.w3.org/Archives/Public/site-comments/">Feedback</a></address>
+                  </li></ul>
+            </div>
+            <div class="w3c_footer-nav">
+               <h3>W3C Updates</h3>
+               <ul class="footer_follow_nav"><li>
+                     <a href="http://twitter.com/W3C" title="Follow W3C on Twitter">
+                        <img src="/2008/site/images/twitter-bird" alt="Twitter" width="78" height="83" class="social-icon" />
+                     </a>
+                     
+                  </li></ul>
+            </div>
+            <p class="copyright">Copyright &#xA9; 2012 W3C <sup>&#xAE;</sup> (<a href="http://www.csail.mit.edu/">
+                  <acronym title="Massachusetts Institute of Technology">MIT</acronym>
+               </a>, <a href="http://www.ercim.org/">
+                  <acronym title="European Research Consortium for Informatics and Mathematics"> ERCIM</acronym>
+               </a>, <a href="http://www.keio.ac.jp/">Keio</a>, <a href="http://ev.buaa.edu.cn/">Beihang</a>) <a href="/Consortium/Legal/ipr-notice">Usage policies apply</a>.</p>
+         </div>
+      </div><!-- Generated from data/scripts.php, ../../smarty/{scripts.tpl} --><!-- At the bottom for performance reasons --><div id="w3c_scripts">
+         <script type="text/javascript" src="/2008/site/js/main" xml:space="preserve"><!-- --></script>
+      </div></body></html>

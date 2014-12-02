@@ -1,0 +1,574 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet href="http://www.w3.org/StyleSheets/TR/W3C-WG-NOTE.css" type="text/css"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<meta name="generator" content="HTML Tidy, see www.w3.org" />
+<title>XHTML Role Attribute Module</title>
+<style type="text/css">
+      .dtd-code {  font-family: monospace; background-color: #dfdfdf; white-space: pre; border: #000000; border-style: solid; border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px}
+      code {
+      color: green;
+      font-family: monospace;
+      font-weight: bold;
+      }
+      h4 { color: #005A9C; background: white }
+      code.greenmono {
+      color: green;
+      font-family: monospace;
+      font-weight: bold;
+      }
+      .example {
+      border: solid green;
+      border-width: 2px;
+      color: green;
+      font-weight: bold;
+      margin-right: 5%;
+      margin-left: 0;
+      }
+      .bad  {
+      border: solid red;
+      border-width: 2px;
+      margin-left: 0;
+      margin-right: 5%;
+      color: rgb(192, 101, 101);
+      }
+      div.navbar { text-align: center; }
+      div.contents {
+      background-color: rgb(204,204,255);
+      padding: 0.5em;
+      border: none;
+      margin-right: 5%;
+      }
+      .tocline { list-style: none; }
+      td { text-align: left }
+      .ins { background-color: yellow }
+      .del { background-color: yellow; text-decoration: line-through }
+      ul.acks { list-style: none }
+    p.issueTitle {
+        font-size: 150% ;
+    }
+    div.issue {
+        background-color: #cfc ;
+        border: none ;
+        margin-right: 5% ;
+    }
+    /* assertion styles
+
+    .must, .mustnot, .required, .shall, .shallnot, .should, .recommended, .may, .optional {
+        font-style:  italic ;
+        background-color: #FF8040 ;
+    }
+    */
+    
+</style>
+
+<link rel="stylesheet" type="text/css" href="http://www.w3.org/StyleSheets/TR/W3C-WG-NOTE.css" />
+<link rel="license" href="http://www.w3.org/Consortium/Legal/copyright-documents" />
+<link rel="contents" href="#contents" />
+<link rel="copyright" href="#copyright" />
+</head>
+<body>
+<div class="head"><a href="http://www.w3.org/"><img height="48" width="72" alt="W3C" src="http://www.w3.org/Icons/w3c_home" /></a> 
+
+<h1><a id="title" name="title"> XHTML Role Attribute Module</a></h1>
+
+<h2><a id="subtitle" name="subtitle"> A module to support role classification of elements</a></h2>
+
+<h2><a id="w3c-doctype" name="w3c-doctype"> W3C Working Group Note 16 December 2010</a></h2>
+
+<dl>
+<dt>This version:</dt>
+
+<dd><a href="http://www.w3.org/TR/2010/NOTE-xhtml-role-20101216">http://www.w3.org/TR/2010/NOTE-xhtml-role-20101216</a></dd>
+
+<dt>Latest version:</dt>
+
+<dd><a href="http://www.w3.org/TR/xhtml-role">http://www.w3.org/TR/xhtml-role</a></dd>
+
+<dt>Previous version:</dt>
+
+<dd><a href="http://www.w3.org/TR/2008/WD-xhtml-role-20080407">http://www.w3.org/TR/2008/WD-xhtml-role-20080407</a></dd>
+
+<dt>Diff from previous version:</dt>
+
+<dd><a href="xhtml-role-diff.html">xhtml-role-diff.html</a></dd>
+
+<dt>Editors:</dt>
+
+<dd>Mark Birbeck, <a href="http://sidewinderlabs.com/">Sidewinder Labs</a> <a href="mailto:mark.birbeck@sidewinderlabs.com">mark.birbeck@sidewinderlabs.com</a></dd>
+
+<dd><a href="mailto:shane@aptest.com">Shane McCarron</a>, <a href="http://www.aptest.com">Applied Testing and Technology, <abbr title="Incorporated">Inc.</abbr></a></dd>
+
+<dd><a href="http://www.cwi.nl/~steven/">Steven Pemberton</a>, <a href="http://www.cwi.nl"><abbr lang="nl" xml:lang="nl" title="Centrum voor Wiskunde en Informatica">CWI</abbr></a>/<a href= 
+"http://www.w3.org/"><abbr title="World Wide Web Consortium">W3C</abbr></a><sup>&#174;</sup></dd>
+
+<dd><a href="mailto:raman@google.com">T. V. Raman</a>, Google, Inc.</dd>
+
+<dd><a href="mailto:schwer@us.ibm.com">Richard Schwerdtfeger</a>, IBM Corporation</dd>
+</dl>
+
+<p>This document is also available in these non-normative formats: <a href="xhtml-role.ps">PostScript version</a>, <a href="xhtml-role.pdf">PDF version</a>, <a href="xhtml-role.zip">ZIP archive</a>,
+and <a href="xhtml-role.tgz">Gzip'd TAR archive</a>.</p>
+
+<p>The English version of this specification is the only normative version. Non-normative <a href="http://www.w3.org/Consortium/Translation/">translations</a> may also be available.</p>
+
+<p id="copyright" class="copyright"><a href="http://www.w3.org/Consortium/Legal/ipr-notice#Copyright">Copyright</a> &#169; 2006-2010 <a href="http://www.w3.org/"><acronym title="World Wide Web 
+Consortium">W3C</acronym></a><sup>&#174;</sup> (<a href="http://www.csail.mit.edu/"><acronym title="Massachusetts Institute of Technology">MIT</acronym></a>, <a href="http://www.ercim.eu/"><acronym
+title="European Research Consortium for Informatics and Mathematics">ERCIM</acronym></a>, <a href="http://www.keio.ac.jp/">Keio</a>), All Rights Reserved. W3C <a href= 
+"http://www.w3.org/Consortium/Legal/ipr-notice#Legal_Disclaimer">liability</a>, <a href="http://www.w3.org/Consortium/Legal/ipr-notice#W3C_Trademarks">trademark</a> and <a href= 
+"http://www.w3.org/Consortium/Legal/copyright-documents">document use</a> rules apply.</p>
+</div>
+
+<hr />
+<h2><a id="abstract" name="abstract"> Abstract</a></h2>
+
+<p>The XHTML Role Attribute defined in this specification allows the author to annotate XML Languages with machine-extractable semantic information about the purpose of an element. Use cases include
+accessibility, device adaptation, server-side processing, and complex data description. This attribute can be integrated into any markup language based upon XHTML Modularization [<a class="nref"
+href="#ref_XHTMLMOD">XHTMLMOD</a>].</p>
+
+<h2><a id="status" name="status"> Status of This Document</a></h2>
+
+<p><em>This section describes the status of this document at the time of its publication. Other documents may supersede this document. A list of current W3C publications and the latest revision of
+this technical report can be found in the <a href="http://www.w3.org/TR/">W3C technical reports index</a> at http://www.w3.org/TR/.</em></p>
+
+<p>This document is a Working Group Note. The XHTML2 Working Group's charter expired before it could complete work on this document. Work related to this document is being done by the <a href= 
+"http://www.w3.org/WAI/PF">Protocols and Formats Working Group</a>.</p>
+
+<p>Comments on this document should be addressed to <a href="mailto:www-html-editor@w3.org">www-html-editor@w3.org</a>. All comments sent to that address are available in a (<a href= 
+"http://lists.w3.org/Archives/Public/www-html-editor/">public archive</a>).</p>
+
+<p>Publication as a Working Group Note does not imply endorsement by the W3C Membership. This is a draft document and may be updated, replaced or obsoleted by other documents at any time. It is
+inappropriate to cite this document as other than work in progress.</p>
+
+<p>This document has been produced by the <a href="http://www.w3.org/MarkUp/">W3C XHTML 2 Working Group</a> as part of the <a href="http://www.w3.org/MarkUp/Activity">HTML Activity</a>. The goals of
+the XHTML 2 Working Group are discussed in the <a href="http://www.w3.org/2007/03/XHTML2-WG-charter">XHTML 2 Working Group charter</a>.</p>
+
+<p>This document was produced by a group operating under the <a href="http://www.w3.org/Consortium/Patent-Policy-20040205/">5 February 2004 W3C Patent Policy</a>. W3C maintains a <a rel="disclosure"
+href="http://www.w3.org/2004/01/pp-impl/32107/status">public list of any patent disclosures</a> made in connection with the deliverables of the group; that page also includes instructions for
+disclosing a patent. An individual who has actual knowledge of a patent which the individual believes contains <a href="http://www.w3.org/Consortium/Patent-Policy-20040205/#def-essential">Essential
+Claim(s)</a> must disclose the information in accordance with <a href="http://www.w3.org/Consortium/Patent-Policy-20040205/#sec-Disclosure">section 6 of the W3C Patent Policy</a>.</p>
+
+<p>Please report errors in this specification to <a href="mailto:www-html-editor@w3.org">www-html-editor@w3.org</a> (<a href="http://lists.w3.org/Archives/Public/www-html-editor/">archive</a>). It is
+inappropriate to send discussion email to this address. Public discussion may take place on <a href="mailto:www-html@w3.org">www-html@w3.org</a> (<a href=
+"http://lists.w3.org/Archives/Public/www-html/">archive</a>).</p>
+
+<h1><a id="contents" name="contents"> Table of Contents</a></h1>
+
+<div class="toc">
+<ul class='toc'>
+<li class='tocline'>1. <a href="#s_intro" class="tocxref">Introduction</a></li>
+
+<li class='tocline'>2. <a href="#s_conformance" class="tocxref">Conformance Requirements</a> 
+
+<ul class="toc">
+<li class='tocline'>2.1. <a href="#docconf" class="tocxref">Document Conformance</a></li>
+
+<li class='tocline'>2.2. <a href="#hostconf" class="tocxref">Host Language Conformance</a></li>
+</ul>
+</li>
+
+<li class='tocline'>3. <a href="#s_role_module_attributes" class="tocxref">The XHTML Role Attribute</a> 
+
+<ul class="toc">
+<li class='tocline'>3.1. <a href="#sec_3.1." class="tocxref">Extending the collection of roles</a></li>
+</ul>
+</li>
+
+<li class='tocline'>A. <a href="#a_DTD_definition" class="tocxref">DTD Implementation</a> 
+
+<ul class="toc">
+<li class='tocline'>A.1. <a href="#a_module_qname" class="tocxref">Qualified Names Module</a></li>
+</ul>
+</li>
+
+<li class='tocline'>B. <a href="#a_Schema_definition" class="tocxref">Schema Implementation</a> 
+
+<ul class="toc">
+<li class='tocline'>B.1. <a href="#a_schema_attribs" class="tocxref">Attributes Module</a></li>
+</ul>
+</li>
+
+<li class='tocline'>C. <a href="#s_refs" class="tocxref">References</a> 
+
+<ul class="toc">
+<li class='tocline'>C.1. <a href="#s_norm-refs" class="tocxref">Normative References</a></li>
+
+<li class='tocline'>C.2. <a href="#s_other-refs" class="tocxref">Other References</a></li>
+</ul>
+</li>
+
+<li class='tocline'>D. <a href="#s_acks" class="tocxref">Acknowledgments</a></li>
+</ul>
+</div>
+
+<!--OddPage-->
+<h1><a id="s_intro" name="s_intro">1. Introduction</a></h1>
+
+<p><em>This section is informative.</em></p>
+
+<p>This document is a module designed to be used to help extend the scope of XHTML-family markup languages into new environments. It has been developed in conjunction with the accessibility community
+and other groups to make it easier to describe the semantic meaning of XHTML-family document content.</p>
+
+<!--OddPage-->
+<h1><a id="s_conformance" name="s_conformance">2. Conformance Requirements</a></h1>
+
+<p>This section is <em>normative</em>.</p>
+
+<p>The keywords "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "RECOMMENDED", "MAY", and "OPTIONAL" in this document are to be interpreted as described in [<a class="nref" href= 
+"#ref_RFC2119">RFC2119</a>].</p>
+
+<p>Note that all examples in this document are informative, and are not meant to be interpreted as normative requirements.</p>
+
+<h2><a id="docconf" name="docconf">2.1. Document Conformance</a></h2>
+
+<p>XHTML Role Attribute Module is not a stand-alone document type. It is intended to be integrated into other host languages such as XHTML. A conforming XHTML Role Attribute Module document is a
+document that requires only the facilities described as mandatory in this specification and the facilities described as mandatory in its host language. Such a document must meet all the following
+criteria:</p>
+
+<ol>
+<li>
+<p><span class="must">The document MUST conform to the constraints expressed in its host language implementation.</span></p>
+</li>
+
+<li>
+<p>If the host language <em>is</em> in the XHTML Namespace, there are no additional requirements. <span class="must">If the host language <em>is not</em> in the XHTML namespace, and the host language
+does not incorporate this module into its own namespace, then the document MUST contain an XML namespace declaration for the XHTML Role Attribute Module namespace [<a class="nref" href=
+"#ref_XMLNAMES">XMLNAMES</a>]</span>. The namespace for XHTML Role Attribute Module is defined to be <code>http://www.w3.org/1999/xhtml</code>. An example start tag of a root element might look
+like:</p>
+
+<div class="example"><em>This example is informative</em> 
+
+<pre>
+&lt;mylang xmlns="http://www.example.com/dtd/mylang" 
+        xmlns:xh="http://www.w3.org/1999/xhtml" xml:lang="en" &gt;
+</pre>
+</div>
+</li>
+</ol>
+
+<h2><a id="hostconf" name="hostconf">2.2. Host Language Conformance</a></h2>
+
+<p><span class="must">When the XHTML Role Attribute Module is included in a host language, all of the facilities required in this specification MUST be included in the host language.</span> <span
+class="must">In addition, the attribute defined in this specification MUST be included in the content model of the host language.</span></p>
+
+<!--OddPage-->
+<h1><a id="s_role_module_attributes" name="s_role_module_attributes">3. The XHTML Role Attribute</a></h1>
+
+<p><em>This section is normative.</em></p>
+
+<p id="A_role">The Role Attribute Module defines the <code>role</code> attribute. The <code>role</code> attribute takes as its value one or more whitespace separated <code>CURIE</code>s [<a class= 
+"nref" href="#ref_CURIE">CURIE</a>]. <span class="should">Each CURIE maps to a URI that corresponds to a vocabulary term that SHOULD be defined using RDF.</span></p>
+
+<p>Note that the CURIE specification indicates CURIEs can be prefixed (of the form <code>prefix:reference</code>), can rely upon a default prefix (of the form <code>:reference</code>), or can be from
+a collection of reserved values (of the form <code>reference</code>). This specification defines the mapping for the default prefix to be <code>http://www.w3.org/1999/xhtml/vocab#</code>. <span
+class="may">The host language MAY define a different default prefix mapping.</span> <span class="must">Any value that consists of just a <code>reference</code> MUST use the default prefix mapping
+<code>http://www.w3.org/1999/xhtml/vocab#</code>.</span> For a list of all roles in the vocabulary referenced by the default prefix, see [<a class="nref" href="#ref_XHTMLVOCAB">XHTMLVOCAB</a>].</p>
+
+<p>The attribute describes the role(s) the current element plays in the context of the document. This can be used, for example, by applications and assistive technologies to determine the purpose of
+an element. This could allow a user to make informed decisions on which actions may be taken on an element and activate the selected action in a device independent way. It could also be used as a
+mechanism for annotating portions of a document in a domain specific way (e.g., a legal term taxonomy). <span class="should">Although the role attribute may be used to add semantics to an element,
+authors SHOULD use elements with inherent semantics, such as <code>&lt;p&gt;</code>, rather than layering semantics on semantically neutral elements, such as <code>&lt;div
+role="paragraph"&gt;</code>.</span></p>
+
+<p>The following is an example of a good, appropriate use of the role attribute:</p>
+
+<div class="example"><em>This example is informative</em> 
+
+<pre>
+&lt;ul role="navigation"&gt;
+    &lt;li href="downloads"&gt;Downloads&lt;/li&gt;
+    &lt;li href="docs"&gt;Documentation&lt;/li&gt;
+    &lt;li href="news"&gt;News&lt;/li&gt;
+&lt;/ul&gt;
+</pre>
+</div>
+
+<p>The next example, on the other hand, is a poor use of the role attribute because it attempts to apply semantics of an element that already exists onto some other element:</p>
+
+<div class="example"><em>This example is informative</em> 
+
+<pre>
+&lt;p&gt;Do you agree with the above license?
+    &lt;span role="checkbox"&gt;Yes&lt;/span&gt;
+    &lt;span role="checkbox"&gt;No&lt;/span&gt;
+&lt;/p&gt;
+</pre>
+</div>
+
+<p>A more appropriate use of this module would be to use the existing <code>checkbox</code> element:</p>
+
+<div class="example"><em>This example is informative</em> 
+
+<pre>
+&lt;p&gt;Do you agree with the above license?
+    &lt;input type="checkbox" name="agree" value="y" /&gt;Yes
+    &lt;input type="checkbox" name="agree" value="n" /&gt;No
+&lt;/p&gt;
+</pre>
+</div>
+
+<h2><a id="sec_3.1." name="sec_3.1.">3.1. Extending the collection of roles</a></h2>
+
+<p>It is possible to define additional role values. Such values MUST be defined in their own vocabulary. Note that current best practice is that the URI associated with that vocabulary resolve to a
+resource that allows for the discovery of the definition of the roles in the vocabulary.</p>
+
+<!--OddPage-->
+<h1><a id="a_DTD_definition" name="a_DTD_definition">A. DTD Implementation</a></h1>
+
+<p>This appendix is <em>informative</em>.</p>
+
+<p>The DTD implementation of XHTML Role Attribute Module conforms to the requirements defined in [<a class="nref" href="#ref_XHTMLMOD">XHTMLMOD</a>]. Consequently, it provides a Qualified Names
+declaration module.</p>
+
+<h2><a id="a_module_qname" name="a_module_qname">A.1. Qualified Names Module</a></h2>
+
+<p>Note that this module defines the parameter entity <code>%xhtml-role-attrs.qname;</code>. This entity is intended to be used in the attribute lists of elements in any host language that permits
+the use of the role attribute on elements in its own namespace. If a host language does not permit role in its namespace, then the host language driver should set a parameter entity <code>
+%XHTML-ROLE.prefixed;</code> to <code>INCLUDE</code> and a parameter entity <code>%XHTML-ROLE.prefix;</code> to a value that is the prefix for the XHTML Role Attribute Module attribute.</p>
+
+<pre class="dtd">
+&lt;!-- ....................................................................... --&gt;
+&lt;!-- XHTML Role Qname Module  ............................................ --&gt;
+&lt;!-- file: xhtml-role-qname-1.mod
+
+     This is XHTML Role - the Role Attribute Module for XHTML.
+
+     Copyright 2006 W3C (MIT, ERCIM, Keio), All Rights Reserved.
+
+     This DTD module is identified by the PUBLIC and SYSTEM identifiers:
+
+       PUBLIC "-//W3C//ENTITIES XHTML Role Attribute Qnames 1.0//EN"
+       SYSTEM "http://www.w3.org/MarkUp/DTD/xhtml-role-qname-1.mod"
+
+     Revisions:
+     (none)
+     ....................................................................... --&gt;
+
+&lt;!-- XHTML Role Attribute Qname (Qualified Name) Module
+
+     This module is contained in two parts, labeled Section 'A' and 'B':
+
+       Section A declares parameter entities to support namespace-
+       qualified names, namespace declarations, and name prefixing
+       for XHTML Role and extensions.
+
+       Section B declares parameter entities used to provide
+       namespace-qualified names for the XHTML role attribute:
+
+         %role.qname;   the xmlns-qualified name for @role
+         ...
+
+     XHTML Role extensions would create a module similar to this one.
+--&gt;
+
+&lt;!-- Section A: XHTML Role Attribute XML Namespace Framework ::::::::::::::: --&gt;
+
+&lt;!-- 1. Declare a %XHTML-ROLE.prefixed; conditional section keyword, used
+        to activate namespace prefixing. The default value should
+        inherit '%NS.prefixed;' from the DTD driver, so that unless
+        overridden, the default behavior follows the overall DTD
+        prefixing scheme.
+--&gt;
+&lt;!ENTITY <span class="entity">% NS.prefixed</span> "IGNORE" &gt;
+&lt;!ENTITY <span class="entity">% XHTML-ROLE.prefixed</span> "%NS.prefixed;" &gt;
+
+&lt;!-- 2. Declare a parameter entity (eg., %XHTML-ROLE.xmlns;) containing
+        the URI reference used to identify the XHTML Role Attribute namespace
+--&gt;
+&lt;!ENTITY <span class="entity">% XHTML-ROLE.xmlns</span>  "http://www.w3.org/1999/xhtml" &gt;
+
+&lt;!-- 3. Declare parameter entities (eg., %XML.prefix;) containing
+        the default namespace prefix string(s) to use when prefixing
+        is enabled. This may be overridden in the DTD driver or the
+        internal subset of an document instance. If no default prefix
+        is desired, this may be declared as an empty string.
+
+     NOTE: As specified in [XMLNAMES], the namespace prefix serves
+     as a proxy for the URI reference, and is not in itself significant.
+--&gt;
+&lt;!ENTITY <span class="entity">% XHTML-ROLE.prefix</span>  "" &gt;
+
+&lt;!-- 4. Declare parameter entities (eg., %XHTML-ROLE.pfx;) containing the
+        colonized prefix(es) (eg., '%XHTML-ROLE.prefix;:') used when
+        prefixing is active, an empty string when it is not.
+--&gt;
+&lt;![%XHTML-ROLE.prefixed;[
+&lt;!ENTITY <span class="entity">% XHTML-ROLE.pfx</span>  "%XHTML-ROLE.prefix;:" &gt;
+]]&gt;
+&lt;!ENTITY <span class="entity">% XHTML-ROLE.pfx</span>  "" &gt;
+
+&lt;!-- declare qualified name extensions here ............ --&gt;
+&lt;!ENTITY <span class="entity">% xhtml-role-qname-extra.mod</span> "" &gt;
+%xhtml-role-qname-extra.mod;
+
+&lt;!-- 5. The parameter entity %XHTML-ROLE.xmlns.extra.attrib; may be
+        redeclared to contain any non-XHTML Role Attribute namespace 
+        declaration attributes for namespaces embedded in XML. The default
+        is an empty string.  XLink should be included here if used
+        in the DTD.
+--&gt;
+&lt;!ENTITY <span class="entity">% XHTML-ROLE.xmlns.extra.attrib</span> "" &gt;
+
+
+&lt;!-- Section B: XML Qualified Names ::::::::::::::::::::::::::::: --&gt;
+
+&lt;!-- 6. This section declares parameter entities used to provide
+        namespace-qualified names for the XHTML role attribute.
+--&gt;
+
+&lt;!ENTITY <span class="entity">% xhtml-role.role.qname</span>  "%XHTML-ROLE.pfx;role" &gt;
+
+
+&lt;!-- The following defines a PE for use in the attribute sets of elements in
+     other namespaces that want to incorporate the XHTML role attribute. Note
+     that in this case the XHTML-ROLE.pfx should be defined. --&gt;
+
+&lt;!ENTITY <span class="entity">% xhtml-role.attrs.qname</span>
+   "%XHTML-ROLE.pfx;role             CDATA        #IMPLIED"
+    &gt;
+
+&lt;!-- end of xhtml-role-qname-1.mod --&gt;
+
+</pre>
+
+<!--OddPage-->
+<h1><a id="a_Schema_definition" name="a_Schema_definition">B. Schema Implementation</a></h1>
+
+<p>This appendix is <em>normative</em>.</p>
+
+<p>The schema implementation of XHTML Role Attribute Module conforms to the requirements defined in [<a class="nref" href="#ref_XHTMLMOD">XHTMLMOD</a>]. It is included here as an example
+implementation.</p>
+
+<h2><a id="a_schema_attribs" name="a_schema_attribs">B.1. Attributes Module</a></h2>
+
+<!-- INCLUDING SCHEMA SCHEMA/xhtml-role-attrib-1.xsd.mhtml -->
+<pre class="dtd">
+&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;xs:schema
+ xmlns:xs="http://www.w3.org/2001/XMLSchema"
+ elementFormDefault="qualified"
+ xmlns:xh11d="http://www.w3.org/1999/xhtml/datatypes/"
+&gt;
+    &lt;xs:import namespace="http://www.w3.org/1999/xhtml/datatypes/" 
+               schemaLocation="xhtml-datatypes-1.xsd" /&gt;
+
+    &lt;xs:annotation&gt;
+        &lt;xs:documentation&gt;
+      This is the XML Schema attribute module for XHTML Role
+      $Id: Overview.html,v 1.3 2010/12/16 16:55:19 plehegar Exp $
+    &lt;/xs:documentation&gt;
+        &lt;xs:documentation source="xhtml-copyright-1.xsd"/&gt;
+        &lt;xs:documentation source="http://www.w3.org/TR/xhtml-role#A_role"/&gt;
+    &lt;/xs:annotation&gt;
+    &lt;xs:attribute name="role" type="xh11d:CURIEs"/&gt;
+&lt;/xs:schema&gt;
+
+</pre>
+
+<!-- END OF FILE SCHEMA/xhtml-role-attrib-1.xsd.mhtml --><!--OddPage-->
+<h1><a id="s_refs" name="s_refs">C. References</a></h1>
+
+<p>This appendix is <em>normative</em>.</p>
+
+<h2><a id="s_norm-refs" name="s_norm-refs">C.1. Normative References</a></h2>
+
+<dl>
+<dt>[<a id="ref_CURIE" class="normref">CURIE</a>]</dt>
+
+<dd>"<cite><a href="http://www.w3.org/TR/2009/CR-curie-20090116/">CURIE Syntax 1.0</a></cite>", W3C Candidate Recommendation, M. Birbeck, S. McCarron, <i><abbr title="editor">ed.</abbr></i>, 16
+January 2009.<br />
+Available at: http://www.w3.org/TR/2009/CR-curie-20090116/<br />
+The <a href="http://www.w3.org/TR/curie">latest version</a> is available at: http://www.w3.org/TR/curie</dd>
+
+<dt><a id="ref_RFC2119" name="ref_RFC2119" class="normref">[RFC2119]</a></dt>
+
+<dd>"<cite><a href="http://www.rfc-editor.org/rfc/rfc2119.txt">Key words for use in RFCs to indicate requirement levels</a></cite>", RFC 2119, S. Bradner, March 1997.<br />
+ Available at: http://www.rfc-editor.org/rfc/rfc2119.txt</dd>
+
+<dt>[<a id="ref_XHTMLMOD" name="ref_XHTMLMOD">XHTMLMOD</a>]</dt>
+
+<dd>"<cite><a href="http://www.w3.org/TR/2008/REC-xhtml-modularization-20081008">Modularization of XHTML&#8482; 1.1</a></cite>", W3C Recommendation, D. Austin <i lang="lt" xml:lang="lt">et al.</i>,
+<i><abbr title="editors">eds.</abbr></i>, 8 October 2008.<br />
+Available at: http://www.w3.org/TR/2008/REC-xhtml-modularization-20081008<br />
+The <a href="http://www.w3.org/TR/xhtml-modularization">latest version</a> is available at: http://www.w3.org/TR/xhtml-modularization</dd>
+
+<dt>[<a id="ref_XHTMLVOCAB">XHTMLVOCAB</a>]</dt>
+
+<dd>"<a href="http://www.w3.org/1999/xhtml/vocab">XHTML Vocabulary</a>", XHTML 2 Working Group.<br />
+Available at: http://www.w3.org/1999/xhtml/vocab</dd>
+
+<dt><a id="ref_XMLNAMES" name="ref_XMLNAMES" class="ref">[XMLNAMES]</a></dt>
+
+<dd>"<cite><a href="http://www.w3.org/TR/1999/REC-xml-names-19990114">Namespaces in XML</a></cite>", W3C Recommendation, T. Bray <i lang="lt" xml:lang="lt">et al.</i>, <i><abbr title="editors">
+eds.</abbr></i>, 14 January 1999.<br />
+Available at: http://www.w3.org/TR/1999/REC-xml-names-19990114<br />
+The <a href="http://www.w3.org/TR/REC-xml-names">latest version</a> is available at: http://www.w3.org/TR/REC-xml-names</dd>
+</dl>
+
+<h2><a id="s_other-refs" name="s_other-refs">C.2. Other References</a></h2>
+
+<dl>
+<dt>[<a id="ref_XHTML" name="ref_XHTML">XHTML</a>]</dt>
+
+<dd>"<cite><a href="http://www.w3.org/TR/2002/REC-xhtml1-20020801">XHTML&#8482; 1.0: The Extensible HyperText Markup Language (Second Edition)</a></cite>". S. Pemberton <i lang="lt" xml:lang="lt">et
+al.</i>, 26 January 2000, revised 1 August 2002.<br />
+Available at: http://www.w3.org/TR/2002/REC-xhtml1-20020801<br />
+The <a href="http://www.w3.org/TR/xhtml1">latest version</a> is available at: http://www.w3.org/TR/xhtml1</dd>
+
+<dt>[<a id="ref_XHTML2" name="ref_XHTML2">XHTML2</a>]</dt>
+
+<dd>"<cite><a href="http://www.w3.org/TR/2005/WD-xhtml2-20050527">XHTML&#8482; 2.0</a></cite>". J. Axelsson <i lang="lt" xml:lang="lt">et al.</i>, 27 May 2005.<br />
+Available at: http://www.w3.org/TR/2005/WD-xhtml2-20050527<br />
+The <a href="http://www.w3.org/TR/xhtml2">latest version</a> is available at: http://www.w3.org/TR/xhtml2</dd>
+</dl>
+
+<!--OddPage-->
+<h1><a id="s_acks" name="s_acks">D. Acknowledgments</a></h1>
+
+<p><em>This section is informative.</em></p>
+
+<p>This document was prepared by the <acronym title="World Wide Web Consortium">W3C</acronym> <acronym title="Extensible HyperText Markup Language">XHTML2</acronym> Working Group. The members at the
+time of publication were:</p>
+
+<ul>
+<li>Markus Gylling, <a href="http://www.daisy.org">DAISY Consortium</a> (<acronym title="Extensible HyperText Markup Language">XHTML</acronym> 2 Working Group Co-Chair)</li>
+
+<li>Steven Pemberton, <acronym title="Centrum voor Wiskunde en Informatica" xml:lang="nl">CWI</acronym> (<acronym title="Extensible HyperText Markup Language">XHTML</acronym> 2 Working Group
+Co-Chair)</li>
+
+<li>Mark Birbeck, Sidewinder Labs (Invited Expert)</li>
+
+<li>Susan Borgrink, Progeny Systems</li>
+
+<li>Christina Bottomley, Society for Technical Communication (STC)</li>
+
+<li>Alessio Cartocci, International Webmasters Association / HTML Writers Guild (IWA-HWG)</li>
+
+<li>Alexander Graf, University of Innsbruck</li>
+
+<li>Tina Holmboe, Greytower Technologies (Invited Expert)</li>
+
+<li>John Kugelman, Progeny Systems</li>
+
+<li>Luca Mascaro, International Webmasters Association / HTML Writers Guild (IWA-HWG)</li>
+
+<li>Shane McCarron, Applied Testing and Technology, Inc. (Invited Expert)</li>
+
+<li>Michael Rawling, IVIS Group Limited</li>
+
+<li>Gregory Rosmaita, Invited Expert</li>
+
+<li>Sebastian Schnitzenbaumer, Dreamlab Technologies AG</li>
+
+<li>Richard Schwerdtfeger, <acronym title="International Business Machines">IBM</acronym></li>
+
+<li>Elias Torres, <acronym title="International Business Machines">IBM</acronym></li>
+
+<li>Masataka Yakura, Mitsue-Links Co., Ltd.</li>
+
+<li>Toshihiko Yamakami, ACCESS Co., Ltd.</li>
+</ul>
+</body>
+</html>
+

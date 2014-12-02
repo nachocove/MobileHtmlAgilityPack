@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html
+  lang="en" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+  <!-- Generated from data/head.php, ../../smarty/{head.tpl} -->
+  <head>
+    <title>Web for All Sponsor - W3C</title>
+    <link href="/Help/" rel="Help" />
+    <link media="handheld, all" type="text/css" href="/2008/site/css/minimum" rel="stylesheet" />
+    <style media="print, screen and (min-width: 481px)" type="text/css">
+                /*<![CDATA[*/
+  @import url("/2008/site/css/advanced");
+  /*]]>*/
+  </style>
+    <link media="handheld, only screen and (max-device-width: 480px)" type="text/css"
+      rel="stylesheet" href="/2008/site/css/minimum" />
+    <meta content="width=device-width" name="viewport" />
+    <link media="print" type="text/css" href="/2008/site/css/print" rel="stylesheet" />
+    <link type="image/x-icon" href="/2008/site/images/favicon.ico" rel="shortcut icon" />
+    <style type="text/css">
+        .amount { margin-top: 1em; font-weight: bold; font-size: .83em; margin-left: 2em;}
+   </style>
+    <meta http-equiv="content-type" content="application/xhtml+xml; charset=UTF-8" />
+  </head>
+  <body class="w3c_public" id="www-w3-org">
+    <div id="w3c_container">
+      <!-- Generated from data/mast.php, ../../smarty/{mast.tpl} -->
+      <div id="w3c_mast">
+        <!-- #w3c_mast / Page top header -->
+        <h1 class="logo"><a href="/" accesskey="1" tabindex="2"><img height="53"
+              width="90" alt="W3C" src="/2008/site/images/logo-w3c-mobile-lg" /></a>
+          <span class="alt-logo">W3C</span></h1>
+        <div id="w3c_nav">
+          <form enctype="application/x-www-form-urlencoded" method="get" action="http://www.w3.org/Help/search">
+            <!-- w3c_sec_nav is populated through js -->
+            <div class="w3c_sec_nav">
+              <!-- --> </div>
+            <ul class="main_nav">
+              <!-- Main navigation menu -->
+              <li class="first-item"><a href="/standards/">Standards</a></li>
+              <li><a href="/participate/">Participate</a></li>
+              <li><a href="/Consortium/membership">Membership</a></li>
+              <li class="last-item"><a href="/Consortium/">About W3C</a></li>
+              <li class="search-item">
+                <div id="search-form"> <input type="text" title="Search" value=""
+                    name="q" class="text" tabindex="3" /> <button type="submit"
+                    name="search-submit" id="search-submit"><img height="17" width="21"
+                      alt="Search" src="/2008/site/images/search-button" class="submit" /></button></div>
+              </li>
+            </ul>
+          </form>
+        </div>
+      </div>
+      <!-- /end #w3c_mast -->
+      <div id="w3c_main">
+        <div class="w3c_leftCol" id="w3c_logo_shadow"> <img height="32" width="100%"
+            src="/2008/site/images/logo-shadow" alt="" /></div>
+        <div class="w3c_leftCol">
+          <h2 class="offscreen">Site Navigation</h2>
+          <h3 class="category"><span class="ribbon"><a title="Up to Sponsorships and Donations"
+                href="Overview.html">Sponsorships and Donations <img height="13"
+                  width="13" class="header-link" alt="Header link" src="/2008/site/images/header-link" /></a></span></h3>
+          <ul class="theme">
+            <li><a href="org">Organization</a></li>
+            <li><a href="events">Event</a></li>
+            <li><a class="current">Web for All</a></li>
+            <li><a href="developer">Developer</a></li>
+          </ul>
+          <br />
+        </div>
+        <div class="w3c_mainCol">
+          <!-- Generated from data/crumbs.php, ../../smarty/{crumbs.tpl} -->
+          <div id="w3c_crumbs">
+            <div id="w3c_crumbs_frame">
+              <ul class="bct">
+                <!-- .bct / Breadcrumbs -->
+                <li class="skip"><a href="#w3c_content_body" title="Skip to content (e.g., when browsing via audio)"
+                    accesskey="2" tabindex="1">Skip</a></li>
+                <li><a href="/">W3C</a> <span class="cr">»</span> </li>
+                <li><a href="/Consortium/">About W3C</a> <span class="cr">»</span>
+                </li>
+                <li><a href="Overview">Sponsorship and Donations</a> <span class="cr">»</span>
+                </li>
+                <li class="current">Corporate</li>
+              </ul>
+            </div>
+          </div>
+          <h1 class="title">Web for All Sponsor</h1>
+          <ul class="w3c_toc">
+            <li class="toc_prefix">On this page → </li>
+            <li><a href="#current">web accessibility</a><span class="bullet"> •
+              </span></li>
+            <li><a href="#standards">multilingual web</a><span class="bullet"> •
+              </span></li>
+            <li><a href="#inclusion">global inclusion and participation</a></li>
+          </ul>
+          <div class="w3c_toc">
+            <!-- --> </div>
+          <!-- Generated from data/body_with_context.php, ../../smarty/{body_with_context.tpl} -->
+          <div id="w3c_content_body">
+            <div class="line w3c_plans">
+              <div class="intro strategic">
+                <h2>Empower people on the Web</h2>
+                <p>You can have an impact on people's daily lives by ensuring
+                  the Web is available to people with disabilities, to those
+                  with literacy barriers, and to anyone whatever their native
+                  tongue. Show your leadership in social responsibility by
+                  supporting current programs and proposed initiatives. Or,
+                  propose your own initiatives that align with your
+                  philanthropic goals and are relevant to W3C. With your
+                  support, W3C can continue to work so that the Web is available
+                  to all. Below we list target sponsorship amounts, but in
+                  general W3C welcomes any donation to help us carry out these
+                  activities. Specific contacts are listed below; for general
+                  questions, contact Ian Jacobs &lt;ij@w3.org&gt;.</p>
+              </div>
+              <h2 id="current">Web Accessibility</h2>
+              <h3 id="wai">Web Accessibility Initiative (WAI)</h3>
+              <p>The <a href="/WAI/">Web Accessibility Initiative (WAI)</a> is
+                the leading international forum for development of authoritative
+                solutions for Web accessibility. WAI enables partnering of
+                industry, disability communities, accessibility research,
+                government, and others interested in improving accessibility of
+                the Web for people with disabilities and older people. WAI
+                ensures that W3C technologies support accessibility; develops
+                accessibility standards and guidelines for web content,
+                browsers, multimedia players, authoring tools, and dynamic web
+                content; develops resources for evaluation and repair of Web
+                sites, and for education and outreach; and coordinates with
+                research and development which may impact future accessibility
+                of the Web. Benefits of WAI sponsorship include visibility for
+                your organization's commitment to accessibility of the Web.
+                Learn more about <a href="http://www.w3.org/WAI/Sponsor">WAI
+                  Sponsorship</a>.</p>
+              <dl class="tPadding0">
+                <dt>WAI Platinum Sponsor</dt>
+                <dd>
+                  <ul class="show_items">
+                    <li>Identified as a sponsor for one W3C/WAI Workshop, or
+                      host for up to two face-to-face W3C/WAI meetings, per
+                      year.</li>
+                    <li>Full day or two half-day web accessibility briefings or
+                      consultations (annually; mutually agreeable schedule)</li>
+                    <li>Visibility in select WAI publications</li>
+                    <li>Participation in advisory discussions on WAI's work (WAI
+                      Steering Council)</li>
+                    <li>Featured on WAI Sponsor page as WAI Platinum Sponsor
+                      (logo, 2 images, 250-word blurb)<br />
+                    </li>
+                    <li>Use of WAI Platinum Sponsor logo on Sponsor's website</li>
+                  </ul>
+                  <p class="amount">Amount: 100K USD annually, for three years</p>
+                </dd>
+                <dt>WAI Gold Sponsor</dt>
+                <dd>
+                  <ul class="show_items">
+                    <li>Half-day web accessibility briefings or consultations
+                      (annually; mutually agreeable schedule)<br />
+                    </li>
+                    <li>Visibility in select WAI publications</li>
+                    <li> Participation in advisory discussions on WAI's work
+                      (WAI Steering Council)</li>
+                    <li> Featured on WAI Sponsor page as WAI Gold Sponsor (logo,
+                      100-word blurb)</li>
+                    <li>Use of WAI Gold Sponsor logo on Sponsor's website<br />
+                    </li>
+                  </ul>
+                  <p class="amount">Amount: 50K USD annually, for three years</p>
+                </dd>
+                <dt>WAI Silver Sponsor</dt>
+                <dd>
+                  <ul class="show_items">
+                    <li> Participation in advisory discussions on WAI's work
+                      (WAI Steering Council)</li>
+                    <li>Featured on WAI Sponsor page as WAI Silver Sponsor (logo
+                      and 50-word blurb)</li>
+                    <li> Use of WAI Silver Sponsor logo for this sponsor level
+                      on Sponsor's website</li>
+                  </ul>
+                  <p class="amount">Amount: 25K USD annually, for three years</p>
+                </dd>
+                <dt>WAI Contributor</dt>
+                <dd>
+                  <ul class="show_items">
+                    <li>Visibility on WAI Sponsor page as WAI Contributor</li>
+                  </ul>
+                  <p class="amount">Amount: 1000 USD and up, annually</p>
+                </dd>
+              </dl>
+              <h2 id="standards">Multilingual Web</h2>
+              <h3 id="i18nroadmap">New Technical Roadmap and Educational
+                Programs for Multi-Lingual Web </h3>
+              <p>To help achieve the goal of a multilingual Web, new technical
+                roadmaps are required to encompass technical, engagement, and
+                educational needs, and to map core standardization work,
+                language-specific proofs of concept, and extended development of
+                support in individual languages across an appropriate range of
+                collaborating organizations. This program will have both
+                development and education components as well as active liaison
+                and outreach programs with relevant communities. Estimated
+                budget: $250K per year. Contact Judy Brewer
+                &lt;jbrewer@w3.org&gt;</p>
+              <h2 id="inclusion">Global Inclusion and Participation</h2>
+              <h3 id="voiceaccess">Voice Access to the Web for Underserved
+                Communities</h3>
+              <p>Many countries in sub-Saharan Africa, south-east Asia and Latin
+                America have a low rate of literacy among adults, sometimes less
+                than 30 or 40 percent of the population. This is a high barrier
+                for accessing written content and applications on the Web. The
+                ability to "speak with the Web" through voice applications is an
+                easier way to access the Web for many people with disabilities,
+                low literacy, and people accessing Web content in a non-native
+                language regardless of their literacy level. User scenarios,
+                guidelines and best practices will be developed through this
+                project. Estimated budget: $200K per year. Contact Judy Brewer
+                &lt;jbrewer@w3.org&gt;</p>
+              <h3 id="mobileauth">Improve Mobile Authoring</h3>
+              <p>This project will investigate existing tools to author Web
+                content from mobile phones, identify existing gaps in the
+                landscape, develop the requirements of the targeted tool through
+                a community-based process involving potential users, tools
+                manufacturers, etc. and develop a first version to demonstrate
+                the concept and bootstrap an open source initiative. Estimated
+                budget: $80K per year. Contact Judy Brewer
+                &lt;jbrewer@w3.org&gt;</p>
+              <h3 id="newregions">W3C Workshops in New Regions</h3>
+              <p>Hold more W3C Workshops in Brazil, Russia, India, China, in
+                developing countries, and in other countries with emerging
+                economies, to engage more individuals and organizations globally
+                in informing, driving, and contributing to W3C work, with the
+                goals of increasing access to the Web for more people around the
+                world, and shifting the membership profile of W3C so that it
+                better matches trends of Web usage. Estimated budget: $30K per
+                year. Contact Alan Bird &lt;abird@w3.org&gt;</p>
+              <h3 id="offices">Enhanced W3C Offices Program</h3>
+              <p>In order to improve the Web and make it truly global, W3C needs
+                to work more closely with people in regions in the world that
+                have other economic, social, political and educational
+                conditions than the highly industrialized countries. To this
+                end, we seek to expand and enhance the W3C Offices Program with
+                activities to increase education, outreach, community forming,
+                and regional feedback. Estimated budget: $80K per year. Contact
+                Alan Bird &lt;abird@w3.org&gt;</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- /end #w3c_main --> </div>
+    <!-- /end #w3c_container -->
+    <!-- Generated from data/footer.php, ../../smarty/{footer-block.tpl} -->
+    <div id="w3c_footer">
+      <div id="w3c_footer-inner">
+        <h2 class="offscreen">Footer Navigation</h2>
+        <div class="w3c_footer-nav">
+          <h3>Navigation</h3>
+          <ul class="footer_top_nav">
+            <li><a href="/">Home</a></li>
+            <li><a href="/standards/">Standards</a></li>
+            <li><a href="/participate/">Participate</a></li>
+            <li><a href="/Consortium/membership">Membership</a></li>
+            <li class="last-item"><a href="/Consortium/">About W3C</a></li>
+          </ul>
+        </div>
+        <div class="w3c_footer-nav">
+          <h3>Contact W3C</h3>
+          <ul class="footer_bottom_nav">
+            <li><a href="/Consortium/contact">Contact</a></li>
+            <li><a href="/Help/" accesskey="0">Help and FAQ</a></li>
+            <li><a href="/Consortium/sponsor/">Sponsor / Donate</a></li>
+            <li><a href="/Consortium/siteindex">Site Map</a></li>
+            <li>
+              <address id="w3c_signature"> <a href="mailto:site-comments@w3.org">Feedback</a>
+                (<a href="http://lists.w3.org/Archives/Public/site-comments/">archive</a>)
+              </address>
+            </li>
+          </ul>
+        </div>
+        <div class="w3c_footer-nav">
+          <h3>W3C Updates</h3>
+          <ul class="footer_follow_nav">
+            <li><a title="Follow W3C on Twitter" href="http://twitter.com/W3C"><img
+                  height="83" width="78" class="social-icon" alt="Twitter" src="/2008/site/images/twitter-bird" /></a><a
+                title="See W3C on Identica" href="http://identi.ca/w3c"><img height="83"
+                  width="91" class="social-icon" alt="Identica" src="/2008/site/images/identica-logo" /></a></li>
+          </ul>
+        </div>
+        <!-- #footer address / page signature -->
+        <p class="copyright">Copyright © 2014 W3C <sup>®</sup> (<a href="http://www.csail.mit.edu/"><acronym
+              title="Massachusetts Institute of Technology">MIT</acronym></a>, <a
+            href="http://www.ercim.eu/"><acronym title="European Research Consortium for Informatics and Mathematics">ERCIM</acronym></a>,<a href="http://www.keio.ac.jp/">Keio</a>, <a href="http://ev.buaa.edu.cn/">Beihang</a>) <a href="/Consortium/Legal/ipr-notice">Usage
+            policies apply</a>.</p>
+      </div>
+    </div>
+    <!-- /end #footer -->
+    <!-- Generated from data/scripts.php, ../../smarty/{scripts.tpl} -->
+    <div id="w3c_scripts">
+      <script src="/2008/site/js/main" type="text/javascript">
+                        //<![CDATA[
+   <!-- -->
+   //]]>
+</script></div>
+  </body>
+</html>

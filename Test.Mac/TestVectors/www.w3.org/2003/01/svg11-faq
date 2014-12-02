@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<!--?xml-stylesheet type="text/css" href="http://www.w3.org/StyleSheets/press.css"?-->
+<!-- stupid ms ie 6 bug means that because the resource does not end in .html, if it sees the stylesheet pi above it does not believe the file is html, go figure -->
+	<head>
+		<title>Scalable Vector Graphics (SVG) 1.1
+  and Mobile SVG Frequently Asked Questions</title>
+		<link href="http://www.w3.org//StyleSheets/press.css" rel="stylesheet" type="text/css"/>
+		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"/>
+		<style type="text/css">h1 {margin-bottom: 2em}
+		div.main { margin-left: 2em; margin-right: 1em}
+		.infobar { background: #EFE; border:3px solid #DFD; padding: 4px}
+		.infobar p {font-weight: bold; margin-top: 0; padding: 0 }
+		.infobar li {margin-top: 0; padding: 0}</style>
+	</head>
+	<body xml:lang="en" lang="en">
+
+	<h1><acronym title="Scalable Vector Graphics">SVG</acronym> 1.1 and <acronym title="Scalable Vector Graphics">SVG</acronym> Mobile Frequently Asked Questions</h1>
+<p>This information is in support of the <a href="svg11-pressrelease.html">SVG 1.1
+Press Release</a>.</p>
+		<hr class="xhtml"/>
+	<div class="main">
+	<div><h2>When will we start to see SVG Mobile implementations appearing?</h2>
+	<p>They have already appeared, and are already available as shipping, released products from multiple vendors including BitFlash, CSIRO, Intesis, KDDI and ZOOMON. Other implementations are in development from companies such as Ericsson, Nokia and Sharp. As an example, here is the ZOOMON SVG Tiny implementation running on cellphones from Nokia and Sony-Ericsson which use the Symbian operating system (click for larger image). </p>
+<p style="text-align: center"><a href="7650.jpg" target="_pics"><img src="small-7650.jpg" alt="SVG on the Nokia 7650"/></a> &nbsp;
+<a href="9210.jpg"   target="_pics"><img src="small-9210.jpg" alt="SVG on the Nokia 9210"/></a>   &nbsp;
+<a href="P800.jpg"  target="_pics"><img src="small-P800.jpg" alt="SVG on the Sony Ericcsson P800"/></a>
+</p>
+<p>The SVG Tiny being displayed on these phones is also available: [<a href="PenaltyKickWIntro.svgz" target="_svg">football animation, 27k</a>] [<a href="monsterWIntro.svgz" target="_svg">monster animation, 6k</a>]</p></div>
+
+<div><h2>When will we start to see SVG Mobile being used in a commercial context?</h2><p>Commercial services using SVG Tiny are already in use on cellphones in Japan;  other countries are expected to see such services shortly. </p>
+
+<p>For example, here are some shots of a real Mobile Commerce application developed by KDDI Corp., - a major Japanese cellular phone carrier and member of the SVG Working Group - in partnership with JCB Co., Ltd., Toyota Finance Corp., Mitsui Sumitomo Card Co., Ltd., and UC Card Co., Ltd. It is using the SVG Tiny implementation from KDDI  running on the KDDI "au" 3rd-generation CDMA20001x phones which have color screens. The customer is being shown an SVG map of the nearest participating store; in the next screen, zooming on the map reveals more details of how to get to the store, including smaller streets not visible on the larger view; in the last shot, the opening hours and contact details of the store are displayed in SVG as the customer walks towards the store to make a purchase just before closing time.</p>
+
+<p style="text-align: center"><img src="24.jpg" alt=""/>   &nbsp;    &nbsp;
+<img src="26.jpg" alt=""/>   &nbsp;    &nbsp;
+<img src="28.jpg" alt=""/>  </p></div>
+
+<div><h2>What is the relationship of SVG Mobile to SVG 1.1?</h2>
+<p>SVG 1.1 defines the full SVG language, including some powerful features that can currently only be implemented on a desktop or laptop computer. SVG Mobile defines two subsets of SVG 1.1, talking the most commonly used functionality suitable for mobile devices.</p></div>
+
+<div><h2>What is the relationship of SVG Mobile to SVG Tiny and Basic</h2>
+<p>SVG Mobile is the name of the specification that defines both SVG Tiny and SVG Basic, indicating that both these profiles of SVG are primarily designed for use on mobile devices.</p></div>
+
+<div><h2>SVG is text based - surely that makes the files very large?</h2>
+<p>Well designed binary systems can often be compact, at least until the extensibility mechanism has been used a few times to deal with enhancements. It is also possible to design a compact yet XML-compliant syntax, and further to compress it for delivery. SVG was designed to be small, and smaller yet when compressed. Compressed files play directly in the viewer.</p>
+<p>In addition, SVG uses interpolation - the automatic construction of in between frames, similar to high-end animation systems - rather than explicitly stating the contents of each and every frame in an animation. This has a large effect on the size of the content - several mobile phone operators have cited smaller file size as a significant factor when choosing SVG Tiny over proprietary, binary alternatives - and also allows the framerate to be smoothly adjusted  for the available computing power, without having to make multiple copies of the content for different devices.</p></div>
+
+<div><h2>Is it true that all SVG Tiny content will work on an SVG Basic or SVG Full implementation?</h2>
+<p>Yes, because SVG Tiny is a strict subset of SVG Basic, which is in turn a strict subset of SVG Full, all conformant SVG Tiny, SVG Basic and SVG Full implementations will correctly display all SVG Tiny content; similarly all conformant SVG Basic and SVG Full implementations will correctly display all SVG Basic content.</p></div>
+
+<div><h2>Can I use languages other than English in SVG content?</h2>
+<p>Yes, SVG uses Unicode to represent text strings for display; this means that multilingual text can be displayed, searched, and indexed. It also allows convienient server-side generation and customisation of text occurring in SVG content.</p>
+<p>SVG also has its own font mechanism, allowing both creative freedom and the ability to provide fonts embedded into the content, for text in uncommon or minority languages. These fonts are not installed on the client system and disapear after the content has been viewed.</p></div>
+
+<div><h2>There are lots of SVG implementations - which one is the reference implementation?</h2>
+<p>Conformance to SVG is determined by the freely available and complete specification from W3C and is demonstrated by the publicly available test suite, not by the capabilities or quirks of one particular implementation from one vendor. This is a key differentiating factor of open Web Standards as opposed to closed, proprietary systems, which may have partial documentation available but which are defined by the behaviour of one implementation. It encourages market growth by enabling SVG implementors to compete on speed, footprint, quality and price without sacrificing interoperability or tying content creators and users to a single vendor.</p></div>
+
+<div><h2>What is the connection between Web Services and SVG?</h2>
+<p>Web Services provide the infrastructure for business-to-business (B2B) communication, and makes considerable use of XML. Often, such communication is between two machines; the various Web Services specifications govern this aspect. In most cases, human interaction is also required at some point. Web Services thus needs a front end for human interaction - one which is well documented, reliably implemented, and usable on a wide range of devices as well as providing the richness of graphics and typography needed for the task and also being based on XML. SVG is a good way to provide a dynamic, interactive, graphical interface for Web Services - particularly when combined with other XML technologies such as  XForms (also created by W3C).</p></div>
+
+<div><h2>What are 'location based services' and how does this relate to SVG Mobile?</h2>
+<p>One of the key differences between desktop and mobile uses of SVG is that mobile devices, as the name implies, move from place to place. Because of their small size and weight, they are used in a wide variety of places where a desktop or laptop computer would be inconvenient. The geographical location of the device can be determined by various means, ranging from Global Positioning System (GPS) satelites to triangulation of cellphone signals, and this information can them be used to affect the graphical display. The most familiar example of a location-aware device is probably an in-car navigation system.</p>
+<p>Because SVG files are XML, they can contain XML in other namespaces, such as various types of metadata. As an example of such metadata, SVG which visually represents a map can contain XML metadata describig the geographical area depicted and the coordinate system used to make a flat map from a portion of the earths curved surface. Combining this information with the location of the mobile device allows a "you are here" interactive map; combining multiple maps according to their geographic coverage allows information overlays to be built up; sending the location over the network allows geographically based queries, such as "where is the nearest hospital" to be performed. The combination of  location-aware devices,  location-enabled Web Services, wireless network access, and metadata-containing SVG maps with on-demand generated SVG graphics results in a location based service.</p></div>
+
+<div><h2>So SVG is mainly aimed at business users?</h2>
+<p>SVG is a neutral technology. The capabilities can be used in any way, limited only by imagination. SVG can be used to display business data such as graphs of financial information or visualisation of industrial process control, but it can also be used for consumer-oriented applications such as graphics messaging and games. As an example, here is an SVG Basic implementation of the card game "blackjack".</p>
+<p style="text-align: center"><img src="blackjack.png" alt="SVG blackjack"/> </p>
+<p>The SVG Basic for this game<a href="http://research.bitflash.com/svg/cards/bj.svg"> is available (30k)</a></p></div>
+
+<div><h2>Do any operating environments come with SVG support?</h2>
+<p>Yes, the standard software for the Texas Instruments OMAP application platform - popular in  PDAs - includes the Bitflash Mobile SVG Player &amp; SDK. Many Linux distributions also include one or more SVG implementations, not only for viewing and authoring Web pages but increasingly also used for graphical tasks in the operating system such as resizable icons. </p></div>
+
+<div><h2>Do any HTML browsers come with SVG support?</h2>
+<p>Yes, although older browsers do not have the necessary support for XML parsing and other related standards, newer browsers often provide the necessary infrastructiure to support SVG. The X-Smiles browser includes SVG support, the SVG in Mozilla project is maturing and the Konqueror browser - whose HTML renderer forms the basis of the new Apple Safari browser for MacOSX - has an SVG component under development. For older browsers unable to support inline SVG, plug-ins are available from Adobe and Corel.</p></div>
+
+<div><h2>What authoring tools are available for SVG Mobile content creation?</h2>
+
+<p>Existing SVG authoring tools, of which there are a large number, can be used to produce SVG Mobile content provided the output is validated to the particular profile desired. </p>
+
+<p>Specific authoring solutions for SVG Mobile are also available. <a href="http://www.bitflash.com/products/brilliance.asp">BitFlash Brilliance</a> (shown below) is one such application. It provides three synchronized views of the SVG being generated -  visual (graphical), DOM (structural) and the actual source code. Content can be validated to SVG Tiny or basic and non-conformant portions are hilighted so that they can be replaced or altered. Graphical previews, using an emulator, show what the content will look like on any desired screen size and color depth. </p>
+<p style="text-align: center"><img src="Brilliance.png" alt=""/> </p>
+<p>KDDI have announced a Mobile SVG authoring plugin (shown at right, below) for Adobe Illustrator, allowing a familiar authoring environment to be used to create SVG Mobile content.</p>  
+<p style="text-align: center"><img src="ai-kddi.jpg" alt=""/></p>
+<p>Data-driven graphics for Web Services benefit from specialist authoring tools. Corel have announced a Smart Graphics suite of authoring tools especially aimed at this market segment.</p>
+<p>ZOOMON have an SVG authoring tool, <a href="http://www.zoomon.com/composer.htm">ZOOMON Composer</a> for SVG Tiny animations, with a simple and easy to use interface, while e-animator from Sharp is another authoring application that reads SVG files and calculates the in-between geometry of an animation.</p>
+<p>Highly interactive SVG solutions often use scripting. Intesis, who make an SVG Basic implementation for PocketPC, also produce a JavaScript Integrated Development Environment (IDE), allowing code to be developed on a PC, then debugged step by step on the target mobile device connected to the PC with a syncchronisation cable before deploying the solution on SVG Basic players from Bitflash, CSIRO, or Intesis.</p></div>
+
+<h2>Further Information</h2>
+
+<div class="infobar">
+<ul ><li><p><a href="/Graphics/SVG">SVG News</a></p></li>
+<li><p><a href="/Graphics/SVG/SVG-Implementations">List of SVG Implementations</a></p></li>
+<li><p><a href="http://www.zoomon.com">ZOOMON SVG implementation</a></p></li>
+<li><p>KDDI SVG implementations (<a href="http://jamaps1.kddlabs.co.jp/press/eng.html">in English</a>)  (<a href="http://jamaps3.kddlabs.co.jp/jamaps/press/index.html">in Japanese</a>)</p></li>
+<li><p><a href="http://www.cmis.csiro.au/sis/SVGpocket.htm">CSIRO SVG Implementations</a></p></li>
+<li><p><a href="http://www.corel.com/smartgraphics/">Corel Smart Graphics suite</a></p></li>
+<li><p><a href="http://www.bitflash.com/">BitFlash SVG Implementations</a></p></li>
+</ul>
+</div>
+
+<!--
+
+
+-->
+		
+</div>		
+		<hr class="xhtml"/>
+				<div class="endmatter">
+			<h2>About the World Wide Web Consortium [W3C]</h2>
+			<p>The W3C was created to lead the Web to its full potential by developing
+common protocols that promote its evolution and ensure its interoperability.
+It is an international industry consortium jointly run by the <a href="http://www.lcs.mit.edu/">MIT Laboratory for Computer Science (MIT
+LCS)</a> in the USA, the <a href="http://www.ercim.org/">European Research
+Consortium for Informatics and Mathematics</a> (ERCIM) headquartered in
+France and <a href="http://www.keio.ac.jp/">Keio University</a> in Japan. Services provided
+by the Consortium include: the development and testing of Web Standards, a repository of information about the World Wide
+Web for developers and users, and various prototype and sample applications
+to demonstrate use of new technology. To date, nearly 450 organizations are
+<a href="/Consortium/Member/List">Members</a> of the Consortium. For more
+information see <a href="/">http://www.w3.org/</a></p>
+
+		</div>
+	</body>
+</html>

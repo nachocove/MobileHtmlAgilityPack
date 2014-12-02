@@ -1,0 +1,198 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"
+                      "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html>
+<head>
+  <title>FAQ: SOAP Version 1.2</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+  <link rel="stylesheet" type="text/css"
+  href="http://www.w3.org/StyleSheets/">
+  <style type="text/css">
+  h2 {
+    background-color: #fd8;
+    color: #600;
+    }
+    </style>
+</head>
+
+<body text="#000000" bgcolor="#FFFFFF">
+<p><a shape="rect" href="http://www.w3.org/"></a> <a href="/"><img
+src="/Icons/WWW/w3c_home.gif" alt="W3C" height="48" width="72"
+border="0"></a><a href="/Architecture/" rel="in-domain"><img
+src="/Icons/arch" alt="Architecture Domain" border="0"></a> <a
+href="/2002/ws/" rel="in-area">Web Services</a></p>
+
+<h1>SOAP Version 1.2 - Frequently Asked Questions</h1>
+
+<p>This document lists some frequently asked questions about the SOAP Version
+1.2 specifications and provides answers to those questions. For more
+information about SOAP Version 1.2, see the <a
+href="http://www.w3.org/2000/xp/Group/">Working Group Home Page.</a></p>
+<ol>
+  <li><a href="#q1">What is SOAP Version 1.2?</a></li>
+  <li><a href="#q2">Who has implemented SOAP Version 1.2?</a></li>
+  <li><a href="#q3">Where can I find an introduction to SOAP Version
+  1.2?</a></li>
+  <li><a href="#q4">What is new in SOAP Version 1.2?</a></li>
+  <li><a href="#q5">Why switch to SOAP Version 1.2?</a></li>
+  <li><a href="#q6">How can I be sure my implementation is
+  interoperable?</a></li>
+  <li><a href="#q7">Is SOAP Version 1.2 secure?</a></li>
+  <li><a href="#q8">Can I use SOAP Version 1.2 without WSDL?</a></li>
+  <li><a href="#q9">So, when do I need WSDL?</a></li>
+  <li><a href="#q10">What are my options if I want to use WSDL?</a></li>
+  <li><a href="#q11">Is SOAP Version 1.2 internationalized?</a></li>
+  <li><a href="#q12">Can I use other underlying transport protocols in SOAP
+    Version 1.2?</a></li>
+  <li><a href="#q13">Will my SOAP Version 1.2 implementation work with
+    SOAP/1.1 clients?</a></li>
+</ol>
+<hr>
+
+<h2><a name="q1">What is SOAP Version 1.2?</a></h2>
+
+<p>SOAP Version 1.2 is a messaging framework with a set of extensions. The
+specification is in three distinct documents:</p>
+<ul>
+  <li><a href="http://www.w3.org/TR/2003/REC-soap12-part0-20030624/">The
+    Primer</a>, (or part 0), an introduction SOAP 1.2</li>
+  <li><a href="http://www.w3.org/TR/2003/REC-soap12-part1-20030624/">The
+    Messaging Framework</a> (Part 1), the core specification and</li>
+  <li><a
+    href="http://www.w3.org/TR/2003/REC-soap12-part2-20030624/">Adjuncts</a>
+    (Part 2), which provides a set of extensions, including the HTTP
+  binding.</li>
+  <li><a
+    href="http://www.w3.org/TR/2003/REC-soap12-testcollection-20030624/">Specification
+    Assertions and Test Collection</a>.</li>
+</ul>
+
+<p></p>
+
+<h2><a name="q2">Who has implemented SOAP Version 1.2?</a></h2>
+
+<p>The<a
+href="http://www.w3.org/2000/xp/Group/2/03/soap1.2implementation.html"> SOAP
+Version 1.2 Implementation Report</a> has a list of implementors known to the
+XML Protocol Working Group, as well as a status of their implementation. The
+list is not exhaustive.</p>
+
+<h2><a name="q3">Where can I find an introduction to SOAP Version
+1.2?</a></h2>
+
+<p>The SOAP Version 1.2 <a
+href="http://www.w3.org/TR/2003/REC-soap12-part0-20030624/">Primer</a> gives
+a good introduction to SOAP 1.2, and is recommended reading.</p>
+
+<h2><a name="q4">What is new in SOAP Version 1.2?</a></h2>
+
+<p>SOAP Version 1.2 is based on a layered and extensible model.</p>
+<ol>
+  <li>Over <a href="http://www.w3.org/2000/xp/Group/">400 issues</a> raised
+    both in the SOAP 1.1 and early SOAP 1.2 specifications have been
+  resolved.</li>
+  <li>SOAP version 1.2 supports Web standards such as <a
+    href="http://www.w3.org/TR/2001/REC-xmlschema-1-20010502/">XML Schema</a>
+    and <a href="http://www.w3.org/TR/2001/REC-xml-infoset-20011024/">XML
+    Infoset</a>.</li>
+  <li>The "transport" layer makes it easy to switch between protocols like
+    HTTP, BEEP and others to fit your application needs.</li>
+  <li>Extensions and the processing of those extensions has been improved and
+    clarified, to ensure more extensibility and interoperability.</li>
+  <li>Error reporting has been improved.</li>
+</ol>
+
+<p>For more technical details, the SOAP Version 1.2 Part 0 (Primer) has a
+complete list of changes from SOAP/1.1 to SOAP Version 1.2</p>
+
+<h2><a name="q5">Why switch to SOAP Version 1.2?</a></h2>
+
+<p>SOAP Version 1.2 provides more  - and proven - interoperability, support
+for Web standards, and an easier way to extend and update your applications.
+It also allows you to define applications that can scale better through a
+more effective use of Web infrastructure  - namely with the option of using
+the <a
+href="http://www.w3.org/TR/2003/REC-soap12-part2-20030624/#soapinhttp">HTTP
+binding</a>. For a more complete reply, see <a
+href="http://www.w3.org/2003/06/soap11-soap12.html">From SOAP/1.1 to SOAP
+Version 1.2 in 9 points</a>.</p>
+
+<h2><a name="q6">How can I be sure my implementation is
+interoperable?</a></h2>
+
+<p>You should see the <a
+href="http://www.w3.org/TR/2003/REC-soap12-testcollection-20030624/">SOAP
+Version 1.2 Specification Assertions and Test Collection</a>, and contact the
+implementers listed in the <a
+href="http://www.w3.org/2000/xp/Group/2/03/soap1.2implementation.html">implementation
+report</a> to set up tests.</p>
+
+<h2><a name="q7">Is SOAP Version 1.2 secure?</a></h2>
+
+<p>An application is as secure as its design is. SOAP Version 1.2 may use
+some security features, but in the end, like in all current  distributed
+applications, it is up to the application itself to take care of security
+(buffer overflow, denial of services...)</p>
+
+<h2><a name="q8">Can I use SOAP Version 1.2 without WSDL?</a></h2>
+
+<p>Yes, SOAP 1.2 is not dependent on WSDL (Web Services Description
+Language). There are many interesting situations in which SOAP can be used
+without WSDL. Indeed, early adopters of SOAP used it for many months before
+languages similar to WSDL became available.</p>
+
+<h2><a name="q9">So, when do I need WSDL?</a></h2>
+
+<p><a href="http://www.w3.org/2002/ws/desc/">WSDL</a> is used primarily as a
+means of documenting, in machine readable form, the details of particular
+SOAP-based protocols.  Many WSDL-enabled tools can use these descriptions to
+help you build SOAP applications. Without WSDL, you may have to tailor more
+of your code by hand.</p>
+
+<h2><a name="q10">What are my options if I want to use WSDL?</a></h2>
+
+<p>Several options are available:</p>
+<ul>
+  <li>WSDL toolkit vendors have interim solutions. Check with them.</li>
+  <li>The SOAPBuilders development community has developed interim support
+    for SOAP Version 1.2 using WSDL 1.1 and some degree of interoperability
+    will be achievable using that [<a
+    href="http://groups.yahoo.com/group/soapbuilders/message/7431">link</a>]</li>
+  <li>The <a href="http://www.w3.org/2002/ws/desc/">Web Services Description
+    Working Group</a> in W3C will support SOAP Version 1.2 in the next
+    version of WSDL (WSDL 1.2). Check with them.</li>
+</ul>
+
+<h2><a name="q11">Is SOAP Version 1.2 internationalized?</a></h2>
+
+<p>SOAP Version 1.2 has provisions for internationalization, including the
+ability to provide multiple error messages in different languages, encodings,
+character sets. Applications themselves still have to be internationalized,
+but that is a separate matter. SOAP Version 1.2 itself puts no restriction to
+a particular language.</p>
+
+<h2><a name="q12">Can I use other underlying transport protocols in SOAP
+Version 1.2?</a></h2>
+
+<p>One of the goals of SOAP Version 1.2 was to develop a clean way to change
+the underlying transport. Part 2 Adjuncts defines a rather complete mapping
+to HTTP, but you can define your own mapping to whatever protocol, using the
+SOAP Protocol Binding Framework defined in <a
+href="http://www.w3.org/TR/2003/REC-soap12-part1-20030624/#transpbindframew">Part
+1, Section 4.</a></p>
+
+<h2><a name="q13">Will my SOAP Version 1.2 implementation work with SOAP/1.1
+clients?</a></h2>
+
+<p>Yes, but not directly. The client application will be notified that the
+current version being used is SOAP Version 1.2. The client application may
+switch to SOAP Version 1.2 for subsequent requests. <a
+href="http://www.w3.org/TR/2003/REC-soap12-part1-20030624/#vmfault">See Part
+1, Section 5.4.7</a></p>
+<hr>
+<address>
+  <a href="/People/Lafon/">Yves Lafon</a>, <a
+  href="mailto:carine@w3.org">Carine Bournez</a><br>
+  <small>Revision: $Date: 2003/06/24 12:17:56 $</small>
+</address>
+</body>
+</html>

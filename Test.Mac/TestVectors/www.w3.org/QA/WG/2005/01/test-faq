@@ -1,0 +1,262 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+
+<style type="text/css" media="all">
+/*<![CDATA[*/
+    @import "/QA/2006/01/blogstyle.css";
+/*]]>*/
+</style>
+<title>Test Development FAQ</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+</head>
+<body>
+<!-- Header -->
+<div id="banner">
+<h1 id="title"><a href="http://www.w3.org/"><img height="48" alt="W3C" id="logo" src="http://www.w3.org/Icons/WWW/w3c_home_nb"/></a> <a href="http://www.w3.org/QA/"><img src="http://www.w3.org/QA/2002/12/qa.png" alt="Quality Assurance" /></a></h1>
+</div>
+<ul class="navbar" id="menu">
+<li><strong><a href="/QA/" title="Quality Assurance Web Site Home">[QA Home]</a></strong></li>
+<li><a href="../WG/" title="The Quality Assurance Interest Group">QA WG</a></li>
+<li><a href="../Library/" title="Documents and Publications on Web and Quality">Documents</a></li>
+<li><a href="./Tools/" title="Validators and other Tools">Tools</a></li>
+<li><a href="/QA/IG/#contact">Feedback</a></li>
+</ul>
+<div id="searchbox">
+<form method="get" action="http://www.google.com/custom" enctype="application/x-www-form-urlencoded">
+<p id="formbox"><input type="text" size="15" class="textfield" name="q" accesskey="E" maxlength="255" /> <input type="submit" class="submitfield" value="Search" id="goButton" name="sa" accesskey="G" /> <input type="hidden" name="cof" value="T:black;LW:72;ALC:#ff3300;L:http://www.w3.org/Icons/w3c_home;LC:#000099;LH:48;BGC:white;AH:left;VLC:#660066;GL:0;AWFID:0b9847e42caf283e;" /><input type="hidden" id="searchW3C" name="sitesearch" checked="checked" value="www.w3.org/QA" /><input type="hidden" name="domains" value="www.w3.org/QA" /></p>
+</form>
+</div>
+<div id="main"><!-- This DIV encapsulates everything in this page - necessary for the positioning -->
+<div id="jumpbar">
+<p><strong>The Test Development FAQ is addressed to those who develop tests or organize testing efforts. It should also be useful to those who develop specifications or who run tests.</strong></p>
+<h2 id="status">About this document</h2>
+<p>The FAQ provides introductory information about the purpose of testing, how to get started, and what the testing process involves. This FAQ primarily documents what is already considered good testing practice or <em>the norm,</em> but it also includes a number of <em>advanced</em> testing goals that have not yet been fully achieved by any Working Group.</p>
+<p>This is a living document that is updated periodically, particularly in response to feedback from readers. You can provide feedback by emailing <a href="mailto:www-qa@w3.org">www-qa@w3.org</a> (a <a href="http://lists.w3.org/Archives/Public/www-qa/">publicly archived mailing list</a>).</p>
+</div>
+<!-- content -->
+<div id="Content">
+<h1>Test Development FAQ</h1>
+<p><a shape="rect">Last edited $Date: 2010/01/29 13:55:50 $</a></p>
+<ol>
+<li><a href="#required">Are tests suites required by the W3C Process?</a></li>
+<li><a href="#why">Why is testing important?</a></li>
+<li><a href="#start">When should test development start?</a></li>
+<li><a href="#who">Who will develop the tests?</a></li>
+<li><a href="#reuse">Can we re-use tests developed by another Working Group?</a></li>
+<li><a href="#what">How do we decide what tests to develop?</a></li>
+<li><a href="#review">What should we do with test contributions we receive?</a></li>
+<li><a href="#good">What makes a good test?</a></li>
+<li><a href="#enough">How many tests are enough?</a></li>
+<li><a href="#report">How should tests report their outcome?</a></li>
+<li><a href="#legal">Do I really have to worry about all that legal stuff?</a></li>
+<li><a href="#package">How should I package and publish my tests?</a></li>
+<li><a href="#documentation">What about documentation?</a></li>
+<li><a href="#automation">Should I automate test execution?</a></li>
+<li><a href="#maintain">Once I publish my tests, I'm done, right?</a></li>
+<li><a href="#bugs">How should I handle bugs in my test suite?</a></li>
+<li><a href="#results">Should test results be published?</a></li>
+<li><a href="#certif">Should we implement a branding or certification program?</a></li>
+</ol>
+<h2 id="required">1. Are Test Suites required by the W3C Process?</h2>
+
+<p>As part of the transition from Candidate Recommendation to Proposed Recommendation, the <a href="/Consortium/Process/">W3C Process Document</a> requires that the <a href="http://www.w3.org/2005/10/Process-20051014/tr.html#cfr">Working Group demonstrates</a> that:</p>
+<blockquote cite="http://www.w3.org/2005/10/Process-20051014/tr.html#cfr"><p>[...] each feature of the technical report has been implemented.
+Preferably, the Working Group SHOULD be able to demonstrate two
+interoperable implementations of each feature.</p>
+</blockquote>
+<p>In most cases, the most practical way to demonstrate both that all the features were implemented, and that they are implemented in an interoperable fashion, is to  to show that there are test cases that cover most of
+the features of the specification, and that for each of these test cases, there
+are at least two implementations that pass it.</p>
+
+<p>So, while the Process Document leaves some leeway (which is useful
+since not all specifcations can make use of a test suite), if
+a Working Group is developing a technology that can be tested in a sensible fashion,
+the W3C Director is likely to require a test suite before allowing to move
+to Proposed Recommendation.</p>
+
+
+<h2 id="why">2. Why is testing important?</h2>
+<p>As the <a href="http://www.w3.org/Consortium/">About W3C</a> document explains:</p>
+<blockquote>
+<p>In order for the Web to reach its full potential, the most fundamental Web technologies must be compatible with one another and allow any hardware and software used to access the Web to work together. W3C refers to this goal as “Web interoperability.” By publishing open (non-proprietary) standards for Web languages and protocols, W3C seeks to avoid market fragmentation and thus Web fragmentation.</p>
+</blockquote>
+<p>Two implementations of a technology are said to be compatible if they both conform to the same specifications. Conformance to specifications is a necessary condition for interoperability, but it is not sufficient; the specifications must also promote interoperability (by clearly defining behaviors and protocols, for example).</p>
+<p>In order to promote these goals the W3C Process Document's <a href="http://www.w3.org/2004/02/Process-20040205/tr.html#cfr">Proposed Recommendation</a> entrance criteria include the requirement to demonstrate two interoperable implementations of each feature in the specification (see <a href="#required">how this relates to testing</a>).</p>
+<p>Two types of testing are particularly helpful:</p>
+<ul>
+<li>Conformance testing
+<p>Focuses on testing <em>only</em> what is formally required in the specification in order to verify whether an implementation conforms to its specifications. Conformance testing does not focus on performance, usability, the capability of an implementation to stand up under stress, or interoperability; nor does it focus on any implementation-specific details not formally required by the specification.</p>
+</li>
+<li>Interoperability testing&nbsp;
+<p>Focuses on finding interoperability issues between different implementations of a given specification.</p>
+</li>
+</ul>
+<p>Note that both forms of testing help to detect defects (ambiguities, lack of clarity, omissions, contradictions) in specifications and are therefore useful when conducted while the specification is being developed.</p>
+<p>Because testing is the key to interoperability, Working Groups are increasingly interested in this subject.</p>
+<p>This FAQ focuses primarily on conformance testing (a key to interoperability) although some of its recommendations are also applicable to other kinds of testing. (See the <a href="http://www.softwareqatest.com/qatfaq1.html">Software QA and Testing FAQ</a> for much useful information, including a comprehensive classification of different types of testing.)</p>
+<h2 id="start">3. When should test development start?</h2>
+<p>Test planning should start very early; ideally at the same time as you start working on the specification. Defining a testing approach (what kinds of tests to develop and how they should operate) and thinking about <em>testability</em> are helpful even in the early stages of specification development.</p>
+<p>During the planning phase, identify all the specifications to be tested. This may seem obvious but often specifications refer to or depend on other specifications. It is also important to understand and to limit the scope of what is to be tested; so, focus on what really needs testing and not on related or dependent technologies being utilized indirectly by implementations.</p>
+<p>Typically, Working Groups develop their test suites when the specifications have reached a reasonable level of stability. However, it is important to start the test development process before the specification is <em>frozen</em> since this helps to identify problems (ambiguities, lack of clarity, omissions, contradictions) while there is still time to correct them.&nbsp;</p>
+<p>Another interesting approach—often referred to as Test Driven Development—is developing tests specifically to explore issues and problems in the specification. (The <a href="http://www.w3.org/2001/sw/WebOnt/">OWL Working Group</a> found this approach helpful.) Note that this implies significantly more work as you will need to keep the specification and the tests synchronized.</p>
+<h2 id="who">4. Who will develop the tests?</h2>
+<p>Most likely, it will be the members of your Working Group who contribute resources for test development. However, it is also worthwhile to approach third parties and ask if they are interested in developing tests. (For example, organizations that do not participate directly in your activities may want to contribute to your testing efforts if they have an interest in the effective deployment of the tested technology.)</p>
+<p>Whichever approach you take, you will need to solicit and to manage contributions from others. This can require a considerable amount of organization and effort, particularly if you want to provide high-quality tests covering the full range of the specification. So, do take the time to create an informative and persuasive appeal for contributions.</p>
+<p>Specify the format for developing the tests (including how tests are invoked and how they report their outcome) and any metadata to be supplied with the tests (including a description of the purpose of the test, a pointer to the portion of the specification that is tested, and the test's expected results).</p>
+<p>For examples of guidelines, see</p>
+<ul>
+<li>The <a href="http://www.w3.org/Style/CSS/Test/guidelines.html">CSS2.1 Test Authoring Guidelines</a> (see also the <a href="http://www.w3.org/Style/CSS/Test/testsuitedocumentation.html">CSS Test Suite Documentation</a>)</li>
+<li>The <a href="http://www.oasis-open.org/committees/download.php/1916/howtosub.htm">Submission Procedure for XSLT/XPath Test Suites</a></li>
+<li>The <a href="http://www.w3.org/2002/06/DOMConformanceTS-Process-20020627.html">DOM Conformance Test Suites Process Document</a></li>
+<li><a href="http://www.w3.org/Graphics/SVG/Test/svgTest-manual.htm#HowtoDoIt">How to Write Tests</a> in the SVG Conformance Test Suite: Test Builder's Manual</li>
+<li><a href="http://www.w3.org/TR/owl-test/#style">Stylistic preferences</a> in The OWL Web Ontology Language Test Cases</li>
+</ul>
+<p>See also <a href="http://www.w3.org/MarkUp/Test/HTML401/current/htmltestdocumentation.html#testsuiteprinciples">Test Suite Principles</a> in the HTML4 Test Suite Documentation, which you may find instructive and useful.</p>
+
+<p>Likewise, the <a href="http://www.w3.org/TR/test-methodology/">Method for Writing Testable Conformance Requirements</a> can be a useful approach to integrate testability within the specification itself.</p>
+
+<p>Providing guidelines like these to your test developers will make it more likely that you will receive quality submissions. Obviously, the clearer your guidelines, the easier it will be for people to develop tests, and the greater the likelihood of tests being developed correctly and effectively.</p>
+<h2 id="reuse">5. Can we re-use tests developed by another Working Group?</h2>
+<p>As the family of XML languages evolves, there is an increasing tendency to develop <em>modular specifications</em> (specifications that are intended to be re-used in a variety of technologies). For example, XSLT and XForms both use XPath as their expression language. This trend presents the opportunity (and also the challenge) of a more modular approach to test development. If your specification incorporates such a language <em>module</em>, you may be able to incorporate into your own test suite tests that were developed by the Working Group that defined that module.</p>
+<p>Also, do consider this trend and plan for it if you are developing a specification that you already know will be re-used. The guidelines and practices outlined in this FAQ are likely to prove even more important when tests being developed are intended for incorporation into more than one test suite.</p>
+<p>For a brief discussion of some of the issues involved in test re-use, see <a href="http://www.w3.org/2005/Talks/joint-ts-pc/">this presentation</a> from the W3C's 2005 Technical Plenary.</p>
+<h2 id="what">6. How do we decide what tests to develop?</h2>
+<p>It is best to focus development efforts where they will be most effective and useful. Namely, where:</p>
+<ul>
+<li>The consequences of non-conformance are likely to be the greatest (breaking interoperability or jeopardizing security, for example)</li>
+<li>Implementations are more likely to be non-conformant because:
+<ul>
+<li>The implementation presents technical difficulties</li>
+<li>The specification is ambiguous</li>
+<li>Implementers are less likely to test during the development process</li>
+<li>Implementers are more likely to "cut corners" during testing</li>
+</ul>
+</li>
+</ul>
+<p>Do be proactive and guide test developers to give priority to testing the areas of the specification where coverage is most needed. Note that this implies the creation and maintenance of some kind of <em>coverage map</em> (more on this topic under <a href="#Coverage">Question 8</a>). Also, proactive guidance will help to avoid duplication of effort.</p>
+<p>If you do not guide test developers, you may receive tests for the areas of the specification that are most easily tested, but where the value of such tests is minimal (perhaps because implementers are more likely to test these areas themselves and to find and correct any problems).</p>
+<p>Test development is of course an iterative process.&nbsp; As the <a href="http://www.w3.org/Style/CSS/Test/testsuitedocumentation.html#testsuiteprinciples">CSS Test Suite Principles</a> point out, " [...] experience with existing implementations is a great help. As implementations progress, new areas worthy of being tested will come to light, and the test suite should be updated regularly to track these developments."</p>
+<h2 id="review">7. What should we do with test contributions we receive?</h2>
+<p>The more successful you are in soliciting contributions the more important it is to create a process for managing them. All submissions should be reviewed to ensure that they are appropriate, correct, and of satisfactory quality. Keep track of who submitted each test and of the <em>state</em> that each test is in (for example, <em>submitted, accepted, reviewed</em>, <em>returned for revision</em>, or <em>rejected</em>).</p>
+<p>For examples of test review guidelines see:</p>
+<ul>
+<li>The <a href="http://www.w3.org/Graphics/SVG/Test/svgTest-manual.htm#TestReviewGuidelines">Test Review Guidelines</a> section of the SVG Conformance Test Suite, Test Builder's Manual</li>
+<li>The <a href="http://www.w3.org/2002/06/DOMConformanceTS-Process-20020627">DOM Conformance Test Suites Process Document</a></li>
+<li>The OWL Web Ontology Language Working Group's <a href="http://www.w3.org/TR/owl-test/#testProcess">Test Creation, Approval and Modification</a> process</li>
+</ul>
+<p>For a list of test review statuses, see the Web Content Accessibility Guidelines (WCAG) Working Group's <a href="http://www.w3.org/WAI/GL/WCAG20/tests/checkstatus.html">HTML Test Suite Status</a>.</p>
+<p>Several Working Groups (Voice Browser, XForms, for example) have created test-case management systems to help with these tasks; you may want to adopt a similar approach.</p>
+<h2 id="good">8. What makes a good test?</h2>
+<p>A good test is:</p>
+<ul>
+<li>Mappable to the specification (you must know what portion of the specification it tests)</li>
+<li>Atomic (tests a single feature rather than multiple features)</li>
+<li>Self-documenting (explains what it is testing and what output it expects)</li>
+<li>Focused on the technology under test rather than on ancillary technologies</li>
+<li>Correct</li>
+</ul>
+<p>For a more detailed discussion of these and other test design principles see the <a href="http://www.w3.org/MarkUp/Test/HTML401/current/htmltestdocumentation.html#testsuiteprinciples">HTML4 Test Suite Documentation</a>.</p>
+<h2 id="enough">9. How many tests are enough?</h2>
+<p>There is no simple answer to this question; it depends on your goals and on the available resources. What is most important is that you get the optimal coverage for the goals you have set with the resources you can apply.</p>
+<p>Coverage measurement involves partitioning the specification in some manner and then measuring or estimating the extent to which each area of the specification has been tested. There are many ways to partition a specification: by feature, language elements, logical sections, testable assertions, or even paragraphs or pages. Once you determine how to partition the specification, you can define your coverage goals.</p>
+<p>Coverage measurements can be expressed in both <em>breadth</em> and <em>depth</em> terms. Breadth measurements are relatively simple to derive, since they are expressed in terms of the ratio of tests to specification features. (For example, the percentage of language elements or testable assertions that are covered by at least one test.) Depth measurements are more subjective, since they require that you to estimate how thoroughly each feature is tested. (For example, you might calculate or estimate that where features are covered by tests, the tests exercise approximately 30% of the functionality that could be tested.)</p>
+<p>Note that it may be appropriate to define different coverage goals for different areas of the specification. In some areas, a <em>breadth first</em> strategy (covering each feature at a minimal level—perhaps with only a single test—before testing any particular area more thoroughly) might be most appropriate; in other areas, it might be better to focus on features that are more difficult to implement, or on parts of the specification where incomplete or incompatible implementations are more likely.</p>
+<p>Of course, if you do not measure your coverage, you cannot determine whether you allocated your resources effectively. Whether or not you define coverage goals in advance, it is always helpful to provide some kind of <em>coverage report</em> with your test suite. This report could simply be a mapping of tests to areas of the specification, or it could be more detailed and also provide counts and averages of the number of tests associated with different areas. Such reports can help the users of your test suite understand its strengths and weaknesses.</p>
+<p>Several Working Groups do provide such mappings—note that it is but a small step from this to an actual breadth metric. For example, the <a href="http://www.w3.org/MarkUp/Forms/Test/">XForms Test Suite</a> does not directly publish coverage numbers, but indicates that it has covered all the test assertions defined in the specification; the HTML 4.01 Test Suite <a href="http://www.w3.org/MarkUp/Test/HTML401/current/assertions/assertions_section05.html">shows which assertions have a matching test case</a>; and the WCAG Working Group's <a href="http://www.w3.org/WAI/GL/WCAG20/tests/">Test Suite for WCAG 2.0 Sorted by Guideline</a> indicates which areas of the Guidelines are covered by tests.</p>
+<h2 id="report">10. How should tests report their outcome?</h2>
+<p>All tests in the test suite should report their outcome in a consistent manner, making it easy for humans or computer programs to understand and to process them. The following test states, defined by <a href="http://www.w3.org/2001/03/earl/">EARL</a> (the Evaluation And Report Language), have proved useful:</p>
+<ul>
+<li>cannotTell</li>
+<li>fail</li>
+<li>notApplicable</li>
+<li>notTested</li>
+<li>pass</li>
+</ul>
+<p>The more information (within reason) reported by failing tests, the more useful the tests. If your users know that one test out of one thousand fails, but they don't know what it was testing or why it failed, that is not very helpful. If they know what the test was testing, what behavior it was expecting from the implementation under test, and how the implementation failed to conform to these expectations, this makes it easier for users to find and fix the problem. The more useful your test suite is, the more it will be used.</p>
+<p>See, for example, the <a href="http://www.w3.org/Style/CSS/Test/CSS1/current/">CSS1 Test Suite</a> which describes clearly the output that can be expected from each test. The <a href="http://www.w3.org/MarkUp/Test/HTML401/current/">HTML 4 Test Suite</a> uses a similar approach (which was in fact derived from that used in CSS 1.</p>
+<p>Another useful approach provide <em>reference files</em> against which the actual test output can be compared. See the <a href="http://www.w3.org/Math/testsuite/">MathML2.0</a> and <a href="http://www.w3.org/Graphics/SVG/Test/">SVG 1.1</a> test suites for examples of this technique.</p>
+<h2 id="legal">11. Do I really have to worry about all that legal stuff?</h2>
+<p>Unfortunately, yes. Copyright, patent, and license issues can upset or delay the best-organized test development efforts (and have done so for several Working Groups). Your test suite will need to be distributed under a W3C-approved license. In addition to the two traditional W3C licenses (the <a href="http://www.w3.org/Consortium/Legal/2002/copyright-documents-20021231">Document License</a> and the <a href="http://www.w3.org/Consortium/Legal/2002/copyright-software-20021231">Software License</a>), W3C has set up a <a href="http://www.w3.org/Consortium/Legal/2008/04-testsuite-copyright">dedicated double-licensing system for test suites</a>.</p>
+<p>This also means that contributions to the test suite will have to be provided under <em>contribution licenses</em> that do not contradict or inhibit the distribution license. See these <a href="http://www.w3.org/2004/10/27-testcases.html">Policies for Contribution of Test Cases to W3C</a> and note the importance of the W3C's <a href="http://www.w3.org/Consortium/Patent-Policy-20040205/">Patent Policy</a>. The <a href="http://www.w3.org/TR/qa-handbook/#IANAL">QA Handbook</a> contains a brief discussion of the legal issues associated with test development and points out the serious consequences (such as delays in publication) that can result from neglecting these matters.</p>
+<p>It is best to specify in your submission guidelines the licensing terms under which contributions will be distributed (see the <a href="http://www.w3.org/2002/06/DOMConformanceTS-Process-20020627.html">DOM Conformance Test Suites Process Document</a> for an example of how to do this).</p>
+<p>With test suites designed and produced primarily by the Working Group member companies and organizations, it is crucial to ensure that licensing issues are reviewed by legal experts <em>before</em> actual test suite development begins, or at the very least in parallel with it. Otherwise, the release of your test suite may be delayed, possibly by several months, while licensing issues are being resolved.</p>
+<h2 id="package">12. How should I package and publish my tests?</h2>
+<p>While tests are useful, a test suite is much more useful. What's the difference?</p>
+<p>Test runs should be deterministic (that is, for a particular implementation on a particular configuration different testers should obtain the same results). If you simply publish a random collection of tests (such as just a directory containing lots of files), it will be difficult for testers to identify or understand:</p>
+<ul>
+<li>Which tests apply to the tester's own implementation (some may apply only to an optional feature)</li>
+<li>How the tests should be executed</li>
+<li>How to interpret the results of the tests (whether the test run failed or succeeded)</li>
+<li>What is incorrect in the implementation</li>
+</ul>
+<p>For these reasons, it is best to package the tests into a test suite and to explain how to determine which tests to run, how to run the tests, and how to interpret the results. A complete test suite will contain, in addition to tests, some or all of the following:</p>
+<ul>
+<li>Test harness</li>
+<li>Documentation</li>
+<li>Licensing and copyright information</li>
+</ul>
+<p>For example, the <a href="http://www.w3.org/MarkUp/Test/">HTML4 Test Suite</a> is provided as a complete package containing tests, test harness, and documentation.</p>
+<h2 id="documentation">13. What about documentation?</h2>
+<p>A complete test suite contains high-quality documentation that describes the following:</p>
+<ul>
+<li>The specification(s) covered by the tests</li>
+<li>The objectives and scope of the test suite</li>
+<li>What areas of the specification(s) are covered and how thoroughly</li>
+<li>How to determine what tests to run</li>
+<li>How to execute tests (explaining the use of the test harness, if supplied)</li>
+<li>How to interpret test results</li>
+<li>How to publish test results</li>
+<li>How to challenge the validity of a test or submit a bug report</li>
+</ul>
+<p>For example, see the <a href="http://www.w3.org/Style/CSS/Test/CSS1/current/sec00.htm">CSS1 Test Suite</a>, which provides clear instructions for setting up and running the tests, or the <a href="http://www.w3.org/MarkUp/Test/HTML401/current/">HTML4 Test Suite</a> , which also provides information about the areas of the specification covered by the tests, together with a list of testable assertions. (Note that both of these test suites embed much of their documentation directly within the test suite harness, making it easily and immediately accessible to test suite users.)</p>
+<p>Because of the way the W3C does its work, the people who execute a test suite are often the same as those who contributed to its development. Some Working Groups have therefore chosen to create a single document containing guidelines for test development and also instructions for test execution. Since this is potentially confusing for people who play only one of these roles, it is preferable to provide this information in two separate documents.</p>
+<h2 id="automation">14. Should I automate test execution?</h2>
+<p>If at all possible, yes. Automated test runs are less prone to operator errors and more likely to be deterministic (that is, report the same results when run on similar configurations at different times). Automation is relatively easy when the browser can be used as the "driving force" (for examples of this approach, see the <a href="http://www.w3.org/Graphics/SVG/Test/">SVG</a>, <a href="http://www.w3.org/Style/CSS/Test/CSS1/current/sec00.htm">CSS1</a>, and <a href="http://www.w3.org/MarkUp/Test/HTML401/current/tests/index.html">HTML4</a> test suites ; see also the <a href="/2007/03/mth/harness">test harness for the mobile web</a>).</p>
+<p>If automation is impractical because it would require the construction of a test harness or framework code that runs on a variety of different platforms, you should at least provide sufficient metadata and documentation to enable others to construct a test harness or framework. See the <a href="http://esw.w3.org/topic/TestCaseMetadata">discussion of Test Case Metadata</a> in the W3C Wiki and note also that the The XQuery Working Group's Test Task Force is defining XML-based test metadata. (A similar approach was used successfully in the <a href="http://www.w3.org/DOM/Test/#releases">DOM Conformance Test Suites</a>, which provide both Java and ECMA Script bindings that were derived from language-neutral XML test descriptions.)</p>
+<p>Some tests, such as those requiring human visual confirmation, are inherently difficult or impossible to automate completely. In these circumstances the <em>process</em> of running the tests should still be routinized as much as possible (for example, by providing a standard set of prompts for the tester to respond to, together with clear descriptions of what to expect and how to judge whether the implementation is correct.) See the <a href="http://www.w3.org/QA/Tools/MUTAT/">MUTAT</a> developer information tool for one approach to this issue and for practical examples of such test suites see the <a href="http://www.w3.org/WAI/GL/WCAG20/tests/">WCAG 2.0 Test Suite</a>, as well as the <a href="http://www.w3.org/Graphics/SVG/Test/">SVG</a>, <a href="http://www.w3.org/Style/CSS/Test/CSS1/current/sec00.htm">CSS1</a>, and <a href="http://www.w3.org/MarkUp/Test/HTML401/current/tests/index.html">HTML4</a> test suites referenced above.</p>
+<p>The easier it is to run your tests, the more widely they will be used.</p>
+<h2 id="maintain">15. Once I publish my tests, I'm done, right?</h2>
+<p>Sorry, no. Test suites must evolve over time to:</p>
+<ul>
+<li>Meet the needs of changing specifications (revisions)</li>
+<li>Improve quality or extend coverage</li>
+<li>Fix bugs found during development, testing, or use of the test suite</li>
+</ul>
+<p>This means that you must plan for multiple releases of the test suite. Always use version numbers so people know which test suite they're using. Also, indicate the version or versions of the specification your test suite addresses.</p>
+<p>For examples, see the <a href="http://www.w3.org/Graphics/SVG/Test/">three versions</a> of the W3C SVG 1.1 Test Suite by the SVG Working Group, or the <a href="http://www.w3.org/Style/CSS/Test/">complete list</a> of CSS Test Suites, maintained by the CSS Working Group.&nbsp;</p>
+<p>Another approach (used by the OWL, RDF, XML Core, and SOAP Working Groups) is to publish test suites as Technical Reports, so they are "naturally" versioned (using the <em>previous</em>, <em>this</em>, <em>latest</em> version links within each Technical Report). Even if you adopt this approach, it will still be helpful to your user base if you also publish a single table or list of all available releases, since following a series of links backwards can be time-consuming.</p>
+<h2 id="bugs">16. How should I handle bugs in my test suite?</h2>
+<p>The best way to handle bugs is not to introduce them in the first place. &nbsp; ;)</p>
+<p>Review all test submissions to ensure that they are appropriate and correct. In addition to reviewing individual tests, the test suite as a whole should be tested before publication. Run the test suite on several implementations if possible, to verify that the tests behave as expected (that is, to verify that they pass when the implementation is correct and fail when it is incorrect). If you supply a test harness, check that it works correctly. Review the documentation to make sure it is complete and understandable; even better, request that someone unfamiliar with the test suite review the documentation. Pay particular attention to any setup and configuration instructions, since these are often the most problematic for test suite users.</p>
+<p>If your test suite is buggy or difficult to use, people won't trust it and won't use it.</p>
+<p>No matter how thoroughly you test, some bugs will still slip through. Define a process to accept and respond to bug reports. An issue management system such as Bugzilla can help with this task. See the <a href="http://www.w3.org/Member/bugzilla/buglist.cgi?&amp;bug_status=__all__&amp;product=XML%2BQuery%2BWorking%2BGroup">XML Query Working Group's example</a> of how to use Bugzilla (W3C-member only link).</p>
+<p>In response to bugs it might be necessary to:</p>
+<ul>
+<li>Exclude broken tests from the test suite</li>
+<li>Create and distribute alternate tests</li>
+<li>Update the documentation, harness, or framework</li>
+<li>Modify the specification to correct an ambiguity or contradiction</li>
+</ul>
+<p>Unless you want to define a "patch" process to allow partial updates to the test suite (this is probably more trouble than it's worth), the simplest way to handle bugs might be to publish, where appropriate, a list of <em>errata</em> or <em>known issues</em> with workarounds, together with a list of tests known to be incorrect (and which need not be run, or whose failure can be ignored). Periodically you should issue revisions of the test suite, in which the problems are corrected.</p>
+<h2 id="results">17. Should test results be published?</h2>
+<p>While not required by W3C processes, providing a means for people to publish their test results can be beneficial. Publicity and competition provide strong incentives for developers to improve their implementations.</p>
+<p>Some Working Groups have defined RDF formats for collecting and processing test results, and there are a number of XSLT style sheets that can be used to format results in an attractive way. For example:</p>
+<ul>
+<li>The RDF and OWL test suites used an innovative way to <a href="http://www.w3.org/2003/08/owl-systems/test-results-out#about">collect and publish test results on the Web</a> (as explained in <a href="http://lists.w3.org/Archives/Public/www-qa/2003Sep/0038.html">an archived www-qa message from 9/2003</a>)</li>
+<li>The XKMS Working Group used the <a href="http://www.w3.org/2002/09/wbs/1/XKMS-WG-CR-TEST-SUITE/">WBS polling system</a> (W3C-member only link) to collect test results.</li>
+<li>The Voice Browser Working Group has used an XML format to collect <a href="http://www.w3.org/Voice/2004/vxml-ir/#results">test results</a></li>
+</ul>
+<p>Published test results are often called <em>Implementation</em> or <em>Interoperability Reports</em>. See these examples from <a href="http://www.w3.org/Graphics/SVG/Test/20030813/status/matrix.html">SVG 1.1</a><a href="http://www.w3.org/2003/08/owl-systems/test-results-out"></a>and <a href="http://www.w3.org/WAI/UA/impl-pr2/">UAAG 1.0</a> and others listed in the <a href="http://www.w3.org/QA/TheMatrix">Conformance and QA WG's Matrix of W3C Specifications</a> (links to implementation reports can be found in the last column).</p>
+<h2 id="certif">18. Should we implement a branding or certification program?</h2>
+<p>While you may not want to define and implement a fully fledged program with all of the legal and administrative overhead that this implies, a simple logo that can be displayed on a web-page (such as the logo at the bottom of this page) may be useful. Note that whatever program you implement should probably involve <em>self certification</em> (you do not want to be in the business of certifying implementations as conformant, since this is legally risky).</p>
+<p>For discussions of the issues involved in certification programs see the <a href="http://www.w3.org/2003/04/certif">Study of a W3C Certification Activity</a> and the <a href="http://www.w3.org/TR/2004/NOTE-qa-handbook-20041122/#gp-branding-policy">QA Handbook</a>. For examples of successful logo programs, see the <a href="http://validator.w3.org/">W3C XHTML Markup Validation Service</a> and the <a href="http://www.w3.org/WAI/WCAG1-Conformance.html">Web Content Accessibility Guidelines (WCAG) Conformance Logos</a> initiative.</p>
+</div>
+</div>
+<!-- Footer -->
+<!-- End of "main" DIV. -->
+<address>Last modified $Date: 2010/01/29 13:55:50 $ by $Author: dom $</address>
+<p class="copyright"><a rel="Copyright" href="http://www.w3.org/Consortium/Legal/ipr-notice#Copyright">Copyright</a> © 1994-2006 <a href="http://www.w3.org/"><acronym title="World Wide Web Consortium">W3C</acronym></a>® (<a href="http://www.csail.mit.edu/"><acronym title="Massachusetts Institute of Technology">MIT</acronym></a>, <a href="http://www.ercim.org/"><acronym title="European Research Consortium for Informatics and Mathematics">ERCIM</acronym></a>, <a href="http://www.keio.ac.jp/">Keio</a>), All Rights Reserved. W3C <a href="http://www.w3.org/Consortium/Legal/ipr-notice#Legal_Disclaimer">liability</a>, <a href="http://www.w3.org/Consortium/Legal/ipr-notice#W3C_Trademarks">trademark</a>, <a rel="Copyright" href="http://www.w3.org/Consortium/Legal/copyright-documents">document use</a> and <a rel="Copyright" href="http://www.w3.org/Consortium/Legal/copyright-software">software licensing</a> rules apply. Your interactions with this site are in accordance with our <a href="http://www.w3.org/Consortium/Legal/privacy-statement#Public">public</a> and <a href="http://www.w3.org/Consortium/Legal/privacy-statement#Members">Member</a> privacy statements.</p>
+</body>
+</html>

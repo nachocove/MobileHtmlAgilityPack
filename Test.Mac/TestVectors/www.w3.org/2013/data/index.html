@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content="text/html; charset=utf-8" http-equiv="content-type">
+    <title>W3C Data Activity - Building the Web of Data</title>
+    <link rel="stylesheet" href="/2008/site/css/minimum" type="text/css"
+      media="handheld, all">
+    <link rel="stylesheet" href="/2008/site/css/minimum" type="text/css"
+      media="handheld, all">
+    <style type="text/css" media="print, screen and (min-width: 481px)">
+      @import url("/2008/site/css/advanced");
+    </style>
+    <link href="/2008/site/css/minimum" rel="stylesheet" type="text/css" media="handheld, only screen and (max-device-width: 480px)">
+    <link rel="stylesheet" href="/2008/site/css/print" type="text/css" media="print">
+    <link href="/dpub/overview-style.css" type="text/css" rel="stylesheet" media="all">
+    <link href="/2013/data/da.css" type="text/css" rel="stylesheet" media="all">
+    <link rel="shortcut icon" href="/2008/site/images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="/dpub/css/home.css" type="text/css" media="handheld, all">
+    <meta name="viewport" content="width=320">
+    <link rel="Help" href="/Help/">
+    <script src="/2008/site/js/main"> </script>
+    <script src="/2014/jquery/jquery-1.11.1.min.js"></script>
+    <script src="/People/Ivan/JS/feed.js"></script>
+    <script type="text/javascript">
+      $(document).ready( function() {
+        $("#divRss").atomfeed({
+          url: "http://www.w3.org/blog/data/category/data-activity/feed/",
+          // url: "/People/Ivan/Tests/test.xml",
+          printEntry : W3CFeedContent,
+          maxCount : 3,
+        });
+        $("#divRssDoc").atomfeed({
+          url: "http://www.w3.org/blog/data/category/new-w3c-documents/feed/",
+          //url: "/People/Ivan/Tests/test.xml",
+          printEntry : W3CFeedContent,
+          maxCount : 3,
+        });
+      })
+    </script>
+
+
+  </head>
+  <body id="www-w3-org" class="w3c_public">
+    <div id="w3c_container">
+      <header id="w3c_mast">
+        <!-- #w3c_mast / Page top header -->
+        <h1 class="logo"> <a tabindex="2" accesskey="1" href="/">
+            <img src="/2008/site/images/logo-w3c-mobile-lg" alt="W3C" height="53" width="90"> </a> <span class="alt-logo">W3C</span> </h1>
+        <nav id="w3c_nav">
+          <form action="/Help/search" method="get" enctype="application/x-www-form-urlencoded">
+            <!-- w3c_sec_nav is populated through js -->
+            <div class="w3c_sec_nav">
+              <!-- --> </div>
+            <ul class="main_nav">
+              <!-- Main navigation menu -->
+              <li class="first-item"> <a href="/standards/">Standards</a>
+              </li>
+              <li> <a href="/participate/">Participate</a> </li>
+              <li> <a href="/Consortium/membership">Membership</a>
+              </li>
+              <li class="last-item"> <a href="/Consortium/">About
+                  W3C</a> </li>
+              <li class="search-item">
+                <div id="search-form"> <input tabindex="3" class="text" name="q"
+                    value="" title="Search"> <button id="search-submit" name="search-submit"
+                    type="submit"> <img class="submit" src="/2008/site/images/search-button"
+                      alt="Search" height="17" width="21"> </button> </div>
+              </li>
+            </ul>
+          </form>
+        </nav>
+      </header>
+      <div id="w3c_main">
+        <div id="w3c_logo_shadow" class="w3c_leftCol"> <img alt="W3C" src="/2008/site/images/logo-shadow"
+            height="32"> </div>
+        <nav id="w3c_sidenavigation" class="w3c_leftCol">
+          <h2 class="offscreen">Site Navigation</h2>
+          <h3 class="category"> <span class="ribbon"><b>Active Groups</b></span></h3>
+          <ul class="theme">
+
+    <li><a href="/2014/data-shapes/">RDF Data Shapes Working Group</a></li>
+    <li><a href="/2012/ldp/">Linked Data Platform Working Group</a></li>
+    <li><a href="/2013/dwbp/">Data on the Web Best Practices Working Group</a></li>
+    <li><a href="/2013/csvw/">CSV on the Web Working Group</a></li>
+    <li><a href="/2001/sw/interest/">Semantic Web Interest Group</a></li>
+    <li><a href="/2001/sw/hcls/">Semantic Web Health Care and Life Sciences Interest Group</a></li>
+    <li><a href="/2013/data/CG/">Data Activity Coordination Group</a></li>
+
+          </ul>
+          <!-- -->
+
+    <h3 class="category"><span class="ribbon"><b>Nearby</b></span></h3>
+    <ul class="theme">
+      <li><a href="/blog/data/">Data Activity Blog</a></li>
+      <li><a href="Activity">Activity Statement</a></li>
+      <li><a href="/dpub/">The Digital Publishing Activity</a></li>
+      <li><a href="/XML/">The XML Activity</a></li>
+    </ul>
+
+    <h3 class="category"><span class="ribbon"><b>Associated Projects</b></span></h3>
+    <ul class="theme">
+      <li><a href="http://crosscloud.org/">Crosscloud</a></li>
+      <li><a href="http://www.smartopendata.eu/">Smart Open Data</a></li>
+      <li><a href="http://www.w3.org/2013/share-psi/">Share-PSI 2.0</a></li>
+    </ul>
+
+<!--    <h3 class="category"> <span class="ribbon"><b>Events with W3C Participation</b> </span></h3>
+    <h4 class="category"> <span class="ribbon"><b>Upcoming events</b></span></h4>
+    <ul class="theme">
+      <li><a href="/2014/02/wot/">Workshop on the Web of Things</a></li>
+    </ul> -->
+
+          <h3 class="category"> <span class="ribbon"><b>Closed Groups</b></span></h3>
+            <ul>
+    <li><a href="/2011/rdf-wg/">RDF Working Group</a></li>
+    <li><a href="/2011/gld/">Government Linked Data Working Group</a></li>
+    </ul>
+        </nav>
+        <div class="w3c_mainCol">
+          <div id="w3c_crumbs">
+            <div id="w3c_crumbs_frame">
+              <ul class="bct">
+                <!-- .bct / Breadcrumbs -->
+                <li class="skip"><a tabindex="1" accesskey="2" title="Skip to content (e.g., when browsing via audio)"
+                    href="#w3c_content_body">Skip</a></li>
+                <li><a href="/">W3C</a> <span class="cr">»</span> </li>
+                <li class="current">Data Activity</li>
+              </ul>
+            </div>
+          </div>
+          <h1 class="title">W3C Data Activity <span>Building the Web of Data</span></h1>
+          <div class="line">
+            <div class="unit size2on3" id="maincol">
+              <section id="w3c_content_body">
+
+<p>More and more Web applications provide a means of accessing data. From simple 
+visualizations to sophisticated interactive tools, there is a growing reliance 
+on the availability of data which can be “big” or “small”, of diverse origin, and 
+in different formats; it is usually published without prior coordination with 
+other publishers — let alone with precise modeling or common vocabularies. The Data 
+Activity recognizes and works to overcome this diversity to facilitate potentially 
+Web-scale data integration and processing. It does this by providing standard data exchange formats, models, tools, and guidance. </p>
+
+<p>The overall vision of the Data Activity is that people and organizations should 
+be able to share data as far as possible using their existing tools and working 
+practices but in a way that enables others to derive and add value, and to utilize it 
+in ways that suit them. Achieving that requires a focus not just on the interoperability of data but of communities.</p>
+
+<p> <strong>Questions?</strong> Contact <a href="mailto:phila@w3.org">Phil Archer</a> &lt;phila@w3.org&gt;, W3C Data
+                  Activity Lead. </p>
+              </section>
+              <section id="about">
+                <h2 id="context">Context &amp; Vision</h2>
+<p>The Data Activity merges and builds upon the 
+<a href="/2007/eGov/">eGovernment</a> and 
+<a href="/2001/sw/">Semantic Web Activities</a>.
+The eGovernment Activity comprised an interest group that offered members a series of interesting talks from 
+well placed speakers in governments around the world, including from countries that are often under-represented 
+at W3C such as Jordan and Uganda. Primary topics have been the use of social media for citizen engagement and open data.
+The Semantic Web Activity was launched in 2001 to lead the use of the Web as an exchange medium for data as well as 
+documents. That overall aim, along with a series of associated activities by W3C and others, has 
+been highly successful — although not necessarily in the way originally envisioned. For example, 
+the vision was that organizations and individuals would publish data in much the same way that 
+they were already publishing Web pages. Enormous volumes of data are available on the Web today but 
+it is typically published through portals that act on behalf of multiple agencies, not on 
+the Web sites operated by those agencies themselves. Data publication is seen as a specialist activity, 
+not as something anyone can do, and therefore it is more centralized than expected.</p>
+
+<p>The Activity will make data publication less of a specialist activity and ensure that 
+the excellent work done by portals does not lead to <i>de facto</i> data silos.</p>
+
+<p>There is a benign current of centralization in vocabularies. The success of 
+<a href="http://lov.okfn.org/">Linked Open Vocabularies</a> as a central information 
+point about vocabularies is symptomatic of a need, or at least a desire, for an 
+authoritative reference point to aid the encoding and publication of data. 
+This need/desire is expressed even more forcefully in the rapid success and adoption of 
+<a href="http://schema.org/">schema.org</a>. The large and growing set of terms in the 
+schema.org namespace includes (and references) many established terms defined elsewhere, 
+such as in vCard, FOAF, Good Relations and rNews. Designed and promoted as a means of 
+helping search engines make sense of unstructured data (i.e. text), schema.org terms are 
+being adopted in other contexts, for example in the <a href="/TR/vocab-adms/">ADMS</a> 
+vocabulary originally developed by the European Commission. </p>
+
+<p>The Data Activity will continue to support this work as well as promoting W3C's existing 
+open approach to the coordination, recognition and persistent hosting of vocabularies, which the 
+user community sees as critical companions to Web standards such as XML, RDF and HTML.</p>
+
+<p>The use of the Web as a platform for delivering data has been driven by policy as much 
+as by technology. The <a href="https://www.gov.uk/government/publications/open-data-charter">G8 Open Data Charter</a>
+being a prime example. Other examples include President Obama’s <a href="http://www.whitehouse.gov/blog/2013/05/09/landmark-steps-liberate-open-data">Executive Order</a> 
+and the European Union’s <a href="http://ec.europa.eu/digital-agenda/en/legal-rules#revision-of-the-directive">revised PSI Directive</a>. 
+These policies apply equally to the areas of government information, scientific research, and cultural 
+heritage and that creates a further source of diversity of workflows, people and the technologies they use.</p>
+
+<p>The W3C Data Activity will support technologists tasked with responding to this political pressure. 
+It will do so in a way that works for those individuals and at the same time delivers maximum return on 
+the political and financial investments made, minimizing the risk that data produced in one community 
+remains only usable by other members of that same community.</p>
+
+<p>Although the needs and views of application developers are, of course, of critical importance, the Data 
+Activity is designed to support the needs of the public and private sector organizations working to 
+publish and integrate data across the Web. W3C has traditionally worked on Semantic Web technologies 
+and has promoted the publication of data through the (Enterprise) Data and (5 star) <a href="/DesignIssues/LinkedData.html">Linked Open 
+Data</a> approaches. The primary value of Linked Data, of RDF and related technologies, is that these 
+technologies have the Web at their “core,” providing a unique means of integrating data at Web 
+scale. Such integration may happen online but often happens within industry (offline or in the cloud). 
+YarcData gave some examples of this in their <a href="/QA/2013/08/interview_yarcdata_on_big_data.html">interview with Ian Jacobs</a> 
+in which Shoaib Mufti explained how Semantic Web technologies can help to process Big Data and derive insights 
+from it that might otherwise remain hidden.</p>
+
+<p>However, not all applications need the power of Semantic Web technologies to achieve 
+data integration; in many cases applications work with one or two specific datasets that can 
+be accessed and managed individually. Datasets of significant size are published on the Web 
+in different formats and the conversion or access to this data specifically as RDF is not 
+always necessary. The Data Activity will contribute to the larger data ecosystem to ensure interoperability and 
+ease of application development.</p>
+              </section>
+            </div>
+
+            <div class="unit size1on3 lastUnit" id="secondcol">
+              <div class="infobar bPadding">
+                <h2><a href="/blog/data/">New W3C Documents</a></h2>
+                <div id="divRssDoc"></div>
+                <p style="font-size:90%">See <a href="/blog/data/">Activity
+                    News</a> for details and older news</p>
+              </div>
+              <div class="infobar bPadding">
+                <h2><a href="/blog/data/">Activity News</a></h2>
+                <div id="divRss"></div>
+                <p style="font-size:90%">See <a href="/blog/data/">Activity
+                    News</a> for details and older news</p>
+              </div>
+            </div>
+            <!-- /end #w3c_content_body --> </div>
+          <!-- /end #w3c_mainCol --> </div>
+        <!-- end #w3c_main --> </div>
+      <footer id="w3c_footer">
+        <div id="w3c_footer-inner">
+          <h2 class="offscreen">Footer Navigation</h2>
+          <div class="w3c_footer-nav">
+            <h3>Navigation</h3>
+            <ul class="footer_top_nav">
+              <li> <a href="/">Home</a> </li>
+              <li> <a href="/standards/">Standards</a> </li>
+              <li> <a href="/participate/">Participate</a> </li>
+              <li> <a href="/Consortium/membership">Membership</a></li>
+              <li class="last-item"> <a href="/Consortium/">About W3C</a> </li>
+            </ul>
+          </div>
+          <div class="w3c_footer-nav">
+            <h3>Contact W3C</h3>
+            <ul class="footer_bottom_nav">
+              <li> <a href="/Consortium/contact">Contact</a> </li>
+              <li> <a accesskey="0" href="/Help/">Help and FAQ</a></li>
+              <li> <a href="/Consortium/sup">Donate</a> </li>
+              <li> <a href="/Consortium/siteindex">Site Map</a></li>
+              <li>
+                <address id="w3c_signature"><a href="mailto:site-comments@w3.org">Feedback</a>
+                  (<a href="http://lists.w3.org/Archives/Public/site-comments/">archive</a>)</address>
+              </li>
+            </ul>
+          </div>
+          <div class="w3c_footer-nav">
+            <h3>W3C Updates</h3>
+            <ul class="footer_follow_nav">
+              <li> <a href="http://twitter.com/W3C" title="Follow W3C on Twitter">
+                  <img src="/2008/site/images/twitter-bird" alt="Twitter"
+                    class="social-icon" height="42" width="39"> </a> <a href="http://identi.ca/w3c"
+                  title="See W3C on Identica"> <img src="http://www.w3.org/2008/site/images/identica-logo"
+                    alt="Identica" class="social-icon" height="42" width="46"> </a>
+              </li>
+            </ul>
+          </div>
+          <!-- #footer address / page signature -->
+          <p class="copyright">Copyright © 2013 W3C <sup>®</sup> (<a href="http://www.csail.mit.edu/"><abbr
+                title="Massachusetts Institute of Technology">MIT</abbr></a>, <a
+              href="http://www.ercim.eu/"><abbr title="European Research Consortium for Informatics and Mathematics">ERCIM</abbr></a>,
+            <a href="http://www.keio.ac.jp/">Keio</a>, <a href="http://ev.buaa.edu.cn/">Beihang</a>)
+            <a href="http://www.w3.org/Consortium/Legal/2002/ipr-notice-20021231">Usage
+              policies apply</a>.</p>
+        </div>
+      </footer>
+      <!-- /end #footer --> </div>
+  </body>
+</html>

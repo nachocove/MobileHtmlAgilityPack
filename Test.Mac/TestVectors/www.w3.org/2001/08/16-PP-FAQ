@@ -1,0 +1,1333 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+      "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+  <title>Frequently Asked Questions (FAQ) about the W3C Patent Policy</title>
+  <link rel="stylesheet" type="text/css" href="../../StyleSheets/base.css" />
+  <link rel="stylesheet" type="text/css"
+  href="../../Guide/pubrules-style.css" />
+  <style type="text/css">
+/*<![CDATA[*/
+     .question p { margin-left: 1em }
+     .intro { margin: 2em 4em 0em 3em}
+/*]]>
+*/</style>
+</head>
+
+<body>
+<ul id="navbar">
+  <li><a href="http://www.w3.org/Consortium/Patent-Policy-20040205/">W3C
+    Patent Policy</a></li>
+  <li><a href="http://www.w3.org/2004/02/05-patentsummary.html">Policy
+    Summary</a></li>
+  <li><a href="http://www.w3.org/2004/03/pp-points-20040210.html">Business
+    Benefits</a></li>
+  <li id="current">Frequently Asked Questions (FAQ)</li>
+  <li><a href="http://www.w3.org/2004/01/pp-impl/">IPP</a></li>
+  <li><a href="http://www.w3.org/Consortium/">About W3C</a></li>
+</ul>
+
+<div class="head">
+<h1><a shape="rect" href="http://www.w3.org/"><img height="48" width="72"
+alt="W3C" src="http://www.w3.org/Icons/w3c_home" /></a> Frequently Asked
+Questions (FAQ) about the W3C Patent Policy</h1>
+</div>
+
+<p class="intro"><strong>NOTE</strong>: On 5 August 2014, W3C 
+    <a href="http://www.w3.org/blog/news/archives/4004">adopted</a>
+    the 
+<a href="http://www.w3.org/2014/Process-20140801/">1 August 2014 Process Document</a>, which
+     merges Last Call into Candidate Recommendation.  So that W3C can
+     continue to apply the Patent Policy without modification under
+     the new Process, the new Process explicitly associates "old" Last
+     Call with "new" Candidate Recommendation. For more information,
+     see the <a
+     href="https://www.w3.org/wiki/ProcessTransition2014">Process
+     Transition FAQ</a>. At the end of the transition period will plan to update the
+     entries in this FAQ that refer to Last Call. For the 2014
+     Process, these entries apply to Candidate Recommendation.</p>
+
+<p class="intro">This document lists some frequently asked questions about
+the <a href="http://www.w3.org/Consortium/Patent-Policy/">W3C Patent
+Policy</a> and provides answers to those questions. This document is purely
+informative, for the assistance and information of those interested in the
+W3C Patent Policy. If this document is in any way inconsistent with the <a
+href="http://www.w3.org/Consortium/Patent-Policy/">W3C Patent Policy</a>, the
+Patent Policy is authoritative.</p>
+
+<p class="intro">As of July 2006, the W3C <a href="/2004/pp/psig/">Patents
+and Standards Interest Group</a> reviews proposed FAQ entries. Please send
+questions or comments on the W3C Patent Policy or this document to the Patent
+and Standards Interest Group public mailing list
+www-patentpolicy-comment@w3.org (<a
+href="http://lists.w3.org/Archives/Public/www-patentpolicy-comment/">archive</a>).</p>
+
+<p class="intro">See also the slide set <cite><a
+href="/2007/Talks/0507-patent-policy-overview/">Introducing the W3C Patent
+Policy</a></cite>.</p>
+
+<h2 class="notoc"><a id="contents" name="contents">Questions</a></h2>
+<ol>
+  <li><a href="#diff">What are the primary differences between the Current
+    Patent Practice Note and the W3C Patent Policy?</a></li>
+  <li><a href="#under">Which W3C Working Groups will be under the Patent
+    Policy?</a></li>
+  <li><a href="#which-groups">Do participants in other groups such as
+    Interest Groups have licensing obligations?</a></li>
+  <li><a href="#exclusion-date">When can a Working Group participant exclude
+    a patent claim?</a></li>
+  <li><a href="#participant">How does the term "participant" in the Patent
+    Policy relate to the term "participant" in the W3C Process
+  Document?</a></li>
+  <li><a href="#non-participants">How should Working Groups handle
+    contributions from non-Participants?</a></li>
+  <li><a href="#mixed">Can a Working Group have some deliverables under the
+    W3C Patent Policy and others under the CPP?</a></li>
+  <li><a href="#start">When is a Working Group considered to be operating
+    under the W3C patent policy?</a></li>
+  <li><a href="#testcases">Does the W3C Patent Policy apply to test cases
+    submitted to W3C as part of developing a test suite for a
+    Recommendation?</a></li>
+  <li><a href="#allrecs">Do participants in a Working Group under the W3C
+    Patent Policy have licensing obligations for all Working Drafts produced
+    by the group?</a></li>
+  <li><a href="#otherrecs">Do participants in a Working Group have licensing
+    obligations with respect to Working Drafts produced by groups in which
+    they are not participating?</a></li>
+  <li><a href="#informative">Does a Recommendation that is entirely
+    informative have any associated licensing obligations?</a></li>
+  <li><a href="#guest">Can the Chair invite a guest (i.e., non-participant)
+    to attend a face-to-face or remote meeting of a Working Group under the
+    Patent Policy?</a></li>
+  <li><a href="#lists">Can non-participants subscribe to a mailing list of a
+    Working Group under the Patent Policy?</a></li>
+  <li><a href="#fellows">What obligations do W3C Fellows have in a Working
+    Group under the policy?</a></li>
+  <li><a href="#ownlicense">May I specify my own licensing terms upon joining
+    a W3C Working Group?</a></li>
+  <li><a href="#taglic">What are TAG participant licensing
+  obligations?</a></li>
+  <li><a href="#tagdisc">What are TAG participant disclosure
+  obligations?</a></li>
+  <li><a href="#efforts">Does a disclosure request obligate an individual to
+    read the specification to satisfy the individual's disclosure
+    obligation?</a></li>
+  <li><a href="#duplicate">Are duplicate disclosures required?</a></li>
+  <li><a href="#related">Suppose A and B are Related W3C Members and one of
+    the organizations is a group Participant. What are the licensing
+    obligations on the other Member?</a></li>
+  <li><a href="#employee-aff">Can an individual join W3C (as an Affiliate
+    Member) and participate in a Working Group even when that individual is
+    also an employee of another Member?</a></li>
+  <li><a href="#employee-invexp">Can a W3C Member limit the licensing
+    obligation by having an employee participate as an Invited Expert in a
+    Working Group?</a></li>
+  <li><a href="#mult-exclusions">Can a Working Group publish a new draft of a
+    Recommendation Track document during an open exclusion
+  opportunity?</a></li>
+  <li><a href="#early-exclusion-end">Can a Working Group end an exclusion
+    opportunity end sooner than scheduled?</a></li>
+  <li><a href="#future-patents">Does my licensing obligation in a given group
+    extend to future patents I may own?</a></li>
+  <li><a href="#recharter">What action is required by a Participant when a
+    Working Group under the Patent Policy is rechartered?</a></li>
+  <li><a href="#diffspec">Can a Working Group publish a version 2.1 of a
+    Recommendation that defines conformance by reference to the 2.0
+    Recommendation, plus a few new features defined in 2.1?</a></li>
+  <li><a href="#trpub-during-pag">Can a Working Group publish a new draft of
+    a Recommendation Track document while a PAG is discussing the
+    document?</a></li>
+  <li><a href="#doc-split">When a Working Group splits a Recommendation Track
+    document into several pieces, what are the Patent Policy
+  implications?</a></li>
+  <li><a href="#represent-other">Organization A is my principal employer, but
+    I represent organization B in a Working Group operating under the W3C
+    Patent Policy. What are the licensing obligations for A and B?</a></li>
+  <li><a href="#outside-normative-ref">Can a W3C Recommendation normatively
+    refer to technology developed outside W3C with licensing terms that
+    differ from those of the W3C Patent Policy?</a></li>
+  <li><a href="#joint">When a specification is jointly authored by several
+    Working Groups, what are the licensing obligations of the Participants in
+    those groups?</a></li>
+  <li><a href="#exclusion-assertion">Must an exclusion of patent claims under
+    Section 4 of the Patent Policy include an assertion that the patent
+    claims being excluded are essential to the specification against which
+    the exclusion is being made? </a> </li>
+  <li><a href="#refdraftislc">What is the consequence of publishing a Last
+    Call Working Draft within 90 days after the publication of the First
+    Public Working Draft of the same document? </a> </li>
+  <li><a href="#exclusionwithdrawn">Can an exclusion be withdrawn?</a> </li>
+  <li><a href="#edlicensing">What licensing obligations apply to second
+  (and later) editions of a Recommendation?</a></li>
+  <li><a href="#howtohelp">In what ways can a patent 
+  holder disclosing and/or excluding an  
+  essential patent claim cooperate with the Patent
+  Advisory Group (PAG)?</a></li>
+  <li><a href="#acquisition">
+When Member A, which participates in a Working Group, is acquired by
+Member B and Member A ceases to exist as an independent entity, what
+is the impact on licensing commitments?
+</a></li>
+  <li><a href="#paglaunch">What are the considerations and steps for forming a Patent Advisory Group (PAG)?</a></li>
+  <li><a href="#superset">Our Working Group is chartered to define FooML 1.1 so that it is a  
+superset of FooML 1.0. How should the Working Group write its  
+Specification to take advantage of 1.0 licensing commitments? How  
+should the WG  assure that 1.1 participants are bound to W3C RF  
+licensing commitments over the entirety of FooML 1.1?</a></li>
+<li><a href="#closeearly">If a Working Group closes before a given Recommendation-track specification in its charter becomes a Recommendation, what  
+happens to the licensing obligations of the Working Group  
+Participants with respect to that document?</a></li>
+<li>
+<a href="#fpwd-lcwd">
+If a First Public Working Draft is also a Last Call Working Draft, what is the duration of the exclusion opportunity?
+</a></li>
+<li>
+<a href="#nonewtext">Is there an exclusion period for a Last Call Working Draft that has no new text since the previous reference draft?
+</a></li>
+<li>
+<a href="#translation">Does an implementation based on a translation of a W3C Recommendation benefit from W3C RF patent commitments?</a>
+</li>
+<li>
+<a href="#agreed-by-disclosing">If a Member discloses a patent or application under the terms of section 6, does that necessarily mean that it has agreed to or is bound by any licensing obligation?</a>
+</li>
+<li>
+<a href="#rf-and-disclose">If a Member agrees prospectively to license all claims that may be Essential to the final form of a particular W3C Recommendation, does the Member still have any obligation under §6 to make disclosures, as described in §6.1 and §§6.4-6, with respect to that Recommendation or any Working Draft, Last Call Working Draft, Candidate Recommendation, or Proposed Recommendation generated in the course of developing that Recommendation?</a>
+</li>
+<li>
+<a href="#advise">If an individual in a Member organization receives a disclosure request and does not have actual knowledge, does he (or the Member with which he is affiliated) have any obligation to advise other individuals associated with the same Member of the disclosure request?</a>
+</li>
+</ol>
+
+<hr />
+
+<div class="questions">
+
+<div class="question">
+<h2>1. <a id="diff" name="diff">What are the primary differences between the
+Current Patent Practice Note and the W3C Patent Policy?</a></h2>
+
+<p>The primary difference between the "<a
+href="http://www.w3.org/TR/patent-practice">Current Patent Practice Note</a>"
+(CPP) and the W3C Patent Policy is that the former did not include a
+licensing obligation and the latter does. The Current Patent Practice Note
+set expectations that Working Group deliverables should be available for
+implementation royalty-free, but did not include any licensing requirements
+on Working Group Participants. The W3C Patent Policy does include licensing
+requirements. Other new provisions of the W3C Patent Policy also relate to
+this change, including exclusion handling (section 4), licensing requirements
+(section 5), and a lighter-weight disclosure model (section 6). In addition,
+the W3C Patent Policy includes improvements to the exception handling process
+(section 7) and some definitions (section 8) based on the experience with the
+Current Patent Practice Note.</p>
+</div>
+
+<div class="question">
+<h2>2. Which W3C Working Groups will be <a name="under" id="under">under</a>
+the Patent Policy?</h2>
+
+<p>Those Working Groups whose charter specifically states that the groups
+work is governed by the Patent Policy are the only W3C groups under the
+Policy. The <a href="/2004/02/05-pp-transition">Patent Policy Transition
+plan</a> describes the process by which existing W3C activities will be
+transitioned to the new Patent Policy. This transition requires affirmative
+action of the W3C Advisory Committee and Director in every case.</p>
+</div>
+
+<div class="question">
+<h2>3. <a id="which-groups" name="which-groups">Do participants in other
+groups such as Interest Groups have licensing obligations?</a></h2>
+
+<p>Participants in groups other than W3C Working Groups (e.g., Interest
+Groups, Coordination Groups, Workshops, and Symposia) have no licensing
+obligations with respect to the deliverables of those groups. The charters of
+those groups may, however, incorporate by reference disclosure rules or
+definitions from the Patent Policy.</p>
+</div>
+
+<div class="question">
+<h2>4. <a id="exclusion-date" name="exclusion-date">When can a Working Group
+participant exclude a patent claim?</a></h2>
+
+<p>During the life of a Working Group (until it closes) under the W3C Patent
+Policy, certain events on the Recommendation Track create <em><a
+name="exclusion-opportunity" id="exclusion-opportunity">exclusion
+opportunities</a></em> for Working Group participants; those events are
+publication of First Public Working Drafts and Last Call Working Drafts.</p>
+
+<p>Each exclusion opportunity has associated with it both a duration and a
+set of features in the specification. For the duration of a given exclusion
+opportunity, a Working Group participant can exclude one or more patent
+claims with respect to the associated set of features. After that opportunity
+has passed, the participant may no longer exclude a patent claim with respect
+to any of those features. At the next exclusion opportunity, a participant
+may exclude a patent claim only with respect to the new features in the
+specification available when the opportunity begins, and only for the
+duration of that opportunity.</p>
+
+<p>Any participant who joins a Working Group after the end of an exclusion
+opportunity must exclude any patent claims immediately upon joining the
+group. For those participants, exclusion is always with respect to the sum of
+all features of all previous exclusion opportunities; this corresponds to the
+features in the draft published at the previous exclusion opportunity.</p>
+
+<p>Consider what this means for a typical Working Group:</p>
+<ul>
+  <li>A Working Group under the W3C Patent Policy publishes a First Public
+    Working Draft that is intended to become a W3C Recommendation. The Team
+    sends a Call for Exclusion to participants. The exclusion opportunity
+    lasts 150 days. At approximately 90 days, the Team sends out a reminder
+    with a pointer to the "Reference Draft", i.e., the latest draft available
+    at that time. Exclusions are with respect to the set of features in the
+    Reference Draft.</li>
+  <li>Someone joins the group after the end of the first exclusion
+    opportunity. That participant must exclude any patent claims within 24
+    hours of joining the group, and exclusion is still with respect to the
+    Reference Draft.</li>
+  <li>The Working Group announces Last Call, which begins the second
+    exclusion opportunity. The exclusion opportunity lasts 60 days. Any
+    exclusions are with respect to new features in the Last Call Working
+    Draft added since the previous exclusion opportunity.</li>
+  <li>Someone joins the group during the second exclusion opportunity. That
+    participant must exclude any patent claims immediately upon joining the
+    group for those features in the Reference Draft. However, that
+    participant is just like any other participant when it comes to excluding
+    patent claims with respect to new features in the Last Call Draft added
+    since the Reference Draft.</li>
+  <li>Someone joins the group after the end of the second exclusion
+    opportunity. That participant must exclude any patent claims immediately
+    upon joining the group, and exclusion is with respect to the Last Call
+    Working Draft.</li>
+  <li>The Working Group changes the document substantially after Candidate
+    Recommendation and returns to a second Last Call. The third exclusion
+    opportunity begins with the Last Call announcement; it lasts 60 days.
+    Exclusions are with respect to new features in the specification since
+    the previous exclusion opportunity, i.e., the previous Last Call.</li>
+  <li>Someone joins the group after the end of the third exclusion
+    opportunity. That participant must exclude any patent claims within 24
+    hours of joining the group, and exclusion is with respect to the second
+    Last Call Working Draft.</li>
+</ul>
+
+<p>And so on.</p>
+
+<p>Per <a
+href="http://www.w3.org/2004/02/05-pp-transition.html#switch">section 2 of
+the W3C Patent Policy Transition Procedure</a> the above policy applies for a
+given specification in a given Working Group <strong>unless</strong> all of
+the following are true:</p>
+<ul>
+  <li>The Working Group switches to the W3C Patent Policy <em>after</em>
+    publication of the First Public Working Draft of the specification,
+  and</li>
+  <li>The announcement of the switch is made 91 days or more after
+    publication of the FPWD, and</li>
+  <li>That specification is not yet a Candidate Recommendation.</li>
+</ul>
+
+<p>In this case, all entities must rejoin the Working Group (and agree to the
+terms of the W3C Patent Policy) after the Director's announcement that the
+group has moved to the W3C Patent Policy. Participants have 90 days from the
+Director's announcement to exclude patent claims. Exclusion is with respect
+to the latest Working Draft published at the time of the Director's
+announcement. For the purposes of a transitioning group, this is considered
+the First Public Working Draft.</p>
+
+<p>When a Working Group moves to the W3C Patent Policy with a document that
+is a Candidate Recommendation or later, participants have no licensing
+obligations for that document. However, if the document returns to Working
+Draft status, licensing obligations would take effect. In this case, the
+first exclusion opportunity for that document begins with the publication of
+the Working Draft, and exclusions are with respect to that draft.</p>
+</div>
+
+<div class="question">
+<h2>5. <a id="participant" name="participant">How does the term "participant"
+in the Patent Policy relate to the term "participant" in the W3C Process
+Document?</a></h2>
+
+<p><a
+href="http://www.w3.org/Consortium/Patent-Policy/#sec-W3C-RF-license">Section
+3.1</a> of the Patent Policy states:</p>
+
+<blockquote>
+  <p>As a condition of participating in a Working Group, each participant
+  (W3C Members, W3C Team members, invited experts, and members of the public)
+  shall agree to make available under W3C RF licensing requirements any
+  Essential Claims related to the work of that particular Working Group.</p>
+</blockquote>
+
+<p>In the patent policy, "participant" means "a Member organization", "the
+Team as an organization", or "invited expert". In the Process Document,
+"participant" always refers to an individual, who may be a Member
+representative, Team representative, or invited expert. For the purposes of
+the patent policy, the licensing requirements apply at the organizational
+level for the Members and Team, and at the individual level for invited
+experts.</p>
+</div>
+
+<div class="question">
+<h2>6. <a name="non-participants" id="non-participants">How should Working
+Groups handle contributions from non-participants (e.g., meeting guests or on
+public lists)?</a></h2>
+
+<p>A W3C Working Group frequently finds itself in the position of receiving
+reviews and input from other parties who are not participants in the Working
+Group, including:</p>
+<ul>
+  <li>Another W3C Working Group;</li>
+  <li>A meeting guest, including an observer during the Technical Plenary
+    Week;</li>
+  <li>The general public on a mailing list.</li>
+</ul>
+
+<p>All Participants in a given Working Group have made a commitment to the
+W3C Patent Policy (in particular, the provisions regarding licensing
+obligations), but only for the Recommendations of that particular Working
+Group. In general, other parties have not made the same commitment for those
+same deliverables, although they MAY make this commitment if they wish.
+Similarly, W3C may request that they make such a commitment (see <a
+href="http://www.w3.org/2004/01/pp-impl/35520/nmlc">instructions for
+licensing commitments from non-W3C Members</a>). This means that the Working
+Group should consider very carefully any contribution from a non-Participant
+before including it in a document intended to become a W3C Recommendation.</p>
+
+<p>To help manage expectations of meeting guests, attendees of joint Working
+Group meetings, and mailing list subscribers, it is useful to remind them
+when appropriate of the goals of the W3C Patent Policy.</p>
+
+<p>When a contribution is being considered for actual inclusion in a document
+intended to become a Recommendation, the Chair should ask the Contributor to
+disclose any essential claims, and if there are any, the terms under which
+those claims would be licensed. Lack of a response to this request is a red
+flag.</p>
+
+<p>In cases where disclosure reveals possible incompatible licensing, the
+Working Group should either steer away from the Contribution, or attempt to
+secure <a
+href="http://www.w3.org/Consortium/Patent-Policy-20040205/#sec-Requirements">W3C
+Royalty-Free licensing terms</a>. W3C prefers to avoid PAGs where
+possible.</p>
+
+<p>See <a href="#testcases">question 9</a> for information about contributed
+test cases.</p>
+</div>
+
+<div class="question">
+<h2>7. <a name="mixed" id="mixed">Can a Working Group have some deliverables
+under the W3C Patent Policy and others under the CPP?</a></h2>
+
+<p>A Working Group cannot operate under the CPP and produce (some)
+deliverables under the W3C Patent Policy.</p>
+
+<p>Once a Working Group has adopted the W3C Patent Policy, new deliverables
+are developed under that policy. Existing deliverables are treated as
+follows, per <a
+href="http://www.w3.org/2004/02/05-pp-transition#switch">section two of the
+Patent Policy Transition Procedure</a>:</p>
+
+<blockquote>
+  <p>The licensing obligations (sections 3, 4 and 5) of the W3C Patent Policy
+  will apply to any existing Recommendation track document that has not
+  reached Candidate Recommendation as of the date the new charter comes into
+  effect (i.e., the date of the Director's announcement that the charter has
+  been approved). Otherwise, the licensing requirements of the previous
+  patent policy (most recently, the CPP) apply.</p>
+</blockquote>
+</div>
+
+<div class="question">
+<h2>8. <a name="start" id="start">When is a Working Group considered to be
+operating under the W3C patent policy?</a></h2>
+
+<p>Once the Director has announced a new or revised Working Group charter
+that refers to the W3C Patent Policy, the Call for Participation that follows
+(or accompanies) the announcement is the signal that the group is operating
+under the policy. Anyone eligible to join the group may do so at any time.</p>
+
+<p>Individuals who were in good standing before that Call for Participation
+may attend any meetings held within <strong>forty-five (45)</strong> days of
+the Call for Participation even if they have not yet formally rejoined the
+group (i.e., committed to the terms of the charter and patent policy).</p>
+
+<p>This information was <a
+href="http://lists.w3.org/Archives/Member/w3c-ac-members/2005AprJun/0004">sent
+to the W3C Advisory Committee</a> (Member-only link) in April 2005.</p>
+</div>
+
+<div class="question">
+<h2>9. <a name="testcases" id="testcase">Does the W3C Patent Policy apply to
+test cases submitted to W3C as part of developing a test suite for a
+Recommendation?</a></h2>
+
+<p>This question is addressed by the <a href="/2004/10/27-testcases">Policies
+for Contribution of Test Cases to W3C</a>.</p>
+</div>
+
+<div class="question">
+<h2>10. <a name="allrecs" id="allrecs">Do participants in a Working Group
+under the W3C Patent Policy have licensing obligations for all Working Drafts
+produced by the group?</a></h2>
+
+<p>Participants in a Working Group under the W3C Patent Policy have licensing
+obligations for a Working Draft published by the group unless any of the
+following is true:</p>
+<ul>
+  <li>W3C terminates the work before the Working Draft becomes a
+    Recommendation (e.g., the Working Group closes before completing work).
+    In this case, Participants are released from their licensing obligations.
+    When work terminates prior to Recommendation, W3C should publish this
+    work as a Working Group Note.</li>
+  <li>the Working Group charter states that the deliverable is not intended
+    to become a W3C Recommendation (as is done for requirements documents,
+    for example). If for any reason W3C decides that the work should indeed
+    advance to Recommendation, licensing obligations will take effect and
+    there will be an <a href="#exclusion-opportunity">exclusion
+    opportunity</a> for Working Group Participants; the currently available
+    draft will be treated as a First Public Working Draft under the W3C
+    Patent Policy.</li>
+  <li>the Working Group charter or Working Draft itself states that the
+    deliverable is informative only (e.g., a primer or tutorial); see also <a
+    href="#informative">question 12</a>.</li>
+</ul>
+</div>
+
+<p>Please also note that technical reports at later maturity levels
+(Candidate Recommendation, Proposed Recommendation) may not have associated
+licensing obligations if they were already published when a Working Group
+made the transition to the W3C Patent Policy; see the <a
+href="/2004/02/05-pp-transition">Patent Policy Transition plan</a> for more
+information.</p>
+
+<div class="question">
+<h2>11. <a name="otherrecs" id="otherrecs">Do Participants in a Working Group
+have licensing obligations with respect to Recommendations produced by groups
+in which they are not participating?</a></h2>
+
+<p>No. <a
+href="http://www.w3.org/Consortium/Patent-Policy-20040205/#sec-W3C-RF-license">Section
+3.1</a> of the Patent Policy states (emphasis added):</p>
+
+<blockquote>
+  <p>As a condition of participating in a Working Group, each participant
+  (W3C Members, W3C Team members, invited experts, and members of the public)
+  shall agree to make available under W3C RF licensing requirements any
+  Essential Claims related to <em>the work of that particular Working
+  Group</em>.</p>
+</blockquote>
+
+<p>Recall, however, that implementers (whether or not they participated in
+the Working Group that produced the Recommendation) may incur licensing
+obligations through reciprocal licensing terms as permitted by <a
+href="http://www.w3.org/Consortium/Patent-Policy-20040205/#sec-Requirements">section
+5 of the Patent Policy</a>.</p>
+
+<p>Please note that Participants in one W3C group may have disclosure
+obligations related to work in other W3C groups; see <a
+href="http://www.w3.org/Consortium/Patent-Policy-20040205/#sec-Disclosure">section
+6 of the Patent Policy</a> as well as <a href="#efforts">question 19</a> and
+<a href="#duplicate">question 20</a>.</p>
+</div>
+
+<div class="question">
+<h2>12. <a name="informative" id="informative">Does a Recommendation that is
+entirely informative have any associated licensing obligations?</a></h2>
+
+<p>According to the W3C Patent Policy, informative material is not essential
+to implementing a Recommendation and is therefore not subject to the
+licensing requirements of the policy. This is the case whether that material
+is a single section of a document or an entire document (such as a primer or
+guide) that is part of a multi-document Recommendation. <a
+href="http://www.w3.org/Consortium/Patent-Policy-20040205/#def-essential-exclusions">Section
+8.2 of the Patent Policy</a> states:</p>
+
+<blockquote>
+  <p>The following are expressly excluded from and shall not be deemed to
+  constitute Essential Claims:...</p>
+
+  <p>2. ...claims which would be infringed only by ... portions of an
+  implementation that are not specified in the normative portions of the
+  Recommendation.</p>
+</blockquote>
+
+<p><a
+href="http://www.w3.org/Consortium/Patent-Policy-20040205/#def-essential-requirements">Section
+8.3</a> goes on to say that, "For purposes of this definition, the normative
+portions of the Recommendation shall be deemed to include only architectural
+and interoperability requirements."</p>
+
+<p>W3C's <a
+href="http://www.w3.org/TR/2004/WD-qaframe-spec-20040602/#specify-conformance-need">QA
+Specification Guidelines, section C.</a> provide guidance about identifying
+the normative and informative portions of a document.</p>
+</div>
+
+<div class="question">
+<h2>13. <a name="guest" id="guest">Can the Chair invite a guest (i.e.,
+non-participant) to attend a face-to-face or remote meeting of a Working
+Group under the Patent Policy?</a></h2>
+
+<p>Yes. However, see <a href="#non-participants">question 6</a> for related
+issues about contributions from non-participants, including meeting
+guests.</p>
+
+<p>See also <a
+href="http://www.w3.org/2004/02/Process-20040205/policies.html#GeneralMeetings">section
+3.2 of the Process Document</a>, which discusses general meeting
+requirements.</p>
+</div>
+
+<div class="question">
+<h2>14. <a name="lists" id="lists">Can non-participants subscribe to a
+mailing list of a Working Group under the Patent Policy?</a></h2>
+
+<p>Whether a group is or is not under the W3C Patent Policy has no impact on
+who may or may not subscribe to the group's mailing lists. For example,
+anyone with Member access may read any Member-visible mailing list archive.
+See <a href="#non-participants">question 6</a> for related issues about
+contributions from non-participants, including individuals who provide
+feedback on a group mailing list.</p>
+</div>
+
+<div class="question">
+<h2>15. <a name="fellows" id="fellows">What obligations do W3C Fellows have
+in a Working Group under the policy?</a></h2>
+
+<p>When a W3C Fellow, who is an employee of a W3C Member, participates in a
+Working Group, the W3C Member has the obligations for Member Participants
+described in the Patent Policy. W3C Fellows must be nominated by their
+Advisory Committee Representative in order to be able to participate in a
+Working Group.</p>
+</div>
+
+<div class="question">
+<h2>16. <a name="ownlicense" id="ownlicense">May I specify my own licensing
+terms upon joining a W3C Working Group?</a></h2>
+
+<p>No. <a
+href="http://www.w3.org/Consortium/Patent-Policy-20040205/#sec-Requirements">Section
+5 of the Patent Policy</a> lists the licensing terms required by this policy.
+Organizations participating in a W3C Working Group under the Patent Policy
+may not make individual modifications to or departures from the licensing
+requirements spelled out in the Policy. An important efficiency gained with
+the Patent Policy is avoidance numerous one-off licensing statements. If each
+participant proposed its own policy then other Working Group Participants and
+implementers would have to invest extra time and legal expertise to review
+individually-crafted licensing language. Also, the W3C Team would be put in
+the position of making possible subjective evaluations of individual
+licensing statements. In order to avoid this complex legal analysis, the
+Policy requires that each entity joining a W3C Working Group makes a choice
+between two straightforward options: 'we agree' or 'we don't agree' to the
+terms of the Patent Policy. Organizations offering licenses meeting the W3C
+Royalty-Free requirements may point to the specific contact information and
+entity-specific license terms, as provided in Section 5 of the Policy.</p>
+</div>
+
+<div class="question">
+<h2>17. <a name="taglic" id="taglic">What are TAG participant licensing
+obligations?</a></h2>
+
+<p>Per the [proposed] TAG charter [revision of Nov 2004], individuals in the
+TAG participate as Invited Experts with respect to the Patent Policy, even
+when they are Member employees.</p>
+
+<p>Licensing obligations for TAG participants only extend to those claims
+over which the individual exercises control (per <a
+href="http://www.w3.org/Consortium/Patent-Policy-20040205/#sec-invited">section
+3.4 of the Patent Policy</a>). The individual's employer has
+<strong>no</strong> licensing obligation by virtue of the individual's
+participation as an Invited Expert in the group in question.</p>
+</div>
+
+<div class="question">
+<h2>18. <a name="tagdisc" id="tagdisc">What are TAG participant disclosure
+obligations?</a></h2>
+
+<p>Disclosure obligations for TAG participants are those of any other W3C
+participant (as described in <a
+href="http://www.w3.org/Consortium/Patent-Policy-20040205/#sec-disclosure-requirements">section
+6.1 of the policy</a>) except with respect to the definition of third-party
+patents. Per <a
+href="http://www.w3.org/Consortium/Patent-Policy-20040205/#sec-good-faith">section
+6.7</a> states that:</p>
+
+<blockquote>
+  <p>Disclosure of third party patents is only required where the Advisory
+  Committee Representative or Working Group participant has been made aware
+  that the third party patent holder or applicant has asserted that its
+  patent contains Essential Claims, unless such disclosure would breach a
+  pre-existing non-disclosure obligation.</p>
+</blockquote>
+
+<p>For TAG participants who are employees of a Member organization, patents
+controlled by the Member organization are <strong>not</strong> considered
+third-party patents. Thus, the scope of the individual's disclosure
+obligation includes them.</p>
+</div>
+
+<div class="question">
+<h2>19. <a name="efforts" id="efforts">Does a disclosure request obligate an
+individual to read the specification to satisfy the individual's disclosure
+obligation?</a></h2>
+
+<p>No. <a
+href="http://www.w3.org/Consortium/Patent-Policy-20040205/#sec-disclosure-requirements">Section
+6.1</a> of the W3C Patent Policy states:</p>
+
+<blockquote>
+  <p>Disclosure is required when [...] an individual in a Member organization
+  receives a disclosure request as described in section 6.3; and that
+  individual has actual knowledge of a patent which the individual believes
+  contains Essential Claim(s) with respect to the specification for which
+  disclosure is requested.</p>
+</blockquote>
+
+<p>The appearance of such a disclosure request in a document status section
+section does <strong>not</strong> obligate any individual to read or become
+informed of the contents of the document. However, if a person who receives
+such a request is aware of claims on a technology and is, through whatever
+means (e.g., as a result of reading the document or having a conversation),
+sufficiently aware of the contents of the W3C document to believe that a
+claim is essential, then that person has the obligation to disclose that
+information. Recall also that per <a
+href="http://www.w3.org/Consortium/Patent-Policy-20040205/#sec-good-faith">section
+6.7</a>, no patent search is required.</p>
+</div>
+
+<div class="question">
+<h2>20. <a name="duplicate" id="duplicate">Are duplicate disclosures
+required?</a></h2>
+
+<p>Duplicate disclosures are not required for a given patent
+claim/specification pair. Per <a
+href="http://www.w3.org/Consortium/Patent-Policy-20040205/#sec-disclosure-exemption">section
+6.2</a> of the Patent Policy (emphasis added):</p>
+
+<blockquote>
+  <p>The disclosure obligation <em>as to a particular claim</em> is satisfied
+  if the holder of the claim has made a commitment to license that claim
+  under W3C RF licensing requirements and the claim is no longer subject to
+  exclusion under section 4.</p>
+</blockquote>
+
+<p>Parties make the W3C RF licensing commitment with respect to a patent
+claim/specification pair. Once a disclosure has been made with respect to a
+given claim/specification pair, no further disclosures are required, by
+anyone, for that claim/specification pair. Also per section 6.7, once an RF
+licensing commitment has been made to a given claim/specification pair, no
+disclosures are required, by anyone, for that claim/specification pair. If
+the same patent claim bears on another specification, disclosure obligations
+are not thereby discharged; each claim/specification pair is treated
+independently.</p>
+</div>
+
+<div class="question">
+<h2>21. <a name="related" id="related">Suppose A and B are Related W3C
+Members and one of the organizations is a group Participant. What are the
+licensing obligations on the other Member?</a></h2>
+
+<p>That depends on the nature of their relation (see <a
+href="http://www.w3.org/2004/02/Process-20040205/organization.html#MemberRelated">section
+2.1.2 of the Process Document</a> for the various relations possible). The
+Patent Policy does not mention Related Members explicitly but does state in
+<a
+href="http://www.w3.org/Consortium/Patent-Policy-20040205/#sec-W3C-RF-license">section
+3.1</a>:</p>
+
+<blockquote>
+  <p>This [licensing] requirement includes Essential Claims that the
+  participant owns and any that the participant has the right to license
+  without obligation of payment or other consideration to an unrelated third
+  party.</p>
+</blockquote>
+
+<p>Therefore, if Member A (related to Member B) joins a Working Group, then
+the licensing commitment would extend to patents held by Member B to the
+extent that the relationship between the related members is not a barrier to
+such licensing. Of course, regardless of the licensing relationship between
+the related Members, Member A continues to have a disclosure the obligations
+described in <a
+href="http://www.w3.org/Consortium/Patent-Policy-20040205/#sec-Disclosure">section
+6 of the Patent Policy</a>.</p>
+</div>
+
+<div class="question">
+<h2>22. <a name="employee-aff" id="employee-aff">Can an individual join W3C
+(as an Affiliate Member) and participate in a Working Group even when that
+individual is also an employee of another W3C Member?</a></h2>
+
+<p>Yes. W3C Members must disclose Related Member status per <a
+href="http://www.w3.org/2004/02/Process-20040205/organization.html#MemberRelated">section
+2.1.2 of the Process Document</a>. In cases where participation in a group by
+one of a set of Related Members may create the appearance of working around
+licensing obligations, the Director may decline to allow such
+participation:</p>
+
+<blockquote>
+  <p>In exceptional circumstances (e.g., situations that might jeopardize the
+  progress of a group or create a conflict of interest), the Director MAY
+  decline to allow an individual designated by an Advisory Committee
+  representative to participate in a group. (<a
+  href="http://www.w3.org/2004/02/Process-20040205/policies.html#member-rep">Section
+  3.1.2</a> of the Process Document.)</p>
+</blockquote>
+</div>
+
+<div class="question">
+<h2>23. <a name="employee-invexp" id="employee-invexp">Can a W3C Member limit
+the licensing obligation by having an employee participate as an Invited
+Expert in a Working Group?</a></h2>
+
+<p>In general, no. Prior to the adoption of the W3C Patent Policy, in some
+cases an individual employed by a W3C Member might be invited to participate
+in a Working Group as an Invited Expert rather than as a formal Member
+representative. W3C no longer follows this practice for two reasons:</p>
+<ul>
+  <li>Precisely because it would be unfair to other W3C Members and be
+    contrary to the goals of the Patent Policy to limit licensing obligations
+    of the patent policy.</li>
+  <li>The W3C Process Document has been revised so that this practice is no
+    longer necessary. In the past, Chairs of some W3C groups invited Member
+    employees to participate in order to work around chartered restrictions
+    in the number of participants from one Member organization. These
+    chartered restrictions had been adopted in order to ensure balanced
+    representation of views in formal votes (when such votes were required).
+    Changes to the Process Document such as limiting the number of formal
+    votes per organization have made it unnecessary to "work around the
+    charter", and thus the practice described has become unnecessary.</li>
+</ul>
+</div>
+
+<div class="question">
+<h2>24. <a name="mult-exclusions" id="mult-exclusions">Can a Working Group
+publish a new draft of a Recommendation Track document during an open
+exclusion opportunity? </a></h2>
+
+<p>Yes, in most cases. For instance, suppose we are talking about an
+exclusion opportunity that begins with the publication of a Last Call Working
+Draft. Although the exclusion opportunity lasts 60 days, the Working Group
+may publish additional documents, including Candidate Recommendations during
+those 60 days. Of course, other Process Document requirements are in force as
+well, so if the Working Group makes substantive changes, the document will
+return to Working Draft status for additional work.</p>
+
+<p>The W3C Team will <strong>not</strong>, however, start a Proposed
+Recommendation review period until all current exclusion opportunities for a
+given specification have ended.</p>
+
+<p>In some cases, two exclusion opportunities for the same specification may
+be open in parallel. This is possible since exclusion opportunities are
+mutually exclusive with respect to reference material.</p>
+</div>
+
+<div class="question">
+<h2>25. <a name="early-exclusion-end" id="early-exclusion-end">Can a Working
+Group end an exclusion opportunity sooner than scheduled?</a></h2>
+
+<p>A Working Group can end an exclusion opportunity sooner than scheduled if
+all of the following are true:</p>
+<ol>
+  <li>No exclusions have been claimed during the exclusion opportunity.</li>
+  <li>All Working Group Participants (whatever the standing of their
+    representatives) agree to waive any right to future exclusions with
+    respect to the same reference material. For a participating Member, this
+    statement is made by the Member's Advisory Committee Representative.
+    Silence does not imply consent to end the opportunity early.</li>
+  <li>The Working Group requests that the Director advance to Proposed
+    Recommendation a document that includes the reference material covered by
+    the exclusion opportunity.</li>
+</ol>
+
+<p>When all of the above are true, the exclusion opportunity ends with the
+request to the Director to advance to Proposed Recommendation. The Working
+Group's request should mention the end of the exclusion opportunity. </p>
+
+<p>The Team Contact for the Working Group manages the process of gathering
+from Participants the agreements to waive the right to future exclusions for
+the same reference material.</p>
+</div>
+
+<div class="question">
+<h2>26. <a name="future-patents" id="future-patents">Does my licensing
+obligation in a given group extend to future patents I may own?</a></h2>
+
+<p>Yes. <a
+href="http://www.w3.org/Consortium/Patent-Policy-20040205/#sec-W3C-RF-license">Section
+3.1 of the W3C Patent Policy</a> states:</p>
+
+<blockquote>
+  <p>As a condition of participating in a Working Group, each participant
+  (W3C Members, W3C Team members, invited experts, and members of the public)
+  shall agree to make available under W3C RF licensing requirements any
+  Essential Claims related to the work of that particular Working Group. This
+  requirement includes Essential Claims that the participant owns and any
+  that the participant has the right to license without obligation of payment
+  or other consideration to an unrelated third party.</p>
+</blockquote>
+
+<p>Note that if this were not the case, one could easily subvert the
+intention of the policy by, for example, joining a Working Group and filing
+for a patent the following day.</p>
+</div>
+
+<div class="question">
+<h2>27. <a name="recharter" id="recharter">What action is required by a
+Participant when a Working Group under the Patent Policy is rechartered?
+</a></h2>
+<!-- Announced to the AC 5 April 2005 -->
+
+<p>A Working Group under the Patent Policy whose charter is renewed is
+handled much like a group that has just made the transition to the W3C Patent
+Policy (as described in the <a
+href="http://www.w3.org/2004/02/05-pp-transition">Patent Policy Transition
+Procedure</a>). In response to the Call for Participation in the rechartered
+group, current Participants are required to re-join the group <em>unless</em>
+the renewed charter was merely extended, or the only changes are
+non-substantive (e.g., clarifications, editorial repairs, minor error
+corrections, change of Team Contact, etc.). Re-joining the group, when
+required, implies a renewed commitment to the terms of the charter and the
+Patent Policy.</p>
+
+<p>When re-joining is required, the Call for Participation begins a grace
+period (see <a href="#start">question 8</a>) during which time current
+Participants may attend meetings (teleconferences and face-to-face meetings)
+even if they have not yet re-joined the group. After the grace period,
+ongoing participation (including meeting attendance and voting) is only
+permitted for those who have re-joined the group.</p>
+
+<p>When re-joining is required, Advisory Committee Representatives of current
+Participants are not required to "re-nominate" their representatives to the
+group.</p>
+</div>
+
+<div class="question">
+<h2>28. <a id="diffspec">Can a Working Group publish a version 2.1 of a
+Recommendation that defines conformance by reference to the 2.0
+Recommendation, plus a few new features defined in 2.1?</a></h2>
+
+<p>In general, no. W3C experience shows that this sort of "differential"
+specification can be difficult to read and implement. W3C therefore prefers
+to publish self-contained specifications. </p>
+
+<p>For any specification, a Working Group makes decisions about what to
+include and what to reference based on many factors, such as the expected
+length of the document and the stability of referenced materials. A typical
+specification does include some references to external material, and this has
+W3C Patent Policy implications. Per <a
+href="http://www.w3.org/Consortium/Patent-Policy-20040205/#def-essential-exclusions">section
+8.2</a> of the W3C Patent Policy, technology incorporated by reference is
+"expressly excluded from and shall not be deemed to constitute Essential
+Claims." The commitments of the Participants who authored the specification
+refer to the text in the specification and stop short of the external
+references. Creating a self-contained specification therefore helps to reduce
+confusion about licensing commitments as part of improving overall document
+usability.</p>
+</div>
+
+<div class="question">
+<h2>29. <a id="trpub-during-pag">Can a Working Group publish a new draft of a
+Recommendation Track document while a PAG is discussing the document?</a></h2>
+
+<p>Yes, in most cases. <a
+href="http://www.w3.org/Consortium/Patent-Policy-20040205/#sec-PAG-formation">Section
+7.1 of the Patent Policy</a> states:</p>
+
+<blockquote>
+  <p>During the time that the PAG is operating, the Working Group may
+  continue its technical work within the bounds of its charter.</p>
+</blockquote>
+
+<p>The W3C Director will not generally start a Proposed Recommendation review
+period until after any PAG discussing the document has issued its report.</p>
+</div>
+
+<div class="question">
+<h2>30. <a id="doc-split">When a Working Group splits a Recommendation Track
+document into several pieces, what are the Patent Policy
+implications?</a></h2>
+
+<p>First, Working Group Participant patent policy commitments apply to all
+the chartered Recommendation Track documents published by the group,
+including the new set of documents.</p>
+
+<p>Second, If there were no disclosures or exclusions associated with the
+single document prior to the split, there are no other Patent Policy
+implications. If there were disclosures or exclusions prior to the split,
+then they are no longer relevant with respect to the "abandoned" document.
+They may, however, be relevant to one or more of the new documents, as
+follows: a previous disclosure/exclusion applies to a new document
+<em>unless</em>, within 30 days of publication of that new document, the
+party that made the disclosure/exclusion declares that it <em>does not</em>
+apply.</p>
+
+<p>The "default mode" of carrying all disclosures/exclusions forward for all
+derived documents is appropriate given that the W3C Patent Policy does not
+require that a disclosure/exclusion refer to a specific part of a
+specification. It is thus not practical to "track" how a disclosure/exclusion
+should migrate to a new set of documents in the absence of more information
+from the party that made the disclosure/exclusion. </p>
+</div>
+
+<div class="question">
+<h2>31. <a id="represent-other">Organization A is my principal employer, but
+I represent organization B in a Working Group operating under the W3C Patent
+Policy. What are the licensing obligations for A and B?</a></h2>
+
+<p>Member B has the standard obligations of a Member participating in a
+Working Group under the Patent Policy. W3C also requires in practice that
+organization A &mdash; whether or not A is a W3C Member &mdash; offer W3C
+Royalty Free licensing commitments for that Working Group.</p>
+</div>
+
+<div class="question">
+<h2>32. <a id="outside-normative-ref">Can a W3C Recommendation normatively
+refer to technology developed outside W3C with licensing terms that differ
+from those of the W3C Patent Policy?</a></h2>
+
+<p>Yes. W3C Recommendations may include normative references to standards or
+technologies developed outside of W3C. However, the Working Group should keep
+in mind the importance of royalty-free implementations of Web standards. In
+the event it becomes clear that the licensing status of those
+externally-developed technologies could become a barrier to implementation of
+the technology according to the W3C Royalty-Free (RF) Licensing Requirements,
+W3C may choose not to publish the document or may launch a PAG.</p>
+</div>
+
+<div class="question">
+<h2>33. <a id="joint">When a specification is jointly authored by several
+Working Groups, what are the licensing obligations of the Participants in
+those groups?</a></h2>
+
+<p>The W3C Patent Policy does not explicitly address specifications that are
+jointly authored by several Working Groups. W3C does, in some cases, charter
+more than one group to work on the same specification, and this is not
+forbidden by the Patent Policy. By extension of the policy, all Participants
+in any Working Group chartered to develop a specification have the same
+patent policy obligations with respect to that specification. The <a
+href="/2004/02/05-pp-transition">Patent Policy Transition Procedure</a>
+determines whether the governing patent policy is the W3C Patent Policy or
+the CPP. (The case of joint work on a CPP specification is unlikely, but
+theoretically possible in the case of joint work on a Proposed Edited
+Recommendation). </p>
+
+<p>See <a href="#non-participants">question 6</a> for the situation where
+coordinating groups are not all chartered to work on a given deliverable.</p>
+</div>
+
+<div class="question">
+<h2>34. <a id="exclusion-assertion">Must an exclusion of patent claims under
+Section 4 of the Patent Policy include an assertion that the patent claims
+being excluded are essential to the specification against which the exclusion
+is being made?</a></h2>
+
+<p>In order to exclude a patent claim (see <a
+href="/Consortium/Patent-Policy-20040205/#sec-Exclusion">Section 4</a>),
+excluders should take reasonable steps to exclude only those patent claims
+that they reasonably believe could become essential to the final
+Recommendation. However, per <a
+href="/Consortium/Patent-Policy-20040205/#sec-good-faith">Section 6.7</a>,
+the excluding organization is not required to conduct a patent search, nor
+does the exclusion constitute a final determination that the patent claim(s)
+will become essential to the final Recommendation. Exclusions made early in
+the development of a Recommendation may be premised on the likelihood that a
+patent will end up being essential to the final Recommendation, but that the
+excluding organization cannot make firm assertions in this regard. </p>
+</div>
+
+<div class="question">
+<h2>35. <a id="refdraftislc">What is the consequence of publishing a Last
+Call Working Draft within 90 days after the publication of the First Public
+Working Draft of the same document? </a></h2>
+
+<p>The first exclusion opportunity subsumes the second one for the following
+reasons.</p>
+
+<p>A first exclusion opportunity begins with publication of a First Public
+Working Draft and ends 150 days later. Per the W3C Patent Policy, the
+reference draft for exclusions during that period is the one available at 90
+days. In this scenario, the reference draft is the Last Call Working
+Draft.</p>
+
+<p>A second exclusion opportunity is triggered by publication of a Last Call
+Working Draft and ends 60 days later. Exclusions are over material not in the
+reference draft (per <a
+href="/Consortium/Patent-Policy-20040205/#sec-exclusion-with">section 4.1</a>
+of the Patent Policy). Thus, when a Last Call Working Draft is also the
+reference draft of the first exclusion opportunity, the second exclusion
+opportunity is entirely subsumed.</p>
+</div>
+
+<div class="question">
+<h2>36. <a id="exclusionwithdrawn">Can an exclusion be withdrawn?</a> </h2>
+
+<p>Yes. An organization may withdraw a exclusion at any time, even after
+publication of the Recommendation concerned.</p>
+
+<p>If an organization has made an exclusion for a Recommendation and then
+modified its internal patent policy strategy, it is useful for the
+organization to review the exclusion and consider withdrawing it. This tends
+to give the community more confidence about being able to implement the
+standard on terms consistent with the W3C Royalty Free Licence. </p>
+</div>
+
+<div class="question">
+<h2>
+37.  
+<a id="edlicensing">What licensing obligations apply to second
+(and later) editions of a Recommendation?</a>
+</h2>
+
+<p>W3C has defined a <a
+href="/Consortium/Process/tr#cfr-edited">Process for revising
+Recommendations</a> to fix broken links and invalid markup, make
+editorial clarifications, and make substantive corrections provided
+they introduce no new features.  The process involves community review
+of a "Proposed Edited Recommendation" that is
+subsequently published as a new
+edition of the same Recommendation. Licensing commitments made to the
+original Recommendation will apply to new editions that result from
+this process.</p>
+
+<p>In the unlikely event that new features improperly creep in, there
+are procedures for challenging the document's status. New features
+would <strong>not</strong>, in any case, be covered by the original
+licensing obligation.
+</p>
+</div>
+
+<div class="question">
+<h2>
+38.  
+<a id="howtohelp">
+In what ways can a patent holder disclosing and/or excluding an  
+essential patent claim cooperate with the Patent
+Advisory Group (PAG)?</a>
+</h2>
+
+<p>
+The patent holder can cooperate by facilitating the creation of a  
+specification which conforms to W3C's patent policy, helping the  
+Working Group (and the 
+<a href="/Consortium/Patent-Policy-20040205/#sec-Exception">Patent Advisory Group</a> if one exists)  
+understand how to proceed. To do so, the excluder can:</p>
+
+<ul>
+<li>Indicate with precision which features in a specification may be
+        covered by the claim, and/or</li>
+
+<li>Discuss with the Working Group or the PAG possible changes to
+        the specification which might avoid the claim.</li>
+</ul>
+
+<p>While this entry does not change the requirements stated in this  
+Patent Policy itself, this kind of cooperation could result in the  
+creation of an RF specification in an area that is important to the  
+excluder. The patent holder may also derive positive publicity and  
+good will from contributing to, rather than preventing, the  
+development of open Web standards.</p>
+
+</div>
+
+<div class="question">
+<h2>
+39.  
+<a id="acquisition">
+When Member A, which participates in a Working Group, is acquired by
+Member B and Member A ceases to exist as an independent entity, what
+is the impact on licensing commitments?
+</a>
+</h2>
+
+<p>
+The Patent Policy commitment of Member A is given for the lifetime of
+the patent as described in <a href="/Consortium/Patent-Policy-20040205/#sec-Obligations">section 3</a> and <a
+href="/Consortium/Patent-Policy-20040205/#sec-Requirements">section 5</a> of the Patent Policy. Consequently, Member B
+inherits Member A's Royalty-Free licensing commitments.</p>
+
+ 
+<p>Member B is not considered a Working Group Participant by virtue of
+its acquisition of Member A.  Thus, unless Member B joins the Working
+Group (or is already participating), it does not have any additional
+licensing obligations as of the termination of Member A's contract
+with W3C. If Member B joins the Working Group, other sections of the
+Patent Policy govern new licensing commitments and exclusion
+opportunities.</p>
+
+</div>
+
+<div class="question">
+<h2>
+40.
+<a id="paglaunch">
+What are the considerations and steps for forming a Patent Advisory Group (PAG)?</a>
+</h2>
+
+<p><cite><a
+href="/2007/04/patent-exception-management">Procedures for Launching a
+Patent Advisory Group</a></cite> describes the operational
+considerations and steps for forming a PAG when an <a
+href="/Consortium/Patent-Policy-20040205/#sec-Exception">exception</a>
+occurs under the W3C Patent Policy.
+</p>
+</div>
+
+<div class="question">
+<h2>
+41.
+<a id="superset">
+Our Working Group is chartered to define FooML 1.1 so that it is a  
+superset of FooML 1.0. How should the Working Group write its  
+Specification to take advantage of 1.0 licensing commitments? How  
+should the WG  assure that 1.1 participants are bound to W3C RF  
+licensing commitments over the entirety of FooML 1.1?
+</a>
+</h2>
+
+<p>If the FooML 1.1 specification defines its compliance with FooML
+1.0 by inclusion of the text of the FooML 1.0 specification (either
+verbatim or with editorial corrections), then the commitment from
+participants in the FooML 1.1 Working Group extends to the included
+1.0 text, not just the new 1.1 text.</p>
+
+<p>If an implementation of FooML 1.1 is also an implementation of FooML  
+1.0, then that implementations of FooML 1.1 can also benefit from the  
+license commitments made by participants in the Working Group that developed  
+FooML 1.0.</p>
+
+<p>Note that the licensing obligations for participants in the FooML
+1.0 Working Group do not change at all from what they were at the time FooML 1.0
+was issued, and those commitments are limited to compliance with FooML
+1.0. Therefore, if the FooML 1.1 Working Group would like implementers of FooML
+1.1 to benefit from the license commitments that have been made by
+participants in the Working Group that developed FooML 1.0, then the FooML 1.1 
+Working Group
+should exercise caution to make sure that implementations of FooML 1.1
+will also be implementations of FooML 1.0.
+</p>
+</div>
+
+
+<div class="question">
+<h2>
+42.
+<a id="closeearly">
+If a Working Group closes before a given Recommendation-track
+specification in its charter becomes a Recommendation, what happens to
+the licensing obligations of the Working Group Participants with
+respect to that document?
+</a>
+</h2>
+
+<p>The public offers of Royalty-Free licensing made by W3C  
+Working Group Participants are made only for a specific Working Group  
+creating a specific deliverable. Since W3C Patent Policy obligations are
+tied to approval of the final Recommendation, patent licensing  
+commitments made under the Patent Policy apply only to completed  
+Recommendations. Unfinished specifications do not carry with
+them the W3C Royalty-Free licensing obligations.</p>
+</div>
+
+
+<div class="question">
+<h2>
+43.
+<a id="fpwd-lcwd">
+If a First Public Working Draft is also a Last Call Working Draft, what is the duration of the exclusion opportunity?
+</a>
+</h2>
+
+<p>150 days. The Patent Policy specifies 150 days as the duration of the exclusion opportunity at First Public Working Draft, and 60 days at Last Call. If the two coincide, the larger (more conservative) duration of the two is respected. See 
+<a href="early-exclusion-end">question 25</a> for information about ending an exclusion opportunity early.</p>
+</div>
+
+<div class="question">
+<h2>
+44.
+<a id="nonewtext">Is there an exclusion period for a Last Call Working Draft that has no new text since the previous reference draft?
+</a>
+</h2>
+
+<p>No (per <a href="/Consortium/Patent-Policy-20040205/#sec-exclusion-with">section 4.1</a>, which indicates that an exclusion period is  
+only necessary "if material new subject matter is added").</p>
+</div>
+
+<div class="question">
+<h2>
+45.
+<a id="translation">
+Does an implementation based on a translation of a W3C Recommendation benefit from W3C RF patent commitments?
+</a>
+</h2>
+
+<p>The original English version of the Recommendation is authoritative, and the patent commitments apply only to implementations that conform to that original version. The role of a translation is to facilitate the  comprehension of the authoritative Recommendation, not to replace or modify it.</p>
+</div>
+
+
+<div class="question">
+<h2>46.
+If a Member discloses a patent or application under the terms of section 6, does that necessarily mean that it has agreed to or is bound by any licensing obligation?
+<a id="agreed-by-disclosing">
+</a>
+</h2>
+<p>No.  Under the W3C Patent Policy, Members have licensing obligations only with respect to claims that are Essential to a Recommendation generated by a particular Working Group in which the Member is a participant. (§3.1)  In addition, patents or applications that are disclosed may or may not ultimately prove to contain claims that are actually Essential to the final W3C Recommendation (see Process Document §7.1.2), and the licensing obligation exists only as to claims that are Essential to a Recommendation (see §3.3, §8.1)</p>
+</div>
+
+<div class="question">
+<h2>
+47. If a Member agrees prospectively to license all claims that may be Essential to the final form of a particular W3C Recommendation, does the Member still have any obligation under §6 to make disclosures, as described in §6.1 and §§6.4-6, with respect to that Recommendation or any Working Draft, Last Call Working Draft, Candidate Recommendation, or Proposed Recommendation generated in the course of developing that Recommendation?
+<a id="rf-and-disclose">
+</a>
+</h2>
+<p>No.  In this circumstance the Member is exempt from the disclosure obligation by the terms of §6.2.</p>
+</div>
+
+<div class="question">
+<h2>
+48. If an individual in a Member organization receives a disclosure request and does not have actual knowledge, does he (or the Member with which he is affiliated) have any obligation to advise other individuals associated with the same Member of the disclosure request?
+<a id="advise">
+</a>
+</h2>
+
+<p>No. Section §6.1 states:</p>
+
+<blockquote>
+"Disclosure is required when BOTH of the following are true:
+
+<ol>
+<li>an individual in a Member organization receives a disclosure request as described in section 6.3; and</li>
+<li>that individual has actual knowledge of a patent which the individual believes contains Essential Claim(s) with respect to the specification for which disclosure is requested."</li>
+</ol>
+</blockquote>
+<p>See also exemptions (§6.2).</p>
+</div>
+
+
+
+
+</div>
+<!-- Send changes to w3t-patent-policy -->
+<hr />
+<address>
+  <a href="/People/Jacobs/">Ian Jacobs</a>, W3C (Editor) <br />
+</address>
+
+<p class="copyright"><a
+href="http://www.w3.org/Consortium/Legal/ipr-notice-20000612#Copyright">Copyright</a>©
+2004 - 2008 <a href="http://www.w3.org/">W3C</a> <sup>®</sup> (<a
+shape="rect" href="http://www.csail.mit.edu/">MIT</a>, <a
+href="http://www.ercim.org/">ERCIM</a>, <a
+href="http://www.keio.ac.jp/">Keio</a>), All Rights Reserved. W3C <a
+shape="rect"
+href="http://www.w3.org/Consortium/Legal/ipr-notice-20000612#Legal_Disclaimer">liability</a>,
+<a
+href="http://www.w3.org/Consortium/Legal/ipr-notice-20000612#W3C_Trademarks">trademark</a>,
+<a
+href="http://www.w3.org/Consortium/Legal/copyright-documents-19990405">document
+use</a>, and <a
+href="http://www.w3.org/Consortium/Legal/copyright-software-19980720">software
+licensing</a> rules apply.</p>
+
+<p>Last modified: $Date: 2014-08-05 17:25:19 $ by $Author: ijacobs $.</p>
+</body>
+</html>

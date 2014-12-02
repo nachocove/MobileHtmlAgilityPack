@@ -1,0 +1,782 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"
+                      "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+  <title>Privacy P3P FAQ</title>
+</head>
+
+<body text="#000000" bgcolor="#FFFFFF">
+<h1>P3P and Privacy on the Web FAQ</h1>
+<i>Version: 2.1.0</i> <br>
+<i>Date: 18-April-2000</i> <br>
+<i>Author: Joseph M. Reagle Jr., Rigo Wenning</i> <br>
+<i>Latest Version: <a
+href="http://www.w3.org/P3/P3FAQ.html">http://www.w3.org/P3P/P3FAQ.html</a></i>
+
+<p></p>
+<ul>
+  <li type="I"><a href="#Introducti">Introduction to P3P</a>
+    <ol>
+      <li><a href="#What is P3">What is P3P?</a></li>
+      <li><a href="#What is the Status of P3">What is the Status of
+      P3P?</a></li>
+      <li><a href="#W3C's">Is P3P 1.0 the end of W3C's work on
+      privacy?</a></li>
+      <li><a href="#I.4.">What happened to the negotiation and transfer
+        protocol?</a></li>
+      <li><a href="#I.5.">What is the status of the patent-claims on
+      P3P?</a></li>
+      <li><a href="#taken">Why has P3P taken so long to reach candidate
+        recommendation?</a></li>
+      <li><a href="#changed?">How has P3P changed and why did it change in
+        this way?</a></li>
+      <li><a href="#Implemented_P3P">Who has Implemented P3P?</a></li>
+    </ol>
+  </li>
+  <li><a href="#III.">Technology</a>
+    <ol>
+      <li><a href="#RDF">RDF/XML</a></li>
+      <li><a href="#II.2.">What is APPEL and what is it's relationship to
+        P3P?</a></li>
+      <li><a href="#OPS Submission - Netscape">OPS Submission --
+      Netscape</a></li>
+      <li><a href="#Privacy and Profiling on the Web -Microsoft">Privacy
+        and Profiling on the Web -- Microsoft</a></li>
+      <li><a href="#Is W3C working on OPS?">Is W3C Working on OPS?</a></li>
+      <li><a href="#Who is involved in working on P3?">Who is Working on
+        P3P?</a></li>
+      <li><a href="#What is the difference between P3 and OPS?">What is the
+        Difference Between P3P and OPS?</a></li>
+      <li><a href="#Cookies">Cookies</a></li>
+      <li><a href="#II.9">Can P3P address embedded content?</a></li>
+      <li><a href="#II.10">Does P3P require new server software?</a></li>
+      <li><a href="#II.11">How does P3P impact Web performance?</a></li>
+      <li><a href="#II.12">What are Categories?</a></li>
+      <li><a href="#II.13">Can P3P address different policies for the same
+        server or one policy for multiple servers?</a></li>
+      <li><a href="#II.14.">What's the scope of a P3P policy?</a></li>
+      <li><a href="#II.15">Does P3P specify a common policy for
+      opt-out?</a></li>
+      <li><a href="#II.16.">Is P3P designed to allow anonymous
+      surfing?</a></li>
+    </ol>
+  </li>
+  <li><a href="#Privacy">Privacy and P3P</a>
+    <ol>
+      <li><a href="#solve">Does P3P solve all privacy concerns on the
+      Web?</a></li>
+      <li><a href="#III.2">Is P3P doomed to fail, because it is not in the
+        interest of commerce?</a></li>
+      <li><a href="#encryption">Does P3P limit the need for other technologies
+        like encryption?</a></li>
+      <li><a href="#regulatory">How does P3P fit into various regulatory
+        frameworks?</a></li>
+      <li><a href="#impact">What will the ultimate impact on users' privacy
+        and Web commerce be?</a></li>
+      <li><a href="#III.6">Is P3P replacing blocking software like
+        junkbuster<sup>[tm] </sup>or webwasher?</a></li>
+      <li><a href="#Europe">Can P3P be used in Europe?</a></li>
+      <li><a href="#Directive">Is P3P compliant with the Data
+      Directive?</a></li>
+      <li><a href="#American">Is P3P an American technology?</a></li>
+      <li><a href="#legal">How can a user of P3P know if a sites practices are
+        legal?</a></li>
+      <li><a href="#outside">How does P3P deal with users browsing Web sites
+        outside of their country?</a></li>
+    </ol>
+  </li>
+</ul>
+
+<h1><a name="Introducti">I. Introduction to P3P</a></h1>
+
+<p></p>
+
+<h3><a name="What is P3"></a>I.1. What is the Platform for Privacy Preferences
+(P3P) Project?</h3>
+
+<p></p>
+
+<p>The <a href="http://www.w3.org/Privacy/">Platform for Privacy Preference
+Project </a>is an activity of the <a href="http://www.w3.org/">The World Wide
+Web Consortium.</a> For brevity, we often refer to the Platform for Privacy
+Preferences project, activity, products, or specifications as "P3P."<a
+href="#*">*</a>  The Platform for Privacy Preferences Project (P3P) enables
+Web sites to express their privacy practices in a standard format that can be
+retrieved automatically and interpreted easily by user agents. P3P user agents
+will allow users to be informed of site practices (in both machine- and
+human-readable formats) and to automate decision-making based on these
+practices when appropriate. Thus users need not read the privacy policies at
+every site they visit.</p>
+
+<p>Although P3P provides a technical mechanism for ensuring that users can be
+informed about privacy policies before they release personal information, it
+does not provide a technical mechanism for making sure sites act according to
+their policies. Products implementing this specification MAY provide some
+assistance in that regard, but that is up to specific implementations and
+outside the scope of this specification. However, P3P is complementary to laws
+and self-regulatory programs that can provide enforcement mechanisms. In
+addition, P3P does not include mechanisms for transferring data or for
+securing personal data in transit or storage. P3P may be built into tools
+designed to facilitate data transfer. These tools should include appropriate
+security safeguards.</p>
+
+<p>The aim of P3P is to increase user trust and confidence in the Web. The
+ideas behind the design of this technology were written down in an annex to
+the Specification called "<a href="../TR/P3P#guiding_principles">Guiding
+Principles</a>".</p>
+
+<p></p>
+
+<h3><a name="What is the Status of P3"></a>I.2. What is the Status of P3P
+1.0</h3>
+
+<h4>First Phase (Ended October '97)</h4>
+At the completion of the first phase of working groups in October '97, the W3C
+publicly released the the <a
+href="http://www.w3.org/TR/WD-P3P-arch.html">Architectural Overview</a> and 
+<a href="http://www.w3.org/TR/WD-P3P-grammar.html">Grammatical Model</a>
+Drafts. The Architecture Working Group synthesized W3C work (the <a
+href="#RDF">RDF</a> "meta-data" work stemming from our <a
+href="http://www.w3.org/PICS">PICS</a> activity), the <a href="#OPS">Open
+Profiling Standard (OPS)</a>, the <a href="#MS Profiling">Profiling and
+Privacy</a> submission, and work from other W3C members to create a general
+architecture for privacy notice. The Vocabulary/Grammar Working Group focussed
+on how one makes meaningful statements about privacy in a way that is
+understandable by humans and computers.
+
+<h4>Second Phase (Ended March '98)</h4>
+The second phase consisted of two working groups. The Protocols and Data
+Transport group specified the communication primitives necessary for sending
+P3P requests and practices across the Web. The protocol works over HTTP1.0+.
+
+<p>The Harmonized Vocabulary Working Group specified a vocabulary used for
+describing Web privacy practices. It was designed to be reflective of a
+diversity of privacy laws, self-regulatory norms, and cultural notions about
+privacy. This vocabulary can be used to express policies as diverse as
+anonymous browsing to the provision of personalized Web content and
+services.</p>
+
+<p>The <b><a href="http://www.w3.org/TR/1998/WD-P3P-harmonization">P3P
+Harmonized Vocabulary Specification Public Working Draft</a></b> was made
+available on 30 March 98. The Protocol and Data Transport White Paper will be
+publicly released in May '98, concurrent with the publication of the P3P1.0
+Working Draft (from the Syntax and Encoding Working Group) since much of the
+protocol has been simplified by the latter group.</p>
+
+<h4>Third Phase (Last-Call, ends 30-April 2000)</h4>
+
+<p>After the patent-issue, the P3P-Activity had to cross some troubled water.
+P3P has a special position within the work of W3C, as it had some unattended
+problems and treats a particularly complex area.(see the related question I.6)
+Finding a solution was hardened by the complex transatlantic struggle over
+privacy values.  On 11-November 1999, the group issued his Last-Call Draft. In
+the W3C-Process, this means, that the group is checking dependencies with
+other W3C-technologies and looks for feedback from the public. Taking the
+extraordinary situation of P3P into account, W3C decided to extend the period
+of Last-Call from normally 6 weeks to 6 months to permit a maximum feedback
+from all stakeholders. After the release of the first public Last-Call-Draft,
+the Specification-Group had strong feedback from the public. In October 1999,
+the Policy-Outreach-Working-Group was added to the Activity to treat with the
+multiple policy implications and to help in the deployment of P3P. Due to the
+strong feedback, the Working-Draft has known major changes. The <a
+href="http://www.w3.org/TR/P3P">latest Draft</a> is from 4-April 2000 and the
+next Draft is expected around 24-April 2000.</p>
+
+<h4>Fourth Phase (Candidate Recommendation, May to Automn)</h4>
+
+<p>After checking dependencies and input from the public during the last-call
+period and having cleared all remaining issues, the P3P-Specification will be
+moved to Candidate Recommandation. In this state, W3C is solliciting
+implementations of this Specification. There will be workshops, where
+implementers can test the interoperability of their products and prototypes.
+The <a href="http://www.w3.org/P3P/interop.html">first interop-workshop</a>
+will be on 21-June 2000 in Manhattan. A second interop-workshop will take
+place in Venice at the end of September during the world meeting of data
+commissioners. A third interop in Asia is not excluded.</p>
+
+<h3><a name="future"></a>I.3 Is P3P 1.0 the end of W3C's work on
+privacy?</h3>
+
+<p>There is interest in future versions of P3P. Much of the current Activities
+within W3C have to address privacy. There are other initiatives within W3C,
+like CC/PP, the protocol to address the Device dependent services for mobile
+phones and PDA's or W3C's work on Position-dependent services, which will need
+negotiation and other features in the future to be able to address privacy.
+There are also a <a href="../TR/P3P#Implementing">lot of features left out in
+P3P 1.0</a> for faster implementation, that could be addressed in a renewed
+Activity. When the work on XML Signature is finished, this will also enable
+P3P, as it is written in XML, to address the issue of authentication of a
+policy-issuer. This work would have to be chartered and instantiated according
+to W3C <a href="http://www.w3.org/Consortium/Process/">process</a>.</p>
+
+<h3 id="I.4."><a name="negotiation"></a>I.4. What happened to the negotiation
+and data-transfer protocol?</h3>
+
+<p>The negotiation was removed from the P3P 1.0 Specification. The
+P3P-Specification Working-Group felt, that the protocol for negotiation and
+data-transfer is far to complex to implement and would hinder a first rapid
+and widespread implementation and deployment of P3P-Technology. At the time of
+the decision, there was not that much interest from the industry to implement
+the data-transfer mechanism. The favor was given to electronic wallets and
+there was no initiative to standardize this kind of application. Also, there
+was a lot of critique in the US about the data-transfer-protocol and
+negotiation while in Europe, the Data Commissioners still want to see
+negotiation in P3P. The Specification-Group therefor decided to postpone the
+further work on negotiation and data-transfer to a future version of P3P. See
+the also the page from Daniel La Liberte on the removal of <a
+href="data-transfer.html">data-transfer</a>.</p>
+
+<h3><a name="patent"></a><a name="I.5.">I.5. What is the status of the
+patent-claims on P3P?</a></h3>
+
+<p>The P3P Activity had more to bear than just the policy implications, which
+was rather new to a body like W3C. It had also to face the problem, that
+participants of early Working-Groups were working on a patent on the same
+technology. When Intermind Inc. announced it's patent claims on
+P3P-Technology, the Activity stalled for a moment. W3C has spend ressources
+and ordered an <a href="../TR/P3P-analysis">expertise on the patent claims</a>
+from a major patent-law firm. In his outline on the result, Barry Rein
+explained, why implementing P3P does not infringe the patent of Intermind Inc.
+As P3P 1.0 contains neither negotiation nor data-transfer, there is nearly no
+risk of Infringement of US Patent 5,862,325.</p>
+
+<h3 id="taken">I.6 Why has P3P taken so long to reach candidate
+recommendation?</h3>
+
+<p>The P3P-Activity suffered from multiple struggles, that reinforced each
+other.</p>
+
+<p>Let's begin with technology. When P3P began, there was also the beginning
+of RDF. PICS as a format was not rich enough to express the complex statements
+about privacy that were needed. But with PICS W3C had a first experience with
+a so called "social protocol". RDF offered the opportunity to allow a much
+richer  vocabulary. But RDF had not yet Schemas, so the data-format of P3P was
+invented from scratch in an own format. At the moment, when everybody was
+feeling, that P3P will be in it's final stage, the patent claim of Intermind
+was a shock for the Working-Groups around P3P and for W3C too. Many active
+participants stopped their work on P3P, because they considered it too risky
+to continue the project and face claims for royalties or denial of license
+afterwards. The Activity around P3P stalled for a while. But not all Members
+stepped out of the project. IBM, AT&amp;T, NEC, CDT, Truste, Microsoft and
+American Express continued to support P3P. As W3C is a relativly young
+standards body, it was the first time, that it had to face this kind of issue.
+It took some time to determine, how to handle this issue. In the meantime, XML
+was invented and became a hype. Due to the patent-issue, the WG was not fast
+enough to finish before the XML-hype. So P3P had also to accomodate this new
+format and reinvent a lot of things, that were already done. (The future will
+show whether this was good or bad for P3P)</p>
+
+<p>Additionally, the W3C-staff responsible for the activity kept on changing.
+After Joseph Reagle had left P3P to work on XML Signature, Rolf Nelson worked
+on P3P. As he left W3C, Daniel La Liberte took over. With the help of Lorrie
+Cranor as a very active chair, remaining active members and participants, and
+the strong support from Danny Weitzner, the T-and-S Domain Lead, La Liberte
+was able to steer the Activity back to a new vitality. He left W3C at the
+beginning of 2000 to join Crystalize, a W3C-Member, and continues to be part
+of the P3P-Specification-Group. New Team-Member Rigo Wenning took over and
+continued his work with two very active Working-Groups.</p>
+
+<p>As one can see in the policy-section of this FAQ, P3P was in the middle of
+several political struggles over privacy. First, there was a strong influence
+of the US-battle over the question, whether privacy should be regulated by law
+or industry-driven self-regulation. By some stakeholders, P3P was presented as
+the technology, that solves this conflict of interests. Despite several
+expressions of the P3P-Developpers, that P3P is only a complementary tool,
+this was held as a strong critique against P3P. At the same time, P3P was also
+hit by the conflict between the EU and the US over transatlantic flow of
+personal data. The EU Directive on the protection of personal data required
+adequate protection to let the data flow. "Safe Harbour" is one of the
+buzzwords in this ongoing struggle. In the changing political environment, the
+needs expressed to P3P-Developpers changed also.</p>
+
+<h3><a name="changed?">I.7 How has P3P changed and why did it change in this
+way?</a></h3>
+
+<p>It is very difficult to answer this question shortly. At the beginning, P3P
+was more oriented towards e-commerce. Over time and with a lot of feedback
+from outside, P3P changed and was enhanced by contributions from all over the
+world. From the beginning on, the P3P-Developpers came from three continents:
+America, Europe and Asia. The aim was to provide a platform, which would be
+able to express values of very different legal and social environments. The
+first very ambitious approach to provide a privacy-tool with negotiation and
+automated data-transfer was too complicated for a rapid deployment. It was
+removed. The language for policies was rewritten in XML to provide a simpler
+interface for people writing policies and to follow the main stream in
+e-commerce. Also, at the beginning the idea of better service to users seemed
+to be of a major concern. Following the feedback from Privacy Activists and
+from the European Commission, there was a shift towards a more balanced
+vocabulary. In October 1999, the Policy Outreach Group started and gave a lot
+of feedback on the vocabulary. New features, like the physical address of the
+service, remedies and retention and other useful features were added. The
+active debate of Data Commissioners and Privacy Activists with people from
+Industry gave us a good result and provided a viable solution. The Developers
+had also a careful eye, that P3P, especially the data schema, could also be of
+use for business-to-business applications.</p>
+
+<h3><a name="Implemented_P3P"></a>I.8 Who has implemented P3P?</h3>
+
+<p>After the end of the Last-Call period, the specification is stable, but not
+yet recommended. When the P3P-Specification goes to Candidate Recommendation,
+W3C is encouraging implementations. There are already some
+test-implementations based on older Working-Drafts and ongoing work on
+implementing P3P: See  <a href="implementations.html">Implementation
+References</a> for a list of known implementations and services related to
+P3P..</p>
+
+<p>We encourage every interested implementer to contact the P3P-Team to
+participate in one of the planned interop's. The first interop will be held on
+21-June 2000 in New York. There will be a second interop in Venice in
+September. We expect implementations from the US, Europe and Japan. We do not
+believe an incomplete implementation of P3P will satisfy the privacy
+requirements of the Web community.</p>
+
+<p></p>
+
+<h2 id="III.">II. Technology</h2>
+There are a number of efforts, proposals, and organizations addressing Web
+privacy. We do not believe technology alone can address the many issues
+associated with privacy online. This section briefly explains the differences
+between these efforts from the <a href="http://www.w3.org/">W3C's</a> point of
+view as well as some frequently asked questions about features in P3P.
+
+<p>A model to have in mind when examining P3P is that it leverages much
+existing work, and that many products and services can be built upon the
+Platform for Privacy Preferences. P3P is based on <a
+href="http://www.w3.org/RDF/Overview.html">RDF</a>/<a
+href="http://www.w3.org/XML/">XML</a>.. Other products and services can then
+be built upon P3P. For instance, on top of the Platform, others can offer
+assurance, auditing services, arbitration or mediation to ensure such privacy
+statements are valid or provide help in different models of privacy
+protection.</p>
+
+<h3>II.1 <a name="RDF"></a>RDF and XML</h3>
+<a href="http://www.w3.org/RDF/Overview.html">RDF</a>/<a
+href="http://www.w3.org/XML/">XML</a> are the meta-data and encoding
+specifications that we will use for exchanging information in P3P. Our <a
+href="www.w3.org/PICS">PICS</a> effort allowed one to make simple statements
+about Web resources. RDF will give us a more generalized and sophisticated
+framework for discussing privacy practices and preferences. In the Cambridge
+Communiqué, the RDF and the XML Community agreed, that documents should be
+expressed in XML, while meta-data and statements about documents should be
+expressed in RDF. RDF itself is based on XML, a means of structuring data. The
+policies are written in XML, but they can easily be transformed into RDF. An
+annex of the Specification provide's a model for expressing the P3P-model also
+in RDF.
+
+<h2 id="III.2.">II.2. What is <a href="../TR/P3P-preferences">APPEL</a> and
+what is it's relationship to P3P?</h2>
+
+<p><a href="../TR/P3P-preferences">APPEL</a> specifies a language for
+describing collections of preferences regarding P3P proposals between P3P
+agents. Using this language, a user can express her preferences in a set of
+preference-rules (called <b>ruleset</b>), which can then be used by her
+user-agent to make automated or semi-automated decisions regarding the
+exchange of data with P3P enabled Web sites.</p>
+
+<p><b>Note:</b> This language is intended as a transmission format; individual
+implementations must be able to read and write their specifications in this
+language, but need not use this format internally.</p>
+
+<p><strong>Goals of A P3P Preference Exchange Language</strong></p>
+
+<p>The P3P1.0 specification provides a syntax for specifying proposals and a
+protocol and associated syntax for exchanging information between the Web site
+and user agent. It does not not specify requirements upon the graphical user
+interface (GUI) or trust engines. However, there are benefits to being able to
+express the preferences as captured by the GUI and processed by the trust
+engine:</p>
+<ul>
+  <li><b>Sharing and installation of rulesets.</b> Sophisticated preferences
+    may be difficult for end-users to specify, even through well-crafted user
+    interfaces. An organization can create a set of recommended preferences
+    for users. Users who trust that organization can install a pre-defined
+    ruleset rather than specifying a new set from scratch. It will be easy to
+    change the active ruleset on a single computer, or to carry a ruleset to a
+    new computer.</li>
+  <li><b>Communication to agents, search engines, proxies, or other
+    servers.</b> Servers of various kinds may wish to tailor their output to
+    better meet users' preferences, as expressed in a ruleset.  For example, a
+    search service can return only links that match a user's ruleset, which
+    may specify criteria based on a variety of factors including quality,
+    privacy, age suitability, or the safety of downloadable code.</li>
+  <li><b>Portability between products.</b> The same ruleset will work with any
+    P3P-APPEL enabled product.</li>
+</ul>
+
+<p></p>
+
+<h3>II.3 <a name="OPS Submission - Netscape"
+href="http://www.w3.org/Submission/1997/6/"></a><a
+href="http://www.w3.org/Submission/1997/6/" name="OPS Submission -
+Netscape">OPS Submission </a>- <a href="http://www.netscape.com">Netscape</a>,
+<a href="http://www.firefly.com/">Firefly</a>, and <a
+href="http://www.verisign.com/">VeriSign</a></h3>
+<a href="http://www.w3.org/Submission/1997/6/">The Open Profiling Standard
+(OPS)</a> is co-authored by <a href="http://www.netscape.com/">Netscape</a>,
+<a href="http://www.firefly.com/">Firefly</a>, and <a
+href="http://www.verisign.com/">VeriSign</a> and was submitted to the W3C for
+review by the P3P project. This specification proposes a means for the
+exchange of user profile information -- how to store and release, under the
+user's permission, data which is often requested or required by a Web service.
+
+<h3>II.4 <a name="Privacy and Profiling on the Web - Microsoft1"
+href="http://www.w3.org/Submission/1997/7/"></a><a
+href="http://www.w3.org/Submission/1997/7/" name="Privacy and Profiling on the
+Web - Microsoft">Privacy and Profiling on the Web Submission</a> - <a
+href="http://www.microsoft.com">Microsoft</a></h3>
+
+<p>This document provides a proposal for options to be considered in the
+development of a privacy and profiling specification. This document delineates
+a number of architectural options for the P3P project.</p>
+
+<h3>II.5 Is W3C working on OPS?</h3>
+
+<p>No. W3C is working on P3P. At the start, a part of it was influenced by the
+OPS submission.</p>
+
+<h3><a name="Who is involved in working on P3?"></a>II.6 Who was/is working on
+P3P?</h3>
+
+<p>As of the date of this document, the following members have been publicly
+involved with P3P efforts: American Express, America Online, Art Technology
+Group, AT&amp;T Labs, Center for Democracy and Technology, Citigroup, Digital
+Equipment Corporation, DISA, DoubleClick, Engage Technologies, Ernst &amp;
+Young LLP, Firefly Network Inc, IBM, Intermind Corporation, MatchLogic,
+Microsoft, MIT, Narrowline, NEC, Netscape Communications, Open Market Inc.,
+Open Sesame, Oracle Corporation, Sony, The DMA, TRUSTe, VeriSign and GMD.</p>
+
+<p>Other parties beyond W3C members (invited experts) have been involved in
+the work of P3P. These participants can be found in the <b>Contributor</b>
+section of P3P working group deliverables. It is worth noting the efforts
+given to the P3P-project by the Office of the Information <a
+href="http://www.ipc.on.ca/">Privacy Commissioner of Ontario</a> and the <a
+href="http://www.rewi.hu-berlin.de/Datenschutz/DSB/SH/">Schleswig-Holstein
+Data Commissioner.</a> who are invited experts.</p>
+
+<p>The Working Group would also like to thank the many contributors, which
+gave feedback on the <a
+href="http://lists.w3.org/Archives/Public/www-p3p-public-comments/">P3P public
+mailing-list</a>.</p>
+
+<h3>II.7 <a name="What is the difference between P3 and OPS?"></a>What is the
+difference between P3P and OPS?</h3>
+
+<p>While P3P and OPS are somewhat similar, the focus and originating
+requirement of each technology is different. P3P was initially focussed on
+enabling the expression of privacy practices and preferences. OPS's focus was
+on the secure storage, transport, and control of user data. It has been clear
+to the developers of P3P from the beginning that "data exchange" is relevant
+to P3P. (If a site asks you for a piece of information, they might as well
+tell you what their practice is.) When OPS was submitted to P3P, P3P members
+decided to examine OPS and determine how to integrate P3P with data exchange.
+To put it simply, P3P originally allowed a service and user to reach an
+explicit understanding about the site's data privacy practices. OPS allows
+users to control the release of their data in a secure manner. Today, all the
+data-transfer protocol is removed from P3P, see also <a
+href="#negotiation">question I.4</a></p>
+
+<h3>II.8 <a name="Cookies"></a>Cookies</h3>
+HTTP is a stateless protocol. Servers do not know if requests for any two
+pages or objects embedded within them (like GIFs) were generated from the same
+person. Many Web sites wish to have a "session" with a user, meaning that
+state is retained for each user browsing a site. <a
+href="http://www.cookiecentral.com/">Cookies</a> usually do not contain very
+much data; they typically act like a 'customer number'. For instance, if I
+place an orange in my shopping basket on one page, when I go to the next page,
+the site would see I am the same user who placed the orange in my shopping
+basket previously. This is known as "session state." Cookies have also been
+used to create "persistent state." Meaning if I return to that site 3 days
+later, they can know I am the same user who visited 3 days ago and purchased
+an orange. Information in cookies are generally available only to the creator
+of the cookie. The relevance of that data is useful to those who can look up
+the information associated with the "customer number."
+
+<p>Cookies have been contentious of late because of the way in which users are
+prompted to accept cookies, particularly cookies which come from "external"
+sites. (One site can embed a cookie from another site in its own page.)</p>
+
+<p>The W3C is not working on cookies. However, P3P does include a mechanism
+that will support some of the functionality sites derive from cookies. This
+functionality is then under explicit P3P control and has privacy disclosures
+associated with it. Additionally, the P3P contains a "Safe Zone", which
+doesn't allow P3P-compliant servers to set a cookie before the client has
+fetched the privacy-policy. User-agents could block cookies in the "Safe
+Zone". See also the question about the "Safe Zone".</p>
+
+<p>A number of efforts are underway at the <a
+href="http://www.ietf.org">IETF</a> to give cookies a greater privacy
+framework. Including a <a href="ftp://ds.internic.net/rfc/rfc2109.txt">new
+version</a> of the cookie protocol, and a proposal for <a
+href="http://www.w3.org/PICS/extensions/cookieinfo-1_0.html">labeling cookies
+with privacy disclosures</a>.</p>
+
+<h3 id="II.9">II.9 Can P3P address embedded content?</h3>
+
+<p>Embedded content are all the images and things, that are loaded together
+with a document (e.g. an HTML-page). Normally, the embedded content comes from
+the same server, as the main document. This content can easily be addressed by
+the so called "realm", to which a certain policy applies. Things get much more
+complicated, when an author embedd's content from a site, where he has no
+control over the privacy policy. A perfect example to this issue are
+banner-ads, which come from a different server than the one serving the
+HTML-page. The policy-reference file would allow also to make a statement
+about this embedded content, if there is control of the author of a page over
+the privacy policy, which applies to the embedded content. In absence of
+control over the embedded content, the user agent will first verify the
+privacy-policy attached to this embedded content by a head request, before
+requesting the content itself. For this (Head-) request, the "Safe Zone"
+applies.</p>
+
+<h3 id="II.10">II.10 Does P3P require new server software?</h3>
+
+<p>P3P 1.0 uses the normal http 1.1 protocol for the exchange of policies. The
+matching of the policies to the preferences takes place on the client. So P3P
+could be installed on major Server implementations like Apache, Jigsaw,
+Netscape-Server or Internet Informations Server from Microsoft. The
+Specification Working Group has developed some guidelines for
+configuration.</p>
+
+<h3 id="II.11">II.11 How does P3P impact Web performance?</h3>
+
+<p>In a distributed system like the World Wide Web, with high network
+latencies and never enough bandwidth, caching is very important to give
+acceptable performance to users. In this light, it is important to consider
+the interaction of P3P with caches in the network. The P3P-Specification
+contains a whole subtree on the subject of caching policies and references.
+But already in the design of P3P, the group spent a lot of effort to improve
+performance. With the policy-reference file, a server can define for a whole
+site, which policy applies to which "realm" or page. The link to this file can
+be given by a Head-request or by a LINK-tag within the header of a HTML-page.
+The use of LINK-tag/Header in conjunction with a policy reference file reduces
+the amount of transfered data and spares additional roundtrips.</p>
+
+<h3 id="II.12">II.12 What are Categories?</h3>
+
+<p>Categories are attributes of data elements that provide hints to users and
+user agents as to the intended uses of the data. Categories are vital to
+making P3P user agents easier to implement and use; they allow users to
+express more generalized preferences and rules over the exchange of their
+data. Categories are often included when defining a new element or when
+referring to data that the user is prompted to type in (as opposed to data
+stored in the user data repository). Categories themselves are not
+data-elements, but are a more generalized description of a set of single
+data-elements, which belong to this category. A single data-element like
+user.name.personname can belong to multiple categories at the same time. See
+the Chapter in the Specification for more information.</p>
+
+<h3 id="II.13">II.13. Can P3P address different policies for the same server
+or one policy for multiple servers?</h3>
+
+<p>By it's policy-reference-file, by defining "realms" in the header of the
+answer, servers can not only define different policies on the same server, but
+also a same policy for different servers. To define different policies on the
+same server can be useful, when there are pages, that can be browsed and where
+the service doesn't collect any data and other pages for shopping or feedback,
+where data is collected and a certain purpose would be addressed. One could
+also imagine, that in parts of the server the purpose of data collection is
+different from another part. All this can be addressed. If there is huge
+service with different servers where only one policy applies, this can also be
+addressed by the reference-mechanism provided by P3P 1.0. For more detail, see
+the <a href="../TR/P3P#reference">reference-section</a> in the
+P3P-Specification.</p>
+
+<h3 id="II.14.">II.14. What's the scope of a P3P policy?</h3>
+
+<p>As we have seen in <a href="#II.13">question II.13</a> P3P has very
+flexible means to address the range of pages and servers which are addressed
+by a policy. In addition, policies identify the data recipients, and make a
+variety of other disclosures including information about dispute resolution,
+and the address of a site's human-readable privacy policy. P3P policies must
+cover all relevant data elements and practices (but note that legal issues
+regarding law enforcement demands for information are not addressed by this
+specification; it is possible that a site that otherwise abides by its policy
+of not redistributing data to others may be required to do so by force of
+law). P3P declarations are positive, meaning that sites state what they do,
+rather than what they do not do.</p>
+
+<h3 id="II.15">II.15. Does P3P specify a common policy for opt-out?</h3>
+
+<p>The P3P specificatiion does not directly address opt-out. We do have a
+change_preferences field in our public working draft. In general, many
+companies offer individuals an opportunity to opt-out of certain types of uses
+of their data. For example, a company may allow you to opt-out of having your
+name included on their mailing list. Whether your name is actually erased
+entirely from their database depends on the company. If you are a customer,
+they will probably keep your name so that they have a record of whatever
+transactions you have done with them. You may find additional information
+about opt out on the Online Privacy Alliance web site at <a
+href="http://www.privacyalliance.org/">http://www.privacyalliance.org/</a></p>
+
+<h3 id="II.16.">II.16. Is P3P designed to allow anonymous surfing?</h3>
+
+<p>There is already existing software, which is designed to minimize the data
+your client transfers to a server. They also fake wrong information and pass
+it to a server. Another approach is to have different pseudonyms for the
+purpose of surfing. P3P addresses only a minor part by specifying a "Safe
+Zone" in which a P3P-compliant server should only gather a minimum of
+information about a client, e.g. the IP-Address to prevent malicious attacks,
+and that also there shouldn't be a long retention of that IP-Address.</p>
+
+<p></p>
+
+<h2>III. P3P and <a name="Privacy"></a>Privacy</h2>
+
+<h3>III.1 Does P3P <a name="solve"></a>solve all privacy concerns on the
+Web?</h3>
+No. P3P focuses on privacy practice disclosure with respect to data collected
+through Web interactions.
+
+<p></p>
+
+<h3><a name="III.2">III.2 Is P3P doomed to fail, because it is not in the
+interest of commerce?</a></h3>
+
+<p>By reducing complexity of human readable privacy - policies into a
+machine-readable format, P3P allows experts like self-regulation bodies and
+data commissioners to transport their knowledge as a software or as policies
+and preferences over the net. Ideally, the complexity for businesses to comply
+and follow fair privacy practices will decrease too by the use of P3P.</p>
+
+<p>By specifying a common format for data and vocabulary, a user agent could
+trace, where a user has left data for what purpose, which increases the
+possibility for data self-determination. At the same time, the common
+extensible XML-based data-format will decrease transformation-costs for
+business. By specifying a machine-readable privacy-language, privacy-values
+and -preferences can be included into databases, thus enabeling business to
+better respect user's preferences or law-requirements. In order to deploy
+P3P-based technology, it is useful to create a model for a win/win situation
+for users and business.</p>
+
+<p></p>
+
+<h3>III.3 Does P3P limit the need for other privacy technologies like <a
+name="encryption"></a>encryption or Web anonymizers?</h3>
+Definitely not. In fact, in order to "do one thing, and do it well" we focus
+P3P on its mission of establishing privacy disclosure and defer to other
+privacy technologies for communications and storage confidentiality. For
+instance, users must be able to express preferences such that, "I will only
+give my credit card information to sites over a secured communication channel
+such as SSL or SET." We don't attempt to reinvent anonymizers, encryption or
+payment protocols within P3P but it will be able to work with all of these
+things.
+
+<h3>III.4 How does P3P fit into various <a name="regulatory"></a>regulatory
+frameworks?</h3>
+Currently, there is a great deal of policy debate regarding the correct
+regulatory framework for data protection and privacy. This debates occurs
+along a number of lines: industry-self-regulation versus government
+regulation, sectorial regulation versus omnibus regulation, and which policy
+instruments are most effective (contractual obligations and liability,
+auditing, trusted third parties and marks, criminal or civil penalties,
+ombudsman, etc.). The W3C takes no position on the efficacy or desirability of
+any specific policy. Instead, we work with the relevant constituencies to 1)
+ensure that our technical design will support a wide range of options and 2)
+explain the scope and capabilities of P3P.
+
+<h3>III.5 What will the ultimate <a name="impact"></a>impact on users' privacy
+and Web commerce be?</h3>
+Two concerns regarding P3P are frequently expressed:
+<ul>
+  <li>users will sell or barter away their privacy to get access to a
+  site.</li>
+  <li>sites' traditional practices (such as collecting HTTP log activity -- <a
+    href="http://www.w3.org/Consortium/Legal/privacy-statement.html#Public">the
+    W3C does it itself</a>) will be challenged/threatened.</li>
+</ul>
+P3P is predicated on the assumption that IF sites and users wish to exchange
+information it should happen in the context of an explicit agreement. The
+technology should not preclude a mutually satisfactory balance from being
+achieved. Otherwise, this issue is an important policy debate for society at
+large. P3P is designed such that it is the individuals, markets, and
+regulatory frameworks that ultimately determine the balance -- as it should
+be.
+
+<p></p>
+
+<h3 id="III.6">III.6 What is the scope of P3P. Is P3P replacing blocking
+software like junkbuster<sup>[tm]</sup> or webwasher?</h3>
+
+<p>P3P is definitly not a technology that replaces all current Privacy
+Enhancing Technologies (PET's). But the scope and way of addressing privacy is
+different from the currently known software, which tries to limit the amount
+of data, or fake's data, that a server can retrieve. These blocking tools, as
+they could be called, are only addressing the issue of hidden and unnotified
+collection of data. P3P goes far beyond that. When doing e-commerce,
+especially in the business-to-consumer area, sometimes a user must give his
+data to receive a service or a good. One could also imagine cases, where the
+user want's to give his data away for better service. But must this be the end
+of privacy? Can this data then be used freely, because it is out? A blocking
+tools doesn't help in this context. With P3P, it is possible to express the
+further use of this data and naturally the limitations of that use. But
+remember, P3P doesn't guarantee that the service behind the policy does what
+it announced to do with your data. Blocking tools are still very useful to
+prevent unnoticed collection of data. This could be combined in an P3P-enabled
+user-agent.</p>
+While the following questions is often cast from the perspective of Europe,
+they could equally apply to any jurisdiction.
+
+<h3>III.7 Can P3P be used in <a name="Europe"></a>Europe?</h3>
+Presently, yes. However, merely using P3P does not excuse a service from the
+legal obligations it may have. It could be used in any jurisdiction if it
+<i>is used in a way </i>that complies with the laws of that jurisdiction. P3P
+is a method of making consensual and informed decisions on the basis of
+privacy practice disclosures. This may be sufficient in some cases; it may not
+be in others. For instance, some jurisdictions may have specific data
+collection, access, and retention prohibitions or requirements. Or they may
+have additional enforcement and reporting requirements. The flexibility to
+solicit information and make a wide range of disclosures does not
+<i>necessarily</i> mean that all solicitations and privacy practices are
+permissible. Rather, the flexibility enables P3P to be used in conjunction
+with various laws and policies the world over.
+
+<h3>III.8 Is P3P compliant with the Data <a
+name="Directive"></a>Directive?</h3>
+It is not exactly clear how the directive (or P3P) will be implemented.
+Regardless, we are not in the position to make such an assessment. However,
+P3P was carefully crafted to ensure that its design did not preclude it from
+being used in Europe or elsewhere.
+
+<p>Use of P3P on its own does not constitute compliance with the Data
+Directive, however P3P can be an important part of directive compliance for
+Web services.</p>
+
+<h3>III.9 Is P3P an <a name="American"></a>American technology?</h3>
+Many of the prominent member companies that worked on P3P are based in the US
+but have international interests. The design of the data practices vocabulary
+(the part most related to policy) was definitely an international effort.
+Nearly half of the members of the Working Group that worked on the vocabulary
+were invited privacy experts and privacy commissioner staff, many of which
+were from Europe.
+
+<h3>III.10 How can a user of P3P know if a sites practices are <a
+name="legal"></a>legal?</h3>
+Services have the ability to represent if their practices are bound by a legal
+entity or other assurance party. This party <b>assures</b> that the stated
+practices are valid. This could be the service itself, a third party auditor,
+trust mark, or a regulatory body. Consequently, a service could refer to a
+regulatory authority to represent its practices are in compliance with his
+local jurisdiction's regulations.
+
+<h3>III.11 How does P3P deal with users browsing Web sites <a
+name="outside"></a>outside of their country?</h3>
+Issues related to privacy protection across jurisdictions are complex; this is
+why we designed P3P as we did. A compelling feature of P3P is that it is based
+on privacy disclosures. Consequently, regardless of where a user goes, they
+have the capability to make informed decisions. This also allows users to ask
+for practices which match their own preferences or the governing law of their
+own jurisdiction.
+
+<p> </p>
+
+<p>__</p>
+
+<p><a name="*"></a><font size="-1">* In the past the <a
+href="http://www.w3.org/Privacy/">Platform for Privacy Preference Project
+</a>was referred to as "P3." Due to alleged trademark infringement we decided
+to move to P3P<sup>TM</sup>. P3P is free of competing claims and MIT is filing
+an application for US registration.We advise members and the press who
+reference the project to use the acronym P3P in their press releases or
+literature.</font></p>
+</body>
+</html>

@@ -1,0 +1,227 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+  <title>Participation in W3C by EU-funded Projects</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="Help" href="/Help/" />
+  <link rel="stylesheet" href="/2008/site/css/minimum" type="text/css" media="handheld, all" />
+  <style type="text/css"  media="print, screen and (min-width: 481px)">@import url("/2008/site/css/advanced");</style>
+  <link href="/2008/site/css/minimum" rel="stylesheet" type="text/css" media="handheld, only screen and (max-device-width: 480px)" />
+
+  <meta name="viewport" content="width=device-width"/>
+  <link rel="stylesheet" href="/2008/site/css/print" type="text/css" media="print" />
+  <!-- Custom Stylesheet -->
+  <link href="/Consortium/fees-style.css" type="text/css" rel="stylesheet" media="all"/>
+  <link rel="shortcut icon" href="/2008/site/images/favicon.ico" type="image/x-icon" />
+  </head>
+<body id="www-w3-org" class="w3c_public">
+ <div id="w3c_container">
+  <div id="w3c_mast"> <!-- #w3c_mast / Page top header -->
+
+   <h1 class="logo"><a tabindex="2" accesskey="1" href="/"><img src="/2008/site/images/logo-w3c-mobile-lg" width="90" height="53" alt="W3C" /></a>
+   <span class="alt-logo">W3C</span>
+   </h1>
+   <div id="w3c_nav">
+        <form action="http://www.w3.org/Help/search" method="get" enctype="application/x-www-form-urlencoded">
+       <!-- w3c_sec_nav is populated through js -->
+       <div class="w3c_sec_nav"><!-- --></div>
+           <ul class="main_nav"> <!-- Main navigation menu -->
+
+     <li class="first-item"><a href="/standards/">Standards</a></li><li><a href="/participate/">Participate</a></li><li><a href="/Consortium/membership">Membership</a></li><li class="last-item"><a href="/Consortium/">About W3C</a></li>
+       <li class="search-item">
+      <div id="search-form">
+       <input tabindex="3" class="text" name="q" value="" title="Search" />
+       <button id="search-submit" name="search-submit" type="submit"><img class="submit" src="/2008/site/images/search-button" alt="Search" width="21" height="17" /></button> 
+      </div>
+    </li>
+
+   </ul>
+     </form>
+   </div>
+  </div> <!-- /end #w3c_mast -->
+  <div id="w3c_main"> 
+    <div id="w3c_logo_shadow" class="w3c_leftCol">
+      <img height="32" alt="" src="/2008/site/images/logo-shadow" />
+    </div>
+   <div id="w3c_sidenavigation" class="w3c_leftCol">       <h2 class="offscreen">Site Navigation</h2>
+
+    <h3 class="category"><span class="ribbon"><a href="/Consortium/membership.html" title="Up to Membership">Membership <img src="/2008/site/images/header-link" alt="Header link" width="13" height="13" class="header-link"/></a></span></h3>
+       <ul class="theme">
+        <li><a href="/Consortium/membership-benefits.html">Membership Benefits</a></li>
+        <li><a href="/Consortium/join.html">Join W3C</a></li>
+        <li><a class="current">Participation by EU-Funded Projects</a></li>
+        <li><a href="/Consortium/membership-faq.html">Membership FAQ</a></li>
+
+        <li><a href="/Consortium/Member/List">Current Members</a></li>
+        <li><a href="/Submission/">Member Submissions</a></li>
+        <li><a href="/Consortium/Member/Testimonial/List.html">Member Testimonials</a></li>
+       </ul>
+       <br/>
+      </div>
+   <div class="w3c_mainCol">
+
+          <div id="w3c_crumbs">
+       <div id="w3c_crumbs_frame">
+        <ul class="bct"> <!-- .bct / Breadcrumbs -->
+          <li class="skip"><a tabindex="1" accesskey="2" title="Skip to content (e.g., when browsing via audio)" href="#w3c_content_body">Skip</a></li>
+          <li><a href="/">W3C</a>&#160;<span class="cr">&#x00bb;</span>&#160;</li>
+          <li><a href="/Consortium/membership.html">Membership</a>&#160;<span class="cr">&#x00bb;</span>&#160;</li>
+          <li class="current">Participation in W3C by EU-Funded Projects</li>
+
+        </ul>            
+     </div>
+    </div>    <h1 class="title">Participation in W3C by EU-funded Projects</h1>
+ <ul class="w3c_toc">
+                  <li class="toc_prefix">On this page &#x2192; </li>
+
+                  <li><a href="#participation">participation</a> <span class="bullet">&#x2022; </span></li>
+                  <li><a href="#admin">administrative&nbsp;info</a> <span class="bullet">&#x2022; </span></li>
+                  <li><a href="#about">about&nbsp;this&nbsp;document</a></li>
+		  </ul>
+    <div id="w3c_content_body">
+    <div class="line">
+<div class="intro">
+
+<p>W3C is <strong>home for Web related standardization aspects of EU-funded
+projects</strong> and an ideal partner for those interested in creating
+new open standards for the Web. W3C has extensive experience with EU projects both as coordinator and as partner; see a summary of <a href="http://www.w3.org/Consortium/nmfunds">current funding through EU projects and other non-Member sources</a>.</p>
+
+<p>W3C has several mechanisms to make it easier for research projects to
+participate in the design of future Web technologies, and all funded projects
+should understand the details of <strong>how to bring their research outcomes
+to a standardization process</strong>, and as importantly, which standard
+framework to use to innovate while keeping the Web open and free.</p>
+
+<h2 id="participation">Ways to Participate in W3C</h2>
+
+<p>W3C offers several ways to participate to meet diverse needs.</p>
+
+<h3 id="membership">Project Membership in W3C</h3>
+
+<p>A <a href="http://www.w3.org/Consortium/membership-faq#project">special "Project" Membership</a> tailored for EC project/consortia can be included as part of the funding request when drafting a EU proposal, and it will be reimbursed by the commission.</p>
+
+<p>W3C membership not only allows for direct participation in the W3C working
+groups dealing with your technology, but is a <strong>requirement</strong> for
+submitting a specification for the rest of the membership to review and decide
+the future of at W3C. Often, a member of an EC project is already a member of
+W3C and can do the submission on behalf of the group, but it's always better
+that the real submitter be represented as an entity in its own rights.</p>
+
+<p>This type of membership is only open for multi-partner, government-funded,
+time-limited, project, and it gives <strong>up to four</strong> (or more at the
+Team's discretion) individuals the right to represent the Project in W3C
+groups. The commitment is for a minimum of one year and the W3C membership fee
+to be paid by the Project is the highest that would be required of any
+participating non-Member entity, were it to join W3C in its own right.</p>
+
+
+<h3 id="early">Community Groups</h3>
+
+<p>In August 2011, W3C created <a href="http://www.w3.org/community/">Community
+and Business Groups</a> with a lighter-weight process to promote innovation.
+</p>
+
+<p>The first one, Community Group is an open forum, <strong>without
+fees</strong>, where Web developers and other stakeholders develop
+specifications, hold discussions, develop test suites, and connect with W3C's
+international community of Web experts.</p>
+
+<p>A W3C Business Group gives innovators that want to have an impact on the
+development of the Web in the near-term a vendor-neutral forum for
+collaborating with like-minded stakeholders, including W3C Members and
+non-Members.</p>
+
+<p>Both are a great way to do early standardization work in W3C for EU-funded
+project, independently of the official standard track dynamics, and without having
+to get the endorsement of the rest of the W3C membership and community, but
+still while using the W3C tools and pool of experts know-how.</p>
+
+<h2 id="admin">Administrative Information</h2>
+
+<p>We understand well what it means to follow an EC contractual work program
+including project milestones and reviews. We also know how to help projects advance a specification in the standardization track of W3C. It is very important to at
+least consult with us if your project planning includes a technology submission
+to W3C with a goal to move the document forward in our process.</p>
+
+<h3>Time Accounting</h3>
+
+<p>Whether as a member in full right, or as participant in a given W3C working
+group, time spent by project engineers within W3C can be billed on EU projects
+as part of the standardization work packages usually present in the work
+programme, and travel expenses can also be used to attend W3C face-to-face
+meetings, where specifications are developed and refined.</p>
+
+<p>Some W3C groups actually ask for a time commitment in order to participate,
+and it is therefore important that this time is properly accounted for on both
+sides.</p>
+
+<h2 id="about">About this Document</h2>
+
+<p>This resource was created as part of W3C's involvement as co-chair of the
+<strong>EC SSAI Standardization Collaboration Group</strong> — the “Software
+&amp; Service Architectures and Infrastructures” Unit has set up a number of
+groups between funded projects, in order to coordinate more effectively in
+various areas, i.e. avoid duplication of work, reuse designs, share experience,
+agree on architectures, etc.</p>
+
+<p>W3C has also participated with other SDOs in the <a
+href="http://www.w3.org/2004/copras/">COPRAS</a> project, a support action
+project in the EU 6th Framework Programme aiming to improve the interfacing,
+cooperation and exchange between IST research projects and ICT
+standardization.</p>
+
+<p>For more information, please contact Daniel Dardailler &lt;dd@w3.org&gt;.</p>
+
+</div>          </div> <!-- /end .line -->
+        </div> <!-- /end #w3c_content_body -->
+
+      </div> <!-- /end #w3c_mainCol -->
+    </div> <!-- end #w3c_main -->
+  </div> <!-- /end #w3c_container -->
+
+<div id="w3c_footer">
+  <div id="w3c_footer-inner">
+    <h2 class="offscreen">Footer Navigation</h2>
+    <div class="w3c_footer-nav">
+
+      <h3>Navigation</h3>
+      <ul class="footer_top_nav">   
+       <li><a href="/">Home</a></li>
+       <li><a href="/standards/">Standards</a></li>
+       <li><a href="/participate/">Participate</a></li>
+       <li><a href="/Consortium/membership">Membership</a></li>
+       <li class="last-item"><a href="/Consortium/">About W3C</a></li>
+
+      </ul>
+    </div>
+    <div class="w3c_footer-nav">
+      <h3>Contact W3C</h3>
+      <ul class="footer_bottom_nav">
+           <li><a href="/Consortium/contact">Contact</a></li>
+           <li><a accesskey="0" href="/Help/">Help and FAQ</a></li>
+
+           <li><a href="/Consortium/sponsor/">Sponsor / Donate</a></li>
+           <li><a href="/Consortium/siteindex">Site Map</a></li>
+           <li><address id="w3c_signature"><a href="http://lists.w3.org/Archives/Public/site-comments/">Feedback</a></address></li>
+      </ul>
+    </div>
+
+    <div class="w3c_footer-nav">
+      <h3>W3C Updates</h3>
+      <ul class="footer_follow_nav">
+           <li>
+                        <a href="http://twitter.com/W3C" title="Follow W3C on Twitter"><img src="/2008/site/images/twitter-bird" alt="Twitter" class="social-icon" width="78" height="83" /></a>
+                        
+          </li>
+     </ul>
+
+    </div>
+    <!-- #footer address / page signature -->
+        <p class="copyright">Copyright © 2011 W3C <sup>®</sup> (<a href="http://www.csail.mit.edu/"><acronym title="Massachusetts Institute of Technology">MIT</acronym></a>, <a href="http://www.ercim.eu/"><acronym title="European Research Consortium for Informatics and Mathematics"> ERCIM</acronym></a>, <a href="http://www.keio.ac.jp/">Keio</a>, <a href="http://ev.buaa.edu.cn/">Beihang</a>) <a href="/Consortium/Legal/ipr-notice">Usage policies apply</a>.</p>  </div>
+
+</div><!-- /end #footer --><div id="w3c_scripts">
+  <script type="text/javascript" src="/2008/site/js/main"><!-- --></script>
+</div>
+
+</body>
+</html>

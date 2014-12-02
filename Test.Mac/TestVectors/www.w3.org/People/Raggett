@@ -1,0 +1,550 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head profile="http://www.amk.ca/foaf/author">
+<meta name="generator"
+content="HTML Tidy for Linux/x86 (vers 1st April 2002), see www.w3.org" />
+<meta http-equiv="Content-Type"
+content="text/html; charset=utf-8" />
+<link rel="meta" type="application/rdf+xml" title="FOAF" href="foaf.rdf"/>
+<title>Dave Raggett</title>
+
+<style type="text/css">
+/*<![CDATA[*/
+body {margin-left: 20pt; margin-right: 20pt}
+blockquote.splash {
+  background: rgb(255,204,255);
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  padding-top: 0.2em;
+  padding-bottom: 0.2em;
+  border: none;
+  margin-right: 5%;
+  text-align: center;
+  font-weight: bold;
+  font-family: "Comic Sans MS", serif;
+}
+.key { font-size: smaller; font-style: italic }
+.subtitle {
+  font-style: italic;
+  text-align: center;
+}
+a img { border-width: 0; border: none }
+/*]]>*/
+</style>
+</head>
+<body background="texture.jpeg" bgcolor="white">
+<a href="profile.html"><img src="dsr-46c.jpg" width="80" height="100"
+alt="Photo" border="0" align="left" vspace="10" hspace="10" /></a>
+
+<h1>Dave Raggett</h1>
+
+<p>This is my home page where you can learn about my interests,
+achievements and how to contact me. Here is my 
+<a href="cv.html">Curriculum Vitae</a><!-- and <a 
+href="profile.html">bio</a>--> and my <a 
+href="http://people.w3.org/~dsr/blog/">blog</a>.</p>
+
+<p><small><a href=
+"http://www.faeriekeeper.net/20041stqtr.htm"><img alt="icon"
+src="talkinghands.jpg" border="0" align="middle" width="25"/></a>
+Recipient of <a href="http://www.faeriekeeper.net/20041stqtr.htm">
+Talking Hands Award</a> in January 2004.</small><br clear="all" />
+</p>
+
+<blockquote class="splash"><em>Try out my free Web-based
+alternative to Microsoft PowerPoint:
+<a href="/Talks/Tools/Slidy">HTML Slidy</a>.</em></blockquote>
+
+<p>I am a member of the <a href="http://www.w3.org/People/">W3C Team</a>, and currently a Team contact for the <a href="http://www.w3.org/2012/sysapps/">System Applications</a>, <a href="http://www.w3.org/2012/nfc/">Near Field Communications</a> and <a href="http://www.w3.org/2011/mbui/">Model-Based User Interfaces</a> Working Groups. I participate in European research projects: <a href="http://webinos.org/">webinos</a>, <a href="">Serenoa</a>, <a href="http://www.compose-project.eu/">COMPOSE</a> and the former <a href="http://primelife.ercim.eu/">PrimeLife project</a>. I have an enduring interest in the Web of Things, which seeks to apply web technologies to simplify the development of applications for the Internet of Things. I co-chaired the recent <a href="http://www.w3.org/2012/08/web-and-automotive/">Web &amp; Automotive workshop</a>, and have an ongoing interest in the potential for web standards for payments and complementary valued added services (see <a href="http://www.w3.org/wiki/Payments_Task_Force">payment taskforce</a>). I like to dabble with software, and am currently working on browser based editing and a high performance websockets server.</p>
+
+<p>I was a W3C Fellow for many years on behalf of a number of
+companies, most recently <a href="http://www.justsystems.com">Justsystems</a>,
+involving work on the relationship between <abbr title="Extensible Business Reporting Language">XBRL</abbr> and the Semantic Web. I was briefly a member of the <a href="http://www.xbrl.org/StandardsBoard/">XBRL
+Standards Board</a>. Before that, I was a W3C Fellow for <a href="http://www.volantis.com">Volantis</a>,
+<a href="http://www.canon.com">Canon</a>, <a
+href="http://www.openwave.com/">Openwave Systems</a>,
+and <a href="http://www.hpl.hp.co.uk/">HP Labs</a> in Bristol, England.
+I have been very closely involved with the development of HTML from
+the early days (HTML+, HTML 3.0, 3.2, 4.0, XHTML) as well as setting
+up the IETF HTTP working group and helping to initiate work on VRML.
+I used to be the activity lead for <a href="/MarkUp/">XHTML</a>,
+<a href="/MarkUp/Forms/">XForms</a>, <a href="/Math/">MathML</a>, <a
+href="/Voice/">Voice Browsers</a> and <a href="/2002/mmi/">Multimodal
+Interaction</a>.  I am a visiting professor for the <a 
+href="http://www.uwe.ac.uk/">University of the West of England</a>.</p>
+
+<p>Whilst working for JustSystems I became involved in work on <a
+title="Extensible Business Reporting Language"
+href="http://en.wikipedia.org/wiki/XBRL">XBRL</a>, a markup
+standard for financial reports defined by <a
+href="http://www.xbrl.org/">XBRL International</a> with the support
+of financial institutions around the world. XBRL makes use of XML
+Schema, XLink and XML Namespaces to give precise semantics to
+financial data. There is a huge potential for combining XBRL
+with the Semantic Web as a basis for analysing financial data and
+combining it with other sources of information. My starting point
+was to develop an open source tool (<a href="http://xbrlimport.sourceforge.net/">xbrlimport</a>) to translate XBRL into
+RDF. The Semantic Web, with its ability to represent a World
+Wide Web of machine interpretable data and metadata, will give users
+tremendous flexibility for exploring huge amounts of information
+about companies and markets.</p>
+
+<p>I joined the EU <a href="http://www.primelife.eu/">PrimeLife
+Project</a> in February 2009 to help with work on privacy enhancing
+technologies. The project is funded by the European Commission's 7th
+Framework Programme. I am particularly interested with the the
+concept of privacy providers as a new class of web services giving
+users life long control over their personal data. You get to determine
+just how much personally identifying information you disclose to
+websites. The approach also offers single-signon and opportunities
+for supporting micropayments as value added features for participating
+websites.</p>
+
+<p>I have also been working on broadening the Web to include all kinds
+of network appliances, whether in the home, office or on the move, and
+at the same time reducing the cost and complexities involved in
+developing Web applications through declarative languages that enable
+higher level authoring tools. The long term aim is to avoid the need for 
+Web application authors to have to learn the intricacies of markup, 
+style sheet and scripting languages, and the infuriating variations 
+across browsers. This will reduce the development and maintenance 
+costs compared with today's approaches, whilst improving the quality 
+and the end-user experience on whatever device he or she is using.
+I launched the <a href="/2005/Incubator/model-based-ui/">Model
+Based User Interface Incubator Group</a> in October 2008 to evaluate
+research on model-based user interface design as a framework for
+authoring Web applications and with a view to proposing work on
+related standards.</p>
+
+<p>My software projects have included <a href="http://xbrlimport.sourceforge.net/">xbrlimport</a>, <a href="#tidy">HTML Tidy</a>,
+<a href="#ezmath">EzMath</a>, <a href="/Talks/Tools/Slidy">HTML
+Slidy</a>, <a href="/2006/11/XForms-Tiny/">XForms-Tiny</a> and
+several experimental browsers. I have explored the potential
+of custom XML applications written in <a href="http://haxe.org/">Haxe</a>
+and deployed via the extremely ubiquitous flash player. I developed
+components for rendering and for editing SVG that work on
+any browser with Flash Player 9 and above. Most recently, I have
+been working on a cross browser library with a view to enabling
+the use of Web browsers for editing the W3C site, and a model-based
+user interface editor named "Quill" for <a href="http://www.w3.org/People/Raggett/">Serenoa</a> that runs in the browser together
+with a cloud-based rule engine.</p>
+
+<p><a href="http://www.bath-divers.co.uk/"><img src="redsea05.jpg"
+align="right" alt="Diving with Alex in the Red Sea 2005"/><img
+src="rib.jpg" alt="diving trip" align="right" /></a>In my spare time
+I enjoy diving with the <a href="http://www.bath-divers.co.uk/">Bath
+Sub-Aqua Club</a>, and recently became an assistant instructor. Here
+are my <a href="http://people.w3.org/~dsr/Photos/">collections of
+photo's</a> for my diving trips to the Scilly Isles, the
+southern Red Sea, Socorro (Baja California), and to South Africa for
+tiger sharks and the famous sardine run. I am married with a son and
+a daughter, and live in Bradford on Avon, near Bath in the west of
+England. Since August 2007 I have been a visiting professor for the
+University of the West of England in the Faculty of Environment and
+Technology.</p>
+
+<p style="clear:both">Some (older) publications/presentations:</p>
+
+<ul>
+<li><a href="http://www.sofsem.cz/sofsem10/presentations/invited/Raggett.pdf">The
+Web of Things: Extending the Web into the Real World</a>, January 2010,
+an Invited talk at <a href="http://www.sofsem.cz/sofsem10/index.php">SOFSEM
+2010</a>, 36th International Conference on Current Trends in Theory
+and Practice of Computer Science,  Špindlerův Mlýn, Czech Republic</li>
+<li><a href="http://www.w3.org/2008/Talks/0423-dsr-lbs/slides.pdf">Geolocation
+on the Mobile Web</a>, 23 April 2008, W3C Track, WWW2008 conference,
+Beijing, China</li>
+<li><a href="http://http://www.internet-of-things-2008.org//prg/slides/raggett.pdf">Towards
+the Web of Things</a>, 27 March 2008, Internet of Things, Zurich, Switzerland.</li>
+<li><a href="www.w3.org/2008/Talks/0305-dsr-mw2/slides.pdf">Towards the Web of Things</a>,
+Mobile Web 2.0, Seoul, 5 March 2008</li>
+<li><a href="http://www.w3.org/2007/Talks/0926-dsr-WDC/slides.pdf">Towards
+the Web of Things</a> at <a href="http://www.webdevconf.co.uk/">UWE Web
+Developer's Conference</a> in Bristol, UK on 26 September 2007</li>
+<li><a href="/2007/03/html-forms/">Google Tech Talk on Forms, 5 March
+2007, Mountain View</a></li>
+<li><a href="/2006/Talks/0919-dsr-ubiweb/ubiweb.pdf">Ubiquitous
+Web presentation</a> on 19 September 2006 at <a
+href="http://www.ce2006.org/">CE2006</a>, Antibes, France</li>
+<li><a href="http://www.w3.org/2006/05/Slidy-XTech/">Slidy, a web-based
+alternative to PowerPoint</a>, XTech on 19 May 2006, Amsterdam</li>
+<li><a href="http://www.loquendo.com/en/news/dave_raggett_interview.htm">Interview</a> in the March 2006 edition
+of the Loquendo Newsletter</li>
+<li><a href="/2006/03/ubiweb-ngw.html">Web Applications and the
+Ubiquitous Web</a>, on 13 March 2006 at the <a
+href="http://www.webxcon.com/">Next Generation Web Conference</a>,
+Seoul, Korea</li>
+<li><a href="/2006/03/ubiws-intro.html">Outline</a> on 7 March 2006
+to the Japan Members meeting of the <a 
+href="/2006/02/ubiwebws-agenda.html">W3C Ubiquitous Web workshop</a></li>
+<li>My <a href="../../2006/02/woa/">Tech Talk on the Web of Applications</a>
+at the Googleplex on 1st February 2006, Google recorded the talk, see the <a 
+href="http://video.google.com/videoplay?docid=8950294834635667990">video</a></li>
+<li><a href="/2006/01/ajax-speech.pdf">Applyng AJAX to add speech
+services to Web browsers</a> on 31 January 2006 at <a
+href="http://www.avios.com/conference.htm">AVIOS/SpeechTek
+West</a></li> 
+<li>Presentations on <a href="/2005/Talks/0621-dsr-mmi/">MMI Activity</a>
+and <a href="/2005/Talks/0621-dsr-ubiweb/">Ubiquitous Web</a> at <a
+href="/2005/03/MWeb-seminar.html"><em>Multimodal Web Applications
+for Embedded Systems</em></a>, W3C seminar 21 June 2005 - Toulouse, France</li>
+<li>Demonstration of a text to speech extension for the Mozilla-Firefox
+browser and its application to render RSS to speech at the <a
+href="http://www.w3.org/2005/03/02-TechPlenAgenda.html">W3C Technical
+Plenary</a>, 2nd March 2005, Boston, MA.</li>
+<li>Presentation on the <a href="/2005/02/tp-2005-ubiweb.pdf">Ubiquitous
+Web</a> at W3C Technical Plenary, 2nd March 2005, Boston, MA.</li>
+<li><a href="css-mmi/">CSS Extensions for Multimodal Interaction</a>,
+written together with <a href="/People/maxf/">Max Froumentin</a>,
+and introducing the principle of modality independence.</li>
+<li>Position paper for the <a href="/2004/09/mwi-workshop-cfp.html">Mobile
+Web Initiative Workshop</a>, 18-19th November 2004, Barcelona, Spain: 
+<a href="/2004/10/mobiweb-ui.html">Winning users over with more attractive
+and more flexible mobile web applications</a> [<a href=
+"/2004/10/mwi-draggett.pdf">Slides</a>].</li>
+</ul>
+
+<h3 align="center"><em>The Ubiquitous Web</em></h3>
+
+<p>The Ubiquitous Web seeks to broaden the capabilities of browsers
+to enable new kinds of web applications, particularly those involving
+coordination with other devices. These applications involve identifying
+resources and managing them within the context of an application session.
+The resources can be remote as in a network printer and projector, or
+local, as in the estimated battery life, network signal strength, and
+audio volume level. The Ubiquitous Web will provide a framework for
+exposing device coordination capabilities to Web applications. I organized
+and chaired a <a href="/2006/02/ubiwebws-agenda.html">W3C workshop on
+the Ubiquitous Web</a> in Tokyo on 9-10 March 2006 as a means to share
+use cases, research results, and implementation experience. The workshop
+raised a number of security related issues, and the importance of
+extending the web application model out into the physical world of
+sensors and effectors. In March 2007 I launched and the <a href="/2007/uwa/">Ubiquitous Web Applications working group</a>. I organized
+a <a href="http://www.w3.org/2007/02/dmdwa-ws/">Workshop on declarative
+models of distributed web applications</a> in June 2007, in Dublin,
+Ireland, and plan to hold further workshops on related topics to guide W3C's standards activities in these areas.</p>
+
+<h3 align="center"><em>Voice Browsers</em> and <em>Multimodal
+Interaction</em></h3>
+
+<p>I ran a workshop in 1998 to look at the opportunities for W3C to
+take a role in extending the Web to support voice interaction as
+the means for browsing Web content. This led to the setting up of a
+<a href="/Voice/">Voice Browser activity</a> and a working group to
+develop related standards. I was the W3C Activity Lead for Voice
+Browsers until March 2005. Voice Browsers offer the means to access
+Web-based services over any telephone, or for hands &amp; eyes free
+operation such as in a car. Voice interaction allows browsers to
+shrink in size as you no longer need the physical space for a high
+resolution display. The primary initial market is for replacing the
+current generation of touch-tone voice menuing systems, so common
+these days when you call up companies. Voice Browsers allow you to
+use spoken commands rather than having to press "1" for this and "2"
+for that etc.</p>
+
+<p>My interest in multimodal interaction started years ago, and led
+to work within the Voice Browser activity and more recently to a
+new W3C <a href="/2002/mmi/">Multimodal activity</a> of which I am
+the W3C Activity Lead. This work is still at an early stage, but aims
+to weave together ideas for visual, aural and
+tactile interaction with the Web, offering users the means to
+choose whether to use their eyes or ears, and fingers or speech as
+appropriate to the context in which they find themselves.</p>
+
+<p>Whilst I was working for <a href="http://www.hpl.hp.co.uk/">HP
+Labs</a> I developed a voice browser together with a student
+(Guillaume Belrose) to test out ideas for using context free
+grammars for more flexible voice interaction dialogs. The
+applications were written in XML using a language we called <a
+href="/Voice/TalkML">TalkML</a>. More recently, I have begun to
+study ideas for the use of natural language in multimodal
+systems, based upon event driven nested state machines, and inspired
+by <a href="http://www.wisdom.weizmann.ac.il/~harel/">David
+Harel</a>'s work on State Charts. <a href="/People/maxf/">Max
+Froumentin</a> and I, explored this in some ideas for <a
+href="css-mmi/">extending CSS to describe interaction</a> based
+upon the idea of <em>text as an abstract modality</em>. Whilst
+CSS is perhaps easier for authors, an XML based representation
+for state machines is likely to provide greater flexibility, and
+this is now being pursued within the Voice Browser working group.
+I am currently working on developing a means to integrate speech
+with web pages via an open source proxy speech server based on
+HTTP. This will be usable with any modern web browser without
+the need for plugins, and is being developed to enable widespread
+experimentation with multimodal web applications.</p>
+
+<!--
+<p>Some talks I have presented on voice interaction include:</p>
+
+<ul>
+<li>
+<p><a href="multimodal-2002Nov.ppt">Multimodal Interaction</a>,
+(PowerPoint), MIT Lab for Computer Science, 15th November 2002</p>
+</li>
+
+<li>
+<p>The Voice area is hotting up, and there are frequent conferences
+devoted to it. Here is <a href="/2000/10/VoicePortals/">an
+introduction to W3C's work on voice standards</a> I gave to the
+Voice Portal conference, held in London on 11th October 2000</p>
+</li>
+
+<li>
+<p>For a presentation on the Voice Browser Activity, see the <a
+href="/Voice/2000/DDay/">Developer's Day talk</a> given on 19th May
+2000 in the Mobile track at <a href="http://www9.org/">WWW'9</a>
+conference held in Amsterdam, See also <a
+href="/2000/Talks/WWW9-Mobile-Web/">Tomorrow's Web</a>, presented
+at <a href="http://www9.org/">WWW'9</a> on May 16, and covering the
+challenges of dealing with an every increasing range of ways of
+accessing the Web.</p>
+</li>
+
+<li>
+<p>I organized and presented at the <a
+href="/2000/09/Papers/Agenda.html">W3C/WAP Workshop on the
+Multimodal Web</a>, Hong Kong, 5-6 September 2000.</p>
+
+<p>This workshop addressed the convergence of W3C and WAP
+standards, and the emerging importance of speech recognition and
+synthesis for the Mobile Web. Read the position papers and summary
+of break-out sessions.</p>
+</li>
+
+<li style="list-style: none">
+<p>See also the talk on <a
+href="/Talks/1999/09/15-london-voice/slide1.html">Voice
+Browsers</a> as presented to the WAP Forum, in London on 15th
+September 1999.</p>
+</li>
+
+<li>
+<p><a href="http://www.w3.org/Talks/1999/0514-VB-DDay/">Style
+sheets for Voice Browsers</a>, as presented at the Developer's Day
+at WWW8 in Toronto, on 14th May 1999.</p>
+</li>
+</ul>
+-->
+
+<h3 align="center"><em>Computers with Common Sense</em></h3>
+
+<!-- <h4 class="subtitle">... the next frontier for computing ...</h4> -->
+
+<p>I am intrigued with the idea of giving computers a modicum of
+common sense, or in other words a practical knowledge of everyday
+things. This would have huge benefits, for instance, much smarter
+ways of searching for information, and more flexible user interfaces
+to applications. While it might sound easy, this is in fact very
+difficult and has defeated traditional approaches based upon
+mathematical logic and AI (artificial intelligence). More recently,
+work on speech recognition and natural language processing using
+statistical methods have shown great promise. Statistical approaches
+offer a way out of the combinatorial explosion faced by AI, and I
+am excited by work in cognitive science on relevancy theory and the
+potential for applying statistical learning techniques to
+semantics, learning on the fly or from tagged corpora.</p>
+
+<p>My long term aim is to understand this better and to put it into
+practice in the form of a multi-user conversational agent that is 
+accessible over the Web, so that we can harness the power of the Web
+to allow volunteers to teach the system common sense knowledge by
+conversing with it in English (and eventually other languages).
+I plan to work on an open source broad coverage statistical natural
+language processor for parsing and generation, and a relevancy-based
+inference system for natural language semantics. Here are <a
+href="Sense/">some more details</a>. If you are interested in
+collaborating on this, please contact me.</p>
+
+<h3 id="tidy" align="center"><em>Tidying up your markup!</em></h3>
+
+<p><a href="http://www.w3.org/People/Raggett/tidy">"HTML tidy"</a>
+is an open source utility for tidying up HTML. Tidy is composed
+from an HTML parser and an HTML pretty printer. The parser goes to
+considerable lengths to correct common markup errors. It also
+provides advice on how to make your pages more accessible to people
+with disabilities, and can be used to convert HTML content into XML
+as XHTML. Tidy is W3C open source and available free. It has been
+successfully compiled on a large number of platforms, and is being
+integrated into many HTML authoring tools. Recently the maintenance
+of Tidy has been taken over by a group of dedicated volunteers on
+SourceForge, see: <a
+href="http://tidy.sourceforge.net/">http://tidy.sourceforge.net/</a>.</p>
+
+<h3 align="center"><em>XForms &mdash; the future of Web
+forms</em></h3>
+
+<p>A few years ago, I set up a working group that is focusing on
+standards for the next generation of Web forms. The key idea is to
+separate the user interface and presentation from the underlying
+data model and logic. This allows content providers to plug in
+different user interfaces as befits different devices, for example,
+voice browsers, cell phones, palm-tops, television and desktop
+machines. <a href="/MarkUp/Forms">XForms</a> builds on XML to
+transfer form data as structured data.</p>
+
+<p>XForms whilst rooted in forms, is also about the common building
+blocks for interactive Web applications. The aim is to make it
+easier to build powerful Web applications in a world where
+increasingly everything will be interconnected. Web servers, for
+instance have now shrunk to the size of a single chip. We want to
+make it easier to achieve the layout and behavior you want without
+the need to struggle with complex scripts or having to hack layout
+using tables and spacer gifs etc.</p>
+
+<h3 id="ezmath" align="center"><em>An easy way to add Math to Web
+pages</em></h3>
+
+<p>In 1993 I first started work on how to incorporate mathematical
+expressions into Web pages. This work led me to set up the W3C Math
+working group which has produced the <a href="/Math">MathML</a>
+specification. MathML is an XML application and very verbose. In
+search of an easier to learn and more concise notation, I have been
+inspired by how people say mathematical expressions when reading
+aloud. The result is now available for downloading as a plugin and
+standalone editing tool for the <a
+href="http://www.w3.org/People/Raggett/EzMath">EzMath</a> notation
+developed together with Davy Batsalle from ENST. EzMath is
+particularly simple to use as well as providing a convenient way to
+author MathML. Have a look and see how much smaller and more
+obvious EzMath is compared to MathML! I later worked on a
+reimplementation of EzMath with a filter for mapping XHTML+EZMath
+to XHTML+MathML.</p>
+
+<h3 align="center"><em>Easier ways to add style and behaviour to
+Web pages</em></h3>
+
+<p>I am interested in ideas for easier ways to apply style and
+behaviour to HTML and XML documents. My approach has been to look
+at ways to extend ECMAScript to combine extensible cascading style
+rules (CSS) with object-oriented scripting. I sketched out the
+ideas in a proposal called <a href="spice">Spice</a>, which was
+officially submitted to W3C by Hewlett-Packard, and led to work
+with IBM, Microsoft and Netscape in <a
+href="http://www.ecma.ch/">ECMA</a> on a new edition of ECMAScript.
+This has taken a long time to develop but is now nearing
+completion.</p>
+
+<p><img src="xhtmlbook.jpg" align="right" alt="book cover" border="0"
+width="120" height="155" hspace="10" /></p>
+
+<!--<h3 align="center"><em>"<a
+href="http://www.wrox.com/Consumer/Store/Details.asp?ISBN=1861003439">
+Beginning XHTML</a>"</em></h3>-->
+
+<h3 align="center"><em>"Beginning XHTML"</em></h3>
+
+<p>XHTML follows in the footsteps of HTML, combining the benefits
+of its easy to understand vocabulary with the versatile syntax of
+XML to create an Extensible HTML, which will be easily accessible
+not only by today's desktop browsers, but by other equipment - such
+as cell phones - without the processing power to interpret the now
+lenient rules of HTML. Anyone who wants to learn how to create a
+Web page will need to learn XHTML. Sadly this book is now out of
+print.</p>
+
+<br clear="all" /><img
+src="html4.gif" alt="book cover" align="left" border="0"
+width="120" height="147" hspace="10" />
+
+<h3 align="center"><em>"Raggett on HTML 4"</em></h3>
+
+<!--<h3 align="center"><em>"<a
+href="http://cseng.aw.com/book/0,3828,0201178052,00.html">Raggett
+on HTML 4</a>"</em></h3>-->
+
+<p>'Raggett on HTML 4' was published (1998) by Addison Wesley, ISBN
+0-201-17805-2. The intelligent person's guide to HTML 4, as written
+by one of the chief architects of HTML, and editor of the HTML+,
+3.0, 3.2 and 4.0 specifications. Here is
+<a href="book4/ch01.html">Chapter 1 - introduction to the World
+Wide Web</a>, and <a href="book4/ch02.html">Chapter 2 - a history of
+HTML</a>.  See also these notes on <a href="the-early-days-of-the-Web.html">my
+personal involvement with the early days</a>. Sadly this book too is
+now out of print.<br clear="all" />
+</p>
+
+<h3 align="center"><em>Subsetting and Extending HTML</em></h3>
+
+<p>The range of browser platforms is undergoing a massive expansion
+with set-top boxes for televisions, handhelds, cellphones, voice
+browsers and embedded devices as well as conventional desktop
+systems. Defining HTML as the lowest common denominator of these
+devices would fall far short of the potential for the upper end. As
+a result, W3C has worked on ways to <a
+href="/TR/xhtml-modularization/">modularize HTML</a> and how to
+combine it with other tag sets, for instance <a
+href="/Graphics/SVG">SVG</a> (W3C's web drawing standard), <a
+href="/AudioVideo/">SMIL</a> (used for multimedia
+synchronization), <a href="/Math/">MathML</a> (mathematical
+expressions) and <a href="/RDF/">RDF</a> (used for representing
+metadata).</p>
+
+<p>A key ingredient in this, is the means to formally specify a
+<b>document profile</b> that defines what tag sets can be used
+together, what image formats, the level of style sheet support,
+which scripting libraries can be used etc. The document profile
+provides the basis for interoperability guarantees. It also makes
+it feasible to provide transformation tools for converting content
+from one profile to another.</p>
+
+<p>I developed a way of formalizing document profiles as a set of
+modular assertions, that break free of the limitations of document
+type definitions (DTDs) as used in SGML and XML. The approach is
+being named <a href="dtdgen/Docs/">Assertion Grammars</a>. An early
+spin-off from this work is a tool for generating DTDs called
+<b>dtdgen</b>. When I get time, I plan to combine this with ideas
+developed for XForms, to produce a powerful new way to describe XML
+document integrity constraints that bursts free of the static
+nature of XML Schema, to cover dynamic constraints expressed in
+fuctional and logical terms.</p>
+
+<p>Much later in August 2006, when trying to write modular schemas
+for an XML grammar for DOM events, I came up with a way to combine
+assertion grammars with <a href="http://relaxng.org/">RelaxNG</a>.
+The result is expressed in XML and allows you to write definitions
+that extend earlier ones, but without the need to modify the definitions
+they extend. This is in contrast to RelaxNG, which allows definitions
+closer to the document's root element to refer to definitions that
+are closer to the leaves in the document tree, but not the other way
+around. The problem with the top down nature of most grammar formalisms
+is that if you want to add a new definition, you can't just compose
+sets of grammar rules, since the new definition has to be referenced
+from the old, and that means changing the old definition. My
+approach borrows from type definitions for object oriented programming
+languages as well as from the tree regular expressions that form the
+basis for RelaxNG. The new approach is called <a href="exert.html"
+title="XML assertions"><strong>Exert</strong></a> as a contraction for XML
+assertions.</p>
+
+<!--
+<h3 align="center"><em>Speeding up the Web!</em></h3>
+
+<p>I am very much concerned with scaling issues for the Web. Right
+now the Web is still in its infancy. Techniques that sort of work
+today, won't work for tomorrow. My ideas are based around the
+notion of service replication as a replacement for file caching.
+DNS is a poor basis for naming resources and I am interested in
+higher performance and more appropriate alternatives. With a
+distributed approach based on cooperative resource sharing and load
+balancing, perhaps we can find a way to make the web a more
+effective medium for durable electronic records.</p>
+-->
+
+<!--
+<p>When I formed the HTTP working group in 1994, I
+tried to get the IETF to work on a next generation protocol, but
+it has taken until now to get enough people interested in this.
+W3C is currently working on <a
+href="http://www.w3.org/Protocols/HTTP-NG/">HTTP-NG</a> as a
+first step, but further work is needed before the service
+distribution concept can be effectively realize.</p>
+-->
+<hr />
+<p>Email: <a
+href="mailto:dsr@w3.org">dsr@w3.org</a>, phone: +44&nbsp;1225
+866 240 <!--mobile:&nbsp;+44&nbsp;7917&nbsp;839&nbsp;038 (GSM)--></p>
+</body>
+</html>
+

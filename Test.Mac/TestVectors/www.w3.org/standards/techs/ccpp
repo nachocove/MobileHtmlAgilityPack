@@ -1,0 +1,244 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<title>CC/PP Current Status - W3C</title>
+<link rel="Help" href="http://www.w3.org/Help/" />
+<link rel="stylesheet" href="/2008/site/css/minimum" type="text/css" media="handheld, all" />
+<style type="text/css" media="print, screen and (min-width: 481px)">
+/*<![CDATA[*/
+@import url("/2008/site/css/advanced");
+/*]]>*/
+</style>
+<link href="/2008/site/css/minimum" rel="stylesheet" type="text/css" media="handheld, only screen and (max-device-width: 480px)" />
+<link rel="stylesheet" href="/2008/site/css/print" type="text/css" media="print" />
+<link rel="shortcut icon" href="/2008/site/images/favicon.ico" type="image/x-icon" />
+<link rel="alternate" type="application/atom+xml" title="W3C Publications" href="/TR/tr.xml" />
+<link rel="alternate" type="application/rdf+xml" title="TR data" href="/2002/01/tr-automation/tr.rdf" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="viewport" content="width=device-width" />
+</head>
+<body id="www-w3-org" class="w3c_public">
+<div id="w3c_container">
+    <div id="w3c_mast">
+<h1 class="logo"><a tabindex="2" accesskey="1" href="/"><img src="/2008/site/images/logo-w3c-mobile-lg" width="90" height="53" alt="W3C" /></a> <span class="alt-logo">W3C</span></h1>
+<div id="w3c_nav">
+<form action="//www.w3.org/Help/search" method="get" enctype="application/x-www-form-urlencoded">
+<!-- w3c_sec_nav is populated through js -->
+<div class="w3c_sec_nav"><!-- --></div>
+<ul class="main_nav"><!-- Main navigation menu -->
+<li class="first-item"><a href="/standards/">Standards</a></li>
+<li><a href="http://www.w3.org/participate/">Participate</a></li>
+<li><a href="http://www.w3.org/Consortium/membership">Membership</a></li>
+<li class="last-item"><a href="http://www.w3.org/Consortium/">About W3C</a></li>
+<li class="search-item">
+<div id="search-form"><input tabindex="3" class="text" name="q" value="" title="Search" /> <button id="search-submit" name="search-submit" type="submit"><img class="submit" src="/2008/site/images/search-button" alt="Search" width="21" height="17" /></button></div>
+</li>
+</ul>
+</form>
+</div>
+</div>
+<!-- /end #w3c_mast -->
+    <div id="w3c_main">
+        <div id="w3c_logo_shadow" class="w3c_leftCol">
+            <img height="32" alt="" src="/2008/site/images/logo-shadow" />
+        </div>
+        <div class="w3c_mainCol">
+<div id="w3c_crumbs">
+       <div id="w3c_crumbs_frame">
+        <ul class="bct"> <!-- .bct / Breadcrumbs -->
+          <li class="skip"><a tabindex="1" accesskey="2" title="Skip to content (e.g., when browsing via audio)" href="#w3c_content_body">Skip</a></li>
+          <li><a href="/">W3C</a>&#xA0;<span class="cr">&#xBB;</span>&#xA0;</li>
+          <li><a href="/standards/">Standards</a>&#xA0;<span class="cr">&#xBB;</span>&#xA0;</li>
+          <li><a href="/TR/">All&#xA0;Standards&#xA0;and&#xA0;Drafts</a>&#xA0;<span class="cr">&#xBB;</span>&#xA0;</li>
+          <li class="current">CC/PP Current Status</li>
+        </ul>            
+     </div>
+    </div>
+    <h1 class="title">CC/PP Current Status</h1>
+    <ul class="w3c_toc">
+   <li>
+      <a href="#completed">completed&#xA0;work</a>
+            &#x2014;&#xA0;including&#xA0;<a href="#stds">standards</a>
+            <span class="bullet">&#x2022; </span>
+   </li>   <li>
+      <a href="#obsolete">obsolete&#xA0;specifications</a>
+   </li></ul>
+            <div id="w3c_content_body"><div id="w3c_generated_status">
+      <p id="w3c_toggle_include" class="default_open intro tPadding">This page summarizes the relationships among specifications, whether they are finished standards or drafts. Below, each title
+links to the most recent version of a document.</p>
+
+      
+      <h2 id="completed">Completed Work</h2>
+      <p>
+         <a href="/TR/tr-technology-stds">W3C Recommendations</a> have
+    been reviewed by W3C Members, by software developers, and by other
+    W3C groups and interested parties, and are endorsed by the
+    Director as Web Standards. Learn more about the <a href="/Consortium/Process/tr#rec-advance">W3C Recommendation
+    Track</a>.</p>
+      <p>
+         <a href="/2005/10/Process-20051014/tr.html#q75">Group Notes</a> are <em>not</em> standards and do not
+    have the same level of W3C endorsement.</p>
+            <h3 id="stds">Standards</h3>
+      <div class="data lMargin rMargin">
+         <table class="w3c_spec_summary_table">
+            <tbody>
+                           <tr>
+                  <td class="table_datecol">
+                     <a href="/standards/history/CCPP-struct-vocab" title="Composite Capability/Preference Profiles (CC/PP): Structure and Vocabularies 1.0 publication history">2004-01-15</a>
+                  </td>
+                  <td>
+                     <h4 class="w3c_status_title">
+                        <a title="status is REC" href="http://www.w3.org/TR/2004/REC-CCPP-struct-vocab-20040115/">Composite Capability/Preference Profiles (CC/PP): Structure and Vocabularies 1.0</a>
+                     </h4>
+                     <div class="expand_description">
+                        <p>This document describes CC/PP (Composite Capabilities/Preference Profiles) structure and vocabularies. A CC/PP profile is a description of device capabilities and user preferences. This is often referred to as a device's delivery context and can be used to guide the adaptation of content presented to that device.</p> <p>The Resource Description Framework (RDF) is used to create profiles that describe user agent capabilities and preferences. The structure of a profile is discussed. Topics include:</p> <ul> <li>structure of client capability and preference descriptions, AND</li> <li>use of RDF classes to distinguish different elements of a profile, so that a schema-aware RDF processor can handle CC/PP profiles embedded in other XML document types.</li> </ul> <p>CC/PP vocabulary is identifiers (URIs) used to refer to specific capabilities and preferences, and covers:</p> <ul> <li>the types of values to which CC/PP attributes may refer,</li> <li>an appendix describing how to introduce new vocabularies,</li> <li>an appendix giving an example small client vocabulary covering print and display capabilities, and</li> <li>an appendix providing a survey of existing work from which new vocabularies may be derived.</li> </ul>
+                     </div>
+                  </td>
+               </tr>
+                         </tbody>
+         </table>
+      </div>
+                  <h3 id="notes">Group Notes</h3>
+      <div class="data lMargin rMargin">
+         <table class="w3c_spec_summary_table">
+            <tbody>
+                           <tr>
+                  <td class="table_datecol">
+                     <a href="/standards/history/CCPP-struct-vocab2" title="Composite Capability/Preference Profiles (CC/PP): Structure and Vocabularies 2.0 publication history">2010-06-29</a>
+                  </td>
+                  <td>
+                     <h4 class="w3c_status_title">
+                        <a title="status is NOTE" href="http://www.w3.org/TR/2010/NOTE-CCPP-struct-vocab2-20100629">Composite Capability/Preference Profiles (CC/PP): Structure and Vocabularies 2.0</a>
+                     </h4>
+                     <div class="expand_description">
+                        <p>This document describes CC/PP (Composite Capabilities/Preference Profiles) Structure and Vocabularies 2.0. A CC/PP profile is a description of device capabilities and user preferences. This is often referred to as a device's delivery context and can be used to guide the adaptation of content presented to that device.</p> <p>The Resource Description Framework (RDF) is used to create profiles that describe user agent capabilities and preferences. The structure of a profile is discussed. Topics include:</p> <ul> <li>structure of client capability and preference descriptions, AND</li> <li>use of RDF classes to distinguish different elements of a profile, so that a schema-aware RDF processor can handle CC/PP profiles embedded in other XML document types.</li> </ul> <p>Version 2.0 of CC/PP ensures its alignment with the latest version of RDF.</p> <p>CC/PP vocabulary uses identifiers (URIs) to refer to specific capabilities and preferences, and covers:</p> <ul> <li>the types of values to which CC/PP attributes may refer,</li> <li>an appendix describing how to introduce new vocabularies,</li> <li>an appendix giving an example small client vocabulary covering print and display capabilities, and</li> <li>an appendix providing a survey of existing work from which new vocabularies may be derived.</li> </ul>
+                     </div>
+                  </td>
+               </tr>
+                            <tr>
+                  <td class="table_datecol">
+                     <a href="/standards/history/CCPP-COORDINATION" title="CC/PP Implementors Guide: Harmonization with Existing Vocabularies and Content Transformation Heuristics publication history">2001-12-20</a>
+                  </td>
+                  <td>
+                     <h4 class="w3c_status_title">
+                        <a title="status is NOTE" href="http://www.w3.org/TR/2001/NOTE-CCPP-COORDINATION-20011220/">CC/PP Implementors Guide: Harmonization with Existing Vocabularies and Content Transformation Heuristics</a>
+                     </h4>
+                     <div class="expand_description">
+                        <p>This document describes how existing vocabularies for different classes of devices and user agents can be used in CC/PP components, and how to create schemas that encapsulate existing vocabularies. It discusses the results of the coordination with the IETF CONNEG Working Group, as well as the WAP Forum UAPROF Working Group and several other groups, which have related activities. It contains a number of schemas and software examples which has been contributed voluntarily by individuals.</p> <p>It also gives an example of heuristics, which can be used to adapt content to a CC/PP profile, thus giving some guidelines for those who want to use CC/PP to implement content adaptation. It also serves to provide vocabulary and schema designers with key guidelines regarding extensions to existing vocabularies or development of new ones.</p>
+                     </div>
+                  </td>
+               </tr>
+                            <tr>
+                  <td class="table_datecol">
+                     <a href="/standards/history/NOTE-CCPP" title="Composite Capability/Preference Profiles (CC/PP): A user side framework for content negotiation publication history">1999-07-27</a>
+                  </td>
+                  <td>
+                     <h4 class="w3c_status_title">
+                        <a title="status is NOTE" href="http://www.w3.org/1999/07/NOTE-CCPP-19990727">Composite Capability/Preference Profiles (CC/PP): A user side framework for content negotiation</a>
+                     </h4>
+                     <div class="expand_description">
+                        
+                     </div>
+                  </td>
+               </tr>
+                          </tbody>
+           </table>
+         </div>
+                       <h2 id="obsolete">Obsolete Specifications</h2>
+      <p>These specifications have either been superseded by others,
+      or have been abandoned. They remain available for archival
+      purposes, but are not intended to be used.</p>
+            <h3 id="retired">
+        Retired
+      </h3>
+      <div class="data lMargin rMargin">
+         <table class="w3c_spec_summary_table">
+            <tbody>
+                           <tr>
+                  <td class="table_datecol">
+                     <a href="/standards/history/CCPP-trust" title="CC/PP Implementors Guide: Privacy and Protocols publication history">2001-12-20</a>
+                  </td>
+                  <td>
+                     <h4 class="w3c_status_title">
+                        <a title="status is WD" href="http://www.w3.org/TR/2001/WD-CCPP-trust-20011220/">CC/PP Implementors Guide: Privacy and Protocols</a>
+                     </h4>
+                     <div class="expand_description">
+                        <p>This document gives implementors advice on how to protect the privacy of a CC/PP user, and outlines how this can be applied using P3P in HTTP with the CC/PP Exchange protocol.</p>
+                     </div>
+                  </td>
+               </tr>
+                              <tr>
+                  <td class="table_datecol">
+                     <a href="/standards/history/CCPP-ra" title="Composite Capabilities/Preference Profiles: Requirements and Architecture publication history">2000-07-21</a>
+                  </td>
+                  <td>
+                     <h4 class="w3c_status_title">
+                        <a title="status is WD" href="http://www.w3.org/TR/2000/WD-CCPP-ra-20000721/">Composite Capabilities/Preference Profiles: Requirements and Architecture</a>
+                     </h4>
+                     <div class="expand_description">
+                        <p>This document outlines the requirements for a CC/PP framework, vocabulary, and trust model, and provides an overview of an architecture that satisfies these requirements. It represents the current consensus of the working group.</p>
+                     </div>
+                  </td>
+               </tr>
+                              <tr>
+                  <td class="table_datecol">
+                     <a href="/standards/history/CCPP-ta" title="Composite Capabilities/Preference Profiles: Terminology and Abbreviations publication history">2000-07-21</a>
+                  </td>
+                  <td>
+                     <h4 class="w3c_status_title">
+                        <a title="status is WD" href="http://www.w3.org/TR/2000/WD-CCPP-ta-20000721/">Composite Capabilities/Preference Profiles: Terminology and Abbreviations</a>
+                     </h4>
+                     <div class="expand_description">
+                        <p>This document contains terminology and abbreviations that are used in other CC/PP documents. For a detailed description of CC/PP, please see [CC/PP].</p>
+                     </div>
+                  </td>
+               </tr>
+                          </tbody>
+         </table>
+      </div>
+              </div>
+</div>
+        </div> <!-- /end #w3c_mainCol -->
+    </div> <!-- end #w3c_main -->
+</div> <!-- /end #w3c_container -->
+
+<div id="w3c_footer">
+<div id="w3c_footer-inner">
+<h2 class="offscreen">Footer Navigation</h2>
+<div class="w3c_footer-nav">
+<h3>Navigation</h3>
+<ul class="footer_top_nav">
+<li><a href="http://www.w3.org/">Home</a></li>
+<li><a href="http://www.w3.org/standards/">Standards</a></li>
+<li><a href="http://www.w3.org/participate/">Participate</a></li>
+<li><a href="http://www.w3.org/Consortium/membership">Membership</a></li>
+<li class="last-item"><a href="http://www.w3.org/Consortium/">About W3C</a></li>
+</ul>
+</div>
+<div class="w3c_footer-nav">
+<h3>Contact W3C</h3>
+<ul class="footer_bottom_nav">
+<li><a href="http://www.w3.org/Consortium/contact">Contact</a></li>
+<li><a accesskey="0" href="/Help/">Help and FAQ</a></li>
+<li><a href="http://www.w3.org/Consortium/sponsor/">Sponsor / Donate</a></li>
+<li><a href="http://www.w3.org/Consortium/siteindex">Site Map</a></li>
+<li>
+<address id="w3c_signature"><a href="http://lists.w3.org/Archives/Public/site-comments/">Feedback</a></address>
+</li>
+</ul>
+</div>
+<div class="w3c_footer-nav">
+<h3>W3C Updates</h3>
+<ul class="footer_follow_nav">
+<li><a href="http://twitter.com/W3C" title="Follow W3C on Twitter"><img src="/2008/site/images/twitter-bird" alt="Twitter" class="social-icon" width="78" height="83" /></a></li>
+</ul>
+</div>
+<!-- #footer address / page signature -->
+<p class="copyright">Copyright © 2014
+W3C <sup>®</sup> (<a href="http://www.csail.mit.edu/"><abbr title="Massachusetts Institute of Technology">MIT</abbr></a>, <a href="http://www.ercim.eu/"><abbr title="European Research Consortium for Informatics and Mathematics"> ERCIM</abbr></a>, <a href="http://www.keio.ac.jp/">Keio</a>, <a href="http://ev.buaa.edu.cn/">Beihang</a>) <a href="/Consortium/Legal/ipr-notice">Usage policies apply</a>.</p>
+</div>
+</div>
+<div id="w3c_scripts"><script type="text/javascript" src="/2008/site/js/main"></script></div>
+<script src="/2008/site/sf/js/3877145.js"></script>
+</body>
+</html>

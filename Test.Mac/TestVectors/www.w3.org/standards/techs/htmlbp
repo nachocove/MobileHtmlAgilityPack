@@ -1,0 +1,299 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<title>Best Practices for Authoring HTML Current Status - W3C</title>
+<link rel="Help" href="http://www.w3.org/Help/" />
+<link rel="stylesheet" href="/2008/site/css/minimum" type="text/css" media="handheld, all" />
+<style type="text/css" media="print, screen and (min-width: 481px)">
+/*<![CDATA[*/
+@import url("/2008/site/css/advanced");
+/*]]>*/
+</style>
+<link href="/2008/site/css/minimum" rel="stylesheet" type="text/css" media="handheld, only screen and (max-device-width: 480px)" />
+<link rel="stylesheet" href="/2008/site/css/print" type="text/css" media="print" />
+<link rel="shortcut icon" href="/2008/site/images/favicon.ico" type="image/x-icon" />
+<link rel="alternate" type="application/atom+xml" title="W3C Publications" href="/TR/tr.xml" />
+<link rel="alternate" type="application/rdf+xml" title="TR data" href="/2002/01/tr-automation/tr.rdf" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="viewport" content="width=device-width" />
+</head>
+<body id="www-w3-org" class="w3c_public">
+<div id="w3c_container">
+    <div id="w3c_mast">
+<h1 class="logo"><a tabindex="2" accesskey="1" href="/"><img src="/2008/site/images/logo-w3c-mobile-lg" width="90" height="53" alt="W3C" /></a> <span class="alt-logo">W3C</span></h1>
+<div id="w3c_nav">
+<form action="//www.w3.org/Help/search" method="get" enctype="application/x-www-form-urlencoded">
+<!-- w3c_sec_nav is populated through js -->
+<div class="w3c_sec_nav"><!-- --></div>
+<ul class="main_nav"><!-- Main navigation menu -->
+<li class="first-item"><a href="/standards/">Standards</a></li>
+<li><a href="http://www.w3.org/participate/">Participate</a></li>
+<li><a href="http://www.w3.org/Consortium/membership">Membership</a></li>
+<li class="last-item"><a href="http://www.w3.org/Consortium/">About W3C</a></li>
+<li class="search-item">
+<div id="search-form"><input tabindex="3" class="text" name="q" value="" title="Search" /> <button id="search-submit" name="search-submit" type="submit"><img class="submit" src="/2008/site/images/search-button" alt="Search" width="21" height="17" /></button></div>
+</li>
+</ul>
+</form>
+</div>
+</div>
+<!-- /end #w3c_mast -->
+    <div id="w3c_main">
+        <div id="w3c_logo_shadow" class="w3c_leftCol">
+            <img height="32" alt="" src="/2008/site/images/logo-shadow" />
+        </div>
+        <div class="w3c_mainCol">
+<div id="w3c_crumbs">
+       <div id="w3c_crumbs_frame">
+        <ul class="bct"> <!-- .bct / Breadcrumbs -->
+          <li class="skip"><a tabindex="1" accesskey="2" title="Skip to content (e.g., when browsing via audio)" href="#w3c_content_body">Skip</a></li>
+          <li><a href="/">W3C</a>&#xA0;<span class="cr">&#xBB;</span>&#xA0;</li>
+          <li><a href="/standards/">Standards</a>&#xA0;<span class="cr">&#xBB;</span>&#xA0;</li>
+          <li><a href="/TR/">All&#xA0;Standards&#xA0;and&#xA0;Drafts</a>&#xA0;<span class="cr">&#xBB;</span>&#xA0;</li>
+          <li class="current">Best Practices for Authoring HTML Current Status</li>
+        </ul>            
+     </div>
+    </div>
+    <h1 class="title">Best Practices for Authoring HTML Current Status</h1>
+    <ul class="w3c_toc">
+   <li>
+      <a href="#completed">completed&#xA0;work</a>
+            &#x2014;&#xA0;including&#xA0;<a href="#stds">standards</a>
+            <span class="bullet">&#x2022; </span>
+   </li>   <li>
+      <a href="#drafts">drafts</a>
+      <span class="bullet">&#x2022; </span>
+   </li>   <li>
+      <a href="#obsolete">obsolete&#xA0;specifications</a>
+   </li></ul>
+            <div id="w3c_content_body"><div id="w3c_generated_status">
+      <p id="w3c_toggle_include" class="default_open intro tPadding">This page summarizes the relationships among specifications, whether they are finished standards or drafts. Below, each title
+links to the most recent version of a document.</p>
+
+      
+      <h2 id="completed">Completed Work</h2>
+      <p>
+         <a href="/TR/tr-technology-stds">W3C Recommendations</a> have
+    been reviewed by W3C Members, by software developers, and by other
+    W3C groups and interested parties, and are endorsed by the
+    Director as Web Standards. Learn more about the <a href="/Consortium/Process/tr#rec-advance">W3C Recommendation
+    Track</a>.</p>
+      <p>
+         <a href="/2005/10/Process-20051014/tr.html#q75">Group Notes</a> are <em>not</em> standards and do not
+    have the same level of W3C endorsement.</p>
+            <h3 id="stds">Standards</h3>
+      <div class="data lMargin rMargin">
+         <table class="w3c_spec_summary_table">
+            <tbody>
+                           <tr>
+                  <td class="table_datecol">
+                     <a href="/standards/history/mobile-bp" title="Mobile Web Best Practices 1.0 publication history">2008-07-29</a>
+                  </td>
+                  <td>
+                     <h4 class="w3c_status_title">
+                        <a title="status is REC" href="http://www.w3.org/TR/2008/REC-mobile-bp-20080729/">Mobile Web Best Practices 1.0</a>
+                     </h4>
+                     <div class="expand_description">
+                        <p>This document specifies Best Practices for delivering Web content to mobile devices. The principal objective is to improve the user experience of the Web when accessed from such devices.</p> <p>The recommendations refer to delivered content and not to the processes by which it is created, nor to the devices or user agents to which it is delivered.</p> <p>It is primarily directed at creators, maintainers and operators of Web sites. Readers of this document are expected to be familiar with the creation of Web sites, and to have a general familiarity with the technologies involved, such as Web servers and HTTP. Readers are not expected to have a background in mobile-specific technologies.</p>
+                     </div>
+                  </td>
+               </tr>
+                         </tbody>
+         </table>
+      </div>
+                  <h3 id="notes">Group Notes</h3>
+      <div class="data lMargin rMargin">
+         <table class="w3c_spec_summary_table">
+            <tbody>
+                           <tr>
+                  <td class="table_datecol">
+                     <a href="/standards/history/i18n-html-tech-bidi" title="Authoring HTML: Handling Right-to-left Scripts publication history">2014-06-03</a>
+                  </td>
+                  <td>
+                     <h4 class="w3c_status_title">
+                        <a title="status is NOTE" href="http://www.w3.org/TR/2014/NOTE-i18n-html-tech-bidi-20140603/">Authoring HTML: Handling Right-to-left Scripts</a>
+                     </h4>
+                     <div class="expand_description">
+                        <p>Provides HTML/XHTML authors with best practices for developing internationalized HTML supported by CSS to create pages for languages that use bidirectional text, such as Arabic, Hebrew, Persian, Thaana, Urdu, etc.</p>
+                     </div>
+                  </td>
+               </tr>
+                            <tr>
+                  <td class="table_datecol">
+                     <a href="/standards/history/i18n-html-tech-lang" title="Authoring HTML: Language declarations publication history">2014-06-03</a>
+                  </td>
+                  <td>
+                     <h4 class="w3c_status_title">
+                        <a title="status is NOTE" href="http://www.w3.org/TR/2014/NOTE-i18n-html-tech-lang-20140603/">Authoring HTML: Language declarations</a>
+                     </h4>
+                     <div class="expand_description">
+                        <p>Provides HTML/XHTML authors with best practices for developing internationalized content, supported by CSS, and focusing specifically on advice about specifying the language of content.</p>
+                     </div>
+                  </td>
+               </tr>
+                            <tr>
+                  <td class="table_datecol">
+                     <a href="/standards/history/mwbp-guidelines" title="Extended Guidelines for Mobile Web Best Practices 1.0 publication history">2009-10-20</a>
+                  </td>
+                  <td>
+                     <h4 class="w3c_status_title">
+                        <a title="status is NOTE" href="http://www.w3.org/TR/2009/NOTE-mwbp-guidelines-20091020/">Extended Guidelines for Mobile Web Best Practices 1.0</a>
+                     </h4>
+                     <div class="expand_description">
+                        <p>This document supplements the <a href="http://www.w3.org /TR/mobile-bp/" shape="rect">Mobile Web Best Practices 1.0</a> by providing additional evaluatio ns of conformance to Best Practice statements and by providing additional interpret ations of these statements. </p>
+                     </div>
+                  </td>
+               </tr>
+                            <tr>
+                  <td class="table_datecol">
+                     <a href="/standards/history/WCAG10-HTML-TECHS" title="HTML Techniques for Web Content Accessibility Guidelines 1.0 publication history">2000-11-06</a>
+                  </td>
+                  <td>
+                     <h4 class="w3c_status_title">
+                        <a title="status is NOTE" href="http://www.w3.org/TR/2000/NOTE-WCAG10-HTML-TECHS-20001106">HTML Techniques for Web Content Accessibility Guidelines 1.0</a>
+                     </h4>
+                     <div class="expand_description">
+                        <p>This document describes techniques for authoring accessible Hypertext Markup Language (<acronym>HTML</acronym>) content (refer to HTML 4.01 <cite> [HTML4]</cite>). This document is intended to help authors of Web content who wish to claim conformance to "Web Content Accessibility Guidelines 1.0" (<cite>[WCAG10]</cite>). While the techniques in this document should help people author HTML that conforms to "Web Content Accessibility Guidelines 1.0", these techniques are neither guarantees of conformance nor the only way an author might produce conforming content.</p> <p>This document is part of a series of documents about techniques for authoring accessible Web content. For information about the other documents in the series, please refer to "Techniques for Web Content Accessibility Guidelines 1.0" <cite>[WCAG10-TECHS]</cite>.</p> <p> <strong>Note:</strong> This document contains a number of examples that illustrate accessible solutions in CSS but also deprecated examples that illustrate what content developers should not do. The deprecated examples are highlighted and readers should approach them with caution -- they are meant for illustrative purposes only.</p>
+                     </div>
+                  </td>
+               </tr>
+                            <tr>
+                  <td class="table_datecol">
+                     <a href="/standards/history/NOTE-html40-mobile" title="HTML 4.0 Guidelines for Mobile Access publication history">1999-03-15</a>
+                  </td>
+                  <td>
+                     <h4 class="w3c_status_title">
+                        <a title="status is NOTE" href="http://www.w3.org/TR/1999/NOTE-html40-mobile-19990315">HTML 4.0 Guidelines for Mobile Access</a>
+                     </h4>
+                     <div class="expand_description">
+                        
+                     </div>
+                  </td>
+               </tr>
+                          </tbody>
+           </table>
+         </div>
+                   <h2 id="drafts">Drafts</h2>
+      <p>Below are draft documents:
+            <a href="/2005/10/Process-20051014/tr.html#RecsWD">other Working Drafts</a>      .
+      Some of these may become Web Standards through the <a href="/Consortium/Process/tr#rec-advance">W3C Recommendation Track
+      process</a>. Others may be published as Group Notes or
+      become obsolete specifications.</p>
+                              <h3 id="wd">Other Working Drafts</h3>
+      <div class="data lMargin rMargin">
+         <table class="w3c_spec_summary_table">
+            <tbody>
+                             <tr>
+                  <td class="table_datecol">
+                     <a href="/standards/history/media-accessibility-reqs" title="Media Accessibility User Requirements publication history">2014-08-14</a>
+                  </td>
+                  <td>
+                     <h4 class="w3c_status_title">
+                        <a title="status is WD" href="http://www.w3.org/TR/2014/WD-media-accessibility-reqs-20140814/">Media Accessibility User Requirements</a>
+                     </h4>
+                     <div class="expand_description">
+                        <p>Aggregates requirements of a user with disabilities with respect to audio and video on the Web, providing background on user needs, alternative content technologies, and their application on the Web.</p>
+                     </div>
+                  </td>
+               </tr>
+                            <tr>
+                  <td class="table_datecol">
+                     <a href="/standards/history/aria-in-html" title="Using WAI-ARIA in HTML publication history">2014-06-26</a>
+                  </td>
+                  <td>
+                     <h4 class="w3c_status_title">
+                        <a title="status is WD" href="http://www.w3.org/TR/2014/WD-aria-in-html-20140626/">Using WAI-ARIA in HTML</a>
+                     </h4>
+                     <div class="expand_description">
+                        <p>This document is a practical guide for developers on how to add accessibility information to HTML elements using ARIA, a markup mechanism for making Web content and Web applications more accessible to people with disabilities.</p>
+                     </div>
+                  </td>
+               </tr>
+                            <tr>
+                  <td class="table_datecol">
+                     <a href="/standards/history/i18n-html-tech-char" title="Authoring Techniques for XHTML &amp; HTML Internationalization: Characters and Encodings 1.0 publication history">2004-05-09</a>
+                  </td>
+                  <td>
+                     <h4 class="w3c_status_title">
+                        <a title="status is WD" href="http://www.w3.org/TR/2004/WD-i18n-html-tech-char-20040509/">Authoring Techniques for XHTML &amp; HTML Internationalization: Characters and Encodings 1.0</a>
+                     </h4>
+                     <div class="expand_description">
+                        <p>Provides HTML/XHTML authors with best practice for developing internationalized HTML supported by CSS, focusing specifically on advice about character sets, encodings, and other character-specific matters.</p>
+                     </div>
+                  </td>
+               </tr>
+                         </tbody>
+         </table>
+      </div>
+                   <h2 id="obsolete">Obsolete Specifications</h2>
+      <p>These specifications have either been superseded by others,
+      or have been abandoned. They remain available for archival
+      purposes, but are not intended to be used.</p>
+            <h3 id="retired">
+        Retired
+      </h3>
+      <div class="data lMargin rMargin">
+         <table class="w3c_spec_summary_table">
+            <tbody>
+                           <tr>
+                  <td class="table_datecol">
+                     <a href="/standards/history/NOTE-html-lan" title="Primary Language in HTML publication history">1998-03-13</a>
+                  </td>
+                  <td>
+                     <h4 class="w3c_status_title">
+                        <a title="status is WD" href="http://www.w3.org/TR/1998/NOTE-html-lan-19980313">Primary Language in HTML</a>
+                     </h4>
+                     <div class="expand_description">
+                        
+                     </div>
+                  </td>
+               </tr>
+                          </tbody>
+         </table>
+      </div>
+              </div>
+</div>
+        </div> <!-- /end #w3c_mainCol -->
+    </div> <!-- end #w3c_main -->
+</div> <!-- /end #w3c_container -->
+
+<div id="w3c_footer">
+<div id="w3c_footer-inner">
+<h2 class="offscreen">Footer Navigation</h2>
+<div class="w3c_footer-nav">
+<h3>Navigation</h3>
+<ul class="footer_top_nav">
+<li><a href="http://www.w3.org/">Home</a></li>
+<li><a href="http://www.w3.org/standards/">Standards</a></li>
+<li><a href="http://www.w3.org/participate/">Participate</a></li>
+<li><a href="http://www.w3.org/Consortium/membership">Membership</a></li>
+<li class="last-item"><a href="http://www.w3.org/Consortium/">About W3C</a></li>
+</ul>
+</div>
+<div class="w3c_footer-nav">
+<h3>Contact W3C</h3>
+<ul class="footer_bottom_nav">
+<li><a href="http://www.w3.org/Consortium/contact">Contact</a></li>
+<li><a accesskey="0" href="/Help/">Help and FAQ</a></li>
+<li><a href="http://www.w3.org/Consortium/sponsor/">Sponsor / Donate</a></li>
+<li><a href="http://www.w3.org/Consortium/siteindex">Site Map</a></li>
+<li>
+<address id="w3c_signature"><a href="http://lists.w3.org/Archives/Public/site-comments/">Feedback</a></address>
+</li>
+</ul>
+</div>
+<div class="w3c_footer-nav">
+<h3>W3C Updates</h3>
+<ul class="footer_follow_nav">
+<li><a href="http://twitter.com/W3C" title="Follow W3C on Twitter"><img src="/2008/site/images/twitter-bird" alt="Twitter" class="social-icon" width="78" height="83" /></a></li>
+</ul>
+</div>
+<!-- #footer address / page signature -->
+<p class="copyright">Copyright © 2014
+W3C <sup>®</sup> (<a href="http://www.csail.mit.edu/"><abbr title="Massachusetts Institute of Technology">MIT</abbr></a>, <a href="http://www.ercim.eu/"><abbr title="European Research Consortium for Informatics and Mathematics"> ERCIM</abbr></a>, <a href="http://www.keio.ac.jp/">Keio</a>, <a href="http://ev.buaa.edu.cn/">Beihang</a>) <a href="/Consortium/Legal/ipr-notice">Usage policies apply</a>.</p>
+</div>
+</div>
+<div id="w3c_scripts"><script type="text/javascript" src="/2008/site/js/main"></script></div>
+<script src="/2008/site/sf/js/3877145.js"></script>
+</body>
+</html>

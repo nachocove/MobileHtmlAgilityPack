@@ -1,0 +1,551 @@
+<!doctype html public "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+   <title>The WWW Security FAQ</title>
+</head>
+<body bgcolor="#FFFFFF">
+&nbsp;
+<p>
+<a href="http://www.w3.org/"><img SRC="i/w3c_home.gif" BORDER=0 height=48 width=72 alt="W3C"></a>
+</p>
+<center>
+<h1>
+The World Wide Web Security FAQ</h1></center>
+
+<center>Lincoln D. Stein
+<a href="mailto:lstein@cshl.org">&lt;lstein@cshl.org></a>&nbsp; &amp; John N.
+Stewart <a href="mailto:jns@digitalisland.net">&lt;jns@digitalisland.net&gt;</a></center>
+<p align="center">
+<br>Version 3.1.2, February 4, 2002
+</p>
+
+<hr>
+<h2>
+DISCLAIMER</h2>
+This information is provided by Lincoln Stein (<a href="mailto:lstein@cshl.org">lstein@cshl.org</a>)
+and John Stewart (<a href="mailto:jns@digitalisland.net">jns@digitalisland.net</a>).
+The World Wide Web Consortium (W3C) hosts this document as a service to
+the Web Community; however, it does not endorse its contents. For further
+information, please contact Lincoln Stein or John Stewart, directly.
+<p>
+<hr>
+<table WIDTH="100%" >
+<tr>
+<td ALIGN=LEFT><a href="#contents"><img SRC="i/down.gif" ALT="[down]" BORDER=0 height=22 width=20 align="middle"></a><a href="#contents">Table
+of Contents</a></td>
+
+<td ALIGN=RIGHT><a href="wwwsf.html">Forward to <i>Introduction</i></a><a href="wwwsf.html"><img SRC="i/right.gif" ALT=">>" BORDER=0 height=22 width=20 align="middle"></a></td>
+</tr>
+</table>
+
+<hr>
+<h2>New</h2>
+<ol>
+  <li>version 3.1.2, added Lithuanian mirror site.
+  <li>version 3.1.1, fixed a vulnerability introduced by the <a
+      href="wwwsf4.html#CGI-Q17">untainting a variable</a> example.
+</ol>
+<hr>
+
+<h2>
+Mirrors</h2>
+The <b>master</b> copy of this document can be found at <a href="http://www.w3.org/Security/Faq/">http://www.w3.org/Security/Faq/</a>.
+<p> <a href="wwwsf_mirrors.html">See this page</a> for a listing of
+mirror sites or if you are interested in becoming a mirror site yourself. 
+<hr>
+
+<h2>
+<a NAME="contents"></a>CONTENTS</h2>
+
+<ol>
+  <li>
+      <a href="wwwsf.html">Introduction</a></li>
+
+  <li>
+      <a href="wwwsf0.html">What's New?</a></li>
+
+  <li>
+      <a href="wwwsf1.html">General Questions</a>
+
+      <ul>
+	<li>
+	    <a href="wwwsf1.html#GEN-Q1">Q1</a> What's to worry about?</li>
+
+	<li>
+	    <a href="wwwsf1.html#GEN-Q2">Q2</a> Exactly what security risks are we talking
+	    about?</li>
+
+	<li>
+	    <a href="wwwsf1.html#GEN-Q3">Q3</a> Are some Web servers and operating systems
+	    more secure than others?</li>
+
+	<li>
+	    <a href="wwwsf1.html#GEN-Q4">Q4</a> Are some Web server software programs more
+	    secure than others?</li>
+
+	<li>
+	    <a href="wwwsf1.html#GEN-Q5">Q5</a> Are CGI scripts insecure?</li>
+	    
+	<li>
+	    <a href="wwwsf1.html#GEN-Q6">Q6</a> Are server-side includes insecure?</li>
+	    
+	<li>
+	    <a href="wwwsf1.html#GEN-Q7">Q7</a> What general security precautions should
+	    I take?</li>
+	    
+	<li>
+	    <a href="wwwsf1.html#GEN-Q8">Q8</a> Where can I learn more about network security?</li>
+      </ul>
+    </li>
+
+  <li>
+      <a href="wwwsf2.html">Client Side Security</a>
+
+      <ul>
+
+	<li>
+	    <a href="wwwsf2.html#CLT-Q1">Q1</a> How do I turn off the "You are submitting
+	    the contents of a form insecurely" message in Netscape? Should I worry
+	    about it?</li>
+
+	<li>
+	    <a href="wwwsf2.html#CLT-Q2">Q2</a> How secure is the encryption used by
+	    SSL?</li>
+
+	<li>
+	    <a href="wwwsf2.html#CLT-Q3">Q3</a> When I try to view a secure page, the
+	    browser complains that the site certificate doesn't match the server and
+	    asks me if I wish to continue. Should I?</li>
+
+	<li>
+	    <a href="wwwsf2.html#CLT-Q4">Q4</a> When I try to view a secure page, the
+	    browser complains that it doesn't recognize the authority that signed its
+	    certificate and asks me if I want to continue. Should I?</li>
+	    
+	<li>
+	    <a href="wwwsf2.html#CLT-Q5">Q5</a> How private are my requests for Web documents?</li>
+
+	<li>
+	    <a href="wwwsf2.html#CLT-Q6">Q6</a> What's the difference between Java and
+	    JavaScript?</li>
+
+	<li>
+	    <a href="wwwsf2.html#CLT-Q7">Q7</a> Are there any known security holes in
+	    Java?</li>
+
+	<li>
+	    <a href="wwwsf2.html#CLT-Q8">Q8</a> Are there any known security holes in
+	    JavaScript?</li>
+
+	<li>
+	    <a href="wwwsf2.html#CLT-Q9">Q9</a> What is ActiveX? Does it pose any risks?</li>
+	    
+	<li>
+	    <a href="wwwsf2.html#CLT-Q10">Q10</a> Do "Cookies" Pose any Security Risks?</li>
+
+	<li>
+	    <a href="wwwsf2.html#CLT-Q11">Q11</a> I hear there's an e-mail message making
+	    the rounds that can trash my hard disk when I open it. Is this true?</li>
+
+	<li>
+	    <a href="wwwsf2.html#CLT-Q12">Q12</a> Can one Web site hijack another's content?</li>
+
+	<li>
+	    <a href="wwwsf2.html#CLT-Q13">Q13</a> Can my web browser reveal my LAN login
+	    name and password?</li>
+
+	<li>
+	    <a href="wwwsf2.html#CLT-Q14">Q14</a> Are there any known problems with Microsoft
+	    Internet Explorer?</li>
+
+	<li>
+	    <a href="wwwsf2.html#CLT-Q15">Q15</a> Are there any known problems with Netscape
+	    Communicator?</li>
+
+	<li>
+	    <a href="wwwsf2.html#CLT-Q16">Q16</a> Are there any known problems with Lynx
+	    for Unix?</li>
+
+	<li>
+	    <a href="wwwsf2.html#CLT-Q17">Q17</a> Someone suggested I configure /bin/csh
+	    as a viewer for documents of type application/x-csh. Is this a good idea?</li>
+	    
+	<li>
+	    <a href="wwwsf2.html#CLT-Q18">Q18</a> Is there anything else I should keep
+	    in mind regarding external viewers?</li>
+	    
+
+      </ul>
+    </li>
+  <li>
+      <a href="wwwsf3.html">Server Side Security</a>
+
+      <ul>
+	<li>
+	    General
+	    <ul>
+	      <li><a href="wwwsf3.html#SVR-Q1">Q1</a> How do I set the file permissions of my
+		  server and document roots?</li>
+	      <li><a href="wwwsf3.html#SVR-Q2">Q2</a> I'm running a server that provides a
+		  whole bunch of optional features. Are any of them security risks?</li>
+	      <li><a href="wwwsf3.html#SVR-Q3">Q3</a> I heard that running the server as "root"
+		  is a bad idea. Is this true?</li>
+	      <li><a href="wwwsf3.html#SVR-Q4">Q4</a> I want to share the same document tree
+		  between my ftp and Web servers. Is there any problem with this idea?</li>
+	      <li><a href="wwwsf3.html#SVR-Q5">Q5</a> Can I make my site completely safe by
+		  running the server in a "chroot" environment?</li>
+	      <li><a href="wwwsf3.html#SVR-Q6">Q6</a> My local network runs behind a firewall.
+		  How can I use it to increase my Web site's security?</li>
+	      <li><a href="wwwsf3.html#SVR-Q7">Q7</a> My local network runs behind a firewall.
+		  How can I get around it to give the rest of the world access to the Web
+		  server?</li>
+	      <li><a href="wwwsf3.html#SVR-Q8">Q8</a> How can I detect if my site's been broken
+		  into?</li>
+	    </ul>
+	</li>
+
+	<li>
+	    Windows NT Servers
+
+	    <ul>
+	      <li>
+		  <a href="wwwsf3.html#SVR-Q9">Q9</a> Are there any known problems with the
+		  Netscape Servers?</li>
+		  
+	      <li>
+		  <a href="wwwsf3.html#SVR-Q10">Q10</a> Are there any known problems with the
+		  WebSite Server?</li>
+		  
+	      <li>
+		  <a href="wwwsf3.html#SVR-Q11">Q11</a> Are there any known problems with Purveyor?</li>
+		  
+	      <li>
+		  <a href="wwwsf3.html#SVR-Q12">Q12</a> Are there any known problems with Microsoft
+		  IIS?</li>
+		  
+	      <li>
+		  <a href="wwwsf3.html#SVR-Q13">Q13</a>Are there any known security problems
+		  with Sun Microsystem's JavaWebServer?</li>
+		  
+	      <li>
+		  <a href="wwwsf3.html#SVR-Q14">Q14</a>Are there any known security problems
+		  with the MetaInfo MetaWeb Server?</li>
+	    </ul>
+	  </li>
+	<li>
+	    Unix Servers
+
+	    <ul>
+	      <li>
+		  <a href="wwwsf3.html#SVR-Q15">Q15</a> Are there any known problems with NCSA
+		  httpd?</li>
+		  
+	      <li>
+		  <a href="wwwsf3.html#SVR-Q16">Q16</a> Are there any known problems with Apache
+		  httpd?</li>
+		  
+	      <li>
+		  <a href="wwwsf3.html#SVR-Q17">Q17</a> Are there any known problems with the
+		  Netscape Servers?</li>
+		  
+	      <li>
+		  <a href="wwwsf3.html#SVR-Q18">Q18</a> Are there any known problems with the
+		  Lotus Domino Go Server?</li>
+		  
+	      <li>
+		  <a href="wwwsf3.html#SVR-Q19">Q19</a> Are there any known problems with the
+		  WN Server?</li>
+	    </ul>
+	    </li>
+	<li>
+	    Macintosh Servers
+
+	    <ul>
+	      <li>
+		  <a href="wwwsf3.html#SVR-Q20">Q20</a> Are there any known problems with WebStar?</li>
+		  
+	      <li>
+		  <a href="wwwsf3.html#SVR-Q21">Q21</a> Are there any known problems with MacHTTP?</li>
+
+	      <li>
+		  <a href="wwwsf3.html#SVR-Q22">Q22</a> Are there any known problems with Quid
+		  Pro Quo?</li>
+	    </ul>
+	    </li>
+	<li>
+	    Other Servers
+
+	    <ul>
+	      <li>
+		  <a href="wwwsf3.html#SVR-Q23">Q23</a> Are there any known problems with Novell
+		  WebServer?</li>
+	    </ul>
+	    </li>
+	<li>
+	    Server Logs and Privacy
+	    <ul>
+	      <li>
+		  <a href="wwwsf3.html#SVR-Q24">Q24</a> What information do readers reveal that
+		  they might want to keep private?</li>
+
+	      <li>
+		  <a href="wwwsf3.html#SVR-Q25">Q25</a> Do I need to respect my readers' privacy?</li>
+
+	      <li>
+		  <a href="wwwsf3.html#SVR-Q26">Q26</a> How do I avoid collecting too much information?</li>
+
+	      <li>
+		  <a href="wwwsf3.html#SVR-Q27">Q27</a> How do I protect my readers' privacy?</li>
+	    </ul>
+	    </li>
+
+      </ul>
+    </li>
+
+  <li>
+      <a href="wwwsf4.html">CGI Scripts</a>
+
+      <ul>
+	<li>
+	    General
+	    <ul>
+	      <li>
+		  <a href="wwwsf4.html#CGI-Q1">Q1</a> What's the problem with CGI scripts?</li>
+	      <li>
+		  <a href="wwwsf4.html#CGI-Q2">Q2</a> Is it better to store scripts in the
+		  cgi-bin directory or to identify them using the .cgi extension?</li>
+	      <li>
+		  <a href="wwwsf4.html#CGI-Q3">Q3</a> Are compiled languages such as C safer
+		  than interpreted languages like Perl and shell scripts?</li>
+	      <li>
+		  <a href="wwwsf4.html#CGI-Q4">Q4</a> I found a great CGI script on the Web
+		  and I want to install it. How can I tell if it's safe?</li>
+	      <li>
+		  <a href="wwwsf4.html#CGI-Q5">Q5</a> What CGI scripts are known to contain
+		  security holes?</li>
+	    </ul>
+	</li>
+
+	<li>
+	    Language Independent Issues
+	    <ul>
+	      <li>
+		  <a href="wwwsf4.html#CGI-Q6">Q6</a> I'm developing custom CGI scripts. What
+		  unsafe practices should I avoid?</li>
+	      <li>
+		  <a href="wwwsf4.html#CGI-Q7">Q7</a> But if I avoid eval(), exec(), popen()
+		  and system(), how can I create an interface to my database/search engine/graphics
+		  package?</li>
+	      <li>
+		  <a href="wwwsf4.html#CGI-Q8">Q8</a> Is it safe to rely on the PATH environment
+		  variable to locate external programs?</li>
+	      <li>
+		  <a href="wwwsf4.html#CGI-Q9">Q9</a> I hear there's a package called cgiwrap
+		  that makes CGI scripts safe?</li>
+	      <li>
+		  <a href="wwwsf4.html#CGI-Q10">Q10</a> People can only use scripts if they're
+		  accessed from a form that lives on my local system, right?</li>
+	      <li>
+		  <a href="wwwsf4.html#CGI-Q11">Q11</a> Can people see or change the values in
+		  "hidden" form variables?</li>
+	      <li>
+		  <a href="wwwsf4.html#CGI-Q12">Q12</a> Is using the "POST" method for submitting
+		  forms more private than "GET"?</li>
+	      <li>
+		  <a href="wwwsf4.html#CGI-Q13">Q13</a> Where can I learn more about safe CGI
+		  scripting?</li>
+	    </ul>
+	</li>
+
+	<li>
+	    Safe Scripting in Perl
+	    <ul>
+	      <li>
+		  <a href="wwwsf4.html#CGI-Q14">Q14</a> How do I avoid passing user variables
+		  through a shell when calling exec() and system()?</li>
+	      <li>
+		  <a href="wwwsf4.html#CGI-Q15">Q15</a> What are Perl taint checks? How do I
+		  turn them on?</li>
+	      <li>
+		  <a href="wwwsf4.html#CGI-Q16">Q16</a> OK, I turned on taint checks like you
+		  said. Now my script dies with the message: <tt>"Insecure path at line XX"
+		  </tt>every
+		  time I try to run it!</li>
+	      <li>
+		  <a href="wwwsf4.html#CGI-Q17">Q17</a> How do I "untaint" a variable?</li>
+	      <li>
+		  <a href="wwwsf4.html#CGI-Q18">Q18</a> I'm removing shell metacharacters from
+		  the variable, but Perl still thinks it's tainted!</li>
+	      <li>
+		  <a href="wwwsf4.html#CGI-Q19">Q19</a> Is it true that the pattern matching
+		  operation <tt>$foo=~/$user_variable/</tt> is unsafe?</li>
+	      <li>
+		  <a href="wwwsf4.html#CGI-Q20">Q20</a> My CGI script needs more privileges than
+		  it's getting as user "nobody". How do I run a Perl script as suid?</li>
+	    </ul>
+	</li>
+
+      </ul>
+      </li>
+  <li>
+      <a href="wwwsf5.html">Protecting Confidential Documents at Your Site</a>
+
+      <ul>
+	<li>
+	    <a href="wwwsf5.html#CON-Q1">Q1</a> What types of access restrictions are
+	    available?</li>
+
+	<li>
+	    <a href="wwwsf5.html#CON-Q2">Q2</a> How safe is restriction by IP address
+	    or domain name?</li>
+
+	<li>
+	    <a href="wwwsf5.html#CON-Q3">Q3</a> How safe is restriction by user name
+	    and password?</li>
+
+	<li>
+	    <a href="wwwsf5.html#CON-Q4">Q4</a> What is user verification?</li>
+
+	<li>
+	    <a href="wwwsf5.html#CON-Q5">Q5</a> How do I restrict access to documents
+	    by the IP address or domain name of the remote browser?</li>
+
+	<li>
+	    <a href="wwwsf5.html#CON-Q6">Q6</a> How do I add new users and passwords?</li>
+
+	<li>
+	    <a href="wwwsf5.html#CON-Q7">Q7</a> Isn't there a CGI script to allow users
+	    to change their passwords online?</li>
+
+	<li>
+	    <a href="wwwsf5.html#CON-Q8">Q8</a> Using <tt>.htaccess</tt> to control access
+	    in individual directories is so convenient, why should I use <tt>access.conf</tt>?</li>
+	    
+	<li>
+	    <a href="wwwsf5.html#CON-Q9">Q9</a> How does encryption work?</li>
+	    
+	<li>
+	    <a href="wwwsf5.html#CON-Q10">Q10</a> What are: SSL, SHTTP, Shen?</li>
+	    
+	<li>
+	    <a href="wwwsf5.html#CON-Q11">Q11</a> Are there any "freeware" secure servers?</li>
+	    
+	<li>
+	    <a href="wwwsf5.html#CON-Q12">Q12</a> Can I use Personal Certificates to Control
+	    Server Access?</li>
+
+	<li>
+	    <a href="wwwsf5.html#CON-Q13">Q13</a> How do I accept credit card orders over
+	    the Web?</li>
+
+	<li>
+	    <a href="wwwsf5.html#CON-Q14">Q14</a> What are: CyberCash, SET, Open Market?</li>
+      </ul>
+      </li>
+  <li>
+      <a href="wwwsf6.html">Denial of Service Attacks</a>
+      
+      <ul>
+	<li>
+	    Overview
+
+	    <ul>
+	      <li>
+		  <a href="wwwsf6.html#DOS-Q1">Q1</a> What is a Denial of Service attack?</li>
+		  
+	      <li>
+		  <a href="wwwsf6.html#DOS-Q2">Q2</a> What is a Distributed Denial of Service
+		  attack?</li>
+		  
+	      <li>
+		  <a href="wwwsf6.html#DOS-Q3">Q3</a> How is a DDoS executed against a website?</li>
+		  
+	      <li>
+		  <a href="wwwsf6.html#DOS-Q4">Q4</a> Is there a quick and easy way to secure
+		  against a DDoS attack?</li>
+
+	      <li>
+		  <a href="wwwsf6.html#DOS-Q5">Q5</a> Can the U.S. Government make a difference?</li>
+	    </ul>
+	    </li>
+	<li>
+	    Step-by-Step
+	    
+	    <ul>
+	      <li>
+		  <a href="wwwsf6.html#DOS-Q6">Q6</a> How do I check my servers to see if they
+		  are active DDoS hosts?</li>
+
+	      <li>
+		  <a href="wwwsf6.html#DOS-Q7">Q7</a> What should I do if I find a DDoS host
+		  program on my server?</li>
+		  
+	      <li>
+		  <a href="wwwsf6.html#DOS-Q8">Q8</a> How can I prevent my servers from being
+		  used as DDoS hosts in the future?</li>
+		  
+	      <li>
+		  <a href="wwwsf6.html#DOS-Q9">Q9</a> How can I prevent my personal computer
+		  from being used as a DDoS host?</li>
+		  
+	      <li>
+		  <a href="wwwsf6.html#DOS-Q10">Q10</a> What is a "smurf attack" and how do I
+		  defend against it?</li>
+	      <li><a href="wwwsf6.html#DOS-Q11">Q11</a> What is "trinoo" and how do I defend
+		  against it?
+		  
+	      </li>
+	      <li><a href="wwwsf6.html#DOS-Q12">Q12</a>  What are "Tribal Flood Network" and "TFN2K"
+		  and how do I defend against them?</li>
+	      <li>
+		  <a href="wwwsf6.html#DOS-Q13">Q13</a> What is "stacheldraht" and how do I
+		  defend against it?</li>
+	      <li>
+		  <a href="wwwsf6.html#DOS-Q14">Q14</a> How should I configure my routers,
+		  firewalls, and intrusion detection systems against DDoS attacks?
+	      </li>
+	    </ul>
+	    </li>
+      </ul>
+      </li>      
+  <li>
+      <a href="wwwsf7.html">Bibliography</a></li>
+</ol>
+
+      <hr>
+      <h2>
+      <a NAME="updates"></a>Corrections and Updates</h2>
+      We welcome bug reports, updates, reports about broken links, comments and
+      outright disagreements. Please send your comments to <a href="mailto:lstein@cshl.org">lstein@cshl.org</a>
+      and/or <a href="mailto:jns@digitalisland.net">jns@digitalisland.net</a>.
+      Please make sure that you are referring to the most recent version of the
+      FAQ (maintained at <a href="http://www.w3.org/Security/Faq/">http://www.w3.org/Security/Faq/</a>);
+      someone else might have caught the problem before you.
+      <p>Please understand that we maintain the FAQ on a purely voluntary basis,
+      and that we may fall behind on making updates when other responsibilities
+      intrude. You can help us out by making an attempt to identify replacement
+      links when reporting a broken one, and by suggesting appropriate rewording
+      when you have found an error in the text. Suggestions for new questions
+      and answers are welcomed, particularly if you are willing to contribute
+      the text yourself. ;-)
+
+
+<table WIDTH="100%" >
+  <tr>
+    <td ALIGN=LEFT>
+    <a href="#contents"><img SRC="i/up.gif" ALT="^" BORDER=0 height=22 width=20 align="middle"></a><a href="#contents">Table
+    of Contents</a></td>
+	  
+    <td ALIGN=RIGHT><a href="wwwsf.html">Forward to <i>Introduction</i></a><a href="wwwsf.html"><img SRC="i/right.gif" ALT=">>" BORDER=0 height=22 width=20 align="middle"></a></td>
+  </tr>
+</table>
+
+<hr>
+<address>
+<a href="http://stein.cshl.org/">Lincoln D. Stein</a> (<a href="mailto:lstein@cshl.org">lstein@cshl.org</a>)
+and <a href="mailto:jns@digitalisland.net">John N. Stewart (jns@digitalisland.net)</a></address>
+<p>
+<tt>$Id: index.html,v 1.13 2002/02/04 18:59:43 lstein Exp $</tt>
+</body>
+
+</html>

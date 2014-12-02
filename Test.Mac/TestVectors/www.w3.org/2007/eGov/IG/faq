@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+      "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-EU" lang="en-EU">
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+  <title>Frequently Asked Questions (FAQ) about eGovernment at W3C</title>
+  <link rel="stylesheet" href="../../../2005/06/blog/skins/egov/custom.css"
+  type="text/css" />
+  <link rel="stylesheet" href="../style.css" type="text/css" />
+</head>
+
+<body>
+
+<div class="bPosts">
+
+<div class="pageHeader">
+
+<div id="logos">
+<p><a href="http://www.w3.org/"><img src="http://www.w3.org/Icons/w3c_home"
+alt="W3C" /></a> <a href="http://www.w3.org/TandS/"><img
+src="http://www.w3.org/Icons/tands.gif" alt="Technology and Society Domain"
+width="212" height="48" /></a><span class="trail"><a
+href="/2007/eGov/">eGovernment home</a></span></p>
+</div>
+
+<h1>[DRAFT] Frequently Asked Questions (FAQ) about eGovernment at W3C </h1>
+</div>
+
+<p>eGovernment refers to the use of the Web or other information technologies
+by governing bodies at different levels (local, state, national and
+multi-national) to interact with their citizenry, between departments and
+divisions, and between governments themselves. This FAQ answers some questions
+about W3C's role in this space via its <a href="./"><abbr
+title="eGovernment">eGov</abbr> <abbr title="Interest Group">Interest
+Group</abbr></a>.</p>
+<!--Start Content-->
+<ul>
+  <li><a href="#q2">How does W3C contribute to eGovernment?</a></li>
+  <li><a href="#q3">What W3C technologies pertain to eGovernment?</a></li>
+  <li><a href="#q4">Why is W3C launching this group now (June 2008)?</a></li>
+  <li><a href="#q6">How does W3C work relate to efforts in other
+    organizations?</a></li>
+  <li><a href="#q7">What are the expected outcomes?</a></li>
+  <li><a href="#q8">How can I participate in W3C's eGovernment work? How much
+    time will participation require?</a></li>
+  <li><a href="#q9">What do government agencies typically see as the benefits
+    of using mashups? What kind of data are they using? What are the
+    challenges?</a></li>
+</ul>
+
+<h2 id="q2">How does W3C contribute to eGovernment?</h2>
+
+<p>The Web has become the main channel for governments to deliver services to
+citizens and Web technologies are crucial in the relationships between
+governments, and governments and industry. Following interoperable, open Web
+standards helps ensure access to information by people with diverse
+capabilities, using a broad range of devices supplied by any vendor of their
+choice, and helps ensure that "the people's data" will remain available long
+into the future. W3C has produced more than 90 Web standards in over 11 years.
+Governments are increasingly finding value in Web standards created at W3C and
+incorporating them into their policies.</p>
+
+<h2 id="q3">What W3C technologies pertain to eGovernment?</h2>
+
+<p>There are many, from HTML to build Web pages, to Semantic Web technologies
+to increase metadata. Some of the most visible relate to:</p>
+<ul>
+  <li>Web Accessibility, which is used or referenced in laws and regulations in
+    several countries; see the <a href="/WAI/policy-res">policy resources from
+    WAI</a>, W3C's Web Accessibility Initiative.</li>
+  <li>XML and Web Services, much used to develop eGovernment frameworks,
+    architectures and services and improve interoperability between
+  systems.</li>
+</ul>
+
+<p>The eGovernment Activity at W3C will identify any gaps to be filled in
+creating a complete suite of standards to enable open government information
+and ease the goal of linkable public sector Information.</p>
+
+<h2 id="q4">Why is W3C launching this group now (June 2008)?</h2>
+
+<p>W3C has been involved in eGovernment for several years already. P3P and WCAG
+are good examples, and they were developed ten years ago already! The new group
+is the culmination of several years of work by W3C in this area, including two
+Workshops on eGovernment in 2007, <a
+href="http://www.w3c.es/Eventos/2007/eGov/">one in Europe</a> and <a
+href="/2007/eGov/eGov-policy">one in North America</a>. The new work will
+address eGovernment needs specifically.</p>
+
+<p>In the past, many government agencies developed services using proprietary
+technologies or requiring the use of a given solution by the citizenry and
+industry. However, governments are increasingly finding value in open Web
+standards created at W3C, but sometimes they question the benefit due to the
+considerable effort they have to spend in suiting them to their needs, in part
+due to their unique requirements (e.g. to demand and enforce certain policies
+about information privacy). So there is still work to do, including helping the
+governments understand how to better use, support and participate in the
+development of Web standards that fit their needs. W3C also needs to learn how
+to communicate in terms used by government agencies.</p>
+
+<p>This new forum provides a great opportunity to have requirements from all
+eGovernment stakeholders influence W3C standards for the benefit of the larger
+community.</p>
+
+<h2 id="q6">How does W3C work relate to efforts in other organizations?</h2>
+
+<p>One of the goals of this activity is to achieve collective outreach by
+standards bodies, leading standards bodies working in fields that support
+better government data integration and sharing. Therefore, the Interest Group
+seeks to work closely with international organizations that deal with
+eGovernment such as The World Bank, <abbr
+title="Organization for Economic Co-operation and Development">OECD</abbr>,
+<abbr title="Organization of American States">OAS</abbr>, United Nations,
+European Commission, <abbr
+title="Organization for the Advancement of Structured Information Standards">OASIS</abbr>,
+and others. In this collaboration, W3C will concentrate on what it does well
+— standards development in a collaborative environment, and Web technology
+expertise — and will work together with those bodies to promote use of open
+standards and identify any gaps to be filled in creating a complete suite of
+standards to enable open government information.</p>
+
+<h2 id="q7">What are the expected outcomes?</h2>
+
+<p>W3C has chartered a public eGovernment Interest Group with the goal of
+improving access to government through better use of the Web. To reach that
+goal, W3C plans to create a task force to address three main topics:</p>
+<ul>
+  <li>Use of Open Standards </li>
+  <li>Transparency and Openness </li>
+  <li>Seamless Integration of Data </li>
+</ul>
+
+<p>The <a href="/2008/02/eGov/ig-charter">group's charter</a> cites two types
+of deliverables from these task forces:</p>
+<ol>
+  <li>The creation of an <strong>interdisciplinary forum</strong> for
+    discussing how the use of open web standards can improve access to
+    government.</li>
+  <li><strong>Documentation</strong> of the challenges that were identified by
+    the task forces, the technical and administrative approaches used, and the
+    needs of best practices, guidelines or new technologies to be developed
+    (roadmap) in order to tackle the most relevant issues within scope for each
+    task force.</li>
+</ol>
+
+<p>The Interest Group may also propose holding more public Workshops to explore
+new and emerging approaches.</p>
+
+<h2 id="q8">How can I participate in W3C's eGovernment work? How much time will
+participation require?</h2>
+
+<p>Participation is open to the public; anyone may join the group. The
+eGovernment IG is chartered for one year, and expected commitment for a
+participants is:</p>
+<ul>
+  <li>1.5-hours for a <a href="./#telecon">teleconference</a> every other
+  week</li>
+  <li>1-2 <a href="./#f2f">face to face meetings</a> per year</li>
+  <li>participation in the <a
+    href="http://lists.w3.org/Archives/Public/public-egov-ig/">public mailing
+    list</a></li>
+</ul>
+
+<p>Please, see the <a href="./participation">separate page on participation</a>
+to learn how to join the group.</p>
+
+<h2>Wh<span id="q9"></span>at do government agencies typically see as the
+benefits of using mashups? What kind of data are they using? What are the
+challenges?</h2>
+
+<p>Government agencies have not seriously considered mashups on a coordinated
+level yet. The agencies are challenged with exposing data from applications or
+creating applications to display data. Resourcing of personnel and funding have
+not allowed for a focus on providing mashups (mashups defined as merging data
+from two or more different applications or data sources and producing
+comparative views of the combined information). The government agencies are
+also challenged in finding other agencies or organizations where regulations or
+government policy (in addition to the lack of resources) will allow the
+sharing/exchange of information which would lead to a useful mashup. A typical
+application mashup requires the use of APIs with data available via XML, many
+agencies have not yet considered the consistent or holistic use of XML across
+applications or data repositories, not to mention other open formats like RDF.
+The age of systems varies significantly and, at times, the proprietary nature
+of the systems and applications offers further challenges with providing access
+to the data needed for a mashup.</p>
+
+<p>It is often not within the mission of an agency to provide sets of
+information from other agencies or different sources. A few third sector
+organizations have taken government information and provided views into joined
+data sources to meet public needs or other objectives which show the potential
+these mashups could have. Unfortunately, these organizations have to use that
+data in the way it's published, usually in HTML or in proprietary formats.</p>
+
+<p>Developing information for the sole purpose of putting it on the Web as an
+informative resource, although important and required by policies in many
+cases, is not enough anymore when citizens and civil societies are asking for
+access to the raw data. Publishing the raw data in open accessible formats
+should be a new goal for the agencies and they should get enough incentive to
+do so. Vast improvement of data integration between disparate systems and
+flourishing of services are just some of the benefits the unexpected reuse of
+that information would bring. This is not exempt from additional challenges
+though.</p>
+
+<p>Agencies are faced with having to ensure that the information and other data
+that they provide remains the authoritative source of the information and data.
+By providing access to data via XML or other methods to others for display in
+mashups releases control and management of the data outside of the responsible
+agency, which is a concern; the agency can no longer be sure that the data has
+maintain its original nature.</p>
+
+<p>If agencies are to proceed in adopting mashups within their organizations
+and/or across the government and/or with third parties, best practices,
+policies, and procedures will be needed to ensure the information and data's
+authoritative nature is preserved when necessary. Government agencies, like any
+organization, need to look to W3C or other standards organization for best
+practices, lessons learned, and strategies.</p>
+<!-- =================================== START OF MAIN AREA =================================== -->
+</div>
+<!-- =================================== START OF SIDEBAR =================================== -->
+<!-- Footer signature and W3C copyright text -->
+
+<div id="footer">
+<address>
+  <small>Last update $Date: 2009/08/24 12:51:32 $</small><br />
+  Maintained by <a href="/People/Sandro/">Sandro Hawke</a> (W3C), Team Contact 
+</address>
+<!-- copyright -->
+
+<p><a rel="Copyright"
+href="/Consortium/Legal/ipr-notice#Copyright">Copyright</a> © 1994-2008 <a
+href="/"><acronym
+title="World Wide Web Consortium">W3C</acronym></a><sup>®</sup> (<a
+href="http://www.csail.mit.edu/"><acronym
+title="Massachusetts Institute of Technology">MIT</acronym></a>, <a
+href="http://www.ercim.org/"><acronym
+title="European Research Consortium for Informatics and Mathematics">ERCIM</acronym></a>,
+<a href="http://www.keio.ac.jp/">Keio</a>), All Rights Reserved. W3C <a
+href="/Consortium/Legal/ipr-notice#Legal_Disclaimer">liability</a>, <a
+href="/Consortium/Legal/ipr-notice#W3C_Trademarks">trademark</a>, <a
+rel="Copyright" href="/Consortium/Legal/copyright-documents">document use</a>
+and <a rel="Copyright" href="/Consortium/Legal/copyright-software">software
+licensing</a> rules apply. Your interactions with this site are in accordance
+with our <a href="/Consortium/Legal/privacy-statement#Public">public</a> and <a
+href="/Consortium/Legal/privacy-statement#Members">Member</a> privacy
+statements.</p>
+</div>
+</body>
+</html>

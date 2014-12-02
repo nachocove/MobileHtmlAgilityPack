@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+      "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+  <title>The W3C QA Toolbox - Validators, checkers and other tools for
+  Webmasters and Web Developers</title>
+  <meta name="Keywords"
+  content="qa, quality assurance, conformance, validity, test suite, tools, validators, validation, software"
+  />
+  <meta name="Description"
+  content="The W3C QA Toolbox - Validators, checkers and other tools for Webmasters and Web Developers. Home of the HTML and CSS validators, link checker, and more."
+  />
+  <link rel="schema.DC" href="http://purl.org/dc" />
+  <meta name="DC.Subject" xml:lang="en" lang="en"
+  content="tools, validators, validation, software" />
+  <meta name="DC.Title" xml:lang="en" lang="en" content="The QA Toolbox" />
+  <meta name="DC.Description.Abstract" xml:lang="en" lang="en"
+  content="repository of QA tools and validation software at W3C" />
+  <meta name="DC.Date.Created" content="2002-07-24" />
+  <meta name="DC.Language" scheme="RFC1766" content="en" />
+  <meta name="DC.Creator" content="Olivier Thereaux" />
+  <meta name="DC.Publisher"
+  content="W3C - World Wide Web Consortium - http://www.w3.org" />
+  <meta name="DC.Rights"
+  content="http://www.w3.org/Consortium/Legal/copyright-documents-19990405" />
+  <style type="text/css" media="all">
+    @import "/QA/2006/01/blogstyle.css";
+    </style>
+  <style type="text/css" media="all">
+/*		dd {margin-bottom: 0; padding-bottom:0;} */
+		dt {margin-top:0}
+	</style>
+</head>
+
+<body>
+
+<div id="banner">
+<h1 id="title"><a href="http://www.w3.org/"><img height="48" alt="W3C"
+id="logo" src="http://www.w3.org/Icons/WWW/w3c_home_nb" /></a> <a
+href="http://www.w3.org/QA/"><img src="http://www.w3.org/QA/2002/12/qa.png"
+alt="Quality Assurance" /></a> Tools </h1>
+</div>
+<ul class="navbar" id="menu">
+  <li><strong><a href="/QA/" title="Quality Assurance Web Site Home">[QA
+    Home]</a></strong></li>
+  <li><a href="../IG/" title="The Quality Assurance Interest Group">QA
+  IG</a></li>
+  <li><a href="../Library/"
+    title="Documents and Publications on Web and Quality">Documents</a></li>
+  <li>Tools</li>
+  <li><a href="/QA/IG/#contact">Feedback</a></li>
+</ul>
+
+<div id="searchbox">
+
+<form method="get" action="http://www.google.com/custom"
+enctype="application/x-www-form-urlencoded">
+  <p id="formbox"><input type="text" size="15" class="textfield" name="q"
+  accesskey="E" maxlength="255" /> 
+  <input type="submit" value="Search" class="submitfield" id="goButton"
+  name="sa" accesskey="G" /><input type="hidden" name="cof"
+  value="T:black;LW:72;ALC:#ff3300;L:http://www.w3.org/Icons/w3c_home;LC:#000099;LH:48;BGC:white;AH:left;VLC:#660066;GL:0;AWFID:0b9847e42caf283e;"
+  /><input type="hidden" id="searchW3C" name="sitesearch" checked="checked"
+  value="www.w3.org/QA" /><input type="hidden" name="domains"
+  value="www.w3.org/QA" /></p>
+</form>
+</div>
+
+<div id="main">
+<!-- This DIV encapsulates everything in this page - necessary for the positioning -->
+
+<div id="jumpbar">
+<h2>About W3C QA Tools</h2>
+
+<p><strong>Indispensable for the professional Webmaster, Web Designer or Web
+Developer, these tools are all free and Open Source.</strong></p>
+
+<p>The W3C's main production are its <a href="/TR/">specifications</a>, but in
+the core of its philosophy is the belief that the natural complement to
+specifications is running code.</p>
+
+<p>This page lists some of the tools provided by the W3C in the domain of
+Quality Assurance: validators and other test tools. Almost all of these tools
+are web-based, and are available as downloadable sources or as free services on
+the w3.org site.</p>
+
+<h3>More W3C Software</h3>
+
+<p>W3C develops many more software tools. See the <a href="/Status">W3C Open
+Source Software</a> page for listings and news.</p>
+
+<h3>Nearby</h3>
+
+<p>An interesting companion to this toolbox is the <a
+href="http://www.w3.org/QA/TheMatrix">Matrix of W3C specifications</a> where
+test suites and validators for W3C specifications are listed.</p>
+</div>
+
+<h2>The Basics - what you should run on all your web pages</h2>
+<ul id="validators">
+  <li id="unicorn"><a
+    href="http://validator.w3.org/unicorn/"><strong>Unicorn</strong></a> -
+    W3C's Unified Validator.</li>
+  <li id="htmlvalidator">The <a href="http://validator.w3.org/"><strong>MarkUp
+    Validator</strong></a> - Also known as the <em>HTML validator</em>, it
+    helps check Web documents in formats like HTML and XHTML, SVG or MathML.
+  </li>
+  <li id="checklink">The <a
+    href="http://validator.w3.org/checklink"><strong>Link Checker</strong></a>
+    - It checks anchors (hyperlinks) in a HTML/XHTML document or full Web sites
+    and is useful to find broken links. </li>
+  <li id="cssvalidator">The <a
+    href="http://jigsaw.w3.org/css-validator/"><strong>CSS
+    Validator</strong></a> - It validates CSS stylesheets or documents that use
+    CSS stylesheets. </li>
+</ul>
+
+<p id="logvalidator">The above three can be used all-in-one by running the <a
+href="http://www.w3.org/QA/Tools/LogValidator/"><strong>Log
+Validator</strong></a>. Unlike the others, this tool helps improve the quality
+of a whole site, step by step, by finding the most popular documents that need
+to be fixed in priority. Learn more about this method in the <a
+href="/QA/2003/03/web-kit">Web Standards Switch</a> document.</p>
+
+<p>Developing mobile-friendly content? The <a
+href="http://validator.w3.org/mobile/"
+title="W3C mobileOK Checker"><strong>mobileOK checker</strong></a> is a
+one-stop service to check your Web site and improve its mobile-friendliness.</p>
+
+<h2>Specific Tools - for Specific Needs</h2>
+<ul>
+  <li id="semantic-extractor"><a
+    href="http://www.w3.org/2003/12/semantic-extractor.html">Semantic
+    Extractor</a> - Sees a Web page from a semantic point of view. Extracts
+    such information as outline, description, languages used, etc.</li>
+  <li id="rdf-validator"><a href="http://www.w3.org/RDF/Validator/">RDF
+    Validator</a> - Checks and visualizes RDF documents.</li>
+  <li id="rssvalidator"><a href="http://validator.w3.org/feed/">Feed
+    Validator</a> - Checks newsfeeds in formats like ATOM and RSS. </li>
+  <li id="p3pvalidator"><a href="http://www.w3.org/P3P/validator">P3P
+    Validator</a> - Checks whether a site is <a
+    href="http://www.w3.org/P3P/">P3P</a> enabled and controls protocol and
+    syntax of Policy-Reference-File and Policy.</li>
+  <li id="xsv"><a href="http://www.w3.org/2001/03/webdata/xsv">XML Schema
+    Validator</a> - Validates XML Schema according to the W3C
+  Recommendation.</li>
+  <li>We also have developed several human-centered test tools: the <a
+    href="http://www.w3.org/2007/03/mth/harness"
+    title="Mobile Test Harness - Mobile Test Harness">Mobile Test Harness</a>
+    (<a href="http://dev.w3.org/cvsweb/2007/mobile-test-harness/">code</a>) is
+    <q cite="http://dev.w3.org/cvsweb/2007/mobile-test-harness/">Web-based
+    harness for browsers test suites, that offers users the possibility to
+    record results on whether the browser they're using passes or not a set of
+    test suites</q>; and <span id="mutat"><a
+    href="http://www.w3.org/QA/Tools/MUTAT/">MUTAT</a> - an (older)
+    human-centered testing framework developed in perl (<a
+    href="http://www.w3.org/QA/Tools/MUTAT/#Getting"
+    title="W3C QA - MUTAT developer information">code</a>)</span>.</li>
+</ul>
+
+<h2>Open Source</h2>
+
+<p>All software developed at W3C is <em>Open Source / Free</em> software. This
+means that you can download and use them for free, if you like. It also means
+that you are welcome to participate in making them better, cooler, more useful
+for you and everyone.</p>
+<ul>
+  <li>Check each project for instructions on how to download their source code,
+    and install them on your system.</li>
+  <li>All the QA tools are maintained by the volunteer developers of the <a
+    href="qa-dev">QA-dev</a> group. Why don't you join?</li>
+</ul>
+</div>
+<!-- Footer -->
+<address class="author">
+  <a href="http://validator.w3.org/check?uri=referer"><img
+  src="http://www.w3.org/Icons/valid-xhtml10" height="31" width="88"
+  alt="Valid XHTML 1.0!" /></a> Created Date: 2002-07-24 by <a
+  href="http://www.w3.org/People/olivier/">Olivier Thereaux</a><br />
+  Last modified $Date: 2012/06/11 08:13:48 $ by $Author: coralie $ 
+</address>
+
+<p class="copyright"><a rel="Copyright"
+href="http://www.w3.org/Consortium/Legal/ipr-notice#Copyright">Copyright</a> ©
+1994-2012 <a href="http://www.w3.org/"><acronym
+title="World Wide Web Consortium">W3C</acronym></a>® (<a
+href="http://www.csail.mit.edu/"><acronym
+title="Massachusetts Institute of Technology">MIT</acronym></a>, <a
+href="http://www.ercim.eu/"><acronym
+title="European Research Consortium for Informatics and Mathematics">ERCIM</acronym></a>,
+<a href="http://www.keio.ac.jp/">Keio</a>), All Rights Reserved. W3C <a
+href="http://www.w3.org/Consortium/Legal/ipr-notice#Legal_Disclaimer">liability</a>,
+<a
+href="http://www.w3.org/Consortium/Legal/ipr-notice#W3C_Trademarks">trademark</a>,
+<a rel="Copyright"
+href="http://www.w3.org/Consortium/Legal/copyright-documents">document use</a>
+and <a rel="Copyright"
+href="http://www.w3.org/Consortium/Legal/copyright-software">software
+licensing</a> rules apply. Your interactions with this site are in accordance
+with our <a
+href="http://www.w3.org/Consortium/Legal/privacy-statement#Public">public</a>
+and <a
+href="http://www.w3.org/Consortium/Legal/privacy-statement#Members">Member</a>
+privacy statements. </p>
+</body>
+</html>

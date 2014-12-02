@@ -22,31 +22,42 @@ namespace Test.Mac
             }
         }
 
-        private static void ExtractText (string path)
+        private static bool ExtractText (string path)
         {
             if (!File.Exists (path)) {
                 Console.WriteLine ("ERROR: {0} does not exist.", path);
-                return;
+                return false;
             }
             Console.WriteLine ("[{0}]", path);
 
-            // Load the HTML file
-            var doc = new HtmlDocument ();
-            using (var stream = new FileStream (path, FileMode.Open, FileAccess.Read)) {
-                using (var reader = new StreamReader (stream)) {
-                    doc.Load (reader);
+            try {
+                // Load the HTML file
+                var doc = new HtmlDocument ();
+                using (var stream = new FileStream (path, FileMode.Open, FileAccess.Read)) {
+                    using (var reader = new StreamReader (stream)) {
+                        doc.Load (reader);
+                    }
                 }
+                Walk (doc.DocumentNode); // extract all texts
+                Console.WriteLine ("");
+                return true;
+            } catch (Exception) {
+                return false;
             }
-
-            // Extract all texts
-            Walk (doc.DocumentNode);
-            Console.WriteLine ("");
         }
 
         public static void Main (string[] args)
         {
+            int numProcessed = 0, numSucceeded = 0;
             foreach (var path in args) {
-                ExtractText (path);
+                numProcessed += 1;
+                if (ExtractText (path)) {
+                    numSucceeded += 1;
+                }
+            }
+            Console.WriteLine ("{0} processed. {1} succeeded", numProcessed, numSucceeded);
+            if (numProcessed != numSucceeded) {
+                Environment.Exit (1);
             }
         }
     }
